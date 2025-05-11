@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="index.js"></script>
+</head>
+<body>
+    <div class="quiz-box">
+        <!-- <div id="timer"></div> -->
+
+        <form id="searchForm">
+            <label for="searchType">Filter by:</label>
+            <select id="searchType">
+                <option value="">No Filter (Show All)</option>
+                <option value="syllabus">Syllabus</option>
+                <option value="question">Question</option>
+                <option value="answer">Answer</option>
+                <option value="week">Week Number</option>
+                <option value="46questions">46 questions</option>
+                <option value="tagged">Tagged</option>
+            </select>
+
+            <input type="text" id="searchValue" placeholder="Enter search value">
+
+            <button class="reloadButton" type="submit">Search</button>
+        </form>
+
+        <!-- <div id="quizResults"></div> -->
+
+        <div id="syllabus"></div>
+        <div id="question">Set the filter and press Search</div>
+        <div id="options" class="options"></div>
+        <div>
+            <button id="explanation-btn">Explanation</button>
+            <button id="next-btn">Next Question</button>
+        </div>
+        <div id="explanation"></div>
+        <div id="result" class="result"></div>
+        <div id="syllabusScore" class="score-list"></div>
+    </div>
+</body>
+</html>
