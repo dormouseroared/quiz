@@ -113,7 +113,7 @@ const ExamSecretsEMC = [
     },
     {
         source: "Exam Secrets EMC Q9",
-        question: "A domestic radio is found to be susceptible to interferance from an amateur transmission. Tuning the radio to different frequencies or asking the amateur to transmot in other parts of the band has little effect. Ferrite rings on the transmitter power leads made no difference. It is likely the receiver is suffering from:",
+        question: "A domestic radio is found to be susceptible to interference from an amateur transmission. Tuning the radio to different frequencies or asking the amateur to transmot in other parts of the band has little effect. Ferrite rings on the transmitter power leads made no difference. It is likely the receiver is suffering from:",
         options: [
             "direct pickup",
             "conducted interference",

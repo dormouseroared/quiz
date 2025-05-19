@@ -237,7 +237,7 @@ const quizData = [
         syllabus: "4f.1"
     }, {
         source: "BBDL Intermediate Quiz W12 Q18",
-        question: " For a coaxial cable to work properly and not be affected by objects outside the cable, it must:",
+        question: "For a coaxial cable to work properly and not be affected by objects outside the cable, it must:",
         options: [
             "Have correctly fitted plugs with good connections on both screen and inner conductors",
             "Have the correct characteristic impedance for the AMU and antenna in use",
@@ -247,7 +247,7 @@ const quizData = [
         correct: 0,
         explanation: "If the coaxial cable is not properly terminated with the correct plugs, correctly connected, the cable will not function correctly and it is likely that there will be current flowing on the outside of the screen. This will mean that it can radiate and the signals in the coax can be affected by any external objects. ‘b’ is nonsense; the AMU is able to deal with a wide range of impedances presented by different antennas. ‘c’ is not true because not every coaxial cable will go across the ground – up to a chimney mounted antenna for example. ‘d’ is not true as a balun is not always required, for example between coax and an unbalanced antenna.",
         lookup: "See page 54 of the Intermediate Licence textbook",
-        syllabus: "4h.1"
+        syllabus: "4g.1"
     }, {
         source: "BBDL Intermediate Quiz W12 Q19",
         question: "Below are four aspects of a radio wave and its radiation. Which answer best describes the elements that are NOT at 90 degrees to each other? <br><p>1. electric field</p><p>2. magnetic field</p><p>3. polarisation</p><p>4. the antenna element</p>",

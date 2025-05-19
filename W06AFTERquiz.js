@@ -121,9 +121,10 @@ const W06AFTERquiz = [
             "80m"
         ],
         correct: 3,
-        explanation: " If you are unsure of this, it is best to convert the wavelengths into MHz frequency bands, by dividing 300 by the metres: • 4m = 75MHz • 6m = 50MHz • 60m = 5MHz • 80m = 3.75MHzNow, if the low pass filter has a cut off frequency of 5MHz, it will not allow very much above 5MHz to pass, so not ‘a’ or ‘b’. At its cut off frequency, it is - 3dBdown, so it is not really useful to have half of your 5MHz power heating up thefilter, so ‘c’ is doubtful.Because it is lower than 5MHz, 3.75MHz will pass without any attenuation, and 5MHz is not too far above the operatingfrequency, so ‘d’ looks like the MOST correct answer; we will cover more on Low Pass Filters like this when we look at transmitters.",
+        explanation: " If you are unsure of this, it is best to convert the wavelengths into MHz frequency bands, by dividing 300 by the metres: • 4m = 75MHz • 6m = 50MHz • 60m = 5MHz • 80m = 3.75MHz. Now, if the low pass filter has a cut off frequency of 5MHz, it will not allow very much above 5MHz to pass, so not ‘a’ or ‘b’. At its cut off frequency, it is - 3dBdown, so it is not really useful to have half of your 5MHz power heating up the filter, so ‘c’ is doubtful. Because it is lower than 5MHz, 3.75MHz will pass without any attenuation, and 5MHz is not too far above the operating frequency, so ‘d’ looks like the MOST correct answer; we will cover more on Low Pass Filters like this when we look at transmitters.",
         lookup: "See page 26 of the Intermediate Licence textbook",
-        syllabus: "2h.5"
+        syllabus: "2h.5",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W06 AFTER Q10",
@@ -263,7 +264,8 @@ const W06AFTERquiz = [
         correct: 1,
         explanation: "The cut off frequency is defined as the -3dB, or half power point. It can also be shown to be the point where the voltage is attenuated to 0.707 of the input voltage.This question uses volts so it is simply a matter of multiplying 20VRMS by 0.707, which gives 14.14VRMS.",
         lookup: "See page 20 of the Intermediate Licence textbook",
-        syllabus: "9b.1 & 2h.5"
+        syllabus: "9b.1 & 2h.5",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W06 AFTER Q20",

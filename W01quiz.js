@@ -53,7 +53,7 @@ const W01quiz = [
         correct: 1,
         explanation: "Operating from a rare location may make you more attractive to others and increase your QSO numbers, but it is not a requirement to take part in a contest, so not ‘a’. All contests require some information to be exchanged, so ‘b’ looks good. QSL cards can take months, even years, to arrive, so not appropriate for contests, definitely not ‘c’. Some contests require you to be a member of the organising group, but that may be a local Club and the national society is not relevant, so not ‘d’.",
         lookup: "See page 6 of the Intermediate Licence textbook",
-        syllabus: "7a.4"
+        syllabus: "7a.5"
     },
     {
         source: "BBDL Intermediate Quiz W01 Q5",

@@ -43,7 +43,7 @@ const W03AFTERquiz = [
     },
     {
         source: "BBDL Intermediate Quiz W03 AFTER Q4",
-        question: " If a 12v battery has an internal resistance of 6 ohms, what would the potential difference be across a 6 ohm load and how much current would be flowing through the load?",
+        question: "If a 12v battery has an internal resistance of 6 ohms, what would the potential difference be across a 6 ohm load and how much current would be flowing through the load?",
         options: [
             "12 volts and 2 amps",
             "12 volts and 1 amp",
@@ -127,7 +127,7 @@ const W03AFTERquiz = [
     },
     {
         source: "BBDL Intermediate Quiz W03 AFTER Q10",
-        question: " Before entering an amateur radio contest you must:",
+        question: "Before entering an amateur radio contest you must:",
         options: [
             "ensure that you have a good stock of QSL cards to confirm each contact you make",
             "ensure that your QRZ.com page is up to date, showing the contest information",
@@ -137,7 +137,7 @@ const W03AFTERquiz = [
         correct: 2,
         explanation: "‘a’ is wrong because you do not need QSL cards in a contest. ‘b’ is wrong because there is no requirement to have a QRZ.com page, never mind keep it up to date. ‘c’ sounds good because you must exchange the correct information and different contests use different types of exchange. ‘d’ is wrong because you only need to submit a log of the contacts made during the contest, it is irrelevant if your log is not up to date before the contest. Contesting is on page 6 in the Intermediate Licence textbook but it is muddled up with information on Awards.",
         lookup: "BBDL Intermediate Week 1 - Weekly Instructions.pdf",
-        syllabus: "7a.4"
+        syllabus: "7a.5"
     },
     {
         source: "BBDL Intermediate Quiz W03 AFTER Q11",
@@ -152,6 +152,36 @@ const W03AFTERquiz = [
         explanation: "‘M’ for ‘man-made’ is the best way to remember this.",
         lookup: "See page 4 of the Intermediate Licence textbook",
         syllabus: "7e.1"
+    },
+    {
+        source: "BBDL Intermediate Quiz W03 AFTER Q11a",
+        question: "The Q codes for man-made interference, natural interference, high-power, low-power, quit, fading",
+        options: [
+            "QRM, QRN, QRO, QRP, QRT, QSB",
+            "QSB, QSO, QTH, QSY, QRT, QRM",
+            "QRT, QSB, QRO, QRP, QSY, QTH",
+            "QRM, QRO, QSL, QSO, QSY, QTH"
+        ],
+        correct: 0,
+        explanation: "Manually added to cover q codes",
+        lookup: "See page 4 of the Intermediate Licence textbook",
+        syllabus: "7e.1",
+        tagged: true
+    },
+    {
+        source: "BBDL Intermediate Quiz W03 AFTER Q11b",
+        question: "What circuit is in the diagram? <br><br><img src='images/w03after-q11b.png' alt='test'  >",
+        options: [
+            "FM Transmitter",
+            "RF Amplifier",
+            "Oscillator",
+            "Tuned Circuit"
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page x of the Intermediate Licence textbook",
+        syllabus: "3h.2",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W03 AFTER Q12",
@@ -225,7 +255,7 @@ const W03AFTERquiz = [
     },
     {
         source: "BBDL Intermediate Quiz W03 AFTER Q17",
-        question: ". A 12V car battery can be a very useful power supply for an amateur radio transceiver but they must be used with care because:",
+        question: "A 12V car battery can be a very useful power supply for an amateur radio transceiver but they must be used with care because:",
         options: [
             "They are capable of delivering very high currents that can heat wires and start fires",
             "They are capable of delivering very high voltages that can destroy radio electronic circuits",
@@ -323,7 +353,7 @@ const W03AFTERquiz = [
     },
     {
         source: "BBDL Intermediate Quiz W03 AFTER Q24",
-        question: " The solder wire used to construct amateur radio projects can be described as:",
+        question: "The solder wire used to construct amateur radio projects can be described as:",
         options: [
             "a metal alloy with a high melting point",
             "metallic glue with a high melting point",

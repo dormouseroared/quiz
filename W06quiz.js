@@ -170,7 +170,8 @@ const W06quiz = [
         correct: 1,
         explanation: "‘b’ has the capacitor ‘high’ so it is a high-pass filter, which is the correct answer.Generally speaking, for RF filters you need some inductance and some capacitance, so you could rule out ‘a’ and ‘d’, which only have R & C. Such circuits do have filtering characteristics at audio frequencies, but that is not in the syllabus. ‘c’ has a mix of low and high capacitors so is a more complex beast; it is actually a low pass filter with an additional notch filter added, not the one to go for.",
         lookup: "See page 26 of the Intermediate Licence textbook",
-        syllabus: "2h.5"
+        syllabus: "2h.5",
+        tagged: true
     },
 
 ]

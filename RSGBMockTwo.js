@@ -67,7 +67,7 @@ const RSGBMockTwo = [
         correct: 2,
         explanation: "",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "1f.1"
+        syllabus: "1a.1"
     },
     {
         source: "RSGB Intermediate Quiz Mock 2 Q6",
@@ -221,7 +221,8 @@ const RSGBMockTwo = [
         correct: 1,
         explanation: "",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "2h.5"
+        syllabus: "2h.5",
+        tagged: true
     },
     {
         source: "RSGB Intermediate Quiz Mock 2 Q17",
@@ -347,11 +348,12 @@ const RSGBMockTwo = [
         correct: 2,
         explanation: "",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "3i.3"
+        syllabus: "3i.3",
+        tagged: true
     },
     {
         source: "RSGB Intermediate Quiz Mock 2 Q26",
-        question: "The volume from the loudspeaker of a radio receiver remains fairly constant even when the receiver is tuned between strong and weak signal. This is achieved by the:",
+        question: "The volume from the loudspeaker of a radio receiver remains fairly constant even when the receiver is tuned between strong and weak signals. This is achieved by the:",
         options: [
             "automatic gain control (AGC)",
             "signal level control (SLC)",

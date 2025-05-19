@@ -53,7 +53,7 @@ const RSGBMockOne = [
         correct: 2,
         explanation: "",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "1e.1"
+        syllabus: "1a.1"
     },
     {
         source: "RSGB Intermediate Quiz Mock 1 Q5",
@@ -67,7 +67,7 @@ const RSGBMockOne = [
         correct: 3,
         explanation: "",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "1f.1"
+        syllabus: "1a.1"
     },
     {
         source: "RSGB Intermediate Quiz Mock 1 Q6",
@@ -334,7 +334,7 @@ const RSGBMockOne = [
             "the polarisation of the antenna"
         ],
         correct: 1,
-        explanation: "Explanation: A.The time of year – HF propagation is affected by seasonal changes, particularly due to variations in solar activity and ionospheric conditions. C.The size of the antenna – A larger or more efficient antenna can improve signal reception, affecting the S - meter reading. D. The polarization of the antenna – Matching the polarization of the transmitted signal with the receiving antenna can impact signal strength. However, B. The AF(Audio Frequency) gain control only adjusts the audio output volume of the receiver, not the actual received signal strength.The S - meter measures RF signal strength, so changing the AF gain does not affect it.",
+        explanation: "Explanation: A.The time of year – HF propagation is affected by seasonal changes, particularly due to variations in solar activity and ionospheric conditions. C.The size of the antenna – A larger or more efficient antenna can improve signal reception, affecting the S - meter reading. D. The polarization of the antenna – Matching the polarization of the transmitted signal with the receiving antenna can impact signal strength. However, B. The AF(Audio Frequency) gain control only adjusts the audio output volume of the receiver, not the actual received signal strength. The S - meter measures RF signal strength, so changing the AF gain does not affect it.",
         lookup: "See page x of the Intermediate Licence textbook",
         syllabus: "3h.2",
         tagged: true
@@ -351,7 +351,8 @@ const RSGBMockOne = [
         correct: 3,
         explanation: "",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "3i.2"
+        syllabus: "3i.2",
+        tagged: true
     },
     {
         source: "RSGB Intermediate Quiz Mock 1 Q26",
@@ -630,10 +631,10 @@ const RSGBMockOne = [
         source: "RSGB Intermediate Quiz Mock 1 Q45",
         question: "An antenna is fed from a 50 Watt transmitter through feeder with negligible feeder loss. The antenna has a gain of 9dB. What is the effective radiated power?",
         options: [
-            "450W",
-            "400W",
-            "100W",
-            "59W"
+            "450 Watts",
+            "400 Watts",
+            "100 Watts",
+            "59 Watts"
         ],
         correct: 1,
         explanation: "",
@@ -642,7 +643,7 @@ const RSGBMockOne = [
     },
     {
         source: "RSGB Intermediate Quiz Mock 1 Q46",
-        question: "To solder a wire to a small metal tag the soldering iron must heat the",
+        question: "To solder a wire to a small metal tag the soldering iron must heat the:",
         options: [
             "solder and wire only",
             "tag and wire only",

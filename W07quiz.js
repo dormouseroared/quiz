@@ -81,7 +81,7 @@ const W07quiz = [
         correct: 2,
         explanation: "A straightforward memory test or picture recognition. ‘a’ only has two connections, so not that. The BJT has three connections(collector, base & emitter, or cbe), so don’t chose answer ‘b’. Answer ‘c’ looks better, as the FET connections are source, gate and drain, or sgd. The Voltage Regulator also has three pins but they are in, ground and out, so ‘d’ is wrong.",
         lookup: "See page 11, 30 of the Intermediate Licence textbook",
-        syllabus: "2xx"
+        syllabus: "2i.3"
     },
     {
         source: "BBDL Intermediate Quiz W07 Q7",

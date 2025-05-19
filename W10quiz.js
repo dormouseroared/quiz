@@ -39,7 +39,8 @@ const W10quiz = [
         correct: 3,
         explanation: "Looking at ‘a’, receiving interference is a possibility in any receiver, including a superhet, so not that one. The superhet was designed many years before we had digital signal processing so not ’b’.The RF amplifier is the first device in many types of receiver, we avoid overload by applying AGC or by including an attenuator so not ‘c’.But a key feature of the superhet is that it converts a high RF frequency to a lower one where filters can be much more effective in producing selectivity, so ‘d’ is the one to go for.",
         lookup: "See page 40-42 of the Intermediate Licence textbook",
-        syllabus: "3i.1"
+        syllabus: "3i.1",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W10 Q4",
@@ -53,7 +54,8 @@ const W10quiz = [
         correct: 3,
         explanation: "This is a question about mixers having outputs at the ‘sum & difference’ for use as Intermediate frequencies. The whole point of mixing is to generate a fixed IF and it will always be either the sum or the difference. In this case we have no other information so, whilst ‘c’ is possible, ‘d’ is the 100% correct answer.",
         lookup: "See page 40-42 of the Intermediate Licence textbook",
-        syllabus: "3i.2"
+        syllabus: "3i.2",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W10 Q5",
@@ -67,7 +69,8 @@ const W10quiz = [
         correct: 1,
         explanation: "A band pass filter in the audio stages will certainly limit the audio bandwidth but that is not where the main selectivity comes from, so not ‘a’.The tuned circuits in the IF stage definitely add selectivity, so ‘b’ looks promising. The local oscillator plays no part in selectivity so not ‘c’ and neither do the RF amp’s gain or noise,so not ‘d’.So, ‘b’ is definitely the one to go for.",
         lookup: "See page 39 and 41 of the Intermediate Licence textbook",
-        syllabus: "3i.3"
+        syllabus: "3i.3",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W10 Q6",

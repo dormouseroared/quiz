@@ -1,3 +1,4 @@
+import W00quiz from "./W00quiz.js"
 import W01quiz from "./W01quiz.js"
 import W02quiz from "./W02quiz.js"
 import W03quiz from "./W03quiz.js"
@@ -17,11 +18,15 @@ import W13quiz from "./W13quiz.js"
 
 import RSGBMockOne from "./RSGBMockOne.js"
 import RSGBMockTwo from "./RSGBMockTwo.js"
+import RSGBMockThree from "./RSGBMockThree.js"
+
+import BBDLMockOne from "./BBDLMockOne.js"
 
 import ExamSecretsEMC from "./examSecretsEMC.js"
 
 
 const W99quiz = [
+    ...W00quiz,
     ...W01quiz,
     ...W02quiz,
     ...W03quiz,
@@ -40,6 +45,8 @@ const W99quiz = [
     ...W13quiz,
     ...RSGBMockOne,
     ...RSGBMockTwo,
+    ...RSGBMockThree,
+    ...BBDLMockOne,
     ...ExamSecretsEMC
 ]
 

@@ -250,7 +250,8 @@ const W09AFTERquiz = [
         correct: 1,
         explanation: "The ‘WARC’ bands (so called because they were agreed at a World Amateur Radio Conference) are designated as contest- free by IARU.They are 10, 18 & 24MHz. 5MHz is also a contest - free band, but it is not relevant to this question. It is a simple memory thing; regular listening on the bands at the weekends should remind you where to go if you want to avoidcontests, or which bands not to use, if you want to enter a contest.",
         lookup: "See page 4 of the Intermediate Licence textbook",
-        syllabus: "7b.1"
+        syllabus: "7b.1",
+        tagged: true
     },
     {
         source: "BBDL Intermediate Quiz W09 AFTER Q19",

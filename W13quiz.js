@@ -123,7 +123,7 @@ const W13quiz = [
         correct: 3,
         explanation: "The regular timing is a clue that it is something relatively permanent and the others are less regular.",
         lookup: "See page x of the Intermediate Licence textbook",
-        syllabus: "6b.2 & 6b.3"
+        syllabus: "6b.2"
     },
     {
         source: "BBDL Intermediate Quiz W13 Q10",
