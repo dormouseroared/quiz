@@ -51,7 +51,7 @@ const W05quiz = [
             "Voltage and Current can be out of phase and the difference is measured in degrees"
         ],
         correct: 3,
-        explanation: "If AC is applied to a pure resistor, the voltage and current will be in phase, making ‘a’ wrong. If the same AC is applied to a pure capacitor, or a pure inductor, the Voltage and current will be out of phase, so, ‘b’ is wrong. If you remember that phase difference is measured in degrees, you should see why ‘c’ is wrong and ‘d’ is correct.",
+        explanation: "If AC is  applied to a pure resistor, the voltage and current will be in phase, making ‘a’ wrong. If the same AC is applied to a pure capacitor, or a pure inductor, the Voltage and current will be out of phase, so, ‘b’ is wrong. If you remember that phase difference is measured in degrees, you should see why ‘c’ is wrong and ‘d’ is correct.",
         lookup: "See page 21-23 of the Intermediate Licence textbook",
         syllabus: "2e.2"
     },
