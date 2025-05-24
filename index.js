@@ -1,5 +1,5 @@
 
-import W99quiz from "./W99quiz.js"
+import W99quiz from "./W99quiz_FULL.js"
 
 import syllabusItems from "./syllabus.js"
 
