@@ -114,6 +114,30 @@ const syllabusItems = [
         text: "Recall that in an international disaster messages may be passed, internationally, on behalf of non-licensed persons."
     },
     {
+        key: "1c.1",
+        level: "full",
+        title: "Messages",
+        text: "Understand the requirements relating to the content of messages and who messages may be sent to."
+    },
+    {
+        key: "1c.1",
+        level: "full",
+        title: "Messages",
+        text: "Understand the circumstances when messages, including encrypted content, may be sent."
+    },
+    {
+        key: "1c.1",
+        level: "full",
+        title: "Messages",
+        text: "Understand the distinction between the use of codes and abbreviations and encryption."
+    },
+    {
+        key: "1c.1",
+        level: "full",
+        title: "Messages",
+        text: "Understand that people of all ages and backgrounds participate in amateur radio and that messages must not cause offence,particularly in the context of relevant legislation including the Wireless Telegraphy(Content of Transmission) Regulations 1988 and the Communications Act(2003)."
+    },
+    {
         key: "1c.2",
         level: "foundation",
         title: "Messages",
@@ -135,7 +159,7 @@ const syllabusItems = [
         key: "1d.1",
         level: "foundation",
         title: "Apparatus, inspection and closedown",
-        text: "Recall that a person authorised by Ofcom has the right to any or all the following: Inspection of, require the modification of, require the closedown of,restrict the operation of, the Radio Equipment."
+        text: "Recall that a person authorised by Ofcom has the right to any or all the following: Inspection of, require the modification of, require the closedown of, restrict the operation of, the Radio Equipment."
     },
     {
         key: "1d.1",
@@ -157,9 +181,27 @@ const syllabusItems = [
     },
     {
         key: "1d.1",
-        level: "foundation",
+        level: "full",
         title: "Apparatus, inspection and closedown",
-        text: "Recall the Licensee must ensure that the station is not causing Undue Interference to other radio users. Recall that a person authorised by Ofcom has the right to any or all the following: (1) Inspection of (2) require the modification of (3) require the closedown of (4) restrict the operation of, the Radio Equipment."
+        text: "Understand the requirements for clean and stable transmitters and the need to control transmitted bandwidth."
+    },
+    {
+        key: "1d.1",
+        level: "full",
+        title: "Apparatus, inspection and closedown",
+        text: "Understand the need to avoid Undue Interference to other wireless telegraphy"
+    },
+    {
+        key: "1d.1",
+        level: "full",
+        title: "Apparatus, inspection and closedown",
+        text: "Understand the need to have equipment for the reception of messages on all frequencies and modes in use for transmissions."
+    },
+    {
+        key: "1d.1",
+        level: "full",
+        title: "Apparatus, inspection and closedown",
+        text: "Understand the role of Ofcom in cases of Undue Interference."
     },
     {
         key: "1d.2",
@@ -193,9 +235,33 @@ const syllabusItems = [
     },
     {
         key: "1g.1",
+        level: "foundation",
+        title: "Electromagnetic fields",
+        text: "Recall the (1) purpose of basic EMF restrictions (2) equipment to which the EMF restrictions apply (3) transmit power level at which the EMF restrictions apply (4) persons to which the EMF restrictions apply (5) need to keep a record of assessments carried out. Note: See also 8D1. The record includes a justification of why no further action is required if that is the case (e.g. power levels are below the threshold)"
+    },
+    {
+        key: "1g.1",
         level: "intermediate",
         title: "Electromagnetic fields",
         text: "Recall (1) the average and peak transmit power level at which the EMF restrictions apply; (2) when there is a need to reassess EMFcompliance."
+    },
+    {
+        key: "1g.1",
+        level: "full",
+        title: "Electromagnetic fields",
+        text: "Understand relevant information in the licence: (1) Origin of the EMF restrictions(ICNIRP) (2) Meaning of the term ‘general public’;(3) Areas in which the general public need to be protected from EMF in breach of the limits (4) Records of EMF assessment (5) Procedure for carrying out an EMF assessment (6) Emergency situations."
+    },
+    {
+        key: "1h.1",
+        level: "foundation",
+        title: "Licence Schedule",
+        text: "Identify relevant information in Schedule 1 to the Foundation licence."
+    },
+    {
+        key: "1h.1",
+        level: "foundation",
+        title: "Licence Schedule",
+        text: "Recall the difference between Primary and Secondary status and that other services may also be present with such status in some allocations. A copy of the relevant part of Schedule 1 will be available during the examination."
     },
     {
         key: "1h.1",
@@ -204,6 +270,13 @@ const syllabusItems = [
         text: "Identify relevant information in Schedule 1 to the Intermediate licence. A copy of the relevant part of Schedule 1 will be available during the examination."
     },
     {
+        key: "1h.1",
+        level: "full",
+        title: "Licence Schedule",
+        text: "Identify relevant information in Schedule 1 and Notice of coordination to the Full licence. A copy of the relevant part of Schedule 1 and the Notice of coordination will be available during the examination."
+    },
+    {
+        note: "start here to insert foundation and full page 17 of syllabus 1.6b",
         key: "2a.1",
         level: "intermediate",
         title: "Fundamental theory",
