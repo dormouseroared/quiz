@@ -349,9 +349,12 @@ function showResult() {
         localStorage.setItem("quizHighScore", quizState.score)
     }
 
+    const scorePercent = (quizState.score * 100) / quizState.questionPack.length
+    const scoreFixed = scorePercent.toFixed(1)
+
     resultDiv.innerHTML = `
         <h2>Hurray!! Quiz Completed</h2>
-        <p>Score: ${quizState.score} out of ${quizState.questionPack.length} questions</p>
+        <p>Score: ${quizState.score}/${quizState.questionPack.length} (${scoreFixed}%)</p>
         <p>Highest Score: ${Math.max(quizState.score, highScore)}</p>
         ${quizState.score > highScore ? "<p>Hey, New High Score!</p>" : ""}
         <p>Total number of Questions available: ${quizState.randomQuestions.length} </p>
