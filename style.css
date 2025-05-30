@@ -24,10 +24,10 @@ body {
 }
 
 #question {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: yellow;
     border: yellow 5px solid;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -89,6 +89,7 @@ body {
 #explanation {
     background-color: #4b4b7e;
     text-align: left;
+    font-size: 12px;
 }
 
 #explanation-btn {
@@ -137,6 +138,10 @@ img {
 
 #explanation-btn.tagged {
     background-color: #3cb371;
+}
+
+#explanation-btn.blankExplanation {
+    font-style: italic;
 }
 
 a {

@@ -231,7 +231,7 @@ const syllabusItems = [
         key: "1e.1",
         level: "intermediate",
         title: "unattended and remote control operation",
-        text: "Recall that the licensee may use any communication link for the purposes of Remote Control of their station and must ensure that: (1) any links used for the Remote Control of the Radio Equipment must be adequately secure so as to ensure that no other person is able to control the Radio Equipment; (2) Remote Control links using Amateur Radio frequencies must use frequency bands above 30 MHz and must not be encrypted; (3) transmissions from the Radio Equipment can be terminated promptly; and (4) the Licence Number must be displayed on or next to any unattended Radio Equipment located other than at the address shown in the licence."
+        text: "Recall that the licensee may use any communication link for the purposes of Remote Control of their station and must ensure that: (1) any links used for the Remote Control of the Radio Equipment must be adequately secure so as to ensure that no other person is able to control the Radio Equipment (2) Remote Control links using Amateur Radio frequencies must use frequency bands above 30 MHz and must not be encrypted (3) transmissions from the Radio Equipment can be terminated promptly (4) the Licence Number must be displayed on or next to any unattended Radio Equipment located other than at the address shown in the licence."
     },
     {
         key: "1g.1",
@@ -243,7 +243,7 @@ const syllabusItems = [
         key: "1g.1",
         level: "intermediate",
         title: "Electromagnetic fields",
-        text: "Recall (1) the average and peak transmit power level at which the EMF restrictions apply; (2) when there is a need to reassess EMFcompliance."
+        text: "Recall (1) the average and peak transmit power level at which the EMF restrictions apply (2) when there is a need to reassess EMF compliance."
     },
     {
         key: "1g.1",
@@ -3933,7 +3933,7 @@ const syllabusItems = [
         key: "7h.2",
         level: "full",
         title: "CEPT and international",
-        text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. [[Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only yjose frequencies whivh are both in your licence schedule and allocated internationally in that region.]]",
+        text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. [[Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies whivh are both in your licence schedule and allocated internationally in that region.]]",
         location: "page 8",
         notes: "it is 1f.2 in the manual but the syllabus has been changed"
     },

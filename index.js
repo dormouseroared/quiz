@@ -289,6 +289,14 @@ function loadQuestion() {
         console.log("tagged: false")
         explanationButton.classList.remove("tagged")
     }
+
+    if (q.explanation === "") {
+        console.info("explanation is blank:", q.explanation)
+        explanationButton.classList.add("blankExplanation")
+    } else {
+        console.info("explanation is not blank:", q.explanation)
+        explanationButton.classList.remove("blankExplanation")
+    }
 }
 
 function selectAnswer(index) {
@@ -479,32 +487,33 @@ function shuffleArray2(array) {
     return array
 }
 
+
+/**
+ * Shuffles the options of a question object while maintaining the correct answer reference.
+ *
+ * @param {Object} questionObject - The question object containing options and a correct answer index.
+ * @param {Array} questionObject.options - An array of answer choices.
+ * @param {number} questionObject.correct - The index of the correct answer in the original options array.
+ * @returns {Object} A new question object with shuffled options and an updated correct answer index.
+ */
+
 function shuffleQuestion(questionObject) {
-    console.log("questionObject:", questionObject)
     // Create a copy to avoid modifying the original object directly
     const newQuestion = { ...questionObject }
 
-
     // Shuffle the options array
     const shuffledOptions = shuffleArray2([...newQuestion.options])
-    console.log("shuffledOptions:", shuffledOptions)
 
     // Find the new index of the correct answer
     const correctOptionText = newQuestion.options[newQuestion.correct]
     const newCorrectIndex = shuffledOptions.indexOf(correctOptionText)
-    console.log(correctOptionText, newCorrectIndex)
-
 
     const originalOrder = shuffledOptions.map(option => newQuestion.options.indexOf(option))
-    console.log("originalOrder array", originalOrder)
-
 
     // Update the question object with the shuffled options and new correct index
     newQuestion.options = shuffledOptions
     newQuestion.correct = newCorrectIndex
     newQuestion.originalOrder = originalOrder
-
-    console.log("updated question", newQuestion)
 
     return newQuestion
 }
