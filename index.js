@@ -4,6 +4,8 @@ import W99quiz from "./W99quiz_FULL.js"
 import syllabusItems from "./syllabus.js"
 
 import section from "./sectionFull.js"
+import { validateSyllabusKeysExplicit } from "./validateSyllabusKeysExplicit.js"
+import { shuffleQuestion, findSyllabusItems } from "./shuffleQuestion.js"
 
 const searchForm = document.getElementById("searchForm")
 const questionDiv = document.getElementById("question")
@@ -83,16 +85,15 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     console.log("first object of questions array", W99quiz[0])
     console.log("first object of syllabusItems array", syllabusItems[0])
 
-    let allValid = validateSyllabusKeys(W99quiz, syllabusItems)
-    console.log("Have all questions had their syllabus keys validated?", allValid) // true if all syllabus keys match, false otherwise
+    // try this version instead of validateSyllabusKeys to avoid use of every and some
+    console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
+    const allValidSyllabusKeys = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
+    console.log("Have all questions had their syllabus keys validated?", allValidSyllabusKeys) // true if all syllabus keys match, false otherwise
 
     let missingKeys = findMissingSyllabusKeys(W99quiz, syllabusItems)
 
     console.log("question syllabus keys missing from syllabusItems", missingKeys) // Output: ["3c.4"]
-
-
-    // throw new Error("STOP")
-
+    console.groupEnd("CHECK EACH QUESTION HAS A VALID SYLLABUS")
 
     quizState.randomQuestions = shuffleArray([...W99quiz])
 
@@ -116,7 +117,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
         quizState.questionPack = quizState.randomQuestions.slice(0, 46)
     } else if (quizState.searchType === "tagged") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.tagged === true)
-    } else if (quizState.searchType === "week") {
+    } else if (quizState.searchType === "source") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.source.includes(quizState.searchValue))
     } else if (quizState.searchType === "question") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.question.toLowerCase().includes(quizState.searchValue.toLowerCase()))
@@ -124,33 +125,14 @@ document.getElementById("searchForm").addEventListener("submit", function (event
         throw new Error("Search used is not yet available")
     }
 
-    // console.log("questionPack should contain something:", questionPack.length)
-    // const questions = [...filteredQuestions]
-
     if (quizState.questionPack.length === 0) {
         throw new Error("Search found no data matching the filter provided")
     }
 
-    // let brandNew = quizState.questionPack.map(shuffleArrayWithCorrectIndex)
-
-    // console.log(brandNew)
-
-
-
-    // this is the new code to shuffle the options and update the correct index
-    // const shuffledQuestionsArray = quizState.questionPack.map(question => shuffleQuestion(question))
     const shuffledQuestionsArray = quizState.questionPack.map(shuffleQuestion)
-
-    console.log("Shuffled Array of Questions:", shuffledQuestionsArray)
-
-    // throw new Error("STOP HERE")
 
     quizState.questionPack = [...shuffledQuestionsArray]
 
-
-    // try the new shuffled data
-
-    // console.log("at this point we have some data to work with so we can continue with the setup")
     nextQuestionButton.style.display = "inline-block"
     explanationButton.style.display = "inline-block"
     syllabusDiv.style.display = "inline-block"
@@ -173,11 +155,9 @@ document.getElementById("searchForm").addEventListener("submit", function (event
         { correct: 0, incorrect: 0 },
     ]
 
-    myDebug("search: before loadQuestion()")
 
     loadQuestion()
 
-    myDebug("search: after loadQuestion()")
 })
 
 myDebug("startup completed: now waiting for Search to be clicked")
@@ -215,8 +195,8 @@ function shuffleArray(array) {
  * for the first time at the conclusion of pressing the Search button
  * and then when Next Question button is clicked (if more questions)
  */
-
 function loadQuestion() {
+    console.group("loadQuestion")
     myDebug("loadQuestion(): start")
     const q = quizState.questionPack[quizState.currentQuestion]
     const qLength = quizState.questionPackLength
@@ -243,7 +223,7 @@ function loadQuestion() {
     syllabusDiv.title = q.syllabus
 
     let matchingItems = findSyllabusItems(syllabusItems, q.syllabus.slice(0, 4))
-    console.log(q.syllabus, q.syllabus.slice(0, 4), matchingItems)
+    console.log("search for matching syllabus items:", q.syllabus, q.syllabus.slice(0, 4), matchingItems)
 
     if (matchingItems.length === 0) {
         throw new Error("no syllabus items found")
@@ -253,7 +233,7 @@ function loadQuestion() {
 
     matchingItems.forEach(item => {
         let p = document.createElement("p")
-        p.textContent = item.text // Add syllabus text
+        p.textContent = `${item.level}: ${item.text}` // Add syllabus text
         syllabusItemsDiv.appendChild(p)
     })
 
@@ -297,9 +277,11 @@ function loadQuestion() {
         console.info("explanation is not blank:", q.explanation)
         explanationButton.classList.remove("blankExplanation")
     }
+    console.groupEnd("loadQuestion")
 }
 
 function selectAnswer(index) {
+    console.group("selectAnswer")
     myDebug("selectAnswer(index): start")
     const q = quizState.questionPack[quizState.currentQuestion]
     const buttons = document.querySelectorAll(".option-btn")
@@ -333,6 +315,7 @@ function selectAnswer(index) {
     explanationButton.disabled = false
 
     myDebug("selectAnswer(index): end")
+    console.groupEnd("selectAnswer")
 }
 
 
@@ -361,7 +344,7 @@ function showResult() {
     const scoreFixed = scorePercent.toFixed(1)
 
     resultDiv.innerHTML = `
-        <h2>Hurray!! Quiz Completed</h2>
+        <h2>Full Licence: Quiz Completed</h2>
         <p>Score: ${quizState.score}/${quizState.questionPack.length} (${scoreFixed}%)</p>
         <p>Highest Score: ${Math.max(quizState.score, highScore)}</p>
         ${quizState.score > highScore ? "<p>Hey, New High Score!</p>" : ""}
@@ -381,11 +364,13 @@ function showResult() {
 }
 
 function logWrongAnswer(index, q) {
+    console.group("LOGWRONGANSWER")
     console.log("logging wrong answer", index, q, typeof (q))
     q.wrong = index
     quizState.wrongAnswers.push(q)
+    console.table("wrongAnswers", quizState.wrongAnswers)
     myDebug("logWrongAnswer(index, q)")
-
+    console.groupEnd("LOGWRONGANSWER")
 }
 
 function saveWrongAnswers() {
@@ -476,59 +461,27 @@ function displaySyllabusScoresFlex(scores) {
 }
 
 
-function shuffleArray2(array) {
-    let currentIndex = array.length, randomIndex
-    while (currentIndex != 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex)
-        currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]]
-    }
-    return array
-}
+
 
 
 /**
- * Shuffles the options of a question object while maintaining the correct answer reference.
+ * Validates that every quiz question is associated with at least one matching syllabus item.
  *
- * @param {Object} questionObject - The question object containing options and a correct answer index.
- * @param {Array} questionObject.options - An array of answer choices.
- * @param {number} questionObject.correct - The index of the correct answer in the original options array.
- * @returns {Object} A new question object with shuffled options and an updated correct answer index.
+ * This function iterates through each quiz question and checks if the first four characters
+ * of its `syllabus` property match the `key` property of any syllabus item.
+ *
+ * @param {Array<Object>} quizQuestions - An array of quiz question objects.
+ * Each question object is expected to have a `syllabus` string property (e.g., { syllabus: "2g.1 & 4g.2", ... }).
+ * @param {Array<Object>} syllabusItems - An array of syllabus item objects.
+ * Each syllabus item object is expected to have a `key` string property (e.g., { key: "RSGB", ... }).
+ * @returns {boolean} - `true` if all quiz questions have a matching syllabus key; otherwise, `false`.
  */
-
-function shuffleQuestion(questionObject) {
-    // Create a copy to avoid modifying the original object directly
-    const newQuestion = { ...questionObject }
-
-    // Shuffle the options array
-    const shuffledOptions = shuffleArray2([...newQuestion.options])
-
-    // Find the new index of the correct answer
-    const correctOptionText = newQuestion.options[newQuestion.correct]
-    const newCorrectIndex = shuffledOptions.indexOf(correctOptionText)
-
-    const originalOrder = shuffledOptions.map(option => newQuestion.options.indexOf(option))
-
-    // Update the question object with the shuffled options and new correct index
-    newQuestion.options = shuffledOptions
-    newQuestion.correct = newCorrectIndex
-    newQuestion.originalOrder = originalOrder
-
-    return newQuestion
-}
-
-
-function findSyllabusItems(syllabusItems, key) {
-    return syllabusItems.filter(item => item.key === key)
-}
-
-
 function validateSyllabusKeys(quizQuestions, syllabusItems) {
     return quizQuestions.every(question =>
         syllabusItems.some(item => item.key === question.syllabus.slice(0, 4))
     )
 }
+
 
 
 function findMissingSyllabusKeys(quizQuestions, syllabusItems) {

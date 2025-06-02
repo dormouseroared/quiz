@@ -238,20 +238,118 @@ const EXAM_SECRETS_SAMPLES = [
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1h.1"
     },
-    // {
-    //     source: "Exam Secrets Samples Q___________",
-    //     question: "",
-    //     options: [
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //     ],
-    //     correct: 0,
-    //     explanation: "",
-    //     lookup: "See page(s) x of the Full Licence text book",
-    //     syllabus: "0"
-    // },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q1",
+        question: "A potential divider uses two 1KΩ resistors to obtain a bias voltage from the supply. The two resistors are colour coded brown, black, red, silver, indicating they are 10% tolerance. How far out might the bias voltage be?",
+        options: [
+            "0%",
+            "5%",
+            "10%",
+            "20%",
+        ],
+        correct: 2,
+        explanation: "The error in the bias voltage will still be 10%. This may be shown by calculation using limit values, say 900Ω and 1100Ω. V(out) = V(in) * 900/2000 = V(in) * 0.45 which is 10% different to 0.5 expected.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2a.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q2",
+        question: "Two resistors are connected in parallel, 20 kΩ and 30 kΩ. They are connected in series with an 8 kΩ resistor. The effective resistance of the combination is:",
+        options: [
+            "12 kΩ",
+            "20 kΩ",
+            "28 kΩ",
+            "33 kΩ",
+        ],
+        correct: 1,
+        explanation: "The 20 kΩ and 30 kΩ resistors in parallel have a resistance of (20 x 30)/(20 + 30) which is 12 kΩ. In series with 8 kΩ gives 20 kΩ.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2b.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q3",
+        question: "What current is drawn from the power supply in the circuit diagram?  <br><br><img src='images/secrets-tech-q3.png' alt='test'  >",
+        options: [
+            "10mA",
+            "11.8mA",
+            "15mA",
+            "18.5mA",
+        ],
+        correct: 0,
+        explanation: "At first glance, this circuit is neither series nor parallel and cannot be solved by the normal means. However, further inpection shows that the voltages at each end of the 2 kΩ resistor are equal, so no current will pass through it. We can simply remove it, or replace it with a piece of wire, it will make no difference.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2b.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q4",
+        question: "What power is dissipated in the 1 kΩ resistor in the circuit diagram?  <br><br><img src='images/secrets-tech-q4.png' alt='test'  >",
+        options: [
+            "14mW",
+            "19mW",
+            "25mW",
+            "225mW",
+        ],
+        correct: 0,
+        explanation: "See Technical Basics Q3 for how to handle the 2 kΩ resistor. Then in the left pair of resistors, it is 15V across 4 kΩ so current is 3.75 mA and power = IV or I squared * R which is 3.75/1000 * 3.7/1000 * 1000 or 14 mA. Or, voltage divide 15V across 1 and 3 giving 3.75V and power = VI = V squared / R and if time permits confirm by doing it both ways.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2b.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q5",
+        question: "A radio receiver is reading S9 on its scale, which the handbook says is an input of 50 µV PD RMS. In 50Ω this represents an input power of:",
+        options: [
+            "0.05pW",
+            "50pW",
+            "1nW",
+            "50µW",
+        ],
+        correct: 1,
+        explanation: "power = voltage squared / resistance",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2b.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q6",
+        question: "The audio signal from a computer soundcard is 100mV, and must be reduced to 10mV to connect to the transmitter. A potential divider is used with a 10 kΩ resistor connected between the soundcard output and the transmitter microphone input. The resistor between the microphone input and earth should be:",
+        options: [
+            "900 Ω",
+            "1.0 kΩ",
+            "1.1 kΩ",
+            "10 kΩ",
+        ],
+        correct: 2,
+        explanation: "The voltage divider will have resistors in the ratio 9:1 with the smallest one giving 1/10 and the larger one giving 9/10.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q7",
+        question: "A trimmer capacitor consists of five foils connected to the body of the device and four foils loosely interleaved between them with a thin insulation to prevent contact. It is adjusted so the spacing is, on average, halved. The capacitance will:",
+        options: [
+            "halve",
+            "reduce to about 70%",
+            "increase by about 40%",
+            "double",
+        ],
+        correct: 3,
+        explanation: "The formula sheet gives the capacitance as C=kA/d where A is the area of the plates and d their separation. If d is halved the capacitance will double.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q_______________",
+        question: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
 ]
 
 export default EXAM_SECRETS_SAMPLES
