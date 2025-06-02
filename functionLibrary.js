@@ -395,7 +395,7 @@ function displaySyllabusScoresFlex(scores) {
         const total = score.correct + score.incorrect
         const percentage = total > 0 ? ((score.correct / total) * 100).toFixed(1) : 0
         const syllabusName = section && section[index] && section[index].name
-            ? section[index].name
+            ? `${section[index].id}. ${section[index].name}`
             : `Syllabus ${index}`
 
         const row = document.createElement("div")
