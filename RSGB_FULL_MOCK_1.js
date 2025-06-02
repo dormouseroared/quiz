@@ -799,7 +799,7 @@ const RSGB_FULL_MOCK_1 = [
     },
     {
         source: "RSGB Full Mock 1 Q58",
-        question: "A home-made transmitter uses a crystal at 3.5MHz multiplied up to 28MHz. The crystal is specified as 0.5ppm per degree C. At switch on the room is at18C but inside the transmitter case is 36C when warmed up. By how much willthe transmitted frequency vary in that time?",
+        question: "A home-made transmitter uses a crystal at 3.5MHz multiplied up to 28MHz. The crystal is specified as 0.5 ppm per degree C. At switch on the room is at 18C but inside the transmitter case is 36C when warmed up. By how much will the transmitted frequency vary in that time?",
         options: [
             "252Hz",
             "32Hz",

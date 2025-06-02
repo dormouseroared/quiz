@@ -6,7 +6,7 @@ import { section } from "./functionLibrary.js"
 
 import W99quiz from "./W99quiz_FULL.js"
 
-import syllabusItems from "./syllabus.js"
+import syllabusItems from "./syllabusItems.js"
 
 nextQuestionButton.style.display = "none"
 explanationButton.style.display = "none"

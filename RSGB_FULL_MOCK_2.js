@@ -807,7 +807,7 @@ const RSGB_FULL_MOCK_2 = [
             "200mV",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "Lowest voltage in R2 is when R1 is increased by 10% and R2 is decreased by 10%. So, R2 gets 10V x 1.8/(1.8 + 8.8) which comes to 1.7V, so the answer is 300mV.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2a.1"
     },
