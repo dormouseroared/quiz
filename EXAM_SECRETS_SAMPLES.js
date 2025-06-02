@@ -337,7 +337,77 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2d.1"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q_______________",
+        source: "Exam Secrets Samples FULL Technical Basics Q8",
+        question: "A 1 µF and a 2 µF capacitor are connected in series. The two open ends are then connected to a 30V supply charging the two capacitors. What is the voltage across the 2 µF capacitor?",
+        options: [
+            "10V",
+            "15V",
+            "20V",
+            "30V",
+        ],
+        correct: 0,
+        explanation: "The relevant formula is C (Farads) = Q (Coulombs) / V (Volts). So, V = Q/C which means small C gives big V, and 20V on 1µF with 10V on 2µF. Formally 1/C = 1/1 + 1/2 so Total Capacitance is 0.667 µF. Total Charge Q = CV =30 X 0.667 = 20 µC. Then Voltage on 2µF is 20µC/2µF = 10V",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.1"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q",
+        question: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q",
+        question: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q",
+        question: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q",
+        question: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q__________",
         question: "",
         options: [
             "",

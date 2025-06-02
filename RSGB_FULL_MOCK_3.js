@@ -673,7 +673,7 @@ const RSGB_FULL_MOCK_3 = [
     },
     {
         source: "RSGB Full Mock 3 Q49",
-        question: "The recommended maximum bandwidth on 73.5kHz is:",
+        question: "The recommended maximum bandwidth on 473.5kHz is:",
         options: [
             "3kHz",
             "1.5kHz",
