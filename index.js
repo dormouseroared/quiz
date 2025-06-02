@@ -89,16 +89,22 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
     } else if (quizState.searchType === "46questions") {
         quizState.questionPack = quizState.randomQuestions.slice(0, 46)
+
     } else if (quizState.searchType === "58questions") {
         quizState.questionPack = quizState.randomQuestions.slice(0, 58)
+
     } else if (quizState.searchType === "10questions") {
         quizState.questionPack = quizState.randomQuestions.slice(0, 10)
+
     } else if (quizState.searchType === "tagged") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.tagged === true)
+
     } else if (quizState.searchType === "source") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.source.includes(quizState.searchValue))
+
     } else if (quizState.searchType === "question") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.question.toLowerCase().includes(quizState.searchValue.toLowerCase()))
+
     } else {
         throw new Error("Search used is not yet available")
     }
