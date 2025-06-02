@@ -1,4 +1,4 @@
-import syllabusItems from "./syllabus.js"
+import syllabusItems from "./syllabusItems.js"
 
 const questionDiv = document.getElementById("question")
 const searchForm = document.getElementById("searchForm")
