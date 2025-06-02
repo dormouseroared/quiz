@@ -60,12 +60,13 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     console.info("first object of syllabusItems array", syllabusItems[0])
 
     // try this version instead of validateSyllabusKeys to avoid use of every and some
-    const allValidSyllabusKeys = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
-    console.log("Have all questions had their syllabus keys validated?", allValidSyllabusKeys) // true if all syllabus keys match, false otherwise
+    const areSyllabusKeysValid = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
 
-    let missingKeys = findMissingSyllabusKeys(W99quiz, syllabusItems)
+    console.log("Have all questions had their syllabus keys validated?", areSyllabusKeysValid) // true if all syllabus keys match, false otherwise
 
-    console.log("question syllabus keys missing from syllabusItems", missingKeys) // Output: ["3c.4"]
+    const missingKeysArray = findMissingSyllabusKeys(W99quiz, syllabusItems)
+
+    console.log("question syllabus keys missing from syllabusItems", missingKeysArray) // Output: ["3c.4"]
     console.groupEnd("CHECK EACH QUESTION HAS A VALID SYLLABUS")
 
     quizState.randomQuestions = shuffleArray([...W99quiz])
@@ -90,6 +91,8 @@ document.getElementById("searchForm").addEventListener("submit", function (event
         quizState.questionPack = quizState.randomQuestions.slice(0, 46)
     } else if (quizState.searchType === "58questions") {
         quizState.questionPack = quizState.randomQuestions.slice(0, 58)
+    } else if (quizState.searchType === "10questions") {
+        quizState.questionPack = quizState.randomQuestions.slice(0, 10)
     } else if (quizState.searchType === "tagged") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.tagged === true)
     } else if (quizState.searchType === "source") {
