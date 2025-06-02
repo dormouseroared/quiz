@@ -2,7 +2,6 @@
 import { validateSyllabusKeysExplicit } from "./functionLibrary.js"
 import { shuffleQuestion, myDebug, clearQuizState, quizState, findMissingSyllabusKeys, shuffleArray, loadQuestion } from "./functionLibrary.js"
 import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
-import { section } from "./functionLibrary.js"
 
 import W99quiz from "./W99quiz_FULL.js"
 
@@ -56,11 +55,11 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     // check that each question has a valid syllabus
     // note that some questions have syllabus items like '1a.1 & 2a.2' but only the first 4 characters are used
     // the STOP is commented out when things are OK 
-    console.log("first object of questions array", W99quiz[0])
-    console.log("first object of syllabusItems array", syllabusItems[0])
+    console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
+    console.info("first object of questions array", W99quiz[0])
+    console.info("first object of syllabusItems array", syllabusItems[0])
 
     // try this version instead of validateSyllabusKeys to avoid use of every and some
-    console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
     const allValidSyllabusKeys = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
     console.log("Have all questions had their syllabus keys validated?", allValidSyllabusKeys) // true if all syllabus keys match, false otherwise
 
