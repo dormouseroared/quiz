@@ -89,6 +89,8 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
     } else if (quizState.searchType === "46questions") {
         quizState.questionPack = quizState.randomQuestions.slice(0, 46)
+    } else if (quizState.searchType === "58questions") {
+        quizState.questionPack = quizState.randomQuestions.slice(0, 58)
     } else if (quizState.searchType === "tagged") {
         quizState.questionPack = quizState.randomQuestions.filter(q => q.tagged === true)
     } else if (quizState.searchType === "source") {
