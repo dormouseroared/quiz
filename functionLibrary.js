@@ -93,7 +93,13 @@ export function validateSyllabusKeysExplicit(quizQuestions, syllabusItems) {
  */
 export function shuffleQuestion(questionObject) {
     // Create a copy to avoid modifying the original object directly
-    const newQuestion = { ...questionObject }
+    // as this parameter id passed by reference so still refers 
+    // to the object in the original array
+
+    // spread operator is only for shallow copies
+
+    // const newQuestion = { ...questionObject }
+    const newQuestion = structuredClone(questionObject)
 
     // Shuffle the options array
     const shuffledOptions = shuffleArray2([...newQuestion.options])
@@ -415,7 +421,7 @@ function displaySyllabusScoresFlex(scores) {
 
         const percentageDiv = document.createElement("div")
         percentageDiv.className = "score-percentage"
-        percentageDiv.textContent = percentage > 0 ? (`${percentage}%`) : ` `
+        percentageDiv.textContent = total > 0 ? (`${percentage}%`) : ` `
 
         row.append(nameDiv, valueDiv, value2Div, percentageDiv)
         syllabusScoreDiv.appendChild(row)
