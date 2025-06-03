@@ -413,11 +413,11 @@ function displaySyllabusScoresFlex(scores) {
 
         const valueDiv = document.createElement("div")
         valueDiv.className = "score-value"
-        valueDiv.textContent = score.correct
+        valueDiv.textContent = total > 0 ? score.correct : ``
 
         const value2Div = document.createElement("div")
         value2Div.className = "score-value"
-        value2Div.textContent = score.incorrect
+        value2Div.textContent = total > 0 ? score.incorrect : ``
 
         const percentageDiv = document.createElement("div")
         percentageDiv.className = "score-percentage"
