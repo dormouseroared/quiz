@@ -123,7 +123,8 @@ export function findSyllabusItems(syllabusItems, key) {
 }
 
 function shuffleArray2(array) {
-    let currentIndex = array.length, randomIndex
+    let currentIndex = array.length
+    let randomIndex
     while (currentIndex != 0) {
         randomIndex = Math.floor(Math.random() * currentIndex)
         currentIndex--;
@@ -308,7 +309,7 @@ export function showResult() {
         localStorage.setItem("quizHighScore", quizState.score)
     }
 
-    const scorePercent = (quizState.score * 100) / quizState.questionPack.length
+    const scorePercent = (quizState.score * 100) / quizState.questionPackLength
     const scoreFixed = scorePercent.toFixed(1)
 
     resultDiv.innerHTML = `
@@ -358,13 +359,14 @@ export function myDebug(location) {
 
 export function clearQuizState() {
     quizState.currentQuestion = null
+    quizState.questionPack = null
+    quizState.questionPackLength = null
+    quizState.randomQuestions = null
     quizState.score = null
-    quizState.wrongAnswers = null
     quizState.searchType = null
     quizState.searchValue = null
-    quizState.randomQuestions = null
-    quizState.questionPack = null
     quizState.syllabusScore = null
+    quizState.wrongAnswers = null
 }
 
 function displaySyllabusScoresFlex(scores) {

@@ -16,7 +16,7 @@ nextQuestionButton.addEventListener("click", (event) => {
     myDebug("Next Question clicked")
     explanationDiv.innerHTML = ""
     quizState.currentQuestion++
-    if (quizState.currentQuestion < quizState.questionPack.length) {
+    if (quizState.currentQuestion < quizState.questionPackLength) {
         loadQuestion()
     } else {
         showResult()
