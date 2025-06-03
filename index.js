@@ -3,7 +3,7 @@ import { validateSyllabusKeysExplicit } from "./functionLibrary.js"
 import { shuffleQuestion, myDebug, clearQuizState, quizState, findMissingSyllabusKeys, shuffleArray, loadQuestion } from "./functionLibrary.js"
 import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
 
-import W99quiz from "./W99quiz_FULL.js"
+import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 
 import syllabusItems from "./syllabusItems.js"
 
