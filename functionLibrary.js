@@ -176,7 +176,7 @@ export function shuffleArray(array) {
  */
 export function loadQuestion() {
     console.group("loadQuestion")
-    myDebug("loadQuestion(): start")
+    myDebug("loadQuestion(): start", quizState)
     const q = quizState.questionPack[quizState.currentQuestion]
     const qLength = quizState.questionPackLength
 
@@ -261,7 +261,7 @@ export function loadQuestion() {
 
 function selectAnswer(index) {
     console.group("selectAnswer")
-    myDebug("selectAnswer(index): start")
+    myDebug("selectAnswer(index): start", quizState)
     const q = quizState.questionPack[quizState.currentQuestion]
     const buttons = document.querySelectorAll(".option-btn")
 
@@ -274,7 +274,7 @@ function selectAnswer(index) {
     }
 
     if (index === q.correct) {
-        myDebug("selectAnswer: correct")
+        myDebug("selectAnswer: correct", quizState)
         buttons[index].classList.add("correct")
         quizState.score++
 
@@ -284,7 +284,7 @@ function selectAnswer(index) {
 
         quizState.syllabusScore[q.syllabus[0]].incorrect++
 
-        myDebug("selectAnswer: wrong")
+        myDebug("selectAnswer: wrong", quizState)
         buttons[index].classList.add("wrong")
         buttons[q.correct].classList.add("correct")
         logWrongAnswer(index, q)
@@ -293,7 +293,7 @@ function selectAnswer(index) {
     nextQuestionButton.disabled = false
     explanationButton.disabled = false
 
-    myDebug("selectAnswer(index): end")
+    myDebug("selectAnswer(index): end", quizState)
     console.groupEnd("selectAnswer")
 }
 
@@ -301,7 +301,7 @@ function selectAnswer(index) {
 
 export function showResult() {
 
-    myDebug("showResult(): start")
+    myDebug("showResult(): start", quizState)
 
     nextQuestionButton.style.display = "none"
     explanationButton.style.display = "none"
@@ -348,7 +348,7 @@ function logWrongAnswer(index, q) {
     q.wrong = index
     quizState.wrongAnswers.push(q)
     console.table("wrongAnswers", quizState.wrongAnswers)
-    myDebug("logWrongAnswer(index, q)")
+    myDebug("logWrongAnswer(index, q)", quizState)
     console.groupEnd("LOGWRONGANSWER")
 }
 
@@ -363,7 +363,7 @@ function saveWrongAnswers() {
     URL.revokeObjectURL(url)
 }
 
-export function myDebug(location) {
+export function myDebug(location, quizState) {
     console.log("-----quizState-----", location, quizState)
 }
 
