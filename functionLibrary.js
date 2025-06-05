@@ -367,17 +367,17 @@ export function myDebug(location) {
     console.log("-----quizState-----", location, quizState)
 }
 
-export function clearQuizState() {
-    quizState.currentQuestion = null
-    quizState.questionPack = null
-    quizState.questionPackLength = null
-    quizState.randomQuestions = null
-    quizState.score = null
-    quizState.searchType = null
-    quizState.searchValue = null
-    quizState.syllabusScore = null
-    quizState.wrongAnswers = null
-}
+// export function clearQuizState() {
+//     quizState.currentQuestion = null
+//     quizState.questionPack = null
+//     quizState.questionPackLength = null
+//     quizState.randomQuestions = null
+//     quizState.score = null
+//     quizState.searchType = null
+//     quizState.searchValue = null
+//     quizState.syllabusScore = null
+//     quizState.wrongAnswers = null
+// }
 
 function displaySyllabusScoresFlex(scores) {
     // const syllabusScoreDiv = document.getElementById("syllabusScores")
