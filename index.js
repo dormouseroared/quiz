@@ -1,6 +1,6 @@
 
 import { validateSyllabusKeysExplicit } from "./functionLibrary.js"
-import { shuffleQuestion, myDebug, clearQuizState, quizState, findMissingSyllabusKeys, shuffleArray, loadQuestion } from "./functionLibrary.js"
+import { shuffleQuestion, myDebug, quizState, findMissingSyllabusKeys, shuffleArray, loadQuestion } from "./functionLibrary.js"
 import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
@@ -37,9 +37,9 @@ explanationButton.addEventListener("click", () => {
 document.getElementById("searchForm").addEventListener("submit", function (event) {
     console.log("Search Button clicked! Event triggered by:", event.currentTarget.id)
     event.preventDefault()
-    myDebug("Search before clearQuizState()")
-    clearQuizState()
-    myDebug("Search after clearQuizState()")
+    // myDebug("Search before clearQuizState()")
+    // clearQuizState()
+    // myDebug("Search after clearQuizState()")
 
     quizState.searchType = document.getElementById("searchType").value
     quizState.searchValue = document.getElementById("searchValue").value
@@ -126,18 +126,18 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     quizState.wrongAnswers = []
     quizState.questionPackLength = quizState.questionPack.length
 
-    quizState.syllabusScore = [
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-    ]
+    // quizState.syllabusScore = [
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    // ]
 
 
     loadQuestion()
