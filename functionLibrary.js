@@ -30,10 +30,10 @@ export const section = [
 
 
 export const quizState = {
-    currentQuestion: null,
+    currentQuestion: 0,
     questionPack: null,
     randomQuestions: null,
-    score: null,
+    score: 0,
     searchType: null,
     searchValue: null,
     syllabusScore: [
@@ -48,7 +48,7 @@ export const quizState = {
         { correct: 0, incorrect: 0 },
         { correct: 0, incorrect: 0 },
     ],
-    wrongAnswers: null,
+    wrongAnswers: [],
 }
 /**
  * Validates that every quiz question is associated with at least one matching syllabus item.
