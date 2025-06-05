@@ -36,10 +36,20 @@ export const quizState = {
     score: null,
     searchType: null,
     searchValue: null,
-    syllabusScore: null,
+    syllabusScore: [
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+        { correct: 0, incorrect: 0 },
+    ],
     wrongAnswers: null,
 }
-
 /**
  * Validates that every quiz question is associated with at least one matching syllabus item.
  *
