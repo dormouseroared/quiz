@@ -13,7 +13,7 @@ syllabusDiv.style.display = "none"
 
 nextQuestionButton.addEventListener("click", (event) => {
     console.log("Next Question clicked! Event triggered by:", event.currentTarget.id)
-    myDebug("Next Question clicked")
+    myDebug("Next Question clicked", quizState)
     explanationDiv.innerHTML = ""
     quizState.currentQuestion++
     if (quizState.currentQuestion < quizState.questionPackLength) {
@@ -144,7 +144,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
 })
 
-myDebug("startup completed: now waiting for Search to be clicked")
+myDebug("startup completed: now waiting for Search to be clicked", quizState)
 
 // functions start here
 
