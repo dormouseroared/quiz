@@ -116,15 +116,15 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     const shuffledQuestionsArray = quizState.questionPack.map(shuffleQuestion)
 
     quizState.questionPack = [...shuffledQuestionsArray]
+    quizState.questionPackLength = quizState.questionPack.length
 
     nextQuestionButton.style.display = "inline-block"
     explanationButton.style.display = "inline-block"
     syllabusDiv.style.display = "inline-block"
 
-    quizState.currentQuestion = 0
-    quizState.score = 0
-    quizState.wrongAnswers = []
-    quizState.questionPackLength = quizState.questionPack.length
+    // quizState.currentQuestion = 0
+    // quizState.score = 0
+    // quizState.wrongAnswers = []
 
     // quizState.syllabusScore = [
     //     { correct: 0, incorrect: 0 },
