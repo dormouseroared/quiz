@@ -226,6 +226,13 @@ export function loadQuestion(quizState) {
 
     optionsDiv.innerHTML = ""
 
+    //  C L O S U R E         I N          A C T I O N
+    // each iteration is a new scope (execution context) in which
+    // option and index are defined for that specific iteration
+    // an anonymous function is created, but does not run until
+    // an answer button is clicked much later. The anon function
+    // closes over (remembers) the value of index, even though the forEach
+    // is long completed.
     q.options.forEach((option, index) => {
 
         if (option === "") {
@@ -236,7 +243,10 @@ export function loadQuestion(quizState) {
         btn.classList.add("option-btn")
         btn.textContent = option
         btn.title = q.originalOrder[index]
-        btn.addEventListener("click", () => selectAnswer(index))
+        btn.addEventListener("click", () => {
+            console.log("loadQuestion closure as event listener created for index:", index)
+            selectAnswer(index)
+        })
         optionsDiv.appendChild(btn)
 
     })
