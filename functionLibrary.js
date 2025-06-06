@@ -174,16 +174,22 @@ export function shuffleArray(array) {
  * for the first time at the conclusion of pressing the Search button
  * and then when Next Question button is clicked (if more questions)
  */
-export function loadQuestion() {
+export function loadQuestion(quizState) {
+
     console.group("loadQuestion")
+
     myDebug("loadQuestion(): start", quizState)
+
+    // 
+    // Section: SETUP
+    // 
+
     const q = quizState.questionPack[quizState.currentQuestion]
     const qLength = quizState.questionPackLength
 
-    questionDiv.innerHTML = `Q${quizState.currentQuestion + 1}/${qLength}. ${q.question}`
-    questionDiv.title = q.source
-
-    optionsDiv.innerHTML = ""
+    // 
+    // Section: SYLLABUS HEADING
+    // 
 
     if (q.syllabus === "") {
         console.log("Syllabus field in question has a problem", q.syllabus)
@@ -197,31 +203,27 @@ export function loadQuestion() {
         throw new Error("syllabus[0] fails the regex test")
     }
 
-
     syllabusDiv.textContent = `${section[q.syllabus[0]].id}. ${section[q.syllabus[0]].name} (${section[q.syllabus[0]].questions} exam questions)`
     syllabusDiv.title = q.syllabus
 
-    let matchingItems = findSyllabusItems(syllabusItems, q.syllabus.slice(0, 4))
-    console.log("search for matching syllabus items:", q.syllabus, q.syllabus.slice(0, 4), matchingItems)
+    // 
+    // Section: QUESTION
+    // Q1/58. How many beans make five?
+    // 
 
-    if (matchingItems.length === 0) {
-        throw new Error("no syllabus items found")
-    }
+    questionDiv.innerHTML = `Q${quizState.currentQuestion + 1}/${qLength}. ${q.question}`
+    questionDiv.title = q.source
 
-    syllabusItemsDiv.innerHTML = ""
 
-    matchingItems.forEach(item => {
-        let p = document.createElement("p")
-        p.textContent = `${item.level}: ${item.text}` // Add syllabus text
-        syllabusItemsDiv.appendChild(p)
-    })
-
+    // 
+    // Section: CREATE A BUTTON FOR EACH ANSWER OPTION
+    // 
 
     if (q.options.length !== 4) {
         throw new Error("loadQuestion: should be 4 options")
     }
-    // const original = q.originalOrder
-    // console.log("original", original)
+
+    optionsDiv.innerHTML = ""
 
     q.options.forEach((option, index) => {
 
@@ -237,6 +239,10 @@ export function loadQuestion() {
         optionsDiv.appendChild(btn)
 
     })
+
+    //
+    // Section: EXPLANATION AND NEXT QUESTION BUTTONS
+    // 
 
     nextQuestionButton.disabled = true
     explanationButton.disabled = true
@@ -256,6 +262,30 @@ export function loadQuestion() {
         console.info("explanation is not blank:", q.explanation)
         explanationButton.classList.remove("blankExplanation")
     }
+
+    // 
+    // Section: SYLLABUS ITEMS
+    // 
+
+    let matchingItems = findSyllabusItems(syllabusItems, q.syllabus.slice(0, 4))
+    console.log("search for matching syllabus items:", q.syllabus, q.syllabus.slice(0, 4), matchingItems)
+
+    if (matchingItems.length === 0) {
+        throw new Error("no syllabus items found")
+    }
+
+    syllabusItemsDiv.innerHTML = ""
+
+    matchingItems.forEach(item => {
+        let p = document.createElement("p")
+        p.textContent = `${item.level}: ${item.text}` // Add syllabus text
+        syllabusItemsDiv.appendChild(p)
+    })
+
+    // 
+    // Section: CLOSE DOWN
+    // 
+
     console.groupEnd("loadQuestion")
 }
 
