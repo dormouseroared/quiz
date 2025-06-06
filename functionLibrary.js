@@ -189,6 +189,7 @@ export function loadQuestion(quizState) {
 
     // 
     // Section: SYLLABUS HEADING
+    // 1. Licensing Conditions (7 exam questions)
     // 
 
     if (q.syllabus === "") {
