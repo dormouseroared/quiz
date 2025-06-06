@@ -140,7 +140,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     // ]
 
 
-    loadQuestion()
+    loadQuestion(quizState)
 
 })
 
