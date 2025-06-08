@@ -203,3 +203,9 @@ ul {
     margin-left: 0;
     list-style-position: inside;
 }
+
+#version {
+    color: green;
+    font-style: italic;
+    font-size: 12px;
+}
