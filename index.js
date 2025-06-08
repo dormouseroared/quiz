@@ -15,7 +15,9 @@ nextQuestionButton.addEventListener("click", (event) => {
     console.log("Next Question clicked! Event triggered by:", event.currentTarget.id)
     myDebug("Next Question clicked", quizState)
     explanationDiv.innerHTML = ""
+
     quizState.currentQuestion++
+
     if (quizState.currentQuestion < quizState.questionPackLength) {
         loadQuestion()
     } else {
@@ -34,7 +36,7 @@ explanationButton.addEventListener("click", () => {
 })
 
 
-document.getElementById("searchForm").addEventListener("submit", function (event) {
+searchForm.addEventListener("submit", function (event) {
     console.log("Search Button clicked! Event triggered by:", event.currentTarget.id)
     event.preventDefault()
     // myDebug("Search before clearQuizState()")
@@ -43,7 +45,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
     quizState.searchType = document.getElementById("searchType").value
     quizState.searchValue = document.getElementById("searchValue").value
-
+    // TODO: review and delete comments and old code
     // console.log("searchType and searchValue:", searchType, searchValue)
 
     // let questions = [...W11quiz, ...W12quiz].sort(() => Math.random() - 0.5)
@@ -55,6 +57,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
     // check that each question has a valid syllabus
     // note that some questions have syllabus items like '1a.1 & 2a.2' but only the first 4 characters are used
     // the STOP is commented out when things are OK 
+    // TODO:this whole section might be a good candidate as a separate function e.g. syllabusCheck
     console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
     console.info("first object of questions array", W99quiz[0])
     console.info("first object of syllabusItems array", syllabusItems[0])
@@ -71,6 +74,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
     quizState.randomQuestions = shuffleArray([...W99quiz])
 
+    // KEY: convert the searchType into selected questions
     if (quizState.searchType === "") {
         console.log("searchType: No Filter (Show All)")
         quizState.questionPack = [...quizState.randomQuestions]

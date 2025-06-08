@@ -175,6 +175,7 @@ export function shuffleArray(array) {
  * and then when Next Question button is clicked (if more questions)
  */
 export function loadQuestion(quizState) {
+    // TODO: probably can remove the quizState parameter
 
     console.group("loadQuestion")
 
@@ -344,10 +345,12 @@ export function showResult() {
 
     myDebug("showResult(): start", quizState)
 
+    // TODO: using searchForm means the whole form is set to display="none" so do we need what comes next?
+    searchForm.style.display = "none"
+
     nextQuestionButton.style.display = "none"
     explanationButton.style.display = "none"
     explanationDiv.style.display = "none"
-    searchForm.style.display = "none"
     syllabusDiv.style.display = "none"
     questionDiv.style.display = "none"
     optionsDiv.style.display = "none"
