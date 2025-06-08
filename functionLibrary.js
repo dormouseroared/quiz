@@ -174,7 +174,7 @@ export function shuffleArray(array) {
  * for the first time at the conclusion of pressing the Search button
  * and then when Next Question button is clicked (if more questions)
  */
-export function loadQuestion(quizState) {
+export function loadQuestion() {
     // TODO: probably can remove the quizState parameter
 
     console.group("loadQuestion")
@@ -346,6 +346,7 @@ export function showResult() {
     myDebug("showResult(): start", quizState)
 
     // TODO: using searchForm means the whole form is set to display="none" so do we need what comes next?
+    // TODO: Yes, we do!
     searchForm.style.display = "none"
 
     nextQuestionButton.style.display = "none"
@@ -381,6 +382,7 @@ export function showResult() {
 
     displaySyllabusScoresFlex(quizState.syllabusScore)
 
+    // TODO: This commented out code is for extra debug
     // const stack = new Error().stack.split("\n").slice(2)
     // console.log("Call stack depth:", stack.length)
     // console.log("Call stack:", stack.join("\n"))
@@ -410,18 +412,6 @@ function saveWrongAnswers() {
 export function myDebug(location, quizState) {
     console.log("-----quizState-----", location, quizState)
 }
-
-// export function clearQuizState() {
-//     quizState.currentQuestion = null
-//     quizState.questionPack = null
-//     quizState.questionPackLength = null
-//     quizState.randomQuestions = null
-//     quizState.score = null
-//     quizState.searchType = null
-//     quizState.searchValue = null
-//     quizState.syllabusScore = null
-//     quizState.wrongAnswers = null
-// }
 
 function displaySyllabusScoresFlex(scores) {
     // const syllabusScoreDiv = document.getElementById("syllabusScores")
