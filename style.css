@@ -197,3 +197,9 @@ a {
     background-color: black;
     color: white;
 }
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+}
