@@ -286,13 +286,29 @@ export function loadQuestion() {
         throw new Error("no syllabus items found")
     }
 
+    // syllabusItemsDiv.innerHTML = ""
+
+    // matchingItems.forEach(item => {
+    //     let p = document.createElement("p")
+    //     p.textContent = `${item.level}: ${item.text}` // Add syllabus text
+    //     syllabusItemsDiv.appendChild(p)
+    // })
+
+    // TODO: replace p with ul and li
+
+    console.log(q.syllabus, "has", matchingItems.length, "items")
+
     syllabusItemsDiv.innerHTML = ""
 
+    const ul = document.createElement("ul")
+
     matchingItems.forEach(item => {
-        let p = document.createElement("p")
-        p.textContent = `${item.level}: ${item.text}` // Add syllabus text
-        syllabusItemsDiv.appendChild(p)
+        const li = document.createElement("li")
+        li.textContent = `${item.key} ${item.level}: ${item.text}` // Add syllabus text
+        ul.appendChild(li)
     })
+
+    syllabusItemsDiv.appendChild(ul)
 
     // 
     // Section: CLOSE DOWN
