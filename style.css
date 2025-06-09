@@ -204,8 +204,13 @@ ul {
     list-style-position: inside;
 }
 
+
 #version {
     color: green;
     font-style: italic;
     font-size: 12px;
+}
+
+.highlightLevel {
+    color: yellow;
 }

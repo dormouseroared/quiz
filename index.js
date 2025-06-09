@@ -60,7 +60,7 @@ searchForm.addEventListener("submit", function (event) {
 
     quizState.randomQuestions = shuffleArray([...W99quiz])
 
-    // KEY: convert the searchType into selected questions
+    // KEY: convert searchType into selected questions
     if (quizState.searchType === "") {
         quizState.questionPack = [...quizState.randomQuestions]
 
