@@ -1,5 +1,5 @@
 
-import { validateSyllabusKeysExplicit } from "./functionLibrary.js"
+import { syllabusCheck, validateSyllabusKeysExplicit } from "./functionLibrary.js"
 import { shuffleQuestion, myDebug, quizState, findMissingSyllabusKeys, shuffleArray, loadQuestion } from "./functionLibrary.js"
 import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
 
@@ -44,19 +44,22 @@ searchForm.addEventListener("submit", function (event) {
     quizState.searchValue = document.getElementById("searchValue").value
 
     // TODO:this whole section might be a good candidate as a separate function e.g. syllabusCheck
-    console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
-    console.info("first object of questions array", W99quiz[0])
-    console.info("first object of syllabusItems array", syllabusItems[0])
 
-    // try this version instead of validateSyllabusKeys to avoid use of every and some
-    const areSyllabusKeysValid = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
+    syllabusCheck()
 
-    console.log("Have all questions had their syllabus keys validated?", areSyllabusKeysValid) // true if all syllabus keys match, false otherwise
+    // console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
+    // console.info("first object of questions array", W99quiz[0])
+    // console.info("first object of syllabusItems array", syllabusItems[0])
 
-    const missingKeysArray = findMissingSyllabusKeys(W99quiz, syllabusItems)
+    // // try this version instead of validateSyllabusKeys to avoid use of every and some
+    // const areSyllabusKeysValid = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
 
-    console.log("question syllabus keys missing from syllabusItems", missingKeysArray) // Output: ["3c.4"]
-    console.groupEnd("CHECK EACH QUESTION HAS A VALID SYLLABUS")
+    // console.log("Have all questions had their syllabus keys validated?", areSyllabusKeysValid) // true if all syllabus keys match, false otherwise
+
+    // const missingKeysArray = findMissingSyllabusKeys(W99quiz, syllabusItems)
+
+    // console.log("question syllabus keys missing from syllabusItems", missingKeysArray) // Output: ["3c.4"]
+    // console.groupEnd("CHECK EACH QUESTION HAS A VALID SYLLABUS")
 
     quizState.randomQuestions = shuffleArray([...W99quiz])
 

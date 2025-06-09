@@ -1,3 +1,5 @@
+import W99quiz from "./fullQuestions/W99quiz_FULL.js"
+
 import syllabusItems from "./syllabusItems.js"
 
 const questionDiv = document.getElementById("question")
@@ -520,4 +522,20 @@ export function findMissingSyllabusKeys(quizQuestions, syllabusItems) {
         .filter(key => !syllabusKeys.includes(key)) // Find missing keys
 
     return missingKeys
+}
+
+export function syllabusCheck() {
+    console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
+    console.info("first object of questions array", W99quiz[0])
+    console.info("first object of syllabusItems array", syllabusItems[0])
+
+    // try this version instead of validateSyllabusKeys to avoid use of every and some
+    const areSyllabusKeysValid = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
+
+    console.log("Have all questions had their syllabus keys validated?", areSyllabusKeysValid) // true if all syllabus keys match, false otherwise
+
+    const missingKeysArray = findMissingSyllabusKeys(W99quiz, syllabusItems)
+
+    console.log("question syllabus keys missing from syllabusItems", missingKeysArray) // Output: ["3c.4"]
+    console.groupEnd("CHECK EACH QUESTION HAS A VALID SYLLABUS")
 }
