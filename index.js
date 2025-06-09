@@ -35,28 +35,14 @@ explanationButton.addEventListener("click", () => {
         `
 })
 
-
 searchForm.addEventListener("submit", function (event) {
     console.log("Search Button clicked! Event triggered by:", event.currentTarget.id)
+
     event.preventDefault()
-    // myDebug("Search before clearQuizState()")
-    // clearQuizState()
-    // myDebug("Search after clearQuizState()")
 
     quizState.searchType = document.getElementById("searchType").value
     quizState.searchValue = document.getElementById("searchValue").value
-    // TODO: review and delete comments and old code
-    // console.log("searchType and searchValue:", searchType, searchValue)
 
-    // let questions = [...W11quiz, ...W12quiz].sort(() => Math.random() - 0.5)
-
-
-    // console.log("randomQuestions:", randomQuestions.length, randomQuestions)
-
-
-    // check that each question has a valid syllabus
-    // note that some questions have syllabus items like '1a.1 & 2a.2' but only the first 4 characters are used
-    // the STOP is commented out when things are OK 
     // TODO:this whole section might be a good candidate as a separate function e.g. syllabusCheck
     console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
     console.info("first object of questions array", W99quiz[0])
@@ -76,19 +62,9 @@ searchForm.addEventListener("submit", function (event) {
 
     // KEY: convert the searchType into selected questions
     if (quizState.searchType === "") {
-        console.log("searchType: No Filter (Show All)")
         quizState.questionPack = [...quizState.randomQuestions]
 
     } else if (quizState.searchType === "syllabus") {
-        // debug for about 3 lines
-        // console.log("searchType: syllabus", typeof (searchValue))
-        // if (!Array.isArray(randomQuestions)) {
-        //     throw new Error("randomQuestions is not a valid array")
-        // }
-        // randomQuestions.forEach(q => console.log(q.source, q.syllabus))
-
-        // this is the real code to filter for first bit of the syllabus
-
         quizState.questionPack = quizState.randomQuestions.filter(q => q.syllabus && q.syllabus.startsWith(String(quizState.searchValue)))
 
     } else if (quizState.searchType === "46questions") {
@@ -126,31 +102,8 @@ searchForm.addEventListener("submit", function (event) {
     explanationButton.style.display = "inline-block"
     syllabusDiv.style.display = "inline-block"
 
-    // quizState.currentQuestion = 0
-    // quizState.score = 0
-    // quizState.wrongAnswers = []
-
-    // quizState.syllabusScore = [
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    //     { correct: 0, incorrect: 0 },
-    // ]
-
-
     loadQuestion(quizState)
 
 })
 
 myDebug("startup completed: now waiting for Search to be clicked", quizState)
-
-// functions start here
-
-
-
