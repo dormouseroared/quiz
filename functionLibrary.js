@@ -175,7 +175,6 @@ export function shuffleArray(array) {
  * and then when Next Question button is clicked (if more questions)
  */
 export function loadQuestion() {
-    // TODO: probably can remove the quizState parameter
 
     console.group("loadQuestion")
 
@@ -304,7 +303,7 @@ export function loadQuestion() {
 
     matchingItems.forEach(item => {
         const li = document.createElement("li")
-        li.textContent = `${item.key} ${item.level}: ${item.text}` // Add syllabus text
+        li.innerHTML = `${item.key} <span class="highlightLevel">${item.level}</span>: ${item.text}` // Add syllabus text
         ul.appendChild(li)
     })
 
