@@ -1,11 +1,8 @@
-
-import { syllabusCheck, validateSyllabusKeysExplicit } from "./functionLibrary.js"
-import { shuffleQuestion, myDebug, quizState, findMissingSyllabusKeys, shuffleArray, loadQuestion } from "./functionLibrary.js"
+import { syllabusCheck } from "./functionLibrary.js"
+import { shuffleQuestion, myDebug, quizState, shuffleArray, loadQuestion } from "./functionLibrary.js"
 import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
-
-import syllabusItems from "./syllabusItems.js"
 
 nextQuestionButton.style.display = "none"
 explanationButton.style.display = "none"
@@ -43,10 +40,10 @@ searchForm.addEventListener("submit", function (event) {
     quizState.searchType = document.getElementById("searchType").value
     quizState.searchValue = document.getElementById("searchValue").value
 
-    // TODO:this whole section might be a good candidate as a separate function e.g. syllabusCheck
 
     syllabusCheck()
 
+    // TODO: delete commented out code now it has been moved to syllabusCheck
     // console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
     // console.info("first object of questions array", W99quiz[0])
     // console.info("first object of syllabusItems array", syllabusItems[0])
