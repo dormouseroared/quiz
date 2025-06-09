@@ -287,15 +287,7 @@ export function loadQuestion() {
         throw new Error("no syllabus items found")
     }
 
-    // syllabusItemsDiv.innerHTML = ""
-
-    // matchingItems.forEach(item => {
-    //     let p = document.createElement("p")
-    //     p.textContent = `${item.level}: ${item.text}` // Add syllabus text
-    //     syllabusItemsDiv.appendChild(p)
-    // })
-
-    // TODO: replace p with ul and li
+    // KEY: replace p with ul and li
 
     console.log(q.syllabus, "has", matchingItems.length, "items")
 
@@ -362,8 +354,7 @@ export function showResult() {
 
     myDebug("showResult(): start", quizState)
 
-    // TODO: using searchForm means the whole form is set to display="none" so do we need what comes next?
-    // TODO: Yes, we do!
+    // KEY: using searchForm means the whole form is set to display="none" so do we need what comes next? Yes, we do!
     searchForm.style.display = "none"
 
     nextQuestionButton.style.display = "none"
@@ -399,7 +390,7 @@ export function showResult() {
 
     displaySyllabusScoresFlex(quizState.syllabusScore)
 
-    // TODO: This commented out code is for extra debug
+    // KEY: This commented out code is for extra debug
     // const stack = new Error().stack.split("\n").slice(2)
     // console.log("Call stack depth:", stack.length)
     // console.log("Call stack:", stack.join("\n"))
