@@ -369,11 +369,13 @@ export function showResult() {
 
     nextQuestionButton.style.display = "none"
     explanationButton.style.display = "none"
+    syllabusButton.style.display = "none"
     explanationDiv.style.display = "none"
     syllabusDiv.style.display = "none"
     questionDiv.style.display = "none"
     optionsDiv.style.display = "none"
     syllabusItemsDiv.style.display = "none"
+
 
 
     const highScore = localStorage.getItem("quizHighScore") || 0
