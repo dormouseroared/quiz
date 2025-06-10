@@ -7,10 +7,11 @@ const searchForm = document.getElementById("searchForm")
 const optionsDiv = document.getElementById("options")
 const resultDiv = document.getElementById("result")
 const syllabusScoreDiv = document.getElementById("syllabusScore")
-const syllabusItemsDiv = document.getElementById("syllabusItems")
+export const syllabusItemsDiv = document.getElementById("syllabusItems")
 
 export const nextQuestionButton = document.getElementById("next-btn")
 export const explanationButton = document.getElementById("explanation-btn")
+export const syllabusButton = document.getElementById("syllabus-btn")
 export const explanationDiv = document.getElementById("explanation")
 export const syllabusDiv = document.getElementById("syllabus")
 
@@ -249,6 +250,7 @@ export function loadQuestion() {
 
     nextQuestionButton.disabled = true
     explanationButton.disabled = true
+    syllabusButton.disabled = false
 
     if (q.tagged) {
         console.log("tagged:", q.tagged)
@@ -269,6 +271,8 @@ export function loadQuestion() {
     // 
     // Section: SYLLABUS ITEMS
     // 
+
+    syllabusItemsDiv.style.display = "none"
 
     let matchingItems = findSyllabusItems(syllabusItems, q.syllabus.slice(0, 4))
     console.log("search for matching syllabus items:", q.syllabus, q.syllabus.slice(0, 4), matchingItems)
