@@ -194,17 +194,7 @@ export function loadQuestion() {
     // 1. Licensing Conditions (7 exam questions)
     // 
 
-    if (q.syllabus === "") {
-        console.log("Syllabus field in question has a problem", q.syllabus)
-        throw new Error("Error: syllabus field is empty")
-    }
-
-    if (/[0-9]/.test(q.syllabus[0])) {
-        console.log("syllabus[0] passes the regex test", q.syllabus)
-    } else {
-        console.log("syllabus[0] fails the regex test", q.syllabus)
-        throw new Error("syllabus[0] fails the regex test")
-    }
+    questionHasValidSyllabus(q)
 
     syllabusDiv.textContent = `${section[q.syllabus[0]].id}. ${section[q.syllabus[0]].name} (${section[q.syllabus[0]].questions} exam questions)`
     syllabusDiv.title = q.syllabus
@@ -308,6 +298,22 @@ export function loadQuestion() {
     // 
 
     console.groupEnd("loadQuestion")
+
+}
+
+function questionHasValidSyllabus(q) {
+    console.log("questionHasValidSyllabus regex checks underway...")
+    if (q.syllabus === "") {
+        console.log("Syllabus field in question has a problem", q.syllabus)
+        throw new Error("Error: syllabus field is empty")
+    }
+
+    if (/[0-9]/.test(q.syllabus[0])) {
+        console.log("syllabus[0] passes the regex test", q.syllabus)
+    } else {
+        console.log("syllabus[0] fails the regex test", q.syllabus)
+        throw new Error("syllabus[0] fails the regex test")
+    }
 }
 
 function selectAnswer(index) {

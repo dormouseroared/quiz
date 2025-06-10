@@ -31,6 +31,8 @@ explanationButton.addEventListener("click", () => {
         <p>Syllabus: ${q.syllabus}</p>
         `
 })
+// TODO: syllabusCheck can done as part of initialisation as it checks all questions
+syllabusCheck()
 
 searchForm.addEventListener("submit", function (event) {
     console.log("Search Button clicked! Event triggered by:", event.currentTarget.id)
@@ -41,7 +43,6 @@ searchForm.addEventListener("submit", function (event) {
     quizState.searchValue = document.getElementById("searchValue").value
 
 
-    syllabusCheck()
 
     // TODO: delete commented out code now it has been moved to syllabusCheck
     // console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
