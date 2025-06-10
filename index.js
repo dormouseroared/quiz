@@ -1,4 +1,4 @@
-import { syllabusCheck } from "./functionLibrary.js"
+import { syllabusButton, syllabusCheck, syllabusItemsDiv } from "./functionLibrary.js"
 import { shuffleQuestion, myDebug, quizState, shuffleArray, loadQuestion } from "./functionLibrary.js"
 import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
 
@@ -6,6 +6,7 @@ import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 
 nextQuestionButton.style.display = "none"
 explanationButton.style.display = "none"
+syllabusButton.style.display = "none"
 syllabusDiv.style.display = "none"
 
 nextQuestionButton.addEventListener("click", (event) => {
@@ -31,6 +32,17 @@ explanationButton.addEventListener("click", () => {
         <p>Syllabus: ${q.syllabus}</p>
         `
 })
+
+syllabusButton.addEventListener("click", () => {
+    console.log("EVENT LISTENER FOR SYLLABUS ITEMS", syllabusItemsDiv.style.display)
+    if (syllabusItemsDiv.style.display === "none") {
+        syllabusItemsDiv.style.display = "inline-block"
+    } else {
+        syllabusItemsDiv.style.display = "none"
+    }
+    console.log("EVENT LISTENER FOR SYLLABUS ITEMS", syllabusItemsDiv.style.display)
+})
+
 // TODO: syllabusCheck can done as part of initialisation as it checks all questions
 syllabusCheck()
 
@@ -101,9 +113,10 @@ searchForm.addEventListener("submit", function (event) {
 
     nextQuestionButton.style.display = "inline-block"
     explanationButton.style.display = "inline-block"
+    syllabusButton.style.display = "inline-block"
     syllabusDiv.style.display = "inline-block"
 
-    loadQuestion(quizState)
+    loadQuestion()
 
 })
 
