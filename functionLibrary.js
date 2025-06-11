@@ -245,24 +245,36 @@ export function loadQuestion() {
     })
 
     //
-    // Section: EXPLANATION AND NEXT QUESTION BUTTONS
+    // Section: EXPLANATION, SYLLABUS AND NEXT QUESTION BUTTONS
     // 
 
     nextQuestionButton.disabled = true
     explanationButton.disabled = true
     syllabusButton.disabled = false
 
+    // questions can be tagged or not, and also have an explanation or not
+    // so in addition to the sensible approach of using a CSS class to 
+    // show all four possibilities there is also the addition of
+    // setting the title as a tooltip to remind us of the 4 variations
+    // and I wanted to have a go at a ternary statement
+
+    explanationButton.title = ""
+
     if (q.tagged) {
         console.log("tagged:", q.tagged)
         explanationButton.classList.add("tagged")
+
+        explanationButton.title = "tagged"
     } else {
         console.log("tagged: false")
         explanationButton.classList.remove("tagged")
     }
 
-    if (q.explanation === "") {
+    if (!q.explanation || q.explanation === "") {
         console.info("explanation is blank:", q.explanation)
         explanationButton.classList.add("blankExplanation")
+
+        explanationButton.title = explanationButton.title === "" ? "explanation not yet available" : explanationButton.title + ", explanation not yet available"
     } else {
         console.info("explanation is not blank:", q.explanation)
         explanationButton.classList.remove("blankExplanation")
@@ -280,6 +292,7 @@ export function loadQuestion() {
     if (matchingItems.length === 0) {
         throw new Error("no syllabus items found")
     }
+    // TODO: test
 
     // KEY: replace p with ul and li
 

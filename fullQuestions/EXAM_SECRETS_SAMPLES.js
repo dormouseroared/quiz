@@ -250,7 +250,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 2,
         explanation: "The error in the bias voltage will still be 10%. This may be shown by calculation using limit values, say 900Ω and 1100Ω. V(out) = V(in) * 900/2000 = V(in) * 0.45 which is 10% different to 0.5 expected.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2a.1"
+        syllabus: "2a.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q2",
@@ -264,7 +265,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 1,
         explanation: "The 20 kΩ and 30 kΩ resistors in parallel have a resistance of (20 x 30)/(20 + 30) which is 12 kΩ. In series with 8 kΩ gives 20 kΩ.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2b.1"
+        syllabus: "2b.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q3",
@@ -278,7 +280,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 0,
         explanation: "At first glance, this circuit is neither series nor parallel and cannot be solved by the normal means. However, further inpection shows that the voltages at each end of the 2 kΩ resistor are equal, so no current will pass through it. We can simply remove it, or replace it with a piece of wire, it will make no difference.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2b.1"
+        syllabus: "2b.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q4",
@@ -292,7 +295,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 0,
         explanation: "See Technical Basics Q3 for how to handle the 2 kΩ resistor. Then in the left pair of resistors, it is 15V across 4 kΩ so current is 3.75 mA and power = IV or I squared * R which is 3.75/1000 * 3.7/1000 * 1000 or 14 mA. Or, voltage divide 15V across 1 and 3 giving 3.75V and power = VI = V squared / R and if time permits confirm by doing it both ways.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2b.1"
+        syllabus: "2b.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q5",
@@ -306,7 +310,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 1,
         explanation: "power = voltage squared / resistance",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2b.1"
+        syllabus: "2b.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q6",
@@ -320,7 +325,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 2,
         explanation: "The voltage divider will have resistors in the ratio 9:1 with the smallest one giving 1/10 and the larger one giving 9/10.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2b.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q7",
@@ -334,7 +340,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 3,
         explanation: "The formula sheet gives the capacitance as C=kA/d where A is the area of the plates and d their separation. If d is halved the capacitance will double.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2d.1"
+        syllabus: "2d.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q8",
@@ -348,7 +355,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 0,
         explanation: "The relevant formula is C (Farads) = Q (Coulombs) / V (Volts). So, V = Q/C which means small C gives big V, and 20V on 1µF with 10V on 2µF. Formally 1/C = 1/1 + 1/2 so Total Capacitance is 0.667 µF. Total Charge Q = CV =30 X 0.667 = 20 µC. Then Voltage on 2µF is 20µC/2µF = 10V",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2d.1"
+        syllabus: "2d.1",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q9",
@@ -377,7 +385,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 3,
         explanation: "Many plastics will absorb some energy from an RF field, exampled by some plastics getting hot in a microwave oven - a good test in choosing suitable materials in power amplifier design. High power AMUs, especially with resonant circuits, can develop voltages easily into the kV range. That level of dielectric stress can cause some plastics to fail.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2d.2"
+        syllabus: "2d.2",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q11",
@@ -391,21 +400,23 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 2,
         explanation: "Polythene is goodd at audio frequencies but lossy at RF.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2d.2"
+        syllabus: "2d.2",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q12",
-        question: "",
+        question: "Apart from the capacitance, another parameter to be considered when selecting a low value capacitor (say 0.1 µF) is:",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "power handling",
+            "polarity",
+            "breakdown voltage",
+            "internal resistance",
         ],
-        correct: 0,
-        explanation: "",
+        correct: 2,
+        explanation: "A 0.1 µF capacitor won't be of electrolytic construction, so polarity is not an answer, but breakdown voltage is. Most capacitors are rated for DC and must be de-rated  for AC and particularly RF. For mains use, special capacitors, class X or Y, must be used, the choice depending on intended use and failure mechanism.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2d.3",
+        tagged: true
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q__________",
