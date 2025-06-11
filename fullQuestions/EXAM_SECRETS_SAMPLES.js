@@ -420,15 +420,73 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets Samples FULL Technical Basics Q__________",
-        question: "",
+        question: "no explanation or tagged",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "a",
+            "b",
+            "c",
+            "d",
         ],
         correct: 0,
         explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q__________",
+        question: "explanation only - not tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        explanation: "here is the explanation",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q__________",
+        question: "tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q__________",
+        question: "both tagged and has an explanation",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        explanation: "here is an explanation",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q__________",
+        question: "explanation key removed - not tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        // explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },

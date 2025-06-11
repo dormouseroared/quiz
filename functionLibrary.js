@@ -268,6 +268,8 @@ export function loadQuestion() {
     } else {
         console.log("tagged: false")
         explanationButton.classList.remove("tagged")
+
+        explanationButton.title = "not tagged"
     }
 
     if (!q.explanation || q.explanation === "") {
@@ -278,6 +280,8 @@ export function loadQuestion() {
     } else {
         console.info("explanation is not blank:", q.explanation)
         explanationButton.classList.remove("blankExplanation")
+
+        explanationButton.title = explanationButton.title === "" ? "explanation available" : explanationButton.title + ", explanation available"
     }
 
     // 

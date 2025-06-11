@@ -1,6 +1,4 @@
-import { syllabusButton, syllabusCheck, syllabusItemsDiv } from "./functionLibrary.js"
-import { shuffleQuestion, myDebug, quizState, shuffleArray, loadQuestion } from "./functionLibrary.js"
-import { nextQuestionButton, explanationButton, syllabusDiv, explanationDiv, showResult } from "./functionLibrary.js"
+import { explanationButton, explanationDiv, loadQuestion, myDebug, nextQuestionButton, quizState, showResult, shuffleArray, shuffleQuestion, syllabusButton, syllabusCheck, syllabusDiv, syllabusItemsDiv } from "./functionLibrary.js"
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 
@@ -26,7 +24,7 @@ nextQuestionButton.addEventListener("click", (event) => {
 explanationButton.addEventListener("click", () => {
     const q = quizState.questionPack[quizState.currentQuestion]
     explanationDiv.innerHTML = `
-        <p>${q.explanation}</p>
+        <p>${q.explanation ? q.explanation : ""}</p>
         <p>Source: ${q.source}</p>
         <p>Reference: ${q.lookup}</p>
         <p>Syllabus: ${q.syllabus}</p>
