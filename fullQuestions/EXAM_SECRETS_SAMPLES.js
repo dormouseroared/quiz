@@ -351,49 +351,50 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2d.1"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q",
-        question: "",
+        source: "Exam Secrets Samples FULL Technical Basics Q9",
+        question: "The energy in a capacitor is given by E = Q x V, that is the product of charge and potential difference. Given that, by how much does the energy stored in a capacitor increase if the potential difference is doubled?",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "doubles x2",
+            "triples x3",
+            "quadruples x4",
+            "five times x5",
         ],
-        correct: 0,
-        explanation: "",
+        correct: 2,
+        explanation: "In this question, you are given some information that is outside the syllabus (E = Q x V). You should know that for a capacitor the charge Q = V x C. So energy E = V squared x C, hence double squared or 4 times. This increase of energy as the square of voltage has hazard and safety implications.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2d.1",
+        tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q",
-        question: "",
+        source: "Exam Secrets Samples FULL Technical Basics Q10",
+        question: "Capacitors are available with assorted dielectrics, polythene, ceramic, etc. A factor affecting the choice of dielectric is:",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "linearity",
+            "leakage resistance",
+            "phase angle",
+            "operating frequency",
         ],
-        correct: 0,
-        explanation: "",
+        correct: 3,
+        explanation: "Many plastics will absorb some energy from an RF field, exampled by some plastics getting hot in a microwave oven - a good test in choosing suitable materials in power amplifier design. High power AMUs, especially with resonant circuits, can develop voltages easily into the kV range. That level of dielectric stress can cause some plastics to fail.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2d.2"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q",
-        question: "",
+        source: "Exam Secrets Samples FULL Technical Basics Q11",
+        question: "Which dielectric in a capacitor is most likely to absorb energy resulting in losses as the frequency increases?",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "air",
+            "glass",
+            "polythene",
+            "mica",
         ],
-        correct: 0,
-        explanation: "",
+        correct: 2,
+        explanation: "Polythene is goodd at audio frequencies but lossy at RF.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2d.2"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q",
+        source: "Exam Secrets Samples FULL Technical Basics Q12",
         question: "",
         options: [
             "",
