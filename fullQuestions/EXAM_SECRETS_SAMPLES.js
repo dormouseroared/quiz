@@ -281,6 +281,21 @@ const EXAM_SECRETS_SAMPLES = [
         explanation: "At first glance, this circuit is neither series nor parallel and cannot be solved by the normal means. However, further inpection shows that the voltages at each end of the 2 kΩ resistor are equal, so no current will pass through it. We can simply remove it, or replace it with a piece of wire, it will make no difference.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2b.1",
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q3 IMAGETEST",
+        question: "What current is drawn from the power supply in the circuit diagram?",
+        image: "images/secrets-tech-q3.png",
+        options: [
+            "10mA",
+            "11.8mA",
+            "15mA",
+            "18.5mA",
+        ],
+        correct: 0,
+        explanation: "At first glance, this circuit is neither series nor parallel and cannot be solved by the normal means. However, further inpection shows that the voltages at each end of the 2 kΩ resistor are equal, so no current will pass through it. We can simply remove it, or replace it with a piece of wire, it will make no difference.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2b.1",
         tagged: true
     },
     {
