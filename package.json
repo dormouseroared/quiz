@@ -1,0 +1,24 @@
+{
+  "name": "quiz-tapas",
+  "version": "1.0.0",
+  "description": "Multiple choice questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dormouseroared/quiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dormouseroared/quiz/issues"
+  },
+  "homepage": "https://github.com/dormouseroared/quiz#readme",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
