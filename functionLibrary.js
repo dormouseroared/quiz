@@ -15,22 +15,28 @@ export const syllabusButton = document.getElementById("syllabus-btn")
 export const explanationDiv = document.getElementById("explanation")
 export const syllabusDiv = document.getElementById("syllabus")
 
-
-
-
 export const section = [
-    { id: 0, name: "dummy", questions: 0, notes: "58 questions in 2 hours with pass at 35 correct or 60%" },
+    {
+        id: 0,
+        name: "dummy",
+        questions: 0,
+        notes: "58 questions in 2 hours with pass at 35 correct or 60%",
+    },
     { id: 1, name: "Licensing conditions", questions: 7, weeks: [] },
     { id: 2, name: "Technical aspects", questions: 11, weeks: [] },
     { id: 3, name: "Transmitters and receivers", questions: 12, weeks: [] },
     { id: 4, name: "Feeders and antennas", questions: 4, weeks: [] },
     { id: 5, name: "Propagation", questions: 3, weeks: [] },
     { id: 6, name: "Electro magnetic compatibility", questions: 10, weeks: [] },
-    { id: 7, name: "Operating practices and procedures", questions: 2, weeks: [] },
+    {
+        id: 7,
+        name: "Operating practices and procedures",
+        questions: 2,
+        weeks: [],
+    },
     { id: 8, name: "Safety", questions: 4, weeks: [] },
     { id: 9, name: "Measurements and construction", questions: 5, weeks: [] },
 ]
-
 
 export const quizState = {
     currentQuestion: 0,
@@ -77,8 +83,10 @@ export function validateSyllabusKeysExplicit(quizQuestions, syllabusItems) {
         for (const item of syllabusItems) {
             // If the syllabus item's key matches the question's syllabus prefix
             if (item.key === questionSyllabusPrefix) {
-                foundMatchingSyllabusItem = true // Mark that a match was found
-                break // No need to check other syllabus items for this question, we found one!
+                // Mark that a match was found
+                foundMatchingSyllabusItem = true
+                // No need to check other syllabus items for this question, we found one!
+                break
             }
         }
 
@@ -94,8 +102,6 @@ export function validateSyllabusKeysExplicit(quizQuestions, syllabusItems) {
     return true
 }
 
-
-
 /**
  * Shuffles the options of a question object, and updates the correct answer index.
  *
@@ -106,7 +112,7 @@ export function validateSyllabusKeysExplicit(quizQuestions, syllabusItems) {
  */
 export function shuffleQuestion(questionObject) {
     // Create a copy to avoid modifying the original object directly
-    // as this parameter id passed by reference so still refers 
+    // as this parameter id passed by reference so still refers
     // to the object in the original array
 
     // spread operator is only for shallow copies
@@ -121,7 +127,9 @@ export function shuffleQuestion(questionObject) {
     const correctOptionText = newQuestion.options[newQuestion.correct]
     const newCorrectIndex = shuffledOptions.indexOf(correctOptionText)
 
-    const originalOrder = shuffledOptions.map(option => newQuestion.options.indexOf(option))
+    const originalOrder = shuffledOptions.map((option) =>
+        newQuestion.options.indexOf(option),
+    )
 
     // Update the question object with the shuffled options and new correct index
     newQuestion.options = shuffledOptions
@@ -132,7 +140,7 @@ export function shuffleQuestion(questionObject) {
 }
 
 export function findSyllabusItems(syllabusItems, key) {
-    return syllabusItems.filter(item => item.key === key)
+    return syllabusItems.filter((item) => item.key === key)
 }
 
 function shuffleArray2(array) {
@@ -140,33 +148,34 @@ function shuffleArray2(array) {
     let randomIndex
     while (currentIndex != 0) {
         randomIndex = Math.floor(Math.random() * currentIndex)
-        currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]]
+        currentIndex--
+        ;[array[currentIndex], array[randomIndex]] = [
+            array[randomIndex],
+            array[currentIndex],
+        ]
     }
     return array
 }
 
-
 // Fisher-Yates shuffle produces unbiased results, good for arrays of any size
 export function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const randomIndex = Math.floor(Math.random() * (i + 1)); // Random index
-        [array[i], array[randomIndex]] = [array[randomIndex], array[i]] // Swap elements
+        const randomIndex = Math.floor(Math.random() * (i + 1)) // Random index
+        ;[array[i], array[randomIndex]] = [array[randomIndex], array[i]] // Swap elements
     }
     return array
 }
 
 /**
  * Loads and displays the current quiz question.
- * 
+ *
  * This includes rendering the question text, options, and related syllabus details.
  * Also performs validation checks on the question object (e.g., syllabus format, options count).
  *
  * Throws errors if:
  * - The syllabus field is empty or incorrectly formatted
  * - There are not exactly four options
- * 
+ *
  * UI elements updated:
  * - questionDiv
  * - optionsDiv
@@ -178,32 +187,40 @@ export function shuffleArray(array) {
  * and then when Next Question button is clicked (if more questions)
  */
 export function loadQuestion() {
-
     console.group("loadQuestion")
 
     myDebug("loadQuestion(): start", quizState)
 
-    // 
+    //
     // Section: SETUP
-    // 
+    //
 
     const q = quizState.questionPack[quizState.currentQuestion]
     const qLength = quizState.questionPackLength
 
-    // 
+    //
     // Section: SYLLABUS HEADING
     // 1. Licensing Conditions (7 exam questions)
-    // 
+    //
 
     questionHasValidSyllabus(q)
 
-    syllabusDiv.textContent = `${section[q.syllabus[0]].id}. ${section[q.syllabus[0]].name} (${section[q.syllabus[0]].questions} exam questions)`
+    const syllabusSection = section[q.syllabus[0]]
+    const s = syllabusSection
+    // prettier-ignore
+    syllabusDiv.textContent = `
+        ${s.id}. 
+        ${s.name} 
+        (${s.questions} 
+        exam questions)`
+
+    // now set the title tooltip to show the syllabus key
     syllabusDiv.title = q.syllabus
 
-    // 
+    //
     // Section: QUESTION
     // Q1/58. How many beans make five?
-    // 
+    //
 
     // TODO: test new image key on new questions then migrate hardcoded HTML
 
@@ -216,10 +233,9 @@ export function loadQuestion() {
     questionDiv.innerHTML = `Q${quizState.currentQuestion + 1}/${qLength}. ${q.question}${imageDetail}`
     questionDiv.title = q.source
 
-
-    // 
+    //
     // Section: CREATE A BUTTON FOR EACH ANSWER OPTION
-    // 
+    //
 
     if (q.options.length !== 4) {
         throw new Error("loadQuestion: should be 4 options")
@@ -235,7 +251,6 @@ export function loadQuestion() {
     // closes over (remembers) the value of index, even though the forEach
     // is long completed.
     q.options.forEach((option, index) => {
-
         if (option === "") {
             throw new Error("loadQuestion: empty option found")
         }
@@ -245,23 +260,25 @@ export function loadQuestion() {
         btn.textContent = option
         btn.title = q.originalOrder[index]
         btn.addEventListener("click", () => {
-            console.log("loadQuestion closure as event listener created for index:", index)
+            console.log(
+                "loadQuestion closure as event listener created for index:",
+                index,
+            )
             selectAnswer(index)
         })
         optionsDiv.appendChild(btn)
-
     })
 
     //
     // Section: EXPLANATION, SYLLABUS AND NEXT QUESTION BUTTONS
-    // 
+    //
 
     nextQuestionButton.disabled = true
     explanationButton.disabled = true
     syllabusButton.disabled = false
 
     // questions can be tagged or not, and also have an explanation or not
-    // so in addition to the sensible approach of using a CSS class to 
+    // so in addition to the sensible approach of using a CSS class to
     // show all four possibilities there is also the addition of
     // setting the title as a tooltip to remind us of the 4 variations
     // and I wanted to have a go at a ternary statement
@@ -287,22 +304,33 @@ export function loadQuestion() {
         console.info("explanation is blank:", q.explanation)
         explanationButton.classList.add("blankExplanation")
 
-        explanationButton.title = explanationButton.title === "" ? "explanation not yet available" : explanationButton.title + ", explanation not yet available"
+        explanationButton.title =
+            explanationButton.title === ""
+                ? "explanation not yet available"
+                : explanationButton.title + ", explanation not yet available"
     } else {
         console.info("explanation is not blank:", q.explanation)
         explanationButton.classList.remove("blankExplanation")
 
-        explanationButton.title = explanationButton.title === "" ? "explanation available" : explanationButton.title + ", explanation available"
+        explanationButton.title =
+            explanationButton.title === ""
+                ? "explanation available"
+                : explanationButton.title + ", explanation available"
     }
 
-    // 
+    //
     // Section: SYLLABUS ITEMS
-    // 
+    //
 
     syllabusItemsDiv.style.display = "none"
 
     let matchingItems = findSyllabusItems(syllabusItems, q.syllabus.slice(0, 4))
-    console.log("search for matching syllabus items:", q.syllabus, q.syllabus.slice(0, 4), matchingItems)
+    console.log(
+        "search for matching syllabus items:",
+        q.syllabus,
+        q.syllabus.slice(0, 4),
+        matchingItems,
+    )
 
     if (matchingItems.length === 0) {
         throw new Error("no syllabus items found")
@@ -317,7 +345,7 @@ export function loadQuestion() {
 
     const ul = document.createElement("ul")
 
-    matchingItems.forEach(item => {
+    matchingItems.forEach((item) => {
         const li = document.createElement("li")
         li.innerHTML = `${item.key} <span class="highlightLevel">${item.level}</span>: ${item.text}` // Add syllabus text
         ul.appendChild(li)
@@ -325,12 +353,11 @@ export function loadQuestion() {
 
     syllabusItemsDiv.appendChild(ul)
 
-    // 
+    //
     // Section: CLOSE DOWN
-    // 
+    //
 
     console.groupEnd("loadQuestion")
-
 }
 
 function questionHasValidSyllabus(q) {
@@ -354,10 +381,9 @@ function selectAnswer(index) {
     const q = quizState.questionPack[quizState.currentQuestion]
     const buttons = document.querySelectorAll(".option-btn")
 
-    buttons.forEach((btn) => btn.disabled = true)
+    buttons.forEach((btn) => (btn.disabled = true))
 
     if (/[0-3]/.test(q.correct)) {
-
     } else {
         throw new Error("selectAnswer: correct not in range 0-3")
     }
@@ -368,9 +394,7 @@ function selectAnswer(index) {
         quizState.score++
 
         quizState.syllabusScore[q.syllabus[0]].correct++
-
     } else {
-
         quizState.syllabusScore[q.syllabus[0]].incorrect++
 
         myDebug("selectAnswer: wrong", quizState)
@@ -386,10 +410,7 @@ function selectAnswer(index) {
     console.groupEnd("selectAnswer")
 }
 
-
-
 export function showResult() {
-
     myDebug("showResult(): start", quizState)
 
     // KEY: using searchForm means the whole form is set to display="none" so do we need what comes next? Yes, we do!
@@ -403,8 +424,6 @@ export function showResult() {
     questionDiv.style.display = "none"
     optionsDiv.style.display = "none"
     syllabusItemsDiv.style.display = "none"
-
-
 
     const highScore = localStorage.getItem("quizHighScore") || 0
 
@@ -438,7 +457,7 @@ export function showResult() {
 
 function logWrongAnswer(index, q) {
     console.group("LOGWRONGANSWER")
-    console.log("logging wrong answer", index, q, typeof (q))
+    console.log("logging wrong answer", index, q, typeof q)
     q.wrong = index
     quizState.wrongAnswers.push(q)
     console.table("wrongAnswers", quizState.wrongAnswers)
@@ -493,10 +512,12 @@ function displaySyllabusScoresFlex(scores) {
 
     scores.forEach((score, index) => {
         const total = score.correct + score.incorrect
-        const percentage = total > 0 ? ((score.correct / total) * 100).toFixed(1) : 0
-        const syllabusName = section && section[index] && section[index].name
-            ? `${section[index].id}. ${section[index].name}`
-            : `Syllabus ${index}`
+        const percentage =
+            total > 0 ? ((score.correct / total) * 100).toFixed(1) : 0
+        const syllabusName =
+            section && section[index] && section[index].name
+                ? `${section[index].id}. ${section[index].name}`
+                : `Syllabus ${index}`
 
         const row = document.createElement("div")
         row.className = "score-row"
@@ -515,16 +536,12 @@ function displaySyllabusScoresFlex(scores) {
 
         const percentageDiv = document.createElement("div")
         percentageDiv.className = "score-percentage"
-        percentageDiv.textContent = total > 0 ? (`${percentage}%`) : ` `
+        percentageDiv.textContent = total > 0 ? `${percentage}%` : ` `
 
         row.append(nameDiv, valueDiv, value2Div, percentageDiv)
         syllabusScoreDiv.appendChild(row)
     })
 }
-
-
-
-
 
 /**
  * Validates that every quiz question is associated with at least one matching syllabus item.
@@ -539,18 +556,19 @@ function displaySyllabusScoresFlex(scores) {
  * @returns {boolean} - `true` if all quiz questions have a matching syllabus key; otherwise, `false`.
  */
 function validateSyllabusKeys(quizQuestions, syllabusItems) {
-    return quizQuestions.every(question =>
-        syllabusItems.some(item => item.key === question.syllabus.slice(0, 4))
+    return quizQuestions.every((question) =>
+        syllabusItems.some(
+            (item) => item.key === question.syllabus.slice(0, 4),
+        ),
     )
 }
 
-
-
 export function findMissingSyllabusKeys(quizQuestions, syllabusItems) {
-    const syllabusKeys = syllabusItems.map(item => item.key) // Extract all valid syllabus keys
+    // Extract all valid syllabus keys
+    const syllabusKeys = syllabusItems.map((item) => item.key)
     const missingKeys = quizQuestions
-        .map(q => q.syllabus.slice(0, 4))
-        .filter(key => !syllabusKeys.includes(key)) // Find missing keys
+        .map((q) => q.syllabus.slice(0, 4))
+        .filter((key) => !syllabusKeys.includes(key)) // Find missing keys
 
     return missingKeys
 }
@@ -560,13 +578,22 @@ export function syllabusCheck() {
     console.info("first object of questions array", W99quiz[0])
     console.info("first object of syllabusItems array", syllabusItems[0])
 
-    // try this version instead of validateSyllabusKeys to avoid use of every and some
-    const areSyllabusKeysValid = validateSyllabusKeysExplicit(W99quiz, syllabusItems)
+    // try this instead of validateSyllabusKeys to avoid use of every and some
+    const areSyllabusKeysValid = validateSyllabusKeysExplicit(
+        W99quiz,
+        syllabusItems,
+    )
 
-    console.log("Have all questions had their syllabus keys validated?", areSyllabusKeysValid) // true if all syllabus keys match, false otherwise
+    console.log(
+        "Have all questions had their syllabus keys validated?",
+        areSyllabusKeysValid,
+    ) // true if all syllabus keys match, false otherwise
 
     const missingKeysArray = findMissingSyllabusKeys(W99quiz, syllabusItems)
 
-    console.log("question syllabus keys missing from syllabusItems", missingKeysArray) // Output: ["3c.4"]
+    console.log(
+        "question syllabus keys missing from syllabusItems",
+        missingKeysArray,
+    ) // Output: ["3c.4"]
     console.groupEnd("CHECK EACH QUESTION HAS A VALID SYLLABUS")
 }
