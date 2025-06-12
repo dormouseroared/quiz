@@ -205,14 +205,13 @@ export function loadQuestion() {
 
     questionHasValidSyllabus(q)
 
-    const syllabusSection = section[q.syllabus[0]]
-    const s = syllabusSection
-    // prettier-ignore
-    syllabusDiv.textContent = `
-        ${s.id}. 
-        ${s.name} 
-        (${s.questions} 
-        exam questions)`
+    {
+        const syllabusSection = section[q.syllabus[0]]
+        const s = syllabusSection
+
+        syllabusDiv.textContent =
+            s.id + ". " + s.name + " (" + s.questions + " exam questions)"
+    }
 
     // now set the title tooltip to show the syllabus key
     syllabusDiv.title = q.syllabus
