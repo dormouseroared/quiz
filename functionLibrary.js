@@ -205,7 +205,15 @@ export function loadQuestion() {
     // Q1/58. How many beans make five?
     // 
 
-    questionDiv.innerHTML = `Q${quizState.currentQuestion + 1}/${qLength}. ${q.question}`
+    // TODO: test new image key on new questions then migrate hardcoded HTML
+
+    let imageDetail = ""
+    // if (q.image && q.image.length > 5) {
+    if (q.image && q.image.trim()) {
+        imageDetail = `<br><br><img src="${q.image}" alt="img built from key"   >`
+    }
+
+    questionDiv.innerHTML = `Q${quizState.currentQuestion + 1}/${qLength}. ${q.question}${imageDetail}`
     questionDiv.title = q.source
 
 
@@ -257,6 +265,9 @@ export function loadQuestion() {
     // show all four possibilities there is also the addition of
     // setting the title as a tooltip to remind us of the 4 variations
     // and I wanted to have a go at a ternary statement
+
+    // TODO: set up some state flags for hasTagged, hasExplanation, hasImage, etc to make this processing easier
+    // TODO: generate HTML for image rather than hard coding it...
 
     explanationButton.title = ""
 
