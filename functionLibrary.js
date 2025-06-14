@@ -149,10 +149,10 @@ function shuffleArray2(array) {
     while (currentIndex != 0) {
         randomIndex = Math.floor(Math.random() * currentIndex)
         currentIndex--
-        ;[array[currentIndex], array[randomIndex]] = [
-            array[randomIndex],
-            array[currentIndex],
-        ]
+            ;[array[currentIndex], array[randomIndex]] = [
+                array[randomIndex],
+                array[currentIndex],
+            ]
     }
     return array
 }
@@ -161,7 +161,7 @@ function shuffleArray2(array) {
 export function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const randomIndex = Math.floor(Math.random() * (i + 1)) // Random index
-        ;[array[i], array[randomIndex]] = [array[randomIndex], array[i]] // Swap elements
+            ;[array[i], array[randomIndex]] = [array[randomIndex], array[i]] // Swap elements
     }
     return array
 }
@@ -205,6 +205,9 @@ export function loadQuestion() {
 
     questionHasValidSyllabus(q)
 
+    // changed from template literal to concatenation for readability
+    // and used code block to emphasise local nature of variables
+    // used to improve readability
     {
         const syllabusSection = section[q.syllabus[0]]
         const s = syllabusSection

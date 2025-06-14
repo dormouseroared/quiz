@@ -505,6 +505,171 @@ const EXAM_SECRETS_SAMPLES = [
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q20 IMAGETEST",
+        question: "The current arrow shows the direction of the current in the inductor shown in the diagram. The legend shows whether the current is increasing, decreasing, alternating or steady. The '+' symbol shows which end of the coil is positive for the induced back EMF in the coil. Which one correctly shows the polarity of the induced EMF?",
+        image: "images/secrets-tech-q20.png",
+        options: [
+            "Drawing A",
+            "Drawing B",
+            "Drawing C",
+            "Drawing D",
+        ],
+        correct: 1,
+        explanation: "This question requires some thought. Option C can be discounted, as the back EMF won't remain at one end with an alternating current. Option D is also out, as inductive back EMF occurs when a current changes, no back EMF for steady currents. Choice is now A or B. An inductor tries to oppose a current increase. In A it is aiding so A seems wrong. In B it is trying to keep the current going when the external drive is to reduce it. That is true, we have our answer. Note opposition to change is equaslly true for increasing or decreasing currents.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.4"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q21 IMAGETEST",
+        question: "The drawing shows the current and voltage waveforms in an unknown component. The component is probably a:",
+        image: "images/secrets-tech-q21.png",
+        options: [
+            "resistor",
+            "capacitor",
+            "inductor",
+            "diode",
+        ],
+        correct: 1,
+        explanation: "The current and voltage are in phase in a resistor, and a diode only conducts in one direction. The current is leading the voltage in the drawing so it is a capacitor. Memory aid: CIVIL.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.3"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q22 IMAGETEST",
+        question: "A transistor amplifier is shown in the circuit diagram. Capacitor C3 is used for:",
+        image: "images/secrets-tech-q22.png",
+        options: [
+            "coupling",
+            "decoupling",
+            "buffering",
+            "blocking",
+        ],
+        correct: 1,
+        explanation: "The circuit is a common emitter amplifier. C3 decouples the emitter of the transistor, removing any signal at the emitter so the full input signal is across the base-emitter junction of the transmitter. Without the decoupling, much of the voltager gain of the circuit would be lost.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.4"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q23 IMAGETEST",
+        question: "What is the function of the capacitor marked C in the circuit diagram?",
+        image: "images/secrets-tech-q23.png",
+        options: [
+            "coupling",
+            "decoupling",
+            "DC blocking",
+            "tuning",
+        ],
+        correct: 2,
+        explanation: "The circuit is a Colpitts LC oscillator. Without capacitor C, the DC bias voltage set up by the base potential divider woukd be shorted out by the inductor in the tuned circuit. It is there for DC blocking, it could be argued that it is also a signal coupling capacitor allowing the transistor to 'see' the tuned circuit. However, the term 'coupling' in this context is normally reserved for coupling a signal from one stage to the next, betwenn a local oscillator and a mixer, for example.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.4"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q24 IMAGETEST",
+        question: "What is the purpose of the inductor marked 'r.f.c.' in the circuit diagram?",
+        image: "images/secrets-tech-q24.png",
+        options: [
+            "to resonate with the 22pF capacitor in the desired frequency band",
+            "to provide a dynamic impedance load for the transistor",
+            "to filter out the harmonics of the RF signal from the transistor",
+            "to help minimise RF signals on the positive supply rail",
+        ],
+        correct: 3,
+        explanation: "The r.f.c. has two purposes: to provide DC power to the transistor, and as an r.f.c. to limit the RF signal getting back on to the positive supply rail. It should have a high inductance to have a high RF reactance/impedance.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.5"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q25 IMAGETEST",
+        question: "Which drawing shows the equivalent circuit of a crystal?",
+        image: "images/secrets-tech-q25.png",
+        options: [
+            "Drawing 1",
+            "Drawing 2",
+            "Drawing 3",
+            "Drawing 4",
+        ],
+        correct: 1,
+        explanation: "Drawing 2 is the equivalent of a crystal. But why?",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.2"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q26 IMAGETEST",
+        question: "The drawing shows a class A amplifier using an N-channel depletion mode FET. The source and drain voltages are shown. What voltage might be expected on the gate in normal operation?",
+        image: "images/secrets-tech-q26.png",
+        options: [
+            "3.2V",
+            "5.2V",
+            "9.2V",
+            "16V",
+        ],
+        correct: 0,
+        explanation: "A depletion mode FET (most are) will have a reverse biased gate so the voltage will be a bit lower than the source gate which is at 4.5V, so 3.2V fits the bill.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2i.3"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q27 IMAGETEST",
+        question: "The circuit diagram shows a regulated supply for 13.6V. The voltage across the Zener diode D will be about:",
+        image: "images/secrets-tech-q27.png",
+        options: [
+            "0.7V",
+            "3V",
+            "6V",
+            "10V",
+        ],
+        correct: 2,
+        explanation: "Regulation is achieved by monitoring the output voltage. In this circuit by means of a potential divider with two 10k Ohm resistors. The voltage fed to the base of the sense transistor will be around 6.8V. That suggests the emitter will be at just over 6V.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2j.2"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q28 IMAGETEST",
+        question: "The ddrawing shows a block diagram of a typical switched mode power supply. What item or function is associated with the blank box?",
+        image: "images/secrets-tech-q28.png",
+        options: [
+            "mains transformer (50Hz)",
+            "High frequency transformer",
+            "Voltage stabilisation",
+            "Smoothing and filtering",
+        ],
+        correct: 1,
+        explanation: "The mains is rectified and may be partly smoothed then chopped at some 10s of kHz so the transformer size and weight can be substantially reduced. The box is a high frequency transformer.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2j.4"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q29 IMAGETEST",
+        question: "What function is performed in the blank box in the block diagram of a typical switched mode power supply?",
+        image: "images/secrets-tech-q29.png",
+        options: [
+            "filtering",
+            "voltage transformation",
+            "DC smoothing",
+            "high frequency chopping",
+        ],
+        correct: 3,
+        explanation: "The mains is rectified and may be partly smoothed then chopped at some 10s of KHz so the transformer size can be substantially reduced. The box contains the electronics to chop the rectified mains before feeding to the transformer.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2j.4"
+    },
+    {
+        source: "Exam Secrets Samples FULL Technical Basics Q30 IMAGETEST",
+        question: "The graph shows the flow of current through a circuit from  'switch on'. The circuit comprises a resistor and:",
+        image: "images/secrets-tech-q30.png",
+        options: [
+            "capacitor in series",
+            "inductor in series",
+            "capacitor in parallel",
+            "inductor in parallel",
+        ],
+        correct: 1,
+        explanation: "Options C and D can be quickly ruled out. If the resistor was in parallel then at switch on the current would rise at least to the value of V/R, which does not happen. That would also apply to option A since the capacitor is initially discharged, the current would jump up to V/R and tail off as the capacitor charges. That leaves B as the only remaining option. The current is zero and climbing just after switch on, which strongly suggests an inductor must be in the only current path, which points to B as well.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.7"
+    },
 ]
 
 export default EXAM_SECRETS_SAMPLES
