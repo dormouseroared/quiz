@@ -1,6 +1,6 @@
 const EXAM_SECRETS_SAMPLES = [
     {
-        source: "Exam Secrets Samples Q1",
+        source: "Exam Secrets FULL [Licensing] 1C1-1",
         question: "Under normal circumstances, messages may be sent:",
         options: [
             "to any amateurs who are on the frequency or channel concerned",
@@ -14,7 +14,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1c.1"
     },
     {
-        source: "Exam Secrets Samples Q2",
+        source: "Exam Secrets FULL [Licensing] 1C1-2",
         question: "Under what circumstances, if any, is it permissible to send an obscured or encrypted message?",
         options: [
             "The message contains personal details about other people",
@@ -28,7 +28,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1c.1"
     },
     {
-        source: "Exam Secrets Samples Q3",
+        source: "Exam Secrets FULL [Licensing] 1C1-3",
         question: "The Wireless Telegraphy (Content of Transmission) Regulations 1988 sets out requirements covering:",
         options: [
             "sending messages of a grossly offensive or obscene or menacing character",
@@ -42,7 +42,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1c.1"
     },
     {
-        source: "Exam Secrets Samples Q4",
+        source: "Exam Secrets FULL [Licensing] 1D1-1",
         question: "If you are operating close to the edge of a band, what is the most severe situation you are risking if your transmitter frequency is unstable?",
         options: [
             "You may cause interference to another amateur station",
@@ -56,7 +56,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1d.1"
     },
     {
-        source: "Exam Secrets Samples Q5",
+        source: "Exam Secrets Samples FULL [Licensing] 1D1-2",
         question: "Satellite operation involves transmitting in one band and receiving in a different band. That means you must have equipment:",
         options: [
             "able to transmit on the uplink and receive on the downlink",
@@ -70,7 +70,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1d.1"
     },
     {
-        source: "Exam Secrets Samples Q6",
+        source: "Exam Secrets Samples FULL [Licensing] 1D1-3",
         question: "If a person authorised by Ofcom is of the opinion that an urgent situation exists then your Radio Equipment may be inspected:",
         options: [
             "at any time of the day or night",
@@ -84,7 +84,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1d.1"
     },
     {
-        source: "Exam Secrets Samples Q7",
+        source: "Exam Secrets FULL [Licensing] 1E1-1",
         question: "When operating your radio by remote control you may:",
         options: [
             "use a radio link in amateur bands below 30MHz",
@@ -98,7 +98,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1e.1"
     },
     {
-        source: "Exam Secrets Samples Q8",
+        source: "Exam Secrets Samples FULL [Licensing] 1E1-2",
         question: "A radio link in an amateur band used for remote control of the mains transceiver must be:",
         options: [
             "limited in power to 500mW PEP ERP",
@@ -112,7 +112,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1e.1"
     },
     {
-        source: "Exam Secrets Samples Q9",
+        source: "Exam Secrets Samples FULL [Licensing] 1E1-3",
         question: "A radio link in an amateur band used for remote control of the main transceiver must be:",
         options: [
             "limited in power to 500mW PEP ERP",
@@ -126,8 +126,8 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1e.1"
     },
     {
-        source: "Exam Secrets Samples Q10",
-        question: "When operating in another country under CEPT T/R 61-01 the rules you must follow are those:",
+        source: "Exam Secrets FULL [Licensing] 1F1-1",
+        question: "When operating temporarily in another country under CEPT T/R 61-01 the rules you must follow are those:",
         options: [
             "of the host country",
             "of the host country which are also in your UK licence",
@@ -140,7 +140,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "7h.1"
     },
     {
-        source: "Exam Secrets Samples Q11",
+        source: "Exam Secrets FULL [Licensing] 1F1-2",
         question: "A UK amateur radio club plans to enter contest from the south of France using their club callsign. This idea is:",
         options: [
             "a good one, it might improve their score",
@@ -154,7 +154,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "7h.1"
     },
     {
-        source: "Exam Secrets Samples Q12",
+        source: "Exam Secrets FULL [Licensing] 1F2-1",
         question: "The American continent is in ITU Region:",
         options: [
             "1",
@@ -168,7 +168,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "7h.2"
     },
     {
-        source: "Exam Secrets Samples Q13",
+        source: "Exam Secrets FULL [Licensing] 1G1-1",
         question: "When carrying out an RF field assessment the table setting out the relevant tables for public exposure are identified in the:",
         options: [
             "Wireless Telegraphy Licence Conditions Booklet OFW611",
@@ -182,7 +182,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1g.1"
     },
     {
-        source: "Exam Secrets Samples TEST Q14",
+        source: "Exam Secrets FULL [Licensing] 1G1-2",
         question: "A household consists of several family members, some of whom are licenced amateurs. Which of them are permitted to be inside the EMF exclusion zone?",
         options: [
             "only the amateur operator",
@@ -197,7 +197,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: false
     },
     {
-        source: "Exam Secrets Samples Q15",
+        source: "Exam Secrets FULL [Licensing] 1H1-1",
         question: "Peak Envelope Power is that power supplied to the antenna:",
         options: [
             "at the peak of an RF cycle during normal operation",
@@ -211,7 +211,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1h.1"
     },
     {
-        source: "Exam Secrets Samples Q16",
+        source: "Exam Secrets FULL [Licensing] 1H1-2",
         question: "When operating on 5.334MHz it is necessary to:",
         options: [
             "limit the antenna height to 10 metres above ground",
@@ -225,7 +225,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1h.1"
     },
     {
-        source: "Exam Secrets Samples Q17",
+        source: "Exam Secrets FULL [Licensing] 1H1-3",
         question: "When operating double sideband in the band 5.276 to 5.284MHz the maximum bandwidth should not exceed:",
         options: [
             "4kHz",
@@ -239,7 +239,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "1h.1"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q1",
+        source: "Exam Secrets FULL [Technical Basics] 2A1-1",
         question: "A potential divider uses two 1KΩ resistors to obtain a bias voltage from the supply. The two resistors are colour coded brown, black, red, silver, indicating they are 10% tolerance. How far out might the bias voltage be?",
         options: [
             "0%",
@@ -254,7 +254,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q2",
+        source: "Exam Secrets FULL [Technical Basics] 2B1-1",
         question: "Two resistors are connected in parallel, 20 kΩ and 30 kΩ. They are connected in series with an 8 kΩ resistor. The effective resistance of the combination is:",
         options: [
             "12 kΩ",
@@ -269,7 +269,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q3",
+        source: "Exam Secrets FULL [Technical Basics] 2B1-2",
         question: "What current is drawn from the power supply in the circuit diagram?  <br><br><img src='images/secrets-tech-q3.png' alt='test'  >",
         options: [
             "10mA",
@@ -283,7 +283,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2b.1",
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q3 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2B1-2",
         question: "What current is drawn from the power supply in the circuit diagram?",
         image: "images/secrets-tech-q3.png",
         options: [
@@ -299,8 +299,8 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q4",
-        question: "What power is dissipated in the 1 kΩ resistor in the circuit diagram?  <br><br><img src='images/secrets-tech-q4.png' alt='test'  >",
+        source: "Exam Secrets FULL [Technical Basics] 2B1-3",
+        question: "What power is dissipated in the 1kΩ resistor in the circuit diagram?  <br><br><img src='images/secrets-tech-q4.png' alt='test'  >",
         options: [
             "14mW",
             "19mW",
@@ -314,7 +314,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q5",
+        source: "Exam Secrets FULL [Technical Basics] 2B1-4",
         question: "A radio receiver is reading S9 on its scale, which the handbook says is an input of 50 µV PD RMS. In 50Ω this represents an input power of:",
         options: [
             "0.05pW",
@@ -329,7 +329,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q6",
+        source: "Exam Secrets FULL [Technical Basics] 2B1-5",
         question: "The audio signal from a computer soundcard is 100mV, and must be reduced to 10mV to connect to the transmitter. A potential divider is used with a 10 kΩ resistor connected between the soundcard output and the transmitter microphone input. The resistor between the microphone input and earth should be:",
         options: [
             "900 Ω",
@@ -344,7 +344,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q7",
+        source: "Exam Secrets FULL [Technical Basics] 2D1-1",
         question: "A trimmer capacitor consists of five foils connected to the body of the device and four foils loosely interleaved between them with a thin insulation to prevent contact. It is adjusted so the spacing is, on average, halved. The capacitance will:",
         options: [
             "halve",
@@ -359,8 +359,8 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q8",
-        question: "A 1 µF and a 2 µF capacitor are connected in series. The two open ends are then connected to a 30V supply charging the two capacitors. What is the voltage across the 2 µF capacitor?",
+        source: "Exam Secrets FULL [Technical Basics] 2D1-2",
+        question: "A 1µF and a 2µF capacitor are connected in series. The two open ends are then connected to a 30V supply charging the two capacitors. What is the voltage across the 2µF capacitor?",
         options: [
             "10V",
             "15V",
@@ -374,7 +374,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q9",
+        source: "Exam Secrets FULL [Technical Basics] 2D1-3",
         question: "The energy in a capacitor is given by E = Q x V, that is the product of charge and potential difference. Given that, by how much does the energy stored in a capacitor increase if the potential difference is doubled?",
         options: [
             "doubles x2",
@@ -389,7 +389,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q10",
+        source: "Exam Secrets FULL [Technical Basics] 2D2-1",
         question: "Capacitors are available with assorted dielectrics, polythene, ceramic, etc. A factor affecting the choice of dielectric is:",
         options: [
             "linearity",
@@ -404,7 +404,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q11",
+        source: "Exam Secrets FULL [Technical Basics] 2D2-2",
         question: "Which dielectric in a capacitor is most likely to absorb energy resulting in losses as the frequency increases?",
         options: [
             "air",
@@ -419,7 +419,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q12",
+        source: "Exam Secrets FULL [Technical Basics] 2D3-1",
         question: "Apart from the capacitance, another parameter to be considered when selecting a low value capacitor (say 0.1 µF) is:",
         options: [
             "power handling",
@@ -434,79 +434,7 @@ const EXAM_SECRETS_SAMPLES = [
         tagged: true
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q__________",
-        question: "no explanation or tagged",
-        options: [
-            "a",
-            "b",
-            "c",
-            "d",
-        ],
-        correct: 0,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
-    },
-    {
-        source: "Exam Secrets Samples FULL Technical Basics Q__________",
-        question: "explanation only - not tagged",
-        options: [
-            "a",
-            "b",
-            "c",
-            "d",
-        ],
-        correct: 0,
-        explanation: "here is the explanation",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
-    },
-    {
-        source: "Exam Secrets Samples FULL Technical Basics Q__________",
-        question: "tagged",
-        options: [
-            "a",
-            "b",
-            "c",
-            "d",
-        ],
-        correct: 0,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
-        tagged: true
-    },
-    {
-        source: "Exam Secrets Samples FULL Technical Basics Q__________",
-        question: "both tagged and has an explanation",
-        options: [
-            "a",
-            "b",
-            "c",
-            "d",
-        ],
-        correct: 0,
-        explanation: "here is an explanation",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
-        tagged: true
-    },
-    {
-        source: "Exam Secrets Samples FULL Technical Basics Q__________",
-        question: "explanation key removed - not tagged",
-        options: [
-            "a",
-            "b",
-            "c",
-            "d",
-        ],
-        correct: 0,
-        // explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
-    },
-    {
-        source: "Exam Secrets Samples FULL Technical Basics Q20 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2D4-1",
         question: "The current arrow shows the direction of the current in the inductor shown in the diagram. The legend shows whether the current is increasing, decreasing, alternating or steady. The '+' symbol shows which end of the coil is positive for the induced back EMF in the coil. Which one correctly shows the polarity of the induced EMF?",
         image: "images/secrets-tech-q20.png",
         options: [
@@ -521,7 +449,52 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2d.4"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q21 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2D4-2",
+        question: "An old style doorbell has a coil acting as an electromagnet, pulling an iron arm across to strike the gong, but in doing so breaks the electrical circuit so the arm returns to the rest position, ready to repeat the process. In breaking the circuit, the current:",
+        image: "",
+        options: [
+            "stops instantly",
+            "stops quickly",
+            "increases before falling to zero",
+            "reverses direction briefy",
+        ],
+        correct: 1,
+        explanation: "The back EMF in an inductor opposes change, in this case trying to reduce the current to zero. The magnitude of the back EMF is related to the rate of change. If the current did stop instantly, the rate of chage is infinitely high, that would generate an infinite voltage to keep the current going. In reality, the resulting sparking briefly maintains the current so the rate of change is slowed. A doorbell of the type mentioned running on 6V could easily have one or two hundred volts at the breaking contact.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.4"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2D7-1",
+        question: "The graph shows the flow of current through a circuit from  'switch on'. The circuit comprises a resistor and:",
+        image: "images/secrets-tech-q30.png",
+        options: [
+            "capacitor in series",
+            "inductor in series",
+            "capacitor in parallel",
+            "inductor in parallel",
+        ],
+        correct: 1,
+        explanation: "Options C and D can be quickly ruled out. If the resistor was in parallel then at switch on the current would rise at least to the value of V/R, which does not happen. That would also apply to option A since the capacitor is initially discharged, the current would jump up to V/R and tail off as the capacitor charges. That leaves B as the only remaining option. The current is zero and climbing just after switch on, which strongly suggests an inductor must be in the only current path, which points to B as well.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.7"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2D7-2",
+        question: "A valve receiver has a power supply producing 300V. It takes about 10 seconds to unscrew the lid, and it is considered safe if the voltage has dropped to about 100V by the time the lid is off. The smoothing capacitor is 200µF. Approximately what value should be chosen as the bleeder resistor to minimise wasted power but meets the safety requirement?",
+        image: "",
+        options: [
+            "20kΩ",
+            "50kΩ",
+            "100kΩ",
+            "200kΩ",
+        ],
+        correct: 1,
+        explanation: "After one time constant, the voltage on C will have fallen to about 1/3 of its initial value. From the narrative, we can conclude tha time constant CR is 10 seconds. So 'R =10s/200µF' which comes to 50kΩ when the right units are applied.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2d.7"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2E3-1",
         question: "The drawing shows the current and voltage waveforms in an unknown component. The component is probably a:",
         image: "images/secrets-tech-q21.png",
         options: [
@@ -536,7 +509,22 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2e.3"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q22 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2E3-2",
+        question: "A 318pF capacitor has a reactance at 1MHz of:",
+        image: "",
+        options: [
+            "500Ω",
+            "1000Ω",
+            "1570Ω",
+            "5000Ω",
+        ],
+        correct: 0,
+        explanation: "X(c) = 1/(2 * pi * f * C)",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.3"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2E4-1",
         question: "A transistor amplifier is shown in the circuit diagram. Capacitor C3 is used for:",
         image: "images/secrets-tech-q22.png",
         options: [
@@ -551,7 +539,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2e.4"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q23 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2E4-2",
         question: "What is the function of the capacitor marked C in the circuit diagram?",
         image: "images/secrets-tech-q23.png",
         options: [
@@ -566,7 +554,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2e.4"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q24 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2E5-1",
         question: "What is the purpose of the inductor marked 'r.f.c.' in the circuit diagram?",
         image: "images/secrets-tech-q24.png",
         options: [
@@ -581,7 +569,166 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2e.5"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q25 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2E6-1",
+        question: "A resistor of 400Ω and a capacitor of 0.1µF are fed from an AC source. At a certain frequency the reactance of the capacitor is 300Ω. The impedance of the circuit is:",
+        options: [
+            "300Ω",
+            "400Ω",
+            "500Ω",
+            "700Ω",
+        ],
+        correct: 2,
+        explanation: "This question uses a formula from the reference booklet (Z**2 = R**2 + X**2). Look out for 3-4-5 right angled triangle ratios to avoid  the calculator.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.6",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2F1-1",
+        question: "An audio signal from the microphone in a voice transmitter is being sampled 7000 times per second. Limitations in the filtering in the microphone amplifier mean that a signal at 4kHz is present at the sampling point. What effect will this have?",
+        options: [
+            "no effect as the signal is above the Nyquist limit",
+            "the signal is below the Nyquist limit so will be accurately sampled",
+            "the signal will appear as an alias signal at 500Hz",
+            "the signal will appear as an alias signal at 3kHz",
+        ],
+        correct: 3,
+        explanation: "Sampling at 7000 samples per second gives an upper limit of 3500Hz. The 4kHz signal is 500Hz above the limit so will show as an alias 500Hz below the limit, that is 3kHz.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2f.1",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2F1-2",
+        question: "To avoid aliases appearing in the digital representation of an analogue signal, it is normal to use:",
+        options: [
+            "an analogue filter to remove signals at frequencies above the sampling rate",
+            "an analogue filter to remove signals at frequencies above half the sampling rate",
+            "an digital filter to remove signals at frequencies above the sampling rate",
+            "an digital filter to remove signals at frequencies above half the sampling rate",
+        ],
+        correct: 1,
+        explanation: "Any signal of a frequency over half the sampling rate will form an alias and must be removed by an ordinary analogue filter prior to sampling. If such signals get past the sampling and are digitised they are indistinguishable from legitimate signals.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2f.1",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2F2-1",
+        question: "The Fourier transform is used to:",
+        options: [
+            "sample analogue signals and produce a digital representation of them for subsequent digital processing",
+            "take the digital samples in the time domain and calculate the amplitudes of the signals in the frequency domain",
+            "utilise the frequency domain signals from the digital sampling to produce a panoramic display of amplitude against frequency",
+            "convert the frequency domain signals to an analogue domain suitable for feeding to an audio amplifier",
+        ],
+        correct: 1,
+        explanation: "The Fourier transform is a mathematical process of taking the digitised samples of the combined incoming signals and representing the amplitudes in frequency order.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2f.2",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2F2-2",
+        question: "What is the name of the mathematical process used to take a stream of digitised samples of an analogue signal and depict it as the amplitudes of the individual frequency components of the signal?",
+        options: [
+            "A Fourier transform",
+            "A Nyquist conversion",
+            "The Shannon transform",
+            "Anti-alias filtering",
+        ],
+        correct: 0,
+        explanation: "See 2F2-1",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2G1-1",
+        question: "In a transformer, the energy is transferred from the primary to the secondary by:",
+        options: [
+            "mutual inductance",
+            "electromagnetic coupling",
+            "magnetic resonance",
+            "eddy current production",
+        ],
+        correct: 0,
+        explanation: "The coupling between the primary and secondary windings of a transformer is termed mutual inductance, as opposed to self-inductance of a single coil. It is magnetic coupling, not electromagnetic, which is a reference to radio waves.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2g.1",
+    },
+    {
+        "id": 1,
+        note: "This was made with form capture using gemini canvas. That's why the key names are in quotes; there's an id; and an answer; some values are null; tagged is present.",
+        "source": "Exam Secrets FULL [Technical Basics] 2G1-2",
+        "question": "A valve RF amplifier requires a load impedance of 1.8kΩ, which needs to be matched to a 50Ω output. The secondary has 5 turns. How many turns are required on the primary?",
+        image: null,
+        "options": [
+            "30",
+            "36",
+            "180",
+            "250"
+        ],
+        "answer": "30",
+        "correct": 0,
+        "explanation": "Remember the impedance ratio is the square of the turns ratio. The Impedance ratio is 1800:50 or 36:1, and the square root of 36 is 6. So primary turns = 6 x secondary turns = 30.",
+        "lookup": null,
+        "syllabus": "2g.1",
+        "tagged": false
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2G1-3",
+        question: "When selecting a core for an intermediate frequency (IF) transformer, you should consider the:",
+        options: [
+            "RF screening properties of the chosen material",
+            "frequency range over which it will operate",
+            "matching to the impedance of the following circuit",
+            "resonant frequency of the chosen material",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2g.1",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2H1-1",
+        question: "At 10MHz, a long wire antenna presents a capacitive reactance at its feedpoint equivalent to a capacitor of about 20pF. What inductance is required to bring the system to resonance?",
+        options: [
+            "12.5µH",
+            "25µH",
+            "40µH",
+            "80µH",
+        ],
+        correct: 0,
+        explanation: "It's the EX309 resonant frequency formula, and transposing.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.1",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2H1-2",
+        question: "The crystal of an old oscillator circuit for a miniature CW transmitter has been lost, but the capacitor is marked as 30pF and the coil is measured as about 4.25µH. What band is the transmitter designed for?",
+        options: [
+            "10m",
+            "15m",
+            "17m",
+            "20m",
+        ],
+        correct: 3,
+        explanation: "The resont frequency formula is on EX309. Take care with units! Try an estimate first.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.1",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2E6-1",
+        question: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q25 IMAGETEST",
         question: "Which drawing shows the equivalent circuit of a crystal?",
         image: "images/secrets-tech-q25.png",
         options: [
@@ -596,7 +743,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2h.2"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q26 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] Q26 IMAGETEST",
         question: "The drawing shows a class A amplifier using an N-channel depletion mode FET. The source and drain voltages are shown. What voltage might be expected on the gate in normal operation?",
         image: "images/secrets-tech-q26.png",
         options: [
@@ -611,7 +758,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2i.3"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q27 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] Q27 IMAGETEST",
         question: "The circuit diagram shows a regulated supply for 13.6V. The voltage across the Zener diode D will be about:",
         image: "images/secrets-tech-q27.png",
         options: [
@@ -621,13 +768,13 @@ const EXAM_SECRETS_SAMPLES = [
             "10V",
         ],
         correct: 2,
-        explanation: "Regulation is achieved by monitoring the output voltage. In this circuit by means of a potential divider with two 10k Ohm resistors. The voltage fed to the base of the sense transistor will be around 6.8V. That suggests the emitter will be at just over 6V.",
+        explanation: "Regulation is achieved by monitoring the output voltage. In this circuit by means of a potential divider with two 10kΩ resistors. The voltage fed to the base of the sense transistor will be around 6.8V, which suggests the emitter will be at just over 6V.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2j.2"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q28 IMAGETEST",
-        question: "The ddrawing shows a block diagram of a typical switched mode power supply. What item or function is associated with the blank box?",
+        source: "Exam Secrets FULL [Technical Basics] Q28 IMAGETEST",
+        question: "The drawing shows a block diagram of a typical switched mode power supply. What item or function is associated with the blank box?",
         image: "images/secrets-tech-q28.png",
         options: [
             "mains transformer (50Hz)",
@@ -641,7 +788,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2j.4"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q29 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] Q29 IMAGETEST",
         question: "What function is performed in the blank box in the block diagram of a typical switched mode power supply?",
         image: "images/secrets-tech-q29.png",
         options: [
@@ -656,19 +803,121 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2j.4"
     },
     {
-        source: "Exam Secrets Samples FULL Technical Basics Q30 IMAGETEST",
-        question: "The graph shows the flow of current through a circuit from  'switch on'. The circuit comprises a resistor and:",
-        image: "images/secrets-tech-q30.png",
+        source: "Exam Secrets FULL [Technical Basics] Q33",
+        question: "",
+        image: "",
         options: [
-            "capacitor in series",
-            "inductor in series",
-            "capacitor in parallel",
-            "inductor in parallel",
+            "",
+            "",
+            "",
+            "",
         ],
-        correct: 1,
-        explanation: "Options C and D can be quickly ruled out. If the resistor was in parallel then at switch on the current would rise at least to the value of V/R, which does not happen. That would also apply to option A since the capacitor is initially discharged, the current would jump up to V/R and tail off as the capacitor charges. That leaves B as the only remaining option. The current is zero and climbing just after switch on, which strongly suggests an inductor must be in the only current path, which points to B as well.",
+        correct: 9,
+        explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2d.7"
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q35",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q36",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q_______________",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "Ω µ",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q__________",
+        question: "no explanation or tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q__________",
+        question: "explanation only - not tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        explanation: "here is the explanation",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q__________",
+        question: "tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] Q__________",
+        question: "explanation key removed - not tagged",
+        options: [
+            "a",
+            "b",
+            "c",
+            "d",
+        ],
+        correct: 0,
+        // explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
     },
 ]
 
