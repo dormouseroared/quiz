@@ -714,21 +714,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2h.1",
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] 2E6-1",
-        question: "",
-        options: [
-            "",
-            "",
-            "",
-            "",
-        ],
-        correct: 9,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
-    },
-    {
-        source: "Exam Secrets FULL [Technical Basics] Q25 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2H2-1",
         question: "Which drawing shows the equivalent circuit of a crystal?",
         image: "images/secrets-tech-q25.png",
         options: [
@@ -743,7 +729,96 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2h.2"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q26 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2H2-2",
+        question: "A home made crystal oscillator is found to be unstable in frequency, and adjustment of the small trimmer oscillator can cause it to stop oscillating. The circuit used has been published in a well known magazine, and is known to work. What is a reasonable next check, having inspected the circuit board and soldering?",
+        options: [
+            "check that the gain of the transistor is sufficient for the intended operation",
+            "check whether the crystal should be mounted horizontally or vertically",
+            "check the stability and adequacy of the bench power supply unit",
+            "check whether the crystal is designed for series or parallel operation",
+        ],
+        correct: 3,
+        explanation: "If the circuit expects a crystal designed for parallel resonance, but a series resonance crystal is used, then it will usually work in the 'wrong' mode,but not reliably, and not on the correct frequency.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.2",
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2H4-1",
+        question: "A series resonant circuit has 10V peak across it when at resonance. At that frequency, the resistance of the coil is approximately 4Ω and the Q-factor is calculated as 100. The peak voltage across the capacitor will be about:",
+        image: "",
+        options: [
+            "40V",
+            "100V",
+            "400V",
+            "1000V",
+        ],
+        correct: 3,
+        explanation: "The Q-factor is the ratio of X(L) to R which means it is also the ratio of the voltage across R, which is 10V peak, to the voltage across L (and C). At resonance the voltages across L and C will be equal and in antiphase, so the supply voltage is all across R. With a Q of 100 the voltage across the inductor will be Q x the supply voltage, which comes to 1000V. This may be the case in an AMU at high transmit powers, although with the antenna radiating most of the power, the loaded-Q may be rather lower.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.4"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2H4-2",
+        question: "A 3.5MHz tuned circuit has a 3dB bandwidth of 35kHz. At that frequency the reactance of both the coil and the capacitor are calculated to be 2.4kΩ. The coil resistance will be about:",
+        image: "",
+        options: [
+            "2.4Ω",
+            "3.5Ω",
+            "24Ω",
+            "35Ω",
+        ],
+        correct: 2,
+        explanation: "The Q-factor of this circuit is 3.5MHz/35kHz which is 100.Q is also X(L)/R (and X(C)/R since X(L) = X(C) at resonance) so if X is 2.4kΩ then R must 24Ω.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.4"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2H4-3",
+        question: "Some antenna matching units can have tuned circuits with a high Q-factor. A significant implication of this is that:",
+        image: "",
+        options: [
+            "there will be a need to reduce the Q-factor for satisfactory reception of wide band signals",
+            "the circulating currents and voltages in the tuned circuits can be very high",
+            "tuning the receiver to the wanted signal can become quite critical",
+            "a low pass filter is also desirable to limit harmonic radiation",
+        ],
+        correct: 1,
+        explanation: "Robust construction and wide spaced capacitors are needed in high power AMUs to cope with high circulating currents and voltages",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.4"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2H5-1",
+        question: "Which circuit or device possesses a property commonly called its 'dynamic resistance'?",
+        image: "",
+        options: [
+            "The input resistance of a feeder for correct impedance matching",
+            "The input resistance of the base of an RF transistor amplifier",
+            "The effective resistance of a parallel tuned circuit at resonance",
+            "The effective resistance of a series tuned circuit at resonance",
+        ],
+        correct: 2,
+        explanation: "Dynamic resistance R(D) of a parallel tuned circuit.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.5"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I1-1",
+        question: "A Zener diode is:",
+        image: "",
+        options: [
+            "forward biased, to provide a specified reference voltage",
+            "reverse biased, to provide a specified reference voltage",
+            "forward biased, to provide an accurately known current",
+            "reverse biased, to prevent excessive current flow",
+        ],
+        correct: 1,
+        explanation: "The Zener diode is used reverse biased and will conduct at a set voltage, determined during manufacture. The current must be limited to prevent destruction. It is a voltage reference.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2i.1"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I3-1",
         question: "The drawing shows a class A amplifier using an N-channel depletion mode FET. The source and drain voltages are shown. What voltage might be expected on the gate in normal operation?",
         image: "images/secrets-tech-q26.png",
         options: [
@@ -758,7 +833,97 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2i.3"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q27 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2I4-1",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I4-2",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I4-3",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I4-4",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I4-5",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2I5-1",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2J2-1",
         question: "The circuit diagram shows a regulated supply for 13.6V. The voltage across the Zener diode D will be about:",
         image: "images/secrets-tech-q27.png",
         options: [
@@ -773,7 +938,22 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2j.2"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q28 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2J3-1",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL [Technical Basics] 2J4-1",
         question: "The drawing shows a block diagram of a typical switched mode power supply. What item or function is associated with the blank box?",
         image: "images/secrets-tech-q28.png",
         options: [
@@ -788,7 +968,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2j.4"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q29 IMAGETEST",
+        source: "Exam Secrets FULL [Technical Basics] 2J4-2",
         question: "What function is performed in the blank box in the block diagram of a typical switched mode power supply?",
         image: "images/secrets-tech-q29.png",
         options: [
