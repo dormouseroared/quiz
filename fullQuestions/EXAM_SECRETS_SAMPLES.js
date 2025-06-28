@@ -983,7 +983,67 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "2j.4"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q33",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        question: "An FM transmission is regarded as 'narrow band' when:",
+        image: "",
+        options: [
+            "only speech or audio signals below 3.5kHz are transmitted",
+            "the deviation is less than 50% of the peak deviation for the system",
+            "the modulation index is equal to or less than unity",
+            "the deviation ratio does not exceed unity",
+        ],
+        correct: 2,
+        explanation: "The definition of narrow band is where the ratio of the deviation to the audio frequency is less than one. Some amateur transmissions can be slightly over unity, but in general terms, thay are regarded as narrow band, whiich avoids taking up too much spectrum greater than that required for reasonable sounding and effective communication.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3a.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3B1-1",
+        question: "The diagram shows an SSB transmitter. What is the function of the box marked '2'?",
+        image: "images/secrets 3B1-1.png",
+        options: [
+            "modulator",
+            "mixer",
+            "amplifier",
+            "sideband filter",
+        ],
+        correct: 1,
+        explanation: "Boxes 2 and 4 are both mixers (HINT two inputs, one output). Box 4 is better known as the modulator where the modulation is set at a fixed 'carrier' frequency set by the crystal oscillator. That is then mixed up (or down) to the transmit frequency in box 2. Box 1 is a synthesiser allowing the final frequency to be controlled.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3b.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3B1-2",
+        question: "The modulator of a multi-mode transceiver operates at 4.7MHz. To produce a signal at 14.1MHz the modulator output should be:",
+        image: "",
+        options: [
+            "fed to a frequency tripler",
+            "modulated on to the 14.1MHz carrier",
+            "mixed with a clean signal on 9.4MHz",
+            "filtered to remove the image on 11.7MHz",
+        ],
+        correct: 2,
+        explanation: "Mixing the modulated signal at 4.7MHz with a signal at 9.4MHz will produce outputs at 4.7MHz (which must be filtered out) and 14.1MHz. A tripler will produce the right carrier frequency, but is not suitable for SSB or AM since it will damage the audio sidebands.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3b.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3C1-1",
+        question: "The MOST significant effect of drift in a transmitter is that:",
+        image: "",
+        options: [
+            "the distant receiver will have to retune periodically to maintain contact",
+            "the received signal quality will be markedly impaired",
+            "transmission may occur outside an amateur band",
+            "interference may be caused to other amateurs",
+        ],
+        correct: 2,
+        explanation: "The question does not say where in the band the transmission is, so it applies to any part of the band. In-band drift is a nuisance to the station contacted, annoying to amateurs on adjacent frequencies and a breach of the licence if drifting out of band. As asked, the event of most significance is out of band transmission. Note if the frequency  was stated and clearly well away from the band edge, the a question on the most likely unfortunate effect would be annoying other amateurs. Read such questions carefully to be sure of what is being asked.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3c.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
         question: "",
         image: "",
         options: [
@@ -998,7 +1058,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q35",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
         question: "",
         image: "",
         options: [
@@ -1013,7 +1073,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q36",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
         question: "",
         image: "",
         options: [
@@ -1028,7 +1088,7 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q_______________",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
         question: "",
         image: "",
         options: [
@@ -1038,64 +1098,52 @@ const EXAM_SECRETS_SAMPLES = [
             "",
         ],
         correct: 9,
-        explanation: "Ω µ",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
-    },
-    {
-        source: "Exam Secrets FULL [Technical Basics] Q__________",
-        question: "no explanation or tagged",
-        options: [
-            "a",
-            "b",
-            "c",
-            "d",
-        ],
-        correct: 0,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q__________",
-        question: "explanation only - not tagged",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        question: "",
+        image: "",
         options: [
-            "a",
-            "b",
-            "c",
-            "d",
+            "",
+            "",
+            "",
+            "",
         ],
-        correct: 0,
-        explanation: "here is the explanation",
+        correct: 9,
+        explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q__________",
-        question: "tagged",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        question: "",
+        image: "",
         options: [
-            "a",
-            "b",
-            "c",
-            "d",
+            "",
+            "",
+            "",
+            "",
         ],
-        correct: 0,
+        correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
-        tagged: true
+        syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL [Technical Basics] Q__________",
-        question: "explanation key removed - not tagged",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        question: "",
+        image: "",
         options: [
-            "a",
-            "b",
-            "c",
-            "d",
+            "",
+            "",
+            "",
+            "",
         ],
-        correct: 0,
-        // explanation: "",
+        correct: 9,
+        explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
