@@ -1043,7 +1043,712 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "3c.1"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Transmitters Receivers] 3C3-1",
+        question: "The block diagram of a frequency synthesiser shows the division ratios and the crystal oscillator frequency. The output frequency is:",
+        image: "images/secrets 3C3-1.png",
+        options: [
+            "100.4544MHz",
+            "432.0000MHz",
+            "436.0000MHz",
+            "2880.000MHz",
+        ],
+        correct: 2,
+        explanation: "The reference signal at 6MHz is divided by 480 so the phase comparator operates at 6000/480 = 12.5kHz. The VCO signal is divided by 34880 and that must also be 12.5kHz. The VCO is operating at 12.5 x 34880 = 436000kHz or 436MHz in the 70cm amateur band.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3c.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3C3-2",
+        question: "The drawing shows an example of a:",
+        image: "images/secrets 3C3-2.png",
+        options: [
+            "phase lock loop synthesiser",
+            "digital to analogue conversion",
+            "direct digital synthesis",
+            "analogue sinewave generation",
+        ],
+        correct: 2,
+        explanation: "The drawing is of a Direct Digital Synthesiser. The sinewave lookup table is probably the best indicator.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3c.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3D1-1",
+        question: "A 9cm transmitter is used to produce an FM signal on 10.260GHz. The transmitter is likely to be set to a frequency of:",
+        image: "",
+        options: [
+            "3260MHz",
+            "3420MHz",
+            "3456MHz",
+            "3620MHz",
+        ],
+        correct: 1,
+        explanation: "If the 9cm source is mixed up then all options can be equally likely. FM signals can be frequency multiplied, so divide 10260MHz by the four options and see which one has an integer value. 10260/3420 = 3, so the 9cm driver transmitter feeds a frequency tripler.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3d.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3E1-1",
+        question: "What is the necessary bandwidth of an FM system with a peak deviation of 5kHz and a maximum audio frequency of 3.5kHz?",
+        image: "",
+        options: [
+            "5kHz",
+            "7kHz",
+            "10kHz",
+            "17kHz",
+        ],
+        correct: 3,
+        explanation: "The rule of thumb is 2 x (max deviation + max audio frequency) so 2 x (5 + 3.5) = 17kHz. In theory, FM has an infinite number of sidebands of diminishing amplitude. Carson's rule ia a guide to what is adequate to recover the modulation with good accuracy. It is more useful for wideband FM (higher modulation indexes), but is an indication for amateur usage.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3e.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3E1-2",
+        question: "A data transmitter feeds the binary signal direct to the modulator of the transmitter, resulting in a 170kHz transmitted frequency shift between a data one and a data zero. Off-air this type of modulation is indistinguishable from:",
+        image: "",
+        options: [
+            "feeding the binary data to the microphone socket of an FM transmitter",
+            "feeding the binary data to a modem producing two audio tones separated by 170kHz and feeding them to the microphone socket of an FM transmitter",
+            "feeding the binary data to a modem producing two audio tones separated by 170kHz and feeding them to the microphone socket of an SSB transmitter",
+            "feeding the binary data to the microphone socket of an SSB transmitter",
+        ],
+        correct: 2,
+        explanation: "This is not an easy question, but it does get to the heart of different forms of modulation. The stem of the question describes direct moddulation, producing one radio frequency for a data 0 and another 170kHz different for a data 1. Feedibg binary data to the microphone socket fails for two reasons. The voltage levels are likely to be much higher than the few millivolts expected, and microphones are analogue not digital. That rules oout options A and D. Feeding two audio tones into the microphone socket on FM is a good system in common use, but FM has multiple sidebands, not as described in the stem. Feeding an audio tone into an SSB transmitter will give a single RF signal offset from the notional carrier by the audio frequency, so using two audio tones 170kHz apart will have an identical RF output. It will not be possible, off-air, to know which method was used to produce the signal.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3e.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3F2-1",
+        question: "Which type of modulation CANNOT use a non-linear external RF power amplifier?",
+        image: "",
+        options: [
+            "any type of modulation",
+            "CW modulation",
+            "SSB modulation",
+            "FM modulation",
+        ],
+        correct: 2,
+        explanation: "Non-linear amplifiers can only be used where the RF level does not change, other than siple on or off, as in CW. Some data systems appear to be of constant amplitude, but do have momentary amplitude variations during the change from one data symbol to the next.They too need linear amplifiers to avoid spurious RF at other frequencies during the change.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3f.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3F2-2",
+        question: "In the context of an electronic circuit, what is meant by the term linearity?",
+        image: "",
+        options: [
+            "the circuit has only one input and one output, so the output is always a function of the one input",
+            "the circuit may have more than one input, but all of them will have an equal effect on the output",
+            "a given percentage change in the input will result in exactly the same percentage change in the output",
+            "a graph of the output current plotted against the output voltage will always be a straight line",
+        ],
+        correct: 2,
+        explanation: "Linearity in an amplifier means that the output is a faithful reproduction of the input with no distortion, no additional frequencies or harmonics that were not present at the input. The only ddifference is that the signal is bigger.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3f.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3F2-3",
+        question: "Signals at 3.601MHz and 3.603MHz represent two audio tines SSB modulated on a 3.600MHz suppressed carrier which are fed to a non-linear amplifier. Apart from the wanted signals, possible output frequencies are:",
+        image: "",
+        options: [
+            "3.605MHz and 3.906MHz",
+            "3.599MHz and 3.607MHz",
+            "3.604MHz and 3.605MHz",
+            "3.602MHz and 3.605MHz",
+        ],
+        correct: 1,
+        explanation: "If an amplifier or other circuit is non-linear then there will be harmonics andd intermodulation products (Imps) of all the frequencies present. At RF, the harmonics will be way out of band and easily removed by the filters. So will many of the intermodulation products. However, frequencies like (3 x f1) - (2 x f2) will be as far removed from f1 and f2 as f1 and f2 are apart. They will be in-band and particularly if f1 and f2 are from relatively low audio notes then the Imps will be on top of other audio frequencies and impossible to filter out. (2 x 3.601) - 3.603 = 3.599 and (3 x 3.603) - (2 x 3.601) = 3.607 This question is not difficult but does take a bit of time searching for credible frequencies. Leave it to last.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3f.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3F3-1",
+        question: "In the circuit diagram, the collector load can be identified as:",
+        image: "images/secrets 3F3-1.png",
+        options: [
+            "the r.f.c.",
+            "L1",
+            "L1, C1-3 and the output",
+            "the transistor",
+        ],
+        correct: 2,
+        explanation: "The collector load is the component(s) which absorb the signal currents and power. The radio frequency choke, (r.f.c.), will not pass any RF, only DC to power the transistor. All the amplified RF passes via L1, C1, C2 & C3 to the output load, the feeder and antenna.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3f.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3F4-1",
+        question: "Employing speech processing in a transmitter will:",
+        image: "",
+        options: [
+            "limit the average output power and heat dissipation to a safe value",
+            "increase the average output power and heat dissipation",
+            "reduce the average output power or heat dissipation",
+            "not affect the average output power or heat dissipation",
+        ],
+        correct: 1,
+        explanation: "The aim of speech processing is to limit the peaks of the signal, allowing the average output power level to be increased without breaching the licence limits or the limits imposed by the equipment, typically the power amplifier.If the average level is increased then so is the heat dissipation andd the demand on the power supply.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3f.4"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3F5-1",
+        question: "The ALC line between the transmitter and external power amplifier (PA):",
+        image: "",
+        options: [
+            "provides a signal from the transmitter to the PA to control the output power",
+            "provides a signal from the PA to limit or reduce the transmitter output power",
+            "allows the metering on the transmitter to show the relevant conditions in the PA",
+            "prevents the PA from being over-modulated",
+        ],
+        correct: 1,
+        explanation: "The AUTOMATIC LEVEL CONTROL (ALC) is a signal fed back from the power amplifier (often external) to the driver transmitter to indicate the drive is higher than the power amplifier can properly handle. It should not be relied on or used to set the upper limit of output power.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3f.5"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G1-1",
+        question: "Over-modulation is most likely to cause:",
+        image: "",
+        options: [
+            "unwanted radiation on harmonics of the RF transmitted signal",
+            "interference caused by harmonics of the audio signal",
+            "inadequate suppression of the unwanted sideband",
+            "frequency instability in the transmitted signal",
+        ],
+        correct: 1,
+        explanation: "Over-modulation means that the maximum excursions of the audio or other input signal is trying to drive the modulator beyond its designed limit. The most likely effect is that the audio signal will be clipped in some way and that will introduce distortion, harmonics and intermodulation products after any frequency limiting in the microphone amplifier, or other source. That means the sidebands will extend beyond the intended bandwidth, causing interference to users on adjacent channels or frequencies.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G1-2",
+        question: "An amplitude modulated transmission on 14.200MHz is over-modulated. This may cause interference to other stations on:",
+        image: "",
+        options: [
+            "14.100MHz",
+            "14.196MHz",
+            "28.4MHz",
+            "42.6MHz",
+        ],
+        correct: 1,
+        explanation: "As explained in 3G1-1 the transmitted RF will extend outside the intended frequency band, In this case we are looking for a user just outside a band 3kHz above and below the carrier i.e. just outside 14.197 to 14.203MHz.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G2-1",
+        question: "Overdriving an external power amplifier (PA) may cause intermodulation products because:",
+        image: "",
+        options: [
+            "the PA will be operated outside its linear range",
+            "the ALC action will try to shut down the PA",
+            "the ALC is too slow to respond to the modulation envelope",
+            "excessive current will flow in the PA output transistors",
+        ],
+        correct: 0,
+        explanation: "Overdriving the PA will push it outside its linear range, causing distortion and intermodulation products",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G2-2",
+        question: "The drive to the power amplifier stage of a transmitter is a bit too high. The most likely affect of this is:",
+        image: "",
+        options: [
+            "over-modulation resulting in a loss of audio when on SSB",
+            "increase in the background noise level on speech",
+            "a reduction in the stability of the carrier frequency",
+            "an increase in the bandwidth of the transmitted signal",
+        ],
+        correct: 3,
+        explanation: "Excess drive to the PA  can cause non-linearity and consequent intermodulation products. Odd order products, particularly third order, will be close to and even within the wanted signal resulting in an increase in the transmitted bandwidth.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G3-1",
+        question: "A transmitter is designed to perform all its modulation functions at 5MHz, and mix the modulated signal with a signal from a synthesiser, which can be multiplied up as required. What type of filter should be provided at the PA output?",
+        image: "",
+        options: [
+            "high-pass filter",
+            "low-pass filter",
+            "band-pass filter",
+            "band-stop filter",
+        ],
+        correct: 2,
+        explanation: "A low-pass filter will provide some protection against harmonics of the RF, but a band-pass filter is needed to protect against radiating lower frequencies present inside the transmitter as part of the overall process.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G4-1",
+        question: "The circuit diagram shows part of an amplifier for 144MHz. L2 and C2 resonate at 144MHz, but there is an unwanted spurious signal caused by L1 and C1 resonating at 2MHz. This parasitic oscillation may be removed by:",
+        image: "images/secrets 3G4-1.png",
+        options: [
+            "changing C1 from 100nF to 500nF",
+            "fitting another 100nF capacitor in parallel with L1",
+            "fitting a 10nF capacitor and 10Ω resistor in series from the bottom of L1 to the 0V line",
+            "fitting a 10nF capacitor and 10Ω resistor in series from the bottom of L2 to the 0V line",
+        ],
+        correct: 2,
+        explanation: "Changing the value of L1 or C1 may simply change the frequency at which L1 and C1 resonate. It might dampen the resonance, but just as likely it won't. The cure is to absorb the energy so the oscillation does not occur. A resistor from the bottom of L1 to the 0V line achieves this, but a capacitor having a low reactance at 2MHz is needed as a DC block.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.4"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3G5-1",
+        question: "A frequency synthesiser may produce the wrong output if:",
+        image: "",
+        options: [
+            "the 'out of lock' signal loses control of the VCO in the synthesiser",
+            "the signals into the phase comparator are on different frequencies",
+            "division ratios of the programmable divider and crystal divider are different",
+            "temperature stability of the VCO is not maintained",
+        ],
+        correct: 1,
+        explanation: "A pgase lock loop synthesiser (PLL) is in lock when the two signals into the phase comparator are equal and it is their phase difference that is controlling the VCO frequency. A demand for a rapid frequency change or a momentary spike or break in the DC supply can cause loss of lock, such that the frequency from the VCO is no longer controlled, causing the two frequencies to be different. A well designed circuit will re-establish lock, but during that time an out-of-lock signal is needed to inhibit transmission of an uncontrolled signal.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3g.5"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3H3-1",
+        question: "A radio receiver can just resolve a signal at a level of 0.16 µV (-123dBm), and the maximum signal before overloading is 10mV (-27dBm). What is the dynamic range?",
+        image: "",
+        options: [
+            "27dB",
+            "96dB",
+            "123dB",
+            "150dB",
+        ],
+        correct: 1,
+        explanation: "The dunamic range is simply the range, in dB, between the weakest resolvable signal, and the maximum before the onset of non-linearity due to overload. 123 - 27 = 96dBm. Note, both levels were in the same unit (dBm) and had the same sign (-). If the units and/or sign were different, then more care would be required.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3h.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3H3-2",
+        question: "Listening close to the top of the 7MHz band it is noticed that weak signals become much easier to resolve in the late afternoon, when a broadcast station on 7.22MHz ceases transmission. It is well over 30kHz away so it was not expected to be a problem with a 2.7kHz SSB filter on the wanted signal. A likely cause is:",
+        image: "",
+        options: [
+            "the SSB filter is not quite as good as expected",
+            "the broadcast station has excessively wide sidebands",
+            "intermodulation products in the receiver front end",
+            "driving the AGC in time with the broadcast modulation",
+        ],
+        correct: 2,
+        explanation: "The 2.7kHz filter will be in the receiver IF. The strong brioadcast signal on 7.22MHz will be inside the bandwidth of the RF front end amplifier and is evidently overloading it. That is causing multiple intermodulation products, seen as a generaL increase in the noise floor for several kHz around the broadcast and masking the wanted signal. It might be that a small input attenuator will reduce the overload and Imps without reducing the wanted signal so much that it is then unusable.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3h.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3I3-1",
+        question: "The diagram shows a double superhet for HF that mixes all incoming signals to the first IF above the HF band. To what frequency should LO2 be set?",
+        image: "images/secrets 3I3-1.png",
+        options: [
+            "12.650MHz",
+            "38.900MHz",
+            "66.400MHz",
+            "69.700MHz",
+        ],
+        correct: 2,
+        explanation: "This is a matter of trying the four possibilities. 53.75 + 14.25 = 68MHz as IF1. Mix with LO2 at 66.4MHz gives an IF2 of 1.6MHz",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3i.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3I3-2",
+        question: "A general coverage receiver is required to tune over the range 600kHz to 1600kHz and uses readily available IF components at 465kHz. The best choice for the local oscillator tuning range is:",
+        image: "",
+        options: [
+            "135kHz - 1135kHz",
+            "465kHz - 1465kHz",
+            "600kHz - 1600kHz",
+            "1065kHz - 2065kHz",
+        ],
+        correct: 3,
+        explanation: "Option B can be discounted, as the LO should not be on the IF. Option D is the wanted sinal tuning range, so won't be the LO range. Options A and D would both give the required tuning range and IF, however the question asks for the best choice,acknowledging there is more than one possibility. Tuning from 1065kHz to 2065kHz is a 2:1 tuning range; tuning from 135kHz to 1135kHz is an 8.4:1 range, which is inherently harder. It would also required a 70:1 capacitor range in a tuned circuit. This is not normally achievable in one span.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3i.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3I3-3",
+        question: "A wideband scanner picks up a good CW signal when tuned to 3.61MHz, but picks up the same signal when tuned to 7.51MHz. A reason for this might be that the:",
+        image: "",
+        options: [
+            "transmitter has a strong second harmonic",
+            "receiver intermediate frequency is 1.95MHz",
+            "signal on 3.61MHz is overloading the receiver",
+            "transmitter key click filter is faulty",
+        ],
+        correct: 1,
+        explanation: "A superhet receiver can receive equally on the wanted frequency and its image. Normally, the image is rejected by a tuned circuit in the RF front end. The reference to wideband is a hint that it is not filtered in this case. The wanted signal and its image are twice the IF apart which would put the IF on (7.51 - 3.61)/ 2 which is 1.95MHz. Option B is the correct answer. The second harmonic of 3.61MHz is 7.22MHz, too far away from 7.51MHz to be credible and particularly on CW where even small frequency offsets are audibly clear. That discounts options A and C, which differ only in where the harmonics originates: transmitter or overloaded receiver. Key clicks are also a red herring, as there could be such clicks, but that does not fit the desription of Morse being clearly heard.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3i.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3I3-4",
+        question: "The factor suggesting a low intermediate frequency should be used in a receiver design is that:",
+        image: "",
+        options: [
+            "image frequency rejection is simplified",
+            "the tuning range of the local oscillator is reduced",
+            "oscillation due to stray capacitances is less likely to occur",
+            "the rejection of adjacent channel interference is easier to accomplish",
+        ],
+        correct: 3,
+        explanation: "A given frequency offset is a larger proportion of a low intermediate frequency. It is easier to filter out an adjacent channel with a low IF.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3i.3"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3I4-1",
+        question: "A feature of an over-coupled response in an IF transformer is that the:",
+        image: "",
+        options: [
+            "bandwidth is markedly reduced, making the configuration ideal for CW reception",
+            "-3dB bandwidth is wider than other coupling methods, with minimal effect on the response at -30dB or -60dB",
+            "increased coupling allows lower gain in the IF transistors, with consequent reduction in likelihood of oscillations",
+            "distortions caused by reduced AGC bias are significantly reduced",
+        ],
+        correct: 1,
+        explanation: "Over-coupling a tuned circuit means wider shoulders and a modest dip in the centre of the frequency response curve, That widens the acceptance bandwidth at -3dB (or -6dB) without having much effect on the -60dB bandwidth. That can mean the response is closer matched to the frequenbcy occupancy of a wanted signal, without affecting the rejection of nearby unwanted signals.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3i.4"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3I5-1",
+        question: "An operator has taken much care to get a really good IF filter for CW use, but in use the results are much poorer than expected; a very clean stable signal appears to get through the filter over a wider frequency range than the filter response. A possible reason is:",
+        image: "",
+        options: [
+            "the receiver's local oscillator has a high level of phase noise close to its operating frequency",
+            "the poor screening of the IF filters is allowing too much signal leakage across the whole IF band.",
+            "the image frequency attenuation is a lot poorer than the out of band attenuation of the new IF filer",
+            "the RF front end amplifier is not as noise free as the new filter needs to operate to its full potential",
+        ],
+        correct: 0,
+        explanation: "The question clearly states the filter response is good and that the test signal is good. Option D about noise does not address the problem and is irrelevant to the question. Option C, regarding image response, is also irrelevant. Options A and B appear plausible, but B is discouraged, saying the filter is good. Can A be the answer? Yes. Phase noise, the small random phase variations  of the local oscillator, cause noise sidebands on the otherwise clean oscillator signal. The RF test signal is intended to mix with the  LO to produce the IF. However, it can also mix with the spurious noise sidebands of the LO, meaning it is present in the IF over the width of those noise sidebands, even if the test signal was absolutely perfect. In good, low noise receivers the phase noise can be a limiting factor in receiver(or transmitter) performance.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3i.5"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3J1-1",
+        question: "A radio receiver is specified as having a lowest resolvable signal of 5µV (-123dBW) and a maximum signal without overload of 158mV (-33dBW). Fitting a preamp of 10dB gain results in the lowest resolvable signal of 3µV (-127dBW). What change is there in the dynamic range of the new system?",
+        image: "",
+        options: [
+            "increased by 4dB",
+            "no change",
+            "reduced by 4dB",
+            "reduced by 6dB",
+        ],
+        correct: 3,
+        explanation: "The dynamic range of the receiver itself is 90dB (123 - 33). With the pre-amp, the maximum signal before overload drops by 10dB due to the gain of the pre-amp. On its own that reduces the dynamic range by 10dB. However, the combination of pre-amp gain and its superior noise performance has allowed signals of 3µV to be resolved, rather than 5µV, an improvement of 127 - 123 = 4dB. The overall dynamic rabge has reduced by 10 - 4 = 6dB.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3j.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3K1-1",
+        question: "Demodulation of an FM signal is normally achieved by a circuit which:",
+        image: "",
+        options: [
+            "relies on the slope of a tuned circuit producing amplitude changes in response to the frequency changes of the signal",
+            "times the period between successive cycles to determine the exact frequency of the signal",
+            "mixes the signal with a known reference frequency to determine instantaneous frequency offset",
+            "uses changes in phase angle in a tuned circuit to give different voltages, which may then be rectified",
+        ],
+        correct: 3,
+        explanation: "The normal method  of demodulating FM is to use a circuit which relies on phase changes in a tuned circuit. The phase changes much more rapidly than the amplitude response, so is sensitive to the comparitively small frequency changes of narrow band FM. Slope detection will work, provided the slope of the side of a tuned circuit response is reasonably linear, but is markedly less sensitive. It can only really be considered an option when the receiver has a diode detector (for AM) but no purpose designed FM capability. It is also only usable on strong signals due to its insensitivity. There are other methods, for example, using a phase lock loop, perhaps more common for data demodulation, but these are outside the syllabus.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3k.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3K1-2",
+        question: "Why, when an all mode receiver is set to FM, is the AGC normally turned off?",
+        image: "",
+        options: [
+            "The AGC would interfere with the amplitude variations of the received signal",
+            "the gain is maximised so a limiter results in constant level signals",
+            "the gain is minimised so the signals don't overload the modulator",
+            "FM relies on frequency variations, so the amplitude is not of concern",
+        ],
+        correct: 1,
+        explanation: "Turning off the AGC allows the IF amplifiers to work at maximum gain. The signal amplitude is then limited by using diodes to clip the signal or a transistor circuit with a limited supply voltage and running oyut of headroom. That ensures constant level signals into the demodulator to remove much of the effect of noise, which is an amplitude disturbance and also enhances 'capture effect' whereby weaker co-channel FM signals are largely ignored.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3k.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3L1-1",
+        question: "Choosing a slow decay on the AGC means that:",
+        image: "",
+        options: [
+            "the transmitter will increase power to an external power amplifier slowly, enabling the onset of non-linearity to be easily identified",
+            "the background noise, particularly when on SSB will recover to its normal level over a few seconds rather than instantly",
+            "a sudden loud noise such as a static crash is attenuated to a greater extent than normal to prevent any hearing loss or damage",
+            "the average power fed to the transmitter can be increased since the peaks of power are more limited than normal speech",
+        ],
+        correct: 1,
+        explanation: "A fast attack is often desirable to limit the sesponse to sudden loud nioses. A slow decay means the IF gain recovers slowly, so background RF noise returns to its normal level over a second or two and possibly longer.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3l.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3M1-1",
+        question: "What method does a software defined receiver use to demodulate incoming signals which may use any modulation mode?",
+        image: "",
+        options: [
+            "the receiver is equipped with all the chosen demodulator circuits and can rapidly try each one until an intellible signal emerges ",
+            "the receiver is equipped with all the chosen demodulator circuits and can simultaneously use each one, picking the output with an intellible signal",
+            "the receiver demodulates the amplitude of the signal in two phases, separated by ninety degrees, allowing any modulation mode to be extracted",
+            "the receiver requires a data signal, normally encoded im the carrier, to define the modulation mode being used",
+        ],
+        correct: 2,
+        explanation: "By demodulating and digitising the received signal in two phases at right angles it is possible to use software to demodulate any known modulation scheme. Being a software function, it is also possible to add the capability to demodulate new modes, simply by updating the software.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3m.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3M1-2",
+        question: "The drawing shows the phasor diagram representation of a modulated signal. What method of modulation is shown?",
+        image: "images/secrets 3M1-2.png",
+        options: [
+            "amplitude modulation",
+            "frequency modulation",
+            "phase modulation",
+            "data modulation",
+        ],
+        correct: 0,
+        explanation: "The actual signal at any moment in time is the vector (or phasor) sum of the carrier and all sidebands present. In this case, the carrier and upper and lower sidebands. Inspection of the drawing shows the resultant will have constant phase with the sideband vectors simply adding and subtracting to the length i.e the amplitude of the signal. That is AM.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3m.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3M2-1",
+        question: "The drawing shows part of the front end of an SDR receiver. What is significant about signals f1 and f2 from the local oscillator?",
+        image: "images/secrets 3M2-1.png",
+        options: [
+            "f1 and f2 must be exactly in phase with the incoming carrier",
+            "f1 and f2 must have exactly a 90 degree phase relationship",
+            "f1 and f2 must have exactly a 180 degree phase relationship",
+            "f1 and f2 must be harmonically related, normally second harmonic",
+        ],
+        correct: 1,
+        explanation: "The two frequencies f1 and f2 must be at right angles, so the amplitude and phase of the incoming RF signal can be accurately digitised for subsequent processing, to separate out individual transmissions and demodulate them mathematically",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3m.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3N1-1",
+        question: "Which one of the following parts of a tranceiver is only used on one of the two functions  of transmitting or receiving?",
+        image: "",
+        options: [
+            "automatic level control",
+            "DDS local oscillator",
+            "mixer",
+            "carrier insertion oscillator",
+        ],
+        correct: 0,
+        explanation: "ALC is only used on transmit, to control the amplitude of the transmitted signal and avoid overdriving the RF power amplifier, to prevent it producing excessive harmonics and intermodulation products. The other functions are used for both transmit and receive.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3n.1"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3N2-1",
+        question: "The homemade converter shown in the drawing is intended to be connected to an HF receiver operating in the 28 - 30MHz band. Which amateur band is it intended for?",
+        image: "images/secrets 3N2-1.png",
+        options: [
+            "2m",
+            "4m",
+            "6m",
+            "10m",
+        ],
+        correct: 2,
+        explanation: "The converter is producing an IF on 28-30MHz using an 80MHz LO. The input RF is either 80 - (28 to 30) = 50 to 52MHz or 80 + (28 to 30) = 108 to 110MHz. 50MHz is the 6m amateur band. 108 to 110MHz is an aeronautical radio navigation band.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3n.2"
+    },
+    {
+        source: "Exam Secrets FULL [Transmitters Receivers] 3N2-2",
+        question: "The converter shown has an unfortunate design problem. What is it?",
+        image: "images/secrets 3N2-1.png",
+        options: [
+            "the oscillators in the transverter and receiver are in different enclosures so may suffer different temperature related drifts",
+            "the received frequency will decrease as the frequency on the HF receiver is increased, because the transverter oscillator is above the received frequency",
+            "it will be necessary to add 28MHz to all the frequencies displayed on the HF receiver",
+            "The system will be unsuitable for receiving SSB signals because the sidebands are reversed in the mixing process",
+        ],
+        correct: 1,
+        explanation: "The converter will translate 50MHz to 30MHz and 52MHz to 28MHz, so tuning up the band on the HF receiver will result in tuning down the band on 6m. It will also result in the upper and lower sidebands swapping sides. Pefectly usable, just have to set to the 'wrong' sideband and tune accordingly.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "3n.2"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4A3-1",
+        question: "The drawing shows two 70MHz Yagis, stacked together with ƛ/4 tails of solid polythene coax to the splitter for impedance matching. What length are the tails?",
+        image: "images/secrets 4A3-1.png",
+        options: [
+            "71cm",
+            "107cm",
+            "143cm",
+            "214cm",
+        ],
+        correct: 0,
+        explanation: "The coax is described as solid polythene, so you should remember that it has a velocity factor of 2/3. Lengths in the coax are 2/3 of the free space calculation. At 70MHz a wavelength is 300/70 or 4.29m, and ƛ/4 is 107cm. Then we take 2/3 of that to give 71cm.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4a.3"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4B1-1",
+        question: "The drawing shows a:",
+        image: "images/secrets 4B1-1.png",
+        options: [
+            "sleeve balun",
+            "choke balun",
+            "1:1 balun",
+            "4:1 balun",
+        ],
+        correct: 2,
+        explanation: "Transformer baluns provide an opportunity to change the impedance; and note for for RF transformers, the ratio is normally quoted as the impedance ratio, not the turns ratio. Inspection of the drawing shows the same number of turns on primary and secondary, making it a 1:1 balun.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4b.1"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4D1-1",
+        question: "The length of an HF dipole for 14MHz should be:",
+        image: "",
+        options: [
+            "7.1m",
+            "10.2m",
+            "10.7m",
+            "21.4m",
+        ],
+        correct: 1,
+        explanation: "In free space ƛ = 300/14 = 21.4m so ƛ/2 = 10.7m... However, it is not quite free space as there is an antenna (a wire conductor) there. The normal correction factor is to reduce the length by 5%, which gives 10.2m...",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4d.1"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4D2-1",
+        question: "A 70cm dipole is fitted with a reflector and a number of directors to achieve greater gain, but it is found the SWR has risen markedly. A possible solution is to:",
+        image: "",
+        options: [
+            "shorten the length of the dipole elements",
+            "lengthen the feeder by ƛ/4",
+            "add a conductor to create a folded dipole",
+            "swap the positions of the director and reflectors",
+        ],
+        correct: 2,
+        explanation: "Adding passive elements to a dipole can dramatically reduce its feed impedance, solved by using a folded dipole which, if both conductors are the same diameter, increases the feed impedance by a factor of four.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4d.2"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4E1-1",
+        question: "A poorly matched antenna results in half the incident power being reflected. Neglecting feeder losses, the SWR will be about:",
+        image: "",
+        options: [
+            "1.5:1",
+            "2:1",
+            "3:1",
+            "6:1",
+        ],
+        correct: 3,
+        explanation: "The question needs to be read carefully. It says half the power is reflected. That is the reflected voltage (and current) are reduced by a factor of (1/√2) or to 70.7% of the incident value. The SWR is given by Vmax/Vmin = (Vi + Vr)/(Vi - Vr) = (1 + 0.707)/(1 - 0.707) where Vi is the incident voltage and Vr is the reflected voltage. That works out as almost 6:1",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4e.1"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4E2-1",
+        question: "A well matched antenna will exhibit a:",
+        image: "",
+        options: [
+            "high return loss and low SWR",
+            "high return loss and high SWR",
+            "low return loss and low SWR",
+            "low return loss and high SWR",
+        ],
+        correct: 0,
+        explanation: "Remembering a good match is a low SWR is easy, but what is that as a return loss? The return loss is the ratio of the incident power to the reflected power. The reflected power will be low, hopefully very low, so the ratio of incident to reflected power will be high.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4e.2"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4E3-1",
+        question: "A new antenna shows a return loss of 23dB when measured in the shack. If the feeder loss is 2dB, the return loss at the antenna connection will be:",
+        image: "",
+        options: [
+            "19dB",
+            "21dB",
+            "25dB",
+            "27dB",
+        ],
+        correct: 0,
+        explanation: "Return loss is the ratio of incident power to reflected power at the point of measurement. Visualise a lossy feeder: much power will be lost on the way up and the same proportion on the way back. In the shack, the return loss will be high almost irrespective of the match at the antenna. With that in mind, the return lkoss at the trasnmitter is the return loss at the antenna plus twice the feeder loss. In this question, we are given the measurement in the shack, so the loss at the antenna will be 23dB - (2 x 2dB) = 19dB...",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4e.3"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4F1-1",
+        question: "The impedance seen looking into the feeder termination in the shack is 200Ω resistive and a capacitive reactance of 30Ω. To bring this to 50Ω resistive for the transmitter, it will be necessary to use an:",
+        image: "",
+        options: [
+            "AMU",
+            "AMU and a 4:1 transformer",
+            "AMU and a 1:1 balun",
+            "AMU and a 4:1 balun",
+        ],
+        correct: 0,
+        explanation: "There is no mention of balanced or unbalanced feeders or antennas, so the two balun options are red herrings. An AMU can achieve resistance value changes as well as cancelling out any reactance. Of course, there are limits, but a 4:1 resistance change is well inside the capability of an AMU. ",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4f.1"
+    },
+    {
+        source: "Exam Secrets FULL [Feeders and Antennas] 4F2-1",
+        question: "The antennas in the drawing each gave a feed impedance of 50Ω, but this needs to be transformed to 100Ω, so the two antennas can be fed in parallel. What should the characteristic impedance of the matching tails be to achieve this?",
+        image: "images/secrets 4F2-1.png",
+        options: [
+            "50Ω",
+            "70Ω",
+            "75Ω",
+            "100Ω",
+        ],
+        correct: 1,
+        explanation: "This is a ƛ/4 coax transformer question. The formula, from the Reference Data booklet, is Z0 squared = Zin x Zout.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "4f.2"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] 5A1-1",
+        question: "In an electromagnetic wave the:",
+        image: "",
+        options: [
+            "field strength falls linearly with distance",
+            "field strength obeys the inverse square law with distance",
+            "power flux density drops linearly with distance",
+            "power flux density depends on the square root of the field strength",
+        ],
+        correct: 0,
+        explanation: "The field strength is an inverse linear relationship. Twice the distance is half the field strength. Just like resistors halving the field strength (V/m) is a quarter of the power flux density (V/m2).",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "5a.1"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] 5A3-1",
+        question: "Circular polarisation is characterised by the electric and magnetic:",
+        image: "",
+        options: [
+            "vectors rotating in opposite directions",
+            "vectors having a 90 degree phase difference, giving the appearance of rotation",
+            "fields taking the form of closed circles rather than a flat plane of polarisation",
+            "fields remaining at right angles, but rotating through one revolution per wavelength",
+        ],
+        correct: 3,
+        explanation: "The E and H fields remain in phase and at 90 degrees polarisation but twist or rotate one complete revolution per wavelength.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "5a.3"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] 5A3-2",
         question: "",
         image: "",
         options: [
@@ -1055,10 +1760,10 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "5a.3"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Propagation] 5B1-1",
         question: "",
         image: "",
         options: [
@@ -1070,10 +1775,10 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "5b.1"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Propagation] 5B2-1",
         question: "",
         image: "",
         options: [
@@ -1085,10 +1790,10 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "5b.2"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Propagation] 5B2-2",
         question: "",
         image: "",
         options: [
@@ -1100,10 +1805,10 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "5b.2"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Propagation] 5B3-1",
         question: "",
         image: "",
         options: [
@@ -1115,10 +1820,10 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "5b.3"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Propagation] 5B4-1",
         question: "",
         image: "",
         options: [
@@ -1130,10 +1835,70 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "5b.4"
     },
     {
-        source: "Exam Secrets FULL [Transmitters Receivers] 3A2-1",
+        source: "Exam Secrets FULL [Propagation] 5C3-1",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "5c.3"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] 5C3-2",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "5c.3"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] 5D1-1",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "5d.1"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] 5D2-1",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "5d.2"
+    },
+    {
+        source: "Exam Secrets FULL [Propagation] ----",
         question: "",
         image: "",
         options: [
