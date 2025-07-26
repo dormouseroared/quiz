@@ -228,6 +228,15 @@ ul {
 #syllabus-btn:hover {
     background: #0d3594;
 }
+
+#explanation-btn:hover {
+    background: #0d3594;
+}
+
+#next-btn:hover {
+    background: #0d3594;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
