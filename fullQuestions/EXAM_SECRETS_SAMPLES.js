@@ -1990,7 +1990,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [EMC] 6C1-1",
-        question: "A 7MHz SSB transmission is heard as a voice like signal in a neighbour's music system that has a medium wave and VHF FM receiver, as well as a CD player. Tests reveal it ddoes not matter which audo input is selected, it simply needs to be switched on. A possible explanation is that:",
+        question: "A 7MHz SSB transmission is heard as a voice like signal in a neighbour's music system that has a medium wave and VHF FM receiver, as well as a CD player. Tests reveal it does not matter which audo input is selected, it simply needs to be switched on. A possible explanation is that:",
         image: "",
         options: [
             "a harmonic of the transmission falls on the IF of the receiver",
@@ -2023,7 +2023,7 @@ const EXAM_SECRETS_SAMPLES = [
         question: "It is noticed that when transmitting in the 3.5MHz band there is often interference evident on the domestic VHF FM radio. The most likely mechanism is:",
         image: "",
         options: [
-            "direct pickup into the more sebsitive RF front end of the receiver",
+            "direct pickup into the more sensitive RF front end of the receiver",
             "conducted interference via the mains wiring affecting the audio stages",
             "third harmonic of the transmissions getting into the receiver IF stages",
             "intermodulation between the amateur transmitter and the VHF broadcast",
@@ -2170,7 +2170,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [EMC] 6F1-1",
-        question: "General advice on installing amateur radio in a vehicle isavailable from the:",
+        question: "General advice on installing amateur radio in a vehicle is available from the:",
         image: "",
         options: [
             "Ofcom Code of Practice for mobile amateur operation",
@@ -2219,8 +2219,8 @@ const EXAM_SECRETS_SAMPLES = [
         image: "",
         options: [
             "fit capacitors of about 0.01µF across the input terminals to the phone",
-            "connect a 100µH choke in sewries with each lead of the telephone",
-            "clip ferrite rings over the lead to the telephone or wind around a ring is possible",
+            "connect a 100µH choke in series with each lead of the telephone",
+            "clip ferrite rings over the lead to the telephone or wind around a ring if possible",
             "replace the phone with a modern electronic version",
         ],
         correct: 2,
