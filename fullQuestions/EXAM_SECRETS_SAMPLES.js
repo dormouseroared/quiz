@@ -2230,7 +2230,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [OPERATING] 7A1-1",
-        question: "You hear a station calling CQ andd clearly getting frequent replies, but your replies are not getting any response. It is a strong station, and propagation is good. Why might that be?",
+        question: "You hear a station calling CQ and clearly getting frequent replies, but your replies are not getting any response. It is a strong station, and propagation is good. Why might that be?",
         image: "",
         options: [
             "You are calling on the wrong sideband",
@@ -2239,7 +2239,7 @@ const EXAM_SECRETS_SAMPLES = [
             "You are not a recognised DXCC member",
         ],
         correct: 1,
-        explanation: "It is normal for rare stations who are likely to get a 'pile-up', that is lots of stations calling, to set their receiver to a different frequency to the frequency used for transmitting. Typically within 10kHz. That is so theyt spread out all the callers, and stans some chance of receiving a complete callsign to go back to.",
+        explanation: "It is normal for rare stations who are likely to get a 'pile-up', that is lots of stations calling, to set their receiver to a different frequency to the frequency used for transmitting. Typically within 10kHz. That is so they spread out all the callers, and stands some chance of receiving a complete callsign to go back to.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "7a.1"
     },
@@ -2254,19 +2254,19 @@ const EXAM_SECRETS_SAMPLES = [
             "You cannot respond at all to that station",
         ],
         correct: 1,
-        explanation: "Inspection of the licence schedule shows that the relevant sub-band is 5.362 to 5.3745MHz, so a signal on 5.3730MHz (carrier) will extend upwards to about 5.3760MHz, which is 1.5kHz outside the sub-band. That would be a breach of the licence, and will interfere with the primary user.3kHz down from the top of the band is 5.3715MHz, which is as high as you can go and remain within your allocation. It is worth a try: you will be heard and if the overseas station can tune down and remain within his allocation, then a QSO is possible. It will have the side benefit of alerting that station to check the UK limits if calling for a UK contact. Operating outside the band edges is a matter the Primary User (MOD) has complained about.",
+        explanation: "Inspection of the licence schedule shows that the relevant sub-band is 5.362 to 5.3745MHz, so a signal on 5.3730MHz (carrier) will extend upwards to about 5.3760MHz, which is 1.5kHz outside the sub-band. That would be a breach of the licence, and will interfere with the primary user. 3kHz down from the top of the band is 5.3715MHz, which is as high as you can go and remain within your allocation. It is worth a try: you will be heard and if the overseas station can tune down and remain within his allocation, then a QSO is possible. It will have the side benefit of alerting that station to check the UK limits if calling for a UK contact. Operating outside the band edges is a matter the Primary User (MOD) has complained about.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "7b.1"
     },
     {
         source: "Exam Secrets FULL [OPERATING] 7B2-1",
-        question: "",
+        question: "You are holding an HF CW contact with another amateur but you are constantly interrupted by other contacts on SSB. The most likely reason is that:",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "the SSB users are members of a fishing fleet keeping in contact on amateur frequencies",
+            "the amateur band in another country is different from the UK one",
+            "skip distances are much greater than usual due to high solar activity",
+            "other UK amateurs are inclined to ignore the band plans if it happens to suit them",
         ],
         correct: 1,
         explanation: "The International Amateur Radio Union (IARU) do try to achieve common regional band plans, but it is not always possible, since licence allocations and patterns of use do vary. The question does ask for a judgement call since some of the other options are possible but less likely. It does help to be aware of the syllabus, which makes specific reference to band plans.",
