@@ -2274,7 +2274,22 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "7b.2"
     },
     {
-        source: "Exam Secrets FULL [OPERATING] ----",
+        source: "Exam Secrets FULL [SAFETY] 8A1-1",
+        question: "High DC voltages are likely to be found:",
+        image: "",
+        options: [
+            "in the power supply of a high power transistor RF amplifier",
+            "in equipment utilising thermionic valves",
+            "in a PME supply with a ruptured neutral",
+            "at the fed end of end-fed antennas",
+        ],
+        correct: 1,
+        explanation: "Valve equipment typically runs at around 200-300V DC. Power amplifiers can be up to 3kV. Easy to miss the question, regarding 'DC'.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8a.1"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
         question: "",
         image: "",
         options: [
@@ -2286,7 +2301,142 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "Exam Secrets FULL [SAFETY] 8",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
     },
 ]
 
