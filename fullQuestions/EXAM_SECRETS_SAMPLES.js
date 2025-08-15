@@ -2335,8 +2335,8 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [SAFETY] 8E1-1",
-        question: "",
-        image: "Fitting a proprietary spark gap and discharge tube to the feeder to an HF dipole antenna should:",
+        question: "Fitting a proprietary spark gap and discharge tube to the feeder to an HF dipole antenna should:",
+        image: "",
         options: [
             "prevent the build up of damaging static charges",
             "avoid damage to the transceiver in the event of being struck by lightning",
@@ -2364,67 +2364,67 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "8f.4"
     },
     {
-        source: "Exam Secrets FULL [SAFETY] 8",
-        question: "",
+        source: "Exam Secrets FULL [SAFETY] 8F5-1",
+        question: "When fitting a transmitter in a vehicle, you should:",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "use an existing circuit to obtain power for the radio",
+            "identify a circuit that is only live once the engine has started",
+            "provide a facility for hands-free operation to avoid distractions",
+            "fit a fuse in the lead from the battery negative terminal to the chassis",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "Hands free operation is essential. Operating the radio is a distraction, and distractions from driving must be minimised. The other answers might seems a good idea but all have a problem. Existing circuits and switched live circuits risk RF induction into the vehicle electronics and control systems. The only exception is a supply specifically intended for transmitters and even then it is essential to check whether it was for an FM or AM/SSB transmitter. FM transmitters have a relatively steady continuous current demand on transmit. SSB, apart from having a more intrusive RF field, has rapidly varying DC current demand which is more than likely to cause problems.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        syllabus: "8f.5"
     },
     {
-        source: "Exam Secrets FULL [SAFETY] 8",
-        question: "",
+        source: "Exam Secrets FULL [SAFETY] 8F6-1",
+        question: "When planning an event open to the public, which activity must be regarded as essential?",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "advertising the event beforehand",
+            "timetabling the various activities",
+            "performing a risk assessment",
+            "identifying sufficient staffing",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "A risk assessment is an essential part of the planning. The venue owners and event organisers, if you are part of a larger event, are likely to make that a condition of taking part. Equally it will be part of the insurance policy conditions. However the key reason is the safety of the public. Conducting an assessment will identify the risks and allow opportunity to minimise the risk and have an effective strategy for dealing with any residual risk.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        syllabus: "8f.6"
     },
     {
-        source: "Exam Secrets FULL [SAFETY] 8",
-        question: "",
+        source: "Exam Secrets FULL [SAFETY] 8F6-2",
+        question: "The purpose of the risk assessment is to:",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "avoid the possibility of being liable for an accident",
+            "identify the cause, harm and mitigation of accidents",
+            "show the visiting public that you take their safety seriously",
+            "comply with the requirements of insurance cover for the event",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 1,
+        explanation: "The aim of the risk assessment is to identify risks, minimise their occurrence and effect, and develop plans to handle the situation should an incident occur.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        syllabus: "8f.6"
     },
     {
-        source: "Exam Secrets FULL [SAFETY] 8",
-        question: "",
+        source: "Exam Secrets FULL [SAFETY] 8F7-1",
+        question: "When using a petrol-electric generator at a field day event the cans of fuel to refill the generator should be stored:",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "alongside the generator for ease of use",
+            "together with the fire extinguisher for safety",
+            "away from the generator and the fire extinguisher",
+            "comply with the requirements of insurance cover for the event",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "Petrol is very flammable. Petrol vapour will spread, and is potentially explosive. Consider that a gallon can power a car for over 30 and possibly 60 miles. Vapour near or in the air inlet of the generator could ignite, as could spills over a hot engine. Storage should be away from the generator, and sufficiently away from the fire extinguisher that the extinguisher remains accessible if a fire does occur. Downwind is sensible but not the key consideration.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        syllabus: "8f.7"
     },
     {
-        source: "Exam Secrets FULL [SAFETY] 8",
+        source: "Exam Secrets FULL [MEASUREMENTS] 8",
         question: "",
         image: "",
         options: [
