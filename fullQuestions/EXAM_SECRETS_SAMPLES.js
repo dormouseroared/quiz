@@ -2425,7 +2425,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [MEASUREMENTS] 9A1-1",
-        question: "A 1mA meter has a 30Ω internal resistance and is to be used as a 5A meter in a power supply unit. The shunt resistance should have  a resistance of:",
+        question: "A 1mA meter has a 30Ω internal resistance and is to be used as a 5A meter in a power supply unit. The shunt resistor should have a resistance of:",
         image: "",
         options: [
             "1mΩ",
@@ -2433,8 +2433,8 @@ const EXAM_SECRETS_SAMPLES = [
             "6mΩ",
             "30mΩ",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "The meter movement is 1mA full scale. At that current, the voltage across it will be 1mA x 30Ω = 30mV. The shunt must have 30mV across it at 5A, (strictly 4.999A). The resistance of the shunt is 30mV / 5A = 6mΩ.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.1"
     },
@@ -2448,8 +2448,8 @@ const EXAM_SECRETS_SAMPLES = [
             "1.0mA",
             "1.5mA",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 0,
+        explanation: "Meter 3 should be set to measure the voltage across the 4kΩ and 6kΩ reistors in series. However, it was set to a current range, so will have a very low resistance, so there are only a few mV across the 4kΩ and 6kΩ resistors and only µA through them. Meter 4 will read zero.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9"
     },
@@ -2463,8 +2463,8 @@ const EXAM_SECRETS_SAMPLES = [
             "10,100.3kHz",
             "10,100.8kHz",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "This question relies on adding up all the errors. Since the wording is 'safe to transmit' then the only way to be safe is to assume all the errors are worst case. A methodical approach is the best way of dealing with this type of question, and the actual numbers are usually relatively easy. See the book for much more detail...",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9"
     },
@@ -2478,8 +2478,8 @@ const EXAM_SECRETS_SAMPLES = [
             "14µV",
             "20µV",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 3,
+        explanation: "If everything is correctly matched, then there is a signal with a 50Ω source resistance feeding a receiver with a 50Ω load resistance. This means the source EMF is 20µV, with 10µV being dropped in the source resistance and 10µV across the receiver load. If the reciver is disconnected, then there is no RF current, and no voltage drop in the source resistance. The high impedance RF voltmeter will 'see' the source EMF of 20µV.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.4"
     },
@@ -2493,8 +2493,8 @@ const EXAM_SECRETS_SAMPLES = [
             "100µV",
             "71µV",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 0,
+        explanation: "The key point here is to recognise that the signal source is intendded to work into and match a 50Ω load. An oscilloscope typically has an input impedance of 1MΩ, close to an open circuit. The signal at the oscilloscope input will be 100µV, not 50µV, when loaded. The 100µV is an RMS value, so a peak will be 141.4µV and a peak to peak on the oscilloscope will be 283µV.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.4"
     },
@@ -2508,8 +2508,8 @@ const EXAM_SECRETS_SAMPLES = [
             "1.4W",
             "2.9W",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "The probe shows a peak value of 12V, so the RMS value will be 12 / 1.41 = 8.49V. Into 50Ω, the output power is 8.49 / 50 = 1.4W.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.5"
     },
@@ -2523,8 +2523,8 @@ const EXAM_SECRETS_SAMPLES = [
             "averaged over one RF cycle at the crest of the modulation envelope",
             "averaged over one audio cycle at the crest of the moddulation envelope",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "This is often misunderstood, but the answer is provided. See Note (b) to Schedule 1 of the licence which is provided in the exam.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.5"
     },
@@ -2538,8 +2538,8 @@ const EXAM_SECRETS_SAMPLES = [
             "this is a credible outcome, but either or both items could be off frequency",
             "this is too high a discrepancy, something is faulty, or the test method is suspect",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "The VHF receiver...",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.6"
     },
