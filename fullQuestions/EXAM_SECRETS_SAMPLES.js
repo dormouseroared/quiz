@@ -29,7 +29,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [Licensing] 1C1-3",
-        question: "The Wireless Telegraphy (Content of Transmission) Regulations 1988 sets out requirements covering:",
+        question: "The Wireless Telegraphy (Content of Transmission) Regulations 1998 sets out requirements covering:",
         options: [
             "sending messages of a grossly offensive or obscene or menacing character",
             "limits on the number of amateurs that can be addressed in any one transmission",
@@ -2424,7 +2424,217 @@ const EXAM_SECRETS_SAMPLES = [
         syllabus: "8f.7"
     },
     {
-        source: "Exam Secrets FULL [MEASUREMENTS] 8",
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A1-1",
+        question: "A 1mA meter has a 30Ω internal resistance and is to be used as a 5A meter in a power supply unit. The shunt resistance should have  a resistance of:",
+        image: "",
+        options: [
+            "1mΩ",
+            "5mΩ",
+            "6mΩ",
+            "30mΩ",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.1"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A1-2",
+        question: "The meters in the drawing are correctly set to an approariate range, except that meter 3 has been left on 10mA DC. What will be the reading on meter 4?",
+        image: "images/secrets-9a1-2.png",
+        options: [
+            "0mA",
+            "0.67mA",
+            "1.0mA",
+            "1.5mA",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A3-1",
+        question: "A 10MHz crystal reference has an original accuracy of 5ppm and ages at 5ppm per year. A year later it is used to check a 10MHz USB transmitter. It is estimated the reference can be compared with the receiver to an accuracy of 100Hz, and the transmitter can then be relied on to the nearest 100Hz within a month of calibration. The bandwidth of the receiver is limited to 500Hz. What is the lowest frequency it is safe to transmit in the 10MHz amateur band that day without risking being out of band?",
+        image: "",
+        options: [
+            "10,000.3kHz",
+            "10,000.8kHz",
+            "10,100.3kHz",
+            "10,100.8kHz",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A4-1",
+        question: "An antenna is connected by a short feeder to the input of a radio receiver. Everything is correctly matched to 50Ω and a sensitive high impedance RF voltmeter across the feeder records an input to the receiver of 10µV. The receiver is disconnected and the level of RF signal noted. The reading will be about:",
+        image: "",
+        options: [
+            "5µV",
+            "10µV",
+            "14µV",
+            "20µV",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.4"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A4-2",
+        question: "A signal source for the HF band is designed to produce 50µV into a 50Ω load, corresponding to -73dBm and S9 on a typical S-meter. When checked on an oscilloscope, the peak to peak amplitude will be about:",
+        image: "",
+        options: [
+            "283µV",
+            "141µV",
+            "100µV",
+            "71µV",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.4"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A5-1",
+        question: "A peak reading diode probe is used to measure the transmitter RF output into a dummy load. The probe indicates 12V . What is the output power?",
+        image: "",
+        options: [
+            "0.8W",
+            "1.2W",
+            "1.4W",
+            "2.9W",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.5"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A5-2",
+        question: "Peak envelope power is defined as the power:",
+        image: "",
+        options: [
+            "at the top of an RF cycle of an unmodulated carrier",
+            "at the top of an RF cycle at the crest of the modulation",
+            "averaged over one RF cycle at the crest of the modulation envelope",
+            "averaged over one audio cycle at the crest of the moddulation envelope",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.5"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A6-1",
+        question: "A crystal calibrator is used to check the frequency accuracy pf a VHF transceiver. A discrepancy of about 200Hz is noticed. ",
+        image: "",
+        options: [
+            "this is a higher error than expected, and the transceiver needs adjusting",
+            "this is a credible outcome, but it is worth adjusting the transceiver",
+            "this is a credible outcome, but either or both items could be off frequency",
+            "this is too high a discrepancy, something is faulty, or the test method is suspect",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.6"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A7-1",
+        question: "The switch in the diagram is likely to be labelled:",
+        image: "images/secrets-9a7-1.png",
+        options: [
+            "hi-lo",
+            "on-off",
+            "+ -",
+            "fwd-rev",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.7"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A8-1",
+        question: "An oscilloscope timebase is set to 1ms per division, and the Y-axis to 10mV per division. The signal in the diagram is approximately:",
+        image: "images/secrets-9a8-1.png",
+        options: [
+            "500Hz, 20mV RMS",
+            "500Mhz, 30mV RMS",
+            "2kHz, 20mV RMS",
+            "2kHz, 30mV RMS",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.8"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9A9-1",
+        question: "The drawing shows a spectrum analyser scan of the frequency span 10-60MHz to check for the thord harmonic of a 14Mhz transmission. The carrier has been set to 0dB. How far below the carrier is the third harmonic?",
+        image: "images/secrets-9a9-1.png",
+        options: [
+            "20dB",
+            "23dB",
+            "32dB",
+            "35dB",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9a.9"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9B1-1",
+        question: "A pre-amplifier, having 50Ω input and output impedances, is specified as giving 40µV out for 10µV in. Its gain, in dB, is:",
+        image: "",
+        options: [
+            "6dB",
+            "10dB",
+            "12dB",
+            "30dB",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9b.1"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9B1-2",
+        question: "A radio receiver is being checked, and a 0.2µV SSB signal at the RF input produces a 1V tone at the audio output, together with noise averaging 100mV. The signal to noise ratio is:",
+        image: "",
+        options: [
+            "10dB",
+            "20dB",
+            "0dB",
+            "-121dBm",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9b.1"
+    },
+    {
+        source: "Exam Secrets FULL [MEASUREMENTS] 9C1-1",
+        question: "The coil in the LC tuned circuit normally increases its inductance as the temperature rises. One solution to minimise frequency drift is to:",
+        image: "",
+        options: [
+            "use a capacitor with a negative temperature coefficient",
+            "use a capacitor with a positive temperature coefficient",
+            "mount the capacitor further away from any source of heat",
+            "mount the coil vertically to minimise the temperature gradient",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "9c.1"
+    },
+    {
+        source: "Exam Secrets FULL [blank] 9",
         question: "",
         image: "",
         options: [
@@ -2436,7 +2646,7 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 9,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        syllabus: "9"
     },
 ]
 
