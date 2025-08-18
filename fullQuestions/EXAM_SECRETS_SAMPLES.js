@@ -2633,21 +2633,6 @@ const EXAM_SECRETS_SAMPLES = [
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9c.1"
     },
-    {
-        source: "Exam Secrets FULL [blank] 9",
-        question: "",
-        image: "",
-        options: [
-            "",
-            "",
-            "",
-            "",
-        ],
-        correct: 9,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "9"
-    },
 ]
 
 export default EXAM_SECRETS_SAMPLES
