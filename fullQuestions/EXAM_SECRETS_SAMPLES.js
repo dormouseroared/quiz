@@ -2440,7 +2440,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [MEASUREMENTS] 9A1-2",
-        question: "The meters in the drawing are correctly set to an approariate range, except that meter 3 has been left on 10mA DC. What will be the reading on meter 4?",
+        question: "The meters in the drawing are correctly set to an appropriate range, except that meter 3 has been left on 10mA DC. What will be the reading on meter 4?",
         image: "images/secrets-9a1-2.png",
         options: [
             "0mA",
@@ -2449,7 +2449,7 @@ const EXAM_SECRETS_SAMPLES = [
             "1.5mA",
         ],
         correct: 0,
-        explanation: "Meter 3 should be set to measure the voltage across the 4kΩ and 6kΩ reistors in series. However, it was set to a current range, so will have a very low resistance, so there are only a few mV across the 4kΩ and 6kΩ resistors and only µA through them. Meter 4 will read zero.",
+        explanation: "Meter 3 should be set to measure the voltage across the 4kΩ and 6kΩ resistors in series. However, it was set to a current range, so will have a very low resistance, so there are only a few mV across the 4kΩ and 6kΩ resistors and only µA through them. Meter 4 will read zero.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9"
     },
@@ -2479,7 +2479,7 @@ const EXAM_SECRETS_SAMPLES = [
             "20µV",
         ],
         correct: 3,
-        explanation: "If everything is correctly matched, then there is a signal with a 50Ω source resistance feeding a receiver with a 50Ω load resistance. This means the source EMF is 20µV, with 10µV being dropped in the source resistance and 10µV across the receiver load. If the reciver is disconnected, then there is no RF current, and no voltage drop in the source resistance. The high impedance RF voltmeter will 'see' the source EMF of 20µV.",
+        explanation: "If everything is correctly matched, then there is a signal with a 50Ω source resistance feeding a receiver with a 50Ω load resistance. This means the source EMF is 20µV, with 10µV being dropped in the source resistance and 10µV across the receiver load. If the receiver is disconnected, then there is no RF current, and no voltage drop in the source resistance. The high impedance RF voltmeter will 'see' the source EMF of 20µV.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.4"
     },
@@ -2494,7 +2494,7 @@ const EXAM_SECRETS_SAMPLES = [
             "71µV",
         ],
         correct: 0,
-        explanation: "The key point here is to recognise that the signal source is intendded to work into and match a 50Ω load. An oscilloscope typically has an input impedance of 1MΩ, close to an open circuit. The signal at the oscilloscope input will be 100µV, not 50µV, when loaded. The 100µV is an RMS value, so a peak will be 141.4µV and a peak to peak on the oscilloscope will be 283µV.",
+        explanation: "The key point here is to recognise that the signal source is intended to work into and match a 50Ω load. An oscilloscope typically has an input impedance of 1MΩ, close to an open circuit. The signal at the oscilloscope input will be 100µV, not 50µV, when loaded. The 100µV is an RMS value, so a peak will be 141.4µV and a peak to peak on the oscilloscope will be 283µV.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.4"
     },
@@ -2539,7 +2539,7 @@ const EXAM_SECRETS_SAMPLES = [
             "this is too high a discrepancy, something is faulty, or the test method is suspect",
         ],
         correct: 2,
-        explanation: "The VHF receiver...",
+        explanation: "The VHF receiver can reasonably be taken to be in the 2m band, say 145MHz. A 1ppm error would give a frequency offset of 145Hz. That would apply to both the crystal reference in the transmitter, and in the crystal calibrator, especially if both are more than a year out of calibration. The difficulty with such checks is that, as described, there is no certainty which device is in error, and it is entirely likely that thay both are to some extent.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.6"
     },
@@ -2553,8 +2553,8 @@ const EXAM_SECRETS_SAMPLES = [
             "+ -",
             "fwd-rev",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 3,
+        explanation: "The device shown is an SWR meter, reading forward and reverse power, with the ability to switch between them.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.7"
     },
@@ -2568,14 +2568,14 @@ const EXAM_SECRETS_SAMPLES = [
             "2kHz, 20mV RMS",
             "2kHz, 30mV RMS",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 0,
+        explanation: "Inspection of the drawing shows the voltage to be 6 divisions, peak to peak. At 10mV per division, that is 60mV peak-to-peak, or 30mV peak, or 30 x 0.7 = 21mV RMS. Reading the screen that accurately is difficult, so about 20mV is about as good as it gets.Similarly, there are 5 complete cycles in 10 divisions of 1ms per division, which is 2ms per cycle. The frequency is the reciprocal of a single cycle time, sp 1 / 0.002 = 500Hz.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.8"
     },
     {
         source: "Exam Secrets FULL [MEASUREMENTS] 9A9-1",
-        question: "The drawing shows a spectrum analyser scan of the frequency span 10-60MHz to check for the thord harmonic of a 14Mhz transmission. The carrier has been set to 0dB. How far below the carrier is the third harmonic?",
+        question: "The drawing shows a spectrum analyser scan of the frequency span 10-60MHz to check for the third harmonic of a 14Mhz transmission. The carrier has been set to 0dB. How far below the carrier is the third harmonic?",
         image: "images/secrets-9a9-1.png",
         options: [
             "20dB",
@@ -2583,8 +2583,8 @@ const EXAM_SECRETS_SAMPLES = [
             "32dB",
             "35dB",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "The off-air display shows there are many signals present. We are told the carrier is at 14MHz and normalised to 0dB. Third harmonic is 3 x 14 = 42MHz, and careful inspection shows the signal at 42MHz is about 32dB below the carrier. Estimating a vertical drop from the peak is not always easy, but the two sides of that spike straddle the 42 scale point on the X-axis and the bottom of the spike is close enough to the axis to allow certainty.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9a.9"
     },
@@ -2598,8 +2598,8 @@ const EXAM_SECRETS_SAMPLES = [
             "12dB",
             "30dB",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 2,
+        explanation: "We are told the impedances are the same, so a doubling of voltage is a 6dB increase. Doubling again is another 6dB. 12dB in total. The reference to impedance is necessary, otherwise a 4 times step-up transformer could be mistaken for having a gain. In linear (not dB) terms, the calculation is: The output voltage is 4 times greater, which in the same impedance means the current is 4 times greater, giving a power gain of 16 times. ",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9b.1"
     },
@@ -2613,8 +2613,8 @@ const EXAM_SECRETS_SAMPLES = [
             "0dB",
             "-121dBm",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 1,
+        explanation: "The signal to noise ratio is the ratio of 1V to 100mV. Both are at the same point, the audio output, so clearly they are in the same impedance. 10 times voltage is 100 times power which is 20dB. Alternatively, remember that 10 times voltage is 20dB without going via the power step.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9b.1"
     },
@@ -2628,8 +2628,8 @@ const EXAM_SECRETS_SAMPLES = [
             "mount the capacitor further away from any source of heat",
             "mount the coil vertically to minimise the temperature gradient",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 0,
+        explanation: "Ideally we want components with a zero temperature coefficient, but this is seldom possible, so the best  available solution is to select a balance of components to have an overall zero coefficient. In this case a negative coefficient capacitor to offset the positive one in the inductor.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "9c.1"
     },
