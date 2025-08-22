@@ -19,8 +19,8 @@ const EXAM_SECRETS_FULL_PAPER = [
         question: "Why is it appropriate to take steps to control the transmitted bandwidth?",
         image: "",
         options: [
-            "the transmission will occupy more spectrum than required for satisfactory communication and may contravene licence conddistions 6-2",
-            "spread spectrum moddes are not permitted by the amateur radio licence, unless a special research permit is obtained from Ofcom",
+            "the transmission will occupy more spectrum than required for satisfactory communication and may contravene licence condition 6-2",
+            "spread spectrum modes are not permitted by the amateur radio licence, unless a special research permit is obtained from Ofcom",
             "the signal will be unintelligible on most receivers",
             "the transmitted frequency will be unstable",
         ],
@@ -51,7 +51,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         options: [
             "operate in that country for longer than the normal 3 month limit",
             "apply for an amateur licence in that country as if you had passed their examination",
-            "operate on bands that are in either that countries licence or you UK licence",
+            "operate on bands that are in either that countries licence or your UK licence",
             "drop the normal requirement to prefix your UK callsign with the local prefix letters",
         ],
         correct: 1,
@@ -76,21 +76,156 @@ const EXAM_SECRETS_FULL_PAPER = [
     },
     {
         source: "Exam Secrets FULL PAPER Q06",
-        question: "",
+        question: "What is the relevance of the transmit mode in assessing EMF (electromagnetic field) compliance?",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "it allows for the average transmit power for a given peak power",
+            "it allows for the relative transmit and receive times over any 6 minute period",
+            "it corrects for people being out of the main beam of the antenna",
+            "it limits the instantaneous transmit power at the crest of the modulation envelope",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 0,
+        explanation: "Not all modes transmit at full power while PTT is pressed. FM does. Unprocessed (uncompressed) SSB is rated at 20% and processed SSB at 50%. The RSGB online calculator has many modes built in for selection.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
     {
         source: "Exam Secrets FULL PAPER Q07",
+        question: "You are taking part in an NVIS net on 5.314MHz USB in support of an event. You must have:",
+        image: "",
+        options: [
+            "a copy of the 5MHz schedule to refer to",
+            "a telephone in your possession or nearby",
+            "contact details of the nearest military unit",
+            "permission from the nearest military unit",
+        ],
+        correct: 1,
+        explanation: "The rules for identification are different on 5MHz, where we have Secondary allocation, with MOD having Primary access. Note G to Schedule 1 requires you to be contactable by telephone. This must be the number you gave to Ofcom when applying for your licence or confirming the details, including your phone number at the transmission location, remain correct.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q08",
+        question: "It is decided to limit the lowest POWER from the loudspeaker to 1% of full volume. To achieve this, a resistor is inserted between the lower connection of the potentiometer and the 0V line to form a potential divider as shown in the diagram. The control itself is a 10kΩ potentiometer. The value of the resistor should be:",
+        image: "images/secrets-full-paper-08.png",
+        options: [
+            "0.1kΩ",
+            "1kΩ",
+            "1.1kΩ",
+            "10kΩ",
+        ],
+        correct: 2,
+        explanation: "If the power deleivered to the loudspeaker is to be 1% of the maximum power, that is the full volume on the volume control, then the minimum will be 10% of the voltage (Power = Voltage squared/Resistance). That means the potential divider formed by the volume control and the new resistor must be 10:1. Remember that a 10kΩ and a 1kΩ resistor form an 11:1 divider (10 x 1)/(10 + 1) The 1kΩ resistor must be a bit bigger than 1kΩ for a 10:1 divider. Option C is the only one close. Vout / Vin = 0.1 = R / (10 + R), and R = 1.1kΩ. See the book for a better layout.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q09",
+        question: "A 3µF and a 6µF capacitor are connected in series to a 12V supply. What is the voltage across each of the capacitors?",
+        image: "",
+        options: [
+            "6V on each capacitor",
+            "4V on 3µF and 8V on 6µF",
+            "4V on 6µF and 8V on 3µF",
+            "12V on each capacitor",
+        ],
+        correct: 2,
+        explanation: "The quick solution is to realise that in series both capacitors will have the same charge, which is current x time. Q = V x C, so V = Q / C. The smaller capacitor will have the larger voltage. Calculating, 3µF and 6µF in series gives (3 x 6) / (3 + 6) = 2µF. At 12V the charge is Q = V x C = 24µC. The voltage on the 3µF capacitor  is V = Q / C = 24/3 = 8V, andd on the 6µF capacitor V = 24/6 = 4V.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q10",
+        question: "The circuit diagram shows a transistor operating a relay, which consists of a coil on a soft iron former, so the magnetic attraction operates a contact to control some mains lighting. What is the purpose of the diode?",
+        image: "images/secrets-full-paper-10.png",
+        options: [
+            "to prevent the relay operating if the low voltage supply is of the wrong polarity",
+            "to avoid the back EMF from affecting the transistor when it turns on to operate the relay",
+            "to avoid the back EMF from affecting the transistor when it turns off to release the relay",
+            "to ensure the relay releases when the signal on the transistor base is removed",
+        ],
+        correct: 2,
+        explanation: "If the current to the relay is stopped abruptly then the back EMF will cause a voltage spike considerably greater than the supply voltage, and quite possibly high enough to damage the transistor. The diode will provide somewhere for the current associated with the spike to pass harmlessly saving the transistor. It is not a problem at turn-on, the voltage may be applied suddenly, but the current can build up at such a rate as the coil inductance permits with only a modest EMF.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q11",
+        question: "A 1kV high voltage power supply has a reservoir capacitor of 10µF. It is estimated that if the stored voltage falls to about 100V in 10 seconds then it will be safe to open the case. What value of bleed resistor should be fitted?",
+        image: "",
+        options: [
+            "100kΩ",
+            "200kΩ",
+            "500kΩ",
+            "1MΩ",
+        ],
+        correct: 2,
+        explanation: "After one time constant has elapsed, the voltage will have fallen to about a third of the initial value, so after two time constants, the initial 1kV should be reasonably close to 100V. So, the time constant required is about 5 seconds. Given that Tau = C x R then R = Tau / C = 5 / 10µ = 500kΩ. Note: a more accurate calculation (which is outside the syllabus) shows the voltage is about 135V after 10 seconds, and about 11.5 seconds are needed to get down to 100V. The resistor should be sized to handle 1kV , 2mA current, and 2W power dissipation.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q12",
+        question: "An 18.2µH coil and a resistor of 300Ω are connected in series. A current of 3mA at 3.5MHz is flowing through the circuit. What is the applied voltage?",
+        image: "",
+        options: [
+            "0.9V",
+            "0.96V",
+            "1.5V",
+            "2.1V",
+        ],
+        correct: 2,
+        explanation: "XL = 2 x pi x f x L = 400Ω and total impedance is 500Ω (see the secrets book for more detail). At 3mA, the applied voltage is I x R = 1.5V. It is worth looking out for 3, 4, 5 triangles etc.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q13",
+        question: "An SDR transmitter digitises the audio signal from the microphone at a rate of 7000 samples per second. A particularly loud whistle at 4kHz gets through the analogue audio filter, albeit reasonably well attenuated. What audio frequency will this cause at the distant receiver if all the other processes are performed as intended?",
+        image: "",
+        options: [
+            "2kHz",
+            "3kHz",
+            "4kHz",
+            "7kHz",
+        ],
+        correct: 1,
+        explanation: "At 7000 samples per second the Nyquist frequency is 3.5kHz. A signal at 4kHz is 500Hz above the Nyquist frequency, so will be interpreted as a signal 500Hz below it, or 3kHz.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q14",
+        question: "A transformer has 960 turns on the primary, and 64 turns on the secondary. The mains input is 240V rms. The load on the secondary is equivalent to a 2Ω resistor. What current is drawn from the mains, assuming no losses in the transformer?",
+        image: "",
+        options: [
+            "0.5A",
+            "1A",
+            "6.4A",
+            "8A",
+        ],
+        correct: 0,
+        explanation: "The output from the transformer is 240 X 64 /960 = 16V. Into a 2Ω load the current is 8A and the power is I x V = 128W.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q15",
+        question: "A 400W transmitter is feeding an Antenna Matching Unit where the first component is a parallel tuned circuit. On its own, the Q-factor of the tuned circuit is about 50, but when loaded, that is, connected to the antenna, the working Q drops to 5. What is a reasonable estimate for the circulating current in the tuned circuit?",
+        image: "",
+        options: [
+            "5A",
+            "8A",
+            "14A",
+            "40A",
+        ],
+        correct: 2,
+        explanation: "At 400W, the input current into 50Ω is P = I squared x R so I =2.83A with a working Q of 5 that gives a circulating current of about 14A.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
         question: "",
         image: "",
         options: [
@@ -105,7 +240,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q08",
+        source: "Exam Secrets FULL PAPER Q00",
         question: "",
         image: "",
         options: [
