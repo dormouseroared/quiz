@@ -1138,7 +1138,7 @@ const syllabusItems = [
         key: "2i.4",
         level: "full",
         title: "Semiconsuctor devices",
-        text: "Recall the characteristics and typical circuit diagrams of different classes of amplifiers(i.e. A, B, A/B and C)."
+        text: "Recall the characteristics and typical circuit diagrams of different classes of amplifiers (i.e. A, B, A/B and C)."
     },
     {
         key: "2i.5",

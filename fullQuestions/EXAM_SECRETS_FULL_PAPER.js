@@ -225,6 +225,156 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
+        source: "Exam Secrets FULL PAPER Q16",
+        question: "Calculate the component value of R1 in the circuit diagram to bring the collector voltage to 7.3V. The transistor has a VBE of 0.7V and β between 400 and 900.",
+        image: "images/secrets-full-paper-16.png",
+        options: [
+            "38kΩ",
+            "57kΩ",
+            "90kΩ",
+            "161kΩ",
+        ],
+        correct: 0,
+        explanation: "With a collector voltage of 7.3V the collector current is about (12 - 7.3) / 4.7 = 1mA. The voltage across the emitter resistor will be about 1.8V, so the base will be at about 2.5V. The 2.5V across 10kΩ is a current of 250µA, and much the same current will be in R1, which should have 9.5V across it. That requires a resistance of R = 9.5 / 0.25 = 38kΩ. The base current will be a maximum of 2.5µA, which we can neglect in the standing current of 250µA.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2i.3"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q17",
+        question: "What configuration is the transistor amplifier in the circuit diagram?",
+        image: "images/secrets-full-paper-17.png",
+        options: [
+            "emitter follower",
+            "common emitter",
+            "common base",
+            "common collector",
+        ],
+        correct: 2,
+        explanation: "The input is on the emitter, and the base is held at 0V AC by a capacitor to the 0V line. That is a common base configuration.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q18",
+        question: "At what frequency is the transformer in the block diagram likely to operate?",
+        image: "images/secrets-full-paper-18.png",
+        options: [
+            "50Hz",
+            "100Hz",
+            "30 - 80kHz",
+            "3.5 - 3.8MHz",
+        ],
+        correct: 2,
+        explanation: "The block diagram is of a switched mode power supply. The transformer operating frequency will be above human (and hopefully dogs) hearing range, up to about 80 - 100kHz.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q19",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
         source: "Exam Secrets FULL PAPER Q00",
         question: "",
         image: "",
