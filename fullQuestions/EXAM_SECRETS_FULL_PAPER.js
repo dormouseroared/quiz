@@ -330,7 +330,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q00",
+        source: "Exam Secrets FULL PAPER Q23",
         question: "",
         image: "",
         options: [
