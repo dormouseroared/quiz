@@ -10,9 +10,9 @@ const BBDL_FULL_QUIZZES = [
             "Licence 8-1a, 8-1b, 8-2 and 8-3",
         ],
         correct: 2,
-        explanation: "RSL is also mentioned in 6-25.",
+        explanation: "RSL is also mentioned in 6-25. Licence 6-22 outlines how M and G callsigns may use RSLs, 6-23 states that Intermediate callsigns beginning with a ‘2’ must insert the appropriate RSL, and 6-24 lists the RSLs that must be used, if one is included in the callsign.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1a.2"
     },
     {
         source: "BBDL QUIZ WEEK00 Q02",
@@ -25,9 +25,9 @@ const BBDL_FULL_QUIZZES = [
             "Licence 9-3a",
         ],
         correct: 1,
-        explanation: "",
+        explanation: "Licence 6-21b says “the callsign must be transmitted as frequently as is practicable during transmissions",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1a.4"
     },
     {
         source: "BBDL QUIZ WEEK00 Q03",
@@ -40,9 +40,9 @@ const BBDL_FULL_QUIZZES = [
             "Licence 6-8",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "Licence 6-6 is very clear. 6-8 allows the use by User Services during an operation or exercise, but that was not in the question.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1b.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q04",
@@ -55,9 +55,9 @@ const BBDL_FULL_QUIZZES = [
             "Examine only",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions.The definition of the word ‘Inspect’ is at 10-1p.It says that it includes examine and test.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1d.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q05",
@@ -70,9 +70,9 @@ const BBDL_FULL_QUIZZES = [
             "ensure that their transmission is identifiable at all times",
         ],
         correct: 3,
-        explanation: "",
+        explanation: "There is nothing in the Licence Documents that covers recorded and retransmitted messages, but Licence 6-21a says that the station must be identifiable at all times.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1a.4"
     },
     {
         source: "BBDL QUIZ WEEK00 Q06",
@@ -85,9 +85,9 @@ const BBDL_FULL_QUIZZES = [
             "any transmissions that do not elicit a reply",
         ],
         correct: 1,
-        explanation: "",
+        explanation: "Licence 6-19 says that, unless you are operating for the purposes of 6-5(emergencies / disasters), transmissions must not be encrypted for the purposes of obscuring the meaning.Codes are not ruled out, for example, Morse code and the Q code are allowed, so ‘a’ is OK.Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so ‘c’ is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so ‘d’ is OK.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1c.2"
     },
     {
         source: "BBDL QUIZ WEEK00 Q07",
@@ -100,9 +100,9 @@ const BBDL_FULL_QUIZZES = [
             "Licence 8-2",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "Licence 6-2 covers the design, construction, maintenance and use of Radio Equipment.From your Foundation and Intermediate studies, it should be pretty clear that poor design, poor construction, poor maintenance or poor use of Radio Equipment could result in Undue Interference to other Wireless Telegraphy.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1d.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q08",
@@ -115,9 +115,9 @@ const BBDL_FULL_QUIZZES = [
             "Licence 6-10b",
         ],
         correct: 3,
-        explanation: "",
+        explanation: "Licence 6-10b says if an amateur band is used for remote control links, it must be above 30MHz, no if buts or maybes with that one! ",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1e.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q09",
@@ -130,9 +130,9 @@ const BBDL_FULL_QUIZZES = [
             "Licence 10-1d",
         ],
         correct: 3,
-        explanation: "",
+        explanation: "The recommendation is mentioned on page 2 of the Licence, but it is not defined.If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions, including CEPT T/ R 61-01.We will look at CEPT operation more when we do the Licence Conditions tutorial later in the course.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1f.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q10",
@@ -145,9 +145,9 @@ const BBDL_FULL_QUIZZES = [
             "Page 2 of the Licence",
         ],
         correct: 0,
-        explanation: "",
+        explanation: "Licence 4-1b is the only one of the four options that mentions operating from a ship; Notes to the Schedule only go up to G, so Note s is clearly wrong.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1a.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q11",
@@ -160,7 +160,7 @@ const BBDL_FULL_QUIZZES = [
             "Licence 6-13",
         ],
         correct: 3,
-        explanation: "",
+        explanation: "‘a’ includes nothing about beacons. ‘b’ does not set maximum power limits and Table B applies to Intermediate Licence holders. Licence 6-13 sets a 25W limit for beacons that have their own callsign, making it the correct answer. Not in Syllabus but worthy of note if you ever want to run a beacon with more than 5W!",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
@@ -175,9 +175,9 @@ const BBDL_FULL_QUIZZES = [
             "5820-5830MHz",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "‘c’ is the only one with an allocation in the third column of Licence Schedule 1, Table C; a secondary allocation for signals from Earth to space only.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1h.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q13",
@@ -190,9 +190,9 @@ const BBDL_FULL_QUIZZES = [
             "Avaliable on the basis of non-interference to other services",
         ],
         correct: 0,
-        explanation: "",
+        explanation: "A severe beating if you get this wrong! Just read off the answer from the second column of Licence Schedule 1, Table C.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1h.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q14",
@@ -205,9 +205,9 @@ const BBDL_FULL_QUIZZES = [
             "Note G to the Notice of Coordination",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "Note G appears after Schedule 1, Table C and sets out a whole bunch of additional rules about the 5MHz band.None of the others specifically reference 5MHz.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1h.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q15",
@@ -220,9 +220,9 @@ const BBDL_FULL_QUIZZES = [
             "regulated by the RSGB on behalf of Ofcom",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "‘a’ is wrong because ICNIRP is not UK specific and only provides guidelines, not rules. ‘b’ is incorrect because a 9 watt transmitter working into a high gain antenna can exceed the 10W EIRP level. ‘c’ is a true statement. ‘d’ is wrong because the RSGB does not enforce the rules.Licence 6-3 points to Licence Condition 9, which sets out the rules, and points to Ofcom Guidance for further detail.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1g.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q16",
@@ -235,9 +235,9 @@ const BBDL_FULL_QUIZZES = [
             "the general public being exposed to levels of non-ionising electromagnetic radiation above the basic restrictions set out in tables",
         ],
         correct: 3,
-        explanation: "",
+        explanation: " Harmful interference is an EMC issue, which is not part of the EMF restrictions set out in the Licence, so not ‘a’.Radio amateurs are not required to consider radio workers, or themselves, in their assessments of EMF exposure, so not ‘b’ or ‘c’. That only leaves ‘d’ and it is the general public who the restrictions are intended to protect.Licence 9-1 is the main reference but 10-1n defines what is meant by ‘the General Public’.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1g.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q17",
@@ -250,9 +250,9 @@ const BBDL_FULL_QUIZZES = [
             "any transmitting apparatus owned by the Licence Holder that is capable of transmitting at powers greater than 10W EIRP or 6.1W ERP",
         ],
         correct: 2,
-        explanation: "",
+        explanation: "The term ‘Relevant Radio Equipment’ is used in Licence 9-1, and is defined in 10-1z",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "1g.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q18",
@@ -265,9 +265,9 @@ const BBDL_FULL_QUIZZES = [
             "Anywhere between 5351.5kHz and 5366.5kHz",
         ],
         correct: 1,
-        explanation: "",
+        explanation: "See the 5 MHz (60m) Band Plan; ‘a’ is not in the band, ‘b’ is shown as QRP (low power) CW(Morse) Centre of Activity, ‘c’ is not a UKband, and ‘d’ is to be avoided for contacts within the UK",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "7b.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q19",
@@ -280,9 +280,9 @@ const BBDL_FULL_QUIZZES = [
             "CW",
         ],
         correct: 0,
-        explanation: "",
+        explanation: "See the 472 kHz (600m) Band Plan, which specifically recommends CW, QRSS and narrow- band digital modes.The band is only 7 kHz wide and NBFM is around 12.5kHz wide, so it would exceed the band edges and breach the Licence Schedule.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "7b.1"
     },
     {
         source: "BBDL QUIZ WEEK00 Q20",
@@ -295,7 +295,7 @@ const BBDL_FULL_QUIZZES = [
             "in Column 2 of the Formula Sheet in EX309",
         ],
         correct: 3,
-        explanation: "",
+        explanation: "The formula for resistors, capacitors or inductors connected in parallel are all in column 2 of the Formula Sheet.Those for series connections are in column 1.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
