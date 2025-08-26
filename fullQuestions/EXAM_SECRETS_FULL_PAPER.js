@@ -422,7 +422,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     {
         source: "Exam Secrets FULL PAPER Q29",
         question: "The phasor diagram shows a phasor representation of a modulated carrier. What type of modulation is depicted?",
-        image: "images/secrets-full-paper-29",
+        image: "images/secrets-full-paper-29.png",
         options: [
             "amplitude modulation",
             "frequency modulation",
@@ -445,7 +445,7 @@ const EXAM_SECRETS_FULL_PAPER = [
             "IF filter",
         ],
         correct: 1,
-        explanation: "The local oscillator is often used to mix up in the transmitter and mix down to the RF in the receiver. That aslo covers the mixer for transmitting and receiving. The IF filter stages can follow the moddulator to remove the other modulation products on transmit. The AGC is only used in the IF to maintain a constant level signal into the detector.",
+        explanation: "The local oscillator is often used to mix up in the transmitter and mix down to the RF in the receiver. That also covers the mixer for transmitting and receiving. The IF filter stages can follow the moddulator to remove the other modulation products on transmit. The AGC is only used in the IF to maintain a constant level signal into the detector.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
@@ -490,7 +490,7 @@ const EXAM_SECRETS_FULL_PAPER = [
             "and return loss have reduced",
         ],
         correct: 1,
-        explanation: "The only change is the feeder loss. The reflection at the antenna, whatever proportion that was, hasn't changed. Neither has the power from the transmitter. If the feeder loss is lower, then a bit more signal will reach the antenna, and a bit more signal will reach the transmitter on the return path. This means the Standing Wave Ratio (SWR) will be greater. Goodbye to the two options where SWR is reduced.The return loss is the ratio between the forward and reflected signals. If more reflected signal arrives back at the transmitter then the ratio between them will be lower.",
+        explanation: "The only change is the feeder loss. The reflection at the antenna, whatever proportion that was, hasn't changed. Neither has the power from the transmitter. If the feeder loss is lower, then a bit more signal will reach the antenna, and a bit more signal will reach the transmitter on the return path. This means the Standing Wave Ratio (SWR) will be greater. Goodbye to the two options where SWR is reduced. The return loss is the ratio between the forward and reflected signals. If more reflected signal arrives back at the transmitter then the ratio between them will be lower.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
@@ -545,9 +545,9 @@ const EXAM_SECRETS_FULL_PAPER = [
         image: "",
         options: [
             "the effect is caused by intense solar illumination near the equator, causing ionisation in denser parts of the atmosphere, supporting longer distance VHF propagation",
-            "charged solar particles are ddirected towards the poles by the earth's ,agnetic fields, causing curtains of ionised gases, which can refelct radio waves",
+            "charged solar particles are directed towards the poles by the earth's magnetic fields, causing curtains of ionised gases, which can reflect radio waves",
             "interaction between the sun's and earth's magnetospheres causes molecules in the upper atmosphere to become polarised, which may reflect radio waves",
-            "the intense cold in the polar refions of the upper atmosphere dramatically slows the normal night time deionisation, so it can remain reflective at night",
+            "the intense cold in the polar regions of the upper atmosphere dramatically slows the normal night time deionisation, so it can remain reflective at night",
         ],
         correct: 1,
         explanation: "The Aurora is primarily caused by charged solar particles being swept towards the poles by the earth's magnetic field. The resulting ionisation can be quite intense, and reflect radio waves.",
@@ -556,16 +556,16 @@ const EXAM_SECRETS_FULL_PAPER = [
     },
     {
         source: "Exam Secrets FULL PAPER Q38",
-        question: "",
+        question: "A neighbour is complaining that amateur transmissions are causing his top quality alarm system to trigger. Its quality is not really in doubt, but the problem may be caused by:",
         image: "",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "a change in operating frequency at the amateur station",
+            "installing the system with unscreened, untwisted wires throughout",
+            "a missing RF earth at the premises where the alarm is fitted",
+            "an overhead telephone line passing close to the affected premises",
         ],
-        correct: 9,
-        explanation: "",
+        correct: 1,
+        explanation: "The field from an amateur transmitter can be quite high, higher than envisaged by the EMC directive when setting immunity standards for interference conducted into the affected device, not helped by poor installation methods. Ferrite rings and twisting the wiring to avoid open loops will reduce the risk.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },

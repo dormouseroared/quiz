@@ -49,6 +49,9 @@ searchForm.addEventListener("submit", function (event) {
 
     event.preventDefault()
 
+    // explanation was not cleared when a new search started and current question is loaded
+    explanationDiv.innerHTML = ""
+
     quizState.searchType = document.getElementById("searchType").value
     quizState.searchValue = document.getElementById("searchValue").value
 
