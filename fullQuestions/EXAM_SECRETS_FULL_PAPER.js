@@ -391,6 +391,231 @@ const EXAM_SECRETS_FULL_PAPER = [
     },
     {
         source: "Exam Secrets FULL PAPER Q27",
+        question: "Why is a preamp often more beneficial at VHF/UHF than at HF?",
+        image: "",
+        options: [
+            "at HF, many signals overlap from different parts of the world, so the environment is interference limited",
+            "at VHF and UHF, the natural background noise is much lower, and internal receiver noise can be the limiting factor",
+            "VHF and UHF propagation is poorer, and signals are naturally weaker, which requires more gain for good detectors",
+            "HF propagation is poorer, and signals are naturally weaker, which requires more gain for good detection",
+        ],
+        correct: 1,
+        explanation: "The limiting factor on sensitivity is noise. Having sifficient gain is easy, but low internal noise is harder and expensive. At HF, the natural noise is high, higher than the internal noise of ordinary circuits. The opposite is true at VHF, and much more so at UHF and above. Ideally the preamp will be at the antenna end of the feeder, so feeder losses don't affect the achievable sensitivity. Higher gain antennas also improve the sensitivity, and the option of preamp, straight through or attenuator will allow the greatest range of signal levels to be handled, albeit not simultaneously.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q28",
+        question: "The device shown in the diagram is a:",
+        image: "images/secrets-full-paper-28.png",
+        options: [
+            "product detector",
+            "SWR indicator",
+            "frequency discriminator",
+            "PLL out-of-lock detector",
+        ],
+        correct: 2,
+        explanation: "The device is a ratio detector, for demodulating FM signals. It relies on phase changes around resonance in a tuned circuit. The phase changes are much more marked than amplitude changes, making the device sensitive to even very narrow frequency deviations.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q29",
+        question: "The phasor diagram shows a phasor representation of a modulated carrier. What type of modulation is depicted?",
+        image: "images/secrets-full-paper-29",
+        options: [
+            "amplitude modulation",
+            "frequency modulation",
+            "single sideband modulation",
+            "binary phase shift keying",
+        ],
+        correct: 1,
+        explanation: "This is too long to type in. See page 152 of the secrets manual.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q30",
+        question: "Which one of the functions below is NOT common to both transmit and receive?",
+        image: "",
+        options: [
+            "local oscillator",
+            "Automatic Gain Control",
+            "mixer",
+            "IF filter",
+        ],
+        correct: 1,
+        explanation: "The local oscillator is often used to mix up in the transmitter and mix down to the RF in the receiver. That aslo covers the mixer for transmitting and receiving. The IF filter stages can follow the moddulator to remove the other modulation products on transmit. The AGC is only used in the IF to maintain a constant level signal into the detector.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q31",
+        question: "A two way splitter for a couple of stacked 2m antennas requires two lengths oif solid polythen coax lambda / 4 long. These should be cut to:",
+        image: "",
+        options: [
+            "104cm",
+            "52cm",
+            "35cm",
+            "26cm",
+        ],
+        correct: 2,
+        explanation: "Don't understand why a quarter of 2m is 51.7cm, so see this answer on secrets page 152.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q32",
+        question: "A quarter wave ground-plane antenna, mounted with the radiating element vertical has a feed impedance of approximately:",
+        image: "",
+        options: [
+            "25Ω",
+            "37Ω",
+            "50Ω",
+            "75Ω",
+        ],
+        correct: 1,
+        explanation: "The lambda / 4 ground plane is effectively half a dipole., the other half being the reflection in the ground plane. Feed impedance of a dipole in free space is 73Ω, so a lambda / 4 ground plane is 73 / 2 = 37Ω.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q33",
+        question: "The feeder of an existing installation is replaced with one having a lower loss. On checking the installation from in the shack, it should be observed that the SWR:",
+        image: "",
+        options: [
+            "and return loss have increased",
+            "has increased, and the return loss reduced",
+            "has reduced, and the return loss increased",
+            "and return loss have reduced",
+        ],
+        correct: 1,
+        explanation: "The only change is the feeder loss. The reflection at the antenna, whatever proportion that was, hasn't changed. Neither has the power from the transmitter. If the feeder loss is lower, then a bit more signal will reach the antenna, and a bit more signal will reach the transmitter on the return path. This means the Standing Wave Ratio (SWR) will be greater. Goodbye to the two options where SWR is reduced.The return loss is the ratio between the forward and reflected signals. If more reflected signal arrives back at the transmitter then the ratio between them will be lower.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q34",
+        question: "An amateur inadvertently uses a short lead lambda / 4 long intended for use on an oscilloscope, where the characteristic impedance used is 75Ω. The lead is connected to a 50Ω dummy load. The impedance at the free end will be:",
+        image: "",
+        options: [
+            "37Ω",
+            "50Ω",
+            "75Ω",
+            "112Ω",
+        ],
+        correct: 3,
+        explanation: "See the Secrets book for the formula and where to find it on EX309.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q35",
+        question: "Communication with satellites often uses:",
+        image: "",
+        options: [
+            "vertical polarisation",
+            "slant polarisation",
+            "horizontal polarisation",
+            "circular polarisation",
+        ],
+        correct: 3,
+        explanation: "Satellite communication often uses circular polarisation, mainly because the orientation of the satellite can change, either as a feature of its orbit, or as the viewing angle changes from different points on the earth's surface",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q36",
+        question: "Which of these parameters about the ionosphere will have the lowest frequency?",
+        image: "",
+        options: [
+            "MUF on a long path",
+            "MUF on a short path",
+            "critical frequency",
+            "NVIS frequency",
+        ],
+        correct: 2,
+        explanation: "The Critical Frequency is the highest frequency that will be refracted back to the Earth on vertical incidence. As the distance between transmitter and receiver gets greater, the angle through which the wave must be refracted reduces, so the highest frequency, the MUF, increases. The Critical Freqyency is the lowest of those. The NVIS frequency is not really a recognised term, but is a description of the MUF on a very short path.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q37",
+        question: "What propagation mechanism is responsible for auroral propagation?",
+        image: "",
+        options: [
+            "the effect is caused by intense solar illumination near the equator, causing ionisation in denser parts of the atmosphere, supporting longer distance VHF propagation",
+            "charged solar particles are ddirected towards the poles by the earth's ,agnetic fields, causing curtains of ionised gases, which can refelct radio waves",
+            "interaction between the sun's and earth's magnetospheres causes molecules in the upper atmosphere to become polarised, which may reflect radio waves",
+            "the intense cold in the polar refions of the upper atmosphere dramatically slows the normal night time deionisation, so it can remain reflective at night",
+        ],
+        correct: 1,
+        explanation: "The Aurora is primarily caused by charged solar particles being swept towards the poles by the earth's magnetic field. The resulting ionisation can be quite intense, and reflect radio waves.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q38",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q00",
         question: "",
         image: "",
         options: [
