@@ -570,7 +570,157 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q00",
+        source: "Exam Secrets FULL PAPER Q39",
+        question: "Home constructed amateur radio transmitters must:",
+        image: "",
+        options: [
+            "be designed to comply with the CEPT EMC standards",
+            "be demonstrated to comply with the CEPT EMC standards",
+            "comply with the licence requirements in respect of interference",
+            "comply with both the CEPT and licence interference requirements",
+        ],
+        correct: 2,
+        explanation: "The EMC directive and CEPT requirements apply to equipment placed on the market, not home made (or modified) equipment. Nonetheless, the requirements of the licence to avoid undue interference to wireless telegraphy apparatus still apply.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q40",
+        question: "Blocking is a phenomenon where:",
+        image: "",
+        options: [
+            "a filter is used to remove an image channel in a receiver, but pass the wanted signal",
+            "a strong constant signal close in frequency to the wanted signal overloads the receiver input",
+            "a transmission on the intermediate frequency of a receiver is picked up and interferes with the wanted signal",
+            "a wanted signal is interrupted in time with the modulation envelope of an unwanted interfering signal",
+        ],
+        correct: 1,
+        explanation: "Blocking is caused by a strong signal driving the victim equipment outside its operating range, such that the wanted signal disappears, or the equipment ceases to function as intended. If the wanted signal is interfered with in time with the interfering modulation, then that phenomenon is termed cross-modulation. Often, the interfering modulation is distinguishable as another transmission.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q41",
+        question: "RF entering an electronic device may be demodulated by:",
+        image: "",
+        options: [
+            "the radio receiver section of the device",
+            "any semiconductor junction in the device",
+            "any tuned circuits close to the radio frequency concerned",
+            "the loudspeaker and leads",
+        ],
+        correct: 1,
+        explanation: "All semiconductor sevices rely in part on non-linear junctions inside the semiconductor e.g. diode. Consequently, unwanted RF can be demodulated, in the manner of a diode detector for AM.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q42",
+        question: "Morse transmissions at 1.82MHz on top band are causing interference to a neighbour's battery powered medium wave radio, particularly when it is tuned to 900kHz. This may well be because:",
+        image: "",
+        options: [
+            "the radio antenna is a quarter wave long at the affected frequency",
+            "the local oscillator in the radio is set above the tuned frequency",
+            "a sub-harmonic of the transmission is getting radiated as well",
+            "the field strength is causing direct pickup on that particular frequency",
+        ],
+        correct: 1,
+        explanation: "it is common for the local oscillator in a medium wave domestic radio to be set above the wanted signal, because its tuning range is then proportionately much lower. The image frequency is twice the IF removed, and the IF is typically in the range 460-470kHz, partly because it is an optimum choice from image-v-adjacent considerations, and partly bevause it is economic for all manufacturers to choose common components. 1830 - 900 = 930kHz, and half that is 465kHz. 1.83MHz is on the image frequency of a domestic medium wave radio tuned to 900kHz. There is a small rrange of frequencies where this problem can occur.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q43",
+        question: "A particularly strong signal, on 145MHz, is causing interference to the FM broadcast band, notably 102.6MHz. A T-piece ise used to connect a coaxial stub in parallel with the input to the domestic radio. The coaxial cable stub should be:",
+        image: "",
+        options: [
+            "ƛ/4 at 102.6MHz, with the free end shorted, inner to braid",
+            "ƛ/4 at 145MHz, with the free end shorted, inner to braid",
+            "ƛ/4 at 145MHz, with the free end open circuit and insulated",
+            "ƛ/2 at 145MHz, with the free end open circuit and insulated",
+        ],
+        correct: 2,
+        explanation: "The aim is to short out the unwanted 145MHz signal whilst doing as little damage as possible to the 102.6MHz signal. A ƛ/4 coaxial stub, open circuit at the far end, will appear as a short circuit at the T-bar end. It needs to be ƛ/4 at 145MHz.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q44",
+        question: "A competition station is using 400W fed to two stacked long Yagis with a total gain of 16dB. It is assumed that other equipment will have adequate immunity to field strengths of up to 3V/m; that is achieved at a distance of about:",
+        image: "",
+        options: [
+            "30m",
+            "130m",
+            "300m",
+            "2.1km",
+        ],
+        correct: 2,
+        explanation: "See EX309 formula sheet: middle column, towards the bottom, which is E = 7 x sqrt(erp) / d where erp is 400W with an antenna gain of 16dB (10dB + 3dB + 3dB) or 40 times. Distance comes out to 295m, and the real answer could be anywhere from 250-350m.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q45",
+        question: "Balance horizontal HF antennas tend to cause fewer EMC problems to neighbouring houses, because:",
+        image: "",
+        options: [
+            "house wiring is generally more susceptible to vertically polarised fields",
+            "being balanced, the horizontal fields will largely cancel out",
+            "house wiring is unbalances, and less sensitive to balanced fields",
+            "a balun at the antenna centre allows the coaxial cable feed to drop vertically away",
+        ],
+        correct: 0,
+        explanation: "House wiring tends to act as a vertical antenna, with the horizontal wiring acting as capacitive loading. Consequently, it tends to be more susceptible to vertical fields. A better analysis is outside the scope of the syllabus.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q46",
+        question: "What does the Federation of Communication Services do that is of interest to the radio amateur?",
+        image: "",
+        options: [
+            "Provide a route for amateurs to make their collective wishes known to government",
+            "provide advice and assistance on EMC problems in domestic households",
+            "issie publications on the wide range of communications facilities in commercial use",
+            "produce the Code of Practice for installing radio communications facilities in vehicles",
+        ],
+        correct: 3,
+        explanation: "The Federation of Communications Services produces document FCS 1363 which is the accepted Code of Practice for installing radio communications facilities in vehicles.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q47",
+        question: "A neighbour complains that he is suffering quite often from interference to his TV and suspects it might be you. You should:",
+        image: "",
+        options: [
+            "explain that now the TV transmissions are digital, the concept of suffering radio interference no longer exists",
+            "suggest he might be better off subscribing to one of the many cable fed systems",
+            "ask if can recall when the problem occurs and compare that with your operating log",
+            "advise him to call the services of a TV dealer or, if he prefers, report the matter to the BBC",
+        ],
+        correct: 2,
+        explanation: "A good reason to keep a log. One you already have, clearly kept since well before the complaint arose, will be given much more credibility than one written after the complaint.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q48",
+        question: "What is the purpose of operating split frequency?",
+        image: "",
+        options: [
+            "it spreads out ststions calling in a pile-up, allowing some callsigns to be copied",
+            "it allows full duplex or simultaneous two way contacts, speeding up contacts",
+            "it simplifies automated log keeping at the distant station in a pile-up",
+            "it allows callers from different countries to operate in accordance with their band plans",
+        ],
+        correct: 0,
+        explanation: "Rare stations, particularly DXpeditions (visits to rare locations) can cause a large pile-up where there are hundreds of overlapping calls, none of which are clear. By listening a few kHz away from the transmit frequency, the callers are much more spread out and more successfull contacts can be made.",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q49",
         question: "",
         image: "",
         options: [
@@ -585,7 +735,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q00",
+        source: "Exam Secrets FULL PAPER Q50",
         question: "",
         image: "",
         options: [
@@ -600,7 +750,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q00",
+        source: "Exam Secrets FULL PAPER Q51",
         question: "",
         image: "",
         options: [
@@ -615,7 +765,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q00",
+        source: "Exam Secrets FULL PAPER Q52",
         question: "",
         image: "",
         options: [
@@ -630,7 +780,82 @@ const EXAM_SECRETS_FULL_PAPER = [
         syllabus: "0"
     },
     {
-        source: "Exam Secrets FULL PAPER Q00",
+        source: "Exam Secrets FULL PAPER Q53",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q54",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q55",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q56",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q57",
+        question: "",
+        image: "",
+        options: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: 9,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "Exam Secrets FULL PAPER Q58",
         question: "",
         image: "",
         options: [
