@@ -244,3 +244,8 @@ ul {
     gap: 20px;
     padding-bottom: 10px;
 }
+
+.sequence {
+    color:red;
+    font-size: smaller;
+}

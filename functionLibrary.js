@@ -232,7 +232,7 @@ export function loadQuestion() {
         imageDetail = `<br><br><img src="${q.image}" alt="img built from key"   >`
     }
 
-    questionDiv.innerHTML = `Q${quizState.currentQuestion + 1}/${qLength}. ${q.question}${imageDetail}`
+    questionDiv.innerHTML = `<span class='sequence'>Q${quizState.currentQuestion + 1}/${qLength}.</span> ${q.question}${imageDetail}`
     questionDiv.title = q.source
 
     //
