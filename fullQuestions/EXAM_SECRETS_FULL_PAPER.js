@@ -631,7 +631,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     },
     {
         source: "Exam Secrets FULL PAPER Q43",
-        question: "A particularly strong signal, on 145MHz, is causing interference to the FM broadcast band, notably 102.6MHz. A T-piece ise used to connect a coaxial stub in parallel with the input to the domestic radio. The coaxial cable stub should be:",
+        question: "A particularly strong signal, on 145MHz, is causing interference to the FM broadcast band, notably 102.6MHz. A T-piece is used to connect a coaxial stub in parallel with the input to the domestic radio. The coaxial cable stub should be:",
         image: "",
         options: [
             "ƛ/4 at 102.6MHz, with the free end shorted, inner to braid",
@@ -661,12 +661,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     },
     {
         source: "Exam Secrets FULL PAPER Q45",
-        question: "Balance horizontal HF antennas tend to cause fewer EMC problems to neighbouring houses, because:",
+        question: "Balanced horizontal HF antennas tend to cause fewer EMC problems to neighbouring houses, because:",
         image: "",
         options: [
             "house wiring is generally more susceptible to vertically polarised fields",
             "being balanced, the horizontal fields will largely cancel out",
-            "house wiring is unbalances, and less sensitive to balanced fields",
+            "house wiring is unbalanced, and less sensitive to balanced fields",
             "a balun at the antenna centre allows the coaxial cable feed to drop vertically away",
         ],
         correct: 0,
