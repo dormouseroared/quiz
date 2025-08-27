@@ -393,7 +393,7 @@ const RSGB_FULL_MOCK_3 = [
     },
     {
         source: "RSGB Full Mock 3 Q29",
-        question: "A 70cm receiver has a long feeder to an antenna at the far end of the garden. To improve reception of weak signals a good pre- amp is fitted alongside the receiver. The improvement in signal to noise ratio is noticeable but not impressive, certainly only a fraction of the expected improvement given the gain of the pre-amp. To try to further improve matters it is worth:",
+        question: "A 70cm receiver has a long feeder to an antenna at the far end of the garden. To improve reception of weak signals a good pre-amp is fitted alongside the receiver. The improvement in signal to noise ratio is noticeable but not impressive, certainly only a fraction of the expected improvement given the gain of the pre-amp. To try to further improve matters it is worth:",
         options: [
             "swapping the pre-amp for one of a higher gain",
             "moving the pre-amp to the antenna end of the main feeder",

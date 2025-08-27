@@ -2128,13 +2128,13 @@ const EXAM_SECRETS_SAMPLES = [
         question: "The field strength 20m away from an antenna of 10dB gain fed with 40W is:",
         image: "",
         options: [
-            "5.5V/m",
-            "",
-            "",
-            "",
+            "7V/m",
+            "140V/m",
+            "0.08W/m2",
+            "0.8W/m2",
         ],
         correct: 0,
-        explanation: "This is the first time the answers have been wrong. Field strength in Volts per metre is sqrt(30 x watts x gain)/distance so 10dB is a gain of 10.",
+        explanation: "The answer says C, but it is A. Field strength = 7 X sqrt(ERP) / d comes out to 7V/m. Why is this ERP, by default?",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "6e.1"
     },
