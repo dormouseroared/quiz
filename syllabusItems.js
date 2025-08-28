@@ -364,7 +364,8 @@ const syllabusItems = [
         key: "2b.1",
         level: "full",
         title: "Power",
-        text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power given appropriate values. This may include the use of series/ parallel formulae, Ohm’s Law and power. Equations include P = V²/R and P=I²×R "
+        text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power given appropriate values. This may include the use of series/ parallel formulae, Ohm’s Law and power. Equations include P = V²/R and P=I²×R ",
+        weeks: "1"
     },
     {
         key: "2c.1",
@@ -3561,7 +3562,8 @@ const syllabusItems = [
         key: "7a.1",
         level: "full",
         title: "Good operating practices and procedures ",
-        text: "Understand the reasons why some stations may use split Tx and Rx frequencies within a frequency band."
+        text: "Understand the reasons why some stations may use split Tx and Rx frequencies within a frequency band.",
+        weeks: "1"
     },
     {
         key: "7a.2",
@@ -3651,7 +3653,8 @@ const syllabusItems = [
         key: "7a.8",
         level: "foundation",
         title: "Good operating practices and procedures ",
-        text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users."
+        text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
+        weeks: "1"
     },
     {
         key: "7a.6",
@@ -3723,7 +3726,8 @@ const syllabusItems = [
         key: "7b.1",
         level: "full",
         title: "Band plans",
-        text: "Identify items on a typical band-plan (e.g. centre of activity, band width and recommended modes). Note: Questions will be limited to the 5MHz (60m) and 472kHz (600m) bands. A copy of the relevant band plans will be available during the examination but may not be ones in current use. Reference Booklets containing examination band plans are available on the RSGB web site"
+        text: "Identify items on a typical band-plan (e.g. centre of activity, band width and recommended modes). Note: Questions will be limited to the 5MHz (60m) and 472kHz (600m) bands. A copy of the relevant band plans will be available during the examination but may not be ones in current use. Reference Booklets containing examination band plans are available on the RSGB web site",
+        weeks: "1"
     },
     {
         key: "7b.2",
@@ -3753,7 +3757,8 @@ const syllabusItems = [
         key: "7b.2",
         level: "full",
         title: "Band plans",
-        text: "Recall that band plans in other countries and IARU regions may not align with the UK band plan."
+        text: "Recall that band plans in other countries and IARU regions may not align with the UK band plan.",
+        weeks: "1"
     },
     {
         key: "7c.1",
@@ -3909,25 +3914,29 @@ const syllabusItems = [
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
-        text: "Understand the requirements for operation by individual UK Licensees abroad under the CEPT Recommendation T/R 61-01 and T/R 61-02."
+        text: "Understand the requirements for operation by individual UK Licensees abroad under the CEPT Recommendation T/R 61-01 and T/R 61-02.",
+        weeks: "1"
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
-        text: "Understand this facility does not extend to club or reciprocal licences."
+        text: "Understand this facility does not extend to club or reciprocal licences.",
+        weeks: "1"
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
-        text: "Understand the purpose and function of the CEPT Harmonised Amateur Radio Examination Certificate (HAREC)."
+        text: "Understand the purpose and function of the CEPT Harmonised Amateur Radio Examination Certificate (HAREC).",
+        weeks: "1"
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
-        text: "Recall that many countries will offer reciprocal licences to UK amateurs with a HAREC Full licence and that operation is in accordance with the host country’s rules."
+        text: "Recall that many countries will offer reciprocal licences to UK amateurs with a HAREC Full licence and that operation is in accordance with the host country’s rules.",
+        weeks: "1"
     },
     {
         key: "7h.2",
@@ -3935,7 +3944,8 @@ const syllabusItems = [
         title: "CEPT and international",
         text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. [[Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies whivh are both in your licence schedule and allocated internationally in that region.]]",
         location: "page 8",
-        notes: "it is 1f.2 in the manual but the syllabus has been changed"
+        notes: "it is 1f.2 in the manual but the syllabus has been changed",
+        weeks: "1"
     },
     {
         key: "8a.1",

@@ -72,7 +72,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         correct: 0,
         explanation: "The UK and Europe are in Region 1.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "1"
+        syllabus: "7h.2"
     },
     {
         source: "Exam Secrets FULL PAPER Q06",

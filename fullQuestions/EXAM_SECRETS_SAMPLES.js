@@ -1683,9 +1683,10 @@ const EXAM_SECRETS_SAMPLES = [
             "27dB",
         ],
         correct: 0,
-        explanation: "Return loss is the ratio of incident power to reflected power at the point of measurement. Visualise a lossy feeder: much power will be lost on the way up and the same proportion on the way back. In the shack, the return loss will be high almost irrespective of the match at the antenna. With that in mind, the return lkoss at the trasnmitter is the return loss at the antenna plus twice the feeder loss. In this question, we are given the measurement in the shack, so the loss at the antenna will be 23dB - (2 x 2dB) = 19dB...",
+        explanation: "Return loss is the ratio of incident power to reflected power at the point of measurement. Visualise a lossy feeder: much power will be lost on the way up and the same proportion on the way back. In the shack, the return loss will be high, almost irrespective of the match at the antenna. With that in mind, the return loss at the transmitter is the return loss at the antenna plus twice the feeder loss. In this question, we are given the measurement in the shack, so the loss at the antenna will be 23dB - (2 x 2dB) = 19dB...",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "4e.3"
+        syllabus: "4e.3",
+        tagged: true
     },
     {
         source: "Exam Secrets FULL [Feeders and Antennas] 4F1-1",

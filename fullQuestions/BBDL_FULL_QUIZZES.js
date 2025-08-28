@@ -145,7 +145,7 @@ const BBDL_FULL_QUIZZES = [
             "Page 2 of the Licence",
         ],
         correct: 0,
-        explanation: "Licence 4-1b is the only one of the four options that mentions operating from a ship; Notes to the Schedule only go up to G, so Note s is clearly wrong.",
+        explanation: "Licence 4-1b is the only one of the four options that mentions operating from a ship; Notes to the Schedule only go up to G, so Note s is clearly wrong. [[In the quiz, I answered with Note s to Schedule 1 because There is something in the Notes. I was fooled by Note s which I thought was a misprint.]]",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1a.1"
     },
@@ -220,7 +220,7 @@ const BBDL_FULL_QUIZZES = [
             "regulated by the RSGB on behalf of Ofcom",
         ],
         correct: 2,
-        explanation: "‘a’ is wrong because ICNIRP is not UK specific and only provides guidelines, not rules. ‘b’ is incorrect because a 9 watt transmitter working into a high gain antenna can exceed the 10W EIRP level. ‘c’ is a true statement. ‘d’ is wrong because the RSGB does not enforce the rules.Licence 6-3 points to Licence Condition 9, which sets out the rules, and points to Ofcom Guidance for further detail.",
+        explanation: "‘a’ is wrong because ICNIRP is not UK specific and only provides guidelines, not rules. ‘b’ is incorrect because a 9 watt transmitter working into a high gain antenna can exceed the 10W EIRP level. ‘c’ is a true statement. ‘d’ is wrong because the RSGB does not enforce the rules.Licence 6-3 points to Licence Condition 9, which sets out the rules, and points to Ofcom Guidance for further detail. [[I answered with the ICNIRP Guidelines.]]",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1g.1"
     },
