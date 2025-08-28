@@ -2240,7 +2240,7 @@ const EXAM_SECRETS_SAMPLES = [
             "You are not a recognised DXCC member",
         ],
         correct: 1,
-        explanation: "It is normal for rare stations who are likely to get a 'pile-up', that is lots of stations calling, to set their receiver to a different frequency to the frequency used for transmitting. Typically within 10kHz. That is so they spread out all the callers, and stands some chance of receiving a complete callsign to go back to.",
+        explanation: "It is normal for rare stations who are likely to get a 'pile-up', that is lots of stations calling, to set their receiver to a different frequency to the frequency used for transmitting. Typically within 10kHz. That is so they spread out all the callers, and stands some chance of receiving a complete callsign to go back to. This is about SPLIT frequency.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "7a.1"
     },
