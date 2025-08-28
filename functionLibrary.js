@@ -348,8 +348,11 @@ export function loadQuestion() {
     const ul = document.createElement("ul")
 
     matchingItems.forEach((item) => {
+
+        const weeks = item.weeks ? `[${item.weeks}]` : ""
+
         const li = document.createElement("li")
-        li.innerHTML = `${item.key} <span class="highlightLevel">${item.level}</span>: ${item.text}` // Add syllabus text
+        li.innerHTML = `${item.key} <span class="highlightLevel">${item.level} ${weeks}</span>: ${item.text}` // Add syllabus text
         ul.appendChild(li)
     })
 

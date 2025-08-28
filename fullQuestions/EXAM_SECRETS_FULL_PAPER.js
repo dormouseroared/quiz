@@ -657,7 +657,7 @@ const EXAM_SECRETS_FULL_PAPER = [
         correct: 2,
         explanation: "See EX309 formula sheet: middle column, towards the bottom, which is E = 7 x sqrt(erp) / d where erp is 400W with an antenna gain of 16dB (10dB + 3dB + 3dB) or 40 times. Distance comes out to 295m, and the real answer could be anywhere from 250-350m.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "7"
+        syllabus: "6e.1"
     },
     {
         source: "Exam Secrets FULL PAPER Q45",

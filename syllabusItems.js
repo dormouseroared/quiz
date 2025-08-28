@@ -3942,7 +3942,7 @@ const syllabusItems = [
         key: "7h.2",
         level: "full",
         title: "CEPT and international",
-        text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. [[Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies whivh are both in your licence schedule and allocated internationally in that region.]]",
+        text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. [[Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies which are both in your licence schedule and allocated internationally in that region.]]",
         location: "page 8",
         notes: "it is 1f.2 in the manual but the syllabus has been changed",
         weeks: "1"

@@ -667,7 +667,7 @@ const RSGB_FULL_MOCK_2 = [
             "it is trying to separate out callers using the IOTA reference numbers"
         ],
         correct: 2,
-        explanation: "",
+        explanation: "This is a SPLIT frequency question.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "7a.1"
     },
