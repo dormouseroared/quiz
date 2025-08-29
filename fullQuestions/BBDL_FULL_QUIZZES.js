@@ -506,7 +506,7 @@ const BBDL_FULL_QUIZZES = [
             "100 V",
             "500 V",
         ],
-        correct: 9,
+        correct: 2,
         explanation: "[[I answered 20V...]]",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0",
