@@ -299,6 +299,264 @@ const BBDL_FULL_QUIZZES = [
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0"
     },
+    {
+        source: "BBDL QUIZ WEEK01 Q01",
+        question: "What is the main reason for “Working Split” with transmit and receive frequencies in the same band?",
+        image: "",
+        options: [
+            "Satellites use different frequencies for the up-link and down-link",
+            "It allows contest stations to keep other stations away from their frequency",
+            "It spreads out stations calling you so you have more chance of picking them out of a pile up",
+            "It enables you to listen on a different frequency to avoid interference on your transmit frequency",
+        ],
+        correct: 2,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q02",
+        question: "How can you ensure that you are not causing undue interference to other radio users?",
+        image: "",
+        options: [
+            "operate with low power (QRP) at all times",
+            "carry our tests on your own transmissions from time to time",
+            "ask your neighbours if they are suffering RF breakthrough once in a while",
+            "ask for critical signal reports from stations you work at least once a week",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q03",
+        question: "Assuming you hold a Full UK Licence, which frequencies should you avoid using for routine amateur radio contacts?",
+        image: "",
+        options: [
+            "5.2620 & 5.2785 MHz",
+            "5.2900 & 5.3170 MHz",
+            "5.2620 & 5.3170 MHz",
+            "5.2785 & 5.2900 MHz",
+        ],
+        correct: 3,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q04",
+        question: "In the ‘All Modes’ section of Band Plans, Amplitude Modulation is acceptable:",
+        image: "",
+        options: [
+            "Only if the bandwidth is 6kHz or less",
+            "Only if the bandwidth is 2.7kHz or less",
+            "With a bandwidth greater than 6kHz provided the user considers adjacent channel activity",
+            "With a bandwidth greater than 2.7kHz provided the user considers adjacent channel activity",
+        ],
+        correct: 3,
+        explanation: "[[I answered bandwidth is 6kHz or less...]]",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q05",
+        question: "Some overseas stations may be restricted in their use of the 600m band to avoid interference to:",
+        image: "",
+        options: [
+            "aircraft to ground communications",
+            "ground to aircraft communications",
+            "nearby radio navigation service directional beacons",
+            "nearby radio navigation service non-directional beacons",
+        ],
+        correct: 3,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q06",
+        question: "Even where the same bands are permitted it may not be possible to work some countries on some modes because:",
+        image: "",
+        options: [
+            "The political climates do not allow it",
+            "Band plans in other countries and IARU regions may not align with the UK band plan.",
+            "Some IARU band plans specifically prohibit contacts between some countries",
+            "The USB/LSB convention is not observed by all IARU member states.",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q07",
+        question: "When operating under the provisions of CEPT Recommendation T/R 61-01, the Licensee MUST:",
+        image: "",
+        options: [
+            "Await the allocation of a specific callsign for use in the host country for the duration of the stay",
+            "Comply with the Terms & Conditions set out in OFW611 and the Notice of Coordination",
+            "Ensure that their Licence is available for inspection by authorities in that country",
+            "Use their own callsign with an appropriate suffix of their choosing",
+        ],
+        correct: 2,
+        explanation: "[[I answered use their own callsign...]]",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q08",
+        question: "When operating under the provisions of CEPT Recommendation T/R 61-01, the Licensee MUST:",
+        image: "",
+        options: [
+            "Await authorisation from the authorities in that country before making any transmissions",
+            "Comply with the Terms & Conditions of the country where they are located",
+            "Inform Ofcom of a change in location before departure",
+            "Add ‘/A’ to their callsign to signify that they are Abroad",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q09",
+        question: "If you are operating from a country in Asia, which of the following band allocations would be in use:",
+        image: "",
+        options: [
+            "Only bands allocated in your UK Licence that are also allocated to Region 3",
+            "Comply with the Terms & Conditions of the country where they are located",
+            "Only bands allocated in your UK Licence that are also allocated to Region 2",
+            "Only bands allocated to Region 2 that are authorised in the country you are located in",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q10",
+        question: "What potential difference is required to drive 6mA through a 5M6 resistor?",
+        image: "",
+        options: [
+            "33.6 V",
+            "336 V",
+            "3.36 kV",
+            "33.6 kV",
+        ],
+        correct: 3,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q11",
+        question: "If a sensitive RF voltmeter is showing that 10 µV rms is present across a 50 Ω dummy load, how much power is being dissipated in that load?",
+        image: "",
+        options: [
+            "2 picowatts",
+            "2 micro watts",
+            "2 milliwatts",
+            "2 watts",
+        ],
+        correct: 0,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q12",
+        question: "What is the battery voltage in the circuit shown in the diagram?",
+        image: "images/bbdl-quizzes-week01-q12.png",
+        options: [
+            "10V",
+            "24V",
+            "100V",
+            "240V",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q13",
+        question: "How much power will be dissipated in the resistor combination shown in the diagram?",
+        image: "images/bbdl-quizzes-week01-q13.png",
+        options: [
+            "2.88 W",
+            "6.00 W",
+            "14.4 W",
+            "41.7 W",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q14",
+        question: "If each of the resistors in the diagram is passing 400mA, what is the supply voltage?",
+        image: "images/bbdl-quizzes-week01-q14.png",
+        options: [
+            "20.0 V",
+            "66.7 V",
+            "100 V",
+            "500 V",
+        ],
+        correct: 9,
+        explanation: "[[I answered 20V...]]",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q15",
+        question: "If 400 W is being dissipated in the resistor combination in the diagram, what is the total current flowing through the resistor network?",
+        image: "images/bbdl-quizzes-week01-q15.png",
+        options: [
+            "400 mA",
+            "630 mA",
+            "1.60 A",
+            "2.83 A",
+        ],
+        correct: 3,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK01 Q16",
+        question: "What value of resistor would need to be placed in the gap ‘X’ to cause the voltmeter to read zero volts?",
+        image: "images/bbdl-quizzes-week01-q16.png",
+        options: [
+            "10Ω",
+            "50Ω",
+            "100Ω",
+            "1kΩ",
+        ],
+        correct: 1,
+        explanation: "",
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    // {
+    //     source: "BBDL QUIZ WEEK01 Q01",
+    //     question: "",
+    //     image: "",
+    //     options: [
+    //         "",
+    //         "",
+    //         "",
+    //         "",
+    //     ],
+    //     correct: 9,
+    //     explanation: "",
+    //     lookup: "See page(s) x of the Full Licence text book",
+    //     syllabus: "0"
+    // },
 ]
 
 export default BBDL_FULL_QUIZZES
