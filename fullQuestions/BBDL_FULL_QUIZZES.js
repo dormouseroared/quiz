@@ -304,15 +304,15 @@ const BBDL_FULL_QUIZZES = [
         question: "What is the main reason for “Working Split” with transmit and receive frequencies in the same band?",
         image: "",
         options: [
-            "Satellites use different frequencies for the up-link and down-link",
-            "It allows contest stations to keep other stations away from their frequency",
-            "It spreads out stations calling you so you have more chance of picking them out of a pile up",
-            "It enables you to listen on a different frequency to avoid interference on your transmit frequency",
+            "satellites use different frequencies for the up-link and down-link",
+            "it allows contest stations to keep other stations away from their frequency",
+            "it spreads out stations calling you, so you have more chance of picking them out of a pile up",
+            "it enables you to listen on a different frequency, to avoid interference on your transmit frequency",
         ],
         correct: 2,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: " ‘a’ is wrong because satellites use different bands for up and down links. ‘b’ is not true, using split in a contest would not allow quick scoring and in a busy contest would take up too much spectrum. ‘c’ sounds good, but let’s check ‘d’.If there is interference on your transmit frequency, it is unlikely other stations will hear you they might but it is not as good an answer as ‘c’.",
+        lookup: "See page(s) 11 of the Full Licence text book",
+        syllabus: "7a.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q02",
@@ -320,14 +320,14 @@ const BBDL_FULL_QUIZZES = [
         image: "",
         options: [
             "operate with low power (QRP) at all times",
-            "carry our tests on your own transmissions from time to time",
+            "carry out tests on your own transmissions from time to time",
             "ask your neighbours if they are suffering RF breakthrough once in a while",
             "ask for critical signal reports from stations you work at least once a week",
         ],
         correct: 1,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: " You are permitted to operate up to the maximum powers listed in the Schedule, and it is perfectly feasible to operate with high power and not cause undue interference. Operating with low power can still cause undue interference, especially if your transmitter is faulty, so not ‘a’. ‘b’ sounds like a direct quote from the Ofcom Guidance, so is a contender for a correct answer, but check ‘c’ and ‘d’ to be sure. ‘c’ is really not recommended; if your neighbours are suffering any interference, they are likely to blame you, so not ‘c’. ‘d’ is not a bad thing to do, but it will only check for signal quality, not harmonics or other issues, so not the best answer.",
+        lookup: "See page(s) 6-7 of the Full Licence text book",
+        syllabus: "7a.8"
     },
     {
         source: "BBDL QUIZ WEEK01 Q03",
@@ -340,9 +340,9 @@ const BBDL_FULL_QUIZZES = [
             "5.2785 & 5.2900 MHz",
         ],
         correct: 3,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "There are four spot frequencies in these answers. All four feature in the 5MHz Bandplan; CW QRP Centre of Activity, UK Emergency Comms, Beacons & AM 6kHz max bandwidth. Of those, under normal circumstances you should not transmit on the Beacon or the Emergency Comms frequencies.",
+        lookup: "See page(s) 11 of the Full Licence text book",
+        syllabus: "7b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q04",
@@ -355,8 +355,8 @@ const BBDL_FULL_QUIZZES = [
             "With a bandwidth greater than 2.7kHz provided the user considers adjacent channel activity",
         ],
         correct: 3,
-        explanation: "[[I answered bandwidth is 6kHz or less...]]",
-        lookup: "See page(s) x of the Full Licence text book",
+        explanation: "[[I answered bandwidth is 6kHz or less... In the 5MHz band there's this: Note 3: Amplitude Modulation is permitted with a maximum bandwidth of 6kHz, on frequencies with at least 6kHz available width, and in the Notes to the bandplans, there are these: 1. All Modes: CW, SSB and those modes listed as Centres of Activity, plus AM. Consideration should be given to adjacent channel users. 2. Amplitude Modulation (AM): AM with a bandwidth greater than 2.7kHz is acceptable in the All Modes segments provided users consider adjacent channel activity when selecting operating frequencies (Davos 2005). CONFUSING!]] AM is generally seen to have a bandwidth of around 6kHz. There was an attempt to ban it from the amateur bands, but a pragmatic agreement was reached that allows AM with a bandwidth greater than 2.7kHz provided the user considers adjacent channel activity. See ‘Notes to the bandplans’ in EX309 top of second column of the Notes.",
+        lookup: "See page(s) 7b.1 of the Full Licence text book",
         syllabus: "0",
         tagged: true
     },
@@ -371,9 +371,9 @@ const BBDL_FULL_QUIZZES = [
             "nearby radio navigation service non-directional beacons",
         ],
         correct: 3,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "See Note-2 to the 472kHz / 600m Band Plan in EX309",
+        lookup: "See page(s) 11 of the Full Licence text book",
+        syllabus: "7b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q06",
@@ -386,9 +386,9 @@ const BBDL_FULL_QUIZZES = [
             "The USB/LSB convention is not observed by all IARU member states.",
         ],
         correct: 1,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "Some governments do not allow amateur radio (e.g. North Korea), but a total ban is not mode specific, which is the focus of the question, so ‘a’ is only partially correct. ‘b’ is 100 % true and we gave the example of 5MHz in our tutorial, so ‘b’ looks good. ‘c’ is not true; there are country exclusions in the 600m bandplan, but nothing that is mode specific, so not ‘c’. ‘d’ is also not true, so not the one to go for.",
+        lookup: "See page(s) 11-12 of the Full Licence text book",
+        syllabus: "7b.2"
     },
     {
         source: "BBDL QUIZ WEEK01 Q07",
@@ -401,9 +401,9 @@ const BBDL_FULL_QUIZZES = [
             "Use their own callsign with an appropriate suffix of their choosing",
         ],
         correct: 2,
-        explanation: "[[I answered use their own callsign...]]",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
+        explanation: "[[I answered use their own callsign...]] The ‘1-page’ Licence says that a Full Licence holder is permitted to operate under CEPT T/R 61-01, and if you do that, you need to make your Licence available for inspection, which is why ‘c’ is the correct answer. ‘a’ is wrong because T/R 61-01 is for temporary use and no host country callsigns are used.When in anothercountry, you must abide by that country’s Licence Conditions, so the Ofcom documents in ‘b’ are irrelevant. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 following by your UK callsign. This particular Licence Condition is in paragraph 3 on page 2 of the 1-page Licence document issued by Ofcom, which is not included in EX309. You may scream ‘foul play’ but the syllabus says you need to understand the requirements of CEPT T/R 61-01.",
+        lookup: "See page(s) 7-8 of the Full Licence text book",
+        syllabus: "7h.1",
         tagged: true
     },
     {
@@ -417,9 +417,9 @@ const BBDL_FULL_QUIZZES = [
             "Add ‘/A’ to their callsign to signify that they are Abroad",
         ],
         correct: 1,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: " ‘a’ is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so ‘b’ looks like a good option. ‘c’ is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign’; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T / R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26. ",
+        lookup: "See page(s) 7-8 of the Full Licence text book",
+        syllabus: "7h.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q09",
@@ -432,9 +432,9 @@ const BBDL_FULL_QUIZZES = [
             "Only bands allocated to Region 2 that are authorised in the country you are located in",
         ],
         correct: 1,
-        explanation: "",
+        explanation: "The first point to note is that Asia is covered by ITU Region 3, so ‘c’ and ‘d’ are ruled out immediately. The second key point is that the question says you are in a country and whichever country you are in, you must abide by their rules; a band may be allocated to that Region but that does not mean it is permitted in every country in that Region. ‘a’ is wrong because the UK Licence is not relevant to what frequencies you can use in another country; it would be correct if the question was about internationalwaters in Asia, but it isn’t.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "7h.2"
     },
     {
         source: "BBDL QUIZ WEEK01 Q10",
@@ -447,13 +447,13 @@ const BBDL_FULL_QUIZZES = [
             "33.6 kV",
         ],
         correct: 3,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "Formula to use is Ohm's law. See Worked Answer for details including calculator key strokes.",
+        lookup: "See page(s) 19 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q11",
-        question: "If a sensitive RF voltmeter is showing that 10 µV rms is present across a 50 Ω dummy load, how much power is being dissipated in that load?",
+        question: "If a sensitive RF voltmeter is showing that 10 µV RMS is present across a 50Ω dummy load, how much power is being dissipated in that load?",
         image: "",
         options: [
             "2 picowatts",
@@ -462,9 +462,9 @@ const BBDL_FULL_QUIZZES = [
             "2 watts",
         ],
         correct: 0,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "See Worked Example for full details.",
+        lookup: "See page(s) 19 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q12",
@@ -477,9 +477,9 @@ const BBDL_FULL_QUIZZES = [
             "240V",
         ],
         correct: 1,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "There are two key points to getting this one correct; the series resistors and the units. It is a ‘simple’ Ohm’s Law question, just complicated by there being two series resistors and the mixed units, so let’s deal with the series resistors first. Hopefully you remembered that series resistors simply add together to give the total resistance, RTotal. If you are happy ‘playing’ with numbers, you can rethink 330kΩ as 0.33MΩ, and add 1.2MΩ to get 1.53MΩ.",
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q13",
@@ -492,9 +492,9 @@ const BBDL_FULL_QUIZZES = [
             "41.7 W",
         ],
         correct: 1,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "The key to answering this question is remembering that resistors in parallel combine to produce a lower total resistance; in this case it must be less than 820Ω. Using the formula from EX309, 1/RTotal = 597Ω (sense check, is this less than 820Ω? Yes, so feels right!). Because the AC supply is given in Volts RMS, we can now use the Power formula P = V squared / R =60 squared / 597 = 6W Footnote: it may not be ‘obvious’ at this stage but you could have ignored the 1MΩ resistor.Why ? Because it is so much larger than the resistor it is in parallel with it has very little impact on RTotal; it is worth remembering that the bigger the difference is between parallel resistors, the less it will change the overall value. Try it! See Worked Answers for calculator key strokes etc.",
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q14",
@@ -507,9 +507,9 @@ const BBDL_FULL_QUIZZES = [
             "500 V",
         ],
         correct: 2,
-        explanation: "[[I answered 20V...]]",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
+        explanation: "[[I answered 20V... 1. ALWAYS DRAW OUT THE CIRCUIT. 2. WRITE SAME VOLTAGE ALONG THE TOP 3. ANY OF THE RESISTORS WITH THE CURRENT WILL GIVE THE CORRECT ANSWER. 4. 250 OHMS X 400 mA = 100V 5. A longer way round is to combine the resistors and the current, so that's 2A x 50 ohms = 100V 6. Doh!]] See Worked Answers for pretty much the same details.",
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1",
         tagged: true
     },
     {
@@ -523,9 +523,9 @@ const BBDL_FULL_QUIZZES = [
             "2.83 A",
         ],
         correct: 3,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: "See Worked Answers for more details.",
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK01 Q16",
@@ -538,9 +538,9 @@ const BBDL_FULL_QUIZZES = [
             "1kΩ",
         ],
         correct: 1,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: " For the voltmeter to read zero the potential difference across the resistor placed in the gap ‘X’ has to be the same as that across the 5kΩ resistor. In the lower potential divider, the 5kΩ resistor is half the value of the 10kΩ resistor, so there will be 3V across the 5kΩ resistor and 6V across the 10kΩ resistor. For the same to be true in the top potential divider, the gap resistor needs to be half of the 100Ω resistor, i.e. 50Ω. You can work out the combined resistance value, the current and then the individual voltages using Ohm’s Law, to check, if you wish.",
+        lookup: "See page(s) 20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     // {
     //     source: "BBDL QUIZ WEEK01 Q01",
