@@ -415,8 +415,8 @@ const RSGB_FULL_MOCK_2 = [
             "squelch"
         ],
         correct: 2,
-        explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
+        explanation: "[[ What is the RIT control? Receiver Incremental Tuning allows fine-tuning of the receive frequency, without affecting the transmit frequency, useful in SSB and CW modes, where small frequency mismatches can make voices sound off-pitch or CW tones drift.]]  [[ From the manual: When in contact on SSB with several stations in a net it is possible that they will all be on slightly different frequencies resulting in tonal differences in the received audio which may make understanding difficult. Tuning each station in clearly will also affect your transmitted frequency resulting in everybody in the net having to re-adjust every time. To avoid that a facility called Receiver Incremental Tuning (RIT) can make fine adjustments to the receive frequency without affecting the main frequency setting and the transmitted frequency.]]",
+        lookup: "See page(s) 50 of the Full Licence text book",
         syllabus: "3n.1"
     },
     {

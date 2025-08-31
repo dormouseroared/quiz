@@ -2110,7 +2110,7 @@ const syllabusItems = [
         key: "3n.1",
         level: "full",
         title: "Transceivers",
-        text: "Recall the function and use of the RIT control."
+        text: "Recall the function and use of the RIT (Receiver Incremental Tuning) control. [[See page 50 of manual]]"
     },
     {
         key: "3n.2",

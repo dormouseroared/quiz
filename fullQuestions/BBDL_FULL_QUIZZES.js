@@ -130,7 +130,7 @@ const BBDL_FULL_QUIZZES = [
             "Licence 10-1d",
         ],
         correct: 3,
-        explanation: "The recommendation is mentioned on page 2 of the Licence, but it is not defined.If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions, including CEPT T/ R 61-01.We will look at CEPT operation more when we do the Licence Conditions tutorial later in the course.",
+        explanation: "The recommendation is mentioned on page 2 of the Licence, but it is not defined. If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions, including CEPT T/ R 61-01. We will look at CEPT operation more when we do the Licence Conditions tutorial later in the course. [[Page 2 of the Licence is mentioned. Where is that? ]]",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1f.1"
     },
