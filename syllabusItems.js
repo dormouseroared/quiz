@@ -135,7 +135,7 @@ const syllabusItems = [
         key: "1c.1",
         level: "full",
         title: "Messages",
-        text: "Understand that people of all ages and backgrounds participate in amateur radio and that messages must not cause offence, particularly in the context of relevant legislation including the Wireless Telegraphy (Content of Transmission) Regulations 1988 and the Communications Act(2003)."
+        text: "Understand that people of all ages and backgrounds participate in amateur radio and that messages must not cause offence, particularly in the context of relevant legislation including the Wireless Telegraphy (Content of Transmission) Regulations 1988 and the Communications Act (2003)."
     },
     {
         key: "1c.2",
