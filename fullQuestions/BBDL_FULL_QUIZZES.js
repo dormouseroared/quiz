@@ -130,7 +130,7 @@ const BBDL_FULL_QUIZZES = [
             "Licence 10-1d",
         ],
         correct: 3,
-        explanation: "The recommendation is mentioned on page 2 of the Licence, but it is not defined. If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions, including CEPT T/ R 61-01. We will look at CEPT operation more when we do the Licence Conditions tutorial later in the course. [[Page 2 of the Licence is mentioned. Where is that? ]]",
+        explanation: "The recommendation is mentioned on page 2 of the Licence, but it is not defined. If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions, including CEPT T/R 61-01. We will look at CEPT operation more when we do the Licence Conditions tutorial later in the course. [[Page 2 of the Licence is mentioned. Where is that? ]]",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1f.1"
     },
@@ -188,7 +188,7 @@ const BBDL_FULL_QUIZZES = [
             "Primary",
             "Secondary",
             "Shared",
-            "Avaliable on the basis of non-interference to other services",
+            "Available on the basis of non-interference to other services",
         ],
         correct: 0,
         explanation: "A severe beating if you get this wrong! Just read off the answer from the second column of Licence Schedule 1, Table C.",
@@ -419,7 +419,7 @@ const BBDL_FULL_QUIZZES = [
             "Add ‘/A’ to their callsign to signify that they are Abroad",
         ],
         correct: 1,
-        explanation: " ‘a’ is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so ‘b’ looks like a good option. ‘c’ is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign’; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T / R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26. ",
+        explanation: " ‘a’ is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so ‘b’ looks like a good option. ‘c’ is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign’; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T/R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26. ",
         lookup: "See page(s) 7-8 of the Full Licence text book",
         syllabus: "7h.1"
     },
@@ -449,7 +449,7 @@ const BBDL_FULL_QUIZZES = [
             "33.6 kV",
         ],
         correct: 3,
-        explanation: "Formula to use is Ohm's law. See Worked Answer for details including calculator key strokes.",
+        explanation: "Formula to use is Ohm's law. See Worked Answer for details including calculator key strokes.<br>$$ V = I \\times R = 6 \\times 10^{-3} \\times 5.6 \\times 10 ^ 6 = 33.6kV$$",
         lookup: "See page(s) 19 of the Full Licence text book",
         syllabus: "2b.1"
     },
@@ -464,7 +464,13 @@ const BBDL_FULL_QUIZZES = [
             "2 watts",
         ],
         correct: 0,
-        explanation: "See Worked Example for full details.",
+        explanation: `See Worked Example for full details. Voltage must be in RMS to use this formula.
+        <br> 
+        
+        $$ P = \\frac{V^2}{R} = 
+        \\frac{(10 \\times 10^{-6})^2}{50} = 
+        \\frac{100 \\times 10^{-12}}{50} = 
+        2pW$$`,
         lookup: "See page(s) 19 of the Full Licence text book",
         syllabus: "2b.1"
     },
@@ -494,7 +500,7 @@ const BBDL_FULL_QUIZZES = [
             "41.7 W",
         ],
         correct: 1,
-        explanation: "The key to answering this question is remembering that resistors in parallel combine to produce a lower total resistance; in this case it must be less than 820Ω. Using the formula from EX309, 1/RTotal = 597Ω (sense check, is this less than 820Ω? Yes, so feels right!). Because the AC supply is given in Volts RMS, we can now use the Power formula P = V squared / R =60 squared / 597 = 6W Footnote: it may not be ‘obvious’ at this stage but you could have ignored the 1MΩ resistor.Why ? Because it is so much larger than the resistor it is in parallel with it has very little impact on RTotal; it is worth remembering that the bigger the difference is between parallel resistors, the less it will change the overall value. Try it! See Worked Answers for calculator key strokes etc.",
+        explanation: "The key to answering this question is remembering that resistors in parallel combine to produce a lower total resistance; in this case it must be less than 820Ω. <br><br>Using the formula from EX309, $$\\frac{1}{R_T} = \\frac{1}{820}+\\frac{1}{2200}+\\frac{1}{1000000} = 597.35 \\Omega$$ SENSE CHECK: is this less than 820Ω? Yes, so feels right! <br><br>Because the AC supply is given in Volts RMS, we can now use the Power formula: $$ P = \\frac{V^2}{R} = \\frac{60^2}{597.35} = 6.03W $$ Footnote: it may not be ‘obvious’ at this stage but you could have ignored the 1MΩ resistor.Why? Because it is so much larger than the resistor it is in parallel with, it has very little impact on total R; it is worth remembering that the bigger the difference is between parallel resistors, the less it will change the overall value. Try it! See Worked Answers for calculator key strokes etc.",
         lookup: "See page(s) 19-20 of the Full Licence text book",
         syllabus: "2b.1"
     },
@@ -525,7 +531,10 @@ const BBDL_FULL_QUIZZES = [
             "2.83 A",
         ],
         correct: 3,
-        explanation: "See Worked Answers for more details.",
+        explanation: `Use the Power formula, rearranged for I in terms of P and R:
+        $$ I = \\sqrt{\\frac{P}{R}} = \\sqrt{\\frac{400}{50}} = 2.83A$$
+        
+        See Worked Answers for more details.`,
         lookup: "See page(s) 19-20 of the Full Licence text book",
         syllabus: "2b.1"
     },
