@@ -29,6 +29,14 @@ explanationButton.addEventListener("click", () => {
         <p>Reference: ${q.lookup}</p>
         <p>Syllabus: ${q.syllabus}</p>
         `
+
+    // Trigger MathJax to typeset the newly injected content
+    if (window.MathJax?.typesetPromise) {
+        MathJax.typesetPromise([explanationDiv]).catch((err) =>
+            console.error("MathJax typeset error:", err)
+        )
+    }
+
 })
 
 syllabusButton.addEventListener("click", () => {

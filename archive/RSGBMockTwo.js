@@ -62,7 +62,7 @@ const RSGBMockTwo = [
             "permitted whilst using battery powered transmitters",
             "allowed up to a maximum transmit power of 10W",
             "not normally permitted by the Intermediate licence",
-            "permitted in countries that have agreed to CEPT recommendation T/R61-01"
+            "permitted in countries that have agreed to CEPT recommendation T/R 61-01"
         ],
         correct: 2,
         explanation: "",

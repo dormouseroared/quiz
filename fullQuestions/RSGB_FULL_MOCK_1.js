@@ -43,7 +43,7 @@ const RSGB_FULL_MOCK_1 = [
     },
     {
         source: "RSGB Full Mock 1 Q4",
-        question: "An amateur holding the callsign MW0XYZ has permanently moved to Portugal, which has implemented CEPT Recommendation T/ R 61-01. MW0XYZ can:",
+        question: "An amateur holding the callsign MW0XYZ has permanently moved to Portugal, which has implemented CEPT Recommendation T/R 61-01. MW0XYZ can:",
         options: [
             "operate under the CEPT agreement using the call CT/MW0XYZ/P",
             "not operate as M0XYZ under the CEPT agreement",
