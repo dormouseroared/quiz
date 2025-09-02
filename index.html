@@ -8,6 +8,26 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
     <script defer type="module" src="index.js"></script>
+
+    <!-- Support both $...$ and \(...\) for inlineMath  -->
+    <!-- Support $$...$$ and \[...\] for displayMath -->
+    <!-- processEscapes: allows \$ in q.explanation to display a literal without triggering math mode -->
+    <!-- prevent MathJax from processing irrelevant parts of the DOM, improving performance -->
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+                ignoreHtmlClass: 'no-mathjax'
+            }
+        };
+    </script>
+
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
