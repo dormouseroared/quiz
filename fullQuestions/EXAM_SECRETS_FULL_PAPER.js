@@ -115,7 +115,7 @@ const EXAM_SECRETS_FULL_PAPER = [
             "10kΩ",
         ],
         correct: 2,
-        explanation: "If the power deleivered to the loudspeaker is to be 1% of the maximum power, that is the full volume on the volume control, then the minimum will be 10% of the voltage (Power = Voltage squared/Resistance). That means the potential divider formed by the volume control and the new resistor must be 10:1. Remember that a 10kΩ and a 1kΩ resistor form an 11:1 divider (10 x 1)/(10 + 1) The 1kΩ resistor must be a bit bigger than 1kΩ for a 10:1 divider. Option C is the only one close. Vout / Vin = 0.1 = R / (10 + R), and R = 1.1kΩ. See the book for a better layout.",
+        explanation: "If the power delivered to the loudspeaker is to be 1% of the maximum power, that is the full volume on the volume control, then the minimum will be 10% of the voltage (Power = Voltage squared/Resistance). That means the potential divider formed by the volume control and the new resistor must be 10:1. Remember that a 10kΩ and a 1kΩ resistor form an 11:1 divider (10 x 1)/(10 + 1) The 1kΩ resistor must be a bit bigger than 1kΩ for a 10:1 divider. Option C is the only one close. Vout / Vin = 0.1 = R / (10 + R), and R = 1.1kΩ. See the book for a better layout.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2"
     },
@@ -130,8 +130,26 @@ const EXAM_SECRETS_FULL_PAPER = [
             "12V on each capacitor",
         ],
         correct: 2,
-        explanation: "The quick solution is to realise that in series both capacitors will have the same charge, which is current x time. Q = V x C, so V = Q / C. The smaller capacitor will have the larger voltage. Calculating, 3µF and 6µF in series gives (3 x 6) / (3 + 6) = 2µF. At 12V the charge is Q = V x C = 24µC. The voltage on the 3µF capacitor  is V = Q / C = 24/3 = 8V, andd on the 6µF capacitor V = 24/6 = 4V.",
-        lookup: "See page(s) x of the Full Licence text book",
+        explanation: `
+        The quick solution is to realise that in series, both capacitors will have the same charge, which is current x time. 
+        
+        $$ Q = V \\times C $$
+        $$ V = \\frac{Q}{C} $$ 
+        
+        The smaller capacitor will have the larger voltage. <br>
+        The total capacitance of the two capacitors in series gives 
+        
+        $$ C_T = \\frac{3 \\times 6}{3 + 6} = 2µF $$
+        
+        At 12V, the total charge is:
+        
+        $$Q_T = V \\times C = 12V \\times 2µF = 24µC $$
+        
+        The voltage on the 3µF capacitor is:
+        
+        $$ V_3 = \\frac{Q}{C} = \\frac{24 \\times 10^{-6}}{3 \\times 10^{-6}} = 8V $$
+        $$ V_6 = \\frac{Q}{C} = \\frac{24 \\times 10^{-6}}{6 \\times 10^{-6}} = 4V $$
+        lookup: "See page(s) x of the Full Licence text book`,
         syllabus: "2"
     },
     {
@@ -160,9 +178,20 @@ const EXAM_SECRETS_FULL_PAPER = [
             "1MΩ",
         ],
         correct: 2,
-        explanation: "After one time constant has elapsed, the voltage will have fallen to about a third of the initial value, so after two time constants, the initial 1kV should be reasonably close to 100V. So, the time constant required is about 5 seconds. Given that Tau = C x R then R = Tau / C = 5 / 10µ = 500kΩ. Note: a more accurate calculation (which is outside the syllabus) shows the voltage is about 135V after 10 seconds, and about 11.5 seconds are needed to get down to 100V. The resistor should be sized to handle 1kV , 2mA current, and 2W power dissipation.",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2"
+        explanation: `After one time constant has elapsed, the voltage will have fallen to about a third of the initial value, so after two time constants, the initial 1kV should be reasonably close to 100V i.e. 1000V drops to 333V after <b>one time constant</b>, then to 111V after two <b>two time constants</b>. 
+        <br><br>
+        So, given that we are told that the stored voltage in the capacitor drops to about 100V in 10 seconds, the time constant (Tau) required is about 5 seconds. 
+        <br><br>
+        Given that 
+        $$\\tau = C \\times R$$ 
+        then 
+        $$R = \\frac{\\tau}{C} = \\frac{5s}{10µF} = 500k\\Omega$$ 
+        
+        Note: a more accurate calculation (which is outside the syllabus) shows the voltage is about 135V after 10 seconds, and about 11.5 seconds are needed to get down to exactly 100V. 
+        
+        The resistor should be sized to handle 1kV , 2mA current, and 2W power dissipation.`,
+        lookup: "See page(s) 22 of the Full Licence text book",
+        syllabus: "2d.7"
     },
     {
         source: "Exam Secrets FULL PAPER Q12",
@@ -175,7 +204,19 @@ const EXAM_SECRETS_FULL_PAPER = [
             "2.1V",
         ],
         correct: 2,
-        explanation: "XL = 2 x pi x f x L = 400Ω and total impedance is 500Ω (see the secrets book for more detail). At 3mA, the applied voltage is I x R = 1.5V. It is worth looking out for 3, 4, 5 triangles etc.",
+        explanation: `
+        <a href='https://www.electronics-tutorials.ws/inductor/ac-inductors.html' target='_blank'>Inductive REACTANCE</a> of the coil is given by:
+
+        $$ X_L = 2 \\pi  f  L = 2 \\times \\pi \\times 3.5 \\times 10^6 \\times 18.2 \\times 10^{-6} = 400\\Omega $$
+
+        Total impedance is given by:
+
+        $$ Z = \\sqrt{300^2 + 400^2} = 500\\Omega $$
+        
+        The applied voltage is:
+        $$ V = I \\times R = 3 \\times 10^{-3}A \\times 500 \\Omega = 1.5V $$
+        
+        It is worth looking out for 3, 4, 5 triangles etc.`,
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2"
     },
@@ -205,9 +246,21 @@ const EXAM_SECRETS_FULL_PAPER = [
             "8A",
         ],
         correct: 0,
-        explanation: "The output from the transformer is 240 X 64 /960 = 16V. Into a 2Ω load the current is 8A and the power is I x V = 128W.",
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "3"
+        explanation: `
+        The output from the transformer is proportional to the turns ratio: 
+        $$V_{out} = V_{in} \\times \\frac{T_{out}}{T_{in}} = 240 \\times \\frac{64}{960} = 16V $$ 
+        The load on the secondary is equivalent to 2Ω, so:
+        
+        $$ I_{out} = \\frac{V_{out}}{R_{out}} = \\frac{16V}{2Ω} = 8A $$
+
+        and the power on output is:
+        $$ P_{out} = IV = 8 \\times 16 = 128W $$
+
+        On input, as there are no losses in this transformer, power in equals power out, and the input current is:
+        $$ I = \\frac{P_{in}}{V_{in}} = \\frac{128}{240} = 0.53A$$
+        `,
+        lookup: "See page(s) 28-29 of the Full Licence text book",
+        syllabus: "2g.1"
     },
     {
         source: "Exam Secrets FULL PAPER Q15",
@@ -220,9 +273,18 @@ const EXAM_SECRETS_FULL_PAPER = [
             "40A",
         ],
         correct: 2,
-        explanation: "At 400W, the input current into 50Ω is P = I squared x R so I =2.83A with a working Q of 5 that gives a circulating current of about 14A.",
+        explanation: `At 400W, the input current into 50Ω is:
+        $$ P = I \\times V = I^2 \\times R $$
+        Therefore:
+        $$ I = \\sqrt{\\frac{P}{R}} = \\sqrt{\\frac{400}{50}} = 2.83A$$
+
+        With a working Q of 5 that gives a circulating current of about 14A.
+        <br><br>
+        [[I don't understand this last part. <br><br>This is an inline test for MathJax: $x=\\sqrt{4}$ ]]
+        `,
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "3"
+        syllabus: "3",
+        tagged: true
     },
     {
         source: "Exam Secrets FULL PAPER Q16",
@@ -280,7 +342,7 @@ const EXAM_SECRETS_FULL_PAPER = [
             "3.650-3.647MHz and 14.150-14.147MHz",
         ],
         correct: 0,
-        explanation: "The sum outputs are 14.150-14.153MHz and the difference outputs are 3.650-3.653MHz.",
+        explanation: "The sum outputs are 14.150MHz (0Hz) to 14.153MHz (3kHz) and the difference outputs are 3.650MHz (0Hz) to 3.653MHz (3kHz).",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "3"
     },
