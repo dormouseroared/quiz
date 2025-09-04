@@ -259,7 +259,20 @@ export function loadQuestion() {
 
         const btn = document.createElement("button")
         btn.classList.add("option-btn")
-        btn.textContent = option
+        // btn.textContent = option
+        btn.innerHTML = option
+        // change btn from textContent to innerHTML
+        // and let MathJax ddo its thing
+        // This is done 4 times just to get it all working
+        // but could possibly be done once if there's a common element
+
+        // Trigger MathJax to typeset the newly injected content
+        if (window.MathJax?.typesetPromise) {
+            MathJax.typesetPromise([btn]).catch((err) =>
+                console.error("MathJax typeset error:", err)
+            )
+        }
+
         btn.title = q.originalOrder[index]
         btn.addEventListener("click", () => {
             console.log(
