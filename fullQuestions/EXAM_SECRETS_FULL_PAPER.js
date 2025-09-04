@@ -258,6 +258,13 @@ const EXAM_SECRETS_FULL_PAPER = [
 
         On input, as there are no losses in this transformer, power in equals power out, and the input current is:
         $$ I = \\frac{P_{in}}{V_{in}} = \\frac{128}{240} = 0.53A$$
+
+        <br>
+        <br>
+        <br>
+        <br>
+        When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
+        $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$
         `,
         lookup: "See page(s) 28-29 of the Full Licence text book",
         syllabus: "2g.1"
