@@ -180,6 +180,70 @@ const OWN_QUESTIONS = [
         syllabus: "2"
     },
     {
+        source: "OWN QUESTIONS Q13",
+        question: "The prefix pica - p - (as in 25pW) means:",
+        image: "",
+        options: [
+            "$10^{-12}$",
+            "$10^{-9}$",
+            "$10^{-3}$",
+            "$10^{-6}$",
+        ],
+        correct: 0,
+        explanation: `pica means $10^{-12}$`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "OWN QUESTIONS Q14",
+        question: "The prefix micro - µ - (as in 200µV) means:",
+        image: "",
+        options: [
+            "$10^{-12}$",
+            "$10^{-9}$",
+            "$10^{-3}$",
+            "$10^{-6}$",
+        ],
+        correct: 3,
+        explanation: `micro µ means $10^{-6}$`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "OWN QUESTIONS Q15",
+        question: "The prefix milli - m - (as in 3mA) means:",
+        image: "",
+        options: [
+            "$10^{-12}$",
+            "$10^{-9}$",
+            "$10^{-3}$",
+            "$10^{-6}$",
+        ],
+        correct: 2,
+        explanation: `milli m means $10^{-3}$`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "OWN QUESTIONS Q13",
+        question: "The prefix nano - n - (as in 10nF) means:",
+        image: "",
+        options: [
+            "$10^{-12}$",
+            "$10^{-9}$",
+            "$10^{-3}$",
+            "$10^{-6}$",
+        ],
+        correct: 1,
+        explanation: `nano n means $10^{-9}$`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
         source: "OWN QUESTIONS Q01",
         question: "",
         image: "",
