@@ -2321,7 +2321,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [SAFETY] 8D1-1",
-        question: "The ICNIRP provide guidance on:",
+        question: "The ICNIRP provide guidance on: [NEED TO CHECK THIS ANSWER WHICH SHOULD BE EM FIELD STRENGTH?]",
         image: "",
         options: [
             "safe working levels for high voltage supplies",
@@ -2332,7 +2332,8 @@ const EXAM_SECRETS_SAMPLES = [
         correct: 1,
         explanation: "The lowest level is around 28V/m applicable between 10 and 440MHz. The ICNIRP guidance is in slightly different format to the old published HPA levels, but 28V/m is a reasonable guide. If it appears this level will be exceeded, then more detailed calculations are required (outside the syllabus) and additional precautions such as a large excluded areas may be needed.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8d.1"
+        syllabus: "8d.1",
+        tagged: true
     },
     {
         source: "Exam Secrets FULL [SAFETY] 8E1-1",
