@@ -34,7 +34,7 @@ export const section = [
         questions: 2,
         weeks: [],
     },
-    { id: 8, name: "Safety", questions: 4, weeks: [] },
+    { id: 8, name: "Safety", questions: 4, weeks: [2] },
     { id: 9, name: "Measurements and construction", questions: 5, weeks: [] },
 ]
 

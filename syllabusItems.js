@@ -4263,7 +4263,7 @@ const syllabusItems = [
         key: "8d.1",
         level: "full",
         title: "Working with RF",
-        text: "Recall that the International Commission for Non-Ionising Radiation Protection(ICNIRP) produces guidance for exposure to Radio Frequency fields."
+        text: "Recall that the International Commission for Non-Ionising Radiation Protection (ICNIRP) produces guidance for exposure to Radio Frequency fields."
     },
     {
         key: "8d.1",
@@ -4401,7 +4401,7 @@ const syllabusItems = [
         key: "8f.4",
         level: "full",
         title: "Working mobile and portable",
-        text: "Recall the additional safety precautions that should be taken whilst operating in temporary premises and/or outdoors i.e. (1) site survey/risk assessment (2) cable routing/protection (3) correct fusing (4) use of Residual Current Devices(RCD's, RCBO's) (5) no adjustments or repairs to live equipment."
+        text: "Recall the additional safety precautions that should be taken whilst operating in temporary premises and/or outdoors i.e. (1) site survey/risk assessment (2) cable routing/protection (3) correct fusing (4) use of Residual Current Devices (RCD's, RCBO's) (5) no adjustments or repairs to live equipment."
     },
     {
         key: "8f.4",
@@ -4425,13 +4425,13 @@ const syllabusItems = [
         key: "8f.5",
         level: "full",
         title: "Working mobile and portable",
-        text: "Understand that operating when mobile or maritime mobile can introduce new hazards i.e. insecure equipment, long/ flexible antennas,accidental shorts to earth, lack of attention to driving."
+        text: "Understand that operating when mobile or maritime mobile can introduce new hazards i.e. insecure equipment, long/flexible antennas, accidental shorts to earth, lack of attention to driving."
     },
     {
         key: "8f.5",
         level: "full",
         title: "Working mobile and portable",
-        text: "Recall the additional safety precautions that should be taken whilst operating mobile and/or maritime mobile i.e.secure equipment, cable routing/protection, correct fusing, use of hands free equipment, attention to good radio housekeeping."
+        text: "Recall the additional safety precautions that should be taken whilst operating mobile and/or maritime mobile i.e. secure equipment, cable routing/protection, correct fusing, use of hands free equipment, attention to good radio housekeeping."
     },
     {
         key: "8f.6",
