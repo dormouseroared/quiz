@@ -553,8 +553,233 @@ const BBDL_FULL_QUIZZES = [
         lookup: "See page(s) 20 of the Full Licence text book",
         syllabus: "2b.1"
     },
+    {
+        source: "BBDL QUIZ WEEK03 Q01",
+        question: "Working on thermionic valve equipment presents a high safety risk because:",
+        image: "",
+        options: [
+            "All thermionic valves are made of glass and can easily shatter",
+            "All thermionic valves run very hot and can cause painful burns",
+            "Most valve equipment uses high voltages, and these can kill, even after the equipment is switched off",
+            "There is a real risk of radiation sickness",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q02",
+        question: "Which of the following BEST describes Protective Multiple Earthing?",
+        image: "",
+        options: [
+            "An earthing system where the earth is connected to the neutral at one point on each consumer's property",
+            "An earthing system which relies on the earth provided by the mains water pipe",
+            "A system where several houses in a row each have their own independent safety earth terminals",
+            "A system which requires all electrical equipment in the house to have more than one earth",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q03",
+        question: "Under what circumstances should you carry out work inside live mains powered electrical equipment?",
+        image: "",
+        options: [
+            "Only when there is no other way to carry out the work, for example setting the pre-set bias of a valve in a linear amplifier",
+            "Whenever there is a fault in a piece of mains powered equipment, for example when a main power supply starts to make a loud humming sound",
+            "Whenever a safety device is triggered, for example a mains fuse ‘blows’",
+            "Only when replacing components that are fitted in insulated sockets, for example, replacing a valve in an old transceiver",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q04",
+        question: "Who produces guidance on exposure to Radio Frequency Electromagnetic Fields?",
+        image: "",
+        options: [
+            "HPA – Health Protection Authority",
+            "RFA - Radio Frequency Authority",
+            "ICNIRP – International Commission on Non-Ionising Radiation Protection",
+            "UKCNIRP – United Kingdom Committee on Non-Ionising Radiation Protection",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q05",
+        question: "Your station is located in a house overlooking a public park. You carry out a compliance assessment and the only issue is that there is a park bench within the exclusion zone. The bench is used throughout the day but the park is closed every evening at dusk. Which of the following changes would not ensure compliance?",
+        image: "",
+        options: [
+            "Only operating after dusk",
+            "Reducing your power so the public park is not in the exclusion zone",
+            "Placing a warning sign on the bench advising it should not be used for more than six minutes at a time",
+            "Increasing the height of your antenna to reduce the horizontal separation distance to zero at ground level",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q06",
+        question: "As a protection against lightning, a static discharge system:",
+        image: "",
+        options: [
+            "Provides a low impedance path from your antenna to earth",
+            "Discharges static build-up to earth but does not affect your RF transmissions",
+            "Normally consists of a parallel tuned circuit",
+            "Should only be connected when you are not using the antenna",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q07",
+        question: "Handling live mains electric cables whilst outdoors gives rise to a greater risk because:",
+        image: "",
+        options: [
+            "The cables’ insulation may be carrying RF energy",
+            "The air may support arcing",
+            "The ground may be damp, increasing the risk of electrocution",
+            "There is an increased risk of lightning strike",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q08",
+        question: "Many radio amateurs operate transceivers from their vehicles. Which of the following precautions would be more appropriate to mobile operation rather than when operating from a fixed location?",
+        image: "",
+        options: [
+            "Use of an RCD in the power supply chain",
+            "Heavy radio equipment secured to prevent movement",
+            "Use of a master switch the location of which is known to all present",
+            "Use of correctly rated fuses in all DC power leads",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q09",
+        question: "A risk assessment should be prepared:",
+        image: "",
+        options: [
+            "After an accident has happened",
+            "Whenever amateur radio is being used",
+            "When an activity could present a hazard to yourself and others",
+            "If someone suspects Health and Safety laws are being broken",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q10",
+        question: "Appropriate insurance should be obtained for all amateur radio activities but in particular where:",
+        image: "",
+        options: [
+            "There is some risk of injury",
+            "The public could be involved",
+            "High levels of radio energy are present",
+            "Risk assessments show that insurance is an appropriate risk control",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q11",
+        question: "The risks associated with the use of electrical generators include:",
+        image: "",
+        options: [
+            "Fuel, electricity and exhaust gasses",
+            "Electric shock, fire and carbon monoxide poisoning",
+            "Good earthing, fuel stored in metal cans, ensuring good ventilation for exhaust gasses",
+            "Using RCD’s, keeping fuel stocks away from ignition sources, running the generator outdoors",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "8"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q12",
+        question: "What is the total resistance of the circuit shown in the diagram?",
+        image: "images/bbdl-quizzes-week03-q12.png",
+        options: [
+            "1250Ω",
+            "312Ω",
+            "250Ω",
+            "50Ω",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q13",
+        question: "What is the approximate total resistance in the circuit shown in the diagram?",
+        image: "images/bbdl-quizzes-week03-q13.png",
+        options: [
+            "10 Ω",
+            "101 Ω",
+            "110 Ω",
+            "1110 Ω",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q14",
+        question: "If the battery in the circuit shown in the diagram provides a potential difference of 12V, how much current will flow through R1?",
+        image: "images/bbdl-quizzes-week03-q14.png",
+        options: [
+            "10mA",
+            "100mA",
+            "10A",
+            "100A",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q15",
+        question: "If supply is 100VRMS, how much power will be dissipated by the network shown in the diagram?",
+        image: "images/bbdl-quizzes-week03-q15.png",
+        options: [
+            "10W",
+            "20W",
+            "50W",
+            "100W",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2"
+    },
     // {
-    //     source: "BBDL QUIZ WEEK01 Q01",
+    //     source: "BBDL QUIZ WEEK03 Q01",
     //     question: "",
     //     image: "",
     //     options: [
@@ -564,9 +789,9 @@ const BBDL_FULL_QUIZZES = [
     //         "",
     //     ],
     //     correct: 9,
-    //     explanation: "",
+    //     explanation: ``,
     //     lookup: "See page(s) x of the Full Licence text book",
-    //     syllabus: "0"
+    //     syllabus: "8"
     // },
 ]
 
