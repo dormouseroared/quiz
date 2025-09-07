@@ -554,7 +554,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "2b.1"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q01",
+        source: "BBDL QUIZ WEEK02 Q01",
         question: "Working on thermionic valve equipment presents a high safety risk because:",
         image: "",
         options: [
@@ -569,7 +569,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q02",
+        source: "BBDL QUIZ WEEK02 Q02",
         question: "Which of the following BEST describes Protective Multiple Earthing?",
         image: "",
         options: [
@@ -584,7 +584,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q03",
+        source: "BBDL QUIZ WEEK02 Q03",
         question: "Under what circumstances should you carry out work inside live mains powered electrical equipment?",
         image: "",
         options: [
@@ -599,7 +599,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q04",
+        source: "BBDL QUIZ WEEK02 Q04",
         question: "Who produces guidance on exposure to Radio Frequency Electromagnetic Fields?",
         image: "",
         options: [
@@ -614,7 +614,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q05",
+        source: "BBDL QUIZ WEEK02 Q05",
         question: "Your station is located in a house overlooking a public park. You carry out a compliance assessment and the only issue is that there is a park bench within the exclusion zone. The bench is used throughout the day but the park is closed every evening at dusk. Which of the following changes would not ensure compliance?",
         image: "",
         options: [
@@ -629,7 +629,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q06",
+        source: "BBDL QUIZ WEEK02 Q06",
         question: "As a protection against lightning, a static discharge system:",
         image: "",
         options: [
@@ -644,7 +644,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q07",
+        source: "BBDL QUIZ WEEK02 Q07",
         question: "Handling live mains electric cables whilst outdoors gives rise to a greater risk because:",
         image: "",
         options: [
@@ -659,7 +659,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q08",
+        source: "BBDL QUIZ WEEK02 Q08",
         question: "Many radio amateurs operate transceivers from their vehicles. Which of the following precautions would be more appropriate to mobile operation rather than when operating from a fixed location?",
         image: "",
         options: [
@@ -674,7 +674,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q09",
+        source: "BBDL QUIZ WEEK02 Q09",
         question: "A risk assessment should be prepared:",
         image: "",
         options: [
@@ -689,7 +689,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q10",
+        source: "BBDL QUIZ WEEK02 Q10",
         question: "Appropriate insurance should be obtained for all amateur radio activities but in particular where:",
         image: "",
         options: [
@@ -704,7 +704,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q11",
+        source: "BBDL QUIZ WEEK02 Q11",
         question: "The risks associated with the use of electrical generators include:",
         image: "",
         options: [
@@ -719,9 +719,9 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "8"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q12",
+        source: "BBDL QUIZ WEEK02 Q12",
         question: "What is the total resistance of the circuit shown in the diagram?",
-        image: "images/bbdl-quizzes-week03-q12.png",
+        image: "images/bbdl-quizzes-week02-q12.png",
         options: [
             "1250Ω",
             "312Ω",
@@ -734,9 +734,9 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "2"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q13",
+        source: "BBDL QUIZ WEEK02 Q13",
         question: "What is the approximate total resistance in the circuit shown in the diagram?",
-        image: "images/bbdl-quizzes-week03-q13.png",
+        image: "images/bbdl-quizzes-week02-q13.png",
         options: [
             "10 Ω",
             "101 Ω",
@@ -749,9 +749,9 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "2"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q14",
+        source: "BBDL QUIZ WEEK02 Q14",
         question: "If the battery in the circuit shown in the diagram provides a potential difference of 12V, how much current will flow through R1?",
-        image: "images/bbdl-quizzes-week03-q14.png",
+        image: "images/bbdl-quizzes-week02-q14.png",
         options: [
             "10mA",
             "100mA",
@@ -764,9 +764,9 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "2"
     },
     {
-        source: "BBDL QUIZ WEEK03 Q15",
-        question: "If supply is 100VRMS, how much power will be dissipated by the network shown in the diagram?",
-        image: "images/bbdl-quizzes-week03-q15.png",
+        source: "BBDL QUIZ WEEK02 Q15",
+        question: "If supply is 100V RMS, how much power will be dissipated by the network shown in the diagram?",
+        image: "images/bbdl-quizzes-week02-q15.png",
         options: [
             "10W",
             "20W",
@@ -779,7 +779,7 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "2"
     },
     // {
-    //     source: "BBDL QUIZ WEEK03 Q01",
+    //     source: "BBDL QUIZ WEEK02 Q01",
     //     question: "",
     //     image: "",
     //     options: [
