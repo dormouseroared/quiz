@@ -60,6 +60,9 @@ searchForm.addEventListener("submit", function (event) {
     // explanation was not cleared when a new search started and current question is loaded
     explanationDiv.innerHTML = ""
 
+    // alert("score:", quizState.score)
+
+
     quizState.searchType = document.getElementById("searchType").value
     quizState.searchValue = document.getElementById("searchValue").value
 
@@ -102,6 +105,25 @@ searchForm.addEventListener("submit", function (event) {
 
     quizState.questionPack = [...shuffledQuestionsArray]
     quizState.questionPackLength = quizState.questionPack.length
+
+    // because this code is invoked whenever the Search button is clicked,
+    // and at the moment the Search button is not disabled after being
+    // clicked once (at the start) it is possible to click it at any time
+    // to abandon the current set of questions, and start another set
+    // For this to work we have to initialise quizState
+
+    myDebug("SEARCH BEFORE INIT", quizState)
+
+    quizState.score = 0
+    quizState.currentQuestion = 0
+    quizState.wrongAnswers = []
+
+    quizState.syllabusScore = Array.from({ length: 10 }, () => ({
+        correct: 0,
+        incorrect: 0
+    }))
+
+    myDebug("SEARCH AFTER INIT", quizState)
 
     nextQuestionButton.style.display = "inline-block"
     explanationButton.style.display = "inline-block"
