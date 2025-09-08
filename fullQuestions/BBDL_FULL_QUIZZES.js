@@ -564,9 +564,9 @@ const BBDL_FULL_QUIZZES = [
             "There is a real risk of radiation sickness",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `Whilst ‘a’ and ‘b’ are undoubtedly true, ‘c’ is the most significant, and therefore the correct answer for a ‘high risk’.`,
+        lookup: "See page(s) 13 of the Full Licence text book",
+        syllabus: "8a.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q02",
@@ -579,9 +579,9 @@ const BBDL_FULL_QUIZZES = [
             "A system which requires all electrical equipment in the house to have more than one earth",
         ],
         correct: 0,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’ looks like a reasonable description of PME, ‘b’ is wrong, many water pipes are plastic these days. ‘c’ is wrong as PME generally connects many properties together with no independent earth connections, which is at the heart of the risk. ‘d’ is the opposite of what PME relies on – all metal surfaces bonded to a single common point.`,
+        lookup: "See page(s) 17-18 of the Full Licence text book",
+        syllabus: "8a.2"
     },
     {
         source: "BBDL QUIZ WEEK02 Q03",
@@ -594,9 +594,9 @@ const BBDL_FULL_QUIZZES = [
             "Only when replacing components that are fitted in insulated sockets, for example, replacing a valve in an old transceiver",
         ],
         correct: 0,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’ is the only justifiable reason to go inside live mains powered equipment. In all other cases, there will be ways to carry out servicing or repairs without any power being applied.`,
+        lookup: "See page(s) 13 of the Full Licence text book",
+        syllabus: "8a.6"
     },
     {
         source: "BBDL QUIZ WEEK02 Q04",
@@ -609,9 +609,9 @@ const BBDL_FULL_QUIZZES = [
             "UKCNIRP – United Kingdom Committee on Non-Ionising Radiation Protection",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’, ‘b’ & ‘d’ are completely made-up names. leaving ‘c’ as the only correct option. NOTE the latest advice is available on the ICNIRP website http://www.icnirp.org and this is the basis of the UK Licence Condition 9 relating to EMF Risk Assessments.`,
+        lookup: "See page(s) 16 of the Full Licence text book",
+        syllabus: "8d.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q05",
@@ -624,9 +624,9 @@ const BBDL_FULL_QUIZZES = [
             "Increasing the height of your antenna to reduce the horizontal separation distance to zero at ground level",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `Operating after dusk means the park is closed and there is no reason to expect the general public to be present, so ‘a’ is sound. Reducing your power so the park is no longer in the exclusion zone is absolutely compliant, so ‘b’ is fine. Placing a warning sign on the bench does not mean it will be followed, and the general public may be walking near the bench, so ‘c’ would NOT ensure compliance. Increasing the height of the antenna so the horizontal separation distance is zero is another good way of complying, as far as the bench is concerned. How to comply with the EMF restriction is not well covered in the textbook.`,
+        lookup: "See BBDL Week 1 Tutorial",
+        syllabus: "1g.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q06",
@@ -639,9 +639,9 @@ const BBDL_FULL_QUIZZES = [
             "Should only be connected when you are not using the antenna",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’ is not correct, it is quite a high resistance, so will present a high Z, ‘b’ looks better. ‘c’ is wrong as that would affect antenna performance and ‘d’ is not true as static can build up at any time. So, ‘b’ it is.`,
+        lookup: "See page(s) 16-17 of the Full Licence text book",
+        syllabus: "8e.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q07",
@@ -654,9 +654,9 @@ const BBDL_FULL_QUIZZES = [
             "There is an increased risk of lightning strike",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’ is RF not mains, so not that one. ‘b’ is more about high voltage static build-up/lightning not mains power, so not that one. ‘c’ sounds feasible as damp earth provides better conduction and a lower resistance path through you. ‘d’ may be true outdoors but has nothing to do with mains cables, so not that one. ‘c’ it is.`,
+        lookup: "See page(s) 14-15 of the Full Licence text book",
+        syllabus: "8f.4"
     },
     {
         source: "BBDL QUIZ WEEK02 Q08",
@@ -669,9 +669,9 @@ const BBDL_FULL_QUIZZES = [
             "Use of correctly rated fuses in all DC power leads",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `Controls ‘a’, ‘c’ and ‘d’ all apply in a fixed location; ‘d’ applies equally in fixed and mobile power supply leads, so not more appropriate to either. Heavy equipment (‘b’) is not normally secured in a fixed location as it is unlikely to move but a transceiver could become a lethal missile in a vehicle collision or emergency stop.`,
+        lookup: "See page(s) 15 of the Full Licence text book",
+        syllabus: "8f.5"
     },
     {
         source: "BBDL QUIZ WEEK02 Q09",
@@ -684,9 +684,9 @@ const BBDL_FULL_QUIZZES = [
             "If someone suspects Health and Safety laws are being broken",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’ suggests it is too late to be assessing risks, although you might carry out an assessment before restarting the activity that resulted in the accident, so half-correct. ‘b’ is not the case if you are on your own and there is clearly no risk to anyone else, so not universally true. ‘c’ sounds very sensible, as it recognises the responsibility to keep everyone safe. ‘d’ is not a reason to do a risk assessment, more a case of investigating why a breach of the law may have occurred. ’c’ is the most correct answer here because it is true without any qualification.`,
+        lookup: "See page(s) 14 of the Full Licence text book",
+        syllabus: "8f.6"
     },
     {
         source: "BBDL QUIZ WEEK02 Q10",
@@ -699,9 +699,9 @@ const BBDL_FULL_QUIZZES = [
             "Risk assessments show that insurance is an appropriate risk control",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘a’ could apply to every situation and it doesn’t say who might be injured, so not a good answer. ‘b’ sounds sensible as members of the public are afforded a higher duty of care than yourself, or other radio amateurs, who know about the hazards and risks associated with an amateur station. ‘c’ is a situation to avoid and you are unlikely to get insurance to cover exceeding the ICNIRP exposure levels, so not that one. ‘d’ is wrong because insurance does not control the risk, it just protects you against any claims against you.`,
+        lookup: "See page(s) 14 of the Full Licence text book",
+        syllabus: "8f.6"
     },
     {
         source: "BBDL QUIZ WEEK02 Q11",
@@ -714,9 +714,9 @@ const BBDL_FULL_QUIZZES = [
             "Using RCD’s, keeping fuel stocks away from ignition sources, running the generator outdoors",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "8"
+        explanation: `‘b’ is the best fit with this question; ‘a’ is a list of hazards, which give rise to risks. ‘b’ are risks (bad things that might happen). ‘c’ & ‘d’ are all appropriate risk controls, but not risks.`,
+        lookup: "See page(s) 14-15 of the Full Licence text book",
+        syllabus: "8f.7"
     },
     {
         source: "BBDL QUIZ WEEK02 Q12",
@@ -729,9 +729,9 @@ const BBDL_FULL_QUIZZES = [
             "50Ω",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2"
+        explanation: `The first thing to note here is that there are two parallel networks, each made up from five 125Ω resistors, and they are wired in series. So, we need to find out RTotal for each of the parallel sections, and then add them together. With the resistors all being the same value, we can simply divide the value, 125Ω, by the number of resistors, 5, so each one of the parallel groups has an RTotal of 125/5 = 25Ω. With two such groups in series, the total is 25 + 25 = 50Ω.`,
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q13",
@@ -744,9 +744,9 @@ const BBDL_FULL_QUIZZES = [
             "1110 Ω",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2"
+        explanation: `In any ‘complex’ resistor network like this, you need to work out the sections one at a time. You cannot do series and parallel all at once, you need to make them all look like series or all parallel. In this case you need to work out what the total value of the two parallel resistors are then add that to the one series resistor, as if the two in parallel were a single resistor. Parallel resistors use the ‘1/Rtotal = 1/R1 +1/R2 etc’ formula. See worked answer for full calculator keystrokes if required.`,
+        lookup: "See page(s) 20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q14",
@@ -759,9 +759,9 @@ const BBDL_FULL_QUIZZES = [
             "100A",
         ],
         correct: 0,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2"
+        explanation: `There are a few stages to go through to get the answer. First of all we need to work out RTotal, then use Ohm’s Law to work out the current. So, the first step with the resistor combination is to work out the combined resistance of the parallel element formed by R2 & R3. Our ‘rule of thumb’ tells us it will be less than 220Ω. The 1MΩ actually has little effect and the combination comes out at 219.95Ω (see key stokes below). We can add 220Ω to the 1kΩ, so make RTotal = 1220Ω. Now Ohm’s Law says V= IR and so I = V/R = 12/1220 = 0.0098A, which rounds up to 0.01A = 10mA. Because R1 is in series with the battery, all of the current flowing in the circuit will pass through R1. See worked answer for full calculator keystrokes.`,
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK02 Q15",
@@ -774,9 +774,9 @@ const BBDL_FULL_QUIZZES = [
             "100W",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2"
+        explanation: `The main formula to use here is P=V2/R. We are given V, and because it is an RMS value, we can use it without any further work. R is not so straightforward; we have five series pairs all wired in parallel. As with all these kinds of questions we must work out the equivalent values to get them all into either a series, or a parallel circuit. In this case we can easily work out that each series pair gives 820 + 180 = 1000Ω. So, we have the equivalent of five 1kΩ resistors in parallel. With five resistors of the same value we simply divide the value by the number of resistors = 1000/5 = 200Ω. We can now work out the power using 100V RMS and 200Ω: $$P=\\frac{V^2}{R} = \\frac{100^2}{200} = 50W$$`,
+        lookup: "See page(s) 19-20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     // {
     //     source: "BBDL QUIZ WEEK02 Q01",

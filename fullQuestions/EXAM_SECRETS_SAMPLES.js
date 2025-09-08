@@ -2321,7 +2321,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [SAFETY] 8D1-1",
-        question: "The ICNIRP provide guidance on: [NEED TO CHECK THIS ANSWER WHICH SHOULD BE EM FIELD STRENGTH?]",
+        question: "The ICNIRP provide guidance on:",
         image: "",
         options: [
             "safe working levels for high voltage supplies",
@@ -2329,8 +2329,8 @@ const EXAM_SECRETS_SAMPLES = [
             "communications signal to noise ratios",
             "safe EM field strength exposure levels",
         ],
-        correct: 1,
-        explanation: "The lowest level is around 28V/m applicable between 10 and 440MHz. The ICNIRP guidance is in slightly different format to the old published HPA levels, but 28V/m is a reasonable guide. If it appears this level will be exceeded, then more detailed calculations are required (outside the syllabus) and additional precautions such as a large excluded areas may be needed.",
+        correct: 3,
+        explanation: "ICNIRP is the International Commission on Non-Ionising Radiation Protection. Their remit is advising on the safe levels of exposure to non-ionising radiation such as electromagnetic fields, RF fields to you and me. The answer in the book is incorrectly specified as B, when it should be D.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "8d.1",
         tagged: true
