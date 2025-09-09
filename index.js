@@ -118,10 +118,13 @@ searchForm.addEventListener("submit", function (event) {
     quizState.currentQuestion = 0
     quizState.wrongAnswers = []
 
-    quizState.syllabusScore = Array.from({ length: 10 }, () => ({
-        correct: 0,
-        incorrect: 0
-    }))
+    quizState.syllabusScore = Array.from({ length: 10 }, (_, i) => {
+        return {
+            section: i,
+            correct: 0,
+            incorrect: 0
+        }
+    })
 
     myDebug("SEARCH AFTER INIT", quizState)
 

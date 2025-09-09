@@ -45,18 +45,25 @@ export const quizState = {
     score: 0,
     searchType: null,
     searchValue: null,
-    syllabusScore: [
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-        { correct: 0, incorrect: 0 },
-    ],
+
+    syllabusScore: Array.from({ length: 10 }, (_, i) => ({
+        section: i,
+        correct: 0,
+        incorrect: 0
+    })),
+
+    // syllabusScore: [
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    //     { correct: 0, incorrect: 0 },
+    // ],
     wrongAnswers: [],
 }
 /**
