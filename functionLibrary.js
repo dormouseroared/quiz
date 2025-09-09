@@ -347,6 +347,7 @@ export function loadQuestion() {
     syllabusItemsDiv.style.display = "none"
 
     let matchingItems = findSyllabusItems(syllabusItems, q.syllabus.slice(0, 4))
+
     console.log(
         "search for matching syllabus items:",
         q.syllabus,
