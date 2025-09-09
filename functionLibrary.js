@@ -3,7 +3,7 @@ import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 import syllabusItems from "./syllabusItems.js"
 
 const questionDiv = document.getElementById("question")
-const searchForm = document.getElementById("searchForm")
+export const searchForm = document.getElementById("searchForm")
 const optionsDiv = document.getElementById("options")
 const resultDiv = document.getElementById("result")
 const syllabusScoreDiv = document.getElementById("syllabusScore")
