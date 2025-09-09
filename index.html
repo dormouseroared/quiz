@@ -121,5 +121,20 @@
         <div id="version">Quiz App version 3.9</div>
     </div>
 </body>
+<script>
+    // Get all elements with an ID
+    const allWithId = document.querySelectorAll('[id]')
+
+    allWithId.forEach(el => {
+        const id = el.id
+
+        // Check if a global variable exists with that name
+        if (typeof window[id] !== 'undefined') {
+            console.log(`✅ Global reference exists for ID "${id}":`, window[id])
+        } else {
+            console.log(`❌ No global reference for ID "${id}" — use getElementById.`)
+        }
+    });
+</script>
 
 </html>

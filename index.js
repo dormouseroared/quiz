@@ -1,4 +1,4 @@
-import { explanationButton, explanationDiv, loadQuestion, myDebug, nextQuestionButton, quizState, showResult, shuffleArray, shuffleQuestion, syllabusButton, syllabusCheck, syllabusDiv, syllabusItemsDiv } from "./functionLibrary.js"
+import { searchForm, explanationButton, explanationDiv, loadQuestion, myDebug, nextQuestionButton, quizState, showResult, shuffleArray, shuffleQuestion, syllabusButton, syllabusCheck, syllabusDiv, syllabusItemsDiv } from "./functionLibrary.js"
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 

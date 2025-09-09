@@ -1001,12 +1001,12 @@ const CLAUDE_QUIZ = [
         ],
         correct: 1,
         explanation: "Turns ratio = Np:Ns = 240:60 = 4:1 (primary to secondary)",
-        lookup: "See transformer turns ratio calculations",
+        lookup: "",
         syllabus: "5a"
     },
     {
         source: "CLAUDE QUIZ TRANSFORMERS Q02",
-        question: "Using the transformer from Q01, if 240V AC is applied to the primary, what is the secondary voltage?",
+        question: "Using a transformer with a primary winding of 240 turns and a secondary of 60 turns, if 240V AC is applied to the primary, what is the secondary voltage?",
         image: "",
         options: [
             "15V",
@@ -1021,7 +1021,7 @@ const CLAUDE_QUIZ = [
     },
     {
         source: "CLAUDE QUIZ TRANSFORMERS Q03",
-        question: "If the secondary of the transformer in Q01 supplies 2A, what is the primary current (assuming 100% efficiency)?",
+        question: "If the secondary of the transformer, with a primary winding of 240 turns and a secondary of 60 turns supplies 2A, what is the primary current (assuming 100% efficiency)?",
         image: "",
         options: [
             "0.5A",
