@@ -52,6 +52,8 @@ const section = [
     { id: 9, name: "Measurements and construction", questions: 5, weeks: [] },
 ]
 
+const abcd = ["A", "B", "C", "D"] // answer index as alpha
+
 // ====================================
 // 4. APPLICATION STATE
 // ====================================
@@ -59,6 +61,7 @@ const section = [
 const quizState = {
     currentQuestion: 0,
     questionPack: null,
+    questionPackLength: 0,
     randomQuestions: null,
     score: 0,
     searchType: null,
@@ -186,8 +189,11 @@ function loadQuestion() {
     {
         const syllabusSection = section[q.syllabus[0]]
         const s = syllabusSection
-        syllabusDiv.textContent = s.id + ". " + s.name + " (" + s.questions + " exam questions)"
+
+        syllabusDiv.textContent =
+            `${s.id}. ${s.name} (${s.questions} exam questions)`
     }
+
     syllabusDiv.title = q.syllabus
 
     // Update question display
@@ -195,7 +201,15 @@ function loadQuestion() {
     if (q.image && q.image.trim()) {
         imageDetail = `<br><br><img src="${q.image}" alt="img built from key">`
     }
-    questionDiv.innerHTML = `<span class='sequence'>Q${quizState.currentQuestion + 1}/${qLength}.</span> ${q.question}${imageDetail}`
+
+    questionDiv.innerHTML = `
+        <span class='sequence'>
+            Q${quizState.currentQuestion + 1}/${qLength}
+        </span> 
+        ${q.question}
+        ${imageDetail}
+    `
+
     questionDiv.title = q.source
 
     // Create answer buttons
@@ -204,6 +218,7 @@ function loadQuestion() {
     }
 
     optionsDiv.innerHTML = ""
+
     q.options.forEach((option, index) => {
         if (option === "") {
             throw new Error("loadQuestion: empty option found")
@@ -212,7 +227,9 @@ function loadQuestion() {
         const btn = document.createElement("button")
         btn.classList.add("option-btn")
         btn.innerHTML = option
-        btn.title = q.originalOrder[index]
+
+        btn.title = `${abcd[q.originalOrder[index]]} [${q.originalOrder[index]}]`
+
         btn.addEventListener("click", () => {
             console.log("loadQuestion closure as event listener created for index:", index)
             selectAnswer(index)
@@ -321,13 +338,15 @@ function showResult() {
 
     // Hide quiz interface
     searchForm.style.display = "none"
-    nextQuestionButton.style.display = "none"
-    explanationButton.style.display = "none"
-    syllabusButton.style.display = "none"
-    explanationDiv.style.display = "none"
     syllabusDiv.style.display = "none"
     questionDiv.style.display = "none"
     optionsDiv.style.display = "none"
+
+    syllabusButton.style.display = "none"
+    explanationButton.style.display = "none"
+    nextQuestionButton.style.display = "none"
+
+    explanationDiv.style.display = "none"
     syllabusItemsDiv.style.display = "none"
 
     const highScore = localStorage.getItem("quizHighScore") || 0
@@ -436,8 +455,8 @@ function displaySyllabusScoresFlex(scores) {
     })
 }
 
-function myDebug(location, quizState) {
-    console.log("-----quizState-----", location, quizState)
+function myDebug(whereami, quizState) {
+    console.log("-----quizState-----", whereami, quizState)
 }
 
 // ====================================
@@ -561,11 +580,13 @@ searchForm.addEventListener("submit", function (event) {
 // 10. APP INITIALIZATION
 // ====================================
 // Set up initial state and run startup checks
+// This is only done once during the program's life
+// multiple quiz sessions can run through the SEARCH button
 
 // Initial UI state
-nextQuestionButton.style.display = "none"
-explanationButton.style.display = "none"
 syllabusButton.style.display = "none"
+explanationButton.style.display = "none"
+nextQuestionButton.style.display = "none"
 syllabusDiv.style.display = "none"
 
 // Run validation checks
