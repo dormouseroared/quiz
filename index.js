@@ -10,23 +10,26 @@ import syllabusItems from "./syllabusItems.js"
 // ====================================
 // Get all DOM elements at the top - easy to see what we're working with
 
-const questionDiv = document.getElementById("question")
 const searchForm = document.getElementById("searchForm")
+
+const syllabusDiv = document.getElementById("syllabus")
+const questionDiv = document.getElementById("question")
 const optionsDiv = document.getElementById("options")
+
+const syllabusButton = document.getElementById("syllabus-btn")
+const explanationButton = document.getElementById("explanation-btn")
+const nextQuestionButton = document.getElementById("next-btn")
+
+const explanationDiv = document.getElementById("explanation")
+const syllabusItemsDiv = document.getElementById("syllabusItems")
 const resultDiv = document.getElementById("result")
 const syllabusScoreDiv = document.getElementById("syllabusScore")
-const syllabusItemsDiv = document.getElementById("syllabusItems")
-const nextQuestionButton = document.getElementById("next-btn")
-const explanationButton = document.getElementById("explanation-btn")
-const syllabusButton = document.getElementById("syllabus-btn")
-const explanationDiv = document.getElementById("explanation")
-const syllabusDiv = document.getElementById("syllabus")
 
 // ====================================
 // 3. CONFIGURATION AND DATA STRUCTURES
 // ====================================
 
-export const section = [
+const section = [
     {
         id: 0,
         name: "dummy",
@@ -53,7 +56,7 @@ export const section = [
 // 4. APPLICATION STATE
 // ====================================
 
-export const quizState = {
+const quizState = {
     currentQuestion: 0,
     questionPack: null,
     randomQuestions: null,
@@ -75,10 +78,12 @@ export const quizState = {
 // Pure functions that don't depend on DOM or state - easiest to test and understand
 
 // Fisher-Yates shuffle produces unbiased results, good for arrays of any size
-export function shuffleArray(array) {
+function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const randomIndex = Math.floor(Math.random() * (i + 1)) // Random index
-            ;[array[i], array[randomIndex]] = [array[randomIndex], array[i]] // Swap elements
+        const randomIndex = Math.floor(Math.random() * (i + 1))
+        {
+            [array[i], array[randomIndex]] = [array[randomIndex], array[i]]
+        }
     }
     return array
 }
@@ -134,6 +139,7 @@ function findMissingSyllabusKeys(quizQuestions, syllabusItems) {
 // ====================================
 // 6. VALIDATION AND SETUP FUNCTIONS
 // ====================================
+
 function syllabusCheck() {
     console.group("CHECK EACH QUESTION HAS A VALID SYLLABUS")
     console.info("first object of questions array", W99quiz[0])
