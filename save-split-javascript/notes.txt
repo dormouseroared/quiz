@@ -1,0 +1,1 @@
+Decided to merge functionLibrary.js back into index.js, after seeking confirmation from Claude. I saved these two originals as they were at version 3.9 in case there's any need to review documentation notes etc. Testing looks ok so the merge is on for version 4.0
