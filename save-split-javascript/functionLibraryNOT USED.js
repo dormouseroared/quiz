@@ -1,6 +1,6 @@
-import W99quiz from "./fullQuestions/W99quiz_FULL.js"
+import W99quiz from "../fullQuestions/W99quiz_FULL.js"
 
-import syllabusItems from "./syllabusItems.js"
+import syllabusItems from "../syllabusItems.js"
 
 const questionDiv = document.getElementById("question")
 export const searchForm = document.getElementById("searchForm")
