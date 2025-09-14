@@ -1,0 +1,12 @@
+<html><head><style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  @media print {
+    body { margin: 0; padding: 0; }
+    .page { width: 210mm; height: 297mm; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 1fr); grid-gap: 0; page-break-after: always; }
+    .card { border: 0.5pt solid #000; padding: 5mm; box-sizing: border-box; font-family: Arial, sans-serif; font-size: 10pt; }
+    .card img { max-width: 100%; height: auto; }
+  }
+</style></head><body><div class="page"><div class="card"><p>Most times it makes no difference, but sometimes it does: <p><ul><li>in a tuned circuit, variation could be critical to resonance</li><li>in a filter, it may change the cut-off frequency</li><li>in an amplifier, too much gain could result in harmonics</li></ul><p>For fine tuning there may be adjustment using fine tune trimmer capacitors, variable inductors or pre-set potentiometers</p></div><div class="card">$$Tolerance = 10 \times 10^6 \times \frac{10}{10^6} = 10 \times 10 = 100Hz$$</div><div class="card">brown $\pm$ 1%<br>red $\pm$ 2%<br>gold $\pm$ 5%<br>silver $\pm$ 10%<br></div><div class="card">$$C = \frac{k \times A}{d}$$<br><ul><li>where C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul></div><div class="card">Capacitance <strong>halves</strong><br>$$C \propto \frac{1}{d}$$<br>Inverse relationship</div><div class="card">Capacitance <strong>doubles</strong><br>$$C \propto A$$<br>Direct relationship</div><div class="card">Yes it is, on the third row from the top. It should be written as $C = \frac{k \times A}{d}$ and not with A as a subscript</div><div class="card">The capacitor can break down and be destroyed. Effects range from a small pop to a big bang. Normally the voltage will be written on the capacitor, otherwise contact the supplier etc.</div></div><div class="page"><div class="card">$$X_C = \frac{1}{2{\pi}fC}$$</div><div class="card">$$X_L = 2{\pi}fL$$</div></div></body></html>

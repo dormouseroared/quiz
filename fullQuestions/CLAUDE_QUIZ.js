@@ -57,7 +57,7 @@ const CLAUDE_QUIZ = [
         correct: 1,
         explanation: "Time constant τ = RC = 10×10³ × 1000×10⁻⁶ = 10 seconds",
         lookup: "See RC time constant formula",
-        syllabus: "3a"
+        syllabus: "2d.7"
     },
     {
         source: "CLAUDE QUIZ CAPACITORS Q05",

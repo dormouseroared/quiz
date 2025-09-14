@@ -1,0 +1,12 @@
+<html><head><style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  @media print {
+    body { margin: 0; padding: 0; }
+    .page { width: 210mm; height: 297mm; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 1fr); grid-gap: 0; page-break-after: always; }
+    .card { border: 0.5pt solid #000; padding: 5mm; box-sizing: border-box; font-family: Arial, sans-serif; font-size: 10pt; }
+    .card img { max-width: 100%; height: auto; }
+  }
+</style></head><body><div class="page"><div class="card"><p>What difference does a component's tolerance make?</p></div><div class="card"><p>What does a 10MHz crystal with 10ppm tolerance mean?</p></div><div class="card"><p>What do the colours brown, red, gold and silver mean on a resistor as the last band, in terms of tolerance?</p></div><div class="card"><p>What factors influence the capacitance of a capacitor, and what is the formula?</p></div><div class="card"><p>What happens to capacitance if distance between plates doubles?</p></div><div class="card"><p>What happens to capacitance if plate area doubles?</p></div><div class="card"><p>Is the formula for Capacitance on the EX309 sheet, and do you know how to decode its incorrect printing?</p></div><div class="card"><p>What happens to a capacitor when its safe working voltage, or breakdown voltage, is exceeded?</p></div></div><div class="page"><div class="card"><p>What is the formula for the reactance of a capacitor, and can you find it in EX309?</p></div><div class="card"><p>What is the formula for the reactance of an inductor, and can you find it in EX309?</p></div></div></body></html>
