@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Multiple choice questions",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +14,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/dormouseroared/quiz/issues"
   },
   "homepage": "https://github.com/dormouseroared/quiz#readme",
   "devDependencies": {
     "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "image-size": "^2.0.2",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^24.20.0"
   }
 }

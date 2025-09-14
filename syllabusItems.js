@@ -129,7 +129,7 @@ const syllabusItems = [
         key: "1c.1",
         level: "full",
         title: "Messages",
-        text: "Understand the distinction between the use of codes and abbreviations and encryption."
+        text: "Understand the distinction between the use of codes, and abbreviations and encryption."
     },
     {
         key: "1c.1",
@@ -322,7 +322,38 @@ const syllabusItems = [
         key: "2a.1",
         level: "full",
         title: "Fundamental theory",
-        text: "Understand component tolerances and the effects they may have in circuit operation."
+        text: "Understand component tolerances and the effects they may have in circuit operation.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What difference does a component's tolerance make?",
+                back: "...",
+                backImage: "week03-tolerance3.png",
+                status: "printed",
+                reference: "week03 tutorial slides p6-7"
+            },
+            {
+                front: "What does a 10MHz crystal with 10ppm tolerance mean?",
+                back: "$$Tolerance = 10 \\times 10^6 \\times \\frac{10}{10^6} = 10 \\times 10 = 100Hz$$",
+                backImage: "week03-tolerance1.png",
+                status: "printed",
+                reference: "week03 tutorial slides p6"
+            },
+            {
+                front: "What do the colours brown, red, gold and silver mean on a resistor as the last band, in terms of tolerance?",
+                back: "brown $\\pm$ 1%<br>red $\\pm$ 2%<br>gold $\\pm$ 5%<br>silver $\\pm$ 10%<br>",
+                backImage: "week03-tolerance2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p6"
+            },
+            {
+                front: "Think about some of the ways that the effects of tolerance can be adjusted.",
+                back: "here are some examples",
+                backImage: "week03-tolerance4.png",
+                status: "printed",
+                reference: "week03 tutorial slides p7"
+            },
+        ]
     },
     {
         key: "2a.2",
@@ -364,8 +395,8 @@ const syllabusItems = [
         key: "2b.1",
         level: "full",
         title: "Power",
-        text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power given appropriate values. This may include the use of series/ parallel formulae, Ohm’s Law and power. Equations include P = V²/R and P=I²×R ",
-        weeks: "1"
+        text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power, given appropriate values. This may include the use of series/parallel formulae, Ohm’s Law and power. Equations include P = V²/R and P = I²×R ",
+        weeks: ["1"]
     },
     {
         key: "2c.1",
@@ -461,13 +492,59 @@ const syllabusItems = [
         key: "2d.1",
         level: "full",
         title: "Reactive components",
-        text: "Understand the factors influencing the capacitance of a capacitor; area and separation of the plates, permittivity of dielectrics and formula C=k×A/ d."
+        text: "Understand the factors influencing the Capacitance of a capacitor; Area and Separation of the plates, Permittivity of dielectric and formula $C = \\frac{k \\cdot A}{d}$",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What factors influence the capacitance of a capacitor, and what is the formula?",
+                back: "$$C = \\frac{k \\cdot A}{d}$$<br><ul><li>where C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul>",
+                status: "printed",
+                reference: "week03 tutorial slides p8"
+            },
+            {
+                front: "What happens to capacitance if distance between plates doubles?",
+                back: "Capacitance <strong>halves</strong><br>$$C \\propto \\frac{1}{d}$$<br>Inverse relationship",
+                status: "printed",
+                reference: "week03 tutorial slides p8"
+            },
+            {
+                front: "What happens to capacitance if plate area doubles?",
+                back: "Capacitance <strong>doubles</strong><br>$$C \\propto A$$<br>Direct relationship",
+                status: "printed",
+                reference: "week03 tutorial slides p8"
+            },
+            {
+                front: "Is the formula for Capacitance on the EX309 sheet, and do you know how to decode its incorrect printing?",
+                back: "Yes it is, on the third row from the top. It should be written as $C = \\frac{k \\times A}{d}$ and not with A as a subscript",
+                status: "printed",
+                reference: "week03 tutorial slides p8"
+            }
+        ],
     },
     {
         key: "2d.1",
         level: "full",
         title: "Reactive components",
-        text: "Recall that the Coulomb is the quantity of electricity, Q, given by current × time and that the charge on a capacitor is given by Q = V×C."
+        text: "Recall that the Coulomb is the quantity of electricity, Q, given by current × time and that the charge on a capacitor is given by Q = V×C.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What is the unit for the quantity of electricity called, and how is it defined?",
+                frontImage: "",
+                back: "The Coulomb is the quantity of electricity or charge: $$Q = current \\times time$$ and if one Coulomb of charge passes a point every second, 1 Amp of current is flowing. Coulomb is the charge from $6 \\times 10^{18} electrons$ Q is not to be confused with Q as ameasure of selectiviity or magnification factor.",
+                backImage: "week03-coulomb-per-second.png",
+                status: "printed",
+                reference: "week03 tutorial slides p10-11"
+            },
+            {
+                front: "What is the formula for stored charge on a capacitor?",
+                frontImage: "week03-qi.png",
+                back: ".",
+                backImage: "week03-capacitor-stored-charge.png",
+                status: "printed",
+                reference: "week03 tutorial slides p12"
+            },
+        ]
     },
     {
         key: "2d.2",
@@ -479,7 +556,17 @@ const syllabusItems = [
         key: "2d.2",
         level: "full",
         title: "Reactive components",
-        text: "Recall that different dielectrics are used for different purposes, e.g. air, ceramic, mica and polyester; and that with some dielectrics, losses increase with increasing frequency."
+        text: "Recall that different dielectrics are used for different purposes, e.g. air, ceramic, mica and polyester; and that with some dielectrics, losses increase with increasing frequency.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What sort of materials are used to make dielectrics, which ones tend to be lossy, and what causes losses to increase?",
+                back: ".",
+                backImage: "week03-dielectrics.png",
+                status: "printed",
+                reference: "week03 tutorial slides p13"
+            }
+        ]
     },
     {
         key: "2d.3",
@@ -491,7 +578,24 @@ const syllabusItems = [
         key: "2d.3",
         level: "full",
         title: "Reactive components",
-        text: "Understand that capacitors have a breakdown voltage and that they need to be used within that voltage."
+        text: "Understand that capacitors have a safe working voltage, also known as a breakdown voltage, and that they need to be used within that voltage.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What happens to a capacitor when its safe working voltage, or breakdown voltage, is exceeded?",
+                back: "The capacitor can break down and be destroyed. Effects range from a small pop to a big bang. Normally the voltage will be written on the capacitor, otherwise contact the supplier etc.",
+                backImage: "week03-safe-working-voltage-1.png",
+                status: "printed",
+                reference: "week03 tutorial slides p8"
+            },
+            {
+                front: "How do you identify the safe working voltage of a capacitor?",
+                back: "...",
+                backImage: "week03-safe-working-voltage-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p8"
+            },
+        ]
     },
     {
         key: "2d.4",
@@ -527,7 +631,31 @@ const syllabusItems = [
         key: "2d.4",
         level: "full",
         title: "Reactive components",
-        text: "Understand the term ‘self-inductance’ and recall that a ‘back EMF’ is produced as current flow changes in an inductor."
+        text: "Understand the term ‘self-inductance’ and recall that a ‘back EMF’ is produced as current flow changes in an inductor.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Revision mode: the inductor. Give a brief summary of what it does, what affects its value and the unit. Check formulas for inductors in series and in parallel.",
+                back: ".",
+                backImage: "week03-inductor-revision.png",
+                status: "printed",
+                reference: "week03 tutorial slides p16-17"
+            },
+            {
+                front: "what does self inductance mean and what is back EMF?",
+                back: ".",
+                backImage: "week03-back-emf-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p18"
+            },
+            {
+                front: "In what direction are the magnetic force when current flows through a wire?",
+                back: "...",
+                backImage: "week03-back-emf-1.png",
+                status: "printed",
+                reference: "week03 tutorial slides p18"
+            },
+        ]
     },
     {
         key: "2d.5",
@@ -551,13 +679,40 @@ const syllabusItems = [
         key: "2d.7",
         level: "full",
         title: "Reactive components",
-        text: "Understand the rise and fall of current in an LR circuit and that the time constant t = L / R."
+        text: "Understand the rise and fall of current in an RL circuit and that the time constant (Tau) t = L/R.  $\\Tau = \\frac{L}{R}$",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Why is there a time constant for inductors and capacitors",
+                back: "stuff",
+                backImage: "week03-time-constant.png",
+                status: "printed",
+                reference: "week03 tutorial slides p22"
+            },
+            {
+                front: "What happens after one time constant has elapsed in an RL circuit, and also 5 time constants?",
+                back: ".",
+                backImage: "week03-inductor-time-constant.png",
+                status: "printed",
+                reference: "week03 tutorial slides p23"
+            },
+        ]
     },
     {
         key: "2d.7",
         level: "full",
         title: "Reactive components",
-        text: "Understand the rise and fall of voltage in a CR circuit and that the time constant t = C×R."
+        text: "Understand the rise and fall of voltage in an RC circuit and that the time constant (Tau) t = C×R.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What happens after one time constant has elapsed in an RC circuit, and also 5 time constants?",
+                back: ".",
+                backImage: "week03-capacitor-time-constant.png",
+                status: "printed",
+                reference: "week03 tutorial slides p23"
+            }
+        ]
     },
     {
         key: "2e.1",
@@ -671,19 +826,76 @@ const syllabusItems = [
         key: "2e.3",
         level: "full",
         title: "AC theory",
-        text: "Understand that current lags potential difference by 90° in an inductor and that current leads by 90° in a capacitor."
+        text: "Understand that current lags potential difference by 90° in an inductor and that current leads by 90° in a capacitor.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "From the intermediate course, we know that in circuits with pure Capacitance or pure Inductance, there is a 90 degree phase difference between voltage and current. Now we need to know which leads which...",
+                frontImage: "week03-civil-1.png",
+                back: ".",
+                backImage: "week03-civil-2.png",
+                status: "to do",
+                reference: "week03 tutorial slides p26"
+            },
+        ]
     },
     {
         key: "2e.3",
         level: "full",
         title: "AC theory",
-        text: "Understand the formulae for the reactance of a capacitor or inductor in terms of the frequency and component value."
+        text: "Understand the formulae for the reactance of a capacitor or inductor in terms of the frequency and component value.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "What is the formula for the reactance of a capacitor, what does the graph of Capacitive Reactance vs frequency look like, and can you find it in EX309?",
+                back: "$$X_C = \\frac{1}{2{\\pi}fC}$$",
+                backImage: "week03-reactance-capacitor-graph.png",
+                status: "printed",
+                reference: "week03 tutorial slides p24"
+            },
+            {
+                front: "What is the formula for the reactance of an inductor, , what does the graph of Reactive Reactance vs frequency look like, and can you find it in EX309?",
+                back: "$$X_L = 2{\\pi}fL$$",
+                backImage: "week03-reactance-inductor-graph.png",
+                status: "printed",
+                reference: "week03 tutorial slides p24"
+            },
+            {
+                front: "How do you get 'pi' to appear on your calculator?",
+                back: "It is two separate keystrokes. Press SHIFT then press EXP. Any problems use 3.1",
+                backImage: "",
+                status: "printed",
+                reference: "week03 tutorial slides p24"
+            },
+            {
+                front: "Calculator practice: calculate the INDUCTIVE REACTANCE of a $10\\mu H$ inductor at 7MHz. Hint: use the REPLAY button and its arrows to check the numbers have been entered properly.",
+                back: "$$X_L = 2{\\pi}fL$$",
+                backImage: "week03-ind-reactance-calc.png",
+                status: "printed",
+                reference: "week03 tutorial slides p25"
+            },
+            {
+                front: "Calculator practice: calculate the CAPACITIVE REACTANCE of a 22pF capacitor at 10MHz. Hint: use the brackets!",
+                back: "$$X_C = \\frac{1}{2{\\pi}fC}$$",
+                backImage: "week03-cap-reactance-calc.png",
+                status: "printed",
+                reference: "week03 tutorial slides p25"
+            },
+        ]
     },
     {
         key: "2e.3",
         level: "full",
         title: "AC theory",
-        text: "Calculate the unknown term given the other two."
+        text: "Calculate the unknown term given the other two.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "If the CAPACITIVE REACTANCE of a 22pF capacitor is x, what is the frequency?",
+                back: "",
+                status: "to do"
+            },
+        ]
     },
     {
         key: "2e.4",
@@ -707,7 +919,26 @@ const syllabusItems = [
         key: "2e.4",
         level: "full",
         title: "AC theory",
-        text: "Understand the use of capacitors for AC coupling(DC blocking) and decoupling AC signals(including RF bypass) to ground."
+        text: "Understand the use of capacitors for AC coupling (DC blocking) and decoupling AC signals (including RF bypass) to ground.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "How are capacitors being used in this diagram? Hint: look at the arrows. It won't have the description or the arrows on the real thing.",
+                frontImage: "week03-capacitor-coupling.png",
+                back: ".",
+                backImage: "week03-capacitor-coupling-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p14"
+            },
+            {
+                front: "What is happening in this diagram?",
+                frontImage: "week03-capacitor-decoupling-1.png",
+                back: ".",
+                backImage: "week03-capacitor-decoupling-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p15"
+            },
+        ]
     },
     {
         key: "2e.5",
@@ -737,7 +968,26 @@ const syllabusItems = [
         key: "2e.5",
         level: "full",
         title: "AC theory",
-        text: "Understand the use of inductors for DC decoupling (AC blocking)."
+        text: "Understand the use of inductors for DC decoupling (AC blocking).",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "How are inductors used in this diagram?",
+                frontImage: "week03-inductor-coupling-1.png",
+                back: ".",
+                backImage: "week03-inductor-coupling-2.png",
+                status: "to do",
+                reference: "week03 tutorial slides p19"
+            },
+            {
+                front: "How are inductors used in this diagram?",
+                frontImage: "week03-inductor-decoupling-1.png",
+                back: ".",
+                backImage: "week03-inductor-decoupling-2.png",
+                status: "to do",
+                reference: "week03 tutorial slides p20"
+            },
+        ]
     },
     {
         key: "2e.6",
@@ -761,7 +1011,55 @@ const syllabusItems = [
         key: "2e.6",
         level: "full",
         title: "AC theory",
-        text: "Understand that impedance is a combination of resistance and reactance and apply the formula for impedance and current in a series CR or LR circuit."
+        text: "Understand that impedance is a combination of resistance and reactance and apply the formula for impedance and current in a series CR or LR circuit.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "How is Impedance calculated in an RC or RL circuit?",
+                back: "$$\\text{Impedance   } Z = \\sqrt (R^2 + X^2)$$ This often means a two step calculation: <ul><li>work out reactance of inductor or capacitor from component values</li><li>then work out impedance</li></ul><br>Sanity check:<br>Z will always be more than either R or X but will be less than R + X. <br>for a 3,4,5 triangle, 5 is more than 3 or 4, but less than 3+4.",
+                status: "printed",
+                reference: "week03-tutorial slides p27"
+            },
+            {
+                front: "What is the visual representation of Impedance calculated in an RC or RL circuit?",
+                back: "A right angled triangle.",
+                backImage: "week03-impedance-triangle.png",
+                status: "printed",
+                reference: "week03-tutorial slides p27"
+            },
+            {
+                front: "What is the impedance of the circuit in the diagram?",
+                frontImage: "week03-impedance-example-question.png",
+                back: ".",
+                backImage: "week03-impedance-example-answer.png",
+                status: "printed",
+                reference: "week03-tutorial slides p28"
+            },
+            {
+                front: "What is the impedance of the circuit in the diagram?",
+                frontImage: "week03-another-impedance-example.png",
+                back: ".",
+                backImage: "week03-another-impedance-example-2.png",
+                status: "to do",
+                reference: "week03-tutorial slides p29"
+            },
+            {
+                front: "Really nasty question",
+                frontImage: "week03-impedance-nasty-question.png",
+                back: "get the worked example in the weekly instructions",
+                backImage: "",
+                status: "to do",
+                reference: "week03-tutorial slides p29"
+            },
+            {
+                front: "Really nasty question",
+                frontImage: "week03-impedance-nasty-question.png",
+                back: "get the worked example in the weekly instructions",
+                backImage: "week03-really-nasty-question-1.png",
+                status: "to do",
+                reference: "week03-tutorial slides p29"
+            },
+        ]
     },
     {
         key: "2e.7",
@@ -935,7 +1233,7 @@ const syllabusItems = [
         key: "2g.1",
         level: "full",
         title: "Transformers",
-        text: "Understand the impedance change in a transformer and apply the formula relating transformer primary and secondary terms to primary and secondary impedances."
+        text: "Understand the impedance change in a transformer and apply the formula relating transformer primary and secondary turns to primary and secondary impedances."
     },
     {
         key: "2g.1",
@@ -965,7 +1263,41 @@ const syllabusItems = [
         key: "2h.1",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Apply the formula for the resonant frequency of a tuned circuit to find values of f, L or C from given data."
+        text: "Apply the formula for the resonant frequency of a tuned circuit to find values of f, L or C from given data.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Recap on tuned circuits. What do you remember? Which is the acceptor circuit, and which is the rejector circuit? I always remember PARALLEL for PEAK Z.",
+                frontImage: "week03-tuned-circuits-1.png",
+                back: "stuff",
+                backImage: "week03-tuned-circuits-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p30"
+            },
+            {
+                front: "What is the resonant frequency formula that applies to both series and parallel tuned circuits?",
+                frontImage: "week03-resonant-frequency-1.png",
+                back: "$$f = \\frac{1}{2 \\pi \\sqrt{(LC)}}$$",
+                backImage: "week03-resonant-frequency-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p31"
+            },
+            {
+                front: "How do you transpose the resonant frequency formula to solve for C or L?",
+                frontImage: "",
+                back: ".",
+                backImage: "week03-resonant-frequency-3.png",
+                status: "printed",
+                reference: "week03 tutorial slides p31"
+            },
+            {
+                front: "Calculate resonant freqency of 22pf capacitor with $10 \\mu H$ inductor",
+                back: ".",
+                backImage: "week03-resonant-frequency-4.png",
+                status: "printed",
+                reference: "week03 tutorial slides p32"
+            },
+        ]
     },
     {
         key: "2h.2",
@@ -983,7 +1315,31 @@ const syllabusItems = [
         key: "2h.2",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Recall the equivalent circuit of a crystal and that it exhibits series and parallel resonance."
+        text: "Recall the equivalent circuit of a crystal and that it exhibits series and parallel resonance.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Summarise what you know about crystals and how they're used.",
+                back: "See Full Manual pp29-30",
+                backImage: "week03-crystals-1.png",
+                status: "printed",
+                reference: "week03 tutorial slides p39"
+            },
+            {
+                front: "Identify a circuit with crystals in it",
+                back: "See Full Manual pp29-30",
+                backImage: "week03-crystals-2.png",
+                status: "printed",
+                reference: "week03 tutorial slides p39"
+            },
+            {
+                front: "What does the specification of a crystal's performance look like?",
+                back: "See Full Manual pp29-30",
+                backImage: "week03-crystals-3.png",
+                status: "printed",
+                reference: "week03 tutorial slides p39"
+            },
+        ]
     },
     {
         key: "2h.2",
@@ -1019,31 +1375,74 @@ const syllabusItems = [
         key: "2h.4",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Understand the concept of the magnification factor Q as applied to the voltages and currents in a resonant circuit."
+        text: "Understand the concept of the magnification factor Q as applied to the voltages and currents in a resonant circuit.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "magnification factor Q",
+                back: "stuff",
+                status: "to do",
+                reference: "week03 tutorial slides p34-35"
+            }
+        ]
     },
     {
         key: "2h.4",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Recall that voltages and circulating currents in tuned circuits can be very high and understand the implications for component rating."
+        text: "Recall that voltages and circulating currents in tuned circuits can be very high and understand the implications for component rating.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "voltages and circulating currents in tuned circuits can be very high...",
+                back: "stuff",
+                status: "to do",
+                reference: "week03 tutorial slides pxx"
+            }
+        ]
     },
     {
         key: "2h.4",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Apply the formula for Q factor given circuit component values."
+        text: "Apply the formula for Q factor given circuit component values.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Apply the formula for Q factor given circuit component values...",
+                back: "stuff",
+                status: "to do"
+            }
+        ]
     },
     {
         key: "2h.4",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Recall the definition of the half power point of resonance curves."
+        text: "Recall the definition of the half power point of resonance curves.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Recall the definition of the half power point of resonance curves...",
+                back: "stuff",
+                status: "to do"
+            }
+        ]
     },
     {
         key: "2h.4",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve."
+        text: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve...",
+                back: "stuff",
+                status: "to do",
+                reference: "week03 tutorial slides p36"
+            }
+        ]
     },
     {
         key: "2h.5",
@@ -1061,7 +1460,16 @@ const syllabusItems = [
         key: "2h.5",
         level: "full",
         title: "Tuned circuits and resonance",
-        text: "Understand the meaning of dynamic resistance, RD."
+        text: "Understand the meaning of dynamic resistance, RD, (that's R sub D) $R_D$.",
+        weeks: ["3"],
+        flashcards: [
+            {
+                front: "Understand the meaning of dynamic resistance, RD, (that's R sub D) $R_D$...",
+                back: "stuff",
+                status: "to do",
+                reference: "week03 tutorial slides p38"
+            }
+        ]
     },
     {
         key: "2i.1",
@@ -1115,7 +1523,7 @@ const syllabusItems = [
         key: "2i.3",
         level: "full",
         title: "Semiconductor devices",
-        text: "Understand the basics of biasing NPN and PNP bipolar transistors and field effect transistors (FET) (including dual gate devices).Note: In this section circuits shown will be an NPN transistor connected in common emitter / common source mode."
+        text: "Understand the basics of biasing NPN and PNP bipolar transistors and field effect transistors (FET) (including dual gate devices). Note: In this section circuits shown will be an NPN transistor connected in common emitter / common source mode."
     },
     {
         key: "2i.4",
@@ -1126,19 +1534,19 @@ const syllabusItems = [
     {
         key: "2i.4",
         level: "intermediate",
-        title: "Semiconsuctor devices",
+        title: "Semiconductor devices",
         text: "Recall that semiconductors must be provided with the correct DC voltages and currents to allow them to function and that this is termed biasing. Note that calculations are not required."
     },
     {
         key: "2i.4",
         level: "full",
-        title: "Semiconsuctor devices",
-        text: "Identify different types of small signal amplifiers (e.g.common emitter(source), emitter follower and common base) and explain their operation in terms of input and output impedances,current gain, voltage gain and phase change."
+        title: "Semiconductor devices",
+        text: "Identify different types of small signal amplifiers (e.g. common emitter (source), emitter follower and common base) and explain their operation in terms of input and output impedances, current gain, voltage gain and phase change."
     },
     {
         key: "2i.4",
         level: "full",
-        title: "Semiconsuctor devices",
+        title: "Semiconductor devices",
         text: "Recall the characteristics and typical circuit diagrams of different classes of amplifiers (i.e. A, B, A/B and C)."
     },
     {
@@ -1217,7 +1625,7 @@ const syllabusItems = [
         key: "2j.2",
         level: "full",
         title: "Cells and power supplies",
-        text: "Understand the function of stabilising circuits and identify different types of stabilising circuits(i.e. Zener diode/ pass transistor and IC). Note: questions on the characteristics of individual components are covered in other parts of this syllabus. This subsection is on complete circuits."
+        text: "Understand the function of stabilising circuits and identify different types of stabilising circuits (i.e. Zener diode/pass transistor and IC). Note: questions on the characteristics of individual components are covered in other parts of this syllabus. This subsection is on complete circuits."
     },
     {
         key: "2j.3",
@@ -1235,7 +1643,7 @@ const syllabusItems = [
         key: "2j.3",
         level: "full",
         title: "Cells and power supplies",
-        text: "Understand the need for rectifier diodes to have a sufficient peak inverse voltage (PIV) rating and calculate the PIV in diode/ capacitor circuits."
+        text: "Understand the need for rectifier diodes to have a sufficient peak inverse voltage (PIV) rating and calculate the PIV in diode/capacitor circuits."
     },
     {
         key: "2j.4",
@@ -1456,7 +1864,7 @@ const syllabusItems = [
         key: "3c.3",
         level: "full",
         title: "Oscillators",
-        text: "Recall the block diagram of a Phase Locked Loop (PLL) frequency synthesiser and the functions of the stages i.e.oscillator, fixed divider, phase comparator (detector), Low Pass Filter (LPF), voltage-controlled oscillator and programmable divider."
+        text: "Recall the block diagram of a Phase Locked Loop (PLL) Frequency Synthesiser and the functions of the stages i.e.oscillator, fixed divider, phase comparator (detector), Low Pass Filter (LPF), voltage-controlled oscillator and programmable divider."
     },
     {
         key: "3c.3",
@@ -1480,7 +1888,7 @@ const syllabusItems = [
         key: "3d.1",
         level: "full",
         title: "Frequency multipliers",
-        text: "Understand that frequency multipliers use harmonics to generate frequencies above an oscillator’s fundamental frequency(e.g.in a microwave transmitter)."
+        text: "Understand that frequency multipliers use harmonics to generate frequencies above an oscillator’s fundamental frequency (e.g.in a microwave transmitter)."
     },
     {
         key: "3e.1",
@@ -1648,7 +2056,7 @@ const syllabusItems = [
         key: "3g.2",
         level: "full",
         title: "Transmitter interference",
-        text: "Understand the need to drive external power amplifiers with the minimum power required for full output and how overdriving may cause harmonics and/ or spurious intermodulation products."
+        text: "Understand the need to drive external power amplifiers with the minimum power required for full output and how overdriving may cause harmonics and/or spurious intermodulation products."
     },
     {
         key: "3g.3",
@@ -1678,7 +2086,7 @@ const syllabusItems = [
         key: "3g.3",
         level: "full",
         title: "Transmitter interference",
-        text: "Understand ways to avoid generating harmonics e.g.use of push-pull amplifiers and avoiding high drive levels."
+        text: "Understand ways to avoid generating harmonics e.g. use of push-pull amplifiers and avoiding high drive levels."
     },
     {
         key: "3g.3",
@@ -1690,7 +2098,7 @@ const syllabusItems = [
         key: "3g.3",
         level: "full",
         title: "Transmitter interference",
-        text: "Understand the use of low pass, band pass and band stop(notch) filters in minimising the radiation of unwanted harmonics and mixer products."
+        text: "Understand the use of low pass, band pass and band stop (notch) filters in minimising the radiation of unwanted harmonics and mixer products."
     },
     {
         key: "3g.4",
@@ -1726,7 +2134,7 @@ const syllabusItems = [
         key: "3g.5",
         level: "full",
         title: "Transmitter interference",
-        text: "Identify appropriate measures to prevent off￾frequency transmissions."
+        text: "Identify appropriate measures to prevent off-frequency transmissions."
     },
     {
         key: "3h.1",
@@ -1822,7 +2230,7 @@ const syllabusItems = [
         key: "3i.2",
         level: "full",
         title: "Superheterodyne concepts",
-        text: "Understand the function of a mixer, the generation of the Intermediate Frequency(IF) and other mixer products."
+        text: "Understand the function of a mixer, the generation of the Intermediate Frequency (IF) and other mixer products."
     },
     {
         key: "3i.3",
@@ -1846,7 +2254,7 @@ const syllabusItems = [
         key: "3i.3",
         level: "full",
         title: "Superheterodyne concepts",
-        text: "Understand the advantages and disadvantages of high and low intermediate frequencies and the rationale for the double and triple superhet."
+        text: "Understand the advantages and disadvantages of high and low intermediate frequencies and the rationale for the double and triple superheterodyne."
     },
     {
         key: "3i.3",
@@ -2074,13 +2482,13 @@ const syllabusItems = [
         key: "3m.2",
         level: "full",
         title: "SDR transmitters and receivers",
-        text: "Recall that mixing the RF or IF signal with two local oscillator signals 90 degrees different in phase will produce an in-phase(I) and quadrature(Q) component which can be digitised allowing all forms of modulation to be demodulated entirely by mathematical processes in a PC or using dedicated hardware."
+        text: "Recall that mixing the RF or IF signal with two local oscillator signals 90 degrees different in phase will produce in-phase (I) and quadrature (Q) components, which can be digitised allowing all forms of modulation to be demodulated entirely by mathematical processes in a PC or using dedicated hardware."
     },
     {
         key: "3m.2",
         level: "full",
         title: "SDR transmitters and receivers",
-        text: "Recall that this technique is the basis of SDR (software defined radio) receivers."
+        text: "Recall that this technique is the basis of SDR (Software Defined Radio) receivers."
     },
     {
         key: "3m.2",
@@ -2092,7 +2500,7 @@ const syllabusItems = [
         key: "3m.2",
         level: "full",
         title: "SDR transmitters and receivers",
-        text: "Recall that if sampling is carried out directly on the RF signal the extraction of I and Q components and subsequent demodulation may be carried out entirely by mathematical processes."
+        text: "Recall that if sampling is carried out directly on the RF signal, the extraction of I and Q components and subsequent demodulation may be carried out entirely by mathematical processes."
     },
     {
         key: "3m.3",
@@ -2110,7 +2518,7 @@ const syllabusItems = [
         key: "3n.1",
         level: "full",
         title: "Transceivers",
-        text: "Recall the function and use of the RIT (Receiver Incremental Tuning) control. [[See page 50 of manual]]"
+        text: "Recall the function and use of the RIT (Receiver Incremental Tuning) control. (See page 50 of Full Manual)"
     },
     {
         key: "3n.2",
@@ -2524,13 +2932,13 @@ const syllabusItems = [
         key: "4d.2",
         level: "full",
         title: "Types of antenna",
-        text: "Recall the current and voltage distribution on the centre fed dipole and λ/ 4 ground plane antennas."
+        text: "Recall the current and voltage distribution on the centre fed dipole and λ/4 ground plane antennas."
     },
     {
         key: "4d.2",
         level: "full",
         title: "Types of antenna",
-        text: "Recall the feed point impedances of centre fed half-wave dipoles, quarter-wave and loaded 5 / 8λ verticals, folded dipoles, full - wave loops and end feed λ / 4 and λ / 2 antennas."
+        text: "Recall the feed point impedances of centre fed half-wave dipoles, quarter-wave and loaded 5/8 λ verticals, folded dipoles, full-wave loops and end fed λ/4 and λ/2 antennas."
     },
     {
         key: "4d.2",
@@ -2620,7 +3028,7 @@ const syllabusItems = [
         key: "4e.3",
         level: "full",
         title: "Standing waves",
-        text: "Recall that Return Loss at transmitter = Return Loss at antenna + 2x(feeder loss)."
+        text: "Recall that Return Loss at transmitter = Return Loss at antenna + (2 x feeder loss)."
     },
     {
         key: "4f.1",
@@ -2668,7 +3076,7 @@ const syllabusItems = [
         key: "4f.2",
         level: "full",
         title: "Antenna matching units",
-        text: "Apply simple examples of the formula Zo**2 = Zin × Zout"
+        text: "Apply simple examples of the formula Zo^2 = Zin × Zout"
     },
     {
         key: "4g.1",
@@ -2710,7 +3118,7 @@ const syllabusItems = [
         key: "5a.1",
         level: "full",
         title: "Radio propagation: key concepts",
-        text: "Recall that under free space conditions e-m waves spread out according to an inverse square law of power flux density and that the electric field strength, measured in volts/ metre, drops linearly with distance. Note: Numerical calculations required at item 6E1 only"
+        text: "Recall that under free space conditions e-m waves spread out according to an inverse square law of power flux density and that the electric field strength, measured in volts/metre, drops linearly with distance. Note: Numerical calculations required at item 6e.1 only."
     },
     {
         key: "5a.2",
@@ -2752,13 +3160,13 @@ const syllabusItems = [
         key: "5a.3",
         level: "full",
         title: "Radio propagation: key concepts",
-        text: "Recall that an e-m wave comprises E and H fields in phase, at right angles and at right angles to the direction of travel and the power flux density (watts / Metre squared) is given by the product of E and H."
+        text: "Recall that an e-m wave comprises E and H fields in phase, at right angles and at right angles to the direction of travel and the power flux density (watts/Metre squared) is given by the product of E and H."
     },
     {
         key: "5a.3",
         level: "full",
         title: "Radio propagation: key concepts",
-        text: "Recall that in circular polarisation, the polarisation of the wave rotates as it propagates, with either a right- handed (clockwise from behind) or left - handed polarisation."
+        text: "Recall that in circular polarisation, the polarisation of the wave rotates as it propagates, with either a right-handed (clockwise from behind) or left-handed polarisation."
     },
     {
         key: "5a.3",
@@ -2992,13 +3400,13 @@ const syllabusItems = [
         key: "5c.3",
         level: "full",
         title: "VHF and above",
-        text: "Recall that contacts at VHF and above can be made by reflecting signals off the lunar surface and that this is known as Earth- Moon - Earth (EME) propagation."
+        text: "Recall that contacts at VHF and above can be made by reflecting signals off the lunar surface and that this is known as Earth-Moon-Earth (EME) propagation."
     },
     {
         key: "5c.3",
         level: "full",
         title: "VHF and above",
-        text: "Understand that as the moon is a poor reflector of radio frequency signals and is a long way from earth, EME contacts generally need high power and high gain antennas accurately pointed at the moon, and very sensitive, low noise receivers or the use of special low- signal strength modes to overcome the path loss."
+        text: "Understand that, as the moon is a poor reflector of radio frequency signals, and is a long way from earth, EME contacts generally need high power and high gain antennas accurately pointed at the moon, and very sensitive, low noise receivers or the use of special low-signal strength modes to overcome the path loss."
     },
     {
         key: "5c.3",
@@ -3010,19 +3418,19 @@ const syllabusItems = [
         key: "5c.3",
         level: "full",
         title: "VHF and above",
-        text: "Recall that auroral ionised curtains form vertically in the ionosphere and that movement of these curtains cause rapid flutter on the signals."
+        text: "Recall that AURORAL IONISED CURTAINS form vertically in the ionosphere, and that movement of these curtains cause rapid flutter on the signals."
     },
     {
         key: "5d.1",
         level: "full",
         title: "Other features",
-        text: "Recall the Galactic Noise is random noise originating outside the earth’s atmosphere."
+        text: "Recall that GALACTIC NOISE is random noise originating outside the earth’s atmosphere."
     },
     {
         key: "5d.2",
         level: "full",
         title: "Other features",
-        text: "Recall the factors affecting a link budget,transmitter power, feeder losses, antenna gains and path loss."
+        text: "Recall the factors affecting a link budget, transmitter power, feeder losses, antenna gains and path loss."
     },
     {
         key: "5d.2",
@@ -3166,7 +3574,7 @@ const syllabusItems = [
         key: "6b.2",
         level: "full",
         title: "Sources of interference and their effects",
-        text: "Understand that Blocking (or desensitisation) is an effect in a radio receiver where a strong, constant level interfering signal e.g.FM either swamps the wanted signal or drives the affected circuits out of their normal operating range such that the received audio or data is severely attenuated or muted."
+        text: "Understand that Blocking (or desensitisation) is an effect in a radio receiver where a strong, constant level interfering signal e.g. FM, either swamps the wanted signal or drives the affected circuits out of their normal operating range such that the received audio or data is severely attenuated or muted."
     },
     {
         key: "6b.2",
@@ -3232,7 +3640,7 @@ const syllabusItems = [
         key: "6c.2",
         level: "full",
         title: "Routes of entry",
-        text: "Understand that many TV mast-head amplifiers are wide band devices and can suffer from cross- modulation and overload causing intermodulation, blocking and may also overload the TV."
+        text: "Understand that many TV mast-head amplifiers are wide band devices and can suffer from cross-modulation and overload, causing intermodulation, blocking and may also overload the TV."
     },
     {
         key: "6c.3",
@@ -3250,7 +3658,7 @@ const syllabusItems = [
         key: "6c.3",
         level: "full",
         title: "Routes of entry",
-        text: "Understand that television receivers and most broadcast radio receivers employ superheterodyne circuits and recall some typical frequencies used in radio and television receivers: (1) Medium Wave radio broadcast 526 - 1606kHz (2) VHF FM radio broadcast 87.5 - 108MHz(3) VHF DAB radio broadcast 174 - 230MHz (4) TV broadcast 470 - 694MHz (5) Radio IFs typically 455 - 500kHz and 10.7MHz. Note: Current design digital TV receivers use a variety of Intermediate frequencies between 4 and 39MHz."
+        text: "Understand that television receivers and most broadcast radio receivers employ superheterodyne circuits and recall some typical frequencies used in radio and television receivers: (1) Medium Wave radio broadcast 526-1606kHz (2) VHF FM radio broadcast 87.5-108MHz (3) VHF DAB radio broadcast 174-230MHz (4) TV broadcast 470-694MHz (5) Radio IFs typically 455-500kHz and 10.7MHz. Note: Current design digital TV receivers use a variety of Intermediate frequencies between 4-39MHz."
     },
     {
         key: "6d.1",
@@ -3292,7 +3700,7 @@ const syllabusItems = [
         key: "6d.1",
         level: "full",
         title: "Filtering and remedial measures",
-        text: "Understand the use of high, low, band pass and band stop(notch) filters of L, T and π configuration including coaxial stubs as notch filters or traps, in improving the immunity of affected devices."
+        text: "Understand the use of high, low, band pass and band stop (notch) filters of L, T and π configuration including coaxial stubs as notch filters or traps, in improving the immunity of affected devices."
     },
     {
         key: "6d.1",
@@ -3322,7 +3730,7 @@ const syllabusItems = [
         key: "6d.2",
         level: "full",
         title: "Filtering and remedial measures",
-        text: "Identify a typical circuit of a braid breaking filter and a combined high pass/ braid breaking filter."
+        text: "Identify a typical circuit of a braid breaking filter and a combined high pass/braid breaking filter."
     },
     {
         key: "6d.2",
@@ -3563,7 +3971,7 @@ const syllabusItems = [
         level: "full",
         title: "Good operating practices and procedures ",
         text: "Understand the reasons why some stations may use split Tx and Rx frequencies within a frequency band.",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7a.2",
@@ -3654,7 +4062,7 @@ const syllabusItems = [
         level: "foundation",
         title: "Good operating practices and procedures ",
         text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7a.6",
@@ -3727,7 +4135,7 @@ const syllabusItems = [
         level: "full",
         title: "Band plans",
         text: "Identify items on a typical band-plan (e.g. centre of activity, band width and recommended modes). Note: Questions will be limited to the 5MHz (60m) and 472kHz (600m) bands. A copy of the relevant band plans will be available during the examination but may not be ones in current use. Reference Booklets containing examination band plans are available on the RSGB web site",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7b.2",
@@ -3758,7 +4166,7 @@ const syllabusItems = [
         level: "full",
         title: "Band plans",
         text: "Recall that band plans in other countries and IARU regions may not align with the UK band plan.",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7c.1",
@@ -3914,38 +4322,38 @@ const syllabusItems = [
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
-        text: "Understand the requirements for operation by individual UK Licensees abroad under the CEPT Recommendation T/R 61-01 and T/R 61-02.",
-        weeks: "1"
+        text: "Understand the requirements for operation by individual UK Licensees abroad, under the CEPT Recommendation T/R 61-01 and T/R 61-02.",
+        weeks: ["1"]
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
         text: "Understand this facility does not extend to club or reciprocal licences.",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
         text: "Understand the purpose and function of the CEPT Harmonised Amateur Radio Examination Certificate (HAREC).",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
         text: "Recall that many countries will offer reciprocal licences to UK amateurs with a HAREC Full licence and that operation is in accordance with the host country’s rules.",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "7h.2",
         level: "full",
         title: "CEPT and international",
-        text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. [[Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies which are both in your licence schedule and allocated internationally in that region.]]",
+        text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. ((Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies which are both in your licence schedule and allocated internationally in that region.))",
         location: "page 8",
         notes: "it is 1f.2 in the manual but the syllabus has been changed",
-        weeks: "1"
+        weeks: ["1"]
     },
     {
         key: "8a.1",
@@ -3993,7 +4401,7 @@ const syllabusItems = [
         key: "8a.2",
         level: "full",
         title: "Electricity",
-        text: "Recall that under severe fault conditions PME systems have the potential to cause fatal electric shocks and/ or fires in amateur radio stations."
+        text: "Recall that under severe fault conditions PME systems have the potential to cause fatal electric shocks and/or fires in amateur radio stations."
     },
     {
         key: "8a.2",
@@ -4395,7 +4803,7 @@ const syllabusItems = [
         key: "8f.4",
         level: "full",
         title: "Working mobile and portable",
-        text: "Understand that operating in temporary premises and/ or outdoors can introduce new hazards i.e. overhead power lines, inadequate electrical supplies, trailing cables, damp ground and excessive field strengths."
+        text: "Understand that operating in temporary premises and/or outdoors can introduce new hazards i.e. overhead power lines, inadequate electrical supplies, trailing cables, damp ground and excessive field strengths."
     },
     {
         key: "8f.4",
@@ -4461,13 +4869,13 @@ const syllabusItems = [
         key: "8f.6",
         level: "full",
         title: "Working mobile and portable",
-        text: "Recall that appropriate insurances should be obtained for all amateur radio activities but in particular where the public could be involved."
+        text: "Recall that appropriate insurances should be obtained for all amateur radio activities, but in particular where the public could be involved."
     },
     {
         key: "8f.7",
         level: "full",
         title: "Working mobile and portable",
-        text: "Understand the risks associated with the use of electrical generators, earthing, fuel stowage, refilling."
+        text: "Understand the risks associated with the use of electrical generators e.g. earthing, fuel stowage, refilling."
     },
     {
         key: "9a.1",
@@ -4557,7 +4965,7 @@ const syllabusItems = [
         key: "9a.5",
         level: "full",
         title: "Measurements",
-        text: "Understand the meaning of peak envelope power(PEP) of an SSB transmission and that it may be determined using a peak reading power meter or an oscilloscope and dummy load."
+        text: "Understand the meaning of Peak Envelope Power (PEP) of an SSB transmission, and that it may be determined using a peak reading power meter or an oscilloscope and dummy load."
     },
     {
         key: "9a.6",
@@ -4569,7 +4977,7 @@ const syllabusItems = [
         key: "9a.7",
         level: "full",
         title: "Measurements",
-        text: "Identify the circuit of an SWR meter using either a sense wire between the inner and outer conductors of a coaxial line or a current transformer and capacitive voltage tap."
+        text: "Identify the circuit of an SWR meter using either a sense wire between the inner and outer conductors of a coaxial line, or a current transformer and capacitive voltage tap."
     },
     {
         key: "9a.7",

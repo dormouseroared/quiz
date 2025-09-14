@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced Flashcard Answers (BACK) - V13</title>
+    <meta charset="UTF-8">
+    
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5cm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 3mm;
+            height: 100vh;
+            padding: 8mm;
+            box-sizing: border-box;
+        }
+        
+        .card {
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 5mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            page-break-inside: avoid;
+            box-sizing: border-box;
+            min-height: 65mm;
+            position: relative;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Only show cutting lines between cards */
+        .card:nth-child(odd) {
+            border-right: 2px dashed #95a5a6;
+            margin-right: -3mm;
+        }
+        
+        .card:nth-child(n+3) {
+            border-top: 2px dashed #95a5a6;
+            margin-top: -3mm;
+        }
+        
+        .card-header {
+            font-size: 9px;
+            color: #7f8c8d;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 3mm;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 1.5mm;
+        }
+        
+        .card-content {
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: left;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .answer {
+            color: #2c3e50;
+            font-size: 13px;
+            text-align: left;
+            display: block;
+            align-items: flex-start;
+            overflow-y: auto;
+            padding: 0;
+            line-height: 1.3;
+        }
+        
+        .formula {
+            font-family: 'Courier New', monospace;
+            background-color: #ecf0f1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px 0;
+            font-size: 16px;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        /* HTML formatting support for answers */
+        .answer ul {
+            text-align: left;
+            margin: 6px 0;
+            padding-left: 12px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
+        
+        .answer li {
+            margin: 2px 0;
+        }
+        
+        .answer p {
+            margin: 3px 0;
+            font-size: 13px;
+            line-height: 1.3;
+        }
+        
+        /* Compact spacing for better space utilization */
+        .answer p:first-child {
+            margin-top: 0;
+        }
+        
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .answer ul:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Keep general ul/li for any other use */
+        ul {
+            text-align: left;
+            margin: 0;
+            padding-left: 15px;
+            font-size: 11px;
+            line-height: 1.3;
+        }
+        
+        li {
+            margin: 2px 0;
+        }
+        
+        /* MathJax formulas should stay larger */
+        .MathJax {
+            font-size: 115% !important;
+        }
+        
+        /* Make strong text more prominent */
+        .answer strong {
+            font-weight: bold;
+            color: #1a252f;
+        }
+        
+        /* Smaller margins for better space usage */
+        .answer br + * {
+            margin-top: 2px;
+        }
+        
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+    </style>
+    
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\(', '\)']],
+                displayMath: [['$$', '$$'], ['\[', '\]']],
+                processEscapes: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+                ignoreHtmlClass: 'no-mathjax'
+            }
+        };
+    </script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        /* Mirror the grid horizontally for back-side printing */
+        .card-grid {
+            transform: scaleX(-1);
+        }
+        .card {
+            transform: scaleX(-1); /* Un-mirror the content */
+            background: #ffffff;
+            border-color: #3498db;
+        }
+        .card-content {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+<div class="card-grid">
+            <div class="card">
+                <div class="card-header">
+                    2a.1 (1/3) | Fundamental theory
+                </div>
+                <div class="card-content answer">
+                    <p>Most times it makes no difference, but sometimes it does: <p><ul><li>in a tuned circuit, variation could be critical to resonance</li><li>in a filter, it may change the cut-off frequency</li><li>in an amplifier, too much gain could result in harmonics</li></ul><p>For fine tuning there may be adjustment using fine tune trimmer capacitors, variable inductors or pre-set potentiometers</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2a.1 (2/3) | Fundamental theory
+                </div>
+                <div class="card-content answer">
+                    $$Tolerance = 10 \times 10^6 \times \frac{10}{10^6} = 10 \times 10 = 100Hz$$
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2a.1 (3/3) | Fundamental theory
+                </div>
+                <div class="card-content answer">
+                    brown $\pm$ 1%<br>red $\pm$ 2%<br>gold $\pm$ 5%<br>silver $\pm$ 10%<br>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2d.1 (1/4) | Reactive components
+                </div>
+                <div class="card-content answer">
+                    $$C = \frac{k \times A}{d}$$<br><ul><li>where C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2d.1 (2/4) | Reactive components
+                </div>
+                <div class="card-content answer">
+                    Capacitance <strong>halves</strong><br>$$C \propto \frac{1}{d}$$<br>Inverse relationship
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2d.1 (3/4) | Reactive components
+                </div>
+                <div class="card-content answer">
+                    Capacitance <strong>doubles</strong><br>$$C \propto A$$<br>Direct relationship
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2d.1 (4/4) | Reactive components
+                </div>
+                <div class="card-content answer">
+                    Yes it is, on the third row from the top. It should be written as $C = \frac{k \times A}{d}$ and not with A as a subscript
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2d.3 | Reactive components
+                </div>
+                <div class="card-content answer">
+                    The capacitor can break down and be destroyed. Effects range from a small pop to a big bang. Normally the voltage will be written on the capacitor, otherwise contact the supplier etc.
+                </div>
+            </div>
+        </div><div class="page-break"></div><div class="card-grid">
+            <div class="card">
+                <div class="card-header">
+                    2e.3 (1/2) | AC theory
+                </div>
+                <div class="card-content answer">
+                    $$X_C = \frac{1}{2{\pi}fC}$$
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    2e.3 (2/2) | AC theory
+                </div>
+                <div class="card-content answer">
+                    $$X_L = 2{\pi}fL$$
+                </div>
+            </div>
+        <div class="card"><div class="card-header">—</div><div class="card-content">—</div></div><div class="card"><div class="card-header">—</div><div class="card-content">—</div></div><div class="card"><div class="card-header">—</div><div class="card-content">—</div></div><div class="card"><div class="card-header">—</div><div class="card-content">—</div></div><div class="card"><div class="card-header">—</div><div class="card-content">—</div></div><div class="card"><div class="card-header">—</div><div class="card-content">—</div></div></div></body></html>
