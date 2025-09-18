@@ -1,4 +1,4 @@
-import syllabusItems from "./syllabusItems.js"
+import syllabusItems from "./syllabusItems-2025-09-18.js"
 
 // The term you want to search for
 const searchTerm = "AC theory"
