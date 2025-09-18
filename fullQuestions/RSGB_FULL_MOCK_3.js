@@ -151,7 +151,8 @@ const RSGB_FULL_MOCK_3 = [
         correct: 0,
         explanation: "",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "2f.1"
+        syllabus: "2f.1",
+        tagged: true
     },
     {
         source: "RSGB Full Mock 3 Q12",

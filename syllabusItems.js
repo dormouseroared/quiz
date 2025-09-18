@@ -3,7 +3,21 @@ const syllabusItems = [
         key: "0",
         level: "dummy",
         title: "for anything not having a syllabus code",
-        text: "This is probably EX308 or similar."
+        text: "This is probably EX308 or similar.",
+        flashcards: [
+            {
+                front: "<span style='color: blue;'>Mathjax reminders IN COLOUR!!:</span><ul><li>micro $\\mu$</li><li>dot instead of multiply $\\cdot$</li><li>degree experiment or fudge $^\\circ$</li><li></li></ul>",
+                back: "node .\\flashcard_generator_production_v02.js --keys=0 --levels=dummy",
+                status: "printed",
+                id: "fSzzMR6s"
+            },
+            {
+                front: "\n                <span style='color: purple;'>\n                Flashcard Generator Production changes v01 -> v02:\n                </span>\n                <ul>\n                <li>content 24pt -> 22pt</li>\n                <li>math 26pt -> 22pt</li>\n                <li>lists lineHeight 1.4 -> 1.2</li>\n                <li>printing includeIncomplete false -> true</li>\n                <li>flashcard_id_script conversion of syllabusItems, now have unique id on 51 flashcards, and the quotes around keys were not added. Just need to do the conversion with new cards.</li>\n                <li>id now showing in header, with bullets instead of vertical lines</li>\n                </ul>\n                ",
+                back: "",
+                status: "printed",
+                id: "VreluNd1"
+            }
+        ]
     },
     {
         key: "1a.1",
@@ -312,7 +326,7 @@ const syllabusItems = [
         text: "Recall that the unit of electrical potential is the Volt."
     },
     {
-        note: "start here to insert foundation and full page 17 of syllabus 1.6b",
+        "note": "start here to insert foundation and full page 17 of syllabus 1.6b",
         key: "2a.1",
         level: "intermediate",
         title: "Fundamental theory",
@@ -323,36 +337,42 @@ const syllabusItems = [
         level: "full",
         title: "Fundamental theory",
         text: "Understand component tolerances and the effects they may have in circuit operation.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What difference does a component's tolerance make?",
-                back: "...",
+                back: ".",
                 backImage: "week03-tolerance3.png",
                 status: "printed",
-                reference: "week03 tutorial slides p6-7"
+                reference: "week03 tutorial slides p6-7",
+                id: "xBH0y2JT"
             },
             {
                 front: "What does a 10MHz crystal with 10ppm tolerance mean?",
                 back: "$$Tolerance = 10 \\times 10^6 \\times \\frac{10}{10^6} = 10 \\times 10 = 100Hz$$",
                 backImage: "week03-tolerance1.png",
                 status: "printed",
-                reference: "week03 tutorial slides p6"
+                reference: "week03 tutorial slides p6",
+                id: "RzYcCfgi"
             },
             {
                 front: "What do the colours brown, red, gold and silver mean on a resistor as the last band, in terms of tolerance?",
                 back: "brown $\\pm$ 1%<br>red $\\pm$ 2%<br>gold $\\pm$ 5%<br>silver $\\pm$ 10%<br>",
                 backImage: "week03-tolerance2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p6"
+                reference: "week03 tutorial slides p6",
+                id: "PoFykgkR"
             },
             {
                 front: "Think about some of the ways that the effects of tolerance can be adjusted.",
                 back: "here are some examples",
                 backImage: "week03-tolerance4.png",
                 status: "printed",
-                reference: "week03 tutorial slides p7"
-            },
+                reference: "week03 tutorial slides p7",
+                id: "Bb7MwMw9"
+            }
         ]
     },
     {
@@ -396,7 +416,9 @@ const syllabusItems = [
         level: "full",
         title: "Power",
         text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power, given appropriate values. This may include the use of series/parallel formulae, Ohm’s Law and power. Equations include P = V²/R and P = I²×R ",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "2c.1",
@@ -493,40 +515,48 @@ const syllabusItems = [
         level: "full",
         title: "Reactive components",
         text: "Understand the factors influencing the Capacitance of a capacitor; Area and Separation of the plates, Permittivity of dielectric and formula $C = \\frac{k \\cdot A}{d}$",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What factors influence the capacitance of a capacitor, and what is the formula?",
                 back: "$$C = \\frac{k \\cdot A}{d}$$<br><ul><li>where C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul>",
                 status: "printed",
-                reference: "week03 tutorial slides p8"
+                reference: "week03 tutorial slides p8",
+                id: "kEyJnEIw"
             },
             {
                 front: "What happens to capacitance if distance between plates doubles?",
                 back: "Capacitance <strong>halves</strong><br>$$C \\propto \\frac{1}{d}$$<br>Inverse relationship",
                 status: "printed",
-                reference: "week03 tutorial slides p8"
+                reference: "week03 tutorial slides p8",
+                id: "WUxQUz1C"
             },
             {
                 front: "What happens to capacitance if plate area doubles?",
                 back: "Capacitance <strong>doubles</strong><br>$$C \\propto A$$<br>Direct relationship",
                 status: "printed",
-                reference: "week03 tutorial slides p8"
+                reference: "week03 tutorial slides p8",
+                id: "iOXUtAs9"
             },
             {
                 front: "Is the formula for Capacitance on the EX309 sheet, and do you know how to decode its incorrect printing?",
                 back: "Yes it is, on the third row from the top. It should be written as $C = \\frac{k \\times A}{d}$ and not with A as a subscript",
                 status: "printed",
-                reference: "week03 tutorial slides p8"
+                reference: "week03 tutorial slides p8",
+                id: "snGJZdyD"
             }
-        ],
+        ]
     },
     {
         key: "2d.1",
         level: "full",
         title: "Reactive components",
         text: "Recall that the Coulomb is the quantity of electricity, Q, given by current × time and that the charge on a capacitor is given by Q = V×C.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What is the unit for the quantity of electricity called, and how is it defined?",
@@ -534,7 +564,8 @@ const syllabusItems = [
                 back: "The Coulomb is the quantity of electricity or charge: $$Q = current \\times time$$ and if one Coulomb of charge passes a point every second, 1 Amp of current is flowing. Coulomb is the charge from $6 \\times 10^{18} electrons$ Q is not to be confused with Q as ameasure of selectiviity or magnification factor.",
                 backImage: "week03-coulomb-per-second.png",
                 status: "printed",
-                reference: "week03 tutorial slides p10-11"
+                reference: "week03 tutorial slides p10-11",
+                id: "erA72lhb"
             },
             {
                 front: "What is the formula for stored charge on a capacitor?",
@@ -542,8 +573,9 @@ const syllabusItems = [
                 back: ".",
                 backImage: "week03-capacitor-stored-charge.png",
                 status: "printed",
-                reference: "week03 tutorial slides p12"
-            },
+                reference: "week03 tutorial slides p12",
+                id: "PzSmDiD6"
+            }
         ]
     },
     {
@@ -557,14 +589,25 @@ const syllabusItems = [
         level: "full",
         title: "Reactive components",
         text: "Recall that different dielectrics are used for different purposes, e.g. air, ceramic, mica and polyester; and that with some dielectrics, losses increase with increasing frequency.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What sort of materials are used to make dielectrics, which ones tend to be lossy, and what causes losses to increase?",
                 back: ".",
                 backImage: "week03-dielectrics.png",
                 status: "printed",
-                reference: "week03 tutorial slides p13"
+                reference: "week03 tutorial slides p13",
+                id: "jP8IiNpC"
+            },
+            {
+                front: "Which capacitors are low-loss, stable and good for RF, normally around the low pf range?",
+                back: "The low dielectric constant version of the ceramic capacitor fits the bill. Not to be confused with the high dielectric version which is not suitable for higher RF frequencies.",
+                backImage: "week03-ceramic-dielectric.png",
+                status: "to do",
+                reference: "week03 tutorial slides p13",
+                id: "8t67KqZJ"
             }
         ]
     },
@@ -579,22 +622,26 @@ const syllabusItems = [
         level: "full",
         title: "Reactive components",
         text: "Understand that capacitors have a safe working voltage, also known as a breakdown voltage, and that they need to be used within that voltage.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What happens to a capacitor when its safe working voltage, or breakdown voltage, is exceeded?",
                 back: "The capacitor can break down and be destroyed. Effects range from a small pop to a big bang. Normally the voltage will be written on the capacitor, otherwise contact the supplier etc.",
                 backImage: "week03-safe-working-voltage-1.png",
                 status: "printed",
-                reference: "week03 tutorial slides p8"
+                reference: "week03 tutorial slides p8",
+                id: "E2bs6PI2"
             },
             {
                 front: "How do you identify the safe working voltage of a capacitor?",
-                back: "...",
+                back: ".",
                 backImage: "week03-safe-working-voltage-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p8"
-            },
+                reference: "week03 tutorial slides p8",
+                id: "xLIq4u_V"
+            }
         ]
     },
     {
@@ -632,29 +679,34 @@ const syllabusItems = [
         level: "full",
         title: "Reactive components",
         text: "Understand the term ‘self-inductance’ and recall that a ‘back EMF’ is produced as current flow changes in an inductor.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Revision mode: the inductor. Give a brief summary of what it does, what affects its value and the unit. Check formulas for inductors in series and in parallel.",
                 back: ".",
                 backImage: "week03-inductor-revision.png",
                 status: "printed",
-                reference: "week03 tutorial slides p16-17"
+                reference: "week03 tutorial slides p16-17",
+                id: "FOUzLyD4"
             },
             {
                 front: "what does self inductance mean and what is back EMF?",
                 back: ".",
                 backImage: "week03-back-emf-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p18"
+                reference: "week03 tutorial slides p18",
+                id: "OZVRnz0L"
             },
             {
                 front: "In what direction are the magnetic force when current flows through a wire?",
-                back: "...",
+                back: ".",
                 backImage: "week03-back-emf-1.png",
                 status: "printed",
-                reference: "week03 tutorial slides p18"
-            },
+                reference: "week03 tutorial slides p18",
+                id: "Djmqkm8X"
+            }
         ]
     },
     {
@@ -680,22 +732,26 @@ const syllabusItems = [
         level: "full",
         title: "Reactive components",
         text: "Understand the rise and fall of current in an RL circuit and that the time constant (Tau) t = L/R.  $\\Tau = \\frac{L}{R}$",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Why is there a time constant for inductors and capacitors",
-                back: "stuff",
+                back: ".",
                 backImage: "week03-time-constant.png",
                 status: "printed",
-                reference: "week03 tutorial slides p22"
+                reference: "week03 tutorial slides p22",
+                id: "PDGB_68f"
             },
             {
                 front: "What happens after one time constant has elapsed in an RL circuit, and also 5 time constants?",
                 back: ".",
                 backImage: "week03-inductor-time-constant.png",
                 status: "printed",
-                reference: "week03 tutorial slides p23"
-            },
+                reference: "week03 tutorial slides p23",
+                id: "DGnw4qzj"
+            }
         ]
     },
     {
@@ -703,14 +759,17 @@ const syllabusItems = [
         level: "full",
         title: "Reactive components",
         text: "Understand the rise and fall of voltage in an RC circuit and that the time constant (Tau) t = C×R.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What happens after one time constant has elapsed in an RC circuit, and also 5 time constants?",
                 back: ".",
                 backImage: "week03-capacitor-time-constant.png",
                 status: "printed",
-                reference: "week03 tutorial slides p23"
+                reference: "week03 tutorial slides p23",
+                id: "jJL0xDVW"
             }
         ]
     },
@@ -827,16 +886,29 @@ const syllabusItems = [
         level: "full",
         title: "AC theory",
         text: "Understand that current lags potential difference by 90° in an inductor and that current leads by 90° in a capacitor.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "From the intermediate course, we know that in circuits with pure Capacitance or pure Inductance, there is a 90 degree phase difference between voltage and current. Now we need to know which leads which...",
                 frontImage: "week03-civil-1.png",
                 back: ".",
                 backImage: "week03-civil-2.png",
-                status: "to do",
-                reference: "week03 tutorial slides p26"
+                status: "printed",
+                reference: "week03 tutorial slides p26",
+                id: "K3f1UiBo"
             },
+            {
+                front: "What is the phasor diagram for voltage in an AC series circuit consisting of a resistor, an inductor and a capacitor?",
+                frontImage: "week03-phasor-cap-ind-1.png",
+                back: "The amplitude of the source voltage across the components in the circuit is made up of the three component voltages, $V_R$, $V_L$ and $V_C$, with the current common to all three components. The vector diagrams will therefore have the <strong>current vector</strong> as their reference, with the three voltage vectors being plotted with respect to this reference.",
+                backImage: "week03-phasor-cap-ind-4.png",
+                status: "printed",
+                source: "https://www.electronics-tutorials.ws/accircuits/series-circuit.html",
+                reference: "week03 tutorial slides p28",
+                id: "UHcSkdoI"
+            }
         ]
     },
     {
@@ -844,43 +916,50 @@ const syllabusItems = [
         level: "full",
         title: "AC theory",
         text: "Understand the formulae for the reactance of a capacitor or inductor in terms of the frequency and component value.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "What is the formula for the reactance of a capacitor, what does the graph of Capacitive Reactance vs frequency look like, and can you find it in EX309?",
                 back: "$$X_C = \\frac{1}{2{\\pi}fC}$$",
                 backImage: "week03-reactance-capacitor-graph.png",
                 status: "printed",
-                reference: "week03 tutorial slides p24"
+                reference: "week03 tutorial slides p24",
+                id: "OB47yhKe"
             },
             {
-                front: "What is the formula for the reactance of an inductor, , what does the graph of Reactive Reactance vs frequency look like, and can you find it in EX309?",
+                front: "What is the formula for the reactance of an inductor, what does the graph of Reactive Reactance vs frequency look like, and can you find it in EX309?",
                 back: "$$X_L = 2{\\pi}fL$$",
                 backImage: "week03-reactance-inductor-graph.png",
                 status: "printed",
-                reference: "week03 tutorial slides p24"
+                reference: "week03 tutorial slides p24",
+                id: "cFx7kOmd"
             },
             {
                 front: "How do you get 'pi' to appear on your calculator?",
                 back: "It is two separate keystrokes. Press SHIFT then press EXP. Any problems use 3.1",
                 backImage: "",
                 status: "printed",
-                reference: "week03 tutorial slides p24"
+                reference: "week03 tutorial slides p24",
+                id: "BCHjk6FS"
             },
             {
                 front: "Calculator practice: calculate the INDUCTIVE REACTANCE of a $10\\mu H$ inductor at 7MHz. Hint: use the REPLAY button and its arrows to check the numbers have been entered properly.",
                 back: "$$X_L = 2{\\pi}fL$$",
                 backImage: "week03-ind-reactance-calc.png",
                 status: "printed",
-                reference: "week03 tutorial slides p25"
+                reference: "week03 tutorial slides p25",
+                id: "5lC4HSSk"
             },
             {
                 front: "Calculator practice: calculate the CAPACITIVE REACTANCE of a 22pF capacitor at 10MHz. Hint: use the brackets!",
                 back: "$$X_C = \\frac{1}{2{\\pi}fC}$$",
                 backImage: "week03-cap-reactance-calc.png",
                 status: "printed",
-                reference: "week03 tutorial slides p25"
-            },
+                reference: "week03 tutorial slides p25",
+                id: "t7V6D5iL"
+            }
         ]
     },
     {
@@ -888,13 +967,16 @@ const syllabusItems = [
         level: "full",
         title: "AC theory",
         text: "Calculate the unknown term given the other two.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "If the CAPACITIVE REACTANCE of a 22pF capacitor is x, what is the frequency?",
-                back: "",
-                status: "to do"
-            },
+                back: ".",
+                status: "to do",
+                id: "MlZ9XKFh"
+            }
         ]
     },
     {
@@ -920,7 +1002,9 @@ const syllabusItems = [
         level: "full",
         title: "AC theory",
         text: "Understand the use of capacitors for AC coupling (DC blocking) and decoupling AC signals (including RF bypass) to ground.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "How are capacitors being used in this diagram? Hint: look at the arrows. It won't have the description or the arrows on the real thing.",
@@ -928,7 +1012,8 @@ const syllabusItems = [
                 back: ".",
                 backImage: "week03-capacitor-coupling-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p14"
+                reference: "week03 tutorial slides p14",
+                id: "XHrZd8SU"
             },
             {
                 front: "What is happening in this diagram?",
@@ -936,8 +1021,35 @@ const syllabusItems = [
                 back: ".",
                 backImage: "week03-capacitor-decoupling-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p15"
+                reference: "week03 tutorial slides p15",
+                id: "GBtkMjhk"
             },
+            {
+                front: "What is RF bypass?",
+                frontImage: "week03-rf-bypass.png",
+                back: "The image shows the RF bypass being handled by a capacitor. The top oscilloscope image shows an audio signal being polluted with RF, making it very difficult to hear the audio. With the RF bypass capacitor, the RF is taken to ground, and the audio can be clearly heard.",
+                backImage: "week03-rf-bypass.png",
+                source: "https://www.youtube.com/watch?v=OILLayQjEjY",
+                status: "to do",
+                id: "UOpfSJqm"
+            },
+            {
+                front: "Why do we use multiple bypass capacitors on a power supply? Values like $1 \\mu F$, 100nF, 10nF and 1nF are common and actually 3-4 may be used to take signals down to earth.",
+                frontImage: "week03-multiple-bypass-capacitors.png",
+                back: "In an ideal world bypass wouldn't be needed, but connections etc have parasitic inductance, capacitance and resistance, that can affect where the power is going to, and be seen as 'ringing' on a trace. A bypass capacitor is normally placed just before the components that will use the voltage, so it's as clean as possible. It can also act as a local reservoir of current, taken from the capacitor. Multiple capacitor bypass can spread the resonant frequency range.",
+                backImage: "week03-no-bypassing-in-an-ideal-world-3.png",
+                source: "https://www.youtube.com/watch?v=BcJ6UdDx1vg",
+                status: "to do",
+                id: "V3fn3Qol"
+            },
+            {
+                front: "Here is a small piece of circuit with the capacitor connected between a 12V DC power supply and earth. Why would it be here?",
+                frontImage: "week03-capacitor-decoupling.png",
+                back: "Any time we want to take unwanted AC to ground, such as unwanted RF on a DC power supply, we can use a bypass or decoupling capacitor.",
+                source: "week 03 tutorial slides p15",
+                status: "to do",
+                id: "a52zD3NT"
+            }
         ]
     },
     {
@@ -969,24 +1081,28 @@ const syllabusItems = [
         level: "full",
         title: "AC theory",
         text: "Understand the use of inductors for DC decoupling (AC blocking).",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "How are inductors used in this diagram?",
-                frontImage: "week03-inductor-coupling-1.png",
+                frontImage: "week03-inductor-coupling-2.png",
                 back: ".",
-                backImage: "week03-inductor-coupling-2.png",
-                status: "to do",
-                reference: "week03 tutorial slides p19"
+                backImage: "week03-inductor-coupling-1.png",
+                status: "printed",
+                reference: "week03 tutorial slides p19",
+                id: "x8Fj1aqF"
             },
             {
                 front: "How are inductors used in this diagram?",
-                frontImage: "week03-inductor-decoupling-1.png",
+                frontImage: "week03-inductor-decoupling-2.png",
                 back: ".",
-                backImage: "week03-inductor-decoupling-2.png",
-                status: "to do",
-                reference: "week03 tutorial slides p20"
-            },
+                backImage: "week03-inductor-decoupling-1.png",
+                status: "printed",
+                reference: "week03 tutorial slides p20",
+                id: "-ybShg7h"
+            }
         ]
     },
     {
@@ -1012,20 +1128,24 @@ const syllabusItems = [
         level: "full",
         title: "AC theory",
         text: "Understand that impedance is a combination of resistance and reactance and apply the formula for impedance and current in a series CR or LR circuit.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "How is Impedance calculated in an RC or RL circuit?",
                 back: "$$\\text{Impedance   } Z = \\sqrt (R^2 + X^2)$$ This often means a two step calculation: <ul><li>work out reactance of inductor or capacitor from component values</li><li>then work out impedance</li></ul><br>Sanity check:<br>Z will always be more than either R or X but will be less than R + X. <br>for a 3,4,5 triangle, 5 is more than 3 or 4, but less than 3+4.",
                 status: "printed",
-                reference: "week03-tutorial slides p27"
+                reference: "week03-tutorial slides p27",
+                id: "7YKuHqny"
             },
             {
                 front: "What is the visual representation of Impedance calculated in an RC or RL circuit?",
                 back: "A right angled triangle.",
                 backImage: "week03-impedance-triangle.png",
                 status: "printed",
-                reference: "week03-tutorial slides p27"
+                reference: "week03-tutorial slides p27",
+                id: "Kd_v9eaD"
             },
             {
                 front: "What is the impedance of the circuit in the diagram?",
@@ -1033,7 +1153,8 @@ const syllabusItems = [
                 back: ".",
                 backImage: "week03-impedance-example-answer.png",
                 status: "printed",
-                reference: "week03-tutorial slides p28"
+                reference: "week03-tutorial slides p28",
+                id: "WM6LX6G-"
             },
             {
                 front: "What is the impedance of the circuit in the diagram?",
@@ -1041,15 +1162,8 @@ const syllabusItems = [
                 back: ".",
                 backImage: "week03-another-impedance-example-2.png",
                 status: "to do",
-                reference: "week03-tutorial slides p29"
-            },
-            {
-                front: "Really nasty question",
-                frontImage: "week03-impedance-nasty-question.png",
-                back: "get the worked example in the weekly instructions",
-                backImage: "",
-                status: "to do",
-                reference: "week03-tutorial slides p29"
+                reference: "week03-tutorial slides p29",
+                id: "D_qymJnT"
             },
             {
                 front: "Really nasty question",
@@ -1057,8 +1171,9 @@ const syllabusItems = [
                 back: "get the worked example in the weekly instructions",
                 backImage: "week03-really-nasty-question-1.png",
                 status: "to do",
-                reference: "week03-tutorial slides p29"
-            },
+                reference: "week03-tutorial slides p29",
+                id: "nODdsBIO"
+            }
         ]
     },
     {
@@ -1264,15 +1379,18 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Apply the formula for the resonant frequency of a tuned circuit to find values of f, L or C from given data.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Recap on tuned circuits. What do you remember? Which is the acceptor circuit, and which is the rejector circuit? I always remember PARALLEL for PEAK Z.",
                 frontImage: "week03-tuned-circuits-1.png",
-                back: "stuff",
+                back: ".",
                 backImage: "week03-tuned-circuits-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p30"
+                reference: "week03 tutorial slides p30",
+                id: "-cve6QhE"
             },
             {
                 front: "What is the resonant frequency formula that applies to both series and parallel tuned circuits?",
@@ -1280,7 +1398,8 @@ const syllabusItems = [
                 back: "$$f = \\frac{1}{2 \\pi \\sqrt{(LC)}}$$",
                 backImage: "week03-resonant-frequency-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p31"
+                reference: "week03 tutorial slides p31",
+                id: "80kswhtQ"
             },
             {
                 front: "How do you transpose the resonant frequency formula to solve for C or L?",
@@ -1288,15 +1407,17 @@ const syllabusItems = [
                 back: ".",
                 backImage: "week03-resonant-frequency-3.png",
                 status: "printed",
-                reference: "week03 tutorial slides p31"
+                reference: "week03 tutorial slides p31",
+                id: "Icrs9YHB"
             },
             {
                 front: "Calculate resonant freqency of 22pf capacitor with $10 \\mu H$ inductor",
                 back: ".",
                 backImage: "week03-resonant-frequency-4.png",
                 status: "printed",
-                reference: "week03 tutorial slides p32"
-            },
+                reference: "week03 tutorial slides p32",
+                id: "YlWQ4xfJ"
+            }
         ]
     },
     {
@@ -1316,29 +1437,34 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Recall the equivalent circuit of a crystal and that it exhibits series and parallel resonance.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Summarise what you know about crystals and how they're used.",
                 back: "See Full Manual pp29-30",
                 backImage: "week03-crystals-1.png",
                 status: "printed",
-                reference: "week03 tutorial slides p39"
+                reference: "week03 tutorial slides p39",
+                id: "s7y_uZJc"
             },
             {
                 front: "Identify a circuit with crystals in it",
                 back: "See Full Manual pp29-30",
                 backImage: "week03-crystals-2.png",
                 status: "printed",
-                reference: "week03 tutorial slides p39"
+                reference: "week03 tutorial slides p39",
+                id: "0S0usOAm"
             },
             {
                 front: "What does the specification of a crystal's performance look like?",
                 back: "See Full Manual pp29-30",
                 backImage: "week03-crystals-3.png",
                 status: "printed",
-                reference: "week03 tutorial slides p39"
-            },
+                reference: "week03 tutorial slides p39",
+                id: "knldQzuu"
+            }
         ]
     },
     {
@@ -1376,13 +1502,17 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Understand the concept of the magnification factor Q as applied to the voltages and currents in a resonant circuit.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
-                front: "magnification factor Q",
-                back: "stuff",
-                status: "to do",
-                reference: "week03 tutorial slides p34-35"
+                front: "In this circuit the resonant frequency is 5.3MHz and there is an RF supply of just 2mV across the series circuit. Q MAGNIFICATION hinges on the fact that when a series tuned circuit is at resonance, the reactances $X_L$ and $X_C$ are equal and opposite, so they cancel each other.",
+                frontImage: "week03-Q-magnification-example.png",
+                back: "Calculation steps: <ol><li>calculate $X_C = 1 / 2 \\pi f C = 500 \\Omega$ and $X_L = 2 \\pi fL = 500 \\Omega$</li><li>The combined reactance of $X_L$ and $X_C$ is zero, so that leaves only the circuit resistance to oppose the flow </li><li>$I = \\frac{2 mV}{2 \\Omega} = 1mA$</li><li>Both L and C will be passing the 1mA of current, so there will be a voltage across each reactive component of $1mA \\times 500 \\Omega = 500mV$</li><li>RADIO MAGIC: 250 times input voltage, and MAGNIFICATION Q at work</li><li>A shorter path to finding Magnification $Q = \\frac{X_L}{R}$ or $\\frac{X_C}{R} = \\frac{500}{2} = 250$</li></ol>",
+                status: "printed",
+                reference: "week03 weekly instructions-p7",
+                id: "hQ5vWwHT"
             }
         ]
     },
@@ -1391,13 +1521,16 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Recall that voltages and circulating currents in tuned circuits can be very high and understand the implications for component rating.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "voltages and circulating currents in tuned circuits can be very high...",
                 back: "stuff",
                 status: "to do",
-                reference: "week03 tutorial slides pxx"
+                reference: "week03 tutorial slides pxx",
+                id: "TuDkF5TC"
             }
         ]
     },
@@ -1406,12 +1539,15 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Apply the formula for Q factor given circuit component values.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Apply the formula for Q factor given circuit component values...",
                 back: "stuff",
-                status: "to do"
+                status: "to do",
+                id: "bSZoHasf"
             }
         ]
     },
@@ -1420,12 +1556,15 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Recall the definition of the half power point of resonance curves.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Recall the definition of the half power point of resonance curves...",
                 back: "stuff",
-                status: "to do"
+                status: "to do",
+                id: "ck-ql2VL"
             }
         ]
     },
@@ -1434,13 +1573,16 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
                 front: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve...",
                 back: "stuff",
                 status: "to do",
-                reference: "week03 tutorial slides p36"
+                reference: "week03 tutorial slides p36",
+                id: "pnYosChc"
             }
         ]
     },
@@ -1461,13 +1603,18 @@ const syllabusItems = [
         level: "full",
         title: "Tuned circuits and resonance",
         text: "Understand the meaning of dynamic resistance, RD, (that's R sub D) $R_D$.",
-        weeks: ["3"],
+        weeks: [
+            "3"
+        ],
         flashcards: [
             {
-                front: "Understand the meaning of dynamic resistance, RD, (that's R sub D) $R_D$...",
-                back: "stuff",
-                status: "to do",
-                reference: "week03 tutorial slides p38"
+                front: "Understand the meaning of dynamic resistance, $R_D$...",
+                frontImage: "week03-parallel-tuned-circuit.png",
+                back: "$R_D = //frac{L}{CR}$",
+                backImage: "week03-dynamic-resistance.png",
+                status: "printed",
+                reference: "week03 tutorial slides p38",
+                id: "gsL6QJgR"
             }
         ]
     },
@@ -3971,7 +4118,16 @@ const syllabusItems = [
         level: "full",
         title: "Good operating practices and procedures ",
         text: "Understand the reasons why some stations may use split Tx and Rx frequencies within a frequency band.",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ],
+        flashcards: [
+            {
+                front: "What is working split?",
+                back: "",
+                backImage: "week01-working-split.png"
+            }
+        ]
     },
     {
         key: "7a.2",
@@ -4062,13 +4218,22 @@ const syllabusItems = [
         level: "foundation",
         title: "Good operating practices and procedures ",
         text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
-        weeks: ["1"]
     },
     {
-        key: "7a.6",
+        key: "7a.8",
         level: "full",
         title: "Good operating practices and procedures ",
-        text: "Recall the advisability to carry out tests to ensure that the station is not causing undue interference to other radio users."
+        text: "Recall the advisability to carry out tests to ensure that the station is not causing undue interference to other radio users.",
+        weeks: [
+            "1"
+        ],
+        flashcards: [
+            {
+                front: "What does the Licence say about testing your radio equipment?",
+                back: "",
+                backImage: "week01-carry-out-tests.png"
+            }
+        ]
     },
     {
         key: "7b.1",
@@ -4135,7 +4300,46 @@ const syllabusItems = [
         level: "full",
         title: "Band plans",
         text: "Identify items on a typical band-plan (e.g. centre of activity, band width and recommended modes). Note: Questions will be limited to the 5MHz (60m) and 472kHz (600m) bands. A copy of the relevant band plans will be available during the examination but may not be ones in current use. Reference Booklets containing examination band plans are available on the RSGB web site",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ],
+        flashcards: [
+            {
+                front: "Which band plans do you need to be familiar with for the Full exam?",
+                back: "",
+                backImage: "week01-band-plans.png"
+            },
+            {
+                front: "Are you familiar with the 5MHz (60m) band plan?",
+                back: "",
+                backImage: "week01-60MHz-5m-band-plan.png"
+            },
+            {
+                front: "Are you familiar with the 5MHz (60m) notes to the band plan?",
+                back: "",
+                backImage: "week01-60MHz-5m-band-plan-notes.png"
+            },
+            {
+                front: "Are you familiar with the 472kHz (600m) band plan?",
+                back: "",
+                backImage: "week01-472kHz-600m-band-plan.png"
+            },
+            {
+                front: "Are you familiar with the 472kHz (600m) notes to the band plan?",
+                back: "",
+                backImage: "week01-472kHz-600m-band-plan-notes.png"
+            },
+            {
+                front: "Are you familiar with part one of the notes to the band plans?",
+                back: "",
+                backImage: "week01-part-one-notes-to-band-plans.png"
+            },
+            {
+                front: "Are you familiar with part two of the notes to the band plans?",
+                back: "",
+                backImage: "week01-part-two-notes-to-band-plans.png"
+            },
+        ]
     },
     {
         key: "7b.2",
@@ -4166,7 +4370,9 @@ const syllabusItems = [
         level: "full",
         title: "Band plans",
         text: "Recall that band plans in other countries and IARU regions may not align with the UK band plan.",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "7c.1",
@@ -4323,37 +4529,47 @@ const syllabusItems = [
         level: "full",
         title: "CEPT and international",
         text: "Understand the requirements for operation by individual UK Licensees abroad, under the CEPT Recommendation T/R 61-01 and T/R 61-02.",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
         text: "Understand this facility does not extend to club or reciprocal licences.",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
         text: "Understand the purpose and function of the CEPT Harmonised Amateur Radio Examination Certificate (HAREC).",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "7h.1",
         level: "full",
         title: "CEPT and international",
         text: "Recall that many countries will offer reciprocal licences to UK amateurs with a HAREC Full licence and that operation is in accordance with the host country’s rules.",
-        weeks: ["1"]
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "7h.2",
         level: "full",
         title: "CEPT and international",
         text: "Identify the 3 ITU regions and recall that the frequencies are given in the ITU Radio Regulations. ((Frequencies allocated to amateur radio differ in each region. Region 1: UK, most of Europe, Russia. Region 2: Americas. Region 3: China, Australia, etc. Not examined, but you must use only those frequencies which are both in your licence schedule and allocated internationally in that region.))",
-        location: "page 8",
-        notes: "it is 1f.2 in the manual but the syllabus has been changed",
-        weeks: ["1"]
+        "location": "page 8",
+        "notes": "it is 1f.2 in the manual but the syllabus has been changed",
+        weeks: [
+            "1"
+        ]
     },
     {
         key: "8a.1",
@@ -5122,7 +5338,7 @@ const syllabusItems = [
         level: "intermediate",
         title: "Soldering",
         text: "Recall the reason for tinning wires prior to soldering."
-    },
+    }
 ]
 
 export default syllabusItems
