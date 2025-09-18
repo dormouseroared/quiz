@@ -4125,8 +4125,7 @@ const syllabusItems = [
             {
                 front: "What is working split?",
                 back: "",
-                backImage: "week01-working-split.png",
-                id: "szDTJzZf"
+                backImage: "week01-working-split.png"
             }
         ]
     },
@@ -4218,7 +4217,7 @@ const syllabusItems = [
         key: "7a.8",
         level: "foundation",
         title: "Good operating practices and procedures ",
-        text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users."
+        text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
     },
     {
         key: "7a.8",
@@ -4232,8 +4231,7 @@ const syllabusItems = [
             {
                 front: "What does the Licence say about testing your radio equipment?",
                 back: "",
-                backImage: "week01-carry-out-tests.png",
-                id: "zxLUWGob"
+                backImage: "week01-carry-out-tests.png"
             }
         ]
     },
@@ -4309,45 +4307,38 @@ const syllabusItems = [
             {
                 front: "Which band plans do you need to be familiar with for the Full exam?",
                 back: "",
-                backImage: "week01-band-plans.png",
-                id: "NxaFs7Fw"
+                backImage: "week01-band-plans.png"
             },
             {
                 front: "Are you familiar with the 5MHz (60m) band plan?",
                 back: "",
-                backImage: "week01-60MHz-5m-band-plan.png",
-                id: "YDDrv0Rc"
+                backImage: "week01-60MHz-5m-band-plan.png"
             },
             {
                 front: "Are you familiar with the 5MHz (60m) notes to the band plan?",
                 back: "",
-                backImage: "week01-60MHz-5m-band-plan-notes.png",
-                id: "6b_9-GFQ"
+                backImage: "week01-60MHz-5m-band-plan-notes.png"
             },
             {
                 front: "Are you familiar with the 472kHz (600m) band plan?",
                 back: "",
-                backImage: "week01-472kHz-600m-band-plan.png",
-                id: "I1LmRd3r"
+                backImage: "week01-472kHz-600m-band-plan.png"
             },
             {
                 front: "Are you familiar with the 472kHz (600m) notes to the band plan?",
                 back: "",
-                backImage: "week01-472kHz-600m-band-plan-notes.png",
-                id: "ZR857NP1"
+                backImage: "week01-472kHz-600m-band-plan-notes.png"
             },
             {
                 front: "Are you familiar with part one of the notes to the band plans?",
                 back: "",
-                backImage: "week01-part-one-notes-to-band-plans.png",
-                id: "Ma9Ws_fK"
+                backImage: "week01-part-one-notes-to-band-plans.png"
             },
             {
                 front: "Are you familiar with part two of the notes to the band plans?",
                 back: "",
-                backImage: "week01-part-two-notes-to-band-plans.png",
-                id: "7Ny8NuJE"
-            }
+                backImage: "week01-part-two-notes-to-band-plans.png"
+            },
         ]
     },
     {
@@ -5348,6 +5339,6 @@ const syllabusItems = [
         title: "Soldering",
         text: "Recall the reason for tinning wires prior to soldering."
     }
-];
+]
 
-export default syllabusItems;
+export default syllabusItems

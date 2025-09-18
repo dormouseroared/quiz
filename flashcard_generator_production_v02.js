@@ -316,7 +316,7 @@ function generateHTMLTemplate(items, isFront) {
             margin: 0;
             padding: 0;
             font-size: ${config.fontSize.content}px !important;
-            line-height: 1.7;
+            line-height: 1.0;
         }
         
         .page {

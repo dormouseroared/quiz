@@ -4125,7 +4125,8 @@ const syllabusItems = [
             {
                 front: "What is working split?",
                 back: "",
-                backImage: "week01-working-split.png"
+                backImage: "week01-working-split.png",
+                id: "szDTJzZf"
             }
         ]
     },
@@ -4217,7 +4218,7 @@ const syllabusItems = [
         key: "7a.8",
         level: "foundation",
         title: "Good operating practices and procedures ",
-        text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
+        text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users."
     },
     {
         key: "7a.8",
@@ -4231,7 +4232,8 @@ const syllabusItems = [
             {
                 front: "What does the Licence say about testing your radio equipment?",
                 back: "",
-                backImage: "week01-carry-out-tests.png"
+                backImage: "week01-carry-out-tests.png",
+                id: "zxLUWGob"
             }
         ]
     },
@@ -4307,38 +4309,56 @@ const syllabusItems = [
             {
                 front: "Which band plans do you need to be familiar with for the Full exam?",
                 back: "",
-                backImage: "week01-band-plans.png"
+                backImage: "week01-band-plans.png",
+                id: "NxaFs7Fw"
             },
             {
                 front: "Are you familiar with the 5MHz (60m) band plan?",
                 back: "",
-                backImage: "week01-60MHz-5m-band-plan.png"
+                backImage: "week01-60MHz-5m-band-plan.png",
+                id: "YDDrv0Rc"
             },
             {
                 front: "Are you familiar with the 5MHz (60m) notes to the band plan?",
                 back: "",
-                backImage: "week01-60MHz-5m-band-plan-notes.png"
+                backImage: "week01-60MHz-5m-band-plan-notes.png",
+                id: "6b_9-GFQ"
             },
             {
                 front: "Are you familiar with the 472kHz (600m) band plan?",
                 back: "",
-                backImage: "week01-472kHz-600m-band-plan.png"
+                backImage: "week01-472kHz-600m-band-plan.png",
+                id: "I1LmRd3r"
             },
             {
                 front: "Are you familiar with the 472kHz (600m) notes to the band plan?",
                 back: "",
-                backImage: "week01-472kHz-600m-band-plan-notes.png"
+                backImage: "week01-472kHz-600m-band-plan-notes.png",
+                id: "ZR857NP1"
+            },
+            {
+                front: "Are you familiar with the 472kHz (600m) notes to the band plan?",
+                back: `R.R. 5.80B. The use of the frequency band 472-479 kHz in:
+                
+                <p><small>Algeria, Saudi Arabia, Azerbaijan, Bahrain, Belarus, China, Comoros, Djibouti, Egypt, United Arab Emirates, the Russian Federation, Iraq, Jordan, Kazakhstan, Kuwait, Lebanon, Libya, Mauritania, Oman, Uzbekistan, Qatar, Syrian Arab Republic,Kyrgyzstan, Somalia, Sudan, Tunisia and Yemen</small></p>
+                
+                <p><b>is limited to the maritime mobile and aeronautical radionavigation services</b>.</p>
+                
+                <p><small>The amateur service shall not be used in the above- mentioned countries in this frequency band, and this should be taken into account by the countries authorizing such use. (WRC 12)</small></p>`,
+                backImage: "",
             },
             {
                 front: "Are you familiar with part one of the notes to the band plans?",
                 back: "",
-                backImage: "week01-part-one-notes-to-band-plans.png"
+                backImage: "week01-part-one-notes-to-band-plans.png",
+                id: "Ma9Ws_fK"
             },
             {
                 front: "Are you familiar with part two of the notes to the band plans?",
                 back: "",
-                backImage: "week01-part-two-notes-to-band-plans.png"
-            },
+                backImage: "week01-part-two-notes-to-band-plans.png",
+                id: "7Ny8NuJE"
+            }
         ]
     },
     {
