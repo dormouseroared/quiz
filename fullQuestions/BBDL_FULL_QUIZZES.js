@@ -163,7 +163,8 @@ const BBDL_FULL_QUIZZES = [
         correct: 3,
         explanation: "‘a’ includes nothing about beacons. ‘b’ does not set maximum power limits and Table B applies to Intermediate Licence holders. Licence 6-13 sets a 25W limit for beacons that have their own callsign, making it the correct answer. Not in Syllabus but worthy of note if you ever want to run a beacon with more than 5W!",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "0",
+        tagged: true
     },
     {
         source: "BBDL QUIZ WEEK00 Q12",
@@ -778,8 +779,227 @@ const BBDL_FULL_QUIZZES = [
         lookup: "See page(s) 19-20 of the Full Licence text book",
         syllabus: "2b.1"
     },
+    {
+        source: "BBDL QUIZ WEEK03 Q01",
+        question: "If a capacitor in a tuned circuit has a wide tolerance, assuming the temperature is stable, what effect will the wide tolerance have on the resonant frequency?",
+        image: "",
+        options: [
+            "It could cause it to be high",
+            "It could cause it to be low",
+            "It could cause it to be high or low",
+            "It could cause it to drift",
+        ],
+        correct: 2,
+        explanation: `Tolerance is the amount something can vary above or below its stated value. ‘a’ and ‘b’ are correct but not a complete answer. Changing the value of a capacitor will not cause a tuned circuit to drift, so not ‘d’. It is worth noting that drift is the result of a change in temperature and Temperature effects and Tolerances are both mentioned in the Full Licence Manual.`,
+        lookup: "See page(s) 29-30 of the Full Licence text book",
+        syllabus: "2a.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q02",
+        question: "In a capacitor, the capacitance increases:",
+        image: "",
+        options: [
+            "With increased plate separation and increased plate size",
+            "With increased plate separation and decreased plate size",
+            "With decreased plate separation and increased plate size",
+            "With decreased plate separation and decreased plate size",
+        ],
+        correct: 2,
+        explanation: `The formula for capacitance is on the Formula Sheet, so don’t guess; look it up. That said, the EX309 version is not 100% correct; the top line should read ‘kA’ not ‘kA’. Plate separation distance ‘d’ is on the bottom line, so any increase in plate separation will reduce the capacitance, ruling out ‘a’ and ‘b’. Surface area ‘A’ is on the top line so that will need to increase in order to increase capacitance, so that makes ‘c’ the correct answer. If you are not sure, try plugging in some simple numbers and see what happens if you increase or decrease distance and area; the numbers do not matter, it is the direction of change that is being tested. `,
+        lookup: "See page(s) 21-22 of the Full Licence text book",
+        syllabus: "2d.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q03",
+        question: "Which of the following dielectrics would be MOST suitable for use in a VHF tuned circuit?",
+        image: "",
+        options: [
+            "polythene",
+            "polyester",
+            "low-k ceramic",
+            "tantalum electrolytic",
+        ],
+        correct: 2,
+        explanation: ` Electrolytics tend to be high values, so would not be found in VHF tuned circuits, ruling out ‘d’. Synthetic materials tend to be very lossy at VHF, so ‘a’ and ‘b’ are probably not the best choices. Ceramic is good for most frequencies, but the textbook makes the point that low-k ceramics are good for RF use, making ‘c’ the one to go for.`,
+        lookup: "See page(s) 22 of the Full Licence text book",
+        syllabus: "2d.2"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q04",
+        question: "The voltage marking on the side of an electrolytic capacitor is:",
+        image: "",
+        options: [
+            "The voltage required to bias it to allow current to flow",
+            "The AC voltage it will regulate",
+            "The voltage at which it can be used safely without breaking down",
+            "The maximum DC voltage it will conduct ",
+        ],
+        correct: 2,
+        explanation: `The markings on a capacitor show its value and safe working voltage, in other words, the voltage it will work at for ever and a day. ‘a’ is wrong because we do not bias capacitors. ‘b’ is wrong because whilst some capacitors smooth DC, they do not regulate. ‘d’ is wrong because capacitors do not conduct DC.`,
+        lookup: "See page(s) 22 of the Full Licence text book",
+        syllabus: "2d.3"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q05",
+        question: "A capacitor can be used to:",
+        image: "",
+        options: [
+            "block both alternating current (AC) and direct current (DC)",
+            "allow both alternating current (AC) and direct current (DC) to pass through",
+            "decouple alternating current (AC) and allow direct current (DC) to pass through",
+            "decouple alternating current (AC) and block direct current (DC)",
+        ],
+        correct: 3,
+        explanation: `A capacitor passes AC but blocks DC. When a capacitor couples AC to ground, it is known as decoupling. So, ‘a’, ‘b’ and ‘c’ are all wrong.‘d’is the correct answer.`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2e.4"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q06",
+        question: "A ‘back EMF’ can be described as:",
+        image: "",
+        options: [
+            "the terminal voltage of a battery when connected with reverse polarity",
+            "the RF energy radiated from the rear of a Yagi antenna",
+            "the electromotive force released from a charged capacitor",
+            "the opposition to increasing current flow through an inductor",
+        ],
+        correct: 3,
+        explanation: `Back EMF is a phenomenon specific to inductors (coils). The act of passing current through the inductors generates a magnetic field which in turn induces a current into the coil, but with reverse polarity, that electromotive force is the ‘back EMF’. That makes ‘d’ the correct answer `,
+        lookup: "See page(s) 23 of the Full Licence text book",
+        syllabus: "2d.4"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q07",
+        question: "An inductor can be used to:",
+        image: "",
+        options: [
+            "Allow AC to pass and to block DC",
+            "Allow RF signals to pass whilst attenuating AF signals",
+            "Prevent RF signals from a semiconductor circuit entering its DC supply",
+            "Prevent DC from passing from the supply rail to a semiconductor circuit",
+        ],
+        correct: 2,
+        explanation: `‘a’ describes a capacitor, not an inductor, so not that one. ‘b’ is unlikely as the reactance of an inductor increases with frequency, so it will oppose RF current flow way more than AF current, so that is wrong. ‘c’ appears to describe the action of an RF choke in the DC supply to an amplifier, so that looks good. ‘d’ is wrong as the semiconductor device would not be very active without a DC supply. `,
+        lookup: "See page(s) 27 of the Full Licence text book",
+        syllabus: "2e.5"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q08",
+        question: "If an inductor of 5uH is connected in series with a 22 ohm resistor, and a DC supply connected, how long will it take for the maximum current to be flowing?",
+        image: "",
+        options: [
+            "227 ns",
+            "4.4 Ms",
+            "1.136 µs",
+            " 22 Ms",
+        ],
+        correct: 2,
+        explanation: ` Maximum current will be flowing at t x 5 where t is the Time Constant. See the Formula sheet for the Time Constant formula t=L/R. So t= 5 µH/22 ohms = 0.227 µ seconds. Constant current will be at five times this which is 1.136 µ sec.`,
+        lookup: "See page(s) 23-24 of the Full Licence text book",
+        syllabus: "2d.7"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q09",
+        question: "Which one of the following statements is correct?",
+        image: "",
+        options: [
+            "Current leads the potential difference in a capacitor and lags the p.d. in an inductor",
+            "Current leads the potential difference in a capacitor and leads the p.d. in an inductor",
+            "Current lags the potential difference in a capacitor and leads the p.d. in an inductor",
+            "Current lags the potential difference in a capacitor and lags the p.d. in an inductor",
+        ],
+        correct: 0,
+        explanation: `First point to note is that Voltage is more correctly known as potential difference (p.d.). Secondly, remember the CIVIL memory aid? In a capacitor (C), current (I) leads potential difference (V), whereas V leads I in an inductor (L), making ‘a’ correct. PROBABLY BEST TO WRITE CIVIL OUT AND LABEL C AS CAPACITOR AND L AS INDUCTOR LIKE C-IV AND L-VI TO AVOID CONFUSION IN THE HEAT OF THE MOMENT`,
+        lookup: "See page(s) 25 of the Full Licence text book",
+        syllabus: "2e.3"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q10",
+        question: "What is the capacitive reactance of a 1µF capacitor at 100 kHz?",
+        image: "",
+        options: [
+            "0.62 Ohm",
+            "1.59 Ohm",
+            "3.14 Ohm",
+            "6.28 Ohm",
+        ],
+        correct: 1,
+        explanation: `A fairly straightforward calculation using $X_C$ = 1/2πfC,with calculator keystrokes etc in the quiz worked answers.`,
+        lookup: "See page(s) 25 of the Full Licence text book",
+        syllabus: "2e.3"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q11",
+        question: "If you have a 25μH inductor and you want to use it in a 30m tuned circuit, what value capacitor would you need?",
+        image: "",
+        options: [
+            "10pF",
+            "10nF",
+            "100pF",
+            "100nF",
+        ],
+        correct: 0,
+        explanation: `First point to note is that 30m = 300/30 = 10MHz. Then some manipulation is required (or you do the ‘standard’ calculation 4 times, with calculator sequence in quiz worked answers, and strike lucky on the first go). The formula needs to be squared up and rearranged to show that:.
+        
+        $C = \\frac{1}{4 \\pi^2 f^2 L }$`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q12",
+        question: "A quartz crystal has two resonant frequencies. A crystal will only resonate on the frequency marked on its case if:",
+        image: "",
+        options: [
+            " it is used in the series or parallel configuration it was designed for",
+            "the case is NOT connected to an electrical ground point",
+            "the case marking observes the correct polarity",
+            "it is used in the correct crystal holder",
+        ],
+        correct: 0,
+        explanation: `Crystals will only oscillate on their intended frequency when they are used as intended; in either series or parallel configuration. Some constructors say all crystal cases must be grounded, others say it matters not, so no consensus for ‘b’. Crystals are not fussy which way round they are fitted, so polarity does not matter, making ‘c’ wrong, and not all crystals use holders, many are soldered directly on to the printed circuit board, so not ‘d’.`,
+        lookup: "See page(s) 29-30 of the Full Licence text book",
+        syllabus: "2h.2"
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q13",
+        question: "What is the Q of a tuned circuit comprising a 5µH inductor with a DC resistance of 0.5Ω and a capacitor of 200pF at its resonant frequency?",
+        image: "",
+        options: [
+            "5",
+            "31.4",
+            "157",
+            "314",
+        ],
+        correct: 3,
+        explanation: `Use $f = \\frac{1}{2 \\pi \\sqrt{LC}}$ to find resonant frequency (=5MHz), then you can work out Q using the formula Q = 2πfL/R, $Q = \\frac{2 \\pi f L}{R}$, only because the Inductor version is a bit easier than the Capacitor version. 
+        <br><br> 
+        
+        $Q = \\frac{2 \\cdot \\pi \\cdot 5 \\cdot 10^6 \\cdot 5 \\cdot 10^{-6}}{0.5} = 314$ 
+        
+        <br><br>No key strokes provided this time; see if you can work it out for yourself, and if you get stuck, ask your tutor.`,
+        lookup: "See page(s) 28 of the Full Licence text book",
+        syllabus: "2h.4",
+        tagged: true
+    },
+    {
+        source: "BBDL QUIZ WEEK03 Q14",
+        question: "What is the dynamic resistance of a parallel tuned circuit, comprising a 5µH inductor with a DC resistance of 0.5Ω and a capacitor of 200pF ?",
+        image: "",
+        options: [
+            "0.5Ω",
+            "500Ω",
+            "50kΩ",
+            "5MΩ",
+        ],
+        correct: 2,
+        explanation: `The formula to use is on the Formula Sheet, so look it up! You should find $R_D = \\frac{L}{CR}$ so a ‘simple’ matter of keying in the right numbers and the answer should be 50000 or 50kΩ. The book says it is not examined, but the meaning of dynamic resistance is in the syllabus, and the formula is on the EX309 formula sheet. Included here just in case!`,
+        lookup: "See page(s) 28 of the Full Licence text book",
+        syllabus: "2h.5",
+        tagged: true
+    },
     // {
-    //     source: "BBDL QUIZ WEEK02 Q01",
+    //     source: "BBDL QUIZ WEEK03 Q00",
     //     question: "",
     //     image: "",
     //     options: [
@@ -791,7 +1011,7 @@ const BBDL_FULL_QUIZZES = [
     //     correct: 9,
     //     explanation: ``,
     //     lookup: "See page(s) x of the Full Licence text book",
-    //     syllabus: "8"
+    //     syllabus: "2"
     // },
 ]
 
