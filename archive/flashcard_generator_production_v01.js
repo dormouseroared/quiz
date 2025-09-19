@@ -145,7 +145,7 @@ function debugLog(...args) {
 }
 
 // ---------- Load syllabus items ----------
-import syllabusItems from "./syllabusItems.js"
+import syllabusItems from "../syllabusItems.js"
 
 // ---------- Enhanced flashcard extraction with filtering ----------
 console.log('🚀 FLASHCARD GENERATOR PRODUCTION STARTING...')
