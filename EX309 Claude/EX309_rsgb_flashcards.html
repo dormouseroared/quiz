@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSGB Full License Flashcards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        
+        .btn-primary { background: #4CAF50; }
+        .btn-secondary { background: #2196F3; }
+        .btn-danger { background: #f44336; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        
+        .flashcard-container {
+            perspective: 1000px;
+            margin-bottom: 30px;
+        }
+        
+        .flashcard {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+        
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .card-front {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            color: #333;
+        }
+        
+        .card-back {
+            background: linear-gradient(145deg, #4CAF50, #45a049);
+            color: white;
+            transform: rotateY(180deg);
+        }
+        
+        .card-content {
+            max-width: 90%;
+        }
+        
+        .card-front h3 {
+            margin: 0 0 20px 0;
+            font-size: 1.2em;
+            color: #2196F3;
+        }
+        
+        .card-front .question {
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+        
+        .card-back .answer {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        
+        .progress {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .progress-bar {
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            height: 8px;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            background: #4CAF50;
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .stat {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+        
+        .category-filter {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            margin: 5px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active {
+            background: white;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RSGB Full License Exam Flashcards</h1>
+            <p>Click cards to flip • Use buttons to navigate</p>
+        </div>
+        
+        <div class="category-filter">
+            <button class="filter-btn active" onclick="filterCards('all')">All Topics</button>
+            <button class="filter-btn" onclick="filterCards('power')">Power & Measurements</button>
+            <button class="filter-btn" onclick="filterCards('bands')">Band Plans</button>
+            <button class="filter-btn" onclick="filterCards('regulations')">Regulations</button>
+            <button class="filter-btn" onclick="filterCards('technical')">Technical</button>
+        </div>
+        
+        <div class="progress">
+            <div>Card <span id="current">1</span> of <span id="total">30</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+        
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard" onclick="flipCard()">
+                <div class="card-face card-front">
+                    <div class="card-content">
+                        <h3 id="category">Power Measurements</h3>
+                        <div class="question" id="question">What is the difference between ERP and EIRP?</div>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="card-content">
+                        <div class="answer" id="answer">ERP = Effective Radiated Power (relative to half-wave dipole)<br>EIRP = Equivalent Isotropic Radiated Power (relative to isotropic antenna)<br><br>Conversion: EIRP = ERP × 1.64<br>Used in 600m band and some microwave bands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn btn-secondary" onclick="previousCard()">← Previous</button>
+            <button class="btn btn-primary" onclick="flipCard()">Flip Card</button>
+            <button class="btn btn-secondary" onclick="nextCard()">Next →</button>
+            <button class="btn btn-danger" onclick="shuffleCards()">Shuffle</button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div style="font-size: 1.5em; font-weight: bold;" id="correctCount">0</div>
+                <div>Correct</div>
+            </div>
+            <div class="stat">
+                <div style="font-size: 1.5em; font-weight: bold;" id="reviewCount">0</div>
+                <div>Review</div>
+            </div>
+            <div class="stat">
+                <div style="font-size: 1.5em; font-weight: bold;" id="streakCount">0</div>
+                <div>Streak</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const flashcards = [
+            {
+                category: "Power Measurements",
+                type: "power",
+                question: "What is the difference between ERP and EIRP?",
+                answer: "ERP = Effective Radiated Power (relative to half-wave dipole)<br>EIRP = Equivalent Isotropic Radiated Power (relative to isotropic antenna)<br><br>Conversion: EIRP = ERP × 1.64<br>Used in 600m band and some microwave bands"
+            },
+            {
+                category: "600m Band",
+                type: "bands",
+                question: "What are the power and bandwidth limits for the 600m band?",
+                answer: "Power: 5 Watts EIRP maximum<br>Bandwidth: 200Hz max (472-475 kHz, CW only)<br>500Hz max (475-479 kHz, CW & Digital)<br><br>Full License only, Secondary service"
+            },
+            {
+                category: "5MHz Band",
+                type: "bands",
+                question: "What special call sign rules apply when operating in 5MHz band nets?",
+                answer: "• Call sign when joining/leaving net<br>• NO call sign required for contacts within net<br>• Exception: Must give call sign when returning to speech after 15+ minutes of non-speech modes"
+            },
+            {
+                category: "Geographic Restrictions",
+                type: "regulations",
+                question: "What frequency is prohibited within 100km of London (Charing Cross)?",
+                answer: "431-432 MHz is completely prohibited within 100km of Charing Cross, London<br><br>Reference point: 51°30'30''N, 00°07'4''W"
+            },
+            {
+                category: "EMF Compliance",
+                type: "regulations",
+                question: "At what power level does EMF assessment become mandatory?",
+                answer: "EMF assessment required when transmitting >10 Watts EIRP or >6.1 Watts ERP<br><br>Must keep compliance records<br>Assessment needed before installation/modification"
+            },
+            {
+                category: "Sideband Usage",
+                type: "bands",
+                question: "Which sideband should be used below and above 10 MHz?",
+                answer: "Below 10 MHz: LSB (Lower Sideband)<br>Above 10 MHz: USB (Upper Sideband)<br><br>Exception: 5MHz band uses USB<br>Lowest LSB dial settings: 1843, 3603, 7043 kHz"
+            },
+            {
+                category: "Antenna Calculations",
+                type: "technical",
+                question: "What is the formula for calculating half-wave dipole length in meters?",
+                answer: "Length (m) = 143 / f(MHz)<br><br>Also: λ = 300 / f(MHz)<br>Quarter wave = 71.5 / f(MHz)<br><br>Where c = 3×10⁸ m/s"
+            },
+            {
+                category: "Repeater Power",
+                type: "regulations",
+                question: "What are the power limits for repeaters on different license levels?",
+                answer: "All licenses: ≤5W ERP (basic requirements)<br>Intermediate/Full: 5-25W ERP (needs RSGB call sign)<br><br>Frequency limit: ≥28 MHz only<br>Must close within 2 hours if required"
+            },
+            {
+                category: "Coordination",
+                type: "regulations",
+                question: "Which microwave band requires MOD and CAA coordination for all beacons/repeaters?",
+                answer: "1240-1325 MHz (23cm band)<br><br>ALL beacons, repeaters, gateways, and data stations need clearance from Ofcom after MOD+CAA coordination"
+            },
+            {
+                category: "Q Factor",
+                type: "technical",
+                question: "What is the formula for Q factor in a resonant circuit?",
+                answer: "Q = fr / bandwidth = XL / R = XC / R<br><br>Where:<br>fr = resonant frequency<br>XL = inductive reactance<br>XC = capacitive reactance<br>R = resistance"
+            },
+            {
+                category: "Airborne Limits",
+                type: "regulations",
+                question: "What are the power limits for airborne operation on HF bands?",
+                answer: "HF bands: 500mW EIRP maximum<br>Most VHF/UHF: Not permitted airborne<br><br>Applies to bands like 160m, 80m, 40m, 20m, 15m, 12m, 10m, 6m"
+            },
+            {
+                category: "SWR Calculation",
+                type: "technical",
+                question: "What is the relationship between SWR and reflection coefficient?",
+                answer: "SWR = (1 + |ρ|) / (1 - |ρ|)<br><br>Where ρ = reflection coefficient<br>Also: SWR = Vmax/Vmin = Imax/Imin"
+            },
+            {
+                category: "Regional Secondary Locators",
+                type: "regulations",
+                question: "When is a Regional Secondary Locator (RSL) mandatory?",
+                answer: "Mandatory: Intermediate licenses with call signs beginning with '2'<br>Optional: All other licenses<br><br>England=E, Scotland=M, Wales=W, N.Ireland=I, IoM=D, Jersey=J, Guernsey=U"
+            },
+            {
+                category: "Shared Site Exemption",
+                type: "regulations",
+                question: "What are the three conditions for Shared Site Exemption in EMF compliance?",
+                answer: "1. Combined power <100W EIRP (61W ERP) in any direction, OR<br>2. EMF levels <5% of ICNIRP limits, OR<br>3. Antenna gain ≥29 dBi with fixed beam"
+            },
+            {
+                category: "Resonant Frequency",
+                type: "technical",
+                question: "What is the formula for resonant frequency of an LC circuit?",
+                answer: "fr = 1 / (2π√(LC))<br><br>Where:<br>L = inductance (Henries)<br>C = capacitance (Farads)<br>π ≈ 3.14159"
+            },
+            {
+                category: "Time Constants",
+                type: "technical",
+                question: "What are the time constant formulas for RC and LR circuits?",
+                answer: "RC circuits: τ = CR<br>LR circuits: τ = L/R<br><br>Where τ (tau) is the time constant<br>After 5τ, circuit is ~99% charged/discharged"
+            },
+            {
+                category: "Beacon Exclusions",
+                type: "regulations",
+                question: "What are the common 50km exclusion zones for unattended beacons?",
+                answer: "Common exclusion points:<br>• SK 985640 (Fylingdales)<br>• TA 012869 (Bempton)<br>• SS 206127 (Portishead)<br>• SE 202577 (Menwith Hill)<br><br>Many bands above 1GHz affected"
+            },
+            {
+                category: "Reactance Formulas",
+                type: "technical",
+                question: "What are the formulas for inductive and capacitive reactance?",
+                answer: "Inductive: XL = 2πfL<br>Capacitive: XC = 1/(2πfC)<br><br>At resonance: XL = XC<br>Net reactance: X = XL - XC"
+            },
+            {
+                category: "dB Conversions",
+                type: "technical",
+                question: "What are the key decibel conversion values?",
+                answer: "2:1 ratio = 3 dB<br>10:1 ratio = 10 dB<br>100:1 ratio = 20 dB<br><br>Power: dB = 10 log(P2/P1)<br>Voltage: dB = 20 log(V2/V1)"
+            },
+            {
+                category: "AM Bandwidth",
+                type: "bands",
+                question: "Where is AM permitted and what bandwidth restriction applies?",
+                answer: "AM permitted in 'All Modes' segments only<br>Bandwidth >2.7kHz acceptable<br><br>Must consider adjacent channel activity<br>5MHz band: 6kHz max bandwidth on suitable frequencies"
+            },
+            {
+                category: "Emergency Communications",
+                type: "regulations",
+                question: "When do EMF compliance requirements not apply?",
+                answer: "EMF limits don't apply during:<br>• Emergency assistance<br>• Emergency response/reporting<br>• Search and rescue<br>• Maritime emergency comms<br><br>Must be in vicinity of emergency"
+            },
+            {
+                category: "Remote Control",
+                type: "regulations",
+                question: "What frequency restriction applies to amateur radio remote control links?",
+                answer: "Amateur radio control links must use frequencies >30 MHz<br><br>Other requirements:<br>• Links must be secure<br>• Must be able to terminate transmission<br>• License number displayed at remote site"
+            },
+            {
+                category: "Power Measurement",
+                type: "power",
+                question: "What is Peak Envelope Power (PEP)?",
+                answer: "PEP = Average power during one RF cycle at the peak of the modulation envelope<br><br>This is how all power measurements in the license are specified"
+            },
+            {
+                category: "Club Licenses",
+                type: "regulations",
+                question: "Who can operate unsupervised under a Full (Club) License?",
+                answer: "Unsupervised operation by:<br>• Full license holders with club permission<br><br>Supervised operation by:<br>• Anyone under Full license holder supervision<br><br>Club representative acts as license holder"
+            },
+            {
+                category: "Gateway Operation",
+                type: "regulations",
+                question: "What are the power limits and requirements for gateways?",
+                answer: "Power limit: 5W ERP<br><br>Requirements:<br>• Must minimize interference<br>• Close within 2 hours if required<br>• Only used by amateurs<br>• License holder remains responsible"
+            },
+            {
+                category: "ISM Bands",
+                type: "bands",
+                question: "Which amateur bands must accept interference from ISM users?",
+                answer: "Must accept ISM interference:<br>• 2400-2450 MHz<br>• 5755-5765 MHz<br>• 5820-5850 MHz<br>• 24.00-24.25 GHz<br><br>ISM = Industrial, Scientific, Medical"
+            },
+            {
+                category: "Impedance Calculation",
+                type: "technical",
+                question: "What is the formula for impedance in an AC circuit?",
+                answer: "Z = √(R² + X²)<br><br>Where:<br>Z = impedance (Ohms)<br>R = resistance (Ohms)<br>X = net reactance (XL - XC)"
+            },
+            {
+                category: "Coordination Thresholds",
+                type: "regulations",
+                question: "At what power level do 70cm repeaters/beacons need MOD coordination?",
+                answer: "430-440 MHz band:<br>>25W ERP requires MOD coordination<br>≤25W ERP: No coordination needed<br><br>Authorization >25W requires NoV (Notice of Variation)"
+            },
+            {
+                category: "RMS Values",
+                type: "technical",
+                question: "What is the relationship between RMS and peak values for sine waves?",
+                answer: "VRMS = Vpeak / √2<br>IRMS = Ipeak / √2<br><br>√2 ≈ 1.414<br>So: Peak = RMS × 1.414"
+            },
+            {
+                category: "Data Station Power",
+                type: "regulations",
+                question: "What are the power limits for data stations?",
+                answer: "Basic: ≤5W ERP<br>Enhanced: 5-25W ERP (needs RSGB call sign)<br><br>Enhanced power for Intermediate/Full licenses only<br>Must close within 2 hours if required"
+            }
+        ];
+        
+        let currentCardIndex = 0;
+        let isFlipped = false;
+        let correctAnswers = 0;
+        let reviewNeeded = 0;
+        let currentStreak = 0;
+        let filteredCards = [...flashcards];
+        
+        function updateCard() {
+            const card = filteredCards[currentCardIndex];
+            document.getElementById('category').textContent = card.category;
+            document.getElementById('question').innerHTML = card.question;
+            document.getElementById('answer').innerHTML = card.answer;
+            document.getElementById('current').textContent = currentCardIndex + 1;
+            document.getElementById('total').textContent = filteredCards.length;
+            
+            const progress = ((currentCardIndex + 1) / filteredCards.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            
+            // Reset flip state
+            document.getElementById('flashcard').classList.remove('flipped');
+            isFlipped = false;
+        }
+        
+        function flipCard() {
+            const flashcard = document.getElementById('flashcard');
+            flashcard.classList.toggle('flipped');
+            isFlipped = !isFlipped;
+        }
+        
+        function nextCard() {
+            currentCardIndex = (currentCardIndex + 1) % filteredCards.length;
+            updateCard();
+        }
+        
+        function previousCard() {
+            currentCardIndex = (currentCardIndex - 1 + filteredCards.length) % filteredCards.length;
+            updateCard();
+        }
+        
+        function shuffleCards() {
+            for (let i = filteredCards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [filteredCards[i], filteredCards[j]] = [filteredCards[j], filteredCards[i]];
+            }
+            currentCardIndex = 0;
+            updateCard();
+        }
+        
+        function filterCards(type) {
+            // Update active filter button
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (type === 'all') {
+                filteredCards = [...flashcards];
+            } else {
+                filteredCards = flashcards.filter(card => card.type === type);
+            }
+            
+            currentCardIndex = 0;
+            updateCard();
+        }
+        
+        // Keyboard controls
+        document.addEventListener('keydown', function(e) {
+            switch(e.key) {
+                case 'ArrowLeft':
+                    previousCard();
+                    break;
+                case 'ArrowRight':
+                case ' ':
+                    nextCard();
+                    break;
+                case 'Enter':
+                case 'ArrowUp':
+                case 'ArrowDown':
+                    flipCard();
+                    break;
+            }
+        });
+        
+        // Initialize
+        updateCard();
+        
+        // Update stats periodically (placeholder for now)
+        setInterval(() => {
+            document.getElementById('correctCount').textContent = correctAnswers;
+            document.getElementById('reviewCount').textContent = reviewNeeded;
+            document.getElementById('streakCount').textContent = currentStreak;
+        }, 1000);
+    </script>
+</body>
+</html>
