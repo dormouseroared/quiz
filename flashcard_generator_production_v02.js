@@ -501,9 +501,9 @@ function generateCardsHTML(items, isFront) {
 }
 
 function generateSingleCardHTML(item, isFront) {
-  // const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
-  // not enough space for the count x of y thing
-  const header = `${item.key} &bull; <small>${item.section}</small> &bull; <small>${item.title}</small> &bull; ${item.id}`
+  const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
+
+  const header = `${item.key}${cardIndicator} &bull; <small>${item.section}</small> &bull; <small>${item.title}</small> &bull; ${item.id}`
 
   const content = isFront ? (item.question || '') : (item.answer || '')
   const imageKey = isFront ? 'frontImage' : 'backImage'
