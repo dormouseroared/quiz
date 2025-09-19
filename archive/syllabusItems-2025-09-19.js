@@ -1610,20 +1610,12 @@ const syllabusItems = [
             {
                 front: "Understand the meaning of dynamic resistance, $R_D$...",
                 frontImage: "week03-parallel-tuned-circuit.png",
-                back: "$$R_D = \\frac{L}{CR}$$",
+                back: "$R_D = //frac{L}{CR}$",
                 backImage: "week03-dynamic-resistance.png",
                 status: "printed",
                 reference: "week03 tutorial slides p38",
                 id: "gsL6QJgR"
-            },
-            {
-                front: "In this example, the inductor is $5 \\mu H$, the capacitor is 200pF and the resistor is $0.5 \\Omega$. Now calculate $R_D$, the dynamic resistance:",
-                frontImage: "week03-parallel-tuned-circuit.png",
-                back: "$$R_D = \\frac{L}{CR}$$<br>Putting everything into the formula, we get $R_D = 50 k \\Omega $",
-                backImage: "",
-                status: "to do",
-                reference: "week03 tutorial slides p38",
-            },
+            }
         ]
     },
     {
@@ -4345,10 +4337,15 @@ const syllabusItems = [
                 id: "ZR857NP1"
             },
             {
-                front: "Are you familiar with the 472kHz (600m) notes to the band plan, now in text you can actually read without a microscope?",
-                back: "R.R. 5.80B. The use of the frequency band 472-479 kHz in:<p><small>Algeria, Saudi Arabia, Azerbaijan, Bahrain, Belarus, China, Comoros, Djibouti, Egypt, United Arab Emirates, the Russian Federation, Iraq, Jordan, Kazakhstan, Kuwait, Lebanon, Libya, Mauritania, Oman, Uzbekistan, Qatar, Syrian Arab Republic,Kyrgyzstan, Somalia, Sudan, Tunisia and Yemen</small></p><p><b>is limited to the maritime mobile and aeronautical radionavigation services</b>.</p><p><small>The amateur service shall not be used in the above mentioned countries in this frequency band, and this should be taken into account by the countries authorizing such use. (WRC 12)</small></p>",
+                front: "Are you familiar with the 472kHz (600m) notes to the band plan?",
+                back: `R.R. 5.80B. The use of the frequency band 472-479 kHz in:
+                
+                <p><small>Algeria, Saudi Arabia, Azerbaijan, Bahrain, Belarus, China, Comoros, Djibouti, Egypt, United Arab Emirates, the Russian Federation, Iraq, Jordan, Kazakhstan, Kuwait, Lebanon, Libya, Mauritania, Oman, Uzbekistan, Qatar, Syrian Arab Republic,Kyrgyzstan, Somalia, Sudan, Tunisia and Yemen</small></p>
+                
+                <p><b>is limited to the maritime mobile and aeronautical radionavigation services</b>.</p>
+                
+                <p><small>The amateur service shall not be used in the above- mentioned countries in this frequency band, and this should be taken into account by the countries authorizing such use. (WRC 12)</small></p>`,
                 backImage: "",
-                id: "HqLuZVQJ"
             },
             {
                 front: "Are you familiar with part one of the notes to the band plans?",
