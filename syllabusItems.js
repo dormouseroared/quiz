@@ -1365,19 +1365,19 @@ const syllabusItems = [
     {
         key: "2h.1",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that a series or parallel circuit of a capacitor and inductor together forms a tuned circuit."
     },
     {
         key: "2h.1",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall, using graphical methods, that at resonance the reactance of the capacitance will equal the reactance of the inductance, XC = XL."
     },
     {
         key: "2h.1",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Apply the formula for the resonant frequency of a tuned circuit to find values of f, L or C from given data.",
         weeks: [
             "3"
@@ -1423,19 +1423,19 @@ const syllabusItems = [
     {
         key: "2h.2",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that, at their resonant frequencies, series tuned circuits present a low impedance, whereas parallel tuned circuits present a high impedance."
     },
     {
         key: "2h.2",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Identify the response curves of impedance vs frequency for series and parallel resonant circuits."
     },
     {
         key: "2h.2",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall the equivalent circuit of a crystal and that it exhibits series and parallel resonance.",
         weeks: [
             "3"
@@ -1470,37 +1470,37 @@ const syllabusItems = [
     {
         key: "2h.2",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that crystals are manufactured for either series or parallel operation and will only be stable and correct on the marked frequency when used in the intended manner."
     },
     {
         key: "2h.3",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that the energy stored in the capacitor and inductor in a tuned circuit can transfer from one to the other at a particular frequency, known as the resonant frequency."
     },
     {
         key: "2h.3",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall how the resonant frequency depends on the value of capacitance and inductance. Note that candidates must know that increasing L or C reduces the resonant frequency and vice- versa. Knowledge of the resonant frequency formula is not required."
     },
     {
         key: "2h.4",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that selectivity of a tuned circuit is the ratio of the bandwidth of the circuit (that is the range of frequencies the circuit will accept) to the resonant frequency."
     },
     {
         key: "2h.4",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that the Q factor (Q-factor or Quality Factor) of a tuned circuit is an indication of the selectivity of the tuned circuit."
     },
     {
         key: "2h.4",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Understand the concept of the magnification factor Q as applied to the voltages and currents in a resonant circuit.",
         weeks: [
             "3"
@@ -1519,7 +1519,7 @@ const syllabusItems = [
     {
         key: "2h.4",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall that voltages and circulating currents in tuned circuits can be very high and understand the implications for component rating.",
         weeks: [
             "3"
@@ -1537,7 +1537,7 @@ const syllabusItems = [
     {
         key: "2h.4",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Apply the formula for Q factor given circuit component values.",
         weeks: [
             "3"
@@ -1554,7 +1554,7 @@ const syllabusItems = [
     {
         key: "2h.4",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall the definition of the half power point of resonance curves.",
         weeks: [
             "3"
@@ -1571,7 +1571,7 @@ const syllabusItems = [
     {
         key: "2h.4",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve.",
         weeks: [
             "3"
@@ -1589,19 +1589,19 @@ const syllabusItems = [
     {
         key: "2h.5",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Identify the circuits of simple low pass, high pass, band pass and band stop (notch) filters and their response curves."
     },
     {
         key: "2h.5",
         level: "intermediate",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Recall, using graphical methods, the concept of the cut-off frequency."
     },
     {
         key: "2h.5",
         level: "full",
-        title: "Tuned circuits and resonance",
+        title: "Tuned circuits & resonance",
         text: "Understand the meaning of dynamic resistance, RD, (that's R sub D) $R_D$.",
         weeks: [
             "3"
@@ -4110,13 +4110,13 @@ const syllabusItems = [
     {
         key: "7a.1",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand why one should listen on a frequency before calling and then ask if the frequency is in use."
     },
     {
         key: "7a.1",
         level: "full",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand the reasons why some stations may use split Tx and Rx frequencies within a frequency band.",
         weeks: [
             "1"
@@ -4133,97 +4133,97 @@ const syllabusItems = [
     {
         key: "7a.2",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall how to make a CQ call in SSB and FM modes."
     },
     {
         key: "7a.3",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand the need to move off the calling channel when on VHF/ UHF once contact is established."
     },
     {
         key: "7a.3",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand the meaning of Centre of Activity."
     },
     {
         key: "7a.3",
         level: "intermediate",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall common international call sign prefixes; EI(Eire), F(France), I(Italy), JA(Japan), PA(Netherlands), VE(Canada), VK(Australia), W(USA), ZL(New Zealand)."
     },
     {
         key: "7a.4",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall the meaning of the optional suffixes /A, /P, /M and /MM."
     },
     {
         key: "7a.5",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall the phonetic alphabet. "
     },
     {
         key: "7a.5",
         level: "intermediate",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall that there are awards available for achievements which include: working continents, countries, islands, prefixes, locator squares and that variations may include certain frequency bands or low power."
     },
     {
         key: "7a.5",
         level: "intermediate",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall that amateur radio contests require the exchange of information such as signal report, serial number and location."
     },
     {
         key: "7a.5",
         level: "intermediate",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall that contests often have sections for different bands, power levels and modes."
     },
     {
         key: "7a.6",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand the advisability and common practice of keeping a log."
     },
     {
         key: "7a.6",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand why UTC is used for logging time. "
     },
     {
         key: "7a.6",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall that a log should detail the following information: date, time, mode, call sign of station worked for QSL and contest purposes."
     },
     {
         key: "7a.7",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand that the transmission of music and the use of offensive or threatening language whilst on the air are unacceptable in amateur radio."
     },
     {
         key: "7a.7",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand how to respond to music or inappropriate language overheard or received from other stations."
     },
     {
         key: "7a.8",
         level: "foundation",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users."
     },
     {
         key: "7a.8",
         level: "full",
-        title: "Good operating practices and procedures ",
+        title: "Good operating practices ",
         text: "Recall the advisability to carry out tests to ensure that the station is not causing undue interference to other radio users.",
         weeks: [
             "1"
@@ -4349,12 +4349,14 @@ const syllabusItems = [
             },
             {
                 front: "Are you familiar with part one of the notes to the band plans?",
+                frontImage: "week01-notes-to-band-plans.png",
                 back: "",
                 backImage: "week01-part-one-notes-to-band-plans.png",
                 id: "Ma9Ws_fK"
             },
             {
                 front: "Are you familiar with part two of the notes to the band plans?",
+                frontImage: "week01-notes-to-band-plans.png",
                 back: "",
                 backImage: "week01-part-two-notes-to-band-plans.png",
                 id: "7Ny8NuJE"

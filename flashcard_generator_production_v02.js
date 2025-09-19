@@ -27,6 +27,7 @@ import puppeteer from 'puppeteer'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import section from "./section.js"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -123,7 +124,7 @@ function mergeDeep(target, source) {
 
 // Load and merge config
 let config = defaultConfig
-const configPath = path.join(__dirname, 'config.json')
+const configPath = path.join(__dirname, 'flashcard_generator_config.json')
 if (fs.existsSync(configPath)) {
   try {
     const userConf = JSON.parse(fs.readFileSync(configPath, 'utf8'))
@@ -189,8 +190,17 @@ filteredItems.forEach((item, itemIndex) => {
     debugLog(`Processing ${item.flashcards.length} flashcards for ${item.key}`)
 
     item.flashcards.forEach((card, index) => {
+
       const hasFront = !!(card.front && card.front.trim())
-      const hasBack = !!(card.back && card.back.trim())
+      const hasBack2 = !!(card.back && card.back.trim())
+
+      const hasBackImage = !!(card.backImage && card.backImage.trim())
+
+      const hasBack = hasBack2 || hasBackImage
+
+      // above is checking if a variable exists and isn't just empty
+      // hasBack2 or hasBackImage are merged into hasBack 
+      // so a card like that is not considered to be incomplete
 
       debugLog(`Card ${index + 1} - has front: ${hasFront}, has back: ${hasBack}`)
 
@@ -205,7 +215,8 @@ filteredItems.forEach((item, itemIndex) => {
           backImage: card.backImage,
           cardIndex: index + 1,
           totalCards: item.flashcards.length,
-          id: card.id
+          id: card.id,
+          section: section[item.key[0]].name.toUpperCase()
         })
         debugLog(`✅ Added flashcard ${item.key} (${index + 1}/${item.flashcards.length})`)
       } else if (config.printing.includeIncomplete) {
@@ -221,7 +232,8 @@ filteredItems.forEach((item, itemIndex) => {
           cardIndex: index + 1,
           totalCards: item.flashcards.length,
           incomplete: true,
-          id: card.id
+          id: card.id,
+          section: section[item.key[0]].name.toUpperCase()
         })
         incompleteCards++
         console.log(`⚠️ Added incomplete flashcard ${item.key} (${index + 1}/${item.flashcards.length})`)
@@ -489,8 +501,9 @@ function generateCardsHTML(items, isFront) {
 }
 
 function generateSingleCardHTML(item, isFront) {
-  const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
-  const header = `${item.key}${cardIndicator} &bull; ${item.title} &bull; id:${item.id}`
+  // const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
+  // not enough space for the count x of y thing
+  const header = `${item.key} &bull; <small>${item.section}</small> &bull; <small>${item.title}</small> &bull; ${item.id}`
 
   const content = isFront ? (item.question || '') : (item.answer || '')
   const imageKey = isFront ? 'frontImage' : 'backImage'
@@ -693,118 +706,4 @@ try {
     console.error('Stack trace:', error.stack)
   }
   process.exit(1)
-}
-
-// --------- Example syllabusItems.js structure ---------
-/*
-const syllabusItems = [
-  {
-    key: '2d.1',
-    level: 'full',
-    title: 'Reactive components',
-    text: 'Understanding capacitance factors...',
-    flashcards: [
-      {
-        front: 'What factors influence <strong>capacitance</strong>?',
-        back: `Permittivity (k), Area (A), Distance (d)<br><br>
-               Formula: $$C = \\frac{\\varepsilon A}{d}$$<br><br>
-               Where $\\varepsilon = k \\varepsilon_0$`,
-        frontImage: 'capacitor.jpg',     // optional
-        backImage: 'capacitor-formula.jpg' // optional
-      },
-      {
-        front: 'What happens if distance <em>doubles</em>?',
-        back: `Capacitance <strong>halves</strong><br><br>
-               <ul>
-                 <li>Inverse relationship: $C \\propto \\frac{1}{d}$</li>
-                 <li>Double distance = half capacitance</li>
-                 <li>Physical separation affects field strength</li>
-               </ul>`
-      }
-    ]
-  }
-];
-export default syllabusItems;
-
-// Enhanced config.json example:
-{
-  "fontSize": {
-    "content": 24,
-    "header": 18,
-    "math": 26
-  },
-  "lists": {
-    "lineHeight": 1.4,
-    "itemSpacing": "0.2em",
-    "indent": "1.5em"
-  },
-  "printing": {
-    "includeIncomplete": false,
-    "filters": {
-      "keys": ["2d.1", "2d.2"],
-      "levels": ["full"],
-      "excludeKeys": []
-    }
-  }
-}
-*/
-
-function buildFlashcardHTML(cards) {
-  return `
-    <html>
-      <head>
-        <style>
-          body {
-            margin: 0;
-            padding: 0;
-          }
-          .page {
-            width: 210mm;
-            height: 297mm;
-            position: relative;
-            page-break-after: always;
-          }
-          .half {
-            width: 210mm;
-            height: 148.5mm;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-          }
-          .card {
-            width: 130mm;   /* adjust card size as needed */
-            height: 90mm;
-            border: 1px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            box-sizing: border-box;
-            font-size: 14pt;
-            padding: 5mm;
-          }
-        </style>
-      </head>
-      <body>
-        ${cards.map((card, i) => {
-    if (i % 2 === 0) {
-      const card1 = cards[i]
-      const card2 = cards[i + 1] || null
-      return `
-              <div class="page">
-                <div class="half">
-                  <div class="card">${card1}</div>
-                </div>
-                <div class="half">
-                  ${card2 ? `<div class="card">${card2}</div>` : ""}
-                </div>
-              </div>
-            `
-    }
-    return ""
-  }).join("")}
-      </body>
-    </html>
-  `
 }

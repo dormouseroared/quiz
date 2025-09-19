@@ -1,0 +1,20 @@
+{
+  "fontSize": {
+    "content": 22,
+    "header": 18,
+    "math": 24
+  },
+  "lists": {
+    "lineHeight": 1.2,
+    "itemSpacing": "0.2em",
+    "indent": "1.5em"
+  },
+  "printing": {
+    "includeIncomplete": true,
+    "filters": {
+      "keys": [],
+      "levels": ["full"],
+      "excludeKeys": []
+    }
+  }
+}
