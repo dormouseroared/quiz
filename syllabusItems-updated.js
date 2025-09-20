@@ -326,7 +326,7 @@ const syllabusItems = [
         text: "Recall that the unit of electrical potential is the Volt."
     },
     {
-        note: "start here to insert foundation and full page 17 of syllabus 1.6b",
+        "note": "start here to insert foundation and full page 17 of syllabus 1.6b",
         key: "2a.1",
         level: "intermediate",
         title: "Fundamental theory",
@@ -338,12 +338,13 @@ const syllabusItems = [
         title: "Fundamental theory",
         text: "Understand component tolerances and the effects they may have in circuit operation.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Tolerance",
-                sequence: "000",
+                "subTitle": "Tolerance",
+                "sequence": "000",
                 front: "What difference does a component's tolerance make?",
                 back: "",
                 backImage: "week03-tolerance3.png",
@@ -352,8 +353,8 @@ const syllabusItems = [
                 id: "xBH0y2JT"
             },
             {
-                subTitle: "Tolerance",
-                sequence: "010",
+                "subTitle": "Tolerance",
+                "sequence": "010",
                 front: "What does a 10MHz crystal with 10ppm tolerance mean?",
                 back: "$$Tolerance = 10 \\times 10^6 \\times \\frac{10}{10^6} = 10 \\times 10 = 100Hz$$",
                 backImage: "week03-tolerance1.png",
@@ -362,8 +363,8 @@ const syllabusItems = [
                 id: "RzYcCfgi"
             },
             {
-                subTitle: "Tolerance",
-                sequence: "020",
+                "subTitle": "Tolerance",
+                "sequence": "020",
                 front: "What do the colours brown, red, gold and silver mean on a resistor as the last band, in terms of tolerance?",
                 back: "brown $\\pm$ 1%<br>red $\\pm$ 2%<br>gold $\\pm$ 5%<br>silver $\\pm$ 10%<br>",
                 backImage: "week03-tolerance2.png",
@@ -372,8 +373,8 @@ const syllabusItems = [
                 id: "PoFykgkR"
             },
             {
-                subTitle: "Tolerance",
-                sequence: "030",
+                "subTitle": "Tolerance",
+                "sequence": "030",
                 front: "Think about some of the ways that the effects of tolerance can be adjusted.",
                 back: "here are some examples",
                 backImage: "week03-tolerance4.png",
@@ -425,7 +426,9 @@ const syllabusItems = [
         title: "Power",
         text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power, given appropriate values. This may include the use of series/parallel formulae, Ohm’s Law and power. Equations include P = V²/R and P = I²×R ",
         weeks: [
-            "1", "3", "3A"
+            "1",
+            "3",
+            "3A"
         ]
     },
     {
@@ -524,12 +527,13 @@ const syllabusItems = [
         title: "Reactive components",
         text: "Understand the factors influencing the Capacitance of a capacitor; Area and Separation of the plates, Permittivity of dielectric and formula $C = \\frac{k \\cdot A}{d}$",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Capacitor",
-                sequence: "000",
+                "subTitle": "Capacitor",
+                "sequence": "000",
                 front: "What factors influence the capacitance of a capacitor, and what is the formula?",
                 back: "$$C = \\frac{k \\cdot A}{d}$$<br><ul><li>where C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul>",
                 status: "",
@@ -537,8 +541,8 @@ const syllabusItems = [
                 id: "kEyJnEIw"
             },
             {
-                subTitle: "Capacitor",
-                sequence: "010",
+                "subTitle": "Capacitor",
+                "sequence": "010",
                 front: "What happens to capacitance if distance between plates doubles?",
                 back: "Capacitance <strong>halves</strong><br>$$C \\propto \\frac{1}{d}$$<br>Inverse relationship",
                 status: "",
@@ -546,8 +550,8 @@ const syllabusItems = [
                 id: "WUxQUz1C"
             },
             {
-                subTitle: "Capacitor",
-                sequence: "020",
+                "subTitle": "Capacitor",
+                "sequence": "020",
                 front: "What happens to capacitance if plate area doubles?",
                 back: "Capacitance <strong>doubles</strong><br>$$C \\propto A$$<br>Direct relationship",
                 status: "",
@@ -555,8 +559,8 @@ const syllabusItems = [
                 id: "iOXUtAs9"
             },
             {
-                subTitle: "Capacitor",
-                sequence: "030",
+                "subTitle": "Capacitor",
+                "sequence": "030",
                 front: "Is the formula for Capacitance on the EX309 sheet, and do you know how to decode its incorrect printing?",
                 back: "Yes it is, on the third row from the top. It should be written as $$C = \\frac{k \\times A}{d}$$ and not with A as a subscript",
                 status: "",
@@ -575,8 +579,8 @@ const syllabusItems = [
         ],
         flashcards: [
             {
-                subTitle: "Coulomb",
-                sequence: "000",
+                "subTitle": "Coulomb",
+                "sequence": "000",
                 front: "What is the unit for the quantity of electricity called, and how is it defined?",
                 frontImage: "",
                 back: "The Coulomb is the quantity of electricity or charge: $$Q = current \\times time$$ and if one Coulomb of charge passes a point every second, 1 Amp of current is flowing. Coulomb is the charge from $6 \\times 10^{18} electrons$ Q is not to be confused with Q as ameasure of selectiviity or magnification factor.",
@@ -586,8 +590,8 @@ const syllabusItems = [
                 id: "erA72lhb"
             },
             {
-                subTitle: "Coulomb",
-                sequence: "000",
+                "subTitle": "Coulomb",
+                "sequence": "000",
                 front: "What is the formula for stored charge on a capacitor?",
                 frontImage: "week03-qi.png",
                 back: "",
@@ -597,8 +601,8 @@ const syllabusItems = [
                 id: "PzSmDiD6"
             },
             {
-                subTitle: "Coulomb",
-                sequence: "000",
+                "subTitle": "Coulomb",
+                "sequence": "000",
                 front: "REVISION: Q as a measure of CHARGE, the COULOMB<br>What is the definition of Q both in a wire, and on a capacitor?",
                 frontImage: "week03A-Q-measure-of-charge-1.png",
                 back: "",
@@ -608,8 +612,8 @@ const syllabusItems = [
                 id: "UHIISN1F"
             },
             {
-                subTitle: "Coulomb",
-                sequence: "000",
+                "subTitle": "Coulomb",
+                "sequence": "000",
                 front: "REVISION: What will the charge be on a $22 \\mu F$ capacitor, if it is connected to a 12 DC supply for several hours?",
                 frontImage: "week03A-Q-measure-of-charge-3.png",
                 back: "The 'several hours' allows adequate time for 5 time constants (Tau) to elapse and the capacitor to become fully charged.",
@@ -617,7 +621,7 @@ const syllabusItems = [
                 status: "",
                 reference: "week03A tutorial video 01:17:55",
                 id: "BHYJT6GX"
-            },
+            }
         ]
     },
     {
@@ -632,12 +636,13 @@ const syllabusItems = [
         title: "Reactive components",
         text: "Recall that different dielectrics are used for different purposes, e.g. air, ceramic, mica and polyester; and that with some dielectrics, losses increase with increasing frequency.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Dielectrics",
-                sequence: "000",
+                "subTitle": "Dielectrics",
+                "sequence": "000",
                 front: "What sort of materials are used to make dielectrics, which ones tend to be lossy, and what causes losses to increase?",
                 back: "",
                 backImage: "week03-dielectrics.png",
@@ -646,8 +651,8 @@ const syllabusItems = [
                 id: "jP8IiNpC"
             },
             {
-                subTitle: "Dielectrics",
-                sequence: "000",
+                "subTitle": "Dielectrics",
+                "sequence": "000",
                 front: "Which capacitors are low-loss, stable and good for RF, normally around the low pf range?",
                 back: "The low dielectric constant version of the ceramic capacitor fits the bill. Not to be confused with the high dielectric version which is not suitable for higher RF frequencies.",
                 backImage: "week03-ceramic-dielectric.png",
@@ -669,12 +674,13 @@ const syllabusItems = [
         title: "Reactive components",
         text: "Understand that capacitors have a safe working voltage, also known as a breakdown voltage, and that they need to be used within that voltage.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Capacitor",
-                sequence: "000",
+                "subTitle": "Capacitor",
+                "sequence": "000",
                 front: "What happens to a capacitor when its safe working voltage, or breakdown voltage, is exceeded?",
                 back: "The capacitor can break down and be destroyed. Effects range from a small pop to a big bang. Normally the voltage will be written on the capacitor, otherwise contact the supplier etc.",
                 backImage: "week03-safe-working-voltage-1.png",
@@ -683,8 +689,8 @@ const syllabusItems = [
                 id: "E2bs6PI2"
             },
             {
-                subTitle: "Capacitor",
-                sequence: "000",
+                "subTitle": "Capacitor",
+                "sequence": "000",
                 front: "How do you identify the safe working voltage of a capacitor?",
                 back: "",
                 backImage: "week03-safe-working-voltage-2.png",
@@ -730,12 +736,13 @@ const syllabusItems = [
         title: "Reactive components",
         text: "Understand the term ‘self-inductance’ and recall that a ‘back EMF’ is produced as current flow changes in an inductor.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Inductor",
-                sequence: "000",
+                "subTitle": "Inductor",
+                "sequence": "000",
                 front: "Revision mode: the inductor. Give a brief summary of what it does, what affects its value and the unit. Check formulas for inductors in series and in parallel.",
                 back: "",
                 backImage: "week03-inductor-revision.png",
@@ -744,8 +751,8 @@ const syllabusItems = [
                 id: "FOUzLyD4"
             },
             {
-                subTitle: "Inductor",
-                sequence: "000",
+                "subTitle": "Inductor",
+                "sequence": "000",
                 front: "what does self inductance mean and what is back EMF?",
                 back: "",
                 backImage: "week03-back-emf-2.png",
@@ -754,9 +761,8 @@ const syllabusItems = [
                 id: "OZVRnz0L"
             },
             {
-
-                subTitle: "Inductor",
-                sequence: "",
+                "subTitle": "Inductor",
+                "sequence": "",
                 front: "In what direction are the magnetic force when current flows through a wire?",
                 back: "",
                 backImage: "week03-back-emf-1.png",
@@ -790,12 +796,13 @@ const syllabusItems = [
         title: "Reactive components",
         text: "Understand the rise and fall of current in an RL circuit and that the time constant (Tau) t = L/R.  $\\Tau = \\frac{L}{R}$",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Time constant",
-                sequence: "000",
+                "subTitle": "Time constant",
+                "sequence": "000",
                 front: "Why is there a time constant for inductors and capacitors",
                 back: "",
                 backImage: "week03-time-constant.png",
@@ -804,8 +811,8 @@ const syllabusItems = [
                 id: "PDGB_68f"
             },
             {
-                subTitle: "Time constant",
-                sequence: "000",
+                "subTitle": "Time constant",
+                "sequence": "000",
                 front: "What happens after one time constant has elapsed in an RL circuit, and also 5 time constants?",
                 back: "",
                 backImage: "week03-inductor-time-constant.png",
@@ -825,8 +832,8 @@ const syllabusItems = [
         ],
         flashcards: [
             {
-                subTitle: "Time constant",
-                sequence: "000",
+                "subTitle": "Time constant",
+                "sequence": "000",
                 front: "What happens after one time constant has elapsed in an RC circuit, and also 5 time constants?",
                 back: "",
                 backImage: "week03-capacitor-time-constant.png",
@@ -950,12 +957,13 @@ const syllabusItems = [
         title: "AC theory",
         text: "Understand that current lags potential difference by 90° in an inductor and that current leads by 90° in a capacitor.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Phase difference",
-                sequence: "000",
+                "subTitle": "Phase difference",
+                "sequence": "000",
                 front: "From the intermediate course, we know that in circuits with pure Capacitance or pure Inductance, there is a 90 degree phase difference between voltage and current. Now we need to know which leads which...",
                 frontImage: "week03-civil-1.png",
                 back: "",
@@ -965,8 +973,8 @@ const syllabusItems = [
                 id: "K3f1UiBo"
             },
             {
-                subTitle: "Phase difference",
-                sequence: "010",
+                "subTitle": "Phase difference",
+                "sequence": "010",
                 front: "What is the phasor diagram for voltage in an AC series circuit consisting of a resistor, an inductor and a capacitor?",
                 frontImage: "week03-phasor-cap-ind-1.png",
                 back: "The amplitude of the source voltage across the components in the circuit is made up of the three component voltages, $V_R$, $V_L$ and $V_C$, with the current common to all three components. The vector diagrams will therefore have the <strong>current vector</strong> as their reference, with the three voltage vectors being plotted with respect to this reference.",
@@ -984,12 +992,13 @@ const syllabusItems = [
         title: "AC theory",
         text: "Understand the formulae for the reactance of a capacitor or inductor in terms of the frequency and component value.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Capacitive reactance",
-                sequence: "000",
+                "subTitle": "Capacitive reactance",
+                "sequence": "000",
                 front: "What is the formula for the reactance of a capacitor, what does the graph of Capacitive Reactance vs frequency look like, and can you find it in EX309?",
                 back: "$$X_C = \\frac{1}{2{\\pi}fC}$$",
                 backImage: "week03-reactance-capacitor-graph.png",
@@ -998,8 +1007,8 @@ const syllabusItems = [
                 id: "OB47yhKe"
             },
             {
-                subTitle: "Inductive reactance",
-                sequence: "000",
+                "subTitle": "Inductive reactance",
+                "sequence": "000",
                 front: "What is the formula for the reactance of an inductor, what does the graph of Reactive Reactance vs frequency look like, and can you find it in EX309?",
                 back: "$$X_L = 2{\\pi}fL$$",
                 backImage: "week03-reactance-inductor-graph.png",
@@ -1008,8 +1017,8 @@ const syllabusItems = [
                 id: "cFx7kOmd"
             },
             {
-                subTitle: "Hints and tips",
-                sequence: "900",
+                "subTitle": "Hints and tips",
+                "sequence": "900",
                 front: "How do you get 'pi' to appear on your calculator?",
                 back: "It is two separate keystrokes. Press SHIFT then press EXP. Any problems use 3.1",
                 backImage: "",
@@ -1018,8 +1027,8 @@ const syllabusItems = [
                 id: "BCHjk6FS"
             },
             {
-                subTitle: "Inductive reactance",
-                sequence: "200",
+                "subTitle": "Inductive reactance",
+                "sequence": "200",
                 front: "Calculator practice: calculate the INDUCTIVE REACTANCE of a $10\\mu H$ inductor at 7MHz. Hint: use the REPLAY button and its arrows to check the numbers have been entered properly.",
                 back: "$$X_L = 2{\\pi}fL$$",
                 backImage: "week03-ind-reactance-calc.png",
@@ -1028,8 +1037,8 @@ const syllabusItems = [
                 id: "5lC4HSSk"
             },
             {
-                subTitle: "Capacitive reactance",
-                sequence: "000",
+                "subTitle": "Capacitive reactance",
+                "sequence": "000",
                 front: "Calculator practice: calculate the CAPACITIVE REACTANCE of a 22pF capacitor at 10MHz. Hint: use the brackets!",
                 back: "$$X_C = \\frac{1}{2{\\pi}fC}$$",
                 backImage: "week03-cap-reactance-calc.png",
@@ -1045,12 +1054,13 @@ const syllabusItems = [
         title: "AC theory",
         text: "Calculate the unknown term given the other two.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Capacitive reactance",
-                sequence: "000",
+                "subTitle": "Capacitive reactance",
+                "sequence": "000",
                 front: "If the CAPACITIVE REACTANCE of a 22pF capacitor is 723 $\\Omega$, what is the frequency?",
                 back: "$$f = \\frac{1}{2 \\cdot \\pi \\cdot C \\cdot X_C} = \\frac{1}{2 \\times \\pi \\times 22 \\times 10^{-12} \\times 723} = 10MHz$$",
                 status: "",
@@ -1082,12 +1092,13 @@ const syllabusItems = [
         title: "AC theory",
         text: "Understand the use of capacitors for AC coupling (DC blocking) and decoupling AC signals (including RF bypass) to ground.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Capacitor uses",
-                sequence: "000",
+                "subTitle": "Capacitor uses",
+                "sequence": "000",
                 front: "How are capacitors being used in this diagram? Hint: look at the arrows. It won't have the description or the arrows on the real thing.",
                 frontImage: "week03-capacitor-coupling.png",
                 back: "",
@@ -1097,8 +1108,8 @@ const syllabusItems = [
                 id: "XHrZd8SU"
             },
             {
-                subTitle: "Capacitor uses",
-                sequence: "000",
+                "subTitle": "Capacitor uses",
+                "sequence": "000",
                 front: "What is happening in this diagram?",
                 frontImage: "week03-capacitor-decoupling-1.png",
                 back: "",
@@ -1108,8 +1119,8 @@ const syllabusItems = [
                 id: "GBtkMjhk"
             },
             {
-                subTitle: "Capacitor uses",
-                sequence: "000",
+                "subTitle": "Capacitor uses",
+                "sequence": "000",
                 front: "What is RF bypass?",
                 frontImage: "week03-rf-bypass.png",
                 back: "The image shows the RF bypass being handled by a capacitor. The top oscilloscope image shows an audio signal being polluted with RF, making it very difficult to hear the audio. With the RF bypass capacitor, the RF is taken to ground, and the audio can be clearly heard.",
@@ -1119,8 +1130,8 @@ const syllabusItems = [
                 id: "UOpfSJqm"
             },
             {
-                subTitle: "Capacitor uses",
-                sequence: "000",
+                "subTitle": "Capacitor uses",
+                "sequence": "000",
                 front: "Why do we use multiple bypass capacitors on a power supply? Values like $1 \\mu F$, 100nF, 10nF and 1nF are common and actually 3-4 may be used to take signals down to earth.",
                 frontImage: "week03-multiple-bypass-capacitors.png",
                 back: "In an ideal world bypass wouldn't be needed, but connections etc have parasitic inductance, capacitance and resistance, that can affect where the power is going to, and be seen as 'ringing' on a trace. A bypass capacitor is normally placed just before the components that will use the voltage, so it's as clean as possible. It can also act as a local reservoir of current, taken from the capacitor. Multiple capacitor bypass can spread the resonant frequency range.",
@@ -1130,8 +1141,8 @@ const syllabusItems = [
                 id: "V3fn3Qol"
             },
             {
-                subTitle: "Capacitor uses",
-                sequence: "000",
+                "subTitle": "Capacitor uses",
+                "sequence": "000",
                 front: "Here is a small piece of circuit with the capacitor connected between a 12V DC power supply and earth. Why would it be here?",
                 frontImage: "week03-capacitor-decoupling.png",
                 back: "Any time we want to take unwanted AC to ground, such as unwanted RF on a DC power supply, we can use a bypass or decoupling capacitor.",
@@ -1171,12 +1182,13 @@ const syllabusItems = [
         title: "AC theory",
         text: "Understand the use of inductors for DC decoupling (AC blocking).",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Inductor uses",
-                sequence: "000",
+                "subTitle": "Inductor uses",
+                "sequence": "000",
                 front: "How are inductors used in this diagram?",
                 frontImage: "week03-inductor-coupling-2.png",
                 back: "",
@@ -1186,8 +1198,8 @@ const syllabusItems = [
                 id: "x8Fj1aqF"
             },
             {
-                subTitle: "Inductor uses",
-                sequence: "000",
+                "subTitle": "Inductor uses",
+                "sequence": "000",
                 front: "How are inductors used in this diagram?",
                 frontImage: "week03-inductor-decoupling-2.png",
                 back: "",
@@ -1222,12 +1234,13 @@ const syllabusItems = [
         title: "AC theory",
         text: "Understand that impedance is a combination of resistance and reactance and apply the formula for impedance and current in a series CR or LR circuit.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Impedance",
-                sequence: "000",
+                "subTitle": "Impedance",
+                "sequence": "000",
                 front: "How is Impedance calculated in an RC or RL circuit?",
                 back: "$$\\text{Impedance   } Z = \\sqrt (R^2 + X^2)$$ This often means a two step calculation: <ul><li>work out reactance of inductor or capacitor from component values</li><li>then work out impedance</li></ul><br>Sanity check:<br>Z will always be more than either R or X but will be less than R + X. <br>for a 3,4,5 triangle, 5 is more than 3 or 4, but less than 3+4.",
                 status: "",
@@ -1235,8 +1248,8 @@ const syllabusItems = [
                 id: "7YKuHqny"
             },
             {
-                subTitle: "Impedance",
-                sequence: "000",
+                "subTitle": "Impedance",
+                "sequence": "000",
                 front: "What is the visual representation of Impedance calculated in an RC or RL circuit?",
                 back: "A right angled triangle.",
                 backImage: "week03-impedance-triangle.png",
@@ -1245,8 +1258,8 @@ const syllabusItems = [
                 id: "Kd_v9eaD"
             },
             {
-                subTitle: "Impedance",
-                sequence: "000",
+                "subTitle": "Impedance",
+                "sequence": "000",
                 front: "What is the impedance of the circuit in the diagram?",
                 frontImage: "week03-impedance-example-question.png",
                 back: "",
@@ -1256,8 +1269,8 @@ const syllabusItems = [
                 id: "WM6LX6G-"
             },
             {
-                subTitle: "Impedance",
-                sequence: "000",
+                "subTitle": "Impedance",
+                "sequence": "000",
                 front: "What is the impedance of the circuit in the diagram?",
                 frontImage: "week03-another-impedance-example.png",
                 back: "",
@@ -1267,8 +1280,8 @@ const syllabusItems = [
                 id: "D_qymJnT"
             },
             {
-                subTitle: "Impedance",
-                sequence: "000",
+                "subTitle": "Impedance",
+                "sequence": "000",
                 front: "Really nasty question",
                 frontImage: "week03-impedance-nasty-question.png",
                 back: "get the worked example in the weekly instructions",
@@ -1483,12 +1496,13 @@ const syllabusItems = [
         title: "Tuned circuits & resonance",
         text: "Apply the formula for the resonant frequency of a tuned circuit to find values of f, L or C from given data.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "Recap on tuned circuits. What do you remember? Which is the acceptor circuit, and which is the rejector circuit? I always remember PARALLEL for PEAK Impedance.",
                 frontImage: "week03-tuned-circuits-1.png",
                 back: "",
@@ -1498,8 +1512,8 @@ const syllabusItems = [
                 id: "-cve6QhE"
             },
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "What is the resonant frequency formula that applies to both series and parallel tuned circuits?",
                 frontImage: "week03-resonant-frequency-1.png",
                 back: "$$f = \\frac{1}{2 \\pi \\sqrt{(LC)}}$$",
@@ -1509,8 +1523,8 @@ const syllabusItems = [
                 id: "80kswhtQ"
             },
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "How do you transpose the resonant frequency formula to solve for C or L?",
                 frontImage: "",
                 back: "",
@@ -1520,8 +1534,8 @@ const syllabusItems = [
                 id: "Icrs9YHB"
             },
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "Calculate resonant freqency of 22pf capacitor with $10 \\mu H$ inductor",
                 back: "",
                 backImage: "week03-resonant-frequency-4.png",
@@ -1549,12 +1563,13 @@ const syllabusItems = [
         title: "Tuned circuits & resonance",
         text: "Recall the equivalent circuit of a crystal and that it exhibits series and parallel resonance.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Crystals",
-                sequence: "000",
+                "subTitle": "Crystals",
+                "sequence": "000",
                 front: "Summarise what you know about crystals and how they're used.",
                 back: "See Full Manual pp29-30",
                 backImage: "week03-crystals-1.png",
@@ -1563,8 +1578,8 @@ const syllabusItems = [
                 id: "s7y_uZJc"
             },
             {
-                subTitle: "Crystals",
-                sequence: "000",
+                "subTitle": "Crystals",
+                "sequence": "000",
                 front: "Identify a circuit with crystals in it",
                 back: "See Full Manual pp29-30",
                 backImage: "week03-crystals-2.png",
@@ -1573,8 +1588,8 @@ const syllabusItems = [
                 id: "0S0usOAm"
             },
             {
-                subTitle: "Crystals",
-                sequence: "000",
+                "subTitle": "Crystals",
+                "sequence": "000",
                 front: "What does the specification of a crystal's performance look like?",
                 back: "See Full Manual pp29-30",
                 backImage: "week03-crystals-3.png",
@@ -1620,27 +1635,20 @@ const syllabusItems = [
         title: "Tuned circuits & resonance",
         text: "Understand the concept of the magnification factor Q as applied to the voltages and currents in a resonant circuit.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Q Magnification",
-                sequence: "000",
+                "subTitle": "Q Magnification",
+                "sequence": "000",
                 front: "In this circuit the resonant frequency is 5.3MHz and there is an RF supply of just 2mV across the series circuit. Q MAGNIFICATION hinges on the fact that when a series tuned circuit is at resonance, the reactances $X_L$ and $X_C$ are equal and opposite, so they cancel each other.",
                 frontImage: "week03-Q-magnification-example.png",
                 back: "Calculation steps: <ol><li>calculate $X_C = 1 / 2 \\pi f C = 500 \\Omega$ and $X_L = 2 \\pi fL = 500 \\Omega$</li><li>The combined reactance of $X_L$ and $X_C$ is zero, so that leaves only the circuit resistance to oppose the flow </li><li>$I = \\frac{2 mV}{2 \\Omega} = 1mA$</li><li>Both L and C will be passing the 1mA of current, so there will be a voltage across each reactive component of $1mA \\times 500 \\Omega = 500mV$</li><li>RADIO MAGIC: 250 times input voltage, and MAGNIFICATION Q at work</li><li>A shorter path to finding Magnification $Q = \\frac{X_L}{R}$ or $\\frac{X_C}{R} = \\frac{500}{2} = 250$</li></ol>",
                 status: "",
                 reference: "week03 weekly instructions-p7",
                 id: "hQ5vWwHT"
-            },
-            {
-                subTitle: "Q factor",
-                sequence: "",
-                front: "what is Q-factor?",
-                back: "see IRTS Harec manual",
-                backImage: "week03A-Q-factor.png",
-                id: "SIT3M950"
-            },
+            }
         ]
     },
     {
@@ -1653,8 +1661,8 @@ const syllabusItems = [
         ],
         flashcards: [
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "voltages and circulating currents in tuned circuits can be very high...",
                 back: "stuff",
                 status: "",
@@ -1673,8 +1681,8 @@ const syllabusItems = [
         ],
         flashcards: [
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "Apply the formula for Q factor given circuit component values...",
                 back: "stuff",
                 status: "",
@@ -1692,8 +1700,8 @@ const syllabusItems = [
         ],
         flashcards: [
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "Recall the definition of the half power point of resonance curves...",
                 back: "stuff",
                 status: "",
@@ -1711,8 +1719,8 @@ const syllabusItems = [
         ],
         flashcards: [
             {
-                subTitle: "Tuned circuit",
-                sequence: "000",
+                "subTitle": "Tuned circuit",
+                "sequence": "000",
                 front: "Apply the equation for Q given the resonant frequency and the half power points on the resonance curve...",
                 back: "stuff",
                 status: "",
@@ -1739,12 +1747,13 @@ const syllabusItems = [
         title: "Tuned circuits & resonance",
         text: "Understand the meaning of dynamic resistance, RD, (that's R sub D) $R_D$.",
         weeks: [
-            "3", "3A"
+            "3",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Dynamic resistance",
-                sequence: "000",
+                "subTitle": "Dynamic resistance",
+                "sequence": "000",
                 front: "Understand the meaning of dynamic resistance, $R_D$...",
                 frontImage: "week03-parallel-tuned-circuit.png",
                 back: "$$R_D = \\frac{L}{CR}$$",
@@ -1754,16 +1763,16 @@ const syllabusItems = [
                 id: "gsL6QJgR"
             },
             {
-                subTitle: "Dynamic resistance",
-                sequence: "000",
+                "subTitle": "Dynamic resistance",
+                "sequence": "000",
                 front: "In this example, the inductor is $5 \\mu H$, the capacitor is 200pF and the resistor is $0.5 \\Omega$. Now calculate $R_D$, the dynamic resistance:",
                 frontImage: "week03-parallel-tuned-circuit.png",
                 back: "$$R_D = \\frac{L}{CR}$$<br>Putting everything into the formula, we get $R_D = 50 k \\Omega $",
                 backImage: "",
                 status: "",
                 id: "DLYVIUI7",
-                reference: "week03 tutorial slides p38",
-            },
+                reference: "week03 tutorial slides p38"
+            }
         ]
     },
     {
@@ -4267,12 +4276,13 @@ const syllabusItems = [
         title: "Good operating practices ",
         text: "Understand the reasons why some stations may use split Tx and Rx frequencies within a frequency band.",
         weeks: [
-            "1", "3A"
+            "1",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Working split",
-                sequence: "000",
+                "subTitle": "Working split",
+                "sequence": "000",
                 front: "What is working split?",
                 back: "",
                 backImage: "week01-working-split.png",
@@ -4376,12 +4386,13 @@ const syllabusItems = [
         title: "Good operating practices ",
         text: "Recall the advisability to carry out tests to ensure that the station is not causing undue interference to other radio users.",
         weeks: [
-            "1", "3A"
+            "1",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Undue interference",
-                sequence: "000",
+                "subTitle": "Undue interference",
+                "sequence": "000",
                 front: "What does the Licence say about testing your radio equipment?",
                 back: "",
                 backImage: "week01-carry-out-tests.png",
@@ -4455,60 +4466,61 @@ const syllabusItems = [
         title: "Band plans",
         text: "Identify items on a typical band-plan (e.g. centre of activity, band width and recommended modes). Note: Questions will be limited to the 5MHz (60m) and 472kHz (600m) bands. A copy of the relevant band plans will be available during the examination but may not be ones in current use. Reference Booklets containing examination band plans are available on the RSGB web site",
         weeks: [
-            "1", "3A"
+            "1",
+            "3A"
         ],
         flashcards: [
             {
-                subTitle: "Band plan",
-                sequence: "000",
+                "subTitle": "Band plan",
+                "sequernce": "000",
                 front: "Which band plans do you need to be familiar with for ,the Full exam?",
                 back: "",
                 backImage: "week01-band-plans.png",
                 id: "NxaFs7Fw"
             },
             {
-                subTitle: "Band plan",
-                sequence: "010",
+                "subTitle": "Band plan",
+                "sequernce": "010",
                 front: "Are you familiar with the 5MHz (60m) band plan?",
                 back: "",
                 backImage: "week01-60MHz-5m-band-plan.png",
                 id: "YDDrv0Rc"
             },
             {
-                subTitle: "Band plan",
-                sequence: "020",
+                "subTitle": "Band plan",
+                "sequernce": "020",
                 front: "Are you familiar with the 5MHz (60m) notes to the band plan?",
                 back: "",
                 backImage: "week01-60MHz-5m-band-plan-notes.png",
                 id: "6b_9-GFQ"
             },
             {
-                subTitle: "Band plan",
-                sequence: "030",
+                "subTitle": "Band plan",
+                "sequernce": "030",
                 front: "Are you familiar with the 472kHz (600m) band plan?",
                 back: "",
                 backImage: "week01-472kHz-600m-band-plan.png",
                 id: "I1LmRd3r"
             },
             {
-                subTitle: "Band plan",
-                sequence: "040",
+                "subTitle": "Band plan",
+                "sequernce": "040",
                 front: "Are you familiar with the 472kHz (600m) notes to the band plan?",
                 back: "",
                 backImage: "week01-472kHz-600m-band-plan-notes.png",
                 id: "ZR857NP1"
             },
             {
-                subTitle: "Band plan",
-                sequence: "050",
+                "subTitle": "Band plan",
+                "sequernce": "050",
                 front: "Are you familiar with the 472kHz (600m) notes to the band plan, now in text you can actually read without a microscope?",
                 back: "R.R. 5.80B. The use of the frequency band 472-479 kHz in:<p><small>Algeria, Saudi Arabia, Azerbaijan, Bahrain, Belarus, China, Comoros, Djibouti, Egypt, United Arab Emirates, the Russian Federation, Iraq, Jordan, Kazakhstan, Kuwait, Lebanon, Libya, Mauritania, Oman, Uzbekistan, Qatar, Syrian Arab Republic,Kyrgyzstan, Somalia, Sudan, Tunisia and Yemen</small></p><p><b>is limited to the maritime mobile and aeronautical radionavigation services</b>.</p><p><small>The amateur service shall not be used in the above mentioned countries in this frequency band, and this should be taken into account by the countries authorizing such use. (WRC 12)</small></p>",
                 backImage: "",
                 id: "HqLuZVQJ"
             },
             {
-                subTitle: "Band plan",
-                sequence: "060",
+                "subTitle": "Band plan",
+                "sequernce": "060",
                 front: "Are you familiar with part one of the notes to the band plans?",
                 frontImage: "week01-notes-to-band-plans.png",
                 back: "",
@@ -4516,8 +4528,8 @@ const syllabusItems = [
                 id: "Ma9Ws_fK"
             },
             {
-                subTitle: "Band plan",
-                sequence: "070",
+                "subTitle": "Band plan",
+                "sequernce": "070",
                 front: "Are you familiar with part two of the notes to the band plans?",
                 frontImage: "week01-notes-to-band-plans.png",
                 back: "",
@@ -4556,7 +4568,8 @@ const syllabusItems = [
         title: "Band plans",
         text: "Recall that band plans in other countries and IARU regions may not align with the UK band plan.",
         weeks: [
-            "1", "3A"
+            "1",
+            "3A"
         ]
     },
     {
@@ -4715,7 +4728,8 @@ const syllabusItems = [
         title: "CEPT and international",
         text: "Understand the requirements for operation by individual UK Licensees abroad, under the CEPT Recommendation T/R 61-01 and T/R 61-02.",
         weeks: [
-            "1", "3A"
+            "1",
+            "3A"
         ]
     },
     {
@@ -4753,7 +4767,8 @@ const syllabusItems = [
         "location": "page 8",
         "notes": "it is 1f.2 in the manual but the syllabus has been changed",
         weeks: [
-            "1", "3A"
+            "1",
+            "3A"
         ]
     },
     {
@@ -4780,7 +4795,8 @@ const syllabusItems = [
         title: "Electricity",
         text: "Recall that lethal voltages can exist in equipment and that live circuits may be exposed as soon as the equipment case is removed.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -4801,7 +4817,8 @@ const syllabusItems = [
         title: "Electricity",
         text: "Recall that in PME systems the main earth terminal is connected to the neutral of the electricity service at the consumers’ premises.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -4888,7 +4905,8 @@ const syllabusItems = [
         title: "Electricity",
         text: "Understand that no work should be undertaken on live equipment unless it is not practicable to do otherwise.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -4897,7 +4915,8 @@ const syllabusItems = [
         title: "Electricity",
         text: "Understand that suitable precautions must be taken to avoid electric shock.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5086,7 +5105,8 @@ const syllabusItems = [
         title: "Working with RF",
         text: "Recall that the International Commission for Non-Ionising Radiation Protection (ICNIRP) produces guidance for exposure to Radio Frequency fields.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5095,7 +5115,8 @@ const syllabusItems = [
         title: "Working with RF",
         text: "Understand it is not advisable to exceed the recommended safe exposure levels and that this is particularly applicable at locations open to the public.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5146,7 +5167,8 @@ const syllabusItems = [
         title: "Lightning",
         text: "Recall that thunderstorms carry heavy static charges.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5155,7 +5177,8 @@ const syllabusItems = [
         title: "Lightning",
         text: "Understand that the static charge from thunderclouds can ionise the air to form a low resistance path to ground, enabling a very high current to flow as a lightning strike.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5164,7 +5187,8 @@ const syllabusItems = [
         title: "Lightning",
         text: "Understand the risks to human life, domestic property and electronic equipment associated with a direct strike and/or the build-up of static charges.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5173,7 +5197,8 @@ const syllabusItems = [
         title: "Lightning",
         text: "Understand that there is little that can be done to protect an amateur station from a direct lightning strike, but that good static discharge systems can prevent dangerous static charges building up on antenna systems during thunderstorms.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5182,7 +5207,8 @@ const syllabusItems = [
         title: "Lightning",
         text: "Understand that disconnecting antenna feeders from radio equipment also reduces the risks.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5239,7 +5265,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Understand that operating in temporary premises and/or outdoors can introduce new hazards i.e. overhead power lines, inadequate electrical supplies, trailing cables, damp ground and excessive field strengths.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5248,7 +5275,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Recall the additional safety precautions that should be taken whilst operating in temporary premises and/or outdoors i.e. (1) site survey/risk assessment (2) cable routing/protection (3) correct fusing (4) use of Residual Current Devices (RCD's, RCBO's) (5) no adjustments or repairs to live equipment.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5257,7 +5285,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Recall that mains supplies in other countries may be of a different voltage or frequency; utilise different plugs and sockets and that UK specified equipment may not be suitable or hazardous if connected and used.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5278,7 +5307,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Understand that operating when mobile or maritime mobile can introduce new hazards i.e. insecure equipment, long/flexible antennas, accidental shorts to earth, lack of attention to driving.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5287,7 +5317,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Recall the additional safety precautions that should be taken whilst operating mobile and/or maritime mobile i.e. secure equipment, cable routing/protection, correct fusing, use of hands free equipment, attention to good radio housekeeping.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5296,7 +5327,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Understand that a risk assessment should be performed when an activity could present a hazard to yourself or others.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5305,7 +5337,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Understand that risk assessment involves identification of hazards and the measures to mitigate the risk.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5314,7 +5347,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Recall a risk assessment needs to consider the likelihood of harm and the severity of that harm. Recall that the significant findings of risk assessments need to be recorded.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5323,7 +5357,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Recall that risk assessment records are important in law and for insurance purposes. Recall that risks should be expressed in understandable terms.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5332,7 +5367,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Recall that appropriate insurances should be obtained for all amateur radio activities, but in particular where the public could be involved.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5341,7 +5377,8 @@ const syllabusItems = [
         title: "Working mobile and portable",
         text: "Understand the risks associated with the use of electrical generators e.g. earthing, fuel stowage, refilling.",
         weeks: [
-            "2", "3A"
+            "2",
+            "3A"
         ]
     },
     {
@@ -5590,6 +5627,6 @@ const syllabusItems = [
         title: "Soldering",
         text: "Recall the reason for tinning wires prior to soldering."
     }
-]
+];
 
-export default syllabusItems
+export default syllabusItems;
