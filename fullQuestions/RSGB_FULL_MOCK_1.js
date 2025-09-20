@@ -640,7 +640,7 @@ const RSGB_FULL_MOCK_1 = [
         ],
         correct: 3,
         explanation: "",
-        lookup: "See page(s) x of the Full Licence text book",
+        lookup: "See page(s) 95 of the Full Licence text book",
         syllabus: "6f.1"
     },
     {
@@ -653,7 +653,7 @@ const RSGB_FULL_MOCK_1 = [
             "complete a report form and send it to the local office of Ofcom"
         ],
         correct: 2,
-        explanation: "",
+        explanation: "Start keeping a log if you aren't already. Check full manual where 'If a complaint is raised' and 'how a complaint is dealt with' can be found.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "6g.1"
     },
@@ -682,7 +682,7 @@ const RSGB_FULL_MOCK_1 = [
             "AM to be transmitted with up to 5kHz of audio signal"
         ],
         correct: 2,
-        explanation: "",
+        explanation: "For FM, bandwidth needed is given by Carson's rule. So bandwidth = 2 x (max audio frequency + peak deviation) so not FM. For the 200W, see the 5MHz band plan and Licence Notes give 100W max. It is possible to fit 3 SSB transmissions within 10kHz, including spacing. For AM, the bandwidth is approx twice the audio frequency, which might just fit, but looking at the band plan, Note 3 indicates AM max bandwidth of 6kHz.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "7b.1"
     },
@@ -696,7 +696,7 @@ const RSGB_FULL_MOCK_1 = [
             "ensure there is a good earth connection to your body"
         ],
         correct: 0,
-        explanation: "",
+        explanation: "You do not want to be the path to ground, so being isolated is the best thing.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "8a.6"
     },

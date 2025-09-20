@@ -209,7 +209,8 @@ const BBDL_FULL_QUIZZES = [
         correct: 2,
         explanation: "Note G appears after Schedule 1, Table C and sets out a whole bunch of additional rules about the 5MHz band.None of the others specifically reference 5MHz.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "1h.1"
+        syllabus: "1h.1",
+        tagged: true
     },
     {
         source: "BBDL QUIZ WEEK00 Q15",
@@ -234,7 +235,7 @@ const BBDL_FULL_QUIZZES = [
         options: [
             "other users of wireless telegraphy suffering potentially harmful interference",
             "radio workers being exposed to potentially harmful levels of ionising electromagnetic radiation",
-            "radio amateurs exposong themselves to potentially harmful levels of non-ionising ekectromagnetic radiation",
+            "radio amateurs exposing themselves to potentially harmful levels of non-ionising ekectromagnetic radiation",
             "the general public being exposed to levels of non-ionising electromagnetic radiation above the basic restrictions set out in tables",
         ],
         correct: 3,
