@@ -503,7 +503,7 @@ function generateCardsHTML(items, isFront) {
 function generateSingleCardHTML(item, isFront) {
   const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
 
-  const header = `${item.key}${cardIndicator} &bull; <small>${item.section}</small> &bull; <small>${item.title}</small> &bull; ${item.id}`
+  const header = `${item.key}${cardIndicator} &bull; <small>${item.section}</small> &bull; <small>${item.title}</small> &bull; <tt>${item.id}</tt>`
 
   const content = isFront ? (item.question || '') : (item.answer || '')
   const imageKey = isFront ? 'frontImage' : 'backImage'
