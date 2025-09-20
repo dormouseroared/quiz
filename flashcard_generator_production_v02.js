@@ -216,7 +216,9 @@ filteredItems.forEach((item, itemIndex) => {
           cardIndex: index + 1,
           totalCards: item.flashcards.length,
           id: card.id,
-          section: section[item.key[0]].name.toUpperCase()
+          section: section[item.key[0]].name.toUpperCase(),
+          subTitle: card.subTitle,
+          sequence: card.sequence
         })
         debugLog(`✅ Added flashcard ${item.key} (${index + 1}/${item.flashcards.length})`)
       } else if (config.printing.includeIncomplete) {
@@ -233,7 +235,9 @@ filteredItems.forEach((item, itemIndex) => {
           totalCards: item.flashcards.length,
           incomplete: true,
           id: card.id,
-          section: section[item.key[0]].name.toUpperCase()
+          section: section[item.key[0]].name.toUpperCase(),
+          subTitle: card.subTitle,
+          sequence: card.sequence
         })
         incompleteCards++
         console.log(`⚠️ Added incomplete flashcard ${item.key} (${index + 1}/${item.flashcards.length})`)
@@ -501,9 +505,9 @@ function generateCardsHTML(items, isFront) {
 }
 
 function generateSingleCardHTML(item, isFront) {
-  const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
+  // const cardIndicator = item.totalCards > 1 ? ` (${item.cardIndex}/${item.totalCards})` : ''
 
-  const header = `${item.key}${cardIndicator} &bull; <small>${item.section}</small> &bull; <small>${item.title}</small> &bull; <tt>${item.id}</tt>`
+  const header = `${item.key} &bull; <small>${item.subTitle}</small> &bull; <small>${item.sequence}</small> &bull; <tt>${item.id}</tt>`
 
   const content = isFront ? (item.question || '') : (item.answer || '')
   const imageKey = isFront ? 'frontImage' : 'backImage'
