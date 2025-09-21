@@ -999,8 +999,400 @@ const BBDL_FULL_QUIZZES = [
         syllabus: "2h.5",
         tagged: true
     },
+    {
+        source: "BBDL QUIZ WEEK03A Q01",
+        question: "Referring to the circuit in the diagram, the voltmeter is indicating a potential difference of 50 volts across R3. Assuming the voltmeter has a very high internal resistance, what is the supply voltage, and what is the current through the ammeter?",
+        image: "",
+        options: [
+            "100V & 0.5A",
+            "100V & 2A",
+            "50V & 0.5A",
+            "50V & 2A",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q02",
+        question: "Which of the following does NOT describe one of the formulas for ‘Q’?",
+        image: "",
+        options: [
+            "The resonant frequency of a tuned circuit divided by the half voltage bandwidth",
+            "The voltage across a capacitor multiplied by the values of kA/d for the capacitor",
+            "The centre frequency of a band pass filter, divided by its -3db bandwidth",
+            "The reactance of an inductor divided by its resistance",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q03",
+        question: "Which of the following capacitors is likely to suffer the greatest loss of signal at high frequency?",
+        image: "",
+        options: [
+            "ceramic",
+            "polythene",
+            "air-spaced",
+            "silvered mica",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q04",
+        question: "The voltage at which an electrolytic capacitor can be used safely without breaking down is sometimes referred to as:",
+        image: "",
+        options: [
+            "The 'knee' voltage",
+            "The forward bias voltage",
+            "The safe working voltage",
+            "The maximum back EMF that can be expected",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q05",
+        question: "What is the effect of changing the magnitude of the current flowing in a coil?",
+        image: "",
+        options: [
+            "The self-inductance adds to the normally fixed inductance of the coil.",
+            "The self-inductance causes a voltage to be induced between the ends of the coil.",
+            "The self-inductance causes a current to be created in nearby coils of wire.",
+            "The self-inductance subtracts from the normally fixed inductance of the coil.",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q06",
+        question: "If an inductor of 10μH is connected in series with a 12 ohm resistor to a 12 Volt supply. How long will it take for the Inductor current to reach about two thirds of the maximum current?",
+        image: "",
+        options: [
+            "833 ns",
+            "1.2 μs",
+            "4.16 μs",
+            "6 μs",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q07",
+        question: "If you need to remove an unwanted AC signal from a DC supply which of the following would help?",
+        image: "",
+        options: [
+            "A capacitor in series with the DC supply.",
+            "A capacitor in parallel with the DC supply.",
+            "A low value resistor in series with the DC supply.",
+            "A low value resistor in parallel with the DC supply.",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q08",
+        question: "Switch mode power supplies often have one or more inductors as part of the DC power output circuit to:",
+        image: "",
+        options: [
+            "Avoid mains hum affecting the DC output from the power supply",
+            "Prevent feedback from the transmitter entering the power supply",
+            "Provide DC decoupling (AC blocking) of the power supply's output.",
+            "Maintain a noise-free DC power supply.",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q09",
+        question: "What is the impedance of the circuit shown in the diagram?",
+        image: "images/bbdl-quizzes-week3A-q09.png",
+        options: [
+            "There is almost zero impedance because it is a series circuit",
+            "Z cannot be calculated, there is not enough information",
+            "470 Ω",
+            "475 Ω",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0",
+        tagged: true
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q10",
+        question: "What is the resonant frequency of a 100pF capacitor in parallel with a 100μH inductor?",
+        image: "",
+        options: [
+            "1.59 MHz",
+            "3.14 MHz",
+            "6.28 MHz",
+            "15 MHz",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q11",
+        question: "The circuit diagram shows:",
+        image: "images/bbdl-quizzes-week03A-q11.png",
+        options: [
+            "The equivalent of a quartz crystal",
+            "A band stop filter",
+            "A mains EMC filter",
+            "A Colpitts crystal oscillator",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q12",
+        question: "Component ratings in tuned circuits, particularly those in transmitters and antenna matching units, need to be larger than you might expect because:",
+        image: "",
+        options: [
+            "Impedance transformation always generates heat and lower rated components increase this effect",
+            "Components with higher ratings are more likely to be accurate in value, so have lower losses due to any mis - matching",
+            "The Q factor will multiply the voltages and currents present in the tuned circuits",
+            "Tuned circuits will be less prone to drift if they are constructed from heavy duty components",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q13",
+        question: "If a parallel tuned circuit is constructed from a 10pF capacitor, and a 100μH inductor that has a coil resistance of 1Ω, what is its Dynamic Resistance?",
+        image: "",
+        options: [
+            "1 Ω",
+            "1k Ω",
+            "100k Ω",
+            "10M Ω",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q14",
+        question: "If you hear a station say that they are ‘listening 5 to 10 up’ it means:",
+        image: "",
+        options: [
+            "They are listening for stations using 5 or 10MHz for their up-link",
+            "The repeater they are using has an off-set of between 5 and 10 kilohertz",
+            "They are looking to work stations with the numbers between 5 and 10 in their callsigns",
+            "They will only respond to stations who are transmitting between 5 and 10 kilohertz higher up the band",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q15",
+        question: "Which of the following frequencies should be used for digital mode contacts?",
+        image: "",
+        options: [
+            "472.5 kHz",
+            "473.5 kHz",
+            "474.5 kHz",
+            "475.5 kHz",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q16",
+        question: "The holder of a HAREC certificate issued by another country is NOT entitled to:",
+        image: "",
+        options: [
+            "Operate in the UK for up to 3 months without prior authorisation",
+            "Apply for a UK Full Licence if they move home to live in the Isle of Man",
+            "Apply for a UK Foundation Licence if they move home to live in England",
+            "Operate, with the permission of the captain, from a UK registered aircraft using bands listed in the UK Licence schedule as permitting use whilst airborne",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q17",
+        question: "Which of the following electronic devices are normally operated using potential differences that are much higher than the domestic mains supply?",
+        image: "",
+        options: [
+            "Radio frequency power field effect transistors, or FETs",
+            "Valves, also known as thermionic vacuum tubes",
+            "Varactor diodes, also known as variable capacitance diodes",
+            "Bipolar Junction Transistors, or BJTs",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q18",
+        question: "Under severe fault conditions, Protective Multiple Earthing systems can cause:",
+        image: "",
+        options: [
+            "Reduced immunity to EMC breakthrough",
+            "Fatal electric shocks and/or fires in amateur radio stations",
+            "Harmonic radiation from high power linear amplifiers",
+            "RF burns when in contact with metal objects linked to transmitter circuits",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q19",
+        question: "If you must carry out work inside a piece of live mains powered equipment you should:",
+        image: "",
+        options: [
+            "Ensure that you are wearing an earthed wrist strap.",
+            "Ensure that you are standing on a conductive mat that is connected to a good earthing point.",
+            "Work carefully with only one hand inside the equipment whilst keeping your other hand in your pocket.",
+            "Remove all other personnel from the room.",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q20",
+        question: "It is never advisable to exceed the EMF guidelines set by ICNIRP, but when is it particularly important to pay attention to this?",
+        image: "",
+        options: [
+            "When operating on frequencies below 500kHz",
+            "When operating from a lighthouse or lightship at sea",
+            "When operating in a location that is open to the public",
+            "When operating via a satellite that is directly overhead",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q21",
+        question: "Thunder clouds can carry heavy static charges. For a lightning strike to occur there needs to be:",
+        image: "",
+        options: [
+            "Copper lightning rods that provide a high resistance path to earth",
+            "An appropriate level of ionisation in the D layer to enable LF propagation",
+            "Sufficient rain or hail in the atmosphere to provide a direct connection across the opposing poles of the potential difference",
+            "Air that is sufficiently ionised so as to provide a low resistance path to earth",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q22",
+        question: "You are intending to operate from some temporary premises using the same power supply, transmitter, power amplifier and aerial system combination as you use at home, but with the aerial system closer to the ground. Which of the following would be the most significant change in your safety risk assessment?",
+        image: "",
+        options: [
+            "Increased risk of electric shock due to damp ground",
+            "Increased risk of tripping over trailing mains cables",
+            "Increased risk of contact with overhead power lines",
+            "Increased risk of exposure to non-ionising electromagnetic radiation",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q23",
+        question: "Many radio amateurs operate transceivers from their vehicles. What additional safety risks can be introduced that would not be present when operating from a fixed location?",
+        image: "",
+        options: [
+            "Risk of fire from a malfunction causing excess current to flow in the transceiver DC power lead",
+            "Risk of fatal electric shock due to coming into contact with the radio power supply",
+            "Risk of hearing damage from using headphones to monitor FM channels at high AF gain settings",
+            "Risk of long flexible vertical antennas striking pedestrians",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q24",
+        question: "Carrying out a risk assessment involves:",
+        image: "",
+        options: [
+            "Preventing hazards from occurring",
+            "Removing every element of risk from an activity",
+            "Recording all foreseeable hazards and then removing them",
+            "Identifying things with the potential to cause harm (the hazards) and taking steps to mitigate the risks they pose",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q25",
+        question: "When operating a petrol engine powered generator, you should:",
+        image: "",
+        options: [
+            "Keep all fuel in a locked metal cabinet located at least 500m away",
+            "Keep all fuel behind a non-flammable barrier located at least 50m away",
+            "Only refuel the generator in accordance with the generator operating manual",
+            "Only refuel the generator from plastic fuel containers that are earthed to the generator chassis",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "BBDL QUIZ WEEK03A Q26",
+        question: "If a resistor in a transmitter power amplifier is replaced with a similar device of unknown tolerance, what is the most likely impact of the change?",
+        image: "",
+        options: [
+            "The output power could be too high, leading to a breach in licence conditions",
+            "The output power could be lower, leading to poorer performance",
+            "The output power could be higher or lower and would require thorough testing",
+            "The output power could contain more harmonics and become unstable",
+        ],
+        correct: 2,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
     // {
-    //     source: "BBDL QUIZ WEEK03 Q00",
+    //     source: "BBDL QUIZ WEEK03A Q00",
     //     question: "",
     //     image: "",
     //     options: [
@@ -1012,7 +1404,7 @@ const BBDL_FULL_QUIZZES = [
     //     correct: 9,
     //     explanation: ``,
     //     lookup: "See page(s) x of the Full Licence text book",
-    //     syllabus: "2"
+    //     syllabus: "0"
     // },
 ]
 
