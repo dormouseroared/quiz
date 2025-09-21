@@ -1002,7 +1002,7 @@ const BBDL_FULL_QUIZZES = [
     {
         source: "BBDL QUIZ WEEK03A Q01",
         question: "Referring to the circuit in the diagram, the voltmeter is indicating a potential difference of 50 volts across R3. Assuming the voltmeter has a very high internal resistance, what is the supply voltage, and what is the current through the ammeter?",
-        image: "",
+        image: "images/bbdl-quizzes-week03A-q01.png",
         options: [
             "100V & 0.5A",
             "100V & 2A",
@@ -1123,7 +1123,7 @@ const BBDL_FULL_QUIZZES = [
     {
         source: "BBDL QUIZ WEEK03A Q09",
         question: "What is the impedance of the circuit shown in the diagram?",
-        image: "images/bbdl-quizzes-week3A-q09.png",
+        image: "images/bbdl-quizzes-week03A-q09.png",
         options: [
             "There is almost zero impedance because it is a series circuit",
             "Z cannot be calculated, there is not enough information",
@@ -1344,7 +1344,8 @@ const BBDL_FULL_QUIZZES = [
         correct: 3,
         explanation: ``,
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "0",
+        tagged: true
     },
     {
         source: "BBDL QUIZ WEEK03A Q24",
