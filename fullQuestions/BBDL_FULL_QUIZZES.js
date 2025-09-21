@@ -1010,9 +1010,9 @@ const BBDL_FULL_QUIZZES = [
             "50V & 2A",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `There are a number of steps to this one. First step is to recognise that R2 and R3 form a potential divider (two resistors in series). Because theyare the same resistance, the potential difference (voltage) will be the same across both. We are told there is 50V across R3 so the supply voltage must be twice that = 100V. That rules out ‘c’ and ‘d’. Next step; we can see that R1 is in parallel with the potential divider formed by R2 and R3 (redraw it with both R2 and R3 vertical if you cannot see that). So, we have the equivalent of two 100Ω resistors in parallel. That means the total resistance is 50Ω. Final step is to work out the current through the ammeter. Armed with the knowledge that V = 100V and R = 50Ω, we can use good old Ohm’s law to work out I = V/R = 2A, showing ‘b’ to be the correct answer.`,
+        lookup: "See page(s) 20 of the Full Licence text book",
+        syllabus: "2b.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q02",
@@ -1025,9 +1025,9 @@ const BBDL_FULL_QUIZZES = [
             "The reactance of an inductor divided by its resistance",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
+        explanation: `The first thing to note here is that is it a ‘NOT’ question, so there should be three ‘true’ statements and one ‘not true’ statement. You should also remember that there are 3 versions of ‘Q’ in the Full syllabus; related to ‘charge’ in a capacitor, related to bandwidth in a tuned circuit, and related to the magnification factor. The ‘definitions’ used in the question are not exactly as you might find them in EX309, and you need to join a few bits together. ‘a’ looks OK at first sight but the bandwidth for Q is measured at the half-power point, not the half-voltage point, so ‘a’ is definitely NOT true. Let’s check the others. ‘b’ describes the formula Q = V x C but uses the C = kA/d formulafor C, which is entirely correct. ‘c’ describes the formula Q = FC/(FU-FL) but uses the -3dB point for the bandwidth, so is entirely correct. ‘d’ is more straightforward and describes the formula Q = XL/R, which is also correct. So, ‘a’ is the only one that is not true and is therefore the correct answer. See syllabus 2h.4 also.`,
+        lookup: "See page(s) 21-22, 28 of the Full Licence text book",
+        syllabus: "2d.1",
         tagged: true
     },
     {
@@ -1041,9 +1041,11 @@ const BBDL_FULL_QUIZZES = [
             "silvered mica",
         ],
         correct: 1,
-        explanation: ``,
+        explanation: `As a rule of thumb, man-made dielectrics suffer greater losses
+than ‘natural’ ones. Ceramic, air and mica are all formed from naturally occurring
+materials, whereas polythene is definitely a man-made sheet material.`,
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2d.2"
     },
     {
         source: "BBDL QUIZ WEEK03A Q04",
@@ -1056,9 +1058,9 @@ const BBDL_FULL_QUIZZES = [
             "The maximum back EMF that can be expected",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `The markings on a capacitor show its capacitance value and safe working voltage, in other words, the voltage it will work at for ever and a day. ‘a’ is feature of a Zener diode, not a capacitor. ‘b’ is wrong because we do not bias capacitors, forward or reverse. ‘d’ is wrong because capacitors do not produce a back EMF, that is an inductor property.`,
+        lookup: "See page(s) 22 of the Full Licence text book",
+        syllabus: "2d.3"
     },
     {
         source: "BBDL QUIZ WEEK03A Q05",
@@ -1071,9 +1073,9 @@ const BBDL_FULL_QUIZZES = [
             "The self-inductance subtracts from the normally fixed inductance of the coil.",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `Self-inductance is defined as the induction of a voltage in a current-carrying wire when the current in the wire is itself changing. Hence the magnetic field created by a changing current in the circuit itself induces a voltage in the same circuit. The voltage is said to be self-induced. So ‘a’, ‘c’, ’d’ are wrong leaving ‘b’ to be the correct answer.`,
+        lookup: "See page(s) 23-24 of the Full Licence text book",
+        syllabus: "2d.4"
     },
     {
         source: "BBDL QUIZ WEEK03A Q06",
@@ -1086,9 +1088,9 @@ const BBDL_FULL_QUIZZES = [
             "6 μs",
         ],
         correct: 0,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `When the inductor is connected to the 12 Volt supply the current will initially be limited by the back emf generated by the inductor self-inductance and the resistance of the resistor. The current will then rise to a maximum current I= V/R = 12/12 = 1 Amp. The Inductor current will reach about 66% of the maximum in one Time Constant = L/R = 10 X 10-6/12 = 833ns. See Quiz Worked Answers for calculator script.`,
+        lookup: "See page(s) 23-24 of the Full Licence text book",
+        syllabus: "2d.7"
     },
     {
         source: "BBDL QUIZ WEEK03A Q07",
@@ -1101,9 +1103,9 @@ const BBDL_FULL_QUIZZES = [
             "A low value resistor in parallel with the DC supply.",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `A capacitor in series with the supply would block DC so not ‘a’. If we want to remove an unwanted AC signal from a DC supply, we need to decouple the supply, this is achieved with a suitable capacitor placed across the supply so ‘b’ looks good. A resistor in series or parallel would, on its own, have little effect on the AC signal but could have a significant effect on the DC supply, so not ‘c’ or ‘d’.`,
+        lookup: "See page(s) 26-27 of the Full Licence text book",
+        syllabus: "2e.4"
     },
     {
         source: "BBDL QUIZ WEEK03A Q08",
@@ -1116,9 +1118,9 @@ const BBDL_FULL_QUIZZES = [
             "Maintain a noise-free DC power supply.",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `Unlike a linear power supply the DC output may have some ultrasonic noise but is unlikely to carry mains hum so not ‘a’. Feedback from the transmitter is not what the inductor is for so not ‘b’. Although the inductor may help in reducing the RF noise on the output it is better described as AC blocking and decoupling of the output signal.`,
+        lookup: "See page(s) 26-27 of the Full Licence text book",
+        syllabus: "2e.5"
     },
     {
         source: "BBDL QUIZ WEEK03A Q09",
@@ -1131,9 +1133,9 @@ const BBDL_FULL_QUIZZES = [
             "475 Ω",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
+        explanation: `I went a bit haywire with this one. I wrote down the formula for impedance $$Z = \\sqrt{R^2 + {X_L}^2} = \\sqrt{400^2 + ({5 \\times 10^{-6}})^2} = 470 \\Omega$$ completely forgetting that $X_L$ is needed using $X_L =2 \\pi f L$ <br><br>So, because the frequency f is not supplied there can't be a calculation. Hence the tagging! <br><br><i>The danger is that it's easy taking R so there's a tendency to just take L.</i>`,
+        lookup: "See page(s) 26-27 of the Full Licence text book",
+        syllabus: "2e.6",
         tagged: true
     },
     {
@@ -1147,9 +1149,9 @@ const BBDL_FULL_QUIZZES = [
             "15 MHz",
         ],
         correct: 0,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `Another one for the calculator. See worked answers for script.`,
+        lookup: "See page(s) 27-28 of the Full Licence text book",
+        syllabus: "2h.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q11",
@@ -1162,9 +1164,9 @@ const BBDL_FULL_QUIZZES = [
             "A Colpitts crystal oscillator",
         ],
         correct: 0,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `The inclusion of a series and a parallel capacitor should alert you to the fact that this is no simple high or low pass filter, nor is it a band-stop filter. The mains filter has transformers and capacitors in a more balanced circuit and would need three conductors, so ‘a’ is really the only viable answer.`,
+        lookup: "See page(s) 29 of the Full Licence text book",
+        syllabus: "2h.2"
     },
     {
         source: "BBDL QUIZ WEEK03A Q12",
@@ -1177,9 +1179,9 @@ const BBDL_FULL_QUIZZES = [
             "Tuned circuits will be less prone to drift if they are constructed from heavy duty components",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `In all power circuits that contain tuned circuits there is a good chance of creating large circulating currents and applied voltages so ‘c’ is a good bet. Although impedance transformation does generate heat, lower rated components cannot make this worse so not ‘a’. ‘b’ is simply wrong, components of higher ratings are not necessarily more accurate or lossy. Similarly, tuned circuits drift with temperature but in the power circuits found in transmitters and matching units this is not an issue so not ‘d.’.`,
+        lookup: "See page(s) 28-29 of the Full Licence text book",
+        syllabus: "2h.4"
     },
     {
         source: "BBDL QUIZ WEEK03A Q13",
@@ -1192,9 +1194,9 @@ const BBDL_FULL_QUIZZES = [
             "10M Ω",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `For a parallel tuned circuit consisting of, a capacitor and an inductor (which will always have some resistance), the Dynamic Resistance can be calculated from $R_D$ = L/CR.`,
+        lookup: "See page(s) 27-28 of the Full Licence text book",
+        syllabus: "2h.5"
     },
     {
         source: "BBDL QUIZ WEEK03A Q14",
@@ -1207,9 +1209,9 @@ const BBDL_FULL_QUIZZES = [
             "They will only respond to stations who are transmitting between 5 and 10 kilohertz higher up the band",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `This is known as ‘working split’ and is often used by DX stations to manage pile-ups when many stations call at the same time. Listening 5 or 10kHz up the band spreads out the masses calling. ‘a’ is referring to satellite working but there is no satellite allocation on either of those bands (check EX309 schedule 1), so that one is wrong. Similarly, repeaters use offsets of much more than a few kHz, so not that one. ‘c’ is another way of working through a pile-up but the DX would say something like ‘only stations with 5’ in the call please’.`,
+        lookup: "See page(s) 11 of the Full Licence text book",
+        syllabus: "7a.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q15",
