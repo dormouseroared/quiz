@@ -1224,9 +1224,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "475.5 kHz",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `This is a look up question from the Band Plan provided. IARU Region-1 does not have a formal band plan for this allocation, but has a usage recommendation: 472-475 kHz CW-only 200Hz max BW, 475-479 kHz - CW & Digimodes. ‘d’ is the only answer that falls into the CW & Digimodes section. You should be looking this up in the 600m Bandplan, Note 1 refers. `,
+        lookup: "See page(s) 11 of the Full Licence text book",
+        syllabus: "7b.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q16",
@@ -1239,9 +1239,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Operate, with the permission of the captain, from a UK registered aircraft using bands listed in the UK Licence schedule as permitting use whilst airborne",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `‘a’, ‘b’ and ‘d’ are all permitted under the UK Licence rules, so a foreign amateur holding a HAREC certificate would be allowed to do all those things; the host country rules apply. ‘c’ would NOT be allowed as the CEPT agreement only applies to certain licences (e.g. the Full Licence in the UK). `,
+        lookup: "See page(s) 7-8 of the Full Licence text book",
+        syllabus: "7h.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q17",
@@ -1254,9 +1254,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Bipolar Junction Transistors, or BJTs",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: ` Whilst there are some valves that operate at 12V, most have over 300V on their anodes and power supplies. It is not uncommon to have over 1kV potential difference present. The semi-conductors that feature in all the other answers are rarely operated above 50V in amateur radio circuits.`,
+        lookup: "See page(s) 13 of the Full Licence text book",
+        syllabus: "8a.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q18",
@@ -1269,9 +1269,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "RF burns when in contact with metal objects linked to transmitter circuits",
         ],
         correct: 1,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `‘a’, ‘c’ and ‘d’ can be issues in amateur stations but not related to PME. PME effectively links numerous properties together so under fault conditions extremely high currents can pass through the amateur station’s “RF” earth with risks of fire and shocks. NOTE. If you are in any doubt regarding PME, consult a qualified person for advice. `,
+        lookup: "See page(s) 17-18 of the Full Licence text book",
+        syllabus: "8a.2"
     },
     {
         source: "BBDL QUIZ WEEK03A Q19",
@@ -1284,9 +1284,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Remove all other personnel from the room.",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `Both ‘a’ and ‘b’ would provide a good earth and therefore a low resistance path for the mains to pass through your body, which is not a good thing! ‘d’ would mean there was no-one there to assist, should you come into contact with the mains electricity, so another bad choice. ‘c’ minimises the risk of having a low resistance path across your heart and therefore provides some degree of protection.`,
+        lookup: "See page(s) 13 of the Full Licence text book",
+        syllabus: "8a.6"
     },
     {
         source: "BBDL QUIZ WEEK03A Q20",
@@ -1299,9 +1299,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "When operating via a satellite that is directly overhead",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `‘a’ is wrong because frequencies below 500kHz are exempt from EMF risk assessment. ‘b’ is location where you might need to take care, but only if the general public are likely to be present, so it is only partially correct. ‘c’ is correct in all circumstances. ‘d’ is unlikely to be an issue as it is highly unlikely that there will be any members of the general public between your transmitting antenna and the satellite directly overhead, it is another one that could be correct, but not in all circumstances.`,
+        lookup: "See page(s) 16 of the Full Licence text book",
+        syllabus: "8d.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q21",
@@ -1314,9 +1314,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Air that is sufficiently ionised so as to provide a low resistance path to earth",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: ` ‘a’ is incorrect as a high resistance path is not conducive to lightning. ‘b’ is incorrect as the ionosphere has little to do with lightning. Even a heavy rain/hail shower will rarely provide a direct connection between the cloud and earth, so not ‘c’. ‘d’ describes the precise requirements for a lightning strike to occur. `,
+        lookup: "See page(s) 16-17 of the Full Licence text book",
+        syllabus: "8e.1"
     },
     {
         source: "BBDL QUIZ WEEK03A Q22",
@@ -1329,9 +1329,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Increased risk of exposure to non-ionising electromagnetic radiation",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `There is no mention of damp ground in the question so ‘a’ looks unlikely. Using the same transmitter and amplifier suggests you are not using batteries, so it may be an issue but there is no mention of long extension leads or the location of the mains sockets, so ‘b’ is not 100%. Power lines are also not mentioned in the question, so nothing to be sure ‘c’ is the right answer. However, if you have reduced the height of the aerial, it is likely that the RF exposure will be higher when transmitting, so ‘d’ looks like the best answer.  There are other references to EMF assessments, but this question is focused on temporary premises and the increased risk of excessive EMF exposures.`,
+        lookup: "See page(s) 14 of the Full Licence text book",
+        syllabus: "8f.4"
     },
     {
         source: "BBDL QUIZ WEEK03A Q23",
@@ -1344,9 +1344,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Risk of long flexible vertical antennas striking pedestrians",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0",
+        explanation: `Risks ‘a’, ‘b’ and ‘c’ are all present in a fixed location and ‘b’ would be unlikely in a vehicle unless there was some kind of mobile mains voltage generator in use. ‘d’ is unlikely to be an issue in a fixed location as home-based antennas tend to be in high locations, away from pedestrian routes, whereas those mounted on vehicles can whip back and forth as the vehicle moves, stops and starts.`,
+        lookup: "See page(s) 15 of the Full Licence text book",
+        syllabus: "8f.5",
         tagged: true
     },
     {
@@ -1360,9 +1360,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Identifying things with the potential to cause harm (the hazards) and taking steps to mitigate the risks they pose",
         ],
         correct: 3,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `We can never prevent all hazards, so not ‘a’. Similarly, we cannot remove every element of risk – there is always a risk of something happening, so not ‘b’. ‘c’ is a bit like ‘a’ – we cannot remove every hazard (e.g. RF radiation will always be present), so not ‘c’. ‘d’ looks best, identify what could cause harm and manage it.`,
+        lookup: "See page(s) 14 of the Full Licence text book",
+        syllabus: "8f.6"
     },
     {
         source: "BBDL QUIZ WEEK03A Q25",
@@ -1375,9 +1375,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Only refuel the generator from plastic fuel containers that are earthed to the generator chassis",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: `Options ‘a’, and ‘b’ are all extreme precautions that may be totally over the top, in most circumstances. ‘d’ does not really make sense; earthing plastic fuel containers? ‘c’ is exactly what you should do, so that is the one to select. `,
+        lookup: "See page(s) 14-15 of the Full Licence text book",
+        syllabus: "8f.7"
     },
     {
         source: "BBDL QUIZ WEEK03A Q26",
@@ -1390,9 +1390,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "The output power could contain more harmonics and become unstable",
         ],
         correct: 2,
-        explanation: ``,
-        lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        explanation: ` If a component in a piece of equipment is replaced with one of unknown tolerance the real value of that component can be very different from the expected value. This can have major effects on the performance of the equipment. Although ‘a’, ’b’, and ’d’ might, in part, be correct, the important aspect here is that thorough testing will be required to confirm the correct performance of the equipment. `,
+        lookup: "See page(s) 33-34 of the Full Licence text book",
+        syllabus: "2a.1"
     },
     // {
     //     source: "BBDL QUIZ WEEK03A Q00",
