@@ -1,4 +1,4 @@
-const EXAM_SECRETS_SAMPLES = [
+const EXAM_SECRETS_QUESTIONS = [
     {
         source: "Exam Secrets FULL [Licensing] 1C1-1",
         question: "Under normal circumstances, messages may be sent:",
@@ -375,7 +375,7 @@ const EXAM_SECRETS_SAMPLES = [
     },
     {
         source: "Exam Secrets FULL [Technical Basics] 2D1-3",
-        question: "The energy in a capacitor is given by E = Q x V, that is the product of charge and potential difference. Given that, by how much does the energy stored in a capacitor increase if the potential difference is doubled?",
+        question: "The energy in a capacitor (E) is given by: $$E = Q \\times V$$ where Q is charge and V is potential difference. <br><br>Given that, by how much does the <i>energy</i> stored in a capacitor increase if the potential difference is doubled?",
         options: [
             "doubles x2",
             "triples x3",
@@ -2637,4 +2637,4 @@ const EXAM_SECRETS_SAMPLES = [
     },
 ]
 
-export default EXAM_SECRETS_SAMPLES
+export default EXAM_SECRETS_QUESTIONS
