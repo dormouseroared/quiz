@@ -1,5 +1,20 @@
 const OWN_QUESTIONS = [
     {
+        source: "OWN QUESTIONS Q00",
+        question: "MathJax Test of questionDiv, optionsDiv, explanationDiv and syllabusItemsDiv<br>inline: $Q = V \\cdot C$ <br><br>display: $$ Q = V \\times C $$",
+        image: "",
+        options: [
+            "all answers are the same: $R_D$",
+            "all answers are the same: $R_D$",
+            "all answers are the same: $R_D$",
+            "all answers are the same: $R_D$",
+        ],
+        correct: 1,
+        explanation: `Yes its $R_D$ again!!`,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
         source: "OWN QUESTIONS Q01",
         question: "What is the fundamental property that defines an inductor's behavior in a circuit?",
         image: "",

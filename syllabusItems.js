@@ -3,7 +3,7 @@ const syllabusItems = [
         key: "0",
         level: "dummy",
         title: "for anything not having a syllabus code",
-        text: "This is probably EX308 or similar.",
+        text: "This is probably EX308, $EX309$ or similar $R_D$.",
         flashcards: [
             {
                 front: "<span style='color: blue;'>Mathjax reminders IN COLOUR!!:</span><ul><li>micro $\\mu$</li><li>dot instead of multiply $\\cdot$</li><li>degree experiment or fudge $^\\circ$</li><li></li></ul>",
@@ -788,7 +788,7 @@ const syllabusItems = [
         key: "2d.7",
         level: "full",
         title: "Reactive components",
-        text: "Understand the rise and fall of current in an RL circuit and that the time constant (Tau) t = L/R.  $\\Tau = \\frac{L}{R}$",
+        text: "Understand the rise and fall of current in an RL circuit and that the time constant $ \\it T$ = $\\frac{L}{R}$",
         weeks: [
             "3", "3A"
         ],
@@ -819,7 +819,7 @@ const syllabusItems = [
         key: "2d.7",
         level: "full",
         title: "Reactive components",
-        text: "Understand the rise and fall of voltage in an RC circuit and that the time constant (Tau) t = C×R.",
+        text: "Understand the rise and fall of voltage in an RC circuit and that the time constant $ \\it T$ = $ C \\cdot R $ ",
         weeks: [
             "3"
         ],

@@ -237,11 +237,11 @@ function loadQuestion() {
         optionsDiv.appendChild(btn)
 
         // Trigger MathJax to typeset the newly injected content
-        if (window.MathJax?.typesetPromise) {
-            MathJax.typesetPromise([btn]).catch((err) =>
-                console.error("MathJax typeset error:", err)
-            )
-        }
+        // if (window.MathJax?.typesetPromise) {
+        //     MathJax.typesetPromise([btn]).catch((err) =>
+        //         console.error("MathJax typeset error:", err)
+        //     )
+        // }
     })
 
     // Update button states
@@ -297,6 +297,16 @@ function loadQuestion() {
     })
 
     syllabusItemsDiv.appendChild(ul)
+
+    // todo: now trigger MathJax on element ul which has the relevant syllabus items
+
+    // Question now loaded with dynamic content, some of which may
+    // contain zero to many MathJax $...$ or $$...$$$ sequences, to be
+    // displayed right now, or ready at the click of a button
+    // So, now we pass the divs to cause MathJax to typeset them.
+
+    mathjaxUpdate([questionDiv, optionsDiv, syllabusItemsDiv])
+
     console.groupEnd("loadQuestion")
 }
 
@@ -459,6 +469,42 @@ function myDebug(whereami, quizState) {
     console.log("-----quizState-----", whereami, quizState)
 }
 
+/**
+ * Triggers MathJax to re-render a specific element or a collection of elements.
+ * @param {HTMLElement|NodeListOf<HTMLElement>} elements - The element(s) to process.
+ */
+function mathjaxUpdate(elements) {
+    // Ensure the input is an array-like object, then convert it to an array.
+    const elementsToProcess = Array.isArray(elements) ? elements : [elements]
+
+    const mathRegex = /[$]{1,2}.*?[$]{1,2}/g
+
+    const typesetArray = elementsToProcess.map(item => {
+        return item.textContent.match(mathRegex)
+    })
+    console.log("mathjaxUpdate any math matches?", typesetArray)
+
+    const elementsWithMath = elementsToProcess.filter(element => {
+        const hasMatch = mathRegex.test(element.textContent)
+        mathRegex.lastIndex = 0
+        console.log("mathjaxupdate regex test result:", element, hasMatch)
+        return hasMatch
+    })
+
+    if (elementsWithMath.length > 0 && window.MathJax?.typesetPromise) {
+        // Pass the array of elements to MathJax for efficient processing.
+        MathJax.typesetPromise(elementsToProcess).catch((err) =>
+            console.error("mathjaxUpdate MathJax typesetting error:", err)
+        )
+    } else if (elementsWithMath.length === 0) {
+        console.log("mathjaxUpdate No elements with maths delimiters found")
+    } else {
+        console.warn("mathjaxUpdate MathJax is not loaded or ready.")
+    }
+}
+
+
+
 // ====================================
 // 9. EVENT LISTENERS
 // ====================================
@@ -488,21 +534,25 @@ explanationButton.addEventListener("click", () => {
         `
 
     // Trigger MathJax to typeset the newly injected content
-    if (window.MathJax?.typesetPromise) {
-        MathJax.typesetPromise([explanationDiv]).catch((err) =>
-            console.error("MathJax typeset error:", err)
-        )
-    }
+    // if (window.MathJax?.typesetPromise) {
+    //     MathJax.typesetPromise([explanationDiv]).catch((err) =>
+    //         console.error("MathJax typeset error:", err)
+    //     )
+    // }
+    // todo: could create explanation contents ready for use in loadQuestion
+    // and handle mathjax there
+
+    mathjaxUpdate(explanationDiv)
 })
 
 syllabusButton.addEventListener("click", () => {
-    console.log("EVENT LISTENER FOR SYLLABUS ITEMS", syllabusItemsDiv.style.display)
+    console.log("EVENT LISTENER FOR SYLLABUS ITEMS BEFORE CHANGE:", syllabusItemsDiv.style.display)
     if (syllabusItemsDiv.style.display === "none") {
         syllabusItemsDiv.style.display = "inline-block"
     } else {
         syllabusItemsDiv.style.display = "none"
     }
-    console.log("EVENT LISTENER FOR SYLLABUS ITEMS", syllabusItemsDiv.style.display)
+    console.log("EVENT LISTENER FOR SYLLABUS ITEMS AFTER CHANGE:", syllabusItemsDiv.style.display)
 })
 
 searchForm.addEventListener("submit", function (event) {
