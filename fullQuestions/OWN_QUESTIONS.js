@@ -260,7 +260,7 @@ const OWN_QUESTIONS = [
     },
     {
         source: "OWN QUESTIONS Q17",
-        question: "What will the charge be on a $22 \\mu F$ capacitor if it is connected to a 12V DC supply for several hours?",
+        question: "What will the charge be on a $22 \\mu F$ capacitor if it is connected to a 12V DC supply for several hours? #Q",
         image: "",
         options: [
             "$264 \\mu C$",
@@ -277,7 +277,7 @@ const OWN_QUESTIONS = [
     },
     {
         source: "OWN QUESTIONS Q18",
-        question: "If a capacitor of 1F will store 1C of charge for an applied PD of 1V, what PD would a $10,000 \\mu F$ capacitor need to achieve the same charge?",
+        question: "If a capacitor of 1F will store 1C of charge for an applied PD of 1V, what PD would a $10,000 \\mu F$ capacitor need to achieve the same charge? #Q",
         image: "",
         options: [
             "10V",
@@ -292,7 +292,7 @@ const OWN_QUESTIONS = [
     },
     {
         source: "OWN QUESTIONS Q19",
-        question: "If a 10mF capacitor is charged with a constant current of 10mA for 1 minute, what would its charge be (in Coulombs), and what would the potential difference be (in Volts)?",
+        question: "If a 10mF capacitor is charged with a constant current of 10mA for 1 minute, what would its charge be (in Coulombs), and what would the potential difference be (in Volts)? #Q",
         image: "",
         options: [
             "60mC & 60V",
@@ -301,25 +301,55 @@ const OWN_QUESTIONS = [
             "60mC & 600V",
         ],
         correct: 1,
-        explanation: `First of all: $$Q = I \\cdot t$$ so Charge is current x time (which is a bit weird as that implies charge could get very high with no limit) and $$Q = 10 \\times 10^{-3} \\times 60 = 600mC$$ then use $$Q = V \\cdot C$$ to get $$V = \\frac{Q}{C} = \\frac{600 \\times 10^{-3}}{10 \\times 10^{-3}} = 60V$$`,
+        explanation: `First of all: $$Q = I \\cdot t$$ so Charge is current x time (which is a bit weird as that implies charge could get very high with no limit) and $$Q = 10 \\times 10^{-3} \\times 60 = 600mC$$ then use $$Q = V \\cdot C$$ to get $$V = \\frac{Q}{C} = \\frac{600 \\times 10^{-3}}{10 \\times 10^{-3}} = 60V$$ I emailed Steve about this, and the answer is to apply the formula with the numbers and not think too deeply about it.`,
         lookup: "See page(s) 21 of the Full Licence text book",
         syllabus: "2d.1"
     },
     {
-        source: "OWN QUESTIONS Q01",
-        question: "",
-        image: "",
+        source: "OWN QUESTIONS Q20",
+        question: "What is the selectivity Q for a series tuned circuit, an 'acceptor' circuit, with a resonant frequency $f_0$ of 10.7MHz, an upper half power frequency (upper -3dB point), $f_2$, of 10.706MHz, and a lower half-power point (lower -3dB point), $f_1$, of 10.694MHz.    #Q",
+        image: "images/own-q20.png",
         options: [
-            "",
-            "",
-            "",
-            "",
+            "892",
+            "89.2",
+            "8.92",
+            "0.892",
         ],
-        correct: 9,
-        explanation: ``,
+        correct: 0,
+        explanation: `$$Q = \\frac{f_0}{f_2 - f_1}$$<br> Then $Q = \\frac {10.7 \\times 10^6}{(10.706 - 10.694) \\times 10^6} = 891.7$<br><br>The bandwidth comes out to 12kHz and may be provided or need to be calculated.`,
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "0"
+        syllabus: "2h.4"
     },
+    {
+        source: "OWN QUESTIONS Q21",
+        question: "What is the selectivity Q for a series tuned circuit, an 'acceptor' circuit, with a resonant frequency $f_0$ of 10.7MHz, an upper half power frequency (upper -3dB point), $f_2$, of 10.702MHz, and a lower half-power point (lower -3dB point), $f_1$, of 10.698MHz.    #Q",
+        image: "images/own-q20.png",
+        options: [
+            "2675",
+            "26.75",
+            "267.5",
+            "0.2675",
+        ],
+        correct: 0,
+        explanation: `$$Q = \\frac{f_0}{f_2 - f_1}$$<br> Then $Q = \\frac {10.7 \\times 10^6}{(10.702 - 10.698) \\times 10^6} = 2675$<br><br>The bandwidth comes out to 4kHz and may be provided or need to be calculated. The narrower the bandwith, the higher the Q. The mode of transmission determines the bandwidth required. `,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "2h.4"
+    },
+    // {
+    //     source: "OWN QUESTIONS Q01",
+    //     question: "",
+    //     image: "",
+    //     options: [
+    //         "",
+    //         "",
+    //         "",
+    //         "",
+    //     ],
+    //     correct: 9,
+    //     explanation: ``,
+    //     lookup: "See page(s) x of the Full Licence text book",
+    //     syllabus: "0"
+    // },
 ]
 
 export default OWN_QUESTIONS

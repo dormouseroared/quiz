@@ -3,7 +3,7 @@ const syllabusItems = [
         key: "0",
         level: "dummy",
         title: "for anything not having a syllabus code",
-        text: "This is probably EX308, $EX309$ or similar $R_D$ \\tau.",
+        text: "This is probably EX308, $EX309$ or similar $R_D$",
         flashcards: [
             {
                 front: "<span style='color: blue;'>Mathjax reminders IN COLOUR!!:</span><ul><li>micro $\\mu$</li><li>dot instead of multiply $\\cdot$</li><li>degree experiment or fudge $^\\circ$</li><li></li></ul>",
@@ -579,7 +579,7 @@ const syllabusItems = [
                 sequence: "000",
                 front: "What is the unit for the quantity of electricity called, and how is it defined?",
                 frontImage: "",
-                back: "The Coulomb is the quantity of electricity or charge: $$Q = current \\times time$$ and if one Coulomb of charge passes a point every second, 1 Amp of current is flowing. Coulomb is the charge from $6 \\times 10^{18} electrons$ Q is not to be confused with Q as ameasure of selectiviity or magnification factor.",
+                back: "The Coulomb is the quantity of electricity or charge: $$Q = current \\times time$$ and if one Coulomb of charge passes a point every second, 1 Amp of current is flowing. Coulomb is the charge from $6 \\times 10^{18} electrons$ <br>This Q is not to be confused with either Q as a measure of selectivity or Q as a magnification factor.",
                 backImage: "week03-coulomb-per-second.png",
                 status: "",
                 reference: "week03 tutorial slides p10-11",
@@ -1626,7 +1626,7 @@ const syllabusItems = [
             {
                 subTitle: "Q Magnification",
                 sequence: "000",
-                front: "In this circuit the resonant frequency is 5.3MHz and there is an RF supply of just 2mV across the series circuit. Q MAGNIFICATION hinges on the fact that when a series tuned circuit is at resonance, the reactances $X_L$ and $X_C$ are equal and opposite, so they cancel each other.",
+                front: "In this circuit, the resonant frequency is 5.3MHz and there is an RF supply of just 2mV across the series circuit. Q MAGNIFICATION hinges on the fact that when a series tuned circuit is at resonance, the reactances $X_L$ and $X_C$ are equal and opposite, so they cancel each other.",
                 frontImage: "week03-Q-magnification-example.png",
                 back: "Calculation steps: <ol><li>calculate $X_C = 1 / 2 \\pi f C = 500 \\Omega$ and $X_L = 2 \\pi fL = 500 \\Omega$</li><li>The combined reactance of $X_L$ and $X_C$ is zero, so that leaves only the circuit resistance to oppose the flow </li><li>$I = \\frac{2 mV}{2 \\Omega} = 1mA$</li><li>Both L and C will be passing the 1mA of current, so there will be a voltage across each reactive component of $1mA \\times 500 \\Omega = 500mV$</li><li>RADIO MAGIC: 250 times input voltage, and MAGNIFICATION Q at work</li><li>A shorter path to finding Magnification $Q = \\frac{X_L}{R}$ or $\\frac{X_C}{R} = \\frac{500}{2} = 250$</li></ol>",
                 status: "",
@@ -1634,8 +1634,8 @@ const syllabusItems = [
                 id: "hQ5vWwHT"
             },
             {
-                subTitle: "Q factor",
-                sequence: "",
+                subTitle: "Q Magnification",
+                sequence: "010",
                 front: "what is Q-factor?",
                 back: "see IRTS Harec manual",
                 backImage: "week03A-Q-factor.png",
@@ -1671,16 +1671,6 @@ const syllabusItems = [
         weeks: [
             "3"
         ],
-        flashcards: [
-            {
-                subTitle: "Tuned circuit",
-                sequence: "000",
-                front: "Apply the formula for Q factor given circuit component values...",
-                back: "stuff",
-                status: "",
-                id: "bSZoHasf"
-            }
-        ]
     },
     {
         key: "2h.4",
