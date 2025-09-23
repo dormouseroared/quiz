@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App - Before Monitoring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .quiz-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .question-container {
+            display: none; /* All questions start hidden */
+            margin-bottom: 20px;
+        }
+        
+        .question-container.active {
+            display: block;
+        }
+        
+        .question-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .answer-choice {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .answer-choice:hover {
+            border-color: #007bff;
+            background-color: #e3f2fd;
+        }
+        
+        .answer-choice.selected {
+            border-color: #007bff;
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .nav-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background-color: #ccc;
+        }
+        
+        .prev-button {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .next-button, .submit-button {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .next-button:hover, .submit-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .progress-info {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #007bff;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .results-container {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .score-display {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="progress-info">
+            <div>Question <span id="current-question-number">1</span> of <span id="total-questions">3</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-container" id="question-0">
+            <div class="question-title">What is the capital of France?</div>
+            <button class="answer-choice" onclick="selectAnswer(0, 0)">London</button>
+            <button class="answer-choice" onclick="selectAnswer(0, 1)">Paris</button>
+            <button class="answer-choice" onclick="selectAnswer(0, 2)">Berlin</button>
+            <button class="answer-choice" onclick="selectAnswer(0, 3)">Madrid</button>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container" id="question-1">
+            <div class="question-title">Which planet is closest to the Sun?</div>
+            <button class="answer-choice" onclick="selectAnswer(1, 0)">Venus</button>
+            <button class="answer-choice" onclick="selectAnswer(1, 1)">Mercury</button>
+            <button class="answer-choice" onclick="selectAnswer(1, 2)">Earth</button>
+            <button class="answer-choice" onclick="selectAnswer(1, 3)">Mars</button>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-container" id="question-2">
+            <div class="question-title">What is 2 + 2?</div>
+            <button class="answer-choice" onclick="selectAnswer(2, 0)">3</button>
+            <button class="answer-choice" onclick="selectAnswer(2, 1)">4</button>
+            <button class="answer-choice" onclick="selectAnswer(2, 2)">5</button>
+            <button class="answer-choice" onclick="selectAnswer(2, 3)">6</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="results-container" id="results-container">
+            <h2>Quiz Complete!</h2>
+            <div class="score-display" id="final-score">0/3</div>
+            <p>Thank you for taking the quiz!</p>
+            <button class="nav-button next-button" onclick="restartQuiz()">Take Quiz Again</button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button class="nav-button prev-button" id="prev-button" onclick="previousQuestion()" disabled>
+                Previous
+            </button>
+            <button class="nav-button next-button" id="next-button" onclick="nextQuestion()" disabled>
+                Next
+            </button>
+            <button class="nav-button submit-button" id="submit-button" onclick="submitQuiz()" style="display: none;" disabled>
+                Submit Quiz
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Quiz Application JavaScript - This is your typical quiz app structure
+        
+        // Global state variables - these track the current state of the quiz
+        let currentQuestionIndex = 0;
+        let totalQuestions = 3;
+        let userAnswers = []; // Will store user's selected answers
+        let correctAnswers = [1, 1, 1]; // Correct answers for each question (Paris, Mercury, 4)
+        
+        /**
+         * Initialize the quiz when the page loads
+         * This function sets up the initial state and shows the first question
+         */
+        function initializeQuiz() {
+            console.log('🚀 Initializing quiz application...');
+            
+            // Reset all state
+            currentQuestionIndex = 0;
+            userAnswers = [];
+            
+            // Hide all questions initially
+            document.querySelectorAll('.question-container').forEach(container => {
+                container.style.display = 'none';
+            });
+            
+            // Hide results
+            document.getElementById('results-container').style.display = 'none';
+            
+            // Show the first question
+            showQuestion(0);
+            
+            console.log('✅ Quiz initialization complete');
+        }
+        
+        /**
+         * Display a specific question by index
+         * This function handles showing/hiding questions and updating navigation
+         */
+        function showQuestion(questionIndex) {
+            console.log(`📝 Showing question ${questionIndex}`);
+            
+            // Update global state
+            currentQuestionIndex = questionIndex;
+            
+            // Hide all questions first
+            document.querySelectorAll('.question-container').forEach(container => {
+                container.style.display = 'none';
+                container.classList.remove('active');
+            });
+            
+            // Show the current question
+            const currentQuestionContainer = document.getElementById(`question-${questionIndex}`);
+            if (currentQuestionContainer) {
+                currentQuestionContainer.style.display = 'block';
+                currentQuestionContainer.classList.add('active');
+            }
+            
+            // Update question number display
+            document.getElementById('current-question-number').textContent = questionIndex + 1;
+            
+            // Update progress bar
+            updateProgressBar(questionIndex);
+            
+            // Update navigation buttons based on current position and answer state
+            updateNavigationButtons();
+            
+            // If user has already answered this question, show their selection
+            if (userAnswers[questionIndex] !== undefined) {
+                highlightSelectedAnswer(questionIndex, userAnswers[questionIndex]);
+            } else {
+                // Clear any previous selections
+                clearAnswerSelections();
+            }
+        }
+        
+        /**
+         * Handle answer selection for a question
+         * This function manages the visual feedback and enables navigation
+         */
+        function selectAnswer(questionIndex, answerIndex) {
+            console.log(`✏️ User selected answer ${answerIndex} for question ${questionIndex}`);
+            
+            // Store the user's answer
+            userAnswers[questionIndex] = answerIndex;
+            
+            // Update visual selection
+            highlightSelectedAnswer(questionIndex, answerIndex);
+            
+            // Update navigation buttons now that an answer is selected
+            updateNavigationButtons();
+        }
+        
+        /**
+         * Update the visual appearance of answer selections
+         * This function handles the UI feedback for selected answers
+         */
+        function highlightSelectedAnswer(questionIndex, selectedAnswerIndex) {
+            const questionContainer = document.getElementById(`question-${questionIndex}`);
+            const answerChoices = questionContainer.querySelectorAll('.answer-choice');
+            
+            // Remove selection from all answers
+            answerChoices.forEach(choice => {
+                choice.classList.remove('selected');
+            });
+            
+            // Add selection to the chosen answer
+            if (answerChoices[selectedAnswerIndex]) {
+                answerChoices[selectedAnswerIndex].classList.add('selected');
+            }
+        }
+        
+        /**
+         * Clear all answer selections (used when showing a new question)
+         */
+        function clearAnswerSelections() {
+            document.querySelectorAll('.answer-choice').forEach(choice => {
+                choice.classList.remove('selected');
+            });
+        }
+        
+        /**
+         * Update navigation button states based on current position and answers
+         * This function manages which buttons are enabled/disabled and visible
+         */
+        function updateNavigationButtons() {
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const submitButton = document.getElementById('submit-button');
+            
+            // Previous button logic
+            if (currentQuestionIndex === 0) {
+                prevButton.disabled = true;
+                prevButton.style.opacity = '0.5';
+            } else {
+                prevButton.disabled = false;
+                prevButton.style.opacity = '1';
+            }
+            
+            // Determine if current question has been answered
+            const currentQuestionAnswered = userAnswers[currentQuestionIndex] !== undefined;
+            
+            // Next/Submit button logic
+            if (currentQuestionIndex === totalQuestions - 1) {
+                // Last question - show submit button instead of next
+                nextButton.style.display = 'none';
+                submitButton.style.display = 'inline-block';
+                submitButton.disabled = !currentQuestionAnswered;
+            } else {
+                // Not last question - show next button
+                nextButton.style.display = 'inline-block';
+                submitButton.style.display = 'none';
+                nextButton.disabled = !currentQuestionAnswered;
+            }
+        }
+        
+        /**
+         * Navigate to the next question
+         * This function handles forward navigation through the quiz
+         */
+        function nextQuestion() {
+            if (currentQuestionIndex < totalQuestions - 1 && userAnswers[currentQuestionIndex] !== undefined) {
+                console.log(`➡️ Moving from question ${currentQuestionIndex} to ${currentQuestionIndex + 1}`);
+                showQuestion(currentQuestionIndex + 1);
+            }
+        }
+        
+        /**
+         * Navigate to the previous question
+         * This function handles backward navigation through the quiz
+         */
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                console.log(`⬅️ Moving from question ${currentQuestionIndex} to ${currentQuestionIndex - 1}`);
+                showQuestion(currentQuestionIndex - 1);
+            }
+        }
+        
+        /**
+         * Update the progress bar to show completion percentage
+         */
+        function updateProgressBar(questionIndex) {
+            const progressFill = document.getElementById('progress-fill');
+            const progressPercentage = ((questionIndex + 1) / totalQuestions) * 100;
+            progressFill.style.width = progressPercentage + '%';
+        }
+        
+        /**
+         * Submit the quiz and show results
+         * This function calculates the score and displays the results screen
+         */
+        function submitQuiz() {
+            console.log('📊 Submitting quiz and calculating results...');
+            
+            // Disable all navigation buttons during submission
+            document.getElementById('prev-button').disabled = true;
+            document.getElementById('next-button').disabled = true;
+            document.getElementById('submit-button').disabled = true;
+            
+            // Calculate score
+            let correctCount = 0;
+            for (let i = 0; i < totalQuestions; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
+                    correctCount++;
+                }
+            }
+            
+            // Hide all questions
+            document.querySelectorAll('.question-container').forEach(container => {
+                container.style.display = 'none';
+            });
+            
+            // Hide navigation buttons
+            document.querySelector('.navigation-buttons').style.display = 'none';
+            
+            // Hide progress info
+            document.querySelector('.progress-info').style.display = 'none';
+            
+            // Show results
+            const resultsContainer = document.getElementById('results-container');
+            const scoreDisplay = document.getElementById('final-score');
+            
+            resultsContainer.style.display = 'block';
+            scoreDisplay.textContent = `${correctCount}/${totalQuestions}`;
+            
+            console.log(`✅ Quiz completed! Score: ${correctCount}/${totalQuestions}`);
+        }
+        
+        /**
+         * Restart the quiz from the beginning
+         * This function resets everything back to the initial state
+         */
+        function restartQuiz() {
+            console.log('🔄 Restarting quiz...');
+            
+            // Show navigation buttons and progress info again
+            document.querySelector('.navigation-buttons').style.display = 'flex';
+            document.querySelector('.progress-info').style.display = 'block';
+            
+            // Hide results
+            document.getElementById('results-container').style.display = 'none';
+            
+            // Re-initialize the quiz
+            initializeQuiz();
+        }
+        
+        // Initialize the quiz when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🌟 DOM loaded, starting quiz application...');
+            initializeQuiz();
+        });
+    </script>
+</body>
+</html>
