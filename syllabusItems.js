@@ -3,7 +3,7 @@ const syllabusItems = [
         key: "0",
         level: "dummy",
         title: "for anything not having a syllabus code",
-        text: "This is probably EX308, $EX309$ or similar $R_D$.",
+        text: "This is probably EX308, $EX309$ or similar $R_D$ \\tau.",
         flashcards: [
             {
                 front: "<span style='color: blue;'>Mathjax reminders IN COLOUR!!:</span><ul><li>micro $\\mu$</li><li>dot instead of multiply $\\cdot$</li><li>degree experiment or fudge $^\\circ$</li><li></li></ul>",

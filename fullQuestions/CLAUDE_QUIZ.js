@@ -12,7 +12,7 @@ const CLAUDE_QUIZ = [
         correct: 0,
         explanation: "Xc = 1/(2πfC) = 1/(2π × 14×10⁶ × 100×10⁻¹²) = 114Ω",
         lookup: "See capacitive reactance formula",
-        syllabus: "3a"
+        syllabus: "0"
     },
     {
         source: "CLAUDE QUIZ CAPACITORS Q02",
