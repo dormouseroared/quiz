@@ -569,7 +569,7 @@ const syllabusItems = [
         key: "2d.1",
         level: "full",
         title: "Reactive components",
-        text: "Recall that the Coulomb is the quantity of electricity, Q, given by current × time and that the charge on a capacitor is given by Q = V×C.",
+        text: "Recall that the Coulomb is the quantity of electricity, Q, given by current (Amps) × time (seconds) $$Q = I \\cdot t$$ and that the charge on a capacitor is given by $$Q = V \\cdot C$$.",
         weeks: [
             "3"
         ],
