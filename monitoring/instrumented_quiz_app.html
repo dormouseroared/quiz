@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App - With Monitoring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .quiz-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .question-container {
+            display: none; /* All questions start hidden */
+            margin-bottom: 20px;
+        }
+        
+        .question-container.active {
+            display: block;
+        }
+        
+        .question-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .answer-choice {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .answer-choice:hover {
+            border-color: #007bff;
+            background-color: #e3f2fd;
+        }
+        
+        .answer-choice.selected {
+            border-color: #007bff;
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .nav-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background-color: #ccc;
+        }
+        
+        .prev-button {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .next-button, .submit-button {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .next-button:hover, .submit-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .progress-info {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #007bff;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .results-container {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .score-display {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+            margin: 20px 0;
+        }
+
+        /* Debugging helper styles */
+        .debug-panel {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        
+        .debug-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 2px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="progress-info">
+            <div>Question <span id="current-question-number">1</span> of <span id="total-questions">3</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-container" id="question-0">
+            <div class="question-title">What is the capital of France?</div>
+            <button class="answer-choice" onclick="selectAnswer(0, 0)">London</button>
+            <button class="answer-choice" onclick="selectAnswer(0, 1)">Paris</button>
+            <button class="answer-choice" onclick="selectAnswer(0, 2)">Berlin</button>
+            <button class="answer-choice" onclick="selectAnswer(0, 3)">Madrid</button>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container" id="question-1">
+            <div class="question-title">Which planet is closest to the Sun?</div>
+            <button class="answer-choice" onclick="selectAnswer(1, 0)">Venus</button>
+            <button class="answer-choice" onclick="selectAnswer(1, 1)">Mercury</button>
+            <button class="answer-choice" onclick="selectAnswer(1, 2)">Earth</button>
+            <button class="answer-choice" onclick="selectAnswer(1, 3)">Mars</button>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-container" id="question-2">
+            <div class="question-title">What is 2 + 2?</div>
+            <button class="answer-choice" onclick="selectAnswer(2, 0)">3</button>
+            <button class="answer-choice" onclick="selectAnswer(2, 1)">4</button>
+            <button class="answer-choice" onclick="selectAnswer(2, 2)">5</button>
+            <button class="answer-choice" onclick="selectAnswer(2, 3)">6</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="results-container" id="results-container">
+            <h2>Quiz Complete!</h2>
+            <div class="score-display" id="final-score">0/3</div>
+            <p>Thank you for taking the quiz!</p>
+            <button class="nav-button next-button" onclick="restartQuiz()">Take Quiz Again</button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button class="nav-button prev-button" id="prev-button" onclick="previousQuestion()" disabled>
+                Previous
+            </button>
+            <button class="nav-button next-button" id="next-button" onclick="nextQuestion()" disabled>
+                Next
+            </button>
+            <button class="nav-button submit-button" id="submit-button" onclick="submitQuiz()" style="display: none;" disabled>
+                Submit Quiz
+            </button>
+        </div>
+    </div>
+
+    <!-- Debug Panel for Testing -->
+    <div class="debug-panel">
+        <div>📊 Quiz Monitoring Tools</div>
+        <button class="debug-button" onclick="showRecentMonitoringActivity()">Show Recent</button>
+        <button class="debug-button" onclick="compareWithPreviousState()">Compare Last</button>
+        <button class="debug-button" onclick="captureCurrentState()">Capture Now</button>
+        <button class="debug-button" onclick="toggleMonitoring()">Toggle Monitor</button>
+    </div>
+
+    <!-- Load the monitoring module -->
+    <script type="module">
+        // ===== STEP 1: IMPORT THE MONITORING MODULE =====
+        // This is the only new import you need to add to your existing quiz app
+        
+        // In a real implementation, you'd import from a separate file:
+        // import { registerConfiguration, captureState, showRecentActivity, compareWithPrevious, setMonitoringEnabled } from './simpleMonitor.js';
+        
+        // For this demo, we'll include the monitor inline (in a real app, use separate files)
+        class SimpleMonitor {
+            constructor() {
+                this.enabled = true;
+                this.entries = [];
+                this.startTime = Date.now();
+                this.configurations = new Map();
+                console.log('📊 Simple Monitor initialized');
+            }
+
+            registerConfiguration(configName, elementConfig) {
+                this.configurations.set(configName, elementConfig);
+                console.log(`📊 Registered monitoring configuration: "${configName}" with ${Object.keys(elementConfig).length} elements`);
+            }
+
+            captureState(config, caller, contextInfo = null) {
+                if (!this.enabled) return;
+
+                const elementConfig = typeof config === 'string' 
+                    ? this.configurations.get(config)
+                    : config;
+
+                if (!elementConfig) {
+                    console.warn(`⚠️ Monitor configuration not found: ${config}`);
+                    return;
+                }
+
+                const snapshot = {
+                    timestamp: Date.now() - this.startTime,
+                    caller: caller,
+                    context: contextInfo,
+                    elementStates: {}
+                };
+
+                for (const [elementName, cssSelector] of Object.entries(elementConfig)) {
+                    const element = document.querySelector(cssSelector);
+                    
+                    if (element) {
+                        snapshot.elementStates[elementName] = this._captureElementState(element);
+                    } else {
+                        snapshot.elementStates[elementName] = { 
+                            error: 'Element not found',
+                            selector: cssSelector 
+                        };
+                    }
+                }
+
+                this.entries.push(snapshot);
+                this._displayCapture(snapshot);
+            }
+
+            _captureElementState(element) {
+                const baseState = {
+                    tag: element.tagName.toLowerCase(),
+                    display: element.style.display || 'default',
+                    visible: element.offsetParent !== null,
+                    disabled: element.disabled || false,
+                    classes: element.className || 'none'
+                };
+
+                switch (element.tagName.toLowerCase()) {
+                    case 'button':
+                        return {
+                            ...baseState,
+                            clickable: !element.disabled && element.offsetParent !== null,
+                            text: element.textContent.substring(0, 30)
+                        };
+                    case 'div':
+                        return {
+                            ...baseState,
+                            hasContent: element.textContent.trim().length > 0,
+                            childCount: element.children.length
+                        };
+                    default:
+                        return baseState;
+                }
+            }
+
+            _displayCapture(snapshot) {
+                const headerStyle = 'background: #e3f2fd; color: #1565c0; padding: 2px 6px; font-weight: bold;';
+                console.groupCollapsed(`%c📊 [${snapshot.timestamp}ms] ${snapshot.caller}${snapshot.context ? ` (Q${snapshot.context})` : ''}`, headerStyle);
+                console.table(snapshot.elementStates);
+                console.groupEnd();
+            }
+
+            setEnabled(enabled) {
+                this.enabled = enabled;
+                console.log(`📊 Monitoring ${enabled ? 'enabled' : 'disabled'}`);
+            }
+
+            showRecentActivity(count = 5) {
+                const recent = this.entries.slice(-count);
+                if (recent.length === 0) {
+                    console.log('📊 No monitoring data available');
+                    return;
+                }
+                console.group(`📊 Last ${recent.length} Monitoring Events:`);
+                recent.forEach(entry => {
+                    console.log(`[${entry.timestamp}ms] ${entry.caller}${entry.context ? ` (Q${entry.context})` : ''}`);
+                });
+                console.groupEnd();
+            }
+
+            compareWithPrevious() {
+                if (this.entries.length < 2) {
+                    console.log('📊 Need at least 2 snapshots to compare');
+                    return;
+                }
+
+                const current = this.entries[this.entries.length - 1];
+                const previous = this.entries[this.entries.length - 2];
+
+                console.group(`📊 Comparison: ${previous.caller} → ${current.caller}`);
+
+                let changesFound = false;
+                for (const element of Object.keys(current.elementStates)) {
+                    const currentState = current.elementStates[element];
+                    const previousState = previous.elementStates[element];
+
+                    if (!currentState || !previousState) continue;
+
+                    const changes = {};
+                    for (const [property, currentValue] of Object.entries(currentState)) {
+                        const previousValue = previousState[property];
+                        if (previousValue !== currentValue && property !== 'error') {
+                            changes[property] = { from: previousValue, to: currentValue };
+                        }
+                    }
+                    
+                    if (Object.keys(changes).length > 0) {
+                        console.group(`🔄 ${element}:`);
+                        for (const [property, change] of Object.entries(changes)) {
+                            console.log(`  ${property}: ${change.from} → ${change.to}`);
+                        }
+                        console.groupEnd();
+                        changesFound = true;
+                    }
+                }
+
+                if (!changesFound) {
+                    console.log('ℹ️ No changes detected between snapshots');
+                }
+                console.groupEnd();
+            }
+        }
+
+        // Create singleton instance
+        const monitor = new SimpleMonitor();
+
+        // Export functions for global access
+        window.registerConfiguration = (name, config) => monitor.registerConfiguration(name, config);
+        window.captureState = (config, caller, context) => monitor.captureState(config, caller, context);
+        window.setMonitoringEnabled = (enabled) => monitor.setEnabled(enabled);
+        window.showRecentMonitoringActivity = (count) => monitor.showRecentActivity(count);
+        window.compareWithPreviousState = () => monitor.compareWithPrevious();
+
+        // ===== STEP 2: DEFINE MONITORING CONFIGURATIONS =====
+        // This is where you specify which elements you want to monitor
+        // You only need to do this once, then reference by name throughout your app
+
+        const quizUIElements = {
+            'prev-button': '#prev-button',
+            'next-button': '#next-button', 
+            'submit-button': '#submit-button',
+            'current-question': '.question-container.active',
+            'progress-fill': '#progress-fill'
+        };
+
+        const questionTransitionElements = {
+            'question-0': '#question-0',
+            'question-1': '#question-1',
+            'question-2': '#question-2'
+        };
+
+        // Register these configurations
+        registerConfiguration('quiz-ui', quizUIElements);
+        registerConfiguration('questions', questionTransitionElements);
+
+        // ===== STEP 3: YOUR EXISTING QUIZ CODE WITH MINIMAL MONITORING ADDITIONS =====
+        // Notice how little the original code changes - we just add monitoring calls at key points
+        
+        // Global state variables - UNCHANGED from original
+        let currentQuestionIndex = 0;
+        let totalQuestions = 3;
+        let userAnswers = [];
+        let correctAnswers = [1, 1, 1];
+        
+        /**
+         * Initialize the quiz - ENHANCED with monitoring
+         * Only additions: monitoring calls at the beginning and end
+         */
+        function initializeQuiz() {
+            console.log('🚀 Initializing quiz application...');
+            
+            // MONITORING: Capture state before initialization
+            captureState('quiz-ui', 'initializeQuiz-BEFORE', 'init');
+            
+            // Original initialization logic - UNCHANGED
+            currentQuestionIndex = 0;
+            userAnswers = [];
+            
+            document.querySelectorAll('.question-container').forEach(container => {
+                container.style.display = 'none';
+            });
+            
+            document.getElementById('results-container').style.display = 'none';
+            
+            showQuestion(0);
+            
+            // MONITORING: Capture state after initialization
+            captureState('quiz-ui', 'initializeQuiz-AFTER', 'init');
+            
+            console.log('✅ Quiz initialization complete');
+        }
+        
+        /**
+         * Display a specific question - ENHANCED with monitoring
+         * This function has the most monitoring because it does the most state changes
+         */
+        function showQuestion(questionIndex) {
+            console.log(`📝 Showing question ${questionIndex}`);
+            
+            // MONITORING: Capture state before any changes
+            captureState('quiz-ui', 'showQuestion-BEFORE', questionIndex);
+            
+            // Original logic - UNCHANGED
+            currentQuestionIndex = questionIndex;
+            
+            document.querySelectorAll('.question-container').forEach(container => {
+                container.style.display = 'none';
+                container.classList.remove('active');
+            });
+            
+            const currentQuestionContainer = document.getElementById(`question-${questionIndex}`);
+            if (currentQuestionContainer) {
+                currentQuestionContainer.style.display = 'block';
+                currentQuestionContainer.classList.add('active');
+            }
+            
+            document.getElementById('current-question-number').textContent = questionIndex + 1;
+            
+            updateProgressBar(questionIndex);
+            updateNavigationButtons();
+            
+            if (userAnswers[questionIndex] !== undefined) {
+                highlightSelectedAnswer(questionIndex, userAnswers[questionIndex]);
+            } else {
+                clearAnswerSelections();
+            }
+            
+            // MONITORING: Capture state after all changes
+            captureState('quiz-ui', 'showQuestion-AFTER', questionIndex);
+            
+            // MONITORING: Also capture question-specific state
+            captureState('questions', 'showQuestion-questions', questionIndex);
+        }
+        
+        /**
+         * Handle answer selection - ENHANCED with monitoring
+         */
+        function selectAnswer(questionIndex, answerIndex) {
+            console.log(`✏️ User selected answer ${answerIndex} for question ${questionIndex}`);
+            
+            // MONITORING: Before answer selection
+            captureState('quiz-ui', 'selectAnswer-BEFORE', questionIndex);
+            
+            // Original logic - UNCHANGED
+            userAnswers[questionIndex] = answerIndex;
+            highlightSelectedAnswer(questionIndex, answerIndex);
+            updateNavigationButtons();
+            
+            // MONITORING: After answer selection
+            captureState('quiz-ui', 'selectAnswer-AFTER', questionIndex);
+        }
+        
+        /**
+         * Update navigation buttons - ENHANCED with monitoring  
+         * This is a great function to monitor because button states are often confusing
+         */
+        function updateNavigationButtons() {
+            // MONITORING: Before button updates
+            captureState('quiz-ui', 'updateNavigationButtons-BEFORE', currentQuestionIndex);
+            
+            // Original logic - UNCHANGED
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const submitButton = document.getElementById('submit-button');
+            
+            if (currentQuestionIndex === 0) {
+                prevButton.disabled = true;
+                prevButton.style.opacity = '0.5';
+            } else {
+                prevButton.disabled = false;
+                prevButton.style.opacity = '1';
+            }
+            
+            const currentQuestionAnswered = userAnswers[currentQuestionIndex] !== undefined;
+            
+            if (currentQuestionIndex === totalQuestions - 1) {
+                nextButton.style.display = 'none';
+                submitButton.style.display = 'inline-block';
+                submitButton.disabled = !currentQuestionAnswered;
+            } else {
+                nextButton.style.display = 'inline-block';
+                submitButton.style.display = 'none';
+                nextButton.disabled = !currentQuestionAnswered;
+            }
+            
+            // MONITORING: After button updates
+            captureState('quiz-ui', 'updateNavigationButtons-AFTER', currentQuestionIndex);
+        }
+        
+        /**
+         * Navigate to next question - ENHANCED with monitoring
+         */
+        function nextQuestion() {
+            if (currentQuestionIndex < totalQuestions - 1 && userAnswers[currentQuestionIndex] !== undefined) {
+                console.log(`➡️ Moving from question ${currentQuestionIndex} to ${currentQuestionIndex + 1}`);
+                
+                // MONITORING: Before navigation
+                captureState('quiz-ui', 'nextQuestion-BEFORE', currentQuestionIndex);
+                
+                showQuestion(currentQuestionIndex + 1);
+                
+                // MONITORING: After navigation (note: showQuestion has its own monitoring)
+                captureState('quiz-ui', 'nextQuestion-AFTER', currentQuestionIndex);
+            }
+        }
+        
+        /**
+         * Navigate to previous question - ENHANCED with monitoring  
+         */
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                console.log(`⬅️ Moving from question ${currentQuestionIndex} to ${currentQuestionIndex - 1}`);
+                
+                // MONITORING: Before navigation
+                captureState('quiz-ui', 'previousQuestion-BEFORE', currentQuestionIndex);
+                
+                showQuestion(currentQuestionIndex - 1);
+                
+                // MONITORING: After navigation
+                captureState('quiz-ui', 'previousQuestion-AFTER', currentQuestionIndex);
+            }
+        }
+        
+        /**
+         * Submit quiz - ENHANCED with monitoring
+         * This is critical to monitor because it involves major UI state changes
+         */
+        function submitQuiz() {
+            console.log('📊 Submitting quiz and calculating results...');
+            
+            // MONITORING: Before submission processing
+            captureState('quiz-ui', 'submitQuiz-BEFORE', currentQuestionIndex);
+            
+            // Original logic - UNCHANGED
+            document.getElementById('prev-button').disabled = true;
+            document.getElementById('next-button').disabled = true;
+            document.getElementById('submit-button').disabled = true;
+            
+            let correctCount = 0;
+            for (let i = 0; i < totalQuestions; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
+                    correctCount++;
+                }
+            }
+            
+            document.querySelectorAll('.question-container').forEach(container => {
+                container.style.display = 'none';
+            });
+            
+            document.querySelector('.navigation-buttons').style.display = 'none';
+            document.querySelector('.progress-info').style.display = 'none';
+            
+            const resultsContainer = document.getElementById('results-container');
+            const scoreDisplay = document.getElementById('final-score');
+            
+            resultsContainer.style.display = 'block';
+            scoreDisplay.textContent = `${correctCount}/${totalQuestions}`;
+            
+            // MONITORING: After submission complete
+            captureState('quiz-ui', 'submitQuiz-AFTER', `score-${correctCount}`);
+            
+            console.log(`✅ Quiz completed! Score: ${correctCount}/${totalQuestions}`);
+        }
+        
+        // ===== REMAINING FUNCTIONS - UNCHANGED =====
+        // These functions don't need monitoring because they don't involve complex state changes
+        
+        function highlightSelectedAnswer(questionIndex, selectedAnswerIndex) {
+            const questionContainer = document.getElementById(`question-${questionIndex}`);
+            const answerChoices = questionContainer.querySelectorAll('.answer-choice');
+            
+            answerChoices.forEach(choice => {
+                choice.classList.remove('selected');
+            });
+            
+            if (answerChoices[selectedAnswerIndex]) {
+                answerChoices[selectedAnswerIndex].classList.add('selected');
+            }
+        }
+        
+        function clearAnswerSelections() {
+            document.querySelectorAll('.answer-choice').forEach(choice => {
+                choice.classList.remove('selected');
+            });
+        }
+        
+        function updateProgressBar(questionIndex) {
+            const progressFill = document.getElementById('progress-fill');
+            const progressPercentage = ((questionIndex + 1) / totalQuestions) * 100;
+            progressFill.style.width = progressPercentage + '%';
+        }
+        
+        function restartQuiz() {
+            console.log('🔄 Restarting quiz...');
+            
+            document.querySelector('.navigation-buttons').style.display = 'flex';
+            document.querySelector('.progress-info').style.display = 'block';
+            document.getElementById('results-container').style.display = 'none';
+            
+            initializeQuiz();
+        }
+
+        // ===== DEBUGGING HELPER FUNCTIONS =====
+        // These make it easy to test and explore the monitoring system
+        
+        window.captureCurrentState = function() {
+            captureState('quiz-ui', 'MANUAL-CAPTURE', currentQuestionIndex);
+        };
+        
+        window.toggleMonitoring = function() {
+            const isEnabled = monitor.enabled;
+            setMonitoringEnabled(!isEnabled);
+        };
+        
+        // Make main functions globally accessible for testing
+        window.showQuestion = showQuestion;
+        window.selectAnswer = selectAnswer;
+        window.nextQuestion = nextQuestion;
+        window.previousQuestion = previousQuestion;
+        window.submitQuiz = submitQuiz;
+        window.restartQuiz = restartQuiz;
+        
+        // ===== INITIALIZE THE APPLICATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🌟 DOM loaded, starting instrumented quiz application...');
+            console.log('📊 Monitoring is active - check console for state capture data');
+            console.log('🛠️ Use debug panel (top right) or console commands to explore monitoring');
+            initializeQuiz();
+        });
+    </script>
+</body>
+</html>
