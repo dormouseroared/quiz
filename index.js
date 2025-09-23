@@ -474,7 +474,7 @@ function myDebug(whereami, quizState) {
  * @param {HTMLElement|NodeListOf<HTMLElement>} elements - The element(s) to process.
  */
 function mathjaxUpdate(elements) {
-    // Ensure the input is an array-like object, then convert it to an array.
+    // Ensure the input is an array-like object, else convert it to an array.
     const elementsToProcess = Array.isArray(elements) ? elements : [elements]
 
     const mathRegex = /[$]{1,2}.*?[$]{1,2}/g
@@ -526,10 +526,14 @@ nextQuestionButton.addEventListener("click", (event) => {
 
 explanationButton.addEventListener("click", () => {
     const q = quizState.questionPack[quizState.currentQuestion]
+
+    const ref = q.reference && q.reference.trim() ? q.reference : ""
+
     explanationDiv.innerHTML = `
         <p>${q.explanation ? q.explanation : ""}</p>
         <p>Source: ${q.source}</p>
-        <p>Reference: ${q.lookup}</p>
+        <p>Lookup: ${q.lookup}</p>
+        <p>Reference: ${ref}</p>
         <p>Syllabus: ${q.syllabus}</p>
         `
 

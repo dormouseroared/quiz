@@ -243,7 +243,7 @@ const OWN_QUESTIONS = [
         tagged: true
     },
     {
-        source: "OWN QUESTIONS Q13",
+        source: "OWN QUESTIONS Q16",
         question: "The prefix nano - n - (as in 10nF) means:",
         image: "",
         options: [
@@ -257,6 +257,53 @@ const OWN_QUESTIONS = [
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "0",
         tagged: true
+    },
+    {
+        source: "OWN QUESTIONS Q17",
+        question: "What will the charge be on a $22 \\mu F$ capacitor if it is connected to a 12V DC supply for several hours?",
+        image: "",
+        options: [
+            "$264 \\mu C$",
+            "$26.4 \\mu C$",
+            "$2640 \\mu C$",
+            "$2.64 \\mu C$",
+        ],
+        correct: 0,
+        explanation: `$Q = V \\cdot C$ and because several hours have passed, we have exceeded 5 time constants. There is a flashcard for this also.`,
+        lookup: "See page(s) 21 of the Full Licence text book",
+        syllabus: "2d.1",
+        reference: "BBDL FULL COURSE - Week03A - Tutorial Video - 01:18:38",
+        tagged: true
+    },
+    {
+        source: "OWN QUESTIONS Q18",
+        question: "If a capacitor of 1F will store 1C of charge for an applied PD of 1V, what PD would a $10,000 \\mu F$ capacitor need to achieve the same charge?",
+        image: "",
+        options: [
+            "10V",
+            "100V",
+            "1000V",
+            "1V",
+        ],
+        correct: 1,
+        explanation: `$$Q = V \\cdot C$$ From this we get V = Q/C and that becomes $\\frac{1}{10 \\times 10^{-3}} = 100V $ noting that $10,000 \\mu F$ is the same as $ 10mF $.`,
+        lookup: "See page(s) 21 of the Full Licence text book",
+        syllabus: "2d.1"
+    },
+    {
+        source: "OWN QUESTIONS Q19",
+        question: "If a 10mF capacitor is charged with a constant current of 10mA for 1 minute, what would its charge be (in Coulombs), and what would the potential difference be (in Volts)?",
+        image: "",
+        options: [
+            "60mC & 60V",
+            "600mC & 60V",
+            "600mC & 600V",
+            "60mC & 600V",
+        ],
+        correct: 1,
+        explanation: `First of all: $$Q = I \\cdot t$$ so Charge is current x time (which is a bit weird as that implies charge could get very high with no limit) and $$Q = 10 \\times 10^{-3} \\times 60 = 600mC$$ then use $$Q = V \\cdot C$$ to get $$V = \\frac{Q}{C} = \\frac{600 \\times 10^{-3}}{10 \\times 10^{-3}} = 60V$$`,
+        lookup: "See page(s) 21 of the Full Licence text book",
+        syllabus: "2d.1"
     },
     {
         source: "OWN QUESTIONS Q01",
