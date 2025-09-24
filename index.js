@@ -4,6 +4,7 @@
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 import syllabusItems from "./syllabusItems.js"
+import flashcardsWidget from "./flashcards-widget/flashcards_widget_v8_2.js"
 
 // ====================================
 // 2. DOM ELEMENT REFERENCES
@@ -25,6 +26,8 @@ const explanationDiv = document.getElementById("explanation")
 const syllabusItemsDiv = document.getElementById("syllabusItems")
 const resultDiv = document.getElementById("result")
 const syllabusScoreDiv = document.getElementById("syllabusScore")
+
+const flashcardsDiv = document.getElementById("flashcards")
 
 // ====================================
 // 3. CONFIGURATION AND DATA STRUCTURES
@@ -54,6 +57,8 @@ const section = [
 ]
 
 const abcd = ["A", "B", "C", "D"] // answer index as alpha
+
+let findCards = null
 
 // ====================================
 // 4. APPLICATION STATE
@@ -325,6 +330,7 @@ function selectAnswer(index) {
 
     buttons.forEach((btn) => (btn.disabled = true))
 
+    // todo: why was it erroring here?
     if (!/[0-3]/.test(q.correct)) {
         throw new Error("selectAnswer: correct not in range 0-3")
     }
@@ -516,13 +522,25 @@ function showFlashcards(targetSyllabus, syllabusArray) {
     const findSyllabus = syllabusArray.filter(item => item.key === targetSyllabus && item.level === "full")
 
 
-    const findCards = findSyllabus.flatMap(item => item.flashcards || [])
+    findCards = findSyllabus.flatMap(item => item.flashcards || [])
 
     console.log("showFlashcards:", targetSyllabus, syllabusArray.length, findSyllabus.length, findCards.length)
 
     console.log("showFlashcards:", findCards)
 
     flashcardButton.title = `There are ${findCards.length} flashcards for syllabus item ${targetSyllabus}`
+
+    if (findCards.length === 0) {
+        flashcardButton.disabled = true
+    } else {
+        flashcardButton.disabled = false
+    }
+
+    console.log("showFlashcards: flashcardButton style.display and disabled", flashcardButton.style.display, flashcardButton.disabled)
+
+
+    // const widget = flashcardsWidget(findCards, flashcardsDiv)
+    // widget.start()
 }
 
 
@@ -570,6 +588,13 @@ explanationButton.addEventListener("click", () => {
 
     mathjaxUpdate(explanationDiv)
 })
+
+flashcardButton.addEventListener("click", () => {
+    console.log("flashcards button click event")
+    const widget = flashcardsWidget(findCards, flashcardsDiv)
+    widget.start()
+})
+
 
 syllabusButton.addEventListener("click", () => {
     console.log("EVENT LISTENER FOR SYLLABUS ITEMS BEFORE CHANGE:", syllabusItemsDiv.style.display)
