@@ -18,6 +18,7 @@ const optionsDiv = document.getElementById("options")
 
 const syllabusButton = document.getElementById("syllabus-btn")
 const explanationButton = document.getElementById("explanation-btn")
+const flashcardButton = document.getElementById("flashcard-btn")
 const nextQuestionButton = document.getElementById("next-btn")
 
 const explanationDiv = document.getElementById("explanation")
@@ -245,9 +246,10 @@ function loadQuestion() {
     })
 
     // Update button states
-    nextQuestionButton.disabled = true
-    explanationButton.disabled = true
     syllabusButton.disabled = false
+    explanationButton.disabled = true
+    flashcardButton.disabled = true
+    nextQuestionButton.disabled = true
 
     // Update explanation button styling
     explanationButton.title = ""
@@ -307,6 +309,10 @@ function loadQuestion() {
 
     mathjaxUpdate([questionDiv, optionsDiv, syllabusItemsDiv])
 
+    // todo: show flashcards available for this question
+
+    showFlashcards(q.syllabus, syllabusItems)
+
     console.groupEnd("loadQuestion")
 }
 
@@ -354,6 +360,7 @@ function showResult() {
 
     syllabusButton.style.display = "none"
     explanationButton.style.display = "none"
+    flashcardButton.style.display = "none"
     nextQuestionButton.style.display = "none"
 
     explanationDiv.style.display = "none"
@@ -467,6 +474,7 @@ function displaySyllabusScoresFlex(scores) {
 
 function myDebug(whereami, quizState) {
     console.log("-----quizState-----", whereami, quizState)
+    // todo: show display and disable values
 }
 
 /**
@@ -501,6 +509,20 @@ function mathjaxUpdate(elements) {
     } else {
         console.warn("mathjaxUpdate MathJax is not loaded or ready.")
     }
+}
+
+function showFlashcards(targetSyllabus, syllabusArray) {
+
+    const findSyllabus = syllabusArray.filter(item => item.key === targetSyllabus && item.level === "full")
+
+
+    const findCards = findSyllabus.flatMap(item => item.flashcards || [])
+
+    console.log("showFlashcards:", targetSyllabus, syllabusArray.length, findSyllabus.length, findCards.length)
+
+    console.log("showFlashcards:", findCards)
+
+    flashcardButton.title = `There are ${findCards.length} flashcards for syllabus item ${targetSyllabus}`
 }
 
 
@@ -622,9 +644,11 @@ searchForm.addEventListener("submit", function (event) {
     myDebug("SEARCH AFTER INIT", quizState)
 
     // Show quiz interface
-    nextQuestionButton.style.display = "inline-block"
-    explanationButton.style.display = "inline-block"
     syllabusButton.style.display = "inline-block"
+    explanationButton.style.display = "inline-block"
+    flashcardButton.style.display = "inline-block"
+    nextQuestionButton.style.display = "inline-block"
+
     syllabusDiv.style.display = "inline-block"
 
     loadQuestion()
@@ -640,7 +664,9 @@ searchForm.addEventListener("submit", function (event) {
 // Initial UI state
 syllabusButton.style.display = "none"
 explanationButton.style.display = "none"
+flashcardButton.style.display = "none"
 nextQuestionButton.style.display = "none"
+
 syllabusDiv.style.display = "none"
 
 // Run validation checks

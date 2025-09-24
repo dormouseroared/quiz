@@ -307,7 +307,7 @@ const OWN_QUESTIONS = [
     },
     {
         source: "OWN QUESTIONS Q20",
-        question: "What is the selectivity Q for a series tuned circuit, an 'acceptor' circuit, with a resonant frequency $f_0$ of 10.7MHz, an upper half power frequency (upper -3dB point), $f_2$, of 10.706MHz, and a lower half-power point (lower -3dB point), $f_1$, of 10.694MHz.    #Q",
+        question: "What is the selectivity Q for a series tuned 'acceptor' circuit, with a resonant frequency $f_0$ of 10.7MHz, an upper half power frequency (-3dB) $f_2$ of 10.706MHz, and a lower half-power point (-3dB) $f_1$ of 10.694MHz.    #Q",
         image: "images/own-q20.png",
         options: [
             "892",

@@ -1,0 +1,261 @@
+/**
+ * Additional CSS for Flashcards Integration
+ * 
+ * This CSS complements the main flashcards widget styling
+ * and handles the integration elements like buttons and notifications
+ */
+
+/* ===== FLASHCARDS TRIGGER BUTTON ===== */
+.flashcards-trigger-button {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+}
+
+.flashcards-trigger-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.flashcards-trigger-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+}
+
+.flashcards-trigger-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    background: #9ca3af;
+    box-shadow: none;
+}
+
+/* ===== NOTIFICATION SYSTEM ===== */
+.flashcards-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001; /* Higher than flashcards widget */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: notificationFadeIn 0.3s ease-out;
+}
+
+@keyframes notificationFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.notification-content {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: notificationSlideIn 0.3s ease-out;
+}
+
+@keyframes notificationSlideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.notification-content h3 {
+    margin: 0 0 12px 0;
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.notification-content p {
+    margin: 0 0 20px 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.notification-content button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.notification-content button:hover {
+    background: #2563eb;
+}
+
+/* Completion notification specific styling */
+.flashcards-notification.completion .notification-content {
+    border-top: 4px solid #10b981;
+}
+
+.flashcards-notification.completion h3 {
+    color: #10b981;
+}
+
+.flashcards-notification.completion button {
+    background: #10b981;
+}
+
+.flashcards-notification.completion button:hover {
+    background: #059669;
+}
+
+/* ===== INTEGRATION WITH QUIZ LAYOUT ===== */
+
+/* When flashcards button is in navigation area */
+.navigation-buttons .flashcards-trigger-button {
+    margin-left: auto; /* Push to right side if in flex container */
+}
+
+/* When flashcards button is in question area */
+.question-header .flashcards-trigger-button {
+    float: right;
+    margin-left: 16px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .flashcards-trigger-button {
+        width: 100%;
+        justify-content: center;
+        margin: 12px 0 8px 0;
+    }
+    
+    .question-header .flashcards-trigger-button {
+        float: none;
+        width: 100%;
+        margin: 8px 0;
+    }
+    
+    .notification-content {
+        margin: 20px;
+        width: auto;
+    }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Focus states for keyboard navigation */
+.flashcards-trigger-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
+}
+
+.notification-content button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .flashcards-trigger-button {
+        border: 2px solid currentColor;
+    }
+    
+    .notification-content {
+        border: 2px solid;
+    }
+    
+    .notification-content button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .flashcards-notification,
+    .notification-content,
+    .flashcards-trigger-button {
+        animation: none;
+        transition: none;
+    }
+    
+    .flashcards-trigger-button:hover {
+        transform: none;
+    }
+}
+
+/* ===== LOADING STATES ===== */
+
+.flashcards-trigger-button.loading {
+    position: relative;
+    color: transparent;
+}
+
+.flashcards-trigger-button.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    color: white;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===== INTEGRATION WITH MONITORING SYSTEM ===== */
+
+/* Optional: Style for debugging info when monitoring is active */
+.flashcards-debug-info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 11px;
+    z-index: 999;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.flashcards-debug-info.hidden {
+    display: none;
+}
