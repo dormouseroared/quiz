@@ -9,7 +9,7 @@ const RSGB_FULL_MOCK_1 = [
             "pass the message exactly as written"
         ],
         correct: 3,
-        explanation: "",
+        explanation: "This is a direct request from a User Service. There is a list in EX309 of User Service",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1c.1"
     },

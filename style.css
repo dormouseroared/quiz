@@ -249,3 +249,17 @@ ul {
     color:red;
     font-size: smaller;
 }
+
+#flashcard-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #4b6cb7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#flashcard-btn:hover {
+    background: #0d3594;
+}
