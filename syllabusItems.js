@@ -531,7 +531,7 @@ const syllabusItems = [
                 subTitle: "Capacitor",
                 sequence: "000",
                 front: "What factors influence the capacitance of a capacitor, and what is the formula?",
-                back: "$$C = \\frac{k \\cdot A}{d}$$<br><ul><li>where C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul>",
+                back: "$$C = \\frac{k \\cdot A}{d}$$<br><ul><li>C is Capacitance in Farads </li><li>k is Permittivity constant of the dielectric</li><li>A is the Area of the plates in square metres</li><li>d is Distance between the plates in metres</li></ul> Note that questions have been seen combining this formula with Q = VC substituting C. See BBDL Quizzes Week03A Q02.",
                 status: "",
                 reference: "week03 tutorial slides p8",
                 id: "kEyJnEIw"
