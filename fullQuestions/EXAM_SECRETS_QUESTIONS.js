@@ -819,7 +819,7 @@ const EXAM_SECRETS_QUESTIONS = [
     },
     {
         source: "Exam Secrets FULL [Technical Basics] 2I3-1",
-        question: "The drawing shows a class A amplifier using an N-channel depletion mode FET. The source and drain voltages are shown. What voltage might be expected on the gate in normal operation?",
+        question: "The drawing shows a class A amplifier using an N-channel depletion mode Field Effect Transistor (FET). The source and drain voltages are shown. What voltage might be expected on the gate in normal operation?",
         image: "images/secrets-tech-q26.png",
         options: [
             "3.2V",

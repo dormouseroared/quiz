@@ -799,7 +799,7 @@ const RSGB_FULL_MOCK_2 = [
     },
     {
         source: "RSGB Full Mock 2 Q58",
-        question: "The drawing shows an FET circuit biased by R1 and R2. R1 is 80kΩ and R2 is 20kΩ. Both resistors are 10% tolerance.The bias voltage might be lower than its design value by a maximum of:  <br><br><img src='images/rsgb-full-2-q58.png' alt='test'  >",
+        question: "The drawing shows a Field Effect Transistor (FET) circuit biased by R1 and R2. R1 is 80kΩ and R2 is 20kΩ. Both resistors are 10% tolerance.The bias voltage might be lower than its design value by a maximum of:  <br><br><img src='images/rsgb-full-2-q58.png' alt='test'  >",
         options: [
             "180mV",
             "100mV",
