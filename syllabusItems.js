@@ -1939,7 +1939,70 @@ const syllabusItems = [
         key: "2i.4",
         level: "full",
         title: "Semiconductor devices",
-        text: "Recall the characteristics and typical circuit diagrams of different classes of amplifiers (i.e. A, B, A/B and C)."
+        text: "Recall the characteristics and typical circuit diagrams of different classes of amplifiers (i.e. A, B, A/B and C).",
+        weeks: ["4"],
+        flashcards: [
+            {
+                subTitle: "Transistor Class A",
+                sequence: "000",
+                front: "What are the characteristics of class A amplifiers?",
+                frontImage: "week04-class.png",
+                back: "",
+                backImage: "week04-class-A.png",
+                reference: "week04 video tutorial 01:44:00",
+                id: "CBSP81G4"
+            },
+            {
+                subTitle: "Transistor Class B",
+                sequence: "010",
+                front: "What are the characteristics of class B amplifiers?",
+                frontImage: "week04-class.png",
+                back: "",
+                backImage: "week04-class-B.png",
+                reference: "week04 video tutorial 01:44:00",
+                id: "4OZTWMOE"
+            },
+            {
+                subTitle: "Transistor Class A/B",
+                sequence: "020",
+                front: "What are the characteristics of class A/B amplifiers?",
+                frontImage: "week04-class.png",
+                back: "",
+                backImage: "week04-class-AB.png",
+                reference: "week04 video tutorial 01:44:00",
+                id: "5OQQ9V1J"
+            },
+            {
+                subTitle: "Transistor Class C",
+                sequence: "030",
+                front: "What are the characteristics of class C amplifiers?",
+                frontImage: "week04-class.png",
+                back: "Can be used in a CW transmitter, where high quality is not required. Also a frequency multiplier.",
+                backImage: "week04-class-C.png",
+                reference: "week04 video tutorial 01:44:00",
+                id: "2835LSIX"
+            },
+            {
+                subTitle: "",
+                sequence: "",
+                front: "",
+                frontImage: "",
+                back: "",
+                backImage: "",
+                reference: "",
+                id: ""
+            },
+            {
+                subTitle: "",
+                sequence: "",
+                front: "",
+                frontImage: "",
+                back: "",
+                backImage: "",
+                reference: "",
+                id: ""
+            },
+        ]
     },
     {
         key: "2i.5",
