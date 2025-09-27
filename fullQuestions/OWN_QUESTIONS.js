@@ -335,6 +335,66 @@ const OWN_QUESTIONS = [
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2h.4"
     },
+    {
+        source: "OWN QUESTIONS Q22",
+        question: "When the magnetic fields from one coil cuts through another coil, the coils have:",
+        image: "",
+        options: [
+            "magnetic shielding",
+            "mutual inductance",
+            "linked loops",
+            "become good friends",
+        ],
+        correct: 1,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "OWN QUESTIONS Q23",
+        question: "To induce a voltage in a coil using a permanent magnet, which one of the following is true?",
+        image: "",
+        options: [
+            "the magnet must be near the coil",
+            "the north pole of the magnet has to be used",
+            "the magnet must be inside the coil",
+            "the magnet or the coil must move relative to the other",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "OWN QUESTIONS Q24",
+        question: "A transformer has 1000 turns on the primary winding, and 250 turns on the secondary winding. This transformer is:",
+        image: "",
+        options: [
+            "a step down transformer",
+            "a step up transformer",
+            "an isolation transformer",
+            "has a turns ratio of 1250:1",
+        ],
+        correct: 0,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
+    {
+        source: "OWN QUESTIONS Q25",
+        question: "A step up transformer:",
+        image: "",
+        options: [
+            "has more output power than input power",
+            "will have more current in the secondary than in the primary",
+            "is located on the highest step of a stairway",
+            "will have less current in the secondary than the primary",
+        ],
+        correct: 3,
+        explanation: ``,
+        lookup: "See page(s) x of the Full Licence text book",
+        syllabus: "0"
+    },
     // {
     //     source: "OWN QUESTIONS Q01",
     //     question: "",

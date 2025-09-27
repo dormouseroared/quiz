@@ -1445,7 +1445,79 @@ const syllabusItems = [
         key: "2g.1",
         level: "full",
         title: "Transformers",
-        text: "Understand and apply the formulae relating transformer primary and secondary turns to primary and secondary potential differences and currents."
+        text: "Understand and apply the formulae relating transformer primary and secondary turns to primary and secondary potential differences and currents.",
+        flashcards: [
+            {
+                subTitle: "Transformers",
+                sequence: "000",
+                front: "What would be the main points associated with the construction of a transformer?",
+                frontImage: "week04-transformers-recap-1.png",
+                back: "From low to high frequencies, the choice of core is IRON, then FERRITE or DUST IRON COMPOSITE and finally AIR (see below).",
+                backImage: "week04-transformers-recap-2.png",
+                reference: "week04 tutorial video 00:31:41",
+                id: "EH27UN32"
+            },
+            {
+                subTitle: "Transformers",
+                sequence: "010",
+                front: "What happens in a step-up or step-down transformer?",
+                frontImage: "week04-transformers-step-1.png",
+                back: "Self inductance with a single coil, but mutual inductance with two coils.",
+                backImage: "week04-transformers-step-2.png",
+                reference: "week04 tutorial video 00:36:26",
+                id: "VUI7Q7FV"
+            },
+            {
+                subTitle: "Transformers and the Turns Ratio",
+                sequence: "020",
+                front: "How is voltage affected by the transformer's turns ratio?",
+                frontImage: "",
+                back: "",
+                backImage: "week04-transformers-turns-ratio.png",
+                reference: "week04 tutorial video 00:38:47",
+                id: "PBPV40R3"
+            },
+            {
+                subTitle: "Transformers and the Turns Ratio",
+                sequence: "030",
+                front: "You can use the 2 step approach using Turns Ratio, or the formula on EX309 C1R10",
+                frontImage: "week04-transformers-turns-example-1.png",
+                back: "Two step approach on left, all in one go on the right.",
+                backImage: "week04-transformers-turns-example-2.png",
+                reference: "week04 tutorial video 00:43:19",
+                id: "R7SVGFVD"
+            },
+            {
+                subTitle: "Transformers and Current",
+                sequence: "040",
+                front: "So what happens to current when a transformer is used?",
+                frontImage: "",
+                back: "",
+                backImage: "week04-transformers-current.png",
+                reference: "week04 tutorial video 00:43:19",
+                id: "R7SVGFVD"
+            },
+            {
+                subTitle: "Transformers and Current",
+                sequence: "050",
+                front: "",
+                frontImage: "week04-transformers-current-example-1.png",
+                back: "",
+                backImage: "week04-transformers-current-example-4.png",
+                reference: "week04 tutorial video 00:43:19",
+                id: "MEAXD722"
+            },
+            {
+                subTitle: "Transformers and Impedance",
+                sequence: "060",
+                front: "",
+                frontImage: "week04-transformers-impedance-1.png",
+                back: "Starting with the equation found on EX309, at C3R10, we want to find $Z_s$: $$Z_s = Z_p \\cdot \\left (\\frac{N_s}{N_p} \\right )^2 = 50 \\cdot \\left ( \\frac{14}{2} \\right )^2 = 2450 \\Omega$$ This is how a transformer can be used to match impedance at the transceiver ($50 \\Omega$) with an antenna with a much higher impedance. This one might be a 49:1 UNUN. With this example, from primary to secondary means an increase in voltage (of turns ratio) and impedance (of turns ratio squared), and a decrease in current (of 1/turns ratio).",
+                backImage: "week04-transformers-impedance-2.png",
+                reference: "week04 tutorial video 00:56:06",
+                id: ""
+            },
+        ]
     },
     {
         key: "2g.1",
@@ -1778,7 +1850,30 @@ const syllabusItems = [
         key: "2i.1",
         level: "full",
         title: "Semiconductor devices",
-        text: "Recall that a Zener diode will conduct when the applied reverse bias potential is above its designed value and identify its V/I characteristic curve."
+        text: "Recall that a Zener diode will conduct when the applied reverse bias potential is above its designed value and identify its V/I characteristic curve.",
+        weeks: ["4"],
+        flashcards: [
+            {
+                subTitle: "Zener diode",
+                sequence: "000",
+                front: "What component is this characteristic curve for?",
+                frontImage: "week04-zener-diode-graph.png",
+                back: "<h1>The Zener diode is reverse biased, to provide a specified reference voltage</h1>",
+                backImage: "week04-zener-diode-schematic.png",
+                reference: "week04 tutorial video 01:06:00",
+                id: "W7N9WZD4"
+            },
+            {
+                subTitle: "Zener diode",
+                sequence: "000",
+                front: "What are the characteristics of the Zener diode?",
+                frontImage: "",
+                back: "",
+                backImage: "week04-zener-diode.png",
+                reference: "week04 tutorial video 01:06:00",
+                id: "88PDHM45"
+            },
+        ]
     },
     {
         key: "2i.2",
@@ -1809,6 +1904,18 @@ const syllabusItems = [
         level: "full",
         title: "Semiconductor devices",
         text: "Understand the basics of biasing NPN and PNP bipolar transistors and field effect transistors (FET) (including dual gate devices). Note: In this section circuits shown will be an NPN transistor connected in common emitter / common source mode."
+        flashcards: [
+            {
+                subTitle: "Transistor biasing",
+                sequence: "000",
+                front: "Recap on intermediate work, noting that if in doubt, do not break into a sweat, as it may be up to 1 mark...",
+                frontImage: "week04-transistor-biasing-1.png",
+                back: "",
+                backImage: "week04-transistor-biasing-2.png",
+                reference: "week04 video tutorial 01:26:22",
+                id: "BVAC1G76"
+            }
+        ]
     },
     {
         key: "2i.4",
@@ -1910,7 +2017,30 @@ const syllabusItems = [
         key: "2j.2",
         level: "full",
         title: "Cells and power supplies",
-        text: "Understand the function of stabilising circuits and identify different types of stabilising circuits (i.e. Zener diode/pass transistor and IC). Note: questions on the characteristics of individual components are covered in other parts of this syllabus. This subsection is on complete circuits."
+        text: "Understand the function of stabilising circuits and identify different types of stabilising circuits (i.e. Zener diode/pass transistor and IC). Note: questions on the characteristics of individual components are covered in other parts of this syllabus. This subsection is on complete circuits.",
+        weeks: ["4"],
+        flashcards: [
+            {
+                subTitle: "Voltage stabilising circuit",
+                sequence: "000",
+                front: "Can you recognise this circuit?",
+                frontImage: "week04-voltage-regulator-circuit.png",
+                back: "",
+                backImage: "week04-voltage-regulator-circuit-2.png",
+                reference: "week04 tutorial video 01:06:41",
+                id: "9F3Y4PBB"
+            },
+            {
+                subTitle: "Voltage stabilising circuit",
+                sequence: "010",
+                front: "What does this circuit do?",
+                frontImage: "week04-voltage-regulator-ic.png",
+                back: "The circuit in the bottom right is for an adjustable voltage regulator.",
+                backImage: "week04-voltage-regulator-ic-2.png",
+                reference: "week04 tutorial video 01:13:00",
+                id: "9F3Y4PBB"
+            },
+        ]
     },
     {
         key: "2j.3",
@@ -1928,7 +2058,41 @@ const syllabusItems = [
         key: "2j.3",
         level: "full",
         title: "Cells and power supplies",
-        text: "Understand the need for rectifier diodes to have a sufficient peak inverse voltage (PIV) rating and calculate the PIV in diode/capacitor circuits."
+        text: "Understand the need for rectifier diodes to have a sufficient Peak Inverse Voltage (PIV) rating and calculate the PIV in diode/capacitor circuits.",
+        weeks: ["4"],
+        flashcards: [
+            {
+                subTitle: "Rectifier diodes: Peak Inverse Voltage (PIV) rating",
+                sequence: "000",
+                front: "Rectifier diodes must be rated for at least the peak to peak voltage:",
+                frontImage: "week04-diode-PIV-2.png",
+                back: "",
+                backImage: "week04-diode-PIV-1.png",
+                reference: "week04 tutorial video 00:57:44",
+                id: "7YY7QKOY"
+            },
+            {
+                subTitle: "Rectifier diodes: Peak Inverse Voltage (PIV) rating",
+                sequence: "010",
+                front: "",
+                frontImage: "week04-diode-PIV-3.png",
+                back: "<h2>Rectifier diodes must be rated for at least the peak to peak voltage</h2>$$V_{rms} = 10V$$ then $$V_{peak} = 10 \\times 1.414 = 14.14$$ and $$V_{peak-to-peak} = 2 \\times 14.14 = 28.28$$<br>We round that up to 30V.<br><h2>This question doesn't raise the topic of the current rating, but that must also be taken into account.</h2>The formula is on EX309, C3R2.",
+                backImage: "",
+                reference: "RSGB Full Mock 1 Q18",
+                id: "U8EYY8BA"
+            },
+            {
+                subTitle: "Rectifier diodes: Peak Inverse Voltage (PIV) rating",
+                sequence: "020",
+                front: "",
+                frontImage: "week04-diode-PIV-4.png",
+                back: "<h2>Diodes with a PIV and CURRENT RATING equal to or greater than the original diodes</h2><h1>CURRENT RATING</h1>",
+                backImage: "",
+                reference: "RSGB Full Mock 3 Q15",
+                id: "AKBBONRS"
+            },
+
+        ]
     },
     {
         key: "2j.4",
@@ -1946,7 +2110,134 @@ const syllabusItems = [
         key: "2j.4",
         level: "full",
         title: "Cells and power supplies",
-        text: "Understand the basic principles and operation of a switch mode power supply, at block diagram level."
+        text: "Understand the basic principles and operation of a switch mode power supply, at block diagram level.",
+        flashcards: [
+            {
+                subTitle: "linear power supply",
+                sequence: "000",
+                front: "What can you remember about linear power supplies from intermediate?",
+                back: "",
+                backImage: "week04-linear-power-supply-recap.png",
+                reference: "Week04 Tutorial Video 00:23:49",
+                id: "KTOX4MGD"
+            },
+            {
+                subTitle: "linear power supply",
+                sequence: "010",
+                front: "What can you remember about half wave rectification from intermediate?",
+                back: "",
+                backImage: "week04-linear-power-supply-half-wave.png",
+                reference: "Week04 Tutorial Video 00:26:47",
+                id: "ZOL062H9"
+            },
+            {
+                subTitle: "linear power supply",
+                sequence: "020",
+                front: "What can you remember about full wave rectification from intermediate?",
+                back: "In the two diode model, a centre tapped transformer is used.",
+                backImage: "week04-linear-power-supply-full-wave.png",
+                reference: "Week04 Tutorial Video 00:26:47",
+                id: "YPCGDC5U"
+            },
+            {
+                subTitle: "linear power supply",
+                sequence: "050",
+                front: "Can you summarise linear power supply stages from intermediate?",
+                back: "The capacitor just before the voltage regulator should be an electrolytic capacitor.",
+                backImage: "week04-linear-power-supply-summary.png",
+                reference: "Week04 Tutorial Video 00:30:10",
+                id: "U6MKCF4N"
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "060",
+                front: "This is the revision card. What can you remember from intermediate?",
+                back: "",
+                backImage: "week04-smps-revision.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: "ZKFSULI2"
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "070",
+                front: "What does this block diagram represent?",
+                frontImage: "week04-smps-block-diagram-1.png",
+                back: "",
+                backImage: "week04-smps-block-diagram-2.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: "8H9O1326"
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "080",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-1.png",
+                back: "<h1>INPUT FILTER</h1>EMC control to suppress noise: it stops noise present in the mains supply from getting into the power supply, and also stops any noise from being transferred back into the mains supply",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: "3JOIANH6"
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "081",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-2.png",
+                back: "<h1>RECTIFY</h1>230V AC to 230V DC",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: ""
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "082",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-3.png",
+                back: "<h1>SWITCH (CHOPPER)</h1>DC to pulses at 30-60KHz, around 1000 times in frequency",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: ""
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "083",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-4.png",
+                back: "<h1>TRANSFORMER</h1>reduces AC pulse voltage, higher frequency allows smaller transformers",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: ""
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "084",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-5.png",
+                back: "<h1>RECTIFIER</h1>AC pulses to DC, usually includes a reservoir capacitor, again higher frequency reduces size",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: ""
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "085",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-6.png",
+                back: "<h1>OUTPUT FILTER</h1>supresses noise and smooths output",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: "3JOIANH6"
+            },
+            {
+                subTitle: "switch mode power supply",
+                sequence: "085",
+                front: "What does this part of the SMPS block diagram represent?",
+                frontImage: "week04-smps-block-7.png",
+                back: "<h1>FEEDBACK CONTROL LOOP</h1>samples output and regulates chopper pulses, separated by opto-coupler",
+                backImage: "week04-smps-block-diagram-1.png",
+                reference: "Week04 Tutorial Video 01:18:00",
+                id: "3JOIANH6"
+            },
+        ]
     },
     {
         key: "3a.1",
