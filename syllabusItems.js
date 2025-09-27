@@ -1903,7 +1903,7 @@ const syllabusItems = [
         key: "2i.3",
         level: "full",
         title: "Semiconductor devices",
-        text: "Understand the basics of biasing NPN and PNP bipolar transistors and field effect transistors (FET) (including dual gate devices). Note: In this section circuits shown will be an NPN transistor connected in common emitter / common source mode."
+        text: "Understand the basics of biasing NPN and PNP bipolar transistors and field effect transistors (FET) (including dual gate devices). Note: In this section circuits shown will be an NPN transistor connected in common emitter / common source mode.",
         flashcards: [
             {
                 subTitle: "Transistor biasing",
