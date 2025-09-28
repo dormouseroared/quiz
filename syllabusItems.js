@@ -1497,7 +1497,7 @@ const syllabusItems = [
                 back: "",
                 backImage: "week04-transformers-current.png",
                 reference: "week04 tutorial video 00:43:19",
-                id: "R7SVGFVD"
+                id: "IF6VCZ6Q"
             },
             {
                 subTitle: "Transformers and Current",
@@ -1517,7 +1517,7 @@ const syllabusItems = [
                 back: "Starting with the equation found on EX309, at C3R10, we want to find $Z_s$: $$Z_s = Z_p \\cdot \\left (\\frac{N_s}{N_p} \\right )^2 = 50 \\cdot \\left ( \\frac{14}{2} \\right )^2 = 2450 \\Omega$$ This is how a transformer can be used to match impedance at the transceiver ($50 \\Omega$) with an antenna with a much higher impedance. This one might be a 49:1 UNUN. With this example, from primary to secondary means an increase in voltage (of turns ratio) and impedance (of turns ratio squared), and a decrease in current (of 1/turns ratio).",
                 backImage: "week04-transformers-impedance-2.png",
                 reference: "week04 tutorial video 00:56:06",
-                id: ""
+                id: "SPFOCG11"
             },
         ]
     },
@@ -1952,7 +1952,7 @@ const syllabusItems = [
             {
                 subTitle: "Transistor Configurations and Classes",
                 sequence: "000",
-                front: "This is the introduction to transistor configurations and classes:",
+                front: "This is the introduction to transistor configurations and classes. <b>The golden rule: a transistor has three connections, so one for input, 1 for output and 1 shared (ground?):</b>",
                 frontImage: "",
                 back: "",
                 backImage: "week04-transistor-config-class.png",
@@ -2000,13 +2000,13 @@ const syllabusItems = [
                 id: "U0M9F0UY"
             },
             {
-                subTitle: "Transistor Configurations and Classes",
+                subTitle: "Transistor Configuration Summary",
                 sequence: "050",
-                front: "Perhaps a tabular summary here which needs to be written:",
+                front: "Tabular summary:",
                 frontImage: "",
                 back: "",
-                backImage: "",
-                reference: "week04 video tutorial 01:44:00",
+                backImage: "week04-transistor-config-summary-2.png",
+                reference: "obsidian excalidraw",
                 id: "X9T0JZ8N"
             },
             {
@@ -2087,6 +2087,16 @@ const syllabusItems = [
                 backImage: "week04-class-C.png",
                 reference: "week04 video tutorial 01:44:00",
                 id: "2835LSIX"
+            },
+            {
+                subTitle: "Power amplifier class summary",
+                sequence: "040",
+                front: "Power amplifier classes and biasing:",
+                frontImage: "week04-transistor-class-table-1.png",
+                back: "",
+                backImage: "week04-transistor-class-table-2.png",
+                reference: "HAREC Manual p136",
+                id: "BC48WF20"
             },
             {
                 subTitle: "spare",
@@ -2197,7 +2207,7 @@ const syllabusItems = [
                 back: "The circuit in the bottom right is for an adjustable voltage regulator.",
                 backImage: "week04-voltage-regulator-ic-2.png",
                 reference: "week04 tutorial video 01:13:00",
-                id: "9F3Y4PBB"
+                id: "7KZW7BKB"
             },
         ]
     },
@@ -2345,7 +2355,7 @@ const syllabusItems = [
                 back: "<h1>RECTIFY</h1>230V AC to 230V DC",
                 backImage: "week04-smps-block-diagram-1.png",
                 reference: "Week04 Tutorial Video 01:18:00",
-                id: ""
+                id: "1M5DTJN3"
             },
             {
                 subTitle: "switch mode power supply",
@@ -2355,7 +2365,7 @@ const syllabusItems = [
                 back: "<h1>SWITCH (CHOPPER)</h1>DC to pulses at 30-60KHz, around 1000 times in frequency",
                 backImage: "week04-smps-block-diagram-1.png",
                 reference: "Week04 Tutorial Video 01:18:00",
-                id: ""
+                id: "CAQ7M6XW"
             },
             {
                 subTitle: "switch mode power supply",
@@ -2365,7 +2375,7 @@ const syllabusItems = [
                 back: "<h1>TRANSFORMER</h1>reduces AC pulse voltage, higher frequency allows smaller transformers",
                 backImage: "week04-smps-block-diagram-1.png",
                 reference: "Week04 Tutorial Video 01:18:00",
-                id: ""
+                id: "268PL7LC"
             },
             {
                 subTitle: "switch mode power supply",
@@ -2375,7 +2385,7 @@ const syllabusItems = [
                 back: "<h1>RECTIFIER</h1>AC pulses to DC, usually includes a reservoir capacitor, again higher frequency reduces size",
                 backImage: "week04-smps-block-diagram-1.png",
                 reference: "Week04 Tutorial Video 01:18:00",
-                id: ""
+                id: "TBAYACBL"
             },
             {
                 subTitle: "switch mode power supply",
@@ -2385,7 +2395,7 @@ const syllabusItems = [
                 back: "<h1>OUTPUT FILTER</h1>supresses noise and smooths output",
                 backImage: "week04-smps-block-diagram-1.png",
                 reference: "Week04 Tutorial Video 01:18:00",
-                id: "3JOIANH6"
+                id: "4FXAKHNF"
             },
             {
                 subTitle: "switch mode power supply",
@@ -2395,7 +2405,7 @@ const syllabusItems = [
                 back: "<h1>FEEDBACK CONTROL LOOP</h1>samples output and regulates chopper pulses, separated by opto-coupler",
                 backImage: "week04-smps-block-diagram-1.png",
                 reference: "Week04 Tutorial Video 01:18:00",
-                id: "3JOIANH6"
+                id: "M57N846D"
             },
         ]
     },
