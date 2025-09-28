@@ -1439,13 +1439,15 @@ const syllabusItems = [
         key: "2g.1",
         level: "full",
         title: "Transformers",
-        text: "Understand the concept of mutual inductance."
+        text: "Understand the concept of mutual inductance.",
+        weeks: ["4"]
     },
     {
         key: "2g.1",
         level: "full",
         title: "Transformers",
         text: "Understand and apply the formulae relating transformer primary and secondary turns to primary and secondary potential differences and currents.",
+        weeks: ["4"],
         flashcards: [
             {
                 subTitle: "Transformers",
@@ -1904,6 +1906,7 @@ const syllabusItems = [
         level: "full",
         title: "Semiconductor devices",
         text: "Understand the basics of biasing NPN and PNP bipolar transistors and field effect transistors (FET) (including dual gate devices). Note: In this section circuits shown will be an NPN transistor connected in common emitter / common source mode.",
+        weeks: ["4"],
         flashcards: [
             {
                 subTitle: "Transistor biasing",
@@ -1914,7 +1917,17 @@ const syllabusItems = [
                 backImage: "week04-transistor-biasing-2.png",
                 reference: "week04 video tutorial 01:26:22",
                 id: "BVAC1G76"
-            }
+            },
+            {
+                subTitle: "Transistor biasing improvements",
+                sequence: "010",
+                front: "Several improvements to biasing over the basic circuit:",
+                frontImage: "week04-transistor-biasing-improv-1.png",
+                back: "",
+                backImage: "week04-transistor-biasing-improv-2.png",
+                reference: "week04 video tutorial 01:28:57",
+                id: "SCNA16XE"
+            },
         ]
     },
     {
@@ -1933,7 +1946,100 @@ const syllabusItems = [
         key: "2i.4",
         level: "full",
         title: "Semiconductor devices",
-        text: "Identify different types of small signal amplifiers (e.g. common emitter (source), emitter follower and common base) and explain their operation in terms of input and output impedances, current gain, voltage gain and phase change."
+        text: "Identify different types of small signal amplifiers (e.g. common emitter (source), emitter follower and common base) and explain their operation in terms of input and output impedances, current gain, voltage gain and phase change.",
+        weeks: ["4"],
+        flashcards: [
+            {
+                subTitle: "Transistor Configurations and Classes",
+                sequence: "000",
+                front: "This is the introduction to transistor configurations and classes:",
+                frontImage: "",
+                back: "",
+                backImage: "week04-transistor-config-class.png",
+                reference: "week04 video tutorial 01:32:32",
+                id: "IZO6I0DM"
+            },
+            {
+                subTitle: "Transistor: COMMON BASE",
+                sequence: "010",
+                front: "This is common base:",
+                frontImage: "week04-transistor-common-base-1.png",
+                back: "",
+                backImage: "week04-transistor-common-base-2.png",
+                reference: "week04 video tutorial 01:35:07",
+                id: "5FEROA4K"
+            },
+            {
+                subTitle: "Transistor: COMMON COLLECTOR or EMITTER FOLLOWER",
+                sequence: "020",
+                front: "This is common collector, or emitter follower:",
+                frontImage: "week04-transistor-common-collector-1.png",
+                back: "",
+                backImage: "week04-transistor-common-collector-2.png",
+                reference: "week04 video tutorial 01:37:13",
+                id: "9EHET2C4"
+            },
+            {
+                subTitle: "Transistor: COMMON EMITTER",
+                sequence: "030",
+                front: "",
+                frontImage: "week04-transistor-common-emitter-1.png",
+                back: "",
+                backImage: "week04-transistor-common-emitter-2.png",
+                reference: "week04 video tutorial 01:41:00",
+                id: "ML02I9RY"
+            },
+            {
+                subTitle: "Transistor Configurations Summary",
+                sequence: "040",
+                front: "If you can understand this...",
+                frontImage: "",
+                back: "",
+                backImage: "week04-transistor-config-summary.png",
+                reference: "week04 video tutorial 01:42:30",
+                id: "U0M9F0UY"
+            },
+            {
+                subTitle: "Transistor Configurations and Classes",
+                sequence: "050",
+                front: "Perhaps a tabular summary here which needs to be written:",
+                frontImage: "",
+                back: "",
+                backImage: "",
+                reference: "week04 video tutorial 01:44:00",
+                id: "X9T0JZ8N"
+            },
+            {
+                subTitle: "Field Effect Transistor (FET)",
+                sequence: "060",
+                front: "",
+                frontImage: "week04-transistor-fet-1.png",
+                back: "",
+                backImage: "week04-transistor-fet-2.png",
+                reference: "week04 video tutorial 01:53:00",
+                id: "8EJYV1JR"
+            },
+            {
+                subTitle: "Field Effect Transistor (FET) biasing",
+                sequence: "070",
+                front: "FET biasing:",
+                frontImage: "",
+                back: "",
+                backImage: "week04-transistor-fet-bias.png",
+                reference: "week04 video tutorial 01:56:40",
+                id: "V9QVF9GP"
+            },
+            {
+                subTitle: "Field Effect Transistor (FET) biasing",
+                sequence: "080",
+                front: "More on FET biasing:",
+                frontImage: "",
+                back: "",
+                backImage: "week04-transistor-fet-bias-2.png",
+                reference: "week04 video tutorial 01:59:50",
+                id: "ARLU7OZF"
+            },
+        ]
     },
     {
         key: "2i.4",
@@ -1983,17 +2089,7 @@ const syllabusItems = [
                 id: "2835LSIX"
             },
             {
-                subTitle: "",
-                sequence: "",
-                front: "",
-                frontImage: "",
-                back: "",
-                backImage: "",
-                reference: "",
-                id: ""
-            },
-            {
-                subTitle: "",
+                subTitle: "spare",
                 sequence: "",
                 front: "",
                 frontImage: "",
@@ -2174,6 +2270,7 @@ const syllabusItems = [
         level: "full",
         title: "Cells and power supplies",
         text: "Understand the basic principles and operation of a switch mode power supply, at block diagram level.",
+        weeks: ["4"],
         flashcards: [
             {
                 subTitle: "linear power supply",
