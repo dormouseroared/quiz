@@ -90,14 +90,12 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
                                     <div class="card-content">
                                         <div class="card-text"></div>
                                         <div class="card-image"></div>
-                                        <div class="card-reference"></div>
                                     </div>
                                 </div>
                                 <div class="card-back">
                                     <div class="card-content">
                                         <div class="card-text"></div>
                                         <div class="card-image"></div>
-                                        <div class="card-reference"></div>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +302,7 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
     function updateHeaderSubtitle() {
         const currentCard = flashcards[currentCardIndex]
         const subtitleHeader = widgetElement.querySelector('.card-subtitle-header')
-        
+
         if (subtitleHeader && currentCard?.subTitle) {
             subtitleHeader.textContent = currentCard.subTitle.toUpperCase()
             subtitleHeader.style.display = 'block'
@@ -334,7 +332,7 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
         // Get elements with graceful fallback
         const text = contentContainer.querySelector('.card-text')
         const imageContainer = contentContainer.querySelector('.card-image')
-        const reference = contentContainer.querySelector('.card-reference')
+        // const reference = contentContainer.querySelector('.card-reference')
 
         // Update text content based on which side we're showing
         const textContent = isShowingFront ? currentCard?.front : currentCard?.back
@@ -370,15 +368,15 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
         }
 
         // Update reference - only show if there's content
-        if (reference) {
-            if (currentCard?.reference && currentCard.reference.trim() !== '') {
-                reference.textContent = currentCard.reference
-                reference.style.display = 'block'
-            } else {
-                reference.textContent = ''
-                reference.style.display = 'none'
-            }
-        }
+        // if (reference) {
+        //     if (currentCard?.reference && currentCard.reference.trim() !== '') {
+        //         reference.textContent = currentCard.reference
+        //         reference.style.display = 'block'
+        //     } else {
+        //         reference.textContent = ''
+        //         reference.style.display = 'none'
+        //     }
+        // }
 
         // Update CSS classes for styling based on actual content presence
         const hasText = textContent && textContent.trim() !== ''
