@@ -1,5 +1,5 @@
 /**
- * Flashcards Widget v8.2 - Enhanced Image Layout & Header Integration
+ * Flashcards Widget - Enhanced Image Layout & Header Integration
  * 
  * New in v8.2:
  * - SubTitle moved to header banner for more content space
@@ -60,7 +60,7 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
         // Initialize with the first card
         updateDisplay()
 
-        console.log(`📚 Flashcards widget v8.2 initialized with ${flashcards.length} cards`)
+        console.log(`📚 Flashcards widget initialized with ${flashcards.length} cards`)
     }
 
     /**
@@ -293,7 +293,23 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
         updateCardContent()
         updateNavigation()
         updateProgress()
-        updateHeaderSubtitle() // New function to update subtitle in header
+        // updateHeaderSubtitle() // New function to update subtitle in header
+        updateHeaderDetails()
+    }
+
+    // in order to expand what goes in the header,
+    // the original subTitle function has been duplicated and expanded
+    // card-subtitle-header could eventually be renamed as card-header-details
+    function updateHeaderDetails() {
+        const currentCard = flashcards[currentCardIndex]
+        const headerDetails = widgetElement.querySelector(".card-subtitle-header")
+
+        const buildHeaderDetails = `
+            ${currentCard?.subTitle.toUpperCase()} &bull; ${currentCard?.key} &bull; ${currentCard?.reference} &bull; ${currentCard?.id}
+        `
+        headerDetails.innerHTML = buildHeaderDetails.trim()
+        headerDetails.style.display = "block"
+
     }
 
     /**
@@ -462,7 +478,7 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
             card.focus()
         }
 
-        console.log('🚀 Flashcards widget v8.2 started')
+        console.log('🚀 Flashcards widget started')
     }
 
     /**
@@ -480,7 +496,7 @@ export default function flashcardsWidget(flashcards, container, options = {}) {
             widgetElement.remove()
             widgetElement = null
 
-            console.log('🗑️ Flashcards widget v8.2 destroyed')
+            console.log('🗑️ Flashcards widget destroyed')
         }
     }
 

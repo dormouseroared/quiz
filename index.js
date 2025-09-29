@@ -4,7 +4,7 @@
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 import syllabusItems from "./syllabusItems.js"
-import flashcardsWidget from "./flashcards-widget/flashcards_widget_v8_2.js"
+import flashcardsWidget from "./flashcards-widget/flashcards_widget_v9.js"
 
 // ====================================
 // 2. DOM ELEMENT REFERENCES
@@ -528,12 +528,18 @@ function showFlashcards(targetSyllabus, syllabusArray) {
 
     // any syllabus items without a flashcards property
     // return an empty array which flatMap deals with
-    findCards = findSyllabus.flatMap(item =>
+    const tempCards = findSyllabus.flatMap(item =>
         item.flashcards || [])
 
-    console.log("showFlashcards:", targetSyllabus, syllabusArray.length, findSyllabus.length, findCards.length)
+    // now add the syllabus key to the flashcard object
+    findCards = tempCards.map(flashcard => {
+        return { ...flashcard, key: targetSyllabus }
+    })
 
-    console.log("showFlashcards:", findCards)
+
+    console.log("findCards with key?", findCards)
+
+    console.log("showFlashcards:", targetSyllabus, syllabusArray.length, findSyllabus.length, findCards.length)
 
     flashcardButton.title = `There are ${findCards.length} flashcards for syllabus item ${targetSyllabus}`
 
