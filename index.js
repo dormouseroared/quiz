@@ -519,10 +519,17 @@ function mathjaxUpdate(elements) {
 
 function showFlashcards(targetSyllabus, syllabusArray) {
 
-    const findSyllabus = syllabusArray.filter(item => item.key === targetSyllabus && item.level === "full")
+    // trying out this layout...
+    const findSyllabus = syllabusArray.filter(item =>
+        // only use the first four characters to eliminate a & b
+        item.key.slice(0, 4) === targetSyllabus &&
+        // we only want syllabus items for the full level
+        item.level === "full")
 
-
-    findCards = findSyllabus.flatMap(item => item.flashcards || [])
+    // any syllabus items without a flashcards property
+    // return an empty array which flatMap deals with
+    findCards = findSyllabus.flatMap(item =>
+        item.flashcards || [])
 
     console.log("showFlashcards:", targetSyllabus, syllabusArray.length, findSyllabus.length, findCards.length)
 

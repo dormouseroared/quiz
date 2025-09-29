@@ -1481,9 +1481,9 @@ materials, whereas polythene is definitely a man-made sheet material.`,
             "Prevent any DC flowing through R4",
         ],
         correct: 1,
-        explanation: `C3 is known as a bypass capacitor and is included to ensure that there is no AC signal across the emitter resistor R4. C3 effectively shorts out R4 from an AC perspective but, because the capacitor blocks DC, the DC flows through R4, maintaining the DC biasing. <br>Some fairly deep biasing knowledge/understanding required, yes, but could you have got to the answer by ruling out the wrong answers? ‘a’ is certainly a capacitor function; for example, the reservoir capacitor in a linear power supply, but is not appropriate here. ‘c’ is not correct as C3 is connected to ground and C1 and C2 are the coupling (input and output) capacitors. Capacitors can block DC for sure, but ‘d’ would only be correct if C3 were in series with R4 but it is in parallel, so DC will flow through the resistor, making ‘d’ wrong. See https://www.electronics-tutorials.ws/amplifier/amp_2.html`,
+        explanation: `C3 is known as a bypass capacitor and is included to ensure that there is no AC signal across the emitter resistor R4. C3 effectively shorts out R4 from an AC perspective but, because the capacitor blocks DC, the DC flows through R4, maintaining the DC biasing. <br>Some fairly deep biasing knowledge/understanding required, yes, but could you have got to the answer by ruling out the wrong answers? ‘a’ is certainly a capacitor function; for example, the reservoir capacitor in a linear power supply, but is not appropriate here. ‘c’ is not correct as C3 is connected to ground and C1 and C2 are the coupling (input and output) capacitors. Capacitors can block DC for sure, but ‘d’ would only be correct if C3 were in series with R4 but it is in parallel, so DC will flow through the resistor, making ‘d’ wrong. See https://www.electronics-tutorials.ws/amplifier/amp_2.html and syllabus 2e.4`,
         lookup: "See page(s) 34 of the Full Licence text book",
-        syllabus: "2i.3 & 2e.4"
+        syllabus: "2i.3"
     },
     {
         source: "BBDL QUIZ WEEK04 Q07",
