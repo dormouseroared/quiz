@@ -1,0 +1,46 @@
+/* Apply border-box to everything - this should absolutely be your foundation */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove all default margins and padding - you'll add them back deliberately */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a consistent base font and improve text rendering */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make images and embedded content responsive by default */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove default styling from lists when they're used for navigation or UI */
+ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+
+/* Improve readability for paragraphs and headings */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Form elements should inherit font properties */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Remove default button styling so you can style from scratch */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
