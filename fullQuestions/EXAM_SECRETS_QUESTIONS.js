@@ -413,7 +413,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "mica",
         ],
         correct: 2,
-        explanation: "Polythene is goodd at audio frequencies but lossy at RF.",
+        explanation: "Polythene is good at audio frequencies but lossy at RF.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "2d.2",
         tagged: true
@@ -1113,7 +1113,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "feeding the binary data to the microphone socket of an SSB transmitter",
         ],
         correct: 2,
-        explanation: "This is not an easy question, but it does get to the heart of different forms of modulation. The stem of the question describes direct moddulation, producing one radio frequency for a data 0 and another 170kHz different for a data 1. Feedibg binary data to the microphone socket fails for two reasons. The voltage levels are likely to be much higher than the few millivolts expected, and microphones are analogue not digital. That rules oout options A and D. Feeding two audio tones into the microphone socket on FM is a good system in common use, but FM has multiple sidebands, not as described in the stem. Feeding an audio tone into an SSB transmitter will give a single RF signal offset from the notional carrier by the audio frequency, so using two audio tones 170kHz apart will have an identical RF output. It will not be possible, off-air, to know which method was used to produce the signal.",
+        explanation: "This is not an easy question, but it does get to the heart of different forms of modulation. The stem of the question describes direct modulation, producing one radio frequency for a data 0 and another 170kHz different for a data 1. Feedibg binary data to the microphone socket fails for two reasons. The voltage levels are likely to be much higher than the few millivolts expected, and microphones are analogue not digital. That rules oout options A and D. Feeding two audio tones into the microphone socket on FM is a good system in common use, but FM has multiple sidebands, not as described in the stem. Feeding an audio tone into an SSB transmitter will give a single RF signal offset from the notional carrier by the audio frequency, so using two audio tones 170kHz apart will have an identical RF output. It will not be possible, off-air, to know which method was used to produce the signal.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "3e.1"
     },
@@ -1143,13 +1143,13 @@ const EXAM_SECRETS_QUESTIONS = [
             "a graph of the output current plotted against the output voltage will always be a straight line",
         ],
         correct: 2,
-        explanation: "Linearity in an amplifier means that the output is a faithful reproduction of the input with no distortion, no additional frequencies or harmonics that were not present at the input. The only ddifference is that the signal is bigger.",
+        explanation: "Linearity in an amplifier means that the output is a faithful reproduction of the input with no distortion, no additional frequencies or harmonics that were not present at the input. The only difference is that the signal is bigger.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "3f.2"
     },
     {
         source: "Exam Secrets FULL [Transmitters Receivers] 3F2-3",
-        question: "Signals at 3.601MHz and 3.603MHz represent two audio tines SSB modulated on a 3.600MHz suppressed carrier which are fed to a non-linear amplifier. Apart from the wanted signals, possible output frequencies are:",
+        question: "Signals at 3.601MHz and 3.603MHz represent two audio tones SSB modulated on a 3.600MHz suppressed carrier which are fed to a non-linear amplifier. Apart from the wanted signals, possible output frequencies are:",
         image: "",
         options: [
             "3.605MHz and 3.906MHz",
@@ -1158,7 +1158,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "3.602MHz and 3.605MHz",
         ],
         correct: 1,
-        explanation: "If an amplifier or other circuit is non-linear then there will be harmonics andd intermodulation products (Imps) of all the frequencies present. At RF, the harmonics will be way out of band and easily removed by the filters. So will many of the intermodulation products. However, frequencies like (3 x f1) - (2 x f2) will be as far removed from f1 and f2 as f1 and f2 are apart. They will be in-band and particularly if f1 and f2 are from relatively low audio notes then the Imps will be on top of other audio frequencies and impossible to filter out. (2 x 3.601) - 3.603 = 3.599 and (3 x 3.603) - (2 x 3.601) = 3.607 This question is not difficult but does take a bit of time searching for credible frequencies. Leave it to last.",
+        explanation: "If an amplifier or other circuit is non-linear then there will be harmonics and intermodulation products (Imps) of all the frequencies present. At RF, the harmonics will be way out of band and easily removed by the filters. So will many of the intermodulation products. However, frequencies like (3 x f1) - (2 x f2) will be as far removed from f1 and f2 as f1 and f2 are apart. They will be in-band and particularly if f1 and f2 are from relatively low audio notes then the Imps will be on top of other audio frequencies and impossible to filter out. (2 x 3.601) - 3.603 = 3.599 and (3 x 3.603) - (2 x 3.601) = 3.607 This question is not difficult but does take a bit of time searching for credible frequencies. Leave it to last.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "3f.2"
     },
@@ -1188,7 +1188,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "not affect the average output power or heat dissipation",
         ],
         correct: 1,
-        explanation: "The aim of speech processing is to limit the peaks of the signal, allowing the average output power level to be increased without breaching the licence limits or the limits imposed by the equipment, typically the power amplifier.If the average level is increased then so is the heat dissipation andd the demand on the power supply.",
+        explanation: "The aim of speech processing is to limit the peaks of the signal, allowing the average output power level to be increased without breaching the licence limits or the limits imposed by the equipment, typically the power amplifier.If the average level is increased then so is the heat dissipation and the demand on the power supply.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "3f.4"
     },
@@ -2000,7 +2000,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "there is direct pickup into the very sensitive CD laser amplifier",
         ],
         correct: 1,
-        explanation: "Options 'a harmonic of the transmission...' and 'there is direct pickup...' should be discounted because the effect does not depend on the signal source selected on the music system. It is unlikely the pick-up is sufficient to drive the speakers directly, far more likely that the SSB transmission is being picked up and conveyed to the audio amplifier, where a P-N demicondductor junction is acting as a diode detector with the audio circuits amplifying the resulting signal.",
+        explanation: "Options 'a harmonic of the transmission...' and 'there is direct pickup...' should be discounted because the effect does not depend on the signal source selected on the music system. It is unlikely the pick-up is sufficient to drive the speakers directly, far more likely that the SSB transmission is being picked up and conveyed to the audio amplifier, where a P-N semiconductor junction is acting as a diode detector with the audio circuits amplifying the resulting signal.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "6c.1"
     },
@@ -2075,7 +2075,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "1000µF capacitors in series with the speaker leads",
         ],
         correct: 1,
-        explanation: "The interference mechanism is that modulated RF is being picked up on the speaker leads and conducted into the audio amplifier stage of the music system. Any ddiode or transistor in the amplifier is likely to rectify the RF signal, resulting in demodulation to become an audio signal, which can then be amplified alongside whatever music is being played. The need is to stop the RF getting into the amplifier stages. Ferrite rings should do that. The 0.1µF capacitors, if fitted at the amplifier end of the leads might help, but with the common mode pickup on both leads, it is far from certain. The series 1000µF capacitor would have minimal effect if any, and ferrite rings at the loudspeaker end of the leads would have little or no effect too.",
+        explanation: "The interference mechanism is that modulated RF is being picked up on the speaker leads and conducted into the audio amplifier stage of the music system. Any diode or transistor in the amplifier is likely to rectify the RF signal, resulting in demodulation to become an audio signal, which can then be amplified alongside whatever music is being played. The need is to stop the RF getting into the amplifier stages. Ferrite rings should do that. The 0.1µF capacitors, if fitted at the amplifier end of the leads might help, but with the common mode pickup on both leads, it is far from certain. The series 1000µF capacitor would have minimal effect if any, and ferrite rings at the loudspeaker end of the leads would have little or no effect too.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "6d.1"
     },
@@ -2120,7 +2120,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "the braid of the feeder connector on a balun",
         ],
         correct: 2,
-        explanation: "The ddrawing is a mains filter. Point X is connected via the mains plug to the house earth, and should now be connected to an earth point on the transmitter/transceiver as the safety earth. Note the guidance regarding an RF earth, and cross-bonding the two earths. Professional advice is essential as there are safety considerations which differ depending on the type of supply and the engineering practice of your particular supplier, the District Network Operator.",
+        explanation: "The drawing is a mains filter. Point X is connected via the mains plug to the house earth, and should now be connected to an earth point on the transmitter/transceiver as the safety earth. Note the guidance regarding an RF earth, and cross-bonding the two earths. Professional advice is essential as there are safety considerations which differ depending on the type of supply and the engineering practice of your particular supplier, the District Network Operator.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "6d.2"
     },
@@ -2165,7 +2165,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "using a balun and a ferrite choke on the feeder, close to the dipole",
         ],
         correct: 2,
-        explanation: "The feeder, coaxial or twin, should leave centre-fed dipole antennas at right angles to avoidd pickup from the radiated field",
+        explanation: "The feeder, coaxial or twin, should leave centre-fed dipole antennas at right angles to avoid pickup from the radiated field",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "6e.3"
     },
@@ -2523,7 +2523,7 @@ const EXAM_SECRETS_QUESTIONS = [
             "at the top of an RF cycle of an unmodulated carrier",
             "at the top of an RF cycle at the crest of the modulation",
             "averaged over one RF cycle at the crest of the modulation envelope",
-            "averaged over one audio cycle at the crest of the moddulation envelope",
+            "averaged over one audio cycle at the crest of the modulation envelope",
         ],
         correct: 2,
         explanation: "This is often misunderstood, but the answer is provided. See Note (b) to Schedule 1 of the licence which is provided in the exam.",
