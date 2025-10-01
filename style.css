@@ -105,20 +105,25 @@ body {
 
 
 #searchType {
-    padding: 10px 0px;
+    padding: 10px 5px;
     border: none;
-    background: #4b6cb7;
+    /* background: #4b6cb7; */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
     font-size: 16px;
 }
 
 #searchValue {
-    padding: 10px 0px;
+    padding: 10px 5px;
     border: none;
-    background: #4b6cb7;
+    /* background: #4b6cb7; */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    border-radius: 10px;
+    border-radius: 0px;
     font-size: 16px;
 }
 
@@ -285,10 +290,34 @@ ul {
     font-size: 16px;
 
 }
+.searchButton {
+    padding: 10px 20px;
+    border: none;
+    /* background: #4b6cb7; */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Adding a transition makes the hover effect smooth rather than jarring */
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.searchButton:hover {
+    /* Brightens the entire button by 10% */
+    filter: brightness(1.1);
+    /* Lifts the button slightly, creating depth */
+    transform: translateY(-2px);
+}
+
+/* When the button is clicked, push it down slightly for tactile feedback */
+.searchButton:active {
+    transform: translateY(0px);
+    filter: brightness(0.95);
+}
 
 #searchForm {
     display: flex;
-    gap: 5px;
+    gap: 3px;
 }
 #searchType {
     flex: 0;
