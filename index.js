@@ -383,10 +383,10 @@ function showResult() {
 
     resultDiv.innerHTML = `
         <h2>Full Licence: Quiz Completed</h2>
-        <p>Score: ${quizState.score}/${quizState.questionPack.length} (${scoreFixed}%)</p>
-        <p>Highest Score: ${Math.max(quizState.score, highScore)}</p>
-        ${quizState.score > highScore ? "<p>Hey, New High Score!</p>" : ""}
-        <p>Total number of Questions available: ${quizState.randomQuestions.length} </p>
+        <div>Score: ${quizState.score}/${quizState.questionPack.length} (${scoreFixed}%)</div>
+        <div>Highest Score: ${Math.max(quizState.score, highScore)}</div>
+        ${quizState.score > highScore ? "<div>Hey, New High Score!</div>" : ""}
+        <div>Total number of Questions available: ${quizState.randomQuestions.length} </div>
         <button class="reloadButton" onclick="location.reload()">Restart Quiz</button>
     `
 

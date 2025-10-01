@@ -102,33 +102,24 @@ body {
     font-size: 16px;
 }
 
-.reloadButton {
-    padding: 10px 20px;
-    border: none;
-    background: #4b6cb7;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    
-}
+
 
 #searchType {
-    padding: 10px 10px;
+    padding: 10px 0px;
     border: none;
     background: #4b6cb7;
     color: white;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #searchValue {
-    padding: 10px 10px;
+    padding: 10px 0px;
     border: none;
     background: #4b6cb7;
     color: white;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 img {
@@ -262,4 +253,56 @@ ul {
 
 #flashcard-btn:hover {
     background: #0d3594;
+}
+/* paragraphs and h2 in .result get styled, currently the same but */
+/* could be different, using the id here gets a specificity score of 100 plus */
+
+.result > h2,
+.result > p,
+.result > div {
+    font-size: 20px;
+    color: yellow;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+/* used this for practice. Could be that margin-top on reload button */
+/* would be better, but that definition is used elsewhere */
+.result > div:last-of-type {
+    margin-bottom: 20px;
+}
+
+.result > h2 {
+    font-size: 24px;
+}
+
+.reloadButton {
+    padding: 10px 20px;
+    border: none;
+    background: #4b6cb7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+#searchForm {
+    display: flex;
+    gap: 5px;
+}
+#searchType {
+    flex: 0;
+    /* Let it size naturally based on its content */
+    /* No flex property needed - it stays at its natural width */
+}
+
+#searchValue {
+    flex: 1;
+    /* This is the key - it grows to fill available space */
+}
+
+.searchForm button {
+    flex: 0;
+    /* Like the dropdown, it sizes naturally based on its content */
+    /* No flex property needed */
 }
