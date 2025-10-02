@@ -207,6 +207,7 @@ ul {
     font-size: 12px;
 }
 
+/* highlight syllabus level when displaying syllabus items  */
 .highlightLevel {
     color: yellow;
 }
