@@ -2610,7 +2610,7 @@ const syllabusItems = [
         key: "3c.3",
         level: "full",
         title: "Oscillators",
-        text: "Recall the block diagram of a Phase Locked Loop (PLL) Frequency Synthesiser and the functions of the stages i.e.oscillator, fixed divider, phase comparator (detector), Low Pass Filter (LPF), voltage-controlled oscillator and programmable divider."
+        text: "Recall the block diagram of a Phase Locked Loop (PLL) Frequency Synthesiser and the functions of the stages i.e. oscillator, fixed divider, phase comparator (detector), Low Pass Filter (LPF), voltage-controlled oscillator and programmable divider."
     },
     {
         key: "3c.3",
@@ -2634,7 +2634,7 @@ const syllabusItems = [
         key: "3d.1",
         level: "full",
         title: "Frequency multipliers",
-        text: "Understand that frequency multipliers use harmonics to generate frequencies above an oscillator’s fundamental frequency (e.g.in a microwave transmitter)."
+        text: "Understand that frequency multipliers use harmonics to generate frequencies above an oscillator’s fundamental frequency (e.g. in a microwave transmitter)."
     },
     {
         key: "3e.1",
