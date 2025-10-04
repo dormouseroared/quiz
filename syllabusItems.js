@@ -2126,7 +2126,8 @@ const syllabusItems = [
         key: "2i.5",
         level: "full",
         title: "Semiconductor devices",
-        text: "Understand the feedback requirements to sustain oscillations in an oscillator. With reference to gain, phase and feedback losses."
+        text: "Understand the feedback requirements to sustain oscillations in an oscillator. With reference to gain, phase and feedback losses.",
+        weeks: ["5"]
     },
     {
         key: "2i.6",
@@ -2539,13 +2540,15 @@ const syllabusItems = [
         key: "3b.1",
         level: "full",
         title: "Transmitter architecture",
-        text: "Understand the block diagram of an SSB transmitter employing mixers to generate the final frequency."
+        text: "Understand the block diagram of an SSB transmitter employing mixers to generate the final frequency.",
+        weeks: ["5"]
     },
     {
         key: "3b.1",
         level: "full",
         title: "Transmitter architecture",
-        text: "Understand the block diagram of an FM transmitter employing either frequency multipliers or mixers to generate the final frequency."
+        text: "Understand the block diagram of an FM transmitter employing either frequency multipliers or mixers to generate the final frequency.",
+        weeks: ["5"]
     },
     {
         key: "3c.1",
