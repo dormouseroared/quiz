@@ -1,0 +1,48 @@
+{
+  "title": "test 9",
+  "imagePath": "diagramQuizImages/Screenshot 2025-10-04 154842.png",
+  "obfuscationLevel": 0.7,
+  "boxes": [
+    {
+      "id": 1759605444169,
+      "x": 11,
+      "y": 140.89999389648438,
+      "width": 109,
+      "height": 73,
+      "label": "Clock"
+    },
+    {
+      "id": 1759605473781,
+      "x": 12,
+      "y": 33.899993896484375,
+      "width": 106,
+      "height": 69,
+      "label": "Sinewave lookup table"
+    },
+    {
+      "id": 1759605502472,
+      "x": 151,
+      "y": 33.899993896484375,
+      "width": 108,
+      "height": 70,
+      "label": "Digital to Analogue Converter"
+    },
+    {
+      "id": 1759605532852,
+      "x": 287,
+      "y": 32.899993896484375,
+      "width": 107,
+      "height": 70,
+      "label": "Low pass filter"
+    },
+    {
+      "id": 1759605549631,
+      "x": 133,
+      "y": 174.89999389648438,
+      "width": 100,
+      "height": 44,
+      "label": "Frequency control"
+    }
+  ],
+  "createdAt": "2025-10-04T19:20:39.792Z"
+}
