@@ -1,0 +1,16 @@
+{
+  "title": "throw this one away",
+  "imagePath": "diagramQuizImages/Screenshot 2025-10-04 154842.png",
+  "obfuscationLevel": 0.7,
+  "boxes": [
+    {
+      "id": 1759605754424,
+      "x": 12,
+      "y": 33.899993896484375,
+      "width": 109,
+      "height": 72,
+      "label": "Sinewave lookup table"
+    }
+  ],
+  "createdAt": "2025-10-04T19:22:56.597Z"
+}
