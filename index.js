@@ -848,6 +848,86 @@ const diagramQuizCards = [
         ],
         "createdAt": "2025-10-04T19:20:39.792Z"
     },
+    {
+        "title": "Transmitter with mixer for final frequency (for AM, SSB, FM)",
+        "imagePath": "diagramQuizImages/transmitter - with mixer for final frequency.png",
+        "obfuscationLevel": 1,
+        "boxes": [
+            {
+                "id": 1759663717182,
+                "x": 42.68333435058594,
+                "y": 116.89999389648438,
+                "width": 80,
+                "height": 63,
+                "label": "Audio Amplifier"
+            },
+            {
+                "id": 1759663741323,
+                "x": 166.68333435058594,
+                "y": 10.899993896484375,
+                "width": 80,
+                "height": 62,
+                "label": "Crystal Oscillator (Top)"
+            },
+            {
+                "id": 1759663764118,
+                "x": 156.68333435058594,
+                "y": 116.89999389648438,
+                "width": 96,
+                "height": 66,
+                "label": "Modulator and Filter"
+            },
+            {
+                "id": 1759663786622,
+                "x": 162.68333435058594,
+                "y": 221.89999389648438,
+                "width": 83,
+                "height": 67,
+                "label": "Crystal Oscillator (Bottom)"
+            },
+            {
+                "id": 1759663805685,
+                "x": 287.68333435058594,
+                "y": 116.89999389648438,
+                "width": 98,
+                "height": 63,
+                "label": "Mixer"
+            },
+            {
+                "id": 1759663820679,
+                "x": 286.68333435058594,
+                "y": 222.89999389648438,
+                "width": 99,
+                "height": 66,
+                "label": "Frequency Synthesiser"
+            },
+            {
+                "id": 1759663844537,
+                "x": 418.68333435058594,
+                "y": 116.89999389648438,
+                "width": 95,
+                "height": 63,
+                "label": "Filter & RF Driver"
+            },
+            {
+                "id": 1759663864801,
+                "x": 549.6833343505859,
+                "y": 115.89999389648438,
+                "width": 98,
+                "height": 65,
+                "label": "RF Power Amplifier"
+            },
+            {
+                "id": 1759663882717,
+                "x": 682.6833343505859,
+                "y": 115.89999389648438,
+                "width": 97,
+                "height": 60,
+                "label": "Output Filter"
+            }
+        ],
+        "createdAt": "2025-10-05T11:32:53.250Z"
+    },
 ]
 
 console.log("diagramQuiz starting with:", diagramQuizCards.length, "cards")
