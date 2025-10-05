@@ -366,7 +366,8 @@ const EXAM_SECRETS_FULL_PAPER = [
         correct: 2,
         explanation: "The occupied bandwidth is 29.696 to 29.699MHz. The top of the band (see the schedule) is 29.700MHz, so just 1kHz to spare. 1kHz in 29700kHz is 1000000 / 29700 = 34 parts per million (ppm).",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "3"
+        syllabus: "3",
+        tagged: true
     },
     {
         source: "Exam Secrets FULL PAPER Q21",
