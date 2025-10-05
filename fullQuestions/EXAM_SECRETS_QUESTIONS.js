@@ -1040,7 +1040,8 @@ const EXAM_SECRETS_QUESTIONS = [
         correct: 2,
         explanation: "The question does not say where in the band the transmission is, so it applies to any part of the band. In-band drift is a nuisance to the station contacted, annoying to amateurs on adjacent frequencies and a breach of the licence if drifting out of band. As asked, the event of most significance is out of band transmission. Note if the frequency  was stated and clearly well away from the band edge, the a question on the most likely unfortunate effect would be annoying other amateurs. Read such questions carefully to be sure of what is being asked.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "3c.1"
+        syllabus: "3c.1",
+        tagged: true
     },
     {
         source: "Exam Secrets FULL [Transmitters Receivers] 3C3-1",
@@ -2633,7 +2634,8 @@ const EXAM_SECRETS_QUESTIONS = [
         correct: 0,
         explanation: "Ideally we want components with a zero temperature coefficient, but this is seldom possible, so the best  available solution is to select a balance of components to have an overall zero coefficient. In this case a negative coefficient capacitor to offset the positive one in the inductor.",
         lookup: "See page(s) x of the Full Licence text book",
-        syllabus: "9c.1"
+        syllabus: "9c.1",
+        tagged: true
     },
 ]
 
