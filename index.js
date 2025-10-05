@@ -6,8 +6,17 @@ import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 import syllabusItems from "./syllabusItems.js"
 import flashcardsWidget from "./flashcards-widget/flashcards_widget_v9.js"
 
-import diagramQuizWidget, { version } from "./diagram-quiz-widget-v21.js"
-console.log(`diagram-quiz-widget-${version}.js imported`)
+import diagramQuizWidget, { version as actualDiagramVersion } from "./diagram-quiz-widget-v21.js"
+
+const desiredDiagramVersion = "v21"
+
+if (desiredDiagramVersion !== actualDiagramVersion) {
+    console.error(`✗ Version mismatch! Expected ${desiredDiagramVersion}, got ${actualDiagramVersion}`)
+    throw new Error('Version mismatch - check your import path')
+}
+
+console.log(`✓ diagram-quiz-widget ${actualDiagramVersion} imported successfully`)
+
 // ====================================
 // 2. DOM ELEMENT REFERENCES
 // ====================================
