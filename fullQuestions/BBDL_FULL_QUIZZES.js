@@ -1620,8 +1620,158 @@ materials, whereas polythene is definitely a man-made sheet material.`,
         lookup: "See page(s) 38 (Fig 5.32) of the Full Licence text book",
         syllabus: "2j.4"
     },
+    {
+        source: "BBDL QUIZ WEEK05 Q01",
+        question: "In order for an oscillator to maintain its oscillation it must be provided with:",
+        image: "",
+        options: [
+            "A good quality coil, tightly wound on a grooved former",
+            "Some feedback from its output to its input",
+            "Short wiring between components",
+            "A stable voltage supply",
+        ],
+        correct: 1,
+        explanation: `Feedback is essential to maintain oscillation. ‘a’, ‘c’, and ‘d’ are all features of agood stable oscillator but none of those help to maintain oscillation.`,
+        lookup: "See page(s) 42 of the Full Licence text book",
+        syllabus: "2i.5"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q02",
+        question: "The term Modulation Index refers to:",
+        image: "",
+        options: [
+            "The bandwidth of an AM signal",
+            "The amplitude of an AM signal",
+            "The ratio of the peak deviation of an FM signal to the maximum audio frequency",
+            "The ratio of the AF amplitude to the peak deviation of an FM signal",
+        ],
+        correct: 2,
+        explanation: `Firstly, always link the term Modulation Index to Frequency Modulation (FM), that eliminates ‘a’, and ‘b’. A look at the words in ‘d’, we are considering AF (audio frequency) amplitude and its effect on the peak deviation. This sounds possible but it is not right. However, “the ratio of the peak deviation of an FM signal to the maximum audio frequency” is the definition for Modulation Index.`,
+        lookup: "See page(s) 43 of the Full Licence text book",
+        syllabus: "3a.2"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q03",
+        question: "You cannot multiply a 14.430MHz SSB signal up to the 2 metre band because:",
+        image: "",
+        options: [
+            "It will result in a bandwidth of around 25 to 30 kHz.",
+            "You cannot multiply frequencies by 10",
+            "You cannot use SSB on the 2 metre band.",
+            "You are not allowed to generate signals outside the amateur band.",
+        ],
+        correct: 0,
+        explanation: `Multiplying a 14.430MHz signal by ten will give us a signal in the 2 metre band (14.430 x 10 = 144.300). So why should we not do it? Multiplying the frequency will also multiply the bandwidth, so a 2.5kHz SSB signal will be 25kHz wide if multiplied by 10, a 3kHz wide signal will be 30kHz wide, so ‘a’ looks like a good reason for not doing so. Whilst it is not easy to multiply a signal by 10 in a single amplifier stage, a doubler stage (2x) followed by a quintupler stage (5x) is technically possible, so not ‘b’. ‘c’ is just plain wrong (most 2m contests use SSB) and ‘d’ is also incorrect because whilst we cannot transmit signals outside the amateur bands, we often generate signals on frequencies outside the amateur bands for use within radio equipment (e.g. a BFO in a receiver or a VFO in a mixer arrangement). So ‘a’ it is. `,
+        lookup: "See page(s) 46-47 of the Full Licence text book",
+        syllabus: "3b.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q04",
+        question: "It is important to minimise drift because:",
+        image: "",
+        options: [
+            "Drift can cause harmonics to develop",
+            "Drift can result in out-of-band transmissions",
+            "Drift can cause spurious emissions",
+            "All of the above",
+        ],
+        correct: 1,
+        explanation: ` ‘a’ and ‘c’ are incorrect, making ‘d’ also wrong. That only leaves ‘b for the correct answer’, and extreme drift can indeed take your transmissions out of the amateur band, especially if you are operating near the band edge. `,
+        lookup: "See page(s) 42, 51 of the Full Licence text book",
+        syllabus: "3c.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q05",
+        question: "The purity of the signals produced by a synthesiser can be improved by:",
+        image: "",
+        options: [
+            "Employing sturdy construction techniques.",
+            "Using a well-regulated power supply for the synthesiser",
+            "Housing the synthesiser in a temperature controlled enclosure.",
+            "Increasing the number of bits in the digital representation of the signal.",
+        ],
+        correct: 3,
+        explanation: `Answers ‘a’, ‘b’ and ‘c’ are good for minimising drift in a traditional VFO based on a tuned circuit. The only viable option for a digital oscillator is ‘d’. More digital bits will producesmaller steps in the digital representation of the signal. `,
+        lookup: "See page(s) 39-40, 45 of the Full Licence text book",
+        syllabus: "3c.3"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q06",
+        question: "The block diagram shown is a",
+        image: "images/bbdl-quizzes-week05-dds.png",
+        options: [
+            "Software Defined Radio (SDR)",
+            "Digital Frequency Meter (DFM)",
+            "Direct Digital Synthesiser (DDS)",
+            "Phase Locked Loop (PLL) synthesiser",
+        ],
+        correct: 2,
+        explanation: `Bit of detective work required here! Looking at the blocks we can see a “clock”, so it sounds digital, a “look up table” so it sounds more digital and aren’t “look up tables” used to digitally generate a sine wave? Also, a Digital to Analogue Convertor is the device that creates the sinewave from the digital data. So, have we got a Software defined radio? No this is just the block diagram of a frequency generator. So not ‘a’. Is this going to measure frequency in a meter? No there is no meter face or numeric display so not ‘b’. Is this a Phase Locked Loop type of synthesiser? No, there is no feedback loop, dividers or comparator. So, that suggests it must be a DDS, and it is. `,
+        lookup: "See page(s) 45 of the Full Licence text book",
+        syllabus: "3c.3"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q07",
+        question: "A frequency multiplier stage must generate harmonics. This is usually through use of a:",
+        image: "",
+        options: [
+            "balanced modulator",
+            "class A amplifier",
+            "class C amplifier",
+            "crystal oscillator",
+        ],
+        correct: 2,
+        explanation: `The class C amplifier is the one known to be rich in harmonics so ideally suited to multiplying frequencies – answer ‘c’ is the correct option.`,
+        lookup: "See page(s) 46 of the Full Licence text book",
+        syllabus: "3d.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q08",
+        question: "Which of the following statements about transmitter architecture is TRUE?",
+        image: "",
+        options: [
+            "Mixers and multipliers can be used for FM and SSB modulated signals",
+            "Multipliers cannot be used for SSB modulated signals",
+            "Mixers can only be used for FM modulated signals",
+            "Mixers can only be used for SSB modulated signals",
+        ],
+        correct: 1,
+        explanation: `Mixers can be used for any type of modulated signal so ‘c’ and ‘d’ are not true. Multipliers cannot be used for AM or SSB modulated signals as they would have their bandwidth increased and you cannot modulate voice with a very narrow bandwidth that could be multiplied, so ‘a’ is not true but ‘b’ is true.`,
+        lookup: "See page(s) 46-47 of the Full Licence text book",
+        syllabus: "3b.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q09",
+        question: "The bandwidth of an FM transmission may be reduced by:",
+        image: "",
+        options: [
+            "Reducing the PA gain",
+            "Using a low pass filter after the PA",
+            "Using a microphone with an AF response up to 15kHz",
+            "Reducing the gain of the microphone amplifier.",
+        ],
+        correct: 3,
+        explanation: `‘d’ is the correct answer. FM Bandwidth (BW) is determined by the maximum Audio Frequency and the peak deviation, so ‘a’ will have no effect on the bandwidth of the FM transmission, neither will ‘b’ (reducing harmonics), or ‘c’ (a mic with an AF response greater than 3kHz has potential for increasing the bandwidth of the audio frequency signals). That must mean ‘d’ is the correct answer. Why? Because less AF amplitude will mean less deviation, so less BW, hopefully sufficient to ensure that the modulation does not achieve the peak deviation. `,
+        lookup: "See page(s) 43 of the Full Licence text book",
+        syllabus: "3e.1"
+    },
+    {
+        source: "BBDL QUIZ WEEK05 Q10",
+        question: ". In the section of the circuit diagram of an SSB transmitter shown, what is the function of the crystal/capacitor combination in the middle ?",
+        image: "images/bbdl-quizzes-week05-remove-sideband.png",
+        options: [
+            "To only allow one sideband to pass",
+            "To generate the sidebands",
+            "To modulate the carrier",
+            "To suppress the carrier",
+        ],
+        correct: 0,
+        explanation: `Remember the steps in generating a single sideband signal using the traditional method. A carrier is first generated, this is passed through a balanced mixer together with the audio signal. The mixer creates two amplitude modulated sidebands, one above and one below the carrier frequency. The carrier is also “nulled out” by means of the balancing action of the device. We now have a Double Sideband Suppressed Carrier signal. This is what enters the circuit from the left side. Next, wehave transistor amplifier. Then the four quartz crystals (the subject of the question) and three capacitors to ground. This is a classic ladder crystal filter circuit. It has a bandwidth of perhaps 3kHz and will only allow one sideband to pass. This is followed with another transistor amplifier to add some gain and match the filter impedance to the following circuits. Aide memoir: One crystal and a transistor is probably an oscillator. More than one crystal with more than one capacitor is probably a filter. `,
+        lookup: "See page(s) 47 of the Full Licence text book",
+        syllabus: "3e.2"
+    },
     // {
-    //     source: "BBDL QUIZ WEEK04 Q00",
+    //     source: "BBDL QUIZ WEEK05 Q00",
     //     question: "",
     //     image: "",
     //     options: [
