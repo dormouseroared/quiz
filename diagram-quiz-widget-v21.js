@@ -286,7 +286,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     feedbackArea.innerHTML = `
       <div style="padding: 16px; border-radius: 8px; border: 2px solid ${allCorrect ? '#16a34a' : '#f59e0b'}; 
         background: ${allCorrect ? '#dcfce7' : '#fef3c7'}; margin-bottom: 16px;">
-        <p style="font-weight: bold; font-size: 18px;">
+        <p style="font-weight: bold; font-size: 18px; color: blue;">
           ${allCorrect ? '🎉 Perfect! All correct!' : `Score: ${correctCount} / ${card.boxes.length} correct`}
         </p>
         ${!allCorrect ? '<p style="font-size: 14px; margin-top: 4px;">Keep trying! Red borders show incorrect answers.</p>' : ''}
