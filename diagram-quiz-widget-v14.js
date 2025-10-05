@@ -1,4 +1,3 @@
-
 // ===== DIAGRAM QUIZ PLAYER =====
 // For use in your quiz app - follows your flashcardsWidget pattern
 
@@ -8,6 +7,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   let availableLabels = []
   let showFeedback = false
   let draggedLabelId = null
+  let resizeTimeout = null
 
   const widget = {
     start() {
@@ -30,13 +30,28 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
         overflow: auto;
       `
 
+      // Add window resize listener
+      window.addEventListener('resize', handleResize)
+
       loadCard(currentCardIndex)
     },
 
     stop() {
+      window.removeEventListener('resize', handleResize)
       targetDiv.innerHTML = ''
       targetDiv.style.cssText = ''
     }
+  }
+
+  function handleResize() {
+    // Debounce resize events
+    clearTimeout(resizeTimeout)
+    resizeTimeout = setTimeout(() => {
+      const card = quizCards[currentCardIndex]
+      if (card) {
+        renderBoxes(card, card.obfuscationLevel || 0.7)
+      }
+    }, 100)
   }
 
   function loadCard(index) {
@@ -44,15 +59,19 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     userAnswers = {}
     showFeedback = false
 
-    // Shuffle labels
-    availableLabels = [...card.boxes]
-      .sort(() => Math.random() - 0.5)
-      .map(b => ({ id: b.id, label: b.label, placed: false }))
+    // Shuffle labels using Fisher-Yates algorithm for true randomization
+    const shuffled = [...card.boxes]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    availableLabels = shuffled.map(b => ({ id: b.id, label: b.label, placed: false }))
 
     render(card)
   }
 
   function render(card) {
+    console.log('RENDER CALLED for card:', card.title)
     const obfuscation = card.obfuscationLevel || 0.7
 
     targetDiv.innerHTML = `
@@ -70,9 +89,9 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
             <button id="reset-btn" style="padding: 8px 16px; background: #f97316; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">
               ↻ Reset
             </button>
-            ${currentCardIndex < quizCards.length - 1 ?
-        '<button id="next-btn" style="padding: 8px 16px; background: #16a34a; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">Next Card →</button>'
-        : ''}
+            <button id="next-btn" style="padding: 8px 16px; background: #16a34a; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">
+              Next Card →
+            </button>
             <button id="close-btn" style="padding: 8px 16px; background: #6b7280; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; margin-left: auto;">
               ✕ Close
             </button>
@@ -104,10 +123,26 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
     const nextBtn = document.getElementById('next-btn')
     if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
+      console.log('Next button found, attaching listener')
+      if (currentCardIndex >= quizCards.length - 1) {
+        nextBtn.style.display = 'none'
+      }
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        console.log('Next card clicked, current index:', currentCardIndex, 'total cards:', quizCards.length)
         currentCardIndex++
-        loadCard(currentCardIndex)
+        if (currentCardIndex < quizCards.length) {
+          loadCard(currentCardIndex)
+        } else {
+          console.log('No more cards - reached end')
+        }
       })
+      // Test if button is clickable
+      nextBtn.style.cursor = 'pointer'
+      console.log('Next button style:', nextBtn.style.cssText)
+    } else {
+      console.log('Next button not found in DOM')
     }
 
     // Wait for image to load
@@ -122,10 +157,20 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     const container = document.getElementById('answer-boxes')
     const img = document.getElementById('quiz-diagram')
 
+    // Wait for image to fully load to get natural dimensions
+    if (!img.complete || !img.naturalWidth) {
+      img.onload = () => renderBoxes(card, obfuscation)
+      return
+    }
+
     container.style.top = img.offsetTop + 'px'
     container.style.left = img.offsetLeft + 'px'
     container.style.width = img.offsetWidth + 'px'
     container.style.height = img.offsetHeight + 'px'
+
+    // Calculate scale factors
+    const scaleX = img.offsetWidth / img.naturalWidth
+    const scaleY = img.offsetHeight / img.naturalHeight
 
     container.innerHTML = ''
 
@@ -151,10 +196,10 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
       div.style.cssText = `
         position: absolute;
-        left: ${box.x}px;
-        top: ${box.y}px;
-        width: ${box.width}px;
-        height: ${box.height}px;
+        left: ${box.x * scaleX}px;
+        top: ${box.y * scaleY}px;
+        width: ${box.width * scaleX}px;
+        height: ${box.height * scaleY}px;
         border: 4px solid ${borderColor};
         background: ${bgColor};
         border-radius: 4px;

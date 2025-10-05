@@ -6,6 +6,8 @@ import W99quiz from "./fullQuestions/W99quiz_FULL.js"
 import syllabusItems from "./syllabusItems.js"
 import flashcardsWidget from "./flashcards-widget/flashcards_widget_v9.js"
 
+import diagramQuizWidget, { version } from "./diagram-quiz-widget-v21.js"
+console.log(`diagram-quiz-widget-${version}.js imported`)
 // ====================================
 // 2. DOM ELEMENT REFERENCES
 // ====================================
@@ -28,6 +30,7 @@ const resultDiv = document.getElementById("result")
 const syllabusScoreDiv = document.getElementById("syllabusScore")
 
 const flashcardsDiv = document.getElementById("flashcards")
+const diagramQuizDiv = document.getElementById("diagramQuiz")
 
 // ====================================
 // 3. CONFIGURATION AND DATA STRUCTURES
@@ -713,3 +716,131 @@ syllabusCheck()
 // Final debug
 myDebug("startup completed: now waiting for Search to be clicked", quizState)
 
+// 11. Diagram Quiz Test
+
+const diagramQuizCards = [
+    {
+        "title": "FM transmitter with Frequency Multiplier",
+        "imagePath": "diagramQuizImages/FM transmitter with frequency multiplier.png",
+        "obfuscationLevel": 1.0,
+        "boxes": [
+            {
+                "id": 1759608625746,
+                "x": 327.68333435058594,
+                "y": 214.89999389648438,
+                "width": 103,
+                "height": 76,
+                "label": "audio amplifier"
+            },
+            {
+                "id": 1759608651544,
+                "x": 19.683334350585938,
+                "y": 72.89999389648438,
+                "width": 111,
+                "height": 78,
+                "label": "oscillator"
+            },
+            {
+                "id": 1759608671120,
+                "x": 155.68333435058594,
+                "y": 73.89999389648438,
+                "width": 102,
+                "height": 78,
+                "label": "buffer amplifier"
+            },
+            {
+                "id": 1759608690157,
+                "x": 282.68333435058594,
+                "y": 73.89999389648438,
+                "width": 112,
+                "height": 75,
+                "label": "frequency multiplier"
+            },
+            {
+                "id": 1759608709803,
+                "x": 421.68333435058594,
+                "y": 76.89999389648438,
+                "width": 82,
+                "height": 72,
+                "label": "filter & driver"
+            },
+            {
+                "id": 1759608729990,
+                "x": 538.6833343505859,
+                "y": 74.89999389648438,
+                "width": 101,
+                "height": 111,
+                "label": "power amplifier & filtering"
+            },
+            {
+                "id": 1759608759269,
+                "x": 76.68333435058594,
+                "y": 174.89999389648438,
+                "width": 101,
+                "height": 68,
+                "label": "frequency modulation to oscillator"
+            },
+            {
+                "id": 1759608794166,
+                "x": 209.68333435058594,
+                "y": 166.89999389648438,
+                "width": 114,
+                "height": 62,
+                "label": "phase modulation to buffer amplifier"
+            }
+        ],
+        "createdAt": "2025-10-04T20:14:02.127Z"
+    },
+    {
+        "title": "Direct Digital Synthesiser (DDS)",
+        "imagePath": "diagramQuizImages/direct digital synthesiser.png",
+        "obfuscationLevel": 1.0,
+        "boxes": [
+            {
+                "id": 1759605444169,
+                "x": 11,
+                "y": 140.89999389648438,
+                "width": 109,
+                "height": 73,
+                "label": "Clock"
+            },
+            {
+                "id": 1759605473781,
+                "x": 12,
+                "y": 33.899993896484375,
+                "width": 106,
+                "height": 69,
+                "label": "Sinewave lookup table"
+            },
+            {
+                "id": 1759605502472,
+                "x": 151,
+                "y": 33.899993896484375,
+                "width": 108,
+                "height": 70,
+                "label": "Digital to Analogue Converter"
+            },
+            {
+                "id": 1759605532852,
+                "x": 287,
+                "y": 32.899993896484375,
+                "width": 107,
+                "height": 70,
+                "label": "Low pass filter"
+            },
+            {
+                "id": 1759605549631,
+                "x": 133,
+                "y": 174.89999389648438,
+                "width": 100,
+                "height": 44,
+                "label": "Frequency control"
+            }
+        ],
+        "createdAt": "2025-10-04T19:20:39.792Z"
+    },
+]
+
+console.log("diagramQuiz starting with:", diagramQuizCards.length, "cards")
+const diagramWidget = diagramQuizWidget(diagramQuizCards, diagramQuizDiv)
+diagramWidget.start()
