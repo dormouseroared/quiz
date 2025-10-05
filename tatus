@@ -1,0 +1,942 @@
+[33mcommit 4b61de14e4ac756678bef4110ca000b6c4812f9d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Oct 5 16:35:14 2025 +0100
+
+    diagram quiz feedback was not visible due to lack of contrast text to background
+
+[33mcommit 567dd2f5979b67452c4391ddbe3dcb995fdb1ce4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Oct 5 12:38:47 2025 +0100
+
+    added new diagram of transmitter & mixer
+
+[33mcommit e20c1ccf443f1e41653a90f7899c31a738c9a8eb[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Oct 5 12:23:42 2025 +0100
+
+    version checking on diagram quiz widget
+
+[33mcommit b71a738b1087e1e94838291acb7749f23178d262[m[33m ([m[1;32m2025-10-04-diagram-test-01[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Oct 5 10:12:38 2025 +0100
+
+    diagram quiz widget and standalone diagram label creator
+
+[33mcommit 5850ca36c910ccf6a11522dad9678177bc3190bb[m[33m ([m[1;33mtag: [m[1;33m7.0[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Oct 4 20:35:56 2025 +0100
+
+    diagram quiz
+
+[33mcommit 682b0240a89f4312eaee15cbacdde33f862320eb[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Oct 4 20:35:09 2025 +0100
+
+    update week 5 in syllabus items (not yet completed)
+
+[33mcommit d04a2f8d6d85a67f54ab28d58c61ff997182c20b[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Oct 4 00:39:14 2025 +0100
+
+    syllabus corrections
+
+[33mcommit 84a498c076ce1627e882de953e7f00ff67290760[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Oct 3 20:57:36 2025 +0100
+
+    improve options readability in searchType drop down despite Firefox intransigence
+
+[33mcommit 8aa17861438ff33cc5d1fc0aece839e570c0df35[m[33m ([m[1;33mtag: [m[1;33m6.1[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Oct 3 01:08:34 2025 +0100
+
+    try out git stash and git stash pop
+
+[33mcommit fd0c753d1546aef53b92bbcd48c8ee9087a64a2d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Oct 2 10:13:43 2025 +0100
+
+    minor change: comment in css for what highlightLevel class does
+
+[33mcommit 37b8a4d24401c30e18ece800c01f7292c3b18d70[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Oct 1 22:02:50 2025 +0100
+
+    minor corrections, css changes
+
+[33mcommit 7f3c012003e43c086e7fbe9453e721c6891d27f8[m[33m ([m[1;33mtag: [m[1;33m6.0[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Oct 1 11:10:05 2025 +0100
+
+    filter is now flex, bigger font
+
+[33mcommit fbe372f590a4a9deb2079ef68e427a271f91dfa8[m[33m ([m[1;32m2025-09-30-css-reset[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 30 18:25:10 2025 +0100
+
+    now using a new css reset
+
+[33mcommit 62f3262acd2e8a3d3be12fc07e52c3da88b8ace0[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 30 16:44:24 2025 +0100
+
+    retire widget v8 to archive, learn about browser defaults for p tag
+
+[33mcommit ccd312cab8a7421e9f59e39591cd9229bc04b526[m[33m ([m[1;33mtag: [m[1;33mwidget-v9[m[33m, [m[1;32mwidget-v9-test[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 29 23:23:15 2025 +0100
+
+    flashcards header now has multiple fields and CSS updated re transform uppercase
+
+[33mcommit 95c5f04bf9fa7f8703616e34a9d6d73c48435726[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 29 18:36:52 2025 +0100
+
+    remove reference from front and back of flashcard
+
+[33mcommit a25eff05fe364666e9097ebc0b5d8a203b2fc6ba[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 29 18:14:08 2025 +0100
+
+    create v9 of flashcard widget js and css to enable changes
+
+[33mcommit 7d15392a47e639a6d6b9d02b199fdd9e9c405d9e[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 29 17:55:19 2025 +0100
+
+    limit syllabus key to first 4 characters fot flashcards widget to avoid keys like a & b
+
+[33mcommit 8eb9ce25726ee96a212394b68e391c077c421bff[m[33m ([m[1;32mflashcards-header[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 29 15:56:06 2025 +0100
+
+    archive flashcards-widget
+
+[33mcommit ec08485b8dccaa9f25756007c9a1d3f686a61660[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 28 18:58:49 2025 +0100
+
+    worked answers for week04
+
+[33mcommit 0bb1e917ec1ddad4b549293b7a919bbe951e497a[m[33m ([m[1;33mtag: [m[1;33mweek04[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 28 11:56:44 2025 +0100
+
+    week04 flashcards
+
+[33mcommit 5967abb1509eec7edf6bb01a5ae3a3d9a4604b5e[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 28 00:30:33 2025 +0100
+
+    more of week04 flashcards
+
+[33mcommit 5b4a8fa5951784525b049fcffb94afbc8b95514b[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Sep 27 21:23:20 2025 +0100
+
+    fix missing comma in syllabusItems
+
+[33mcommit 7dbbbc14854b8f98f2492bbf1fe954db75598f23[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Sep 27 21:09:23 2025 +0100
+
+    week04 flashcards
+
+[33mcommit 09700fb0d97b18e6691d2d6e66d8190cb5435c6f[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 26 11:23:47 2025 +0100
+
+    corrections to week3A Q02 again 2
+
+[33mcommit 5d196bbcbd43b024ec45cffbc70df34eaeb2eb7d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 26 11:12:39 2025 +0100
+
+    corrections to week3A Q02 again
+
+[33mcommit e5529199d213e95f2034e5b4178935bc8402e582[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 26 11:06:49 2025 +0100
+
+    corrections to week3A Q02
+
+[33mcommit e58ff33436cee6bbeb7269909a67a99b91ad5eb6[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 26 10:01:10 2025 +0100
+
+    correction to week03A Q02
+
+[33mcommit e0c01bb7c318313ba1c1c76557f59144dad6b2da[m[33m ([m[1;32mwidget[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 24 22:58:45 2025 +0100
+
+    flashcard widget for quiz
+
+[33mcommit 958c51d699bf3281f53c78886ae9024d7fc1d10f[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 24 16:19:21 2025 +0100
+
+    claude widget folder created but no integration. flashcards button ready. showFlashcards ready
+
+[33mcommit 445c4c68272aa527d765a0ca7ce68901c590e582[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 23 22:54:10 2025 +0100
+
+    claude monitoring folder
+
+[33mcommit 930eee05b3fd77daec27c987ca6ef38d6bc5553d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 23 19:36:11 2025 +0100
+
+    added some questions to OWN etc
+
+[33mcommit 7a3c984755b0b1c0a7a6a40f29fafcf40a5930c6[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 23 14:16:56 2025 +0100
+
+    more OWN questions, weirdness with double property, reference now on explanation
+
+[33mcommit 20e6cf1e6bf75644a5231cb5c5adfa555c612cdd[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 23 10:06:07 2025 +0100
+
+    tidy up questions and syllabus
+
+[33mcommit f74aa30db587bd7427532ac9750fce24fcec6d06[m[33m ([m[1;33mtag: [m[1;33m5.0[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 22 20:56:36 2025 +0100
+
+    mathjax day: new function
+
+[33mcommit 559c0d882d1e8b51ac8c234282921ac1ae187496[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 22 12:05:11 2025 +0100
+
+    week03A worked answers all in, so just waiting to test and look at them
+
+[33mcommit 4806946de97f352619ce6fc8ddafafaa5b061f40[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 21 22:10:07 2025 +0100
+
+    more worked answers up to Q14
+
+[33mcommit 2a6edb5a5819b9868218fcc431cc410a2c4c30b8[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 21 19:13:14 2025 +0100
+
+    minor improvements to quiz week 3A
+
+[33mcommit 3f34085526da0d769bb55341588e14cb916ad853[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 21 15:50:36 2025 +0100
+
+    BBDL Quiz week03 after questions - awaiting explanations
+
+[33mcommit 65a2812be5105c7f36cce311a067f6d63ac4b9e0[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Sep 20 23:42:14 2025 +0100
+
+    now using subTitle and sequence
+
+[33mcommit 474d0b05fa441a3e01fb764fed2603f001c3e512[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Sep 20 22:59:59 2025 +0100
+
+    try subTitle and sequence for more useful heading
+
+[33mcommit a2594366aa932694d0518901d85ba23b01c9a38e[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Sep 20 19:49:43 2025 +0100
+
+    small changes
+
+[33mcommit 5ef7f6a6b4e00c1df29f296f43b1d1dca140cca8[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 19 21:41:06 2025 +0100
+
+    disabled config.json for now (printer config problem A3!), new card specified
+
+[33mcommit 556ee3ce1177213c0b45391a388d528e9917d516[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 19 21:39:11 2025 +0100
+
+    reinstate cardIndicator to card header so we get an n/n sequence
+
+[33mcommit 019e126b77fb501e334535a99cfe140a337140ec[m[33m ([m[1;32mflashcard_generator_tidy[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 19 18:40:03 2025 +0100
+
+    flashcard_generator_production_v02.js 100 lines removed, headers, section, incomplete
+
+[33mcommit 4ecc2ada8d361ebd51c0017ad81ee8ba96de174a[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 19 16:51:17 2025 +0100
+
+    remove npm packages IMAGE-SIZE and PDFKIT as we use puppeteer now
+
+[33mcommit 2a92bb65b17acadda907ba99a0d5bc9b617ac179[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 19 14:16:48 2025 +0100
+
+    moved a lot to the archive folder
+
+[33mcommit 3efc4cb977e496fd60b2397c563d5ac72bff1e5b[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Sep 19 00:04:19 2025 +0100
+
+    reduced body font and line height, allocated ids, added flashcards
+
+[33mcommit fd489c1744f6559a62a0205895b601c273909687[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Sep 18 23:18:30 2025 +0100
+
+    nanoid, adding ids, adding flashcards
+
+[33mcommit cc86be84e3f5e1b79ac78065571c54b1d50069af[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 14 17:25:28 2025 +0100
+
+    flashcard generator, flashcard definition in syllabusItems.js
+
+[33mcommit 80d6bb404880502a2ac4f88147eae9c10d1ad9df[m[33m ([m[1;33mtag: [m[1;33m4.2[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 10 16:06:24 2025 +0100
+
+    minor tidy up on the new index.js!!!
+
+[33mcommit 7ce7f2b76457f6ffe873fded99429779ff63f644[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 10 14:44:44 2025 +0100
+
+    tidy up the fisher yates shuffleArray to get rid of that pesky semicolon caused by ASI
+
+[33mcommit b44760097f1d2610312868c7fb5a28f8b417ffe2[m[33m ([m[1;33mtag: [m[1;33m4.1[m[33m, [m[1;33mtag: [m[1;33m4.0[m[33m)[m
+Merge: 45294a9 f32bac1
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 10 12:34:22 2025 +0100
+
+    Merge branch 'combine-two-into-one'
+
+[33mcommit 45294a9a727083709983575e90724fbd9af4d871[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 10 12:33:34 2025 +0100
+
+    before merge of combined js, save the two files in a new folder
+
+[33mcommit f32bac1cf6c5683903060333555b8b5b63c9de40[m[33m ([m[1;32mcombine-two-into-one[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Sep 10 12:26:58 2025 +0100
+
+    merged functionLibrary.js back into index.js
+
+[33mcommit f5209b37974ea69eaa5fb1cecb67425fa30181cf[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 9 21:09:49 2025 +0100
+
+    minor change
+
+[33mcommit b82989376864cdd52eb874ec2449cea194bf3ae4[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 9 20:24:30 2025 +0100
+
+    show status of all ids as just id will work on its own: searchForm corrected
+
+[33mcommit 0333312be83fff0ac992cc37b59ba27ca06cd4a1[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 9 16:48:38 2025 +0100
+
+    using Array.from to create the quizState object and reset it when Search clicked; also Claude quiz
+
+[33mcommit fb44ced3099c950d4ab35b043f171a182e822a10[m[33m ([m[1;33mtag: [m[1;33m3.9[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 8 17:12:18 2025 +0100
+
+    initialise quizState for when Search is triied again after first time
+
+[33mcommit 3643c4ab37b40f07e46ef6166b2ea204af0904d1[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 7 12:40:22 2025 +0100
+
+    should be week02
+
+[33mcommit 335911d35ce77b34aae2903e0257e1ae12c85af0[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Sep 7 12:33:01 2025 +0100
+
+    week03 quiz first part
+
+[33mcommit 4cd6e201a7ab008f2f40555b0587ce60d14f9548[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Sep 6 20:59:24 2025 +0100
+
+    display syllabus topics at startup
+
+[33mcommit 95e12015ea5ebadd671f22b0fd56e7639ec123e9[m[33m ([m[1;33mtag: [m[1;33m3.8[m[33m, [m[1;33mtag: [m[1;33m3.7[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Sep 4 21:29:15 2025 +0100
+
+    can now use mathjax format in answers (see nano pica etc)
+
+[33mcommit 47d7175fa7d0286c67a2122cf329324e4fe26bc5[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Sep 4 21:00:17 2025 +0100
+
+    added some own questions generated by Claude on indductor theory
+
+[33mcommit c88320b5b4915e32e446d07ec40167bc711a36ec[m[33m ([m[1;33mtag: [m[1;33mmathjax[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Sep 2 17:56:44 2025 +0100
+
+    mathjax config, redo some explanations in mathjax format
+
+[33mcommit c877b6b97fcd6eadf462476a9e29684e400a262e[m[33m ([m[1;33mtag: [m[1;33m3.6[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Sep 1 19:11:05 2025 +0100
+
+    experiment with Latex maths formatting using mathjax, week01
+
+[33mcommit 59c4145231a2761402fb7d9a01e5c958094e8e1f[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Aug 31 19:42:30 2025 +0100
+
+    bbdl quizzes & syllabus: more minor updates
+
+[33mcommit 73ff4f24bbfd44d9eb4059f9500a55d1e9605169[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Aug 31 13:33:08 2025 +0100
+
+    bbdl quizzes & syllabus: minor updates
+
+[33mcommit 369f1e920c5ed7dc7cfb5caeefe29f7dbfd42373[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Aug 30 17:10:54 2025 +0100
+
+    bbdl week01 quiz: worked examples
+
+[33mcommit 66a8b2096e93486341b7212d0b0181e05b006100[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 29 23:59:21 2025 +0100
+
+    bbdl week01 quiz: fixes
+
+[33mcommit 1f643fec6de5c20bc46cdff39f6f932d5de34fd5[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 29 23:20:44 2025 +0100
+
+    bbdl week01 quiz
+
+[33mcommit f2d66cd194a31802f017bb34462be00f3bf11c58[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Aug 28 16:07:52 2025 +0100
+
+    week number from syllabus item now working
+
+[33mcommit 4f77bb6b58b1eb45d13cef4b6bd685a25c899c0c[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Aug 28 15:29:37 2025 +0100
+
+    minor changes, add week number to syllabus
+
+[33mcommit 2ea1b66d3d6e2d96f50173403aad6fe275e6e205[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Aug 27 13:59:48 2025 +0100
+
+    spelling etc corrections
+
+[33mcommit 0b50565b658391563618c806d2f2a2c8b30a6e10[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Aug 27 13:30:47 2025 +0100
+
+    reduce size of filter line to avoid the search button wraparound
+
+[33mcommit bb55aef6bf4b38e7bab011241be94956c813b858[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Aug 27 13:24:58 2025 +0100
+
+    small corrections and version number
+
+[33mcommit d5959e02edc7064f8956666c77ddc63f7177631c[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Aug 27 12:37:55 2025 +0100
+
+    make question number into a span with its own style
+
+[33mcommit a9e4279148eab79c3b2514b4d07bac9564399a53[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Aug 27 12:04:03 2025 +0100
+
+    secrets full paper completed, partial syllabus added
+
+[33mcommit b89029e8a49d31d45cd83aa8259665a4c5852037[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Aug 26 16:53:12 2025 +0100
+
+    up to 48 on full paper 2
+
+[33mcommit 816d69e5ee0ab39eea0cb694ec8fca06221e03dc[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Aug 26 10:37:02 2025 +0100
+
+    up to 38 on full paper + clear explanation div on new search
+
+[33mcommit ad49f285154ed74482f4ffcd2b6ffd2b103c778d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Aug 26 09:45:29 2025 +0100
+
+    up to 37 on full paper
+
+[33mcommit a453924043f7cda4c2cf11be1b793f26ffa135d1[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Aug 24 15:35:30 2025 +0100
+
+    quiz week 0 worked answers completed
+
+[33mcommit 6e4bb6e23eeb246761f36c4f93eae10a2054ca0d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Aug 24 14:11:23 2025 +0100
+
+    secret full paper up to Q26
+
+[33mcommit b8b6636bdfc73fa936898df0d12a4b5cb5dbde6d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Aug 23 15:48:00 2025 +0100
+
+    BBDL Full Week 0 Quiz
+
+[33mcommit 3789ec75a20ae89d55b575c7967ccd9d2d8216e7[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Aug 23 12:43:08 2025 +0100
+
+    secrets full paper in progress up to Q23 of 58
+
+[33mcommit b9e6699868bbb685c962e1fa8f982452d4510a32[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 22 14:44:57 2025 +0100
+
+    secrets full paper in progress up to Q18 of 58
+
+[33mcommit 398ba7cca60319d7ac61217f4cedbf2d0174590c[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 22 09:40:08 2025 +0100
+
+    secrets full paper in progress up to Q15 of 58
+
+[33mcommit 999a8cd18c64eb8baf2f7dec04aa94f12ab345ab[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Aug 18 23:03:07 2025 +0100
+
+    next batch of Full Paper in Secrets
+
+[33mcommit f7500221e8dc6340bc4a0301e90eb714bf8d2ef2[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Aug 18 12:39:11 2025 +0100
+
+    completed  NEASUREMENTS (section 9 of 9)
+
+[33mcommit 2c51717f43ccf53bb47419fd8915a2a3836536d5[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Aug 18 00:02:07 2025 +0100
+
+    completed some answers, part of NEASUREMENTS (section 9 of 9)
+
+[33mcommit b1ad86c0fb8ca965651831ae4b61948b3d239fa1[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Aug 17 20:39:51 2025 +0100
+
+    completed questions part of NEASUREMENTS (section 9 of 9)
+
+[33mcommit 7fce06055c0d67e0615aa125adda5d934b993286[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 15 16:27:34 2025 +0100
+
+    completed questions for SAFETY (section 8 of 9)
+
+[33mcommit b00a003939b518a380c8ca3fada86da42b3d6276[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 15 15:08:50 2025 +0100
+
+    more questions for SAFETY (section 8 of 9)
+
+[33mcommit 63afc2d167ccac3ccfd2e2a5fe6f86bec051efd6[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Aug 10 21:43:04 2025 +0100
+
+    start questions for SAFETY (section 8 of 9)
+
+[33mcommit 01b8b0cead207b17fd20f81bd978870307a64744[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Aug 9 16:04:16 2025 +0100
+
+    secret questions for OPERATING (section 7 of 9) corrected
+
+[33mcommit f32d8deb78a2d5b8473ccc919d925f200ab4651b[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Aug 9 15:56:37 2025 +0100
+
+    secret questions for OPERATING (section 7 of 9) completed
+
+[33mcommit 701e3be741f30bc1071e115c0547d0e88b04530d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 8 22:56:35 2025 +0100
+
+    corrections to secret questions for EMC.
+
+[33mcommit 7eef7f2ae9eada20b697688526588d5c640fbcac[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Aug 8 22:44:01 2025 +0100
+
+    last secret questions for EMC.
+
+[33mcommit 1ce7c70cc775f6673cb59f4c6dc619dfb8cdb0dd[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Aug 7 18:42:40 2025 +0100
+
+    even more secret questions for EMC.
+
+[33mcommit d2b08eadf1ce0e11a58fc4919ef5467a93786a76[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Aug 7 15:42:30 2025 +0100
+
+    more secret questions for EMC.
+
+[33mcommit 4bdfba2e30547829e85bdd4feaa927fd0b73df32[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Aug 5 12:09:20 2025 +0100
+
+    secret questions started for EMC. Docker test.
+
+[33mcommit 1b7b770e5c973318512395a2005fbabc8e47b0aa[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Jul 26 17:55:53 2025 +0100
+
+    all 3 buttons (syllabus, explanation, next) now have hover
+
+[33mcommit 8ff1e4642970991aaec13189b4f76d711c5a44c5[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jul 22 23:42:58 2025 +0100
+
+    more secrets questions added
+
+[33mcommit 82622ba950fcd0223bbf943ef9d4f51266338d89[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Jun 28 19:39:07 2025 +0100
+
+    secrets transmitters started
+
+[33mcommit 07989babe09740ac899699d65f4456acf98fbcc5[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 19 16:32:32 2025 +0100
+
+    these secrets questions complete the technical basics
+
+[33mcommit 2ccfa8f06c15340962f1d9c7373817cb89047ed0[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 19 11:06:26 2025 +0100
+
+    more secrets questions in technical
+
+[33mcommit 1c24bc785b390513ef3f0aad92753fad0fb327ae[m[33m ([m[1;33mtag: [m[1;33m3.4[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Jun 15 19:01:10 2025 +0100
+
+    more secrets questions
+
+[33mcommit af9bcc049ca170dc72a09eb2e44ae3fc70743750[m[33m ([m[1;33mtag: [m[1;33m3.3[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Jun 14 10:37:39 2025 +0100
+
+    now version 3.3
+
+[33mcommit 53429d9fe402d94d0054b80c4a4f3254e21cccad[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat Jun 14 10:36:26 2025 +0100
+
+    secrets questions in technical with images now added.
+
+[33mcommit 1236ca4a01c3d7e0bcbaa4a9875f96c67460b884[m[33m ([m[1;33mtag: [m[1;33m3.2[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 12 16:34:23 2025 +0100
+
+    syllabus header: replace template literal with concatenation and used a code block to improve readability
+
+[33mcommit 9b6148ba3910297017b7a3cd6b72ed37a94f70f2[m[33m ([m[1;33mtag: [m[1;33m3.1[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 12 16:06:04 2025 +0100
+
+    now using prettier with npm config and .prettierrc and easier to read syllabus output below search
+
+[33mcommit afab7c54a772e42314460d39a993da26a968360e[m[33m ([m[1;33mtag: [m[1;33m2.28[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 12 14:50:34 2025 +0100
+
+    For questions, a new image key available. See test question with source including IMAGETEST.
+
+[33mcommit 9e03f9d480fb1ef6f87801418576dd848bbb548d[m[33m ([m[1;33mtag: [m[1;33m2.27[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Jun 11 16:59:55 2025 +0100
+
+    Questions with Source of Q_______ are test questions for  explanation/tagged which shoul be fixed re title
+
+[33mcommit c4eb3b234acecde9d65f01ca7290c051616fff98[m[33m ([m[1;33mtag: [m[1;33m2.26[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Jun 11 16:11:59 2025 +0100
+
+    added some exam secrets questions. title tooltip for explanation re tagged and explanation available
+
+[33mcommit 4756edfd041c387264b9b33486c5a17ac4abc359[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Wed Jun 11 12:50:33 2025 +0100
+
+    some new questions from exam secrets, no code changes, no version change
+
+[33mcommit edcd346259e755313953d73d624e5e3ee347023d[m[33m ([m[1;33mtag: [m[1;33m2.24[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 10 10:37:54 2025 +0100
+
+    showResult: do not show the Syllabus Items button
+
+[33mcommit 7061f324a8e39329155ea3a9166536bd49835ba1[m[33m ([m[1;33mtag: [m[1;33m2.23[m[33m, [m[1;32msyllabus-button[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 10 10:29:45 2025 +0100
+
+    new syllabus items button. display starts at top of page. loadquestion argument removed.
+
+[33mcommit 12b0c6ac6833b96b1fa4e53b4c485742544507eb[m[33m ([m[1;33mtag: [m[1;33m2.22[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 10 09:22:33 2025 +0100
+
+    questionHasValidSyllabus implemented
+
+[33mcommit fa61b7d14deeb839da714ef5092ce869238e4112[m[33m ([m[1;33mtag: [m[1;33m2.21[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 9 16:52:49 2025 +0100
+
+    some import dependencies not used since new function syllabusCheck can now be removed
+
+[33mcommit 82e881625353f11f78949cdab193e5832d769477[m[33m ([m[1;33mtag: [m[1;33m2.20[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 9 11:50:28 2025 +0100
+
+    new function called syllabusCheck in functionLibrary.js with code moved from index.js
+
+[33mcommit b84851dd52bf0f6308bcfe5e413424cf42b1151c[m[33m ([m[1;33mtag: [m[1;33m2.19[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 9 11:27:35 2025 +0100
+
+    highlight syllabus level in yellow to brak up the syllabus items dump
+
+[33mcommit 0344b963e1168b08b082b965f462d2fbd4597bb4[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 9 10:50:24 2025 +0100
+
+    remove old comments. no changes to code.
+
+[33mcommit 204043461bc1b2ff82ae7cbbb659030d8a73151a[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Jun 8 19:53:53 2025 +0100
+
+    version number now styled
+
+[33mcommit 4ad941db3742743bfd0af0441c48f50bbd486e13[m[33m ([m[1;33mtag: [m[1;33m2.18[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Jun 8 19:50:19 2025 +0100
+
+    syllabusItemsDiv now has unordered list rather than paragraphs to save space
+
+[33mcommit e05974f55fad32dcac6d9d38b47773fba5161d9e[m[33m ([m[1;33mtag: [m[1;33m2.17[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Jun 8 19:03:25 2025 +0100
+
+    got rid of the quizState parameter in loadQuestion
+
+[33mcommit 794e77830e9e781edb42a2028e0db5f75a864d71[m[33m ([m[1;33mtag: [m[1;33m2.16[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun Jun 8 18:48:15 2025 +0100
+
+    searchForm used. Some TODO examples set up.
+
+[33mcommit 3d70ed4be6cfd4dedfc17a20364ae2b9b1d63eb1[m[33m ([m[1;33mtag: [m[1;33m2.15[m[33m, [m[1;32mcauliflower[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Jun 6 23:02:24 2025 +0100
+
+    learning about closure and index with event listeners
+
+[33mcommit 1eac917fa995a4ab93fe022af8ba2f2e0c5fb56e[m[33m ([m[1;33mtag: [m[1;33m2.14[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Jun 6 09:58:21 2025 +0100
+
+    REVIEW: loadQuestion function comment added
+
+[33mcommit 998ec889e69f0fa004dd8ba473c625af77bf0d1d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri Jun 6 09:45:05 2025 +0100
+
+    REVIEW: loadQuestion function now in logical order and has quizState parameter
+
+[33mcommit 072959df4316cdf9b8dd353dfb06ef680b95fa6f[m[33m ([m[1;33mtag: [m[1;33m2.13[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 5 20:54:18 2025 +0100
+
+    REVIEW: quizState updated with start values; length is updated after questions selected
+
+[33mcommit 275bb6af1b58de5c1646886db5a5a03ca2136b0e[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 5 20:45:44 2025 +0100
+
+    REVIEW: myDebug function has quizState as parameter
+
+[33mcommit feea35daeb8f26f820ef43970a93cbc833941cd6[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 5 20:39:41 2025 +0100
+
+    REVIEW: comment out clearQuizState function
+
+[33mcommit f8f4617ef91c16db35a320770fdbd4b28d08943b[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu Jun 5 20:37:27 2025 +0100
+
+    REVIEW: quizState.syllabusScore is now initialised once, completely
+
+[33mcommit fc193423fe6411bd50a1260063f9d837a402beea[m[33m ([m[1;33mtag: [m[1;33m2.11[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 3 14:49:54 2025 +0100
+
+    use questionPackLength consistently
+
+[33mcommit d69f15527d6da541189515e2d5be78e44a8b0e77[m[33m ([m[1;33mtag: [m[1;33m2.10[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 3 14:30:16 2025 +0100
+
+    moved all questions into fullQuestions folder
+
+[33mcommit 4e454b964f22f6f7ac8f5b4300522d16a9b08559[m[33m ([m[1;33mtag: [m[1;33m2.9[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 3 13:40:06 2025 +0100
+
+    result now has blank line without correct, incorrect, percent for total = 0
+
+[33mcommit 4bf477281044ec4d872cc20b8b51830fe81412ab[m[33m ([m[1;33mtag: [m[1;33m2.8[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue Jun 3 13:19:40 2025 +0100
+
+    learning points: passed by reference and deep vs shallow clone + show percent if total > 0
+
+[33mcommit 561c96fb9cff11069d84aa0d88a76e152aa14844[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 17:28:35 2025 +0100
+
+    added some layout lines to the search type if else set
+
+[33mcommit b80a91e6fe6aa26c531f45f1dd109942d674eff2[m[33m ([m[1;33mtag: [m[1;33m2.7[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 16:24:13 2025 +0100
+
+    10 questions available. Some questions added and updated.
+
+[33mcommit f14f3df7ae369d8dab119442d468f6958481a4b9[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 14:06:25 2025 +0100
+
+    show syllabus number 1-9 in results report
+
+[33mcommit 19301f82b627b94c33589d3e09f6cfa89d8a312d[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 13:58:45 2025 +0100
+
+    tidy up
+
+[33mcommit 4091571c1b3ef6138f18ab1e90c67e3025808ed7[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 13:22:08 2025 +0100
+
+    syllabus.js renamed to syllabusItems.js plus some questions corrected
+
+[33mcommit 995a430f352f488a187e683118df4069dd3587cb[m[33m ([m[1;33mtag: [m[1;33m2.6[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 13:10:27 2025 +0100
+
+    58 questions now available for Full
+
+[33mcommit bb2f642924ab2d657809c685835cbe6426c52cc0[m[33m ([m[1;33mtag: [m[1;33m2.5[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 11:52:07 2025 +0100
+
+    version 2.5
+
+[33mcommit 0d9ca33f275aae9e99324b05bb74d3afaf852322[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 11:50:54 2025 +0100
+
+    moved intermediate to archive. all funcyions moved to functionLibrary.
+
+[33mcommit be611e38c2331bd9f758e48252b4b3207c72ff00[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon Jun 2 09:35:34 2025 +0100
+
+    another catch up
+
+[33mcommit d59e6cd59aa44ee6dd0f50f986ba9e9e3494ba34[m[33m ([m[1;33mtag: [m[1;33m2.3[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Fri May 30 19:58:06 2025 +0100
+
+    exam secrets for syllabus 1 complete, italic for excl btn if blank
+
+[33mcommit 451ea9a68467eabb12c72ee81ea524065ef87be7[m[33m ([m[1;33mtag: [m[1;33m2.1[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Thu May 29 18:49:53 2025 +0100
+
+    3 rsgb full mock exams & percent score & syllabus
+
+[33mcommit 21edf57fa45f6e469b384d7def032183cd89ac41[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat May 24 22:20:26 2025 +0100
+
+    start update syllabus for foundation & full, and first 3 questions
+
+[33mcommit cc9a1442b80171e722ab6cd2d3f652ef394ed3f3[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat May 24 21:29:41 2025 +0100
+
+    get the import right
+
+[33mcommit 79e522f9a2322a06dc35f9c03f1d65edc3d17c53[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sat May 24 21:17:06 2025 +0100
+
+    start to enter RSGB Full Mock 1
+
+[33mcommit 2ba7dff813e5bcd259344e0a7ee86de0330f0281[m
+Author: dmr <dormouseroared@protonmail.com>
+Date:   Tue May 20 21:01:01 2025 +0100
+
+    Create README.md
+
+[33mcommit 83890d018694250d1b2b8aa0fa304f3e18e60323[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue May 20 20:47:25 2025 +0100
+
+    Full or Intermediate section can be imported
+
+[33mcommit c3447fd4b17da35bf8e1a87f5e54ba4342442175[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue May 20 16:19:57 2025 +0100
+
+    add version etc
+
+[33mcommit fc491714f6fca058ea64c1240f95d366a3f23687[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Tue May 20 15:26:11 2025 +0100
+
+    a dummy change to test git push to github repo quiz
+
+[33mcommit 362c49a1ecae877d3d5d6acd68d47746d81265d8[m[33m ([m[1;33mtag: [m[1;33mwoodpecker[m[33m)[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Mon May 19 20:14:21 2025 +0100
+
+    another huge catch up
+
+[33mcommit b20d1e76489f14886816aa23c4cae879dd00cdb5[m
+Author: dormouseroared <dormouseroared@protonmail.com>
+Date:   Sun May 11 14:16:20 2025 +0100
+
+    big catch up to commeit everything
