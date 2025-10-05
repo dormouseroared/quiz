@@ -928,6 +928,54 @@ const diagramQuizCards = [
         ],
         "createdAt": "2025-10-05T11:32:53.250Z"
     },
+    {
+        "title": "Direct Digital Synthesiser (DDS) components",
+        "imagePath": "diagramQuizImages/transmitter - direct digital synthesiser DDS.png",
+        "obfuscationLevel": 1,
+        "boxes": [
+            {
+                "id": 1759677245438,
+                "x": 53.68333435058594,
+                "y": 33.5333251953125,
+                "width": 247,
+                "height": 105,
+                "label": "Clock"
+            },
+            {
+                "id": 1759677265078,
+                "x": 64.68333435058594,
+                "y": 198.5333251953125,
+                "width": 245,
+                "height": 103,
+                "label": "DAC"
+            },
+            {
+                "id": 1759677284236,
+                "x": 67.68333435058594,
+                "y": 355.93333435058594,
+                "width": 247,
+                "height": 103,
+                "label": "Sine wave lookup table"
+            },
+            {
+                "id": 1759677303407,
+                "x": 73.68333435058594,
+                "y": 518.9333343505859,
+                "width": 248,
+                "height": 101,
+                "label": "Low pass filter"
+            },
+            {
+                "id": 1759677329042,
+                "x": 79.68333435058594,
+                "y": 675.9333343505859,
+                "width": 242,
+                "height": 97,
+                "label": "Frequency Control"
+            }
+        ],
+        "createdAt": "2025-10-05T15:15:48.080Z"
+    }
 ]
 
 console.log("diagramQuiz starting with:", diagramQuizCards.length, "cards")

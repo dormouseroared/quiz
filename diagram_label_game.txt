@@ -1,0 +1,520 @@
+import React, { useState, useRef } from 'react';
+import { Upload, Plus, Play, RotateCcw, Check, X, Edit, Download, FileText } from 'lucide-react';
+
+// STANDALONE EDITOR - Create and export quiz data
+function DiagramQuizEditor() {
+  const [phase, setPhase] = useState('upload');
+  const [image, setImage] = useState(null);
+  const [imageDataUrl, setImageDataUrl] = useState(null);
+  const [boxes, setBoxes] = useState([]);
+  const [dragging, setDragging] = useState(false);
+  const [dragStart, setDragStart] = useState(null);
+  const [currentBox, setCurrentBox] = useState(null);
+  const [editingLabel, setEditingLabel] = useState(null);
+  const [labelInput, setLabelInput] = useState('');
+  const [quizTitle, setQuizTitle] = useState('');
+  const containerRef = useRef(null);
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        setImageDataUrl(event.target.result);
+        setImage(event.target.result);
+        setPhase('setup');
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleMouseDown = (e) => {
+    if (phase !== 'setup' || editingLabel !== null) return;
+    
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    setDragging(true);
+    setDragStart({ x, y });
+    setCurrentBox({ x, y, width: 0, height: 0 });
+  };
+
+  const handleMouseMove = (e) => {
+    if (!dragging || phase !== 'setup') return;
+    
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    setCurrentBox({
+      x: Math.min(dragStart.x, x),
+      y: Math.min(dragStart.y, y),
+      width: Math.abs(x - dragStart.x),
+      height: Math.abs(y - dragStart.y)
+    });
+  };
+
+  const handleMouseUp = () => {
+    if (!dragging || phase !== 'setup') return;
+    
+    if (currentBox && currentBox.width > 20 && currentBox.height > 20) {
+      const newBox = {
+        id: Date.now(),
+        ...currentBox,
+        label: `Label ${boxes.length + 1}`
+      };
+      setBoxes([...boxes, newBox]);
+    }
+    
+    setDragging(false);
+    setDragStart(null);
+    setCurrentBox(null);
+  };
+
+  const removeBox = (id) => {
+    setBoxes(boxes.filter(b => b.id !== id));
+  };
+
+  const startEditLabel = (box) => {
+    setEditingLabel(box.id);
+    setLabelInput(box.label);
+  };
+
+  const saveLabel = () => {
+    if (editingLabel && labelInput.trim()) {
+      setBoxes(boxes.map(b => 
+        b.id === editingLabel ? { ...b, label: labelInput.trim() } : b
+      ));
+      setEditingLabel(null);
+      setLabelInput('');
+    }
+  };
+
+  const exportQuizData = () => {
+    const quizData = {
+      title: quizTitle || 'Untitled Quiz',
+      image: imageDataUrl,
+      boxes: boxes.map(b => ({
+        id: b.id,
+        x: b.x,
+        y: b.y,
+        width: b.width,
+        height: b.height,
+        label: b.label
+      })),
+      createdAt: new Date().toISOString()
+    };
+
+    const dataStr = JSON.stringify(quizData, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${quizTitle || 'quiz'}.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const copyToClipboard = () => {
+    const quizData = {
+      title: quizTitle || 'Untitled Quiz',
+      image: imageDataUrl,
+      boxes: boxes.map(b => ({
+        id: b.id,
+        x: b.x,
+        y: b.y,
+        width: b.width,
+        height: b.height,
+        label: b.label
+      })),
+      createdAt: new Date().toISOString()
+    };
+    
+    navigator.clipboard.writeText(JSON.stringify(quizData, null, 2));
+    alert('Quiz data copied to clipboard!');
+  };
+
+  return (
+    <div className="w-full max-w-7xl mx-auto p-6 bg-gray-50 rounded-lg">
+      <h2 className="text-2xl font-bold mb-4 text-gray-800">Diagram Quiz Editor</h2>
+      
+      {phase === 'upload' && (
+        <div className="border-4 border-dashed border-gray-300 rounded-lg p-12 text-center bg-white">
+          <Upload className="mx-auto mb-4 text-gray-400" size={48} />
+          <label className="cursor-pointer">
+            <span className="text-blue-600 hover:text-blue-800 font-semibold text-lg">
+              Upload a diagram image
+            </span>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="hidden"
+            />
+          </label>
+          <p className="mt-4 text-gray-600 text-sm">
+            Upload a diagram, define boxes, and export the quiz data
+          </p>
+        </div>
+      )}
+
+      {phase === 'setup' && (
+        <div className="space-y-4">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+            <p className="text-sm text-gray-700">
+              <strong>Setup:</strong> Click and drag to create boxes. Edit labels. Export when done.
+            </p>
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700 mb-2">Quiz Title:</label>
+            <input
+              type="text"
+              value={quizTitle}
+              onChange={(e) => setQuizTitle(e.target.value)}
+              placeholder="Enter quiz title"
+              className="w-full max-w-md p-2 border rounded"
+            />
+          </div>
+
+          <div className="flex gap-2 mb-4">
+            <button
+              onClick={exportQuizData}
+              disabled={boxes.length === 0}
+              className={`px-4 py-2 rounded flex items-center gap-2 ${
+                boxes.length === 0 
+                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
+                  : 'bg-green-600 text-white hover:bg-green-700'
+              }`}
+            >
+              <Download size={20} />
+              Export Quiz Data ({boxes.length} boxes)
+            </button>
+            <button
+              onClick={copyToClipboard}
+              disabled={boxes.length === 0}
+              className={`px-4 py-2 rounded flex items-center gap-2 ${
+                boxes.length === 0 
+                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
+                  : 'bg-blue-600 text-white hover:bg-blue-700'
+              }`}
+            >
+              <FileText size={20} />
+              Copy to Clipboard
+            </button>
+          </div>
+
+          <div className="flex gap-6">
+            <div 
+              ref={containerRef}
+              className="flex-1 relative bg-white p-4 rounded-lg shadow cursor-crosshair select-none"
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+            >
+              <img
+                src={image}
+                alt="Diagram"
+                className="max-w-full h-auto pointer-events-none"
+                draggable="false"
+              />
+              
+              {boxes.map((box) => (
+                <div
+                  key={box.id}
+                  className="absolute border-2 border-purple-500 bg-purple-100 bg-opacity-30 rounded"
+                  style={{
+                    left: `${box.x}px`,
+                    top: `${box.y}px`,
+                    width: `${box.width}px`,
+                    height: `${box.height}px`,
+                  }}
+                >
+                  <div className="absolute -top-8 left-0 flex gap-1 bg-white rounded shadow-md p-1">
+                    <button
+                      onClick={(e) => { e.stopPropagation(); startEditLabel(box); }}
+                      className="p-1 hover:bg-gray-100 rounded"
+                      title="Edit label"
+                    >
+                      <Edit size={16} className="text-blue-600" />
+                    </button>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); removeBox(box.id); }}
+                      className="p-1 hover:bg-gray-100 rounded"
+                      title="Remove box"
+                    >
+                      <X size={16} className="text-red-600" />
+                    </button>
+                  </div>
+                  <div className="text-xs font-semibold text-purple-800 p-1">
+                    {box.label}
+                  </div>
+                </div>
+              ))}
+              
+              {currentBox && (
+                <div
+                  className="absolute border-2 border-purple-500 border-dashed bg-purple-100 bg-opacity-20 rounded pointer-events-none"
+                  style={{
+                    left: `${currentBox.x}px`,
+                    top: `${currentBox.y}px`,
+                    width: `${currentBox.width}px`,
+                    height: `${currentBox.height}px`,
+                  }}
+                />
+              )}
+            </div>
+
+            <div className="w-80 space-y-4">
+              <div className="bg-white p-4 rounded-lg shadow">
+                <h3 className="font-bold text-gray-700 mb-3">Defined Boxes:</h3>
+                {boxes.length === 0 ? (
+                  <p className="text-sm text-gray-500 italic">No boxes yet. Drag on the image.</p>
+                ) : (
+                  <div className="space-y-2">
+                    {boxes.map((box) => (
+                      <div key={box.id} className="p-2 bg-gray-50 rounded border text-sm">
+                        {box.label}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {editingLabel && (
+                <div className="bg-white p-4 rounded-lg shadow border-2 border-blue-400">
+                  <h3 className="font-bold text-gray-700 mb-2">Edit Label:</h3>
+                  <input
+                    type="text"
+                    value={labelInput}
+                    onChange={(e) => setLabelInput(e.target.value)}
+                    onKeyPress={(e) => e.key === 'Enter' && saveLabel()}
+                    className="w-full p-2 border rounded mb-2"
+                    placeholder="Enter label text"
+                    autoFocus
+                  />
+                  <div className="flex gap-2">
+                    <button
+                      onClick={saveLabel}
+                      className="flex-1 px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+                    >
+                      Save
+                    </button>
+                    <button
+                      onClick={() => { setEditingLabel(null); setLabelInput(''); }}
+                      className="flex-1 px-3 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              <div className="bg-yellow-50 border border-yellow-300 rounded-lg p-3 text-sm">
+                <p className="font-semibold mb-1">Export Format:</p>
+                <p className="text-xs text-gray-600">
+                  The exported JSON contains the image (base64), box positions, and labels. 
+                  Save this file or copy to clipboard for use in your quiz app.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// PLAYER COMPONENT - For use in your app
+// Usage: <DiagramQuizPlayer quizData={yourQuizData} onComplete={(score) => {...}} />
+export function DiagramQuizPlayer({ quizData, onComplete }) {
+  const [userAnswers, setUserAnswers] = useState({});
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [availableLabels, setAvailableLabels] = useState([]);
+
+  React.useEffect(() => {
+    if (quizData) {
+      const shuffled = [...quizData.boxes].sort(() => Math.random() - 0.5);
+      setAvailableLabels(shuffled.map(b => ({ id: b.id, label: b.label, placed: false })));
+      setUserAnswers({});
+      setShowFeedback(false);
+    }
+  }, [quizData]);
+
+  const handleLabelDragStart = (e, label) => {
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('labelId', label.id.toString());
+  };
+
+  const handleBoxDragOver = (e) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+  };
+
+  const handleBoxDrop = (e, boxId) => {
+    e.preventDefault();
+    const labelId = parseInt(e.dataTransfer.getData('labelId'));
+    
+    const currentlyPlaced = Object.entries(userAnswers).find(([_, lid]) => lid === labelId);
+    
+    setUserAnswers(prev => {
+      const newAnswers = { ...prev };
+      if (currentlyPlaced) {
+        delete newAnswers[currentlyPlaced[0]];
+      }
+      newAnswers[boxId] = labelId;
+      return newAnswers;
+    });
+    
+    setAvailableLabels(prev => prev.map(l => 
+      l.id === labelId ? { ...l, placed: true } : l
+    ));
+    
+    setShowFeedback(false);
+  };
+
+  const checkAnswers = () => {
+    setShowFeedback(true);
+    const correctCount = Object.entries(userAnswers).filter(([boxId, labelId]) => 
+      parseInt(boxId) === labelId
+    ).length;
+    
+    if (onComplete) {
+      onComplete({
+        total: quizData.boxes.length,
+        correct: correctCount,
+        allCorrect: correctCount === quizData.boxes.length
+      });
+    }
+  };
+
+  const resetGame = () => {
+    setUserAnswers({});
+    setShowFeedback(false);
+    const shuffled = [...quizData.boxes].sort(() => Math.random() - 0.5);
+    setAvailableLabels(shuffled.map(b => ({ id: b.id, label: b.label, placed: false })));
+  };
+
+  const getBoxCorrectness = (boxId) => {
+    if (!showFeedback) return null;
+    const answerId = userAnswers[boxId];
+    return answerId === boxId;
+  };
+
+  const allAnswered = Object.keys(userAnswers).length === quizData.boxes.length;
+  const correctCount = showFeedback ? Object.entries(userAnswers).filter(([boxId, labelId]) => 
+    parseInt(boxId) === labelId
+  ).length : 0;
+
+  if (!quizData) return <div>No quiz data loaded</div>;
+
+  return (
+    <div className="w-full">
+      <h3 className="text-xl font-bold mb-4 text-gray-800">{quizData.title}</h3>
+      
+      <div className="flex gap-2 mb-4">
+        <button
+          onClick={checkAnswers}
+          disabled={!allAnswered}
+          className={`px-4 py-2 rounded flex items-center gap-2 ${
+            !allAnswered 
+              ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-blue-600 text-white hover:bg-blue-700'
+          }`}
+        >
+          <Check size={20} />
+          Check Answers
+        </button>
+        <button
+          onClick={resetGame}
+          className="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 flex items-center gap-2"
+        >
+          <RotateCcw size={20} />
+          Reset
+        </button>
+      </div>
+
+      {showFeedback && (
+        <div className={`p-4 rounded-lg border-2 mb-4 ${
+          correctCount === quizData.boxes.length 
+            ? 'bg-green-100 border-green-500' 
+            : 'bg-yellow-100 border-yellow-500'
+        }`}>
+          <p className="font-bold text-lg">
+            {correctCount === quizData.boxes.length 
+              ? '🎉 Perfect! All correct!' 
+              : `Score: ${correctCount} / ${quizData.boxes.length} correct`}
+          </p>
+        </div>
+      )}
+
+      <div className="flex gap-6">
+        <div className="flex-1 relative bg-white p-4 rounded-lg shadow">
+          <img
+            src={quizData.image}
+            alt="Diagram"
+            className="max-w-full h-auto"
+          />
+          
+          {quizData.boxes.map((box) => {
+            const isCorrect = getBoxCorrectness(box.id);
+            const userLabelId = userAnswers[box.id];
+            const userLabel = quizData.boxes.find(b => b.id === userLabelId);
+            
+            return (
+              <div
+                key={box.id}
+                onDragOver={handleBoxDragOver}
+                onDrop={(e) => handleBoxDrop(e, box.id)}
+                className={`absolute rounded flex items-center justify-center text-xs font-semibold transition-colors ${
+                  showFeedback 
+                    ? isCorrect 
+                      ? 'border-4 border-green-500 bg-green-50' 
+                      : userLabelId 
+                        ? 'border-4 border-red-500 bg-red-50' 
+                        : 'border-4 border-gray-300 bg-gray-50'
+                    : 'border-4 border-blue-400 bg-blue-50 hover:border-blue-600'
+                } bg-opacity-90`}
+                style={{
+                  left: `${box.x}px`,
+                  top: `${box.y}px`,
+                  width: `${box.width}px`,
+                  height: `${box.height}px`,
+                }}
+              >
+                {userLabel && (
+                  <span className="text-gray-800 text-center p-1">
+                    {userLabel.label}
+                  </span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="w-64 bg-white p-4 rounded-lg shadow space-y-2">
+          <h3 className="font-bold text-gray-700 mb-3">Labels:</h3>
+          {availableLabels.filter(l => !l.placed).length === 0 ? (
+            <p className="text-sm text-gray-500 italic">All labels placed!</p>
+          ) : (
+            availableLabels.filter(l => !l.placed).map((label) => (
+              <div
+                key={label.id}
+                draggable
+                onDragStart={(e) => handleLabelDragStart(e, label)}
+                className="p-3 bg-yellow-100 border-2 border-yellow-400 rounded cursor-move hover:bg-yellow-200 text-sm font-medium text-gray-800"
+              >
+                {label.label}
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Default export is the Editor
+export default DiagramQuizEditor;
