@@ -1,4 +1,3 @@
-
 // ===== DIAGRAM QUIZ PLAYER =====
 // For use in your quiz app - follows your flashcardsWidget pattern
 
@@ -122,10 +121,20 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     const container = document.getElementById('answer-boxes')
     const img = document.getElementById('quiz-diagram')
 
+    // Wait for image to fully load to get natural dimensions
+    if (!img.complete || !img.naturalWidth) {
+      img.onload = () => renderBoxes(card, obfuscation)
+      return
+    }
+
     container.style.top = img.offsetTop + 'px'
     container.style.left = img.offsetLeft + 'px'
     container.style.width = img.offsetWidth + 'px'
     container.style.height = img.offsetHeight + 'px'
+
+    // Calculate scale factors
+    const scaleX = img.offsetWidth / img.naturalWidth
+    const scaleY = img.offsetHeight / img.naturalHeight
 
     container.innerHTML = ''
 
@@ -151,10 +160,10 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
       div.style.cssText = `
         position: absolute;
-        left: ${box.x}px;
-        top: ${box.y}px;
-        width: ${box.width}px;
-        height: ${box.height}px;
+        left: ${box.x * scaleX}px;
+        top: ${box.y * scaleY}px;
+        width: ${box.width * scaleX}px;
+        height: ${box.height * scaleY}px;
         border: 4px solid ${borderColor};
         background: ${bgColor};
         border-radius: 4px;
