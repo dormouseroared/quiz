@@ -1,0 +1,14 @@
+.diagram-button-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.diagram-button {
+padding: 8px 16px; 
+color: white; 
+border: none; 
+border-radius: 4px; 
+cursor: pointer; 
+font-weight: 500;
+}
