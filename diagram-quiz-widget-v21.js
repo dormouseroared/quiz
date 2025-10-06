@@ -11,9 +11,15 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   let draggedLabelId = null
   let resizeTimeout = null
 
+  const cssStyleSheetId = "diagram-quiz-widget-css-link"
+
   const widget = {
     start() {
       console.log("diagramQuizWidget: START")
+      console.log("diagramQuizWidget: INJECT CSS STYLE SHEET")
+
+      injectWidgetStylesheet("diagram-quiz-widget.css", cssStyleSheetId)
+
       if (!quizCards || quizCards.length === 0) {
         targetDiv.innerHTML = '<p>No diagram quiz cards available.</p>'
         return
@@ -41,6 +47,9 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
     stop() {
       console.log("diagramQuizWidget: STOP")
+
+      removeWidgetStylesheet(cssStyleSheetId)
+
       window.removeEventListener('resize', handleResize)
       targetDiv.innerHTML = ''
       targetDiv.style.cssText = ''
@@ -57,6 +66,32 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       }
     }, 100)
   }
+
+  function injectWidgetStylesheet(href, id) {
+    if (document.getElementById(id)) {
+      return
+    }
+
+    const link = document.createElement('link')
+
+    link.id = id
+    link.rel = 'stylesheet'
+    link.href = href
+    link.type = 'text/css'
+
+    document.head.appendChild(link)
+  }
+
+  function removeWidgetStylesheet(id) {
+
+    const link = document.getElementById(id)
+
+    if (link) {
+      link.remove()
+    }
+
+  }
+
 
   function loadCard(index) {
     const card = quizCards[index]
@@ -85,19 +120,44 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
             <div style="color: #6b7280; font-size: 14px;">Card ${currentCardIndex + 1} of ${quizCards.length}</div>
           </div>
           
-          <div style="display: flex; gap: 8px; margin-bottom: 16px;">
-            <button id="check-btn" onclick="window.diagramQuizCheck()" style="padding: 8px 16px; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">
+          <div class="diagram-button-container">
+
+            <button 
+              id="check-btn" 
+              class="diagram-button" 
+              onclick="window.diagramQuizCheck()" 
+              style="background: #2563eb;"
+              >
               ✓ Check Answers
             </button>
-            <button id="reset-btn" onclick="window.diagramQuizReset()" style="padding: 8px 16px; background: #f97316; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">
+
+            <button 
+              id="reset-btn" 
+              class="diagram-button"
+              onclick="window.diagramQuizReset()" 
+              style="background: #f97316;"
+              >
               ↻ Reset
             </button>
-            <button id="next-btn" onclick="window.diagramQuizNext()" style="padding: 8px 16px; background: #16a34a; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">
+
+            <button 
+              id="next-btn" 
+              class="diagram-button"
+              onclick="window.diagramQuizNext()" 
+              style="background: #16a34a;"
+              >
               Next Card →
             </button>
-            <button id="close-btn" onclick="window.diagramQuizClose()" style="padding: 8px 16px; background: #6b7280; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; margin-left: auto;">
+
+            <button 
+              id="close-btn" 
+              class="diagram-button"
+              onclick="window.diagramQuizClose()" 
+              style="background: #6b7280; margin-left: auto;"
+              >
               ✕ Close
             </button>
+
           </div>
           
           <div id="feedback-area"></div>
