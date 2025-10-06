@@ -21,7 +21,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       injectWidgetStylesheet("diagram-quiz-widget.css", cssStyleSheetId)
 
       if (!quizCards || quizCards.length === 0) {
-        targetDiv.innerHTML = '<p>No diagram quiz cards available.</p>'
+        targetDiv.innerHTML =  /* html */ `<p>No diagram quiz cards available.</p>`
         return
       }
 
@@ -110,14 +110,19 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   }
 
   function render(card) {
+
     const obfuscation = card.obfuscationLevel || 0.7
 
-    targetDiv.innerHTML = `
-      <div style="background: white; border-radius: 12px; max-width: 1400px; width: 95%; max-height: 95vh; overflow: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);">
-        <div style="padding: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <h3 style="font-size: 20px; font-weight: bold; color: #1f2937;">${card.title}</h3>
-            <div style="color: #6b7280; font-size: 14px;">Card ${currentCardIndex + 1} of ${quizCards.length}</div>
+    targetDiv.innerHTML = /* html */ `
+      <div class="diagram-outer">
+        <div class="diagram-container">
+          <div class="diagram-title-row">
+            <h3 class="diagram-title-style">
+              ${card.title}
+            </h3>
+            <div class="diagram-card-x-of-y">
+              Card ${currentCardIndex + 1} of ${quizCards.length}
+            </div>
           </div>
           
           <div class="diagram-button-container">
@@ -346,14 +351,14 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     const allCorrect = correctCount === card.boxes.length
 
     feedbackArea.innerHTML = `
-      <div style="padding: 16px; border-radius: 8px; border: 2px solid ${allCorrect ? '#16a34a' : '#f59e0b'}; 
-        background: ${allCorrect ? '#dcfce7' : '#fef3c7'}; margin-bottom: 16px;">
-        <p style="font-weight: bold; font-size: 18px; color: blue;">
-          ${allCorrect ? '🎉 Perfect! All correct!' : `Score: ${correctCount} / ${card.boxes.length} correct`}
-        </p>
-        ${!allCorrect ? '<p style="font-size: 14px; margin-top: 4px;">Keep trying! Red borders show incorrect answers.</p>' : ''}
-      </div>
-    `
+        < div style = "padding: 16px; border-radius: 8px; border: 2px solid ${allCorrect ? '#16a34a' : '#f59e0b'}; 
+      background: ${ allCorrect ? '#dcfce7' : '#fef3c7' }; margin - bottom: 16px; ">
+        < p p style = "font-weight: bold; font-size: 18px; color: blue;" >
+          ${ allCorrect ? '🎉 Perfect! All correct!' : `Score: ${correctCount} / ${card.boxes.length} correct` }
+        </p >
+        ${ !allCorrect ? '<p style="font-size: 14px; margin-top: 4px;">Keep trying! Red borders show incorrect answers.</p>' : '' }
+      </div >
+        `
 
     renderBoxes(card, card.obfuscationLevel || 0.7)
   }
@@ -416,7 +421,7 @@ async function loadDiagramQuizData(jsonFilePaths) {
       const data = await response.json()
       quizCards.push(data)
     } catch (error) {
-      console.error(`Failed to load quiz: ${path}`, error)
+      console.error(`Failed to load quiz: ${ path } `, error)
     }
   }
 
