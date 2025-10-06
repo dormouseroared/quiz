@@ -13,6 +13,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
   const widget = {
     start() {
+      console.log("diagramQuizWidget: START")
       if (!quizCards || quizCards.length === 0) {
         targetDiv.innerHTML = '<p>No diagram quiz cards available.</p>'
         return
@@ -39,6 +40,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     },
 
     stop() {
+      console.log("diagramQuizWidget: STOP")
       window.removeEventListener('resize', handleResize)
       targetDiv.innerHTML = ''
       targetDiv.style.cssText = ''
@@ -194,9 +196,9 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
-        color: #1f2937;
+        color: yellow;
         text-align: center;
         padding: 4px;
         transition: all 0.2s;
