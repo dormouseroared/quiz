@@ -42,3 +42,33 @@ border-radius: 4px;
 cursor: pointer; 
 font-weight: 500;
 }
+
+.dq-feedback-box {
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid;
+    margin-bottom: 16px;
+}
+
+.dq-feedback-success {
+    border-color: #16a34a;
+    background: #dcfce7;
+}
+
+.dq-feedback-partial {
+    border-color: #f59e0b;
+    background: #fef3c7;
+}
+
+.dq-feedback-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+    margin: 0;
+}
+
+.dq-feedback-hint {
+    font-size: 14px;
+    margin-top: 4px;
+    color: blue;
+}
