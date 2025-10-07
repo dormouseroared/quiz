@@ -21,7 +21,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       injectWidgetStylesheet("diagram-quiz-widget.css", cssStyleSheetId)
 
       if (!quizCards || quizCards.length === 0) {
-        targetDiv.innerHTML =  /* html */ `<p>No diagram quiz cards available.</p>`
+        targetDiv.innerHTML = html`<p>No diagram quiz cards available.</p>`
         return
       }
 
@@ -120,7 +120,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
     const obfuscation = card.obfuscationLevel || 0.7
 
-    targetDiv.innerHTML = /* html */ `
+    targetDiv.innerHTML = html`
       <div class="diagram-outer">
         <div class="diagram-container">
           <div class="diagram-title-row">
@@ -305,14 +305,16 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     const unplacedLabels = availableLabels.filter(l => !l.placed)
 
     if (unplacedLabels.length === 0) {
-      list.innerHTML = '<p style="font-size: 14px; color: #6b7280; font-style: italic;">All labels placed!</p>'
+      list.innerHTML = html`<p style="font-size: 14px; color: #6b7280; font-style: italic;">All labels placed!</p>`
     } else {
-      list.innerHTML = unplacedLabels.map(label => `
+      list.innerHTML = unplacedLabels.map(label => html`
         <div draggable="true" data-label-id="${label.id}" class="label-item"
           style="padding: 12px; background: #fef3c7; border: 2px solid #fbbf24; border-radius: 4px; cursor: move; font-size: 14px; font-weight: 500; color: #78716c;">
           ${label.label}
         </div>
       `).join('')
+
+      console.log("here is list.innerHTML after join", list.innerHTML)
 
       // Attach drag handlers
       document.querySelectorAll('.label-item').forEach(el => {
@@ -428,7 +430,7 @@ async function loadDiagramQuizData(jsonFilePaths) {
       const data = await response.json()
       quizCards.push(data)
     } catch (error) {
-      console.error(`Failed to load quiz: ${ path } `, error)
+      console.error(`Failed to load quiz: ${path} `, error)
     }
   }
 
