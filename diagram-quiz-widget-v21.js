@@ -67,6 +67,13 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     }, 100)
   }
 
+  // this function is to support the tagged template literal
+  const html = (strings, ...values) => {
+    return strings.reduce((result, str, i) => {
+      return result + str + (values[i] || '')
+    }, '')
+  }
+
   function injectWidgetStylesheet(href, id) {
     if (document.getElementById(id)) {
       return
