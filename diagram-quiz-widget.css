@@ -123,3 +123,10 @@ font-weight: 500;
     height: 100%;
     pointer-events: none;
 }
+
+/* this is useful for debug */
+[draggable="true"] {
+    outline: 2px dashed #2563eb;
+    cursor: grab;
+    background-color: #f0f8ff;
+}
