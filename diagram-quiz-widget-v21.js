@@ -216,8 +216,15 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   }
 
   function renderBoxes(card, obfuscation) {
+
+
     const container = document.getElementById('answer-boxes')
     const img = document.getElementById('quiz-diagram')
+
+    console.log("renderboxes start: card", card)
+    console.log("renderboxes start: obfuscation", obfuscation)
+    console.log("renderboxes start: container", container)
+    console.log("renderboxes start: img", img)
 
     // Wait for image to fully load to get natural dimensions
     if (!img.complete || !img.naturalWidth) {
