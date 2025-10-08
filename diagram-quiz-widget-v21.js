@@ -317,6 +317,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
       // the class label-item does not exist: 
       // it is a flag of some kind that allows labels to be placed
+      // see drag handlers below!
 
       list.innerHTML = unplacedLabels.map(label => html`
         <div 
