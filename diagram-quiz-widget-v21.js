@@ -182,7 +182,9 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
             
             <div class="dq-label-source">
               <div style="background: #f9fafb; padding: 16px; border-radius: 8px;">
-                <h4 style="font-weight: bold; color: #374151; margin-bottom: 12px;">Labels:</h4>
+                <h4 style="font-weight: bold; color: #374151; margin-bottom: 12px;">
+                  Labels:
+                </h4>
                 <div id="labels-list" style="display: flex; flex-direction: column; gap: 8px;"></div>
               </div>
             </div>
@@ -295,6 +297,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
       div.addEventListener('drop', (e) => {
         e.preventDefault()
+        console.log("DROP", div, borderColor)
         handleDrop(box.id, card)
         div.style.borderColor = borderColor
       })
@@ -330,6 +333,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
         <div 
           draggable="true" 
           data-label-id="${label.id}" 
+          title="${label.id}"
           class="dq-label-item label-item"
         >
           ${label.label}
@@ -349,6 +353,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   }
 
   function handleDrop(boxId, card) {
+    console.log("handleDrop:", boxId, card)
     if (draggedLabelId === null) return
 
     // Remove from previous position
