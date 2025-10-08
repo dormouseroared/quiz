@@ -300,16 +300,30 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     })
   }
 
+  // render any labels on the right still waiting to be dragged
+  // to a blank label on the left
   function renderLabels() {
     const list = document.getElementById('labels-list')
     const unplacedLabels = availableLabels.filter(l => !l.placed)
 
     if (unplacedLabels.length === 0) {
-      list.innerHTML = html`<p style="font-size: 14px; color: #6b7280; font-style: italic;">All labels placed!</p>`
+
+      list.innerHTML = html`
+        <p class="dq-all-labels-placed">
+          All labels placed!
+        </p>
+      `
     } else {
+
+      // the class label-item does not exist: 
+      // it is a flag of some kind that allows labels to be placed
+
       list.innerHTML = unplacedLabels.map(label => html`
-        <div draggable="true" data-label-id="${label.id}" class="label-item"
-          style="padding: 12px; background: #fef3c7; border: 2px solid #fbbf24; border-radius: 4px; cursor: move; font-size: 14px; font-weight: 500; color: #78716c;">
+        <div 
+          draggable="true" 
+          data-label-id="${label.id}" 
+          class="dq-label-item label-item"
+        >
           ${label.label}
         </div>
       `).join('')
