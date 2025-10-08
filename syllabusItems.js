@@ -2709,7 +2709,8 @@ const syllabusItems = [
         key: "3f.2",
         level: "full",
         title: "RF power amplifiers",
-        text: "Understand the need for linear amplification and identify which forms of modulation require a linear amplifier."
+        text: "Understand the need for linear amplification and identify which forms of modulation require a linear amplifier.",
+        weeks: ["6"]
     },
     {
         key: "3f.2",
@@ -2727,7 +2728,8 @@ const syllabusItems = [
         key: "3f.2",
         level: "full",
         title: "RF power amplifiers",
-        text: "Understand how distortion of a single frequency signal can produce harmonics of that frequency."
+        text: "Understand how distortion of a single frequency signal can produce harmonics of that frequency.",
+        weeks: ["6"]
     },
     {
         key: "3f.2",
@@ -2745,25 +2747,29 @@ const syllabusItems = [
         key: "3f.3",
         level: "full",
         title: "RF power amplifiers",
-        text: "Recall the function of the main components of a PA circuit, i.e.collector load, bias, input circuit, output filter and matching."
+        text: "Recall the function of the main components of a PA circuit, i.e.collector load, bias, input circuit, output filter and matching.",
+        weeks: ["6"]
     },
     {
         key: "3f.4",
         level: "full",
         title: "RF power amplifiers",
-        text: "Understand the implications for PA rating of different types of modulation and the effects of speech processing, with particular regard to peak to average power ratios."
+        text: "Understand the implications for PA rating of different types of modulation and the effects of speech processing, with particular regard to peak to average power ratios.",
+        weeks: ["6"]
     },
     {
         key: "3f.5",
         level: "full",
         title: "RF power amplifiers",
-        text: "Recall the function of automatic level control within the power amplifier circuit and when using an external power amplifier."
+        text: "Recall the function of Automatic Level Control (ALC) within the power amplifier circuit and when using an external power amplifier.",
+        weeks: ["6"]
     },
     {
         key: "3f.5",
         level: "full",
         title: "RF power amplifiers",
-        text: "Recall the function and use of a manual RF power control."
+        text: "Recall the function and use of a manual RF power control.",
+        weeks: ["6"]
     },
     {
         key: "3g.1",
@@ -2781,7 +2787,8 @@ const syllabusItems = [
         key: "3g.1",
         level: "full",
         title: "Transmitter interference",
-        text: "Understand that over-modulation distorts the modulating signal resulting in harmonics of the audio which causes excessive transmitted bandwidth."
+        text: "Understand that over-modulation distorts the modulating signal resulting in harmonics of the audio which causes excessive transmitted bandwidth.",
+        weeks: ["6"]
     },
     {
         key: "3g.2",
@@ -2805,7 +2812,8 @@ const syllabusItems = [
         key: "3g.2",
         level: "full",
         title: "Transmitter interference",
-        text: "Understand the need to drive external power amplifiers with the minimum power required for full output and how overdriving may cause harmonics and/or spurious intermodulation products."
+        text: "Understand the need to drive external power amplifiers with the minimum power required for full output and how overdriving may cause harmonics and/or spurious intermodulation products.",
+        weeks: ["6"]
     },
     {
         key: "3g.3",
@@ -2841,7 +2849,8 @@ const syllabusItems = [
         key: "3g.3",
         level: "full",
         title: "Transmitter interference",
-        text: "Recall that transmitters may radiate unwanted mixer products and identify suitable remedies."
+        text: "Recall that transmitters may radiate unwanted mixer products and identify suitable remedies.",
+        weeks: ["6"]
     },
     {
         key: "3g.3",
@@ -2865,7 +2874,8 @@ const syllabusItems = [
         key: "3g.4",
         level: "full",
         title: "Transmitter interference",
-        text: "Recall that unwanted emissions may be caused by parasitic oscillation and/or self-oscillation and identify suitable remedies."
+        text: "Recall that unwanted emissions may be caused by parasitic oscillation and/or self-oscillation and identify suitable remedies.",
+        weeks: ["6"]
     },
     {
         key: "3g.5",
