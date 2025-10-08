@@ -72,3 +72,21 @@ font-weight: 500;
     margin-top: 4px;
     color: blue;
 }
+
+.dq-all-labels-placed {
+    font-size: 14px;
+    color: #6b7280;
+    font-style: italic;
+    margin: 0;
+}
+
+.dq-label-item {
+    padding: 12px;
+    background: #fef3c7;
+    border: 2px solid #fbbf24;
+    border-radius: 4px;
+    cursor: grab;
+    font-size: 14px;
+    font-weight: 500;
+    color: #78716c;
+}
