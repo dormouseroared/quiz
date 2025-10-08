@@ -174,13 +174,13 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
           
           <div id="feedback-area"></div>
           
-          <div style="display: flex; gap: 24px;">
-            <div style="flex: 1; position: relative; background: #f9fafb; padding: 16px; border-radius: 8px;">
-              <img id="quiz-diagram" src="${card.imagePath}" style="max-width: 100%; height: auto; display: block;">
-              <div id="answer-boxes" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></div>
+          <div class="dq-labels-flexbox">
+            <div class="dq-label-destination">
+              <img id="quiz-diagram" src="${card.imagePath}" class="dq-diagram">
+              <div id="answer-boxes" class="dq-answer-boxes"></div>
             </div>
             
-            <div style="width: 280px;">
+            <div class="dq-label-source">
               <div style="background: #f9fafb; padding: 16px; border-radius: 8px;">
                 <h4 style="font-weight: bold; color: #374151; margin-bottom: 12px;">Labels:</h4>
                 <div id="labels-list" style="display: flex; flex-direction: column; gap: 8px;"></div>
