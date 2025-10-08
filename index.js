@@ -858,22 +858,22 @@ const diagramQuizCards = [
                 "x": 42.68333435058594,
                 "y": 116.89999389648438,
                 "width": 80,
-                "height": 63,
+                "height": 64,
                 "label": "Audio Amplifier"
             },
             {
                 "id": 1759663741323,
                 "x": 166.68333435058594,
                 "y": 10.899993896484375,
-                "width": 80,
-                "height": 62,
+                "width": 82,
+                "height": 65,
                 "label": "Crystal Oscillator (Top)"
             },
             {
                 "id": 1759663764118,
                 "x": 156.68333435058594,
                 "y": 116.89999389648438,
-                "width": 96,
+                "width": 97,
                 "height": 66,
                 "label": "Modulator and Filter"
             },
@@ -890,7 +890,7 @@ const diagramQuizCards = [
                 "x": 287.68333435058594,
                 "y": 116.89999389648438,
                 "width": 98,
-                "height": 63,
+                "height": 64,
                 "label": "Mixer"
             },
             {
@@ -905,8 +905,8 @@ const diagramQuizCards = [
                 "id": 1759663844537,
                 "x": 418.68333435058594,
                 "y": 116.89999389648438,
-                "width": 95,
-                "height": 63,
+                "width": 98,
+                "height": 64,
                 "label": "Filter & RF Driver"
             },
             {
@@ -922,7 +922,7 @@ const diagramQuizCards = [
                 "x": 682.6833343505859,
                 "y": 115.89999389648438,
                 "width": 97,
-                "height": 60,
+                "height": 65,
                 "label": "Output Filter"
             }
         ],
