@@ -2887,13 +2887,15 @@ const syllabusItems = [
         key: "3g.5",
         level: "full",
         title: "Transmitter interference",
-        text: "Understand how frequency synthesisers may not produce the intended frequency."
+        text: "Understand how frequency synthesisers may not produce the intended frequency.",
+        weeks: ["6"]
     },
     {
         key: "3g.5",
         level: "full",
         title: "Transmitter interference",
-        text: "Identify appropriate measures to prevent off-frequency transmissions."
+        text: "Identify appropriate measures to prevent off-frequency transmissions.",
+        weeks: ["6"]
     },
     {
         key: "3h.1",
