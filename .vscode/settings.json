@@ -6,8 +6,17 @@
         "**/save-split-javascript/**": true,
         "**/flashcards-widget/archive/**": true,
     },
-  "editor.wordWrap": "off",
-  "editor.rulers": [120],
-  "prettier.printWidth": 120,
-  "editor.formatOnSave": false
+  "editor.wordWrap": "on",
+  // "editor.rulers": [80, 120],
+  "editor.rulers": [
+    {"column":80, "color": "#0000ff"},
+    {"column":120, "color": "#00ff00"},
+  ],
+  "prettier.printWidth": 80,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.semanticHighlighting.enabled": true
+
 }
