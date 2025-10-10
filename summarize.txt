@@ -1,0 +1,80 @@
+Element Summary: { 
+"tag": "DIV",
+ "attributes": {
+ 	"style": 
+		"position: absolute; 
+		left: 276.335px; 
+		top: 363.309px; 
+		width: 207.771px; 
+		height: 91.3984px; 
+		border: 4px solid rgb(124, 58, 237); 
+		background: rgb(59, 130, 246); 
+		border-radius: 4px; 
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		font-size: 14px; 
+		font-weight: 600; 
+		color: yellow; 
+		text-align: center; 
+		padding: 4px; 
+		transition: 0.2s; 
+		pointer-events: auto;" }, 
+"inlineStyles": { 
+	"0": "position", 
+	"1": "left", 
+	"2": "top", 
+	"3": "width", 
+	"4": "height", 
+	"5": "border-top-width", 
+	"6": "border-top-style", 
+	"7": "border-top-color", 
+	"8": "border-right-width", 
+	"9": "border-right-style", 
+	"10": "border-right-color", 
+	"11": "border-bottom-width", 
+	"12": "border-bottom-style", 
+	"13": "border-bottom-color", 
+	"14": "border-left-width", 
+	"15": "border-left-style", 
+	"16": "border-left-color", 
+	"17": "border-image-outset", 
+	"18": "border-image-repeat", 
+	"19": "border-image-slice", 
+	"20": "border-image-source", 
+	"21": "border-image-width", 
+	"22": "background-color", 
+	"23": "background-position-x", 
+	"24": "background-position-y", 
+	"25": "background-repeat", 
+	"26": "background-attachment", 
+	"27": "background-image", 
+	"28": "background-size", 
+	"29": "background-origin", 
+	"30": "background-clip", 
+	"31": "border-top-left-radius", 
+	"32": "border-top-right-radius", 
+	"33": "border-bottom-right-radius", 
+	"34": "border-bottom-left-radius", 
+	"35": "display", 
+	"36": "align-items", 
+	"37": "justify-content", 
+	"38": "font-size", 
+	"39": "font-weight", 
+	"40": "color", 
+	"41": "text-align", 
+	"42": "padding-top", 
+	"43": "padding-right", 
+	"44": "padding-bottom", 
+	"45": "padding-left", 
+	"46": "transition-property", 
+	"47": "transition-duration", 
+	"48": "transition-timing-function", 
+	"49": "transition-delay", 
+	"50": "transition-behavior", 
+	"51": "pointer-events" }, 
+"boundingBox": { 
+	"top": 689.5, 
+	"left": 552.6500244140625, 
+	"width": 207.7666778564453, 
+	"height": 91.39999389648438 } }

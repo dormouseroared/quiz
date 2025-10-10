@@ -808,7 +808,8 @@ const diagramQuizCards = [
             {
                 "id": 1759605444169,
                 "x": 11,
-                "y": 140.89999389648438,
+                // "y": 140.89999389648438,
+                "y": 143,
                 "width": 109,
                 "height": 73,
                 "label": "Clock"
@@ -817,8 +818,8 @@ const diagramQuizCards = [
                 "id": 1759605473781,
                 "x": 12,
                 "y": 33.899993896484375,
-                "width": 106,
-                "height": 69,
+                "width": 108,
+                "height": 72,
                 "label": "Sinewave lookup table"
             },
             {
@@ -826,15 +827,15 @@ const diagramQuizCards = [
                 "x": 151,
                 "y": 33.899993896484375,
                 "width": 108,
-                "height": 70,
+                "height": 74,
                 "label": "Digital to Analogue Converter"
             },
             {
                 "id": 1759605532852,
                 "x": 287,
                 "y": 32.899993896484375,
-                "width": 107,
-                "height": 70,
+                "width": 110,
+                "height": 74,
                 "label": "Low pass filter"
             },
             {
