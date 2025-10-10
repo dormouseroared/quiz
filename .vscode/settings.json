@@ -5,5 +5,9 @@
         "**/archive/**": true,
         "**/save-split-javascript/**": true,
         "**/flashcards-widget/archive/**": true,
-    }
+    },
+  "editor.wordWrap": "off",
+  "editor.rulers": [120],
+  "prettier.printWidth": 120,
+  "editor.formatOnSave": false
 }
