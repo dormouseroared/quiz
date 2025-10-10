@@ -230,10 +230,10 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     const container = document.getElementById('answer-boxes')
     const img = document.getElementById('quiz-diagram')
 
-    console.log("renderboxes start: card", card)
-    console.log("renderboxes start: obfuscation", obfuscation)
-    console.log("renderboxes start: container", container)
-    console.log("renderboxes start: img", img)
+    // console.log("renderboxes start: card", card)
+    // console.log("renderboxes start: obfuscation", obfuscation)
+    // console.log("renderboxes start: container", container)
+    // console.log("renderboxes start: img", img)
 
     // Wait for image to fully load to get natural dimensions
     if (!img.complete || !img.naturalWidth) {
@@ -357,7 +357,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
         </div>
       `).join('')
 
-      console.log("here is list.innerHTML after join", list.innerHTML)
+      // console.log("here is list.innerHTML after join", list.innerHTML)
 
       // Attach drag handlers
       document.querySelectorAll('.label-item').forEach(el => {
