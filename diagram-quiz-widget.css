@@ -126,7 +126,11 @@ font-weight: 500;
 
 /* this is useful for debug */
 [draggable="true"] {
-    outline: 2px dashed #2563eb;
+    /* outline: 2px dashed #2563eb; */
     cursor: grab;
-    background-color: #f0f8ff;
+    /* background-color: #f0f8ff; */
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 4px;
 }

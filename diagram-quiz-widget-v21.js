@@ -42,7 +42,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       // Add window resize listener
       window.addEventListener('resize', handleResize)
 
-      loadCard(currentCardIndex)
+      prepareLabelsForCard(currentCardIndex)
     },
 
     stop() {
@@ -99,8 +99,12 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
   }
 
+  // this function is called with one argument, the index of the card object
+  // in the supplied quizcards to be displayed. Here we are dealing with the 
+  // list of labels on the right hand side of the screen that are about to be dropped
+  // on to the blanked out boxes on the left hand side.
 
-  function loadCard(index) {
+  function prepareLabelsForCard(index) {
     const card = quizCards[index]
     userAnswers = {}
     showFeedback = false
@@ -111,7 +115,10 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
+    // create an array of objects with just the info we need to make labels 
     availableLabels = shuffled.map(b => ({ id: b.id, label: b.label, placed: false }))
+
+    console.log("availableLabels for index: (", index, ")", availableLabels)
 
     render(card)
   }
@@ -195,11 +202,11 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
     // Set up global handlers for onclick
     window.diagramQuizCheck = () => checkAnswers(card)
-    window.diagramQuizReset = () => loadCard(currentCardIndex)
+    window.diagramQuizReset = () => prepareLabelsForCard(currentCardIndex)
     window.diagramQuizNext = () => {
       if (currentCardIndex < quizCards.length - 1) {
         currentCardIndex++
-        loadCard(currentCardIndex)
+        prepareLabelsForCard(currentCardIndex)
       }
     }
     window.diagramQuizClose = () => widget.stop()
@@ -213,7 +220,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     const img = document.getElementById('quiz-diagram')
     img.onload = () => {
       renderBoxes(card, obfuscation)
-      renderLabels()
+      renderLabels("Wait for image to load")
     }
   }
 
@@ -297,7 +304,16 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
       div.addEventListener('drop', (e) => {
         e.preventDefault()
-        console.log("DROP", div, borderColor)
+
+        console.log("DROP EVENT", {
+          tag: div.tagName,
+          id: div.id,
+          class: div.className,
+          text: div.textContent,
+          outerHTML: div.outerHTML
+        }, borderColor)
+
+
         handleDrop(box.id, card)
         div.style.borderColor = borderColor
       })
@@ -312,7 +328,8 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
   // render any labels on the right still waiting to be dragged
   // to a blank label on the left
-  function renderLabels() {
+  function renderLabels(whoCalledMe) {
+    console.log("renderLabels:", whoCalledMe)
     const list = document.getElementById('labels-list')
     const unplacedLabels = availableLabels.filter(l => !l.placed)
 
@@ -374,7 +391,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     draggedLabelId = null
 
     renderBoxes(card, card.obfuscationLevel || 0.7)
-    renderLabels()
+    renderLabels("at the end of handling the label drop event")
   }
 
   function checkAnswers(card) {
