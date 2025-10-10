@@ -6,9 +6,9 @@ In this example, some dynamic HTML has been created in `explanationDiv` that may
 // Trigger MathJax to typeset the newly injected content
 
 if (window.MathJax?.typesetPromise) {
-    MathJax.typesetPromise([explanationDiv]).catch((err) =>
-        console.error("MathJax typeset error:", err),
-    )
+  MathJax.typesetPromise([explanationDiv]).catch((err) =>
+    console.error("MathJax typeset error:", err),
+  )
 }
 ```
 
@@ -151,9 +151,9 @@ The code includes a container (id="math-container") where new content will be in
 
 ```js
 if (window.MathJax?.typesetPromise) {
-    MathJax.typesetPromise([explanationDiv]).catch((err) =>
-        console.error("MathJax typeset error:", err),
-    )
+  MathJax.typesetPromise([explanationDiv]).catch((err) =>
+    console.error("MathJax typeset error:", err),
+  )
 }
 ```
 

@@ -40,7 +40,7 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       `
 
       // Add window resize listener
-      window.addEventListener('resize', handleResize)
+      window.addEventListener("resize", handleResize)
 
       prepareLabelsForCard(currentCardIndex)
     },
@@ -50,10 +50,10 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
       removeWidgetStylesheet(cssStyleSheetId)
 
-      window.removeEventListener('resize', handleResize)
-      targetDiv.innerHTML = ''
-      targetDiv.style.cssText = ''
-    }
+      window.removeEventListener("resize", handleResize)
+      targetDiv.innerHTML = ""
+      targetDiv.style.cssText = ""
+    },
   }
 
   function handleResize() {
@@ -70,8 +70,8 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   // this function is to support the tagged template literal
   const html = (strings, ...values) => {
     return strings.reduce((result, str, i) => {
-      return result + str + (values[i] || '')
-    }, '')
+      return result + str + (values[i] || "")
+    }, "")
   }
 
   function injectWidgetStylesheet(href, id) {
@@ -79,28 +79,26 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       return
     }
 
-    const link = document.createElement('link')
+    const link = document.createElement("link")
 
     link.id = id
-    link.rel = 'stylesheet'
+    link.rel = "stylesheet"
     link.href = href
-    link.type = 'text/css'
+    link.type = "text/css"
 
     document.head.appendChild(link)
   }
 
   function removeWidgetStylesheet(id) {
-
     const link = document.getElementById(id)
 
     if (link) {
       link.remove()
     }
-
   }
 
   // this function is called with one argument, the index of the card object
-  // in the supplied quizcards to be displayed. Here we are dealing with the 
+  // in the supplied quizcards to be displayed. Here we are dealing with the
   // list of labels on the right hand side of the screen that are about to be dropped
   // on to the blanked out boxes on the left hand side.
 
@@ -112,11 +110,15 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     // Shuffle labels using Fisher-Yates algorithm for true randomization
     const shuffled = [...card.boxes]
     for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
-    // create an array of objects with just the info we need to make labels 
-    availableLabels = shuffled.map(b => ({ id: b.id, label: b.label, placed: false }))
+    // create an array of objects with just the info we need to make labels
+    availableLabels = shuffled.map((b) => ({
+      id: b.id,
+      label: b.label,
+      placed: false,
+    }))
 
     console.log("availableLabels for index: (", index, ")", availableLabels)
 
@@ -124,75 +126,81 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   }
 
   function render(card) {
-
     const obfuscation = card.obfuscationLevel || 0.7
 
     targetDiv.innerHTML = html`
       <div class="diagram-outer">
         <div class="diagram-container">
           <div class="diagram-title-row">
-            <h3 class="diagram-title-style">
-              ${card.title}
-            </h3>
+            <h3 class="diagram-title-style">${card.title}</h3>
             <div class="diagram-card-x-of-y">
               Card ${currentCardIndex + 1} of ${quizCards.length}
             </div>
           </div>
-          
-          <div class="diagram-button-container">
 
-            <button 
-              id="check-btn" 
-              class="diagram-button" 
-              onclick="window.diagramQuizCheck()" 
+          <div class="diagram-button-container">
+            <button
+              id="check-btn"
+              class="diagram-button"
+              onclick="window.diagramQuizCheck()"
               style="background: #2563eb;"
-              >
+            >
               ✓ Check Answers
             </button>
 
-            <button 
-              id="reset-btn" 
+            <button
+              id="reset-btn"
               class="diagram-button"
-              onclick="window.diagramQuizReset()" 
+              onclick="window.diagramQuizReset()"
               style="background: #f97316;"
-              >
+            >
               ↻ Reset
             </button>
 
-            <button 
-              id="next-btn" 
+            <button
+              id="next-btn"
               class="diagram-button"
-              onclick="window.diagramQuizNext()" 
+              onclick="window.diagramQuizNext()"
               style="background: #16a34a;"
-              >
+            >
               Next Card →
             </button>
 
-            <button 
-              id="close-btn" 
+            <button
+              id="close-btn"
               class="diagram-button"
-              onclick="window.diagramQuizClose()" 
+              onclick="window.diagramQuizClose()"
               style="background: #6b7280; margin-left: auto;"
-              >
+            >
               ✕ Close
             </button>
-
           </div>
-          
+
           <div id="feedback-area"></div>
-          
+
           <div class="dq-labels-flexbox">
             <div class="dq-label-destination">
-              <img id="quiz-diagram" src="${card.imagePath}" class="dq-diagram">
+              <img
+                id="quiz-diagram"
+                src="${card.imagePath}"
+                class="dq-diagram"
+              />
               <div id="answer-boxes" class="dq-answer-boxes"></div>
             </div>
-            
+
             <div class="dq-label-source">
-              <div style="background: #f9fafb; padding: 16px; border-radius: 8px;">
-                <h4 style="font-weight: bold; color: #374151; margin-bottom: 12px;">
+              <div
+                style="background: #f9fafb; padding: 16px; border-radius: 8px;"
+              >
+                <h4
+                  style="font-weight: bold; color: #374151; margin-bottom: 12px;"
+                >
                   Labels:
                 </h4>
-                <div id="labels-list" style="display: flex; flex-direction: column; gap: 8px;"></div>
+                <div
+                  id="labels-list"
+                  style="display: flex; flex-direction: column; gap: 8px;"
+                ></div>
               </div>
             </div>
           </div>
@@ -211,13 +219,13 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     }
     window.diagramQuizClose = () => widget.stop()
 
-    const nextBtn = document.getElementById('next-btn')
+    const nextBtn = document.getElementById("next-btn")
     if (nextBtn && currentCardIndex >= quizCards.length - 1) {
-      nextBtn.style.display = 'none'
+      nextBtn.style.display = "none"
     }
 
     // Wait for image to load
-    const img = document.getElementById('quiz-diagram')
+    const img = document.getElementById("quiz-diagram")
     img.onload = () => {
       renderBoxes(card, obfuscation)
       renderLabels("Wait for image to load")
@@ -225,10 +233,8 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   }
 
   function renderBoxes(card, obfuscation) {
-
-
-    const container = document.getElementById('answer-boxes')
-    const img = document.getElementById('quiz-diagram')
+    const container = document.getElementById("answer-boxes")
+    const img = document.getElementById("quiz-diagram")
 
     // console.log("renderboxes start: card", card)
     // console.log("renderboxes start: obfuscation", obfuscation)
@@ -241,34 +247,34 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
       return
     }
 
-    container.style.top = img.offsetTop + 'px'
-    container.style.left = img.offsetLeft + 'px'
-    container.style.width = img.offsetWidth + 'px'
-    container.style.height = img.offsetHeight + 'px'
+    container.style.top = img.offsetTop + "px"
+    container.style.left = img.offsetLeft + "px"
+    container.style.width = img.offsetWidth + "px"
+    container.style.height = img.offsetHeight + "px"
 
     // Calculate scale factors
     const scaleX = img.offsetWidth / img.naturalWidth
     const scaleY = img.offsetHeight / img.naturalHeight
 
-    container.innerHTML = ''
+    container.innerHTML = ""
 
-    card.boxes.forEach(box => {
-      const div = document.createElement('div')
+    card.boxes.forEach((box) => {
+      const div = document.createElement("div")
       const userLabelId = userAnswers[box.id]
-      const userLabel = card.boxes.find(b => b.id === userLabelId)
+      const userLabel = card.boxes.find((b) => b.id === userLabelId)
       const isCorrect = showFeedback && userLabelId === box.id
       const isIncorrect = showFeedback && userLabelId && userLabelId !== box.id
 
-      let borderColor = '#3b82f6'
+      let borderColor = "#3b82f6"
       let bgColor = `rgba(59, 130, 246, ${obfuscation})`
 
       if (showFeedback) {
         if (isCorrect) {
-          borderColor = '#16a34a'
-          bgColor = 'rgba(22, 163, 74, 0.2)'
+          borderColor = "#16a34a"
+          bgColor = "rgba(22, 163, 74, 0.2)"
         } else if (isIncorrect) {
-          borderColor = '#dc2626'
-          bgColor = 'rgba(220, 38, 38, 0.2)'
+          borderColor = "#dc2626"
+          bgColor = "rgba(220, 38, 38, 0.2)"
         }
       }
 
@@ -293,26 +299,29 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
         pointer-events: auto;
       `
 
-      div.addEventListener('dragover', (e) => {
+      div.addEventListener("dragover", (e) => {
         e.preventDefault()
-        div.style.borderColor = '#7c3aed'
+        div.style.borderColor = "#7c3aed"
       })
 
-      div.addEventListener('dragleave', () => {
+      div.addEventListener("dragleave", () => {
         div.style.borderColor = borderColor
       })
 
-      div.addEventListener('drop', (e) => {
+      div.addEventListener("drop", (e) => {
         e.preventDefault()
 
-        console.log("DROP EVENT", {
-          tag: div.tagName,
-          id: div.id,
-          class: div.className,
-          text: div.textContent,
-          outerHTML: div.outerHTML
-        }, borderColor)
-
+        console.log(
+          "DROP EVENT",
+          {
+            tag: div.tagName,
+            id: div.id,
+            class: div.className,
+            text: div.textContent,
+            outerHTML: div.outerHTML,
+          },
+          borderColor,
+        )
 
         handleDrop(box.id, card)
         div.style.borderColor = borderColor
@@ -330,51 +339,58 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
   // to a blank label on the left
   function renderLabels(whoCalledMe) {
     console.log("renderLabels:", whoCalledMe)
-    const list = document.getElementById('labels-list')
-    const unplacedLabels = availableLabels.filter(l => !l.placed)
+    const list = document.getElementById("labels-list")
+    const unplacedLabels = availableLabels.filter((l) => !l.placed)
 
     if (unplacedLabels.length === 0) {
-
       list.innerHTML = html`
-        <p class="dq-all-labels-placed">
-          All labels placed!
-        </p>
+        <p class="dq-all-labels-placed">All labels placed!</p>
       `
     } else {
-
-      // the class label-item does not exist: 
+      // the class label-item does not exist:
       // it is a flag of some kind that allows labels to be placed
       // see drag handlers below!
 
-      list.innerHTML = unplacedLabels.map(label => html`
-        <div 
-          draggable="true" 
-          data-label-id="${label.id}" 
-          title="${label.id}"
-          class="dq-label-item label-item"
-        >
-          ${label.label}
-        </div>
-      `).join('')
+      list.innerHTML = unplacedLabels
+        .map(
+          (label) => html`
+            <div
+              draggable="true"
+              data-label-id="${label.id}"
+              title="${label.id}"
+              class="dq-label-item label-item"
+            >
+              ${label.label}
+            </div>
+          `,
+        )
+        .join("")
 
       // console.log("here is list.innerHTML after join", list.innerHTML)
 
       // Attach drag handlers
-      document.querySelectorAll('.label-item').forEach(el => {
-        el.addEventListener('dragstart', (e) => {
+      document.querySelectorAll(".label-item").forEach((el) => {
+        el.addEventListener("dragstart", (e) => {
           draggedLabelId = parseInt(e.target.dataset.labelId)
-          e.dataTransfer.effectAllowed = 'move'
+          e.dataTransfer.effectAllowed = "move"
         })
       })
     }
   }
 
   function handleDrop(boxId, card) {
-    console.log("handleDrop:", boxId, card)
+    console.log(
+      "handleDrop:boxId, card, draggedLabelId",
+      boxId,
+      card,
+      draggedLabelId,
+    )
     if (draggedLabelId === null) return
 
     // Remove from previous position
-    const prevBox = Object.entries(userAnswers).find(([_, labelId]) => labelId === draggedLabelId)
+    const prevBox = Object.entries(userAnswers).find(
+      ([_, labelId]) => labelId === draggedLabelId,
+    )
     if (prevBox) {
       delete userAnswers[prevBox[0]]
     }
@@ -382,9 +398,11 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
     // Place in new position
     userAnswers[boxId] = draggedLabelId
 
+    console.log("in handleDrop, userAnswers just updated:", userAnswers)
+
     // Update label as placed
-    availableLabels = availableLabels.map(l =>
-      l.id === draggedLabelId ? { ...l, placed: true } : l
+    availableLabels = availableLabels.map((l) =>
+      l.id === draggedLabelId ? { ...l, placed: true } : l,
     )
 
     showFeedback = false
@@ -396,32 +414,33 @@ export default function diagramQuizWidget(quizCards, targetDiv) {
 
   function checkAnswers(card) {
     showFeedback = true
-    const correctCount = Object.entries(userAnswers).filter(([boxId, labelId]) =>
-      parseInt(boxId) === labelId
+    const correctCount = Object.entries(userAnswers).filter(
+      ([boxId, labelId]) => parseInt(boxId) === labelId,
     ).length
 
-    const feedbackArea = document.getElementById('feedback-area')
+    const feedbackArea = document.getElementById("feedback-area")
     const allCorrect = correctCount === card.boxes.length
 
     feedbackArea.innerHTML = html`
-
-      <div class = "dq-feedback-box 
-        ${allCorrect ? 'dq-feedback-success' : 'dq-feedback-partial'}">
-      
-        <p class = "dq-feedback-title">
-          
+      <div
+        class="dq-feedback-box 
+        ${allCorrect ? "dq-feedback-success" : "dq-feedback-partial"}"
+      >
+        <p class="dq-feedback-title">
           ${allCorrect
-        ? '🎉 Perfect! All correct!'
-        : `Score: ${correctCount}/${card.boxes.length} correct`}
-        
+            ? "🎉 Perfect! All correct!"
+            : `Score: ${correctCount}/${card.boxes.length} correct`}
         </p>
 
-        ${!allCorrect ? html`<p class="dq-feedback-hint">Keep trying! Red borders show incorrect answers.</p>` : ''}
-      
+        ${!allCorrect
+          ? html`<p class="dq-feedback-hint">
+              Keep trying! Red borders show incorrect answers.
+            </p>`
+          : ""}
       </div>
-        `
+    `
 
-    console.log("feedbackArea.innerHTML", feedbackArea.innerHTML)
+    // console.log("feedbackArea.innerHTML", feedbackArea.innerHTML)
 
     renderBoxes(card, card.obfuscationLevel || 0.7)
   }

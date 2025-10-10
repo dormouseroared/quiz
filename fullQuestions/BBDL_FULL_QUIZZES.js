@@ -85,7 +85,7 @@ const BBDL_FULL_QUIZZES = [
             "any transmissions that do not elicit a reply",
         ],
         correct: 1,
-        explanation: "Licence 6-19 says that, unless you are operating for the purposes of 6-5(emergencies / disasters), transmissions must not be encrypted for the purposes of obscuring the meaning.Codes are not ruled out, for example, Morse code and the Q code are allowed, so ‘a’ is OK.Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so ‘c’ is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so ‘d’ is OK.",
+        explanation: "Licence 6-19 says that, unless you are operating for the purposes of 6-5 (emergencies / disasters), transmissions must not be encrypted for the purposes of obscuring the meaning.Codes are not ruled out, for example, Morse code and the Q code are allowed, so ‘a’ is OK.Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so ‘c’ is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so ‘d’ is OK.",
         lookup: "See page(s) x of the Full Licence text book",
         syllabus: "1c.2"
     },

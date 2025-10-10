@@ -1,14 +1,14 @@
 // mini-console.js v31 - Drop-in development console with search and filtering
-(function() {
-  'use strict';
+;(function () {
+  "use strict"
 
-  const VERSION = 'v31';
-  
+  const VERSION = "v31"
+
   // Regex pattern for escaping special regex characters
-  const SPECIAL_CHARS = /[.*+?^${}()|[\]\\]/g;
+  const SPECIAL_CHARS = /[.*+?^${}()|[\]\\]/g
 
   // Inject CSS
-  const style = document.createElement('style');
+  const style = document.createElement("style")
   style.textContent = `
     #mini-console {
       position: fixed;
@@ -236,8 +236,8 @@
     #mini-console .console-line.error { color: #f44; }
     #mini-console .console-line.warn { color: #fa0; }
     #mini-console .console-line.info { color: #4af; }
-  `;
-  document.head.appendChild(style);
+  `
+  document.head.appendChild(style)
 
   // Inject HTML
   const consoleHTML = `
@@ -268,338 +268,354 @@
         </div>
       </div>
     </div>
-  `;
+  `
 
   // Wait for DOM to be ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init)
   } else {
-    init();
+    init()
   }
 
   function init() {
-    document.body.insertAdjacentHTML('beforeend', consoleHTML);
-    setupDragging();
-    setupControls();
-    setupKeyboardShortcuts();
-    setupGlobalLogger();
-    updateStats();
-    
-    window.miniConsoleUnreadCount = 0;
+    document.body.insertAdjacentHTML("beforeend", consoleHTML)
+    setupDragging()
+    setupControls()
+    setupKeyboardShortcuts()
+    setupGlobalLogger()
+    updateStats()
+
+    window.miniConsoleUnreadCount = 0
   }
 
   function setupDragging() {
-    let isDragging = false;
-    let currentX, currentY, initialX, initialY;
+    let isDragging = false
+    let currentX, currentY, initialX, initialY
 
-    const miniConsole = document.getElementById('mini-console');
-    const header = miniConsole.querySelector('.console-header');
+    const miniConsole = document.getElementById("mini-console")
+    const header = miniConsole.querySelector(".console-header")
 
-    header.addEventListener('mousedown', dragStart);
-    document.addEventListener('mousemove', drag);
-    document.addEventListener('mouseup', dragEnd);
+    header.addEventListener("mousedown", dragStart)
+    document.addEventListener("mousemove", drag)
+    document.addEventListener("mouseup", dragEnd)
 
     function dragStart(e) {
-      initialX = e.clientX - miniConsole.offsetLeft;
-      initialY = e.clientY - miniConsole.offsetTop;
-      isDragging = true;
+      initialX = e.clientX - miniConsole.offsetLeft
+      initialY = e.clientY - miniConsole.offsetTop
+      isDragging = true
     }
 
     function drag(e) {
       if (isDragging) {
-        e.preventDefault();
-        currentX = e.clientX - initialX;
-        currentY = e.clientY - initialY;
-        miniConsole.style.right = 'auto';
-        miniConsole.style.bottom = 'auto';
-        miniConsole.style.left = currentX + 'px';
-        miniConsole.style.top = currentY + 'px';
+        e.preventDefault()
+        currentX = e.clientX - initialX
+        currentY = e.clientY - initialY
+        miniConsole.style.right = "auto"
+        miniConsole.style.bottom = "auto"
+        miniConsole.style.left = currentX + "px"
+        miniConsole.style.top = currentY + "px"
       }
     }
 
     function dragEnd() {
-      isDragging = false;
+      isDragging = false
     }
   }
 
   function setupControls() {
-    const miniConsole = document.getElementById('mini-console');
-    const minimizeBtn = miniConsole.querySelector('.minimize-btn');
-    const clearBtn = miniConsole.querySelector('.clear-btn');
-    const filterSelect = miniConsole.querySelector('.console-filter');
-    const searchInput = miniConsole.querySelector('.console-search');
-    const searchClear = miniConsole.querySelector('.console-search-clear');
+    const miniConsole = document.getElementById("mini-console")
+    const minimizeBtn = miniConsole.querySelector(".minimize-btn")
+    const clearBtn = miniConsole.querySelector(".clear-btn")
+    const filterSelect = miniConsole.querySelector(".console-filter")
+    const searchInput = miniConsole.querySelector(".console-search")
+    const searchClear = miniConsole.querySelector(".console-search-clear")
 
-    minimizeBtn.addEventListener('click', function() {
-      miniConsole.classList.toggle('minimized');
-      minimizeBtn.textContent = miniConsole.classList.contains('minimized') ? '+' : '-';
-      
-      if (!miniConsole.classList.contains('minimized')) {
-        clearUnreadCount();
+    minimizeBtn.addEventListener("click", function () {
+      miniConsole.classList.toggle("minimized")
+      minimizeBtn.textContent = miniConsole.classList.contains("minimized")
+        ? "+"
+        : "-"
+
+      if (!miniConsole.classList.contains("minimized")) {
+        clearUnreadCount()
       }
-    });
+    })
 
-    clearBtn.addEventListener('click', function() {
-      const output = document.getElementById('mini-console-output');
-      output.innerHTML = '';
-      logToMini(`Console cleared version ${VERSION}`, 'info');
-      clearUnreadCount();
-    });
+    clearBtn.addEventListener("click", function () {
+      const output = document.getElementById("mini-console-output")
+      output.innerHTML = ""
+      logToMini(`Console cleared version ${VERSION}`, "info")
+      clearUnreadCount()
+    })
 
-    filterSelect.addEventListener('change', function() {
-      applyFilters(filterSelect.value, searchInput.value);
-    });
+    filterSelect.addEventListener("change", function () {
+      applyFilters(filterSelect.value, searchInput.value)
+    })
 
-    searchInput.addEventListener('input', function() {
-      applyFilters(filterSelect.value, searchInput.value);
-    });
+    searchInput.addEventListener("input", function () {
+      applyFilters(filterSelect.value, searchInput.value)
+    })
 
-    searchClear.addEventListener('click', function() {
-      searchInput.value = '';
-      applyFilters(filterSelect.value, '');
-      searchInput.focus();
-    });
+    searchClear.addEventListener("click", function () {
+      searchInput.value = ""
+      applyFilters(filterSelect.value, "")
+      searchInput.focus()
+    })
 
-    const output = document.getElementById('mini-console-output');
-    output.addEventListener('click', function() {
-      clearUnreadCount();
-    });
+    const output = document.getElementById("mini-console-output")
+    output.addEventListener("click", function () {
+      clearUnreadCount()
+    })
   }
 
   function clearUnreadCount() {
-    window.miniConsoleUnreadCount = 0;
-    const miniConsole = document.getElementById('mini-console');
-    const badge = miniConsole.querySelector('.console-badge');
-    miniConsole.classList.remove('has-unread');
-    badge.textContent = '0';
+    window.miniConsoleUnreadCount = 0
+    const miniConsole = document.getElementById("mini-console")
+    const badge = miniConsole.querySelector(".console-badge")
+    miniConsole.classList.remove("has-unread")
+    badge.textContent = "0"
   }
 
   function incrementUnreadCount() {
-    const miniConsole = document.getElementById('mini-console');
-    
-    if (miniConsole.classList.contains('minimized')) {
-      window.miniConsoleUnreadCount++;
-      const badge = miniConsole.querySelector('.console-badge');
-      const count = window.miniConsoleUnreadCount;
-      badge.textContent = count > 99 ? '99+' : String(count);
-      miniConsole.classList.add('has-unread');
+    const miniConsole = document.getElementById("mini-console")
+
+    if (miniConsole.classList.contains("minimized")) {
+      window.miniConsoleUnreadCount++
+      const badge = miniConsole.querySelector(".console-badge")
+      const count = window.miniConsoleUnreadCount
+      badge.textContent = count > 99 ? "99+" : String(count)
+      miniConsole.classList.add("has-unread")
     }
   }
 
   function flashHeader() {
-    const header = document.querySelector('#mini-console .console-header');
-    header.classList.add('has-new');
-    setTimeout(function() {
-      header.classList.remove('has-new');
-    }, 1500);
+    const header = document.querySelector("#mini-console .console-header")
+    header.classList.add("has-new")
+    setTimeout(function () {
+      header.classList.remove("has-new")
+    }, 1500)
   }
 
   function setupKeyboardShortcuts() {
-    document.addEventListener('keydown', function(e) {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-        e.preventDefault();
-        const searchInput = document.querySelector('.console-search');
-        if (searchInput) searchInput.focus();
+    document.addEventListener("keydown", function (e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        const searchInput = document.querySelector(".console-search")
+        if (searchInput) searchInput.focus()
       }
-      
-      if (e.key === 'Escape') {
-        const searchInput = document.querySelector('.console-search');
+
+      if (e.key === "Escape") {
+        const searchInput = document.querySelector(".console-search")
         if (searchInput && document.activeElement === searchInput) {
-          searchInput.value = '';
-          const filterSelect = document.querySelector('.console-filter');
-          applyFilters(filterSelect.value, '');
-          searchInput.blur();
+          searchInput.value = ""
+          const filterSelect = document.querySelector(".console-filter")
+          applyFilters(filterSelect.value, "")
+          searchInput.blur()
         }
       }
-      
-      if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
-        e.preventDefault();
-        const output = document.getElementById('mini-console-output');
-        output.innerHTML = '';
-        logToMini('Console cleared', 'info');
+
+      if ((e.ctrlKey || e.metaKey) && e.key === "l") {
+        e.preventDefault()
+        const output = document.getElementById("mini-console-output")
+        output.innerHTML = ""
+        logToMini("Console cleared", "info")
       }
-    });
+    })
   }
 
   function escapeRegex(str) {
-    return str.replace(SPECIAL_CHARS, '\\$&');
+    return str.replace(SPECIAL_CHARS, "\\$&")
   }
 
   function highlightText(text, search) {
-    const escaped = escapeRegex(search);
-    const pattern = '(' + escaped + ')';
-    const regex = new RegExp(pattern, 'gi');
-    return text.replace(regex, '<span class="highlight">$1</span>');
+    const escaped = escapeRegex(search)
+    const pattern = "(" + escaped + ")"
+    const regex = new RegExp(pattern, "gi")
+    return text.replace(regex, '<span class="highlight">$1</span>')
   }
 
   function applyFilters(filterType, searchText) {
-    const output = document.getElementById('mini-console-output');
-    const lines = output.querySelectorAll('.console-line');
-    const searchLower = searchText.toLowerCase();
+    const output = document.getElementById("mini-console-output")
+    const lines = output.querySelectorAll(".console-line")
+    const searchLower = searchText.toLowerCase()
 
-    lines.forEach(function(line) {
-      const messageSpan = line.querySelector('.console-message');
-      const originalText = messageSpan.getAttribute('data-original') || messageSpan.textContent;
-      
-      if (!messageSpan.hasAttribute('data-original')) {
-        messageSpan.setAttribute('data-original', originalText);
+    lines.forEach(function (line) {
+      const messageSpan = line.querySelector(".console-message")
+      const originalText =
+        messageSpan.getAttribute("data-original") || messageSpan.textContent
+
+      if (!messageSpan.hasAttribute("data-original")) {
+        messageSpan.setAttribute("data-original", originalText)
       }
-      
-      const typeMatch = filterType === 'all' || line.classList.contains(filterType);
-      const searchMatch = searchText === '' || originalText.toLowerCase().includes(searchLower);
+
+      const typeMatch =
+        filterType === "all" || line.classList.contains(filterType)
+      const searchMatch =
+        searchText === "" || originalText.toLowerCase().includes(searchLower)
 
       if (searchText && searchMatch) {
-        messageSpan.innerHTML = highlightText(originalText, searchText);
+        messageSpan.innerHTML = highlightText(originalText, searchText)
       } else {
-        messageSpan.textContent = originalText;
+        messageSpan.textContent = originalText
       }
 
-      line.style.display = (typeMatch && searchMatch) ? 'flex' : 'none';
-    });
-    
-    updateStats();
+      line.style.display = typeMatch && searchMatch ? "flex" : "none"
+    })
+
+    updateStats()
   }
 
   function updateStats() {
-    const output = document.getElementById('mini-console-output');
-    if (!output) return;
-    
-    const total = output.children.length;
-    const visible = Array.from(output.children).filter(function(line) {
-      return line.style.display !== 'none';
-    }).length;
-    
-    const statsSpan = document.querySelector('.console-stats');
+    const output = document.getElementById("mini-console-output")
+    if (!output) return
+
+    const total = output.children.length
+    const visible = Array.from(output.children).filter(function (line) {
+      return line.style.display !== "none"
+    }).length
+
+    const statsSpan = document.querySelector(".console-stats")
     if (statsSpan) {
-      statsSpan.textContent = visible === total ? '(' + total + ')' : '(' + visible + '/' + total + ')';
+      statsSpan.textContent =
+        visible === total
+          ? "(" + total + ")"
+          : "(" + visible + "/" + total + ")"
     }
   }
 
   function logToMini(message, type) {
-    if (!type) type = 'log';
-    
-    const output = document.getElementById('mini-console-output');
-    if (!output) return;
+    if (!type) type = "log"
 
-    const time = new Date().toLocaleTimeString('en-US', { 
-      hour12: false, 
-      hour: '2-digit', 
-      minute: '2-digit', 
-      second: '2-digit' 
-    });
-    
-    const line = document.createElement('div');
-    line.className = 'console-line ' + type + ' new-message';
-    
-    setTimeout(function() {
-      line.classList.remove('new-message');
-    }, 1000);
-    
-    const timeSpan = document.createElement('span');
-    timeSpan.className = 'console-time';
-    timeSpan.textContent = time;
-    
-    const messageSpan = document.createElement('span');
-    messageSpan.className = 'console-message';
-    
-    let formattedMessage;
-    if (typeof message === 'object' && message !== null) {
+    const output = document.getElementById("mini-console-output")
+    if (!output) return
+
+    const time = new Date().toLocaleTimeString("en-US", {
+      hour12: false,
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    })
+
+    const line = document.createElement("div")
+    line.className = "console-line " + type + " new-message"
+
+    setTimeout(function () {
+      line.classList.remove("new-message")
+    }, 1000)
+
+    const timeSpan = document.createElement("span")
+    timeSpan.className = "console-time"
+    timeSpan.textContent = time
+
+    const messageSpan = document.createElement("span")
+    messageSpan.className = "console-message"
+
+    let formattedMessage
+    if (typeof message === "object" && message !== null) {
       try {
-        formattedMessage = JSON.stringify(message, null, 2);
+        formattedMessage = JSON.stringify(message, null, 2)
       } catch (e) {
-        formattedMessage = String(message);
+        formattedMessage = String(message)
       }
     } else {
-      formattedMessage = String(message);
+      formattedMessage = String(message)
     }
-    
-    messageSpan.textContent = formattedMessage;
-    messageSpan.setAttribute('data-original', formattedMessage);
-    
-    line.appendChild(timeSpan);
-    line.appendChild(messageSpan);
-    output.appendChild(line);
-    output.scrollTop = output.scrollHeight;
-    
-    if (type === 'error' || type === 'warn') {
-      incrementUnreadCount();
-      flashHeader();
+
+    messageSpan.textContent = formattedMessage
+    messageSpan.setAttribute("data-original", formattedMessage)
+
+    line.appendChild(timeSpan)
+    line.appendChild(messageSpan)
+    output.appendChild(line)
+    output.scrollTop = output.scrollHeight
+
+    if (type === "error" || type === "warn") {
+      incrementUnreadCount()
+      flashHeader()
     } else {
-      incrementUnreadCount();
+      incrementUnreadCount()
     }
-    
-    const filterSelect = document.querySelector('.console-filter');
-    const searchInput = document.querySelector('.console-search');
+
+    const filterSelect = document.querySelector(".console-filter")
+    const searchInput = document.querySelector(".console-search")
     if (filterSelect && searchInput) {
-      const filterType = filterSelect.value;
-      const searchText = searchInput.value;
-      
-      if (filterType !== 'all' && !line.classList.contains(filterType)) {
-        line.style.display = 'none';
+      const filterType = filterSelect.value
+      const searchText = searchInput.value
+
+      if (filterType !== "all" && !line.classList.contains(filterType)) {
+        line.style.display = "none"
       } else if (searchText) {
-        const searchLower = searchText.toLowerCase();
+        const searchLower = searchText.toLowerCase()
         if (!formattedMessage.toLowerCase().includes(searchLower)) {
-          line.style.display = 'none';
+          line.style.display = "none"
         } else {
-          messageSpan.innerHTML = highlightText(formattedMessage, searchText);
+          messageSpan.innerHTML = highlightText(formattedMessage, searchText)
         }
       }
     }
-    
-    updateStats();
-    
+
+    updateStats()
+
     while (output.children.length > 100) {
-      output.removeChild(output.firstChild);
+      output.removeChild(output.firstChild)
     }
   }
 
   function setupGlobalLogger() {
-    window.logToMini = logToMini;
+    window.logToMini = logToMini
 
-    const originalLog = console.log;
-    const originalError = console.error;
-    const originalWarn = console.warn;
-    const originalInfo = console.info;
+    const originalLog = console.log
+    const originalError = console.error
+    const originalWarn = console.warn
+    const originalInfo = console.info
 
     function formatArgs(args) {
-      return args.map(function(arg) {
-        if (typeof arg === 'object' && arg !== null) {
-          if (arg instanceof Element) {
-            const tag = arg.tagName.toLowerCase();
-            const id = arg.id ? '#' + arg.id : '';
-            const classes = arg.className ? '.' + arg.className.split(' ').join('.') : '';
-            const text = arg.textContent ? ' "' + arg.textContent.substring(0, 20) + (arg.textContent.length > 20 ? '...' : '') + '"' : '';
-            return '<' + tag + id + classes + text + '>';
+      return args
+        .map(function (arg) {
+          if (typeof arg === "object" && arg !== null) {
+            if (arg instanceof Element) {
+              const tag = arg.tagName.toLowerCase()
+              const id = arg.id ? "#" + arg.id : ""
+              const classes = arg.className
+                ? "." + arg.className.split(" ").join(".")
+                : ""
+              const text = arg.textContent
+                ? ' "' +
+                  arg.textContent.substring(0, 20) +
+                  (arg.textContent.length > 20 ? "..." : "") +
+                  '"'
+                : ""
+              return "<" + tag + id + classes + text + ">"
+            }
+            try {
+              return JSON.stringify(arg, null, 2)
+            } catch (e) {
+              return String(arg)
+            }
           }
-          try {
-            return JSON.stringify(arg, null, 2);
-          } catch (e) {
-            return String(arg);
-          }
-        }
-        return String(arg);
-      }).join(' ');
+          return String(arg)
+        })
+        .join(" ")
     }
 
-    console.log = function() {
-      originalLog.apply(console, arguments);
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), 'log');
-    };
+    console.log = function () {
+      originalLog.apply(console, arguments)
+      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "log")
+    }
 
-    console.error = function() {
-      originalError.apply(console, arguments);
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), 'error');
-    };
+    console.error = function () {
+      originalError.apply(console, arguments)
+      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "error")
+    }
 
-    console.warn = function() {
-      originalWarn.apply(console, arguments);
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), 'warn');
-    };
+    console.warn = function () {
+      originalWarn.apply(console, arguments)
+      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "warn")
+    }
 
-    console.info = function() {
-      originalInfo.apply(console, arguments);
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), 'info');
-    };
+    console.info = function () {
+      originalInfo.apply(console, arguments)
+      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "info")
+    }
   }
-
-})();
+})()
