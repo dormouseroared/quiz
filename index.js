@@ -773,6 +773,6 @@ syllabusCheck()
 // Final debug
 myDebug("startup completed: now waiting for Search to be clicked", quizState)
 
-console.log("diagramQuiz starting with:", diagramQuizCards.length, "cards")
+console.log(`diagramQuiz starting with: ${diagramQuizCards.length} cards`)
 const diagramWidget = diagramQuizWidget(diagramQuizCards, diagramQuizDiv)
 diagramWidget.start()
