@@ -1,8 +1,11 @@
 // mini-console.js v31 - Drop-in development console with search and filtering
 ;(function () {
-  "use strict"
+  ;("use strict")
 
   const VERSION = "v31"
+
+  // Debug mode - set to true to use original console methods (for debugging mini-console itself)
+  const DEBUG_MODE = false
 
   // Regex pattern for escaping special regex characters
   const SPECIAL_CHARS = /[.*+?^${}()|[\]\\]/g
@@ -270,6 +273,9 @@
     </div>
   `
 
+  // set up console interception immediately (before DOM is ready)
+  setupGlobalLogger()
+
   // Wait for DOM to be ready
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init)
@@ -282,7 +288,8 @@
     setupDragging()
     setupControls()
     setupKeyboardShortcuts()
-    setupGlobalLogger()
+    replayBufferedMessages()
+    // setupGlobalLogger() - now called about 14 lines before
     updateStats()
 
     window.miniConsoleUnreadCount = 0
@@ -467,7 +474,11 @@
 
   function updateStats() {
     const output = document.getElementById("mini-console-output")
-    if (!output) return
+    // console.log("output:", output)
+    if (!output) {
+      alert("too early!")
+      return
+    }
 
     const total = output.children.length
     const visible = Array.from(output.children).filter(function (line) {
@@ -483,11 +494,20 @@
     }
   }
 
+  // Buffer for messages that arrive before the DOM is ready
+  const messageBuffer = []
+
   function logToMini(message, type) {
     if (!type) type = "log"
 
     const output = document.getElementById("mini-console-output")
-    if (!output) return
+    if (!output) {
+      // alert("Aha!! in logToMini we are buffering")
+      // buffer message if DOM isn't ready yet
+      messageBuffer.push({ message: message, type: type, time: new Date() })
+      // alert(messageBuffer)
+      return
+    }
 
     const time = new Date().toLocaleTimeString("en-US", {
       hour12: false,
@@ -561,6 +581,53 @@
     }
   }
 
+  function replayBufferedMessages() {
+    messageBuffer.forEach(function (buffered) {
+      const output = document.getElementById("mini-console-output")
+      if (!output) {
+        return
+      }
+
+      const time = buffered.time.toLocaleTimeString("en-US", {
+        hour12: false,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      })
+
+      const line = document.createElement("div")
+      line.className = "console-line " + buffered.type
+
+      const timeSpan = document.createElement("span")
+      timeSpan.className = "console-time"
+      timeSpan.textContent = time
+
+      const messageSpan = document.createElement("span")
+      messageSpan.className = "console-message"
+
+      let formattedMessage
+      if (typeof buffered.message === "object" && buffered.message !== null) {
+        try {
+          formattedMessage = JSON.stringify(buffered.message, null, 2)
+        } catch (e) {
+          formattedMessage = String(buffered.message)
+        }
+      } else {
+        formattedMessage = String(buffered.message)
+      }
+
+      messageSpan.textContent = formattedMessage
+      messageSpan.setAttribute("data-original", formattedMessage)
+
+      line.appendChild(timeSpan)
+      line.appendChild(messageSpan)
+      output.appendChild(line)
+    })
+
+    messageBuffer.length = 0 // Clear the buffer
+    updateStats()
+  }
+
   function setupGlobalLogger() {
     window.logToMini = logToMini
 
@@ -568,6 +635,15 @@
     const originalError = console.error
     const originalWarn = console.warn
     const originalInfo = console.info
+
+    if (DEBUG_MODE) {
+      window._originalConsole = {
+        log: originalLog,
+        error: originalError,
+        warn: originalWarn,
+        info: originalInfo,
+      }
+    }
 
     function formatArgs(args) {
       return args
@@ -598,24 +674,31 @@
         .join(" ")
     }
 
-    console.log = function () {
-      originalLog.apply(console, arguments)
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "log")
-    }
+    if (!DEBUG_MODE) {
+      console.log = function () {
+        originalLog.apply(console, arguments)
+        logToMini(formatArgs(Array.prototype.slice.call(arguments)), "log")
+      }
 
-    console.error = function () {
-      originalError.apply(console, arguments)
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "error")
-    }
+      console.error = function () {
+        originalError.apply(console, arguments)
+        logToMini(formatArgs(Array.prototype.slice.call(arguments)), "error")
+      }
 
-    console.warn = function () {
-      originalWarn.apply(console, arguments)
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "warn")
-    }
+      console.warn = function () {
+        originalWarn.apply(console, arguments)
+        logToMini(formatArgs(Array.prototype.slice.call(arguments)), "warn")
+      }
 
-    console.info = function () {
-      originalInfo.apply(console, arguments)
-      logToMini(formatArgs(Array.prototype.slice.call(arguments)), "info")
+      console.info = function () {
+        originalInfo.apply(console, arguments)
+        logToMini(formatArgs(Array.prototype.slice.call(arguments)), "info")
+      }
+    } else {
+      // In debug mode, log a message using the original console
+      originalLog.info(
+        "[mini-console] DEBUG_MODE is ON - console interception disabled",
+      )
     }
   }
 })()
