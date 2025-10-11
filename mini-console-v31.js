@@ -5,6 +5,8 @@
   const VERSION = "v31"
 
   // Debug mode - set to true to use original console methods (for debugging mini-console itself)
+  // Original console methods are also available at window._originalConsole.log()
+
   const DEBUG_MODE = false
 
   // Regex pattern for escaping special regex characters
@@ -582,6 +584,8 @@
   }
 
   function replayBufferedMessages() {
+    logToMini(`replayBufferedMessages: ${messageBuffer.length}`, "info")
+
     messageBuffer.forEach(function (buffered) {
       const output = document.getElementById("mini-console-output")
       if (!output) {
