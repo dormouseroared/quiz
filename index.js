@@ -176,7 +176,7 @@ function syllabusCheck() {
     W99quiz,
     syllabusItems,
   )
-  console.log(
+  console.warn(
     "Have all questions had their syllabus keys validated?",
     areSyllabusKeysValid,
   )
@@ -517,7 +517,11 @@ function displaySyllabusScoresFlex(scores) {
 }
 
 function myDebug(whereami, quizState) {
-  console.log("-----quizState-----", whereami, quizState)
+  // console.log("-----quizState-----", whereami, quizState)
+
+  console.info("QUIZSTATE DEBUG")
+  console.info("whereami:", whereami)
+  console.info("currentQuestion", quizState.currentQuestion)
   // todo: show display and disable values
 }
 
