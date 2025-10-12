@@ -216,6 +216,9 @@ function loadQuestion() {
   const q = quizState.questionPack[quizState.currentQuestion]
   const qLength = quizState.questionPackLength
 
+  // experimental display of approach to this question
+  showExamStrategy(q)
+
   questionHasValidSyllabus(q)
 
   // Update syllabus section
@@ -411,6 +414,8 @@ function showResult() {
   explanationDiv.style.display = "none"
   syllabusItemsDiv.style.display = "none"
 
+  document.getElementById("strategy").style.display = "none"
+
   const highScore = localStorage.getItem("quizHighScore") || 0
 
   if (quizState.score > highScore) {
@@ -439,6 +444,67 @@ function showResult() {
 // ====================================
 // 8. HELPER AND UTILITY UI FUNCTIONS
 // ====================================
+
+function getStrategyEmoji(level) {
+  const patterns = {
+    1: "🟢",
+    2: "🟢🟢",
+    3: "🟡🟡🟡",
+    4: "🟡🟡🟡🟡",
+    5: "🔴🔴🔴🔴🔴",
+  }
+  return patterns[level] || ""
+}
+
+function showExamStrategy(q) {
+  const strategy = document.getElementById("strategy")
+  strategy.style.fontSize = "12px"
+
+  if (q.examStrategy) {
+    const emojiBar = getStrategyEmoji(q.examStrategy)
+
+    // Build the display conditionally
+    let display = `exam strategy: ${q.examStrategy} <span style="font-size: 28px;">${emojiBar}</span>`
+
+    if (q.calculation) {
+      display += ` calculation: ${q.calculation}`
+    }
+
+    if (q.exam_NOT) {
+      display += ` NOT: ${q.exam_NOT}`
+    }
+
+    if (q.examStrategyNotes) {
+      display += `<br>${q.examStrategyNotes}`
+    }
+
+    strategy.innerHTML = display
+  }
+
+  if (q.exam_NOT) {
+    strategy.style.color = "#00FF00"
+  } else {
+    strategy.style.color = "white"
+  }
+}
+function showExamStrategy2(q) {
+  const strategy = document.getElementById("strategy")
+  strategy.style.fontSize = "12px"
+  if (q.examStrategy) {
+    strategy.innerHTML = `
+      exam strategy: ${q.examStrategy}
+      calculation: ${q?.examCalculation}
+      NOT: ${q?.exam_NOT ? q.exam_NOT : ""}
+      <br>
+      ${q?.examStrategyNotes}
+    `
+  }
+  if (q.exam_NOT) {
+    strategy.style.color = "#00FF00"
+  } else {
+    strategy.style.color = "white"
+  }
+}
 
 function logWrongAnswer(index, q) {
   console.group("LOGWRONGANSWER")
