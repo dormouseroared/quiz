@@ -348,7 +348,10 @@ function loadQuestion() {
   // displayed right now, or ready at the click of a button
   // So, now we pass the divs to cause MathJax to typeset them.
 
-  mathjaxUpdate([questionDiv, optionsDiv, syllabusItemsDiv])
+  mathjaxUpdate(
+    [questionDiv, optionsDiv, syllabusItemsDiv],
+    "loadQuestion with an array of questionDiv, optionsDiv and syllabusItemsDiv DOM objects",
+  )
 
   // todo: show flashcards available for this question
 
@@ -529,33 +532,44 @@ function myDebug(whereami, quizState) {
  * Triggers MathJax to re-render a specific element or a collection of elements.
  * @param {HTMLElement|NodeListOf<HTMLElement>} elements - The element(s) to process.
  */
-function mathjaxUpdate(elements) {
+function mathjaxUpdate(elements, whocalledme = "unknown") {
+  console.info("mathjaxUpdate | whocalledme:", whocalledme)
+
   // Ensure the input is an array-like object, else convert it to an array.
   const elementsToProcess = Array.isArray(elements) ? elements : [elements]
 
+  // look for any text surrounded by $...$ or $$...$$
   const mathRegex = /[$]{1,2}.*?[$]{1,2}/g
 
-  const typesetArray = elementsToProcess.map((item) => {
-    return item.textContent.match(mathRegex)
-  })
-  console.log("mathjaxUpdate any math matches?", typesetArray)
+  // iterate through the array of supplied DOM objects
+  // to return an array of either null for not found,
+  // or an array with each instance of found text
+  // but this is only here for debug
+  //
+  // const typesetArray = elementsToProcess.map((item) => {
+  // return item.textContent.match(mathRegex)
+  // })
+  // console.info("mathjaxUpdate | any math matches?", typesetArray)
 
+  //
   const elementsWithMath = elementsToProcess.filter((element) => {
-    const hasMatch = mathRegex.test(element.textContent)
+    const hasMatchBoolean = mathRegex.test(element.textContent)
     mathRegex.lastIndex = 0
-    console.log("mathjaxupdate regex test result:", element, hasMatch)
-    return hasMatch
+    console.info("mathjaxupdate | regex test result:", element, hasMatchBoolean)
+    return hasMatchBoolean
   })
+
+  console.info("mathjaxUpdate | elementsWithMath:", elementsWithMath)
 
   if (elementsWithMath.length > 0 && window.MathJax?.typesetPromise) {
     // Pass the array of elements to MathJax for efficient processing.
     MathJax.typesetPromise(elementsToProcess).catch((err) =>
-      console.error("mathjaxUpdate MathJax typesetting error:", err),
+      console.warn("mathjaxUpdate | MathJax typesetting error:", err),
     )
   } else if (elementsWithMath.length === 0) {
-    console.log("mathjaxUpdate No elements with maths delimiters found")
+    console.info("mathjaxUpdate | No elements with maths delimiters found")
   } else {
-    console.warn("mathjaxUpdate MathJax is not loaded or ready.")
+    console.info("mathjaxUpdate | MathJax is not loaded or ready.")
   }
 }
 
@@ -650,7 +664,10 @@ explanationButton.addEventListener("click", () => {
   // todo: could create explanation contents ready for use in loadQuestion
   // and handle mathjax there
 
-  mathjaxUpdate(explanationDiv)
+  mathjaxUpdate(
+    explanationDiv,
+    "explanation button handler with explanationDiv DOM object",
+  )
 })
 
 flashcardButton.addEventListener("click", () => {
