@@ -529,50 +529,53 @@ function myDebug(whereami, quizState) {
 }
 
 /**
- * Triggers MathJax to re-render a specific element or a collection of elements.
- * @param {HTMLElement|NodeListOf<HTMLElement>} elements - The element(s) to process.
+ * mathjaxUpdate - Renders mathematical notation in HTML elements
+ *
+ * Summary: This function searches through HTML elements looking for math notation
+ * (text between $ or $$), then uses the MathJax library to render it beautifully.
+ *
+ * @param {Element|Element[]} elements - One element or an array of elements to check
+ * @param {string} whocalledme - Optional label for debugging (default: "unknown")
+ *
+ * Process:
+ * 1. Converts input to an array (if it isn't already)
+ * 2. Filters to find which elements contain math notation ($...$ or $$...$$)
+ * 3. If math is found and MathJax is ready, renders it
+ * 4. Logs helpful messages about what happened
  */
 function mathjaxUpdate(elements, whocalledme = "unknown") {
-  console.info("mathjaxUpdate | whocalledme:", whocalledme)
+  console.info("mathjaxUpdate called by:", whocalledme)
 
-  // Ensure the input is an array-like object, else convert it to an array.
-  const elementsToProcess = Array.isArray(elements) ? elements : [elements]
+  // Step 1: Make sure we have an array of elements to work with
+  const elementArray = Array.isArray(elements) ? elements : [elements]
 
-  // look for any text surrounded by $...$ or $$...$$
-  const mathRegex = /[$]{1,2}.*?[$]{1,2}/g
+  // Step 2: Create a pattern to find math notation like $x^2$ or $$\frac{1}{2}$$
+  const mathPattern = /[$]{1,2}.*?[$]{1,2}/g
 
-  // iterate through the array of supplied DOM objects
-  // to return an array of either null for not found,
-  // or an array with each instance of found text
-  // but this is only here for debug
-  //
-  // const typesetArray = elementsToProcess.map((item) => {
-  // return item.textContent.match(mathRegex)
-  // })
-  // console.info("mathjaxUpdate | any math matches?", typesetArray)
-
-  //
-  const elementsWithMath = elementsToProcess.filter((element) => {
-    const hasMatchBoolean = mathRegex.test(element.textContent)
-    mathRegex.lastIndex = 0
-    console.info("mathjaxupdate | regex test result:", element, hasMatchBoolean)
-    return hasMatchBoolean
+  // Step 3: Filter to find which elements contain math notation
+  const elementsContainingMath = elementArray.filter((element) => {
+    const containsMath = mathPattern.test(element.textContent)
+    mathPattern.lastIndex = 0 // Reset regex for next check
+    console.info(
+      "Checking element for math:",
+      element,
+      "Contains math:",
+      containsMath,
+    )
+    return containsMath
   })
 
-  console.info("mathjaxUpdate | elementsWithMath:", elementsWithMath)
-
-  if (elementsWithMath.length > 0 && window.MathJax?.typesetPromise) {
-    // Pass the array of elements to MathJax for efficient processing.
-    MathJax.typesetPromise(elementsToProcess).catch((err) =>
-      console.warn("mathjaxUpdate | MathJax typesetting error:", err),
+  // Step 4: Render the math if found and MathJax is available
+  if (elementsContainingMath.length > 0 && window.MathJax?.typesetPromise) {
+    MathJax.typesetPromise(elementArray).catch((error) =>
+      console.warn("MathJax had trouble rendering:", error),
     )
-  } else if (elementsWithMath.length === 0) {
-    console.info("mathjaxUpdate | No elements with maths delimiters found")
+  } else if (elementsContainingMath.length === 0) {
+    console.info("No math notation found in the elements")
   } else {
-    console.info("mathjaxUpdate | MathJax is not loaded or ready.")
+    console.info("MathJax library is not loaded yet")
   }
 }
-
 function showFlashcards(targetSyllabus, syllabusArray) {
   // trying out this layout...
   const findSyllabus = syllabusArray.filter(
