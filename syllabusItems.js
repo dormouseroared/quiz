@@ -4923,7 +4923,7 @@ const syllabusItems = [
         subTitle: "Band plan",
         sequence: "000",
         front:
-          "Which band plans do you need to be familiar with for ,the Full exam?",
+          "Which band plans do you need to be familiar with for the Full exam?",
         back: "",
         backImage: "week01-band-plans.png",
         id: "NxaFs7Fw",
