@@ -459,6 +459,13 @@ function getStrategyEmoji(level) {
 function showExamStrategy(q) {
   const strategy = document.getElementById("strategy")
 
+  console.warn("showExamStrategy:", {
+    examStrategy: q.examStrategy,
+    examCalculation: q.examCalculation,
+    exam_NOT: q.exam_NOT,
+    examStrategyNotes: q.examStrategyNotes,
+  })
+
   strategy.innerHTML = ""
 
   strategy.style.fontSize = "12px"
@@ -469,8 +476,10 @@ function showExamStrategy(q) {
     // Build the display conditionally
     let display = `exam strategy: ${q.examStrategy} <span style="font-size: 28px;">${emojiBar}</span>`
 
-    if (q.calculation) {
-      display += ` calculation: ${q.calculation}`
+    if (q.examCalculation && q.examCalculation > 0) {
+      display += ` calculation: ${q.examCalculation}`
+
+      display += `<span style="font-size: 28px;">${getStrategyEmoji(q.examCalculation)}</span>`
     }
 
     if (q.exam_NOT) {
@@ -487,7 +496,7 @@ function showExamStrategy(q) {
   if (q.exam_NOT) {
     strategy.style.color = "#00FF00"
   } else {
-    strategy.style.color = "white"
+    strategy.style.color = "#fff"
   }
 }
 function showExamStrategy2(q) {
