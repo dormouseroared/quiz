@@ -458,6 +458,9 @@ function getStrategyEmoji(level) {
 
 function showExamStrategy(q) {
   const strategy = document.getElementById("strategy")
+
+  strategy.innerHTML = ""
+
   strategy.style.fontSize = "12px"
 
   if (q.examStrategy) {
