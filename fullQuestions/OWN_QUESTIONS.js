@@ -286,6 +286,10 @@ const OWN_QUESTIONS = [
     explanation: `First of all: $$Q = I \\cdot t$$ so Charge is current x time (which is a bit weird as that implies charge could get very high with no limit) and $$Q = 10 \\times 10^{-3} \\times 60 = 600mC$$ then use $$Q = V \\cdot C$$ to get $$V = \\frac{Q}{C} = \\frac{600 \\times 10^{-3}}{10 \\times 10^{-3}} = 60V$$ I emailed Steve about this, and the answer is to apply the formula with the numbers and not think too deeply about it.`,
     lookup: "See page(s) 21 of the Full Licence text book",
     syllabus: "2d.1",
+    examStrategy: "2",
+    examStrategyNotes: " Use Q = I x t then Q = V x C",
+    examCalculation: "2",
+    exam_NOT: "",
   },
   {
     source: "OWN QUESTIONS Q20",
