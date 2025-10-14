@@ -698,7 +698,7 @@ const RSGB_FULL_MOCK_1 = [
   {
     source: "RSGB Full Mock 1 Q52",
     question:
-      "What important action or check has not been performed in planning thisoutdoor operating trip? <br><br><img src='images/rsgb-full-1-q52.png' alt='test'  >",
+      "What important action or check has not been performed in planning this outdoor operating trip? <br><br><img src='images/rsgb-full-1-q52.png' alt='test'  >",
     options: [
       "Provision of RCBOs",
       "Correct fusing",
