@@ -107,6 +107,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2b.1",
+    examStrategy: "1",
+    examStrategyNotes: "It's a straightforward power calculation",
+    examCalculation: "1",
+    exam_NOT: "",
   },
   {
     source: "RSGB Full Mock 2 Q9",
@@ -281,6 +285,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3c.3",
+    examStrategy: "4",
+    examStrategyNotes: "Ned to get this one under control",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "RSGB Full Mock 2 Q22",

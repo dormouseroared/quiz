@@ -408,6 +408,10 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.2",
     tagged: true,
+    examStrategy: "3",
+    examStrategyNotes: "This is one to drill and remember",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2D3-1",
@@ -425,6 +429,10 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.3",
     tagged: true,
+    examStrategy: "2",
+    examStrategyNotes: "another one to drill",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2D4-1",
@@ -437,6 +445,11 @@ const EXAM_SECRETS_QUESTIONS = [
       "This question requires some thought. Option C can be discounted, as the back EMF won't remain at one end with an alternating current. Option D is also out, as inductive back EMF occurs when a current changes, no back EMF for steady currents. Choice is now A or B. An inductor tries to oppose a current increase. In A it is aiding so A seems wrong. In B it is trying to keep the current going when the external drive is to reduce it. That is true, we have our answer. Note opposition to change is equaslly true for increasing or decreasing currents.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.4",
+    examStrategy: "4",
+    examStrategyNotes:
+      "This question is not very clear about what is happening and when.",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2D4-2",
@@ -471,6 +484,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "Options C and D can be quickly ruled out. If the resistor was in parallel then at switch on the current would rise at least to the value of V/R, which does not happen. That would also apply to option A since the capacitor is initially discharged, the current would jump up to V/R and tail off as the capacitor charges. That leaves B as the only remaining option. The current is zero and climbing just after switch on, which strongly suggests an inductor must be in the only current path, which points to B as well.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.7",
+    examStrategy: "2",
+    examStrategyNotes: "Just look at the graph.",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2D7-2",
@@ -517,6 +534,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "The circuit is a common emitter amplifier. C3 decouples the emitter of the transistor, removing any signal at the emitter so the full input signal is across the base-emitter junction of the transmitter. Without the decoupling, much of the voltager gain of the circuit would be lost.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2e.4",
+    examStrategy: "3",
+    examStrategyNotes: "Need a definition of decoupling.",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2E4-2",
@@ -697,6 +718,10 @@ const EXAM_SECRETS_QUESTIONS = [
     explanation: "Drawing 2 is the equivalent of a crystal. But why?",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.2",
+    examStrategy: "1",
+    examStrategyNotes: "Just need to drill this.",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2H2-2",
@@ -832,6 +857,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "Class A means that the biasing is such that the complete cycle of signal is faithfully amplified. All four answers say that, so strictly we do not need that information. The common emitter circuit gives both voltage gain and current gain, so the output will be larger than the input, and is also 180 degrees out of phase.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2i.4",
+    examStrategy: "3",
+    examStrategyNotes: "Drilling can help.",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2I4-3",
@@ -935,6 +964,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "The mains is rectified and may be partly smoothed then chopped at some 10s of kHz so the transformer size and weight can be substantially reduced. The box is a high frequency transformer.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2j.4",
+    examStrategy: "2",
+    examStrategyNotes: "There's a symmetry to this.",
+    examCalculation: "",
+    exam_NOT: "",
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2J4-2",
