@@ -163,6 +163,19 @@ function findMissingSyllabusKeys(quizQuestions, syllabusItems) {
   return missingKeys
 }
 
+function selectQuestions(targets, questions) {
+  const output = targets.map((target, index) => {
+    console.log("target", index, target)
+    const matching = questions.filter((q) => q.syllabus === target)
+    console.log("matching", index, matching)
+    const matchingRandomIndex = Math.floor(Math.random() * matching.length)
+    const outputQuestion = matching[matchingRandomIndex]
+    return outputQuestion
+  })
+  return output
+}
+
+//
 // ====================================
 // 6. VALIDATION AND SETUP FUNCTIONS
 // ====================================
@@ -823,6 +836,67 @@ searchForm.addEventListener("submit", function (event) {
   } else if (quizState.searchType === "question") {
     quizState.questionPack = quizState.randomQuestions.filter((q) =>
       q.question.toLowerCase().includes(quizState.searchValue.toLowerCase()),
+    )
+  } else if (quizState.searchType === "afterweek06") {
+    console.warn("afterweek06")
+    quizState.questionPack = selectQuestions(
+      [
+        "2b.1",
+        "2d.1",
+        "2d.2",
+        "2d.3",
+        "2d.4",
+        "2d.7",
+        "2e.3",
+        "2e.4",
+        "2e.5",
+        "2e.6",
+        "2g.1",
+        "2h.1",
+        "2h.2",
+        "2h.4",
+        "2h.5",
+        "2i.1",
+        "2i.3",
+        "2i.4",
+        "2i.5",
+        "2j.2",
+        "2j.3",
+        "2j.4",
+        "3a.2",
+        "3b.1",
+        "3c.1",
+        "3c.3",
+        "3d.1",
+        "3e.1",
+        "3e.2",
+        "3f.2",
+        "3f.3",
+        "3f.4",
+        "3f.5",
+        "3g.1",
+        "3g.2",
+        "3g.3",
+        "3g.4",
+        "3g.5",
+        "7a.1",
+        "7a.8",
+        "7b.1",
+        "7b.2",
+        "7h.1",
+        "7h.2",
+        "8a.1",
+        "8a.2",
+        "8a.6",
+        "8d.1",
+        "8e.1",
+        "8f.4",
+        "8f.5",
+        "8f.6",
+        "8f.7",
+        "2a.1",
+      ],
+      quizState.randomQuestions,
     )
   } else {
     throw new Error("Search used is not yet available")
