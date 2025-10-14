@@ -467,6 +467,7 @@ function showExamStrategy(q) {
   })
 
   strategy.innerHTML = ""
+  strategy.style.border = ""
 
   strategy.style.fontSize = "12px"
 
@@ -498,6 +499,15 @@ function showExamStrategy(q) {
   } else {
     strategy.style.color = "#fff"
   }
+
+  if (q.examStrategy > 3 || q.exam_NOT) {
+    strategy.style.border = "red 4px dotted"
+  }
+
+  console.warn(
+    "showExamStrategy | strategy.style.cssText:",
+    strategy.style.cssText,
+  )
 }
 function showExamStrategy2(q) {
   const strategy = document.getElementById("strategy")
