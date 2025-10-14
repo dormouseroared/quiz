@@ -2505,7 +2505,9 @@ would stop our wanted signal and let everything else pass. `,
     lookup: "See page(s) 52-53 of the Full Licence text book",
     syllabus: "3g.3",
     examStrategy: "4",
-    examStrategyNotes: "",
+    examStrategyNotes:
+      "Perhaps draw some graphs of the four different approaches on the same graph, just to be clear on what a low pass filter would achieve, for example.",
+    examCalculation: 1,
     examCalculation: "0",
   },
   {

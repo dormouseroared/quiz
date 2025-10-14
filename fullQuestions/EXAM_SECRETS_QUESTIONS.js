@@ -1275,6 +1275,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "Changing the value of L1 or C1 may simply change the frequency at which L1 and C1 resonate. It might dampen the resonance, but just as likely it won't. The cure is to absorb the energy so the oscillation does not occur. A resistor from the bottom of L1 to the 0V line achieves this, but a capacitor having a low reactance at 2MHz is needed as a DC block.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3g.4",
+    examStrategy: "5",
+    examStrategyNotes: "I have nothing for this at the moment.",
+    examCalculation: "1",
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3G5-1",
