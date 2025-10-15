@@ -162,12 +162,12 @@ function findMissingSyllabusKeys(quizQuestions, syllabusItems) {
     .filter((key) => !syllabusKeys.includes(key))
   return missingKeys
 }
-
-function selectQuestions(targets, questions) {
-  const output = targets.map((target, index) => {
-    console.log("target", index, target)
-    const matching = questions.filter((q) => q.syllabus === target)
-    console.log("matching", index, matching)
+//
+function selectQuestions(targets, MCQ) {
+  const output = targets.map((target) => {
+    // console.log("target", index, target)
+    const matching = MCQ.filter((q) => q.syllabus === target)
+    // console.log("matching", index, matching)
     const matchingRandomIndex = Math.floor(Math.random() * matching.length)
     const outputQuestion = matching[matchingRandomIndex]
     return outputQuestion
