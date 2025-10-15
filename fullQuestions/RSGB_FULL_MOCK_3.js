@@ -132,6 +132,10 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2i.1",
+    examStrategy: "3",
+    examStrategyNotes: "Drill this shape. There are a few flashcards.",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q11",
@@ -268,6 +272,10 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3f.2",
+    examStrategy: "3",
+    examStrategyNotes: "Our old friennds the intermodulation products.",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q20",
@@ -323,6 +331,11 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3f.4",
+    examStrategy: "",
+    examStrategyNotes:
+      "Can we find a reference to this, possible in the second half of the course as its receivers.",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q24",
@@ -671,6 +684,10 @@ const RSGB_FULL_MOCK_3 = [
     lookup: "See page(s) 11 of the Full Licence text book",
     syllabus: "7a.1",
     week: "1",
+    examStrategy: "2",
+    examStrategyNotes: "Stay calm.",
+    examCalculation: "0",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q49",
@@ -680,6 +697,11 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7b.1",
+    examStrategy: "5",
+    examStrategyNotes:
+      "See Note 1 on the 600m band plan. This is one for the big neon sign.",
+    examCalculation: "0",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q50",
@@ -690,6 +712,10 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8d.1",
+    examStrategy: "1",
+    examStrategyNotes: "Go for it!",
+    examCalculation: "0",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q51",
@@ -705,6 +731,10 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8f.5",
+    examStrategy: "1",
+    examStrategyNotes: "Safety first",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q52",

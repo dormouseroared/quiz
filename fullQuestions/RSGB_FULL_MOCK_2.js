@@ -244,6 +244,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2j.2",
+    examStrategy: "3",
+    examStrategyNotes: "Controlled is the key word. Think reference.",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 2 Q19",

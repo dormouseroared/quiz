@@ -214,6 +214,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.2",
+    examStrategy: "2",
+    examStrategyNotes: "Just have to drill this one",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 1 Q16",
@@ -247,6 +251,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2i.5",
+    examStrategy: "3",
+    examStrategyNotes: "Where does this come from?",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 1 Q18",
@@ -286,6 +294,11 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3c.1",
+    examStrategy: "3",
+    examStrategyNotes:
+      "This is always very, verey bad, so look for the worst outcome, especially into non-amateur bands.",
+    examCalculation: "0",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 1 Q21",
@@ -312,7 +325,8 @@ const RSGB_FULL_MOCK_1 = [
       "single sideband modulation with a pilot (reduced) carrier",
     ],
     correct: 2,
-    explanation: "",
+    explanation:
+      "Should be a flashcard for this. It's the frequency multiplier.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3d.1",
   },
@@ -702,6 +716,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8e.1",
+    examStrategy: "1",
+    examStrategyNotes: "Obvious!",
+    examCalculation: "",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 1 Q52",
@@ -732,6 +750,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8f.7",
+    examStrategy: "1",
+    examStrategyNotes: "Obvious.",
+    examCalculation: "0",
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 1 Q54",
