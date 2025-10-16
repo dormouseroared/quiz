@@ -10,6 +10,7 @@ import diagramQuizWidget, {
   version as actualDiagramVersion,
 } from "./diagram-quiz-widget-v21.js"
 import { diagramQuizCards } from "./diagramQuizCards.js"
+import after_Week06_Syllabus_List from "./after-week06-syllabus-list.js"
 
 const desiredDiagramVersion = "v21"
 
@@ -840,62 +841,7 @@ searchForm.addEventListener("submit", function (event) {
   } else if (quizState.searchType === "afterweek06") {
     console.warn("afterweek06")
     quizState.questionPack = selectQuestions(
-      [
-        "2b.1",
-        "2d.1",
-        "2d.2",
-        "2d.3",
-        "2d.4",
-        "2d.7",
-        "2e.3",
-        "2e.4",
-        "2e.5",
-        "2e.6",
-        "2g.1",
-        "2h.1",
-        "2h.2",
-        "2h.4",
-        "2h.5",
-        "2i.1",
-        "2i.3",
-        "2i.4",
-        "2i.5",
-        "2j.2",
-        "2j.3",
-        "2j.4",
-        "3a.2",
-        "3b.1",
-        "3c.1",
-        "3c.3",
-        "3d.1",
-        "3e.1",
-        "3e.2",
-        "3f.2",
-        "3f.3",
-        "3f.4",
-        "3f.5",
-        "3g.1",
-        "3g.2",
-        "3g.3",
-        "3g.4",
-        "3g.5",
-        "7a.1",
-        "7a.8",
-        "7b.1",
-        "7b.2",
-        "7h.1",
-        "7h.2",
-        "8a.1",
-        "8a.2",
-        "8a.6",
-        "8d.1",
-        "8e.1",
-        "8f.4",
-        "8f.5",
-        "8f.6",
-        "8f.7",
-        "2a.1",
-      ],
+      after_Week06_Syllabus_List,
       quizState.randomQuestions,
     )
   } else {
