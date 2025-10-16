@@ -314,4 +314,28 @@ export const diagramQuizCards = [
     ],
     createdAt: "2025-10-11T17:18:05.130Z",
   },
+  {
+    title: "Voltage across an Inductor in an RL circuit",
+    imagePath: "diagramQuizImages/voltage-RL-graph-back.png",
+    obfuscationLevel: 1,
+    boxes: [
+      {
+        id: 1760616192323,
+        x: 121.5,
+        y: 54.58331298828125,
+        width: 221,
+        height: 74,
+        label: "t=0: Inductor generates back EMF to oppose change in current",
+      },
+      {
+        id: 1760616277431,
+        x: 407.5,
+        y: 285.58331298828125,
+        width: 290,
+        height: 76,
+        label: "At steady state the inductor behaves like a wire",
+      },
+    ],
+    createdAt: "2025-10-16T12:05:57.900Z",
+  },
 ]
