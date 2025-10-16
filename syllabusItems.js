@@ -832,6 +832,18 @@ const syllabusItems = [
         reference: "week03 tutorial slides p23",
         id: "jJL0xDVW",
       },
+      {
+        subTitle: "Voltage across Inductor in DC circuit",
+        sequence: "000",
+        front:
+          "What does the graph of Voltage over time look like as the switch is closed?",
+        frontImage: "voltage-RL-graph-front.png",
+        back: "",
+        backImage: "voltage-RL-graph-back.png",
+        status: "",
+        reference: "Claude: RL circuit simulation",
+        id: "WGZZCNQP",
+      },
     ],
   },
   {
