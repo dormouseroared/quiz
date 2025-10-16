@@ -174,7 +174,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "2e.6",
     examStrategy: 5,
     examStrategyNotes: "Need to work on this one, and get an explanation.",
-    examCalculation: "2",
+    examCalculation: 2,
     exam_NOT: "",
   },
   {
@@ -301,7 +301,7 @@ const RSGB_FULL_MOCK_1 = [
     examStrategy: 3,
     examStrategyNotes:
       "This is always very, verey bad, so look for the worst outcome, especially into non-amateur bands.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -756,7 +756,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "8f.7",
     examStrategy: 1,
     examStrategyNotes: "Obvious.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {

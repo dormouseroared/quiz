@@ -290,7 +290,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     syllabus: "2i.3",
     examStrategy: 4,
     examStrategyNotes: "Need more learning materials",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {

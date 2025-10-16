@@ -270,7 +270,7 @@ const EXAM_SECRETS_QUESTIONS = [
     tagged: true,
     examStrategy: 3,
     examStrategyNotes: "Guidance for this?",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -334,7 +334,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategy: 1,
     examStrategyNotes:
       "Straightforward power calculation without the calculator",
-    examCalculation: "1",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {
@@ -367,7 +367,7 @@ const EXAM_SECRETS_QUESTIONS = [
     tagged: true,
     examStrategy: 3,
     examStrategyNotes: "The question is muddled, so just go for it.",
-    examCalculation: "1",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {
@@ -721,7 +721,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategy: 4,
     examStrategyNotes:
       "Look at resonant frequency in terms of L and C and start transposing.",
-    examCalculation: "3",
+    examCalculation: 3,
     exam_NOT: false,
   },
   {
@@ -807,7 +807,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2h.4",
     examStrategy: 3,
     examStrategyNotes: "drill",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -827,7 +827,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2h.5",
     examStrategy: 3,
     examStrategyNotes: "Drill this one!",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1041,7 +1041,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3a.2",
     examStrategy: 3,
     examStrategyNotes: "use the Modulation Index less than 1 approach.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1074,7 +1074,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3b.1",
     examStrategy: 2,
     examStrategyNotes: "At last a straightforward question.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1228,7 +1228,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategy: 3,
     examStrategyNotes:
       "CBE to start with, find the Collector, then common sense.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1356,7 +1356,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3g.3",
     examStrategy: 3,
     examStrategyNotes: "Go for the safest option.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1377,7 +1377,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3g.4",
     examStrategy: 5,
     examStrategyNotes: "I have nothing for this at the moment.",
-    examCalculation: "1",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {
@@ -2446,7 +2446,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "8a.2",
     examStrategy: 3,
     examStrategyNotes: "Yeah!",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -2554,7 +2554,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "8f.6",
     examStrategy: 1,
     examStrategyNotes: "Easy.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {

@@ -109,7 +109,7 @@ const RSGB_FULL_MOCK_2 = [
     syllabus: "2b.1",
     examStrategy: 1,
     examStrategyNotes: "It's a straightforward power calculation",
-    examCalculation: "1",
+    examCalculation: 1,
     exam_NOT: "",
   },
   {
