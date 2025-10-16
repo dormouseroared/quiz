@@ -288,7 +288,7 @@ const OWN_QUESTIONS = [
     syllabus: "2d.1",
     examStrategy: 2,
     examStrategyNotes: " Use Q = I x t then Q = V x C",
-    examCalculation: "2",
+    examCalculation: 2,
     exam_NOT: "",
   },
   {

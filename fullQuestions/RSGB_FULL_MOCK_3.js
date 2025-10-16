@@ -187,7 +187,7 @@ const RSGB_FULL_MOCK_3 = [
     syllabus: "2g.1",
     examStrategy: 2,
     examStrategyNotes: "Ignoring losses, power out is the same as power in.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: true,
   },
   {
@@ -691,7 +691,7 @@ const RSGB_FULL_MOCK_3 = [
     week: "1",
     examStrategy: 2,
     examStrategyNotes: "Stay calm.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -705,7 +705,7 @@ const RSGB_FULL_MOCK_3 = [
     examStrategy: 5,
     examStrategyNotes:
       "See Note 1 on the 600m band plan. This is one for the big neon sign.",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -719,7 +719,7 @@ const RSGB_FULL_MOCK_3 = [
     syllabus: "8d.1",
     examStrategy: 1,
     examStrategyNotes: "Go for it!",
-    examCalculation: "0",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
