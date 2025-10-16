@@ -144,3 +144,24 @@ const questions7 = ["2b.1"].map((target) =>
   getRandomQuestionForKey2(target, W99quiz, 3),
 )
 console.log("questions7", questions7)
+
+console.log("using week06 syllabus list to get questions")
+import after_week06_syllabus_list from "./after-week06-syllabus-list.js"
+const week06Total = W99quiz.filter((target) => {
+  console.log(target.syllabus)
+  return after_week06_syllabus_list.includes(target.syllabus)
+})
+console.log("week06Total", week06Total.length)
+console.log(week06Total[0])
+console.log(week06Total[1])
+console.log(week06Total[2])
+const week06Drill = W99quiz.filter((target) => {
+  console.log(target.syllabus)
+  return (
+    target.examStrategy <= 2 &&
+    after_week06_syllabus_list.includes(target.syllabus)
+  )
+})
+console.log("week06Drill", week06Drill.length)
+console.log(week06Drill[0])
+console.log(week06Drill[1])

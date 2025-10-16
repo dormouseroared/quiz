@@ -288,7 +288,7 @@ const EXAM_SECRETS_FULL_PAPER = [
       "With a collector voltage of 7.3V the collector current is about (12 - 7.3) / 4.7 = 1mA. The voltage across the emitter resistor will be about 1.8V, so the base will be at about 2.5V. The 2.5V across 10kΩ is a current of 250µA, and much the same current will be in R1, which should have 9.5V across it. That requires a resistance of R = 9.5 / 0.25 = 38kΩ. The base current will be a maximum of 2.5µA, which we can neglect in the standing current of 250µA.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2i.3",
-    examStrategy: "4",
+    examStrategy: 4,
     examStrategyNotes: "Need more learning materials",
     examCalculation: "0",
     exam_NOT: false,
