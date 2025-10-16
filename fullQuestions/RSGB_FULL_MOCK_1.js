@@ -143,6 +143,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.4",
+    examStrategy: "2",
+    examStrategyNotes: "Another way of asking the very same thing.",
+    examCalculation: "",
+    Exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 1 Q11",

@@ -116,12 +116,17 @@ const RSGB_FULL_MOCK_3 = [
   {
     source: "RSGB Full Mock 3 Q9",
     question:
-      "The circuit diagram shows an NPN transistor being used as an amplifier. The potential difference across the Base-Emitter junction is 0.6Volt and there is 1V across Re. Which resistor may be used for R1 in order to create the correct transistor bias. You may assume the base current is insignificant. <br><br><img src='images/rsgb-full-3-q9.png' alt='test'  >",
+      "The circuit diagram shows an NPN transistor being used as an amplifier. The potential difference across the Base-Emitter junction is 0.6Volt and there is 1V across $R_e$. Which resistor may be used for R1 in order to create the correct transistor bias. You may assume the base current is insignificant. <br><br><img src='images/rsgb-full-3-q9.png' alt='test'  >",
     options: ["8.2k", "10k", "12k", "15k"],
     correct: 1,
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2b.1",
+    examStrategy: "5",
+    examStrategyNotes:
+      "I have no idea how to do this at the moment so have a guess and move on.",
+    examCalculation: "",
+    Exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q10",
