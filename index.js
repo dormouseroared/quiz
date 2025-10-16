@@ -845,12 +845,14 @@ searchForm.addEventListener("submit", function (event) {
       quizState.randomQuestions,
     )
   } else if (quizState.searchType === "afterWeek06Drill") {
-    console.warn("afterWeek06Drill")
-    quizState.questionPack = quizState.randomQuestions.filter((q) => {
-      return (
-        q.examStrategy <= 2 && after_Week06_Syllabus_List.includes(q.syllabus)
-      )
-    })
+    console.warn("afterWeek06Drill First 20...")
+    quizState.questionPack = quizState.randomQuestions
+      .filter((q) => {
+        return (
+          q.examStrategy <= 2 && after_Week06_Syllabus_List.includes(q.syllabus)
+        )
+      })
+      .slice(0, 20)
   } else {
     throw new Error("Search used is not yet available")
   }
