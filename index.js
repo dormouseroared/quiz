@@ -844,6 +844,13 @@ searchForm.addEventListener("submit", function (event) {
       after_Week06_Syllabus_List,
       quizState.randomQuestions,
     )
+  } else if (quizState.searchType === "afterWeek06Drill") {
+    console.warn("afterWeek06Drill")
+    quizState.questionPack = quizState.randomQuestions.filter((q) => {
+      return (
+        q.examStrategy <= 2 && after_Week06_Syllabus_List.includes(q.syllabus)
+      )
+    })
   } else {
     throw new Error("Search used is not yet available")
   }
