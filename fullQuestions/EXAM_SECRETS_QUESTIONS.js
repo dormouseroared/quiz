@@ -523,7 +523,7 @@ const EXAM_SECRETS_QUESTIONS = [
     tagged: true,
     examStrategy: 3,
     examStrategyNotes: "This is one to drill and remember",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -544,7 +544,7 @@ const EXAM_SECRETS_QUESTIONS = [
     tagged: true,
     examStrategy: 2,
     examStrategyNotes: "another one to drill",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -561,7 +561,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategy: 4,
     examStrategyNotes:
       "This question is not very clear about what is happening and when.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -603,7 +603,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2d.7",
     examStrategy: 2,
     examStrategyNotes: "Just look at the graph.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -665,7 +665,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2e.4",
     examStrategy: 3,
     examStrategyNotes: "Need a definition of decoupling.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -681,7 +681,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2e.4",
     examStrategy: 2,
     examStrategyNotes: "Drill drill drill!",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -702,7 +702,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2e.5",
     examStrategy: 4,
     examStrategyNotes: "Just have to go for it.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -902,7 +902,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2h.2",
     examStrategy: 1,
     examStrategyNotes: "Just need to drill this.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -949,12 +949,12 @@ const EXAM_SECRETS_QUESTIONS = [
     options: ["2.4Ω", "3.5Ω", "24Ω", "35Ω"],
     correct: 2,
     explanation:
-      "The Q-factor of this circuit is 3.5MHz/35kHz which is 100.Q is also X(L)/R (and X(C)/R since X(L) = X(C) at resonance) so if X is 2.4kΩ then R must 24Ω.",
+      "The Q-factor of this circuit is 3.5MHz/35kHz which is 100. Q is also $\\frac{X_L}{R}$ (and $\\frac{X_C}{R}$ since $X_L = X_C$ at resonance) so if X is 2.4kΩ then R must 24Ω.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.4",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 5,
+    examStrategyNotes: "Slowly work through this one.",
+    examCalculation: 4,
     exam_NOT: false,
   },
   {
@@ -993,7 +993,7 @@ const EXAM_SECRETS_QUESTIONS = [
     explanation: "Dynamic resistance R(D) of a parallel tuned circuit.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.5",
-    examStrategy: 3,
+    examStrategy: 4,
     examStrategyNotes: "Drill this one!",
     examCalculation: 0,
     exam_NOT: false,
@@ -1073,7 +1073,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2i.4",
     examStrategy: 3,
     examStrategyNotes: "Drilling can help.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -1094,7 +1094,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2i.4",
     examStrategy: 3,
     examStrategyNotes: "See the lovely flashcard made for this.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1204,7 +1204,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "2j.4",
     examStrategy: 2,
     examStrategyNotes: "There's a symmetry to this.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -1533,7 +1533,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3g.1",
     examStrategy: 2,
     examStrategyNotes: "",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1549,7 +1549,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3g.1",
     examStrategy: 4,
     examStrategyNotes: "get to the bottom of this.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -1570,7 +1570,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3g.2",
     examStrategy: 3,
     examStrategyNotes: "Outside linear range is a good start.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -3049,7 +3049,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "8f.4",
     examStrategy: 2,
     examStrategyNotes: "Obvious!",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {

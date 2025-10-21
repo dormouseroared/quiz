@@ -145,7 +145,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "2d.4",
     examStrategy: 2,
     examStrategyNotes: "Another way of asking the very same thing.",
-    examCalculation: "",
+    examCalculation: 0,
     Exam_NOT: false,
   },
   {
@@ -220,7 +220,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "2h.2",
     examStrategy: 2,
     examStrategyNotes: "Just have to drill this one",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -257,7 +257,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "2i.5",
     examStrategy: 3,
     examStrategyNotes: "Where does this come from?",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -722,7 +722,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "8e.1",
     examStrategy: 1,
     examStrategyNotes: "Obvious!",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {

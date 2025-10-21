@@ -212,7 +212,7 @@ const RSGB_FULL_MOCK_2 = [
     syllabus: "2i.3",
     examStrategy: 4,
     examStrategyNotes: "Need some learning materials for this one",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "false",
   },
   {
@@ -246,7 +246,7 @@ const RSGB_FULL_MOCK_2 = [
     syllabus: "2j.2",
     examStrategy: 3,
     examStrategyNotes: "Controlled is the key word. Think reference.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -295,7 +295,7 @@ const RSGB_FULL_MOCK_2 = [
     syllabus: "3c.3",
     examStrategy: 4,
     examStrategyNotes: "Ned to get this one under control",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -434,7 +434,7 @@ const RSGB_FULL_MOCK_2 = [
     syllabus: "3n.1",
     examStrategy: 1,
     examStrategyNotes: "Receiver Incremental Tuning (RIT) might be helpful?",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {

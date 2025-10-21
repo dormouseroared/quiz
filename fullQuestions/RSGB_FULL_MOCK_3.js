@@ -125,7 +125,7 @@ const RSGB_FULL_MOCK_3 = [
     examStrategy: 5,
     examStrategyNotes:
       "I have no idea how to do this at the moment so have a guess and move on.",
-    examCalculation: "",
+    examCalculation: 0,
     Exam_NOT: false,
   },
   {
@@ -139,7 +139,7 @@ const RSGB_FULL_MOCK_3 = [
     syllabus: "2i.1",
     examStrategy: 3,
     examStrategyNotes: "Drill this shape. There are a few flashcards.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -221,7 +221,7 @@ const RSGB_FULL_MOCK_3 = [
     syllabus: "2j.3",
     examStrategy: 4,
     examStrategyNotes: "Can we find a source for this, and then drill.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: "",
   },
   {
@@ -284,7 +284,7 @@ const RSGB_FULL_MOCK_3 = [
     syllabus: "3f.2",
     examStrategy: 3,
     examStrategyNotes: "Our old friennds the intermodulation products.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -344,7 +344,7 @@ const RSGB_FULL_MOCK_3 = [
     examStrategy: 0,
     examStrategyNotes:
       "Can we find a reference to this, possible in the second half of the course as its receivers.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -743,7 +743,7 @@ const RSGB_FULL_MOCK_3 = [
     syllabus: "8f.5",
     examStrategy: 1,
     examStrategyNotes: "Safety first",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
