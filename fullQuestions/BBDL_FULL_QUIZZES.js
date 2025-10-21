@@ -1253,12 +1253,13 @@ const BBDL_FULL_QUIZZES = [
     image: "",
     options: ["0.5Ω", "500Ω", "50kΩ", "5MΩ"],
     correct: 2,
-    explanation: `The formula to use is on the Formula Sheet, so look it up! You should find $R_D = \\frac{L}{CR}$ so a ‘simple’ matter of keying in the right numbers and the answer should be 50000 or 50kΩ. The book says it is not examined, but the meaning of dynamic resistance is in the syllabus, and the formula is on the EX309 formula sheet. Included here just in case!`,
+    explanation: `The formula to use is on the Formula Sheet, so look it up! You should find $R_D = \\frac{L}{CR}$ so a ‘simple’ matter of keying in the right numbers and the answer should be 50000 or 50kΩ. The book says it is not examined, but the meaning of dynamic resistance is in the syllabus, and the formula is on the EX309 formula sheet. Included here just in case! Calculator keys: 5 EXP -6 / (0.5 x 200 EXP -12)`,
     lookup: "See page(s) 28 of the Full Licence text book",
     syllabus: "2h.5",
     tagged: true,
     examStrategy: 3,
-    examStrategyNotes: "",
+    examStrategyNotes:
+      "PARALLEL TUNED CIRCUIT. EX309. Can be done with or without calculator. Good calculator practice.",
     examCalculation: 3,
     exam_NOT: false,
   },
@@ -2258,7 +2259,7 @@ for CW or FM. That is why some cheap 2m external amplifiers are OK for FM, but n
     examStrategy: 1,
     examStrategyNotes:
       "A power amplifier is optional, but if you do use one with SSB, it has to be a Linear Power Amplifier.",
-    examCalculation: "",
+    examCalculation: 0,
   },
   {
     source: "BBDL QUIZ WEEK06 Q02",

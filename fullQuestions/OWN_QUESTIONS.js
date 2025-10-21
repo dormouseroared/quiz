@@ -393,7 +393,7 @@ Continuous output at the operating frequency when idle is the signature of self-
     syllabus: "3g.4",
     examStrategy: 4,
     examStrategyNotes: "Frequency and timing of occurrence point to the type.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -414,7 +414,7 @@ VHF signals when transmitting HF = parasitic oscillation. Load-dependent behavio
     examStrategy: 4,
     examStrategyNotes:
       "Symptoms indicate parasitic oscillation; cure requires reducing Q of stray resonances.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -434,7 +434,7 @@ The resistor adds loss (lowers Q) of any resonance in that part of the circuit. 
     syllabus: "3g.4",
     examStrategy: 4,
     examStrategyNotes: "Understanding the role of resistance in lowering Q",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -455,7 +455,7 @@ This is the question you got wrong! Parasitic oscillations occur at UNPREDICTABL
     examStrategy: 4,
     examStrategyNotes:
       "Distinguishing between harmonics (mathematically related) and random parasitic frequencies.",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
@@ -476,7 +476,7 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
     examStrategy: 4,
     examStrategyNotes:
       "Understanding the feedback mechanism in self-oscillation",
-    examCalculation: "",
+    examCalculation: 0,
     exam_NOT: false,
   },
   {
