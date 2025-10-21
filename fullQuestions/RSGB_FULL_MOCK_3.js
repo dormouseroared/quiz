@@ -230,9 +230,14 @@ const RSGB_FULL_MOCK_3 = [
       "The drawing shows the response curve of the IF of a receiver, the attenuation of the received audio at 6kHz will be about <br><br><img src='images/rsgb-full-3-q16.png' alt='test'  >",
     options: ["28dB", "3dB", "0dB", "16dB"],
     correct: 3,
-    explanation: "",
+    explanation: `The graph shows signal level loss at various frequencies. 
+    Attenuation means a loss of signal, so an attenuation of 16dB is 
+    exactly the same as a response curve for the signal showing -16dB.`,
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.4",
+    examStrategy: 4,
+    examStrategyNotes: `Remember that an attenuation of 25dB means the response curve will show -25dB. Attenuation means loss, a negative number, so we don't say an attenuation of -16dB. This is a somewhat woolly question, so get used to ambiguity!`,
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q17",
