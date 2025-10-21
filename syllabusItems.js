@@ -1461,17 +1461,6 @@ const syllabusItems = [
     flashcards: [
       {
         subTitle: "Transformers",
-        sequence: "000",
-        front:
-          "What would be the main points associated with the construction of a transformer?",
-        frontImage: "week04-transformers-recap-1.png",
-        back: "From low to high frequencies, the choice of core is IRON, then FERRITE or DUST IRON COMPOSITE and finally AIR (see below).",
-        backImage: "week04-transformers-recap-2.png",
-        reference: "week04 tutorial video 00:31:41",
-        id: "EH27UN32",
-      },
-      {
-        subTitle: "Transformers",
         sequence: "010",
         front: "What happens in a step-up or step-down transformer?",
         frontImage: "week04-transformers-step-1.png",
@@ -1568,12 +1557,40 @@ const syllabusItems = [
     level: "full",
     title: "Transformers",
     text: "Recall that different magnetic materials used as cores for inductors and transformers perform best over different frequency ranges and affect their efficiency.",
+    flashcards: [
+      {
+        subTitle: "Transformer Core",
+        sequence: "000",
+        front:
+          "What would be the main points associated with the construction of a transformer?",
+        frontImage: "week04-transformers-recap-1.png",
+        back: "From low to high frequencies, the choice of core is IRON, then FERRITE or DUST IRON COMPOSITE and finally AIR (see below).",
+        backImage: "week04-transformers-recap-2.png",
+        reference: "week04 tutorial video 00:31:41",
+        id: "EH27UN32",
+      },
+    ],
   },
   {
     key: "2g.1",
     level: "full",
     title: "Transformers",
     text: "Recall that losses in the material will cause heating which affects power handling and the required physical size of the core for the power concerned.",
+    flashcards: [
+      {
+        subTitle: "Transformers the last bit",
+        sequence: "000",
+        front: `In the full manual the section on transformers is all about the 
+          turns ratio, plus this last bit. 
+          There are many other references in the text to transformers though, 
+          but it isn't collected together.`,
+        frontImage: "",
+        back: "This is just here to avoid the questions being about this missing bit.",
+        backImage: "week06a-transformers-last-bit.png",
+        reference: "Full manual p29",
+        id: "DF3R60K9",
+      },
+    ],
   },
   {
     key: "2h.1",
