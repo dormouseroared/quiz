@@ -249,13 +249,18 @@ const EXAM_SECRETS_FULL_PAPER = [
 
         <br>
         <br>
-        <br>
+        <br>This bit is just a test...
         <br>
         When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
         $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$
         `,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2g.1",
+    examStrategy: 2,
+    examStrategyNotes:
+      "See EX309 for transformer equations. Check the turns on both sides and do not write them down wrong from the start. Check!",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q15",

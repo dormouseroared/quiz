@@ -544,7 +544,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "[[I answered use their own callsign...]] The ‘1-page’ Licence says that a Full Licence holder is permitted to operate under CEPT T/R 61-01, and if you do that, you need to make your Licence available for inspection, which is why ‘c’ is the correct answer. ‘a’ is wrong because T/R 61-01 is for temporary use and no host country callsigns are used.When in anothercountry, you must abide by that country’s Licence Conditions, so the Ofcom documents in ‘b’ are irrelevant. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 following by your UK callsign. This particular Licence Condition is in paragraph 3 on page 2 of the 1-page Licence document issued by Ofcom, which is not included in EX309. You may scream ‘foul play’ but the syllabus says you need to understand the requirements of CEPT T/R 61-01.",
+      "[[I answered use their own callsign...]] The ‘1-page’ Licence says that a Full Licence holder is permitted to operate under CEPT T/R 61-01, and if you do that, you need to make your Licence available for inspection, which is why ‘c’ is the correct answer. ‘a’ is wrong because T/R 61-01 is for temporary use and no host country callsigns are used. When in another country, you must abide by that country’s Licence Conditions, so the Ofcom documents in ‘b’ are irrelevant. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 following by your UK callsign. This particular Licence Condition is in paragraph 3 on page 2 of the 1-page Licence document issued by Ofcom, which is not included in EX309. You may scream ‘foul play’ but the syllabus says you need to understand the requirements of CEPT T/R 61-01.",
     lookup: "See page(s) 7-8 of the Full Licence text book",
     syllabus: "7h.1",
     tagged: true,
@@ -566,7 +566,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      " ‘a’ is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so ‘b’ looks like a good option. ‘c’ is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign’; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T/R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26. ",
+      " ‘a’ is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so ‘b’ looks like a good option. ‘c’ is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign’; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T/R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26.",
     lookup: "See page(s) 7-8 of the Full Licence text book",
     syllabus: "7h.1",
     examStrategy: 2,
@@ -1135,7 +1135,7 @@ const BBDL_FULL_QUIZZES = [
     syllabus: "2e.5",
     examStrategy: 2,
     examStrategyNotes:
-      "What happens to the reactance of a capacitor as frequency rises?",
+      "What happens to the reactance of an inductor as frequency rises?",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -1150,7 +1150,8 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) 23-24 of the Full Licence text book",
     syllabus: "2d.7",
     examStrategy: 2,
-    examStrategyNotes: "Drill",
+    examStrategyNotes:
+      "Drill... See EX309 for the formula. Worth a note on the reminder sheet about what happens at Time Constant values 1 and 5, for example.",
     examCalculation: 2,
     exam_NOT: false,
   },
@@ -1231,7 +1232,7 @@ const BBDL_FULL_QUIZZES = [
     image: "",
     options: ["5", "31.4", "157", "314"],
     correct: 3,
-    explanation: `Use $f = \\frac{1}{2 \\pi \\sqrt{LC}}$ to find resonant frequency (=5MHz), then you can work out Q using the formula Q = 2πfL/R, $Q = \\frac{2 \\pi f L}{R}$, only because the Inductor version is a bit easier than the Capacitor version. 
+    explanation: `Use $f = \\frac{1}{2 \\pi \\sqrt{LC}}$ to find resonant frequency (=5MHz), then you can work out Q using the formula $Q = \\frac{2 \\pi f L}{R}$, only because the Inductor version is a bit easier than the Capacitor version. 
         <br><br> 
         
         $Q = \\frac{2 \\cdot \\pi \\cdot 5 \\cdot 10^6 \\cdot 5 \\cdot 10^{-6}}{0.5} = 314$ 
@@ -1242,7 +1243,7 @@ const BBDL_FULL_QUIZZES = [
     tagged: true,
     examStrategy: 4,
     examStrategyNotes:
-      "1. Draw the circuit with values in full 2. notes where voltages are the same or where current splits 3. Try an estimate, ignoring high values in parallel with low values.",
+      "Drill. See EX309 for resonant frequency, and Q which is C1R8.",
     examCalculation: 3,
     exam_NOT: false,
   },
@@ -1257,7 +1258,7 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) 28 of the Full Licence text book",
     syllabus: "2h.5",
     tagged: true,
-    examStrategy: 3,
+    examStrategy: 4,
     examStrategyNotes:
       "PARALLEL TUNED CIRCUIT. EX309. Can be done with or without calculator. Good calculator practice.",
     examCalculation: 3,
@@ -1474,7 +1475,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     image: "",
     options: [
       "Impedance transformation always generates heat and lower rated components increase this effect",
-      "Components with higher ratings are more likely to be accurate in value, so have lower losses due to any mis - matching",
+      "Components with higher ratings are more likely to be accurate in value, so have lower losses due to any mis-matching",
       "The Q factor will multiply the voltages and currents present in the tuned circuits",
       "Tuned circuits will be less prone to drift if they are constructed from heavy duty components",
     ],
@@ -1483,7 +1484,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2h.4",
     examStrategy: 3,
-    examStrategyNotes: "Review explanation.",
+    examStrategyNotes: "Drill",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -1494,11 +1495,12 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     image: "",
     options: ["1 Ω", "1k Ω", "100k Ω", "10M Ω"],
     correct: 3,
-    explanation: `For a parallel tuned circuit consisting of, a capacitor and an inductor (which will always have some resistance), the Dynamic Resistance can be calculated from $R_D$ = L/CR.`,
+    explanation: `For a parallel tuned circuit consisting of, a capacitor and an inductor (which will always have some resistance), the Dynamic Resistance can be calculated from $R_D = \\frac{L}{C \\cdot R}$`,
     lookup: "See page(s) 27-28 of the Full Licence text book",
     syllabus: "2h.5",
     examStrategy: 4,
-    examStrategyNotes: "Dynamic Resistance.",
+    examStrategyNotes:
+      "Dynamic Resistance. See EX309. No calculator required, except for practice.",
     examCalculation: 2,
     exam_NOT: false,
   },
@@ -2272,9 +2274,9 @@ for CW or FM. That is why some cheap 2m external amplifiers are OK for FM, but n
       "Impedance matching",
     ],
     correct: 3,
-    explanation: ` Amplifiers need to be matched to the adjacent stages and variable capacitors 
-in a tuned tee network with an inductor (L1) are good for impedance matching – like in an antenna
-matching unit. ‘d’ is therefore the correct answer. `,
+    explanation: `Amplifiers need to be matched to the adjacent stages and variable capacitors 
+in a tuned tee network with an inductor (L1) are good for impedance matching (like in an antenna
+matching unit). ‘d’ is therefore the correct answer. `,
     lookup: "See page(s) 48-49 of the Full Licence text book",
     syllabus: "3f.3",
     examStrategy: 1,
