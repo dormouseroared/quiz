@@ -264,6 +264,11 @@ const OWN_QUESTIONS = [
     syllabus: "2d.1",
     reference: "BBDL FULL COURSE - Week03A - Tutorial Video - 01:18:38",
     tagged: true,
+    examStrategy: 2,
+    examStrategyNotes:
+      "It's that well known three letter shopping channel again.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "OWN QUESTIONS Q18",
@@ -275,6 +280,11 @@ const OWN_QUESTIONS = [
     explanation: `$$Q = V \\cdot C$$ From this we get V = Q/C and that becomes $\\frac{1}{10 \\times 10^{-3}} = 100V $ noting that $10,000 \\mu F$ is the same as $ 10mF $.`,
     lookup: "See page(s) 21 of the Full Licence text book",
     syllabus: "2d.1",
+    examStrategy: 2,
+    examStrategyNotes:
+      "What's that shopping channel beginning with Q called? Enter 10mF as | 10 | EXP | - | 3 |",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "OWN QUESTIONS Q19",

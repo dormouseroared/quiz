@@ -161,6 +161,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2e.4",
+    examStrategy: 2,
+    examStrategyNotes: "Drill...",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 2 Q13",
@@ -214,6 +218,7 @@ const RSGB_FULL_MOCK_2 = [
     examStrategyNotes: "Need some learning materials for this one",
     examCalculation: 0,
     exam_NOT: "false",
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 2 Q17",
@@ -312,6 +317,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3e.2",
+    examStrategy: 4,
+    examStrategyNotes: "More learning materials required: see Claude?",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 2 Q23",
@@ -343,6 +352,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3g.2",
+    examStrategy: 3,
+    examStrategyNotes: "Learning materials wanted: Claude?",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 2 Q25",
