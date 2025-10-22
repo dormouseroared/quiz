@@ -47,7 +47,7 @@ const RSGB_FULL_MOCK_2 = [
   {
     source: "RSGB Full Mock 2 Q4",
     question:
-      "An amateur holding the callsign MJ0JKL has permanently moved to Italy, which has implemented CEPT Recommendation T/R 61-01. MJ0JKL can:",
+      "An amateur holding the callsign MJ0JKL has <mark>permanently</mark> moved to Italy, which has implemented CEPT Recommendation T/R 61-01. MJ0JKL can:",
     options: [
       "operate under the CEPT agreement using the call I/M0JKL",
       "not operate as M0JKL under the CEPT agreement",
@@ -58,6 +58,12 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7h.1",
+    examStrategy: 1,
+    examStrategyNotes: `Hopefully you got the memo about the meaning of PERMANENT so 61-02 applies 
+    (new reciprocal licence with a new country callsign),
+     and can no longer use the temporary 61-01 arrangement.`,
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 2 Q5",
