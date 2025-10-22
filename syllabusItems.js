@@ -5210,7 +5210,7 @@ const syllabusItems = [
     key: "7g.4",
     level: "intermediate",
     title: "Satellites",
-    text: "Understand that satellites have a very limited power supply, derived from solar panels, and that excessive up- link power may result in wasteful and unfair use of the satellite’s power.",
+    text: "Understand that satellites have a very limited power supply, derived from solar panels, and that excessive up-link power may result in wasteful and unfair use of the satellite’s power.",
   },
   {
     key: "7h.1",
