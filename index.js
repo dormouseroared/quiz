@@ -366,8 +366,13 @@ function loadQuestion() {
   // So, now we pass the divs to cause MathJax to typeset them.
 
   mathjaxUpdate(
-    [questionDiv, optionsDiv, syllabusItemsDiv],
-    "loadQuestion with an array of questionDiv, optionsDiv and syllabusItemsDiv DOM objects",
+    [
+      questionDiv,
+      optionsDiv,
+      syllabusItemsDiv,
+      document.getElementById("strategy"),
+    ],
+    "loadQuestion: questionDiv, optionsDiv,syllabusItemsDiv, strategy",
   )
 
   // todo: show flashcards available for this question
@@ -853,6 +858,13 @@ searchForm.addEventListener("submit", function (event) {
         )
       })
       .slice(0, 20)
+    // after week 06 syllabus list for a given source
+  } else if (quizState.searchType === "afterWeek06Source") {
+    console.warn("afterWeek06 Source")
+    quizState.questionPack = W99quiz.filter((q) =>
+      q.source.includes(quizState.searchValue),
+    ).filter((q) => after_Week06_Syllabus_List.includes(q.syllabus))
+    // could not find the selected searchType
   } else {
     throw new Error("Search used is not yet available")
   }
