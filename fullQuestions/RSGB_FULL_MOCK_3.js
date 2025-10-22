@@ -126,7 +126,7 @@ const RSGB_FULL_MOCK_3 = [
     examStrategyNotes:
       "I have no idea how to do this at the moment so have a guess and move on.",
     examCalculation: 0,
-    Exam_NOT: false,
+    exam_NOT: false,
   },
   {
     source: "RSGB Full Mock 3 Q10",
