@@ -481,7 +481,7 @@ const EXAM_SECRETS_QUESTIONS = [
     options: ["doubles x2", "triples x3", "quadruples x4", "five times x5"],
     correct: 2,
     explanation:
-      "In this question, you are given some information that is outside the syllabus (E = Q x V). You should know that for a capacitor the charge Q = V x C. So energy E = V squared x C, hence double squared or 4 times. This increase of energy as the square of voltage has hazard and safety implications.",
+      "In this question, you are given some information that is outside the syllabus (E = Q x V). You should know that for a capacitor the charge $Q = V \\cdot C$. So energy $E = V^2 \\cdot C$, hence double squared or 4 times. This increase of energy as the square of voltage has hazard and safety implications.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.1",
     tagged: true,

@@ -788,7 +788,7 @@ const syllabusItems = [
     key: "2d.7",
     level: "full",
     title: "Reactive components",
-    text: "Understand the rise and fall of current in an RL circuit and that the time constant $ \\it T$ = $\\frac{L}{R}$",
+    text: "Understand the rise and fall of current in an RL circuit and that the time constant (Tau) $ \\it T$ = $\\frac{L}{R}$",
     weeks: ["3", "3A"],
     flashcards: [
       {
