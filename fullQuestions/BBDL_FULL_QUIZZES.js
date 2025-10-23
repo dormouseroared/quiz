@@ -2586,16 +2586,111 @@ circuits are included in frequency synthesisers to inhibit transmission of an �
     examStrategyNotes: "Include in flashcards",
     examCalculation: 0,
   },
-  //   {
-  //     source: "BBDL QUIZ WEEK06 Q00",
-  //     question: `can use manual line breaks now for overlong lines`,
-  //     image: "",
-  //     options: ["", "", "", ""],
-  //     correct: 9,
-  //     explanation: ``,
-  //     lookup: "See page(s) x of the Full Licence text book",
-  //     syllabus: "0",
-  //   },
+  {
+    source: "BBDL QUIZ WEEK06A Q04",
+    question: `A large value electrolytic capacitor is wired in 
+series with a resistor and 900V DC is applied 
+across the circuit. After 7 seconds the voltage 
+across the capacitor has reached 600V. 
+What will the approximate voltage be after 14 
+seconds?`,
+    image: "",
+    options: ["650V", "700V", "800V", "900V"],
+    correct: 2,
+    explanation: `This is a puzzle. From EX309 we have that the Time Constant, Tau, τ=CR
+    but we don't have any values. But, we do know that after 7 seconds we have 2/3 charge (600/900), 
+    so the Time Constant is 7 seconds. The insight is that, after the next 7 seconds (so t = 14s)
+    the charge will move 2/3 of the remaining 300V, so another 200V, making 800V.
+    `,
+    lookup: "Obsidian Time Constant and the google chart",
+    syllabus: "0",
+    reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
+    examStrategy: 4,
+    examStrategyNotes:
+      "This hasn't been covered anywhere else, or in the manual, but it's a very useful insight.",
+    examCalculation: 2,
+    tagged: true,
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q05",
+    question: `If a 15V 50Hz AC supply is connected across the 
+circuit shown in the diagram, what will the voltage 
+be across the resistor?`,
+    image: "images/bbdl-quizzes-week07-q05.png",
+    options: ["0V", "4.6V", "14.3V", "15V"],
+    correct: 2,
+    explanation: `
+    Many steps for 1 mark = a swine of a question! <hr>
+    1. Ohm’s Law V = I x R will work, but we don’t know I, so how to work it out? <hr>
+    2. Series circuit will have same I through R1 and C1 ($X_C$) which 
+    combine to give Z, if we can work out Z we can work out I. <hr>
+    3. To work out combined Z we need $X_C$, which we can work out. We have f (50Hz) and C (10µF). <br>
+    $X_C = \\frac{1}{2 \\cdot \\pi \\cdot f \\cdot C} = 318Ω$ <hr>
+    4. We now need the combined Z , so work it out…
+    $Z = \\sqrt{R^2 + X^2} = \\sqrt{1000^2 + 318^2} = 1049Ω$ <hr>
+    5.  I = V/R in DC circuit, I = V/Z in AC circuit <br>
+    I = V/Z = 15/1049 = 0.0143A <hr>
+    6. Question wants V across the resistor, we now know R and I, so we can use Ohm’s Law <br>
+    $V = I \\cdot R = 0.0143A \\times 1000Ω = 14.3V$ <hr>
+    `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "0",
+    reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
+    examStrategy: 5,
+    examStrategyNotes: "In quess mode, try to rule out a couple of answers.",
+    examCalculation: 4,
+    tagged: true,
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q21",
+    question: `When travelling to another country with your amateur radio equipment, 
+    which of the following is most relevant to check?`,
+    image: "",
+    options: [
+      "Suitable feeder plug adapters are available",
+      "PSU will work with the local mains voltage",
+      "DC fuses are appropriately rated for local use",
+      "Ofcom recognise the country as a member of the IARU ",
+    ],
+    correct: 1,
+    explanation: `
+    With the Key words being: ‘…most relevant…’ the implication is that we are looking for the best answer.
+    Also note, this question is towards the end of the paper, so is likely to be about safety.<hr>
+
+    ‘a’ – you do need appropriate feeder plugs but you would normally take them with you. 
+    <mark>relevant but is it MOST relevant?</mark> <hr>
+    ‘b’ – different countries have different mains voltages so it a major consideration that the PSU 
+    will work safely <mark>more relevant than feeder plugs</mark> <hr>
+    ‘c’ – the DC supply to your radio is the same no matter where you are (usually 13.8V) so there is 
+no such thing as local rating for that <mark>not relevant</mark> <hr>
+    ‘d’ – IARU is made up of national radio societies. Ofcom are the UK regulator and they have no 
+    interest in IARU, or what you do in other countries. <mark>not relevant</mark> <hr>
+    ‘b’ is the ‘most relevant’ correct answer <hr>
+    `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "0",
+    reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
+    examStrategy: 4,
+    examStrategyNotes:
+      "There is a lot to take in on this one. The explanation is well laid out.",
+    examCalculation: 0,
+    tagged: true,
+  },
+  // {
+  //   source: "BBDL QUIZ WEEK07 Q00",
+  //   question: `can use manual line breaks now for overlong lines`,
+  //   image: "",
+  //   options: ["", "", "", ""],
+  //   correct: 9,
+  //   explanation: ``,
+  //   lookup: "See page(s) x of the Full Licence Manual",
+  //   syllabus: "0",
+  // reference: "",
+  //   examStrategy: 1,
+  //   examStrategyNotes: ``,
+  //   examCalculation: 0,
+  //   tagged: false,
+  // },
 ]
 
 export default BBDL_FULL_QUIZZES
