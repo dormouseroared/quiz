@@ -218,7 +218,7 @@ const RSGB_FULL_MOCK_1 = [
     syllabus: "2e.6",
     examStrategy: 4,
     examStrategyNotes:
-      "See EX309 for REACTANCE of a capacitor, then Impedance in terms of Resistance and Reactance. Pythagoras is your friend! Actually a Pythoagorean guess might be good if all else fails.",
+      "See EX309 for REACTANCE of a capacitor, then Impedance in terms of Resistance and Reactance. Pythagoras is your friend! Actually a Pythagorean guess might be good if all else fails.",
     examCalculation: 2,
     exam_NOT: "",
   },
@@ -291,7 +291,10 @@ const RSGB_FULL_MOCK_1 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2i.3",
     examStrategy: 4,
-    examStrategyNotes: "Need some learning materials",
+    examStrategyNotes: `Will we ever understand how transistors work? In the meantime,
+    the Gate is used to control the path between Source and Drain, so this turns out to be a simple question to answer.
+    Just don't get too involved if it's not obvious. Have an educated guess!
+    `,
     examCalculation: 0,
     exam_NOT: false,
   },
