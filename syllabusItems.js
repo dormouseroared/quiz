@@ -3004,6 +3004,18 @@ const syllabusItems = [
     level: "full",
     title: "Receiver concepts",
     text: "Recall that the dynamic range of a receiver is the difference between the minimum discernible signal and the maximum signal without overload.",
+    flashcards: [
+      {
+        subTitle: "Dynamic range",
+        sequence: "000",
+        front: "What are the basic principles of dynamic range?",
+        frontImage: "",
+        back: "",
+        backImage: "week07-dynamic-range-1.png",
+        reference: "Week07 Tutorial Slides p21",
+        id: "4CJFURGF",
+      },
+    ],
   },
   {
     key: "3h.3",

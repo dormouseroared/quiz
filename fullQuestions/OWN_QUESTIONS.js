@@ -658,6 +658,25 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
     examCalculation: 2,
     exam_NOT: false,
   },
+  {
+    source: "OWN QUESTIONS Q40",
+    question: `If the weakest signal a receiver can hear is 0.2µV,
+    and the strongest signal the receiver can hear without distortion is 20mV, 
+    what is the dynamic range?
+    `,
+    image: "",
+    options: ["10dB", "100dB", "200dB", "20dB"],
+    correct: 1,
+    explanation: `1. $\\frac{V_{out}}{V_{in}} = \\frac{20 \\times 10^{-3}}{0.2 \\times 10^{-6}} = 10^5$ <br><hr>
+    2. For volts, the Dynamic Range is $20 \\cdot log \\frac{V_{out}}{V_{in}} = 20 \\times 5 = 100dB$ <br><hr>
+    `,
+    lookup: "See page(s) x of the Full Licence text book",
+    syllabus: "3h.3",
+    examStrategy: 3,
+    examStrategyNotes: "This is volts, not watts, so check EX309.",
+    examCalculation: 2,
+    exam_NOT: false,
+  },
   // {
   //   source: "OWN QUESTIONS Q39",
   //   question: ``,
