@@ -3142,18 +3142,51 @@ const syllabusItems = [
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Recall the operation of the RF amplifier.",
+    flashcards: [
+      {
+        subTitle: "Operation of RF amplifier",
+        sequence: "000",
+        front: "Can you recognise an RF amplifier, and it's main components",
+        back: "",
+        backImage: "week07-RF-amplifier.png",
+        reference: "week07 Tutorial Slides p24",
+        id: "44CLLJNG",
+      },
+    ],
   },
   {
     key: "3j.1",
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Understand that external RF preamplifiers do not always improve overall performance and will reduce the dynamic range.",
+    flashcards: [
+      {
+        subTitle: "Care is needed to use an RF pre-amplifier",
+        sequence: "010",
+        front: "Can you discuss placement options and potential pitfalls?",
+        back: "",
+        backImage: "week07-RF-pre-amplifiers.png",
+        reference: "week07 Tutorial Slides p25",
+        id: "44CLLJNG",
+      },
+    ],
   },
   {
     key: "3j.1",
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Understand why, at HF, this loss can be as much as the gain of the preamp but that at VHF and above a low noise pre-amp is beneficial.",
+    flashcards: [
+      {
+        subTitle: "Pre-amplifier with an FM signal",
+        sequence: "020",
+        front: "Explain how a pre-amplifier can help an FM signal",
+        back: "",
+        backImage: "week07-RF-pre-amplifiers-FM.png",
+        reference: "week07 Tutorial Slides p26",
+        id: "TQMNWCWN",
+      },
+    ],
   },
   {
     key: "3j.1",
