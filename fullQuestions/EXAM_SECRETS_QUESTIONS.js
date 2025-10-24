@@ -1672,7 +1672,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "3h.3",
     examStrategy: 2,
     examStrategyNotes: "Straightforward.",
-    examCalculation: 0,
+    examCalculation: 1,
     exam_NOT: false,
   },
   {
