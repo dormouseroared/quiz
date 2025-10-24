@@ -78,6 +78,8 @@ const section = [
 
 const abcd = ["A", "B", "C", "D"] // answer index as alpha
 
+const RECEIVERS_SYLLABUS_LIST = ["3h", "3i", "3j", "3k", "3l", "3m", "3n"]
+
 let findCards = null
 
 // ====================================
@@ -163,7 +165,8 @@ function findMissingSyllabusKeys(quizQuestions, syllabusItems) {
     .filter((key) => !syllabusKeys.includes(key))
   return missingKeys
 }
-//
+// with a list of target syllabus keys, choose a random question with
+// the matching syllabus from those available.
 function selectQuestions(targets, MCQ) {
   const output = targets.map((target) => {
     // console.log("target", index, target)
@@ -176,6 +179,28 @@ function selectQuestions(targets, MCQ) {
   return output
 }
 
+// select all questions where the syllabus key starts with one of the keys
+// in a named list
+function selectQuestionsForSyllabusList(list, MCQ) {
+  console.warn("selectQuestionsForSyllabusList:", list)
+  let targetList = null
+  if (list === "RECEIVERS") {
+    targetList = RECEIVERS_SYLLABUS_LIST
+    console.log(targetList)
+  } else {
+    console.warn("list is not supported")
+  }
+
+  // without flatMap the result is an array of arrays
+  const bigResult = targetList.flatMap((target) => {
+    const result2 = MCQ.filter((q) => q.syllabus.startsWith(target))
+    return result2
+  })
+
+  console.warn(bigResult.length)
+
+  return bigResult
+}
 //
 // ====================================
 // 6. VALIDATION AND SETUP FUNCTIONS
@@ -864,6 +889,12 @@ searchForm.addEventListener("submit", function (event) {
     quizState.questionPack = W99quiz.filter((q) =>
       q.source.includes(quizState.searchValue),
     ).filter((q) => after_Week06_Syllabus_List.includes(q.syllabus))
+    // syllabusList
+  } else if (quizState.searchType === "syllabusList") {
+    quizState.questionPack = selectQuestionsForSyllabusList(
+      quizState.searchValue,
+      quizState.randomQuestions,
+    )
     // could not find the selected searchType
   } else {
     throw new Error("Search used is not yet available")
