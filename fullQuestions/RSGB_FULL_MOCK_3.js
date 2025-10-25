@@ -418,11 +418,13 @@ const RSGB_FULL_MOCK_3 = [
       "A receiver is being designed to receive a medium wave broadcast on 1.000MHz. The local oscillator is set to 1.465MHz. For the same IF, what other frequency could the local oscillator be set to?",
     options: ["1000kHz", "535kHz", "1465kHz", "465kHz"],
     correct: 1,
-    explanation: "",
+    explanation:
+      "The potential answers are reducing the options created by SUM and DIFFERENCE outcomes.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.3",
     examStrategy: 4,
-    examStrategyNotes: "Learning material needed",
+    examStrategyNotes:
+      "Fairly straightforward. Look at the IF implied by FIRST_LO MINUS WANTED, then work out WANTED MINUS SECOND_LO for the same IF.",
     examCalculation: 1,
     exam_NOT: false,
   },
