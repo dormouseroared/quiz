@@ -1999,7 +1999,9 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3n.2",
     examStrategy: 5,
-    examStrategyNotes: "more learning materials",
+    examStrategyNotes: `In exam notes draw a diagram showing A & B as inputs and C as output, then C=A+B (SUM) and C=A-B (DIFFERENCE). 
+    Then, as long as two are known, the third can be worked out. Try that here. There will be two answers and there is some skill in working out which one is an amateur radio band. Actually, there are four possible answers given, so that should be straightforward.
+    `,
     examCalculation: 0,
     exam_NOT: false,
   },
