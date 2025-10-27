@@ -2797,7 +2797,7 @@ no such thing as local rating for that <mark>not relevant</mark> <hr>
     question: `In the diagram, which component, or components, tune the circuit to the appropriate frequency?`,
     image: "images/bbdl-quizzes-week07-q07.png",
     options: ["Only Ce", "Only C1", "Only C2", "C1 and C2"],
-    correct: 9,
+    correct: 3,
     explanation: ``,
     lookup: "See page(s) x of the Full Licence Manual",
     syllabus: "0",
