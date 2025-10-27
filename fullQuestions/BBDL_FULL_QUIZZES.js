@@ -2616,7 +2616,7 @@ seconds?`,
     question: `If a 15V 50Hz AC supply is connected across the 
 circuit shown in the diagram, what will the voltage 
 be across the resistor?`,
-    image: "images/bbdl-quizzes-week07-q05.png",
+    image: "images/bbdl-quizzes-week06a-q05.png",
     options: ["0V", "4.6V", "14.3V", "15V"],
     correct: 2,
     explanation: `
