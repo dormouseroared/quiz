@@ -3,6 +3,10 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+.showOutline {
+    outline: 1px solid red;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,14 +15,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 .quiz-box {
     background: #2a2a40;
-    padding: 3px;
+    padding: 10px;
     border-radius: 16px;
-    width: 90%;
+    width: 98%;
     max-width: 500px;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     text-align: left;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
@@ -38,16 +46,6 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-}
-
-#next-btn {
-    padding: 10px 20px;
-    border: none;
-    background: #4b6cb7;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
 }
 
 #timer {
@@ -93,20 +91,15 @@ body {
     font-size: 12px;
 }
 
-#explanation-btn {
-    padding: 10px 20px;
-    border: none;
-    background: #4b6cb7;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
 
 #searchType {
-    padding: 10px 5px;
+    /* Dropdown: natural size, can shrink if desperate */
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    min-width: 85px;
+    padding: 10px 4px;
     border: none;
     /* background: #4b6cb7; */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -123,7 +116,13 @@ body {
     padding: 8px 10px;
 }
 #searchValue {
-    padding: 10px 5px;
+    /* Input: grows to fill space, also shrinks when needed */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    min-width: 70px;
+    padding: 10px 4px;
     border: none;
     /* background: #4b6cb7; */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -217,7 +216,10 @@ ul {
     color: yellow;
 }
 
-#syllabus-btn {
+#syllabus-btn,
+#explanation-btn,
+#flashcard-btn,
+#next-btn {
     padding: 10px 20px;
     border: none;
     background: #4b6cb7;
@@ -227,23 +229,19 @@ ul {
     font-size: 16px;
 }
 
-#syllabus-btn:hover {
-    background: #0d3594;
-}
-
-#explanation-btn:hover {
-    background: #0d3594;
-}
-
+#syllabus-btn:hover,
+#explanation-btn:hover,
+#flashcard-btn:hover,
 #next-btn:hover {
     background: #0d3594;
 }
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding-bottom: 10px;
 }
 
@@ -252,19 +250,6 @@ ul {
     font-size: smaller;
 }
 
-#flashcard-btn {
-    padding: 10px 20px;
-    border: none;
-    background: #4b6cb7;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#flashcard-btn:hover {
-    background: #0d3594;
-}
 /* paragraphs and h2 in .result get styled, currently the same but */
 /* could be different, using the id here gets a specificity score of 100 plus */
 
@@ -297,7 +282,12 @@ ul {
 
 }
 .searchButton {
-    padding: 10px 20px;
+    /* Button: fixedsize, never grows or shrinks */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    padding: 10px 10px;
     border: none;
     /* background: #4b6cb7; */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -325,19 +315,20 @@ ul {
     display: flex;
     gap: 3px;
 }
-#searchType {
-    flex: 0;
-    /* Let it size naturally based on its content */
-    /* No flex property needed - it stays at its natural width */
+
+.btn-full {
+    display:inline;
 }
 
-#searchValue {
-    flex: 1;
-    /* This is the key - it grows to fill available space */
+.btn-short {
+    display:none;
 }
 
-.searchForm button {
-    flex: 0;
-    /* Like the dropdown, it sizes naturally based on its content */
-    /* No flex property needed */
+@media (max-width: 480px) {
+    .btn-full {
+        display: none;
+    }
+    .btn-short {
+        display: inline;
+    }
 }

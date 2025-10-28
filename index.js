@@ -519,10 +519,10 @@ function showExamStrategy(q) {
     const emojiBar = getStrategyEmoji(q.examStrategy)
 
     // Build the display conditionally
-    let display = `exam strategy: <span style="font-size: 26px; letter-spacing: -4px;">${emojiBar}</span>`
+    let display = `strategy: <span style="font-size: 26px; letter-spacing: -4px;">${emojiBar}</span>`
 
     if (q.examCalculation && q.examCalculation > 0) {
-      display += ` calculation: `
+      display += ` calc: `
 
       display += `<span style="font-size: 26px; letter-spacing: -4px;">${getStrategyEmoji(q.examCalculation)}</span>`
     }
@@ -553,6 +553,7 @@ function showExamStrategy(q) {
     strategy.style.cssText,
   )
 }
+// THIS FUNCTION IS AN EARLY VERSION AND IS NOT USED
 function showExamStrategy2(q) {
   const strategy = document.getElementById("strategy")
   strategy.style.fontSize = "12px"
