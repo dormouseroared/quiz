@@ -64,7 +64,7 @@
 
             <input id="searchValue" title="searchValue" type="text" placeholder="Enter search value" />
 
-            <button class="searchButton" type="submit">Search</button>
+            <button class="searchButton" type="submit">Go</button>
         </form>
 
         <!-- <div id="quizResults"></div> -->
@@ -122,9 +122,18 @@
             </div>
         </div>
         <div class="buttons">
-            <button id="syllabus-btn">Syllabus</button>
-            <button id="explanation-btn">Explanation</button>
-            <button id="flashcard-btn">Flashcards</button>
+            <button id="syllabus-btn">
+                <span class="btn-full">Syllabus</span>
+                <span class="btn-short">Syll</span>
+            </button>
+            <button id="explanation-btn">
+                <span class="btn-full">Explanation</span>
+                <span class="btn-short">Expl</span>
+            </button>
+            <button id="flashcard-btn">
+                <span class="btn-full">Flashcards</span>
+                <span class="btn-short">Flash</span>
+            </button>
             <button id="next-btn">Next</button>
         </div>
         <div id="syllabusItems"></div>
@@ -134,7 +143,7 @@
         <div id="flashcards"></div>
         <div id="diagramQuiz"></div>
         <!-- TODO: increment version -->
-        <div id="version">Quiz App version 8.0</div>
+        <div id="version">Quiz App version 9.0</div>
     </div>
 </body>
 <script>
