@@ -1,5 +1,46 @@
 export const diagramQuizCards = [
   {
+    title: "Intermediate Frequency Transformer Coupling",
+    imagePath:
+      "diagramQuizImages/week08-intermediate-frequency-transformer-b.png",
+    obfuscationLevel: 1,
+    boxes: [
+      {
+        id: 1761842572139,
+        x: 380,
+        y: 600,
+        width: 450,
+        height: 34,
+        label: "single tuned circuit",
+      },
+      {
+        id: 1761842603815,
+        x: 380,
+        y: 640,
+        width: 450,
+        height: 32,
+        label: "over coupled",
+      },
+      {
+        id: 1761842626903,
+        x: 380,
+        y: 680,
+        width: 450,
+        height: 35,
+        label: "critically coupled",
+      },
+      {
+        id: 1761842648062,
+        x: 380,
+        y: 720,
+        width: 450,
+        height: 31,
+        label: "under coupled",
+      },
+    ],
+    createdAt: "2025-10-30T16:44:25.531Z",
+  },
+  {
     title: "FM transmitter with Frequency Multiplier",
     imagePath: "diagramQuizImages/FM transmitter with frequency multiplier.png",
     obfuscationLevel: 1.0,
