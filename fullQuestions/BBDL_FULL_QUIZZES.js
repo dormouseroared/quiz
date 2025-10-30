@@ -836,7 +836,7 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) 16-17 of the Full Licence text book",
     syllabus: "8e.1",
     examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategyNotes: "Drill!",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -966,7 +966,7 @@ const BBDL_FULL_QUIZZES = [
     syllabus: "2b.1",
     examStrategy: 2,
     examStrategyNotes:
-      "The 1k resistor is large but not large enough to be ignored!",
+      "The 1k resistor is large but not large enough to be ignored! This one seems resistant to estimating, so use the CALCULATOR!",
     examCalculation: 2,
     exam_NOT: false,
   },
