@@ -3118,6 +3118,19 @@ const syllabusItems = [
     level: "full",
     title: "Superheterodyne concepts",
     text: "Identify critical and over-coupled response curves.",
+    flashcards: [
+      {
+        subTitle: "Intermediate Frequency Transformer",
+        sequence: "000",
+        front:
+          "Identify these coupling curves for an intermediate frequency transformer:",
+        frontImage: "week08-intermediate-frequency-transformer-a.png",
+        back: "",
+        backImage: "week08-intermediate-frequency-transformer-b.png",
+        reference: "Week08 Tutorial Slides p6",
+        id: "22U8GX7A",
+      },
+    ],
   },
   {
     key: "3i.4",

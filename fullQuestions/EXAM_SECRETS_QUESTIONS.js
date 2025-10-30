@@ -1791,11 +1791,11 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 1,
     explanation:
-      "Over-coupling a tuned circuit means wider shoulders and a modest dip in the centre of the frequency response curve. That widens the acceptance bandwidth at -3dB (or -6dB) without having much effect on the -60dB bandwidth. That can mean the response is closer matched to the frequenbcy occupancy of a wanted signal, without affecting the rejection of nearby unwanted signals.",
+      "Over-coupling a tuned circuit means wider shoulders and a modest dip in the centre of the frequency response curve. That widens the acceptance bandwidth at -3dB (or -6dB) without having much effect on the -60dB bandwidth. That can mean the response is closer matched to the frequency occupancy of a wanted signal, without affecting the rejection of nearby unwanted signals.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.4",
     examStrategy: 4,
-    examStrategyNotes: "Keep an eye on this one. Not covered yet.",
+    examStrategyNotes: "Keep an eye on this one.",
     examCalculation: 0,
     exam_NOT: false,
   },

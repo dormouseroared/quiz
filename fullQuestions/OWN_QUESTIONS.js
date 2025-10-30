@@ -677,6 +677,29 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
     examCalculation: 2,
     exam_NOT: false,
   },
+  {
+    source: "OWN QUESTIONS Q41",
+    question: `A coupling transformer is used in an Intermediate Frequency amplifier. What term is given to the thickest red line?`,
+    image: "images/own-q41.png",
+    options: [
+      "Single tuned circuit",
+      "Over Coupled",
+      "Critically Coupled",
+      "Under Coupled",
+    ],
+    correct: 1,
+    explanation: `Over Coupled refers to the double peak, in which the Q selectivity is not optimum. Compare this to the next red curve which
+    shows Critically Coupled, and then Undercoupled. Careful design is needed to ensure the correct coupling between the primary and secondary windings.
+    Having a tuned circuit in both the primary and secondary side improves the selectivity.`,
+    lookup: "See page(s) x of the Full Licence text book",
+    syllabus: "3i.4",
+    reference: "week08 p6 IFT coupling",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Just got to drill this one. Will try to do a flashcard for this one and also a diagram with labels.",
+    examCalculation: 0,
+    exam_NOT: false,
+  },
   // {
   //   source: "OWN QUESTIONS Q39",
   //   question: ``,
