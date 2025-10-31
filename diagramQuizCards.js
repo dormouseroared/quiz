@@ -342,7 +342,7 @@ export const diagramQuizCards = [
         y: 452.58331298828125,
         width: 302,
         height: 114,
-        label: "Trimmer capacitors and coils to match the input",
+        label: "Trimmer capacitors and coils to match the input impedance",
       },
       {
         id: 1760203052708,
