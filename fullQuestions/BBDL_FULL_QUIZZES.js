@@ -2915,9 +2915,14 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "Amplitude, and/or frequency/phase modulation",
     ],
     correct: 3,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: ` It almost seems too simple to be true, but yes, all amateur signals consist of 
+changes in the amplitude or frequency / phase of a carrier. Sometimes the carrier is purposely not 
+transmitted as in SSB, but a carrier was needed to create the modulation. Note here that phase and 
+frequency modulation are very similar and often the only difference is the way the modulation was 
+created, but there can be subtle differences. This fact allows all forms of modulation to be generated, 
+and demodulated, in software.`,
+    lookup: "See page(s) 67-68 of the Full Licence Manual",
+    syllabus: "3m.1",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Just have to think it through`,
@@ -2935,9 +2940,13 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "The amplitude and peak deviation of the signal",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `In this question we have parachuted into the understanding of signals that are 
+to be found in software defined radios (SDR). A phasor is a way of displaying the amplitude (length of the 
+phasor), and phase angle of the signal (the circular angle from a vertical or horizontal reference). If you 
+wish to delve a little deeper and actually see a rotating phasor, please spend a few minutes looking at 
+this oscilloscope setup: https://www.youtube.com/watch?v=5GGD99Qi1PA `,
+    lookup: "See page(s) 67-68 of the Full Licence Manual",
+    syllabus: "3m.1",
     reference: "",
     examStrategy: 4,
     examStrategyNotes: `More learning materials needed.`,
@@ -2955,10 +2964,15 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "More accurate stabilisation of a phase locked loop frequency synthesiser",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
+    explanation: ` The words “in-phase and quadrature signals” are a good guide to the fact that 
+we are describing a Software Defined Radio (SDR) receiver. ‘b’ doesn’t sound like any of the 
+demodulators covered in the syllabus, so not that one. ’c’ may be possible with an SDR but it would 
+require two receivers to be running and is a feature on some analogue radios, so only a ‘maybe’ at best 
+and ‘d’ is just not true; I and Q play no part in the PLL block diagram. Only ‘a’ includes the critical word 
+‘digital’ and is 100% correct.`,
+    lookup: "See page(s) 67-68 of the Full Licence Manual",
     syllabus: "0",
-    reference: "",
+    reference: "3m.2",
     examStrategy: 2,
     examStrategyNotes: `Drill.`,
     examCalculation: 0,
@@ -2976,9 +2990,12 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "Split the signal path into two and include a Q filter in one of the new pathways",
     ],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: ` The first building brick of an SDR receiver is the creation of in-phase and 
+quadrature signals. This can be done in a number of ways; using two local oscillators to produce I and Q 
+signals is one way. This is captured in the description in ‘b’. Answer ’a’ is not correct, because a single LO 
+would not produce an I and a Q signal, so not ‘a’. ‘c’ and ’d’ are just plain wrong. `,
+    lookup: "See page(s) 67-68 of the Full Licence Manual",
+    syllabus: "3m.2",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Drill`,
@@ -2996,13 +3013,18 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "The carrier insertion oscillator",
     ],
     correct: 2,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `If you have a transceiver yourself, you will know that the antenna socket is used 
+on both transmit and receive, so not ’a’. There is generally only one tuning knob to tune the local 
+oscillator, so not ‘b’. AGC is a receiver feature, not to be confused with ALC which is a transmitter 
+feature, so ‘c’ looks like a good answer. Finally, the same CIO is often used to drive the SSB generator and 
+the Product Detector, so not ‘d’. `,
+    lookup: "See page(s) 50 of the Full Licence Manual",
+    syllabus: "3n.1",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Drill.`,
     examCalculation: 0,
+    exam_NOT: true,
     tagged: false,
   },
   {
@@ -3016,9 +3038,12 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "A type of receiving antenna which matches 50 Ω coax at all HF frequencies",
     ],
     correct: 2,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `A transverter is a combination of a receive converter and a transmit converter 
+to allow a transceiver to be used on a different band. ‘a’ would be a voltage inverter, ‘b’, a transponder 
+and ‘d’ could be a dummy load, or one of those antennas that claims to have a flat SWR across the HF 
+bands. That means that ‘c’ is the correct answer. `,
+    lookup: "See page(s) 66 of the Full Licence Manual",
+    syllabus: "3n.2",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Drill`,
@@ -3034,9 +3059,11 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
     image: "",
     options: ["70MHz", "28MHz", "42MHz", "4MHz"],
     correct: 2,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `A simple mixer sum and difference question. The 4m band is approximately 
+70MHz so the crystal will be either 70 plus 28 (the sum) = 98MHz, or 70 minus 28 (the difference) = 
+42MHz. 98MHz is not an option given, which makes ‘c’ the correct answer. `,
+    lookup: "See page(s) 66 of the Full Licence Manual",
+    syllabus: "3n.2",
     reference: "",
     examStrategy: 4,
     examStrategyNotes: `Fairly straightforward.`,
@@ -3052,12 +3079,15 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
     image: "",
     options: ["2.08m", "1.04m", "0.52m", "0.35m"],
     correct: 3,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `To find a quarter wave length of feeder you must divide 300 by the frequency 
+to get the wavelength and then divide by 4. So, 300/144 = 2.08 and 2.08/4 = 0.52m. To make a physical 
+quarter wave length feeder we must take the velocity factor into account, which is generally taken as 
+0.67 for standard coax. So 0.52 x 0.67 = 0.35m making ‘d’ the correct answer.`,
+    lookup: "See page(s) 72 of the Full Licence Manual",
+    syllabus: "4a.3",
     reference: "",
     examStrategy: 4,
-    examStrategyNotes: `Follow the steps.`,
+    examStrategyNotes: `Follow the steps. A flashcard or two would be useful.`,
     examCalculation: 3,
     tagged: false,
   },
@@ -3072,9 +3102,11 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "an ATU",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `The diagram clearly shows a transformer balun with 6 turns 
+on both primary and secondary, albeit the secondary is centre tapped. So, if the turns are the same, the 
+impedance is the same on both sides, or 1:1.`,
+    lookup: "See page(s) 69-70 of the Full Licence Manual",
+    syllabus: "4b.1",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Study the types of balun. Perhaps a composite picture of them all in the diagram editor.`,
@@ -3092,9 +3124,12 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "Velocity factor means that a 1/4 λ of feeder will be longer than a true 1/4 λ",
     ],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: ` If coax never radiated, we would not need baluns, so ‘a’ is wrong. ‘b’ kind of 
+backs that up and looks like a potential correct answer. ‘c’ is wrong, RF goes slower in solids than in free 
+space, and ‘d’ is equally wrong as physical lengths are always shorter than the calculated ‘electrical’ 
+length. `,
+    lookup: "See page(s) 69-70 of the Full Licence Manual",
+    syllabus: "4b.1",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Narrow it down...`,
@@ -3112,9 +3147,13 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "Aliases",
     ],
     correct: 3,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `ADC stands for Analogue to Digital Converter which are capable of producing 
+unintended signals if the sampling rate is below the Nyquist rate or twice the wanted frequency. Those 
+unintended signals are known as aliases and we use anti-alias filters to prevent them happening. Options
+‘a’, ‘b’ and ‘c’ are all transmitter interference problems, more to do with analogue circuits, so not correct 
+here. `,
+    lookup: "See page(s) 39-40 of the Full Licence Manual",
+    syllabus: "2f.1",
     reference: "",
     examStrategy: 1,
     examStrategyNotes: `Drill`,
@@ -3132,9 +3171,13 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "Digitize complex analogue waveforms to enable them to be processed in software",
     ],
     correct: 2,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `‘a’ sounds like mains transformer but that wouldn’t be found in a switch mode 
+power supply, so wrong on two counts. SDR-based transmitters have no different requirements for 
+antenna system matching to analogue transmitters; the power amplifiers are all analogue, so ‘b’ is 
+nonsense. ‘c’ is pretty much the textbook/syllabus definition of the Fourier Transform, so looks good. ‘d’ 
+is the job of the Analogue to Digital Convertor (ADC), so not that one.`,
+    lookup: "See page(s) 40 of the Full Licence Manual",
+    syllabus: "2f.2",
     reference: "",
     examStrategy: 3,
     examStrategyNotes: `Always difficult with some similar answers.`,
@@ -3152,12 +3195,13 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "A critically coupled IF transformer",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `The ‘double peak’ curve described in the question is a classic indicator of an 
+over coupled IFT, making ‘a’ the correct answer.`,
+    lookup: "See page(s) 61-62 of the Full Licence Manual",
+    syllabus: "3i.4",
     reference: "",
     examStrategy: 2,
-    examStrategyNotes: `Preparation is key`,
+    examStrategyNotes: `Preparation is key. IFT is an Intermediate Frequency Transformer.`,
     examCalculation: 0,
     tagged: false,
   },
@@ -3172,9 +3216,12 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "An FM demodulator, also known as a Ratio Detector",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `The single diode and absence of a CIO or BFO suggests that this an AM 
+detector, aka an envelope detector, making ‘a’ the answer to go for. It is worth remembering that the 
+terms demodulator and detector mean much the same thing, in receivers; the demodulation is carried 
+out by different detectors, depending on the mode.`,
+    lookup: "See page(s) 62-64 of the Full Licence Manual",
+    syllabus: "3k.1",
     reference: "",
     examStrategy: 4,
     examStrategyNotes: `Another composite of the options using diagram editor...`,
@@ -3192,9 +3239,14 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
       "the RF power amplifier",
     ],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    explanation: `AGC alters the gain of the receiver to maintain a constant level of audio output 
+and feeding back to the local oscillator or the demodulator will not help achieve the aim, ruling out ‘a’ 
+and ‘c’. The RF power amplifier is a transmitter stage. So not relevant to AGC in a receiver. The only one 
+that fits here is ‘b’, which is the correct answer. Most of the receiver amplification takes place in the IF 
+amplifier stages so changing the IF gain will have the most effect in maintaining a constant level of audio 
+output, but it is not unknown for the AGC to also control the RF amplifier gain. `,
+    lookup: "See page(s) 62-63 of the Full Licence Manual",
+    syllabus: "3l.1",
     reference: "",
     examStrategy: 2,
     examStrategyNotes: `Drill`,
@@ -3214,6 +3266,7 @@ level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct�
   //   examStrategy: 1,
   //   examStrategyNotes: ``,
   //   examCalculation: 0,
+  //   exam_NOT: false,
   //   tagged: false,
   // },
 ]
