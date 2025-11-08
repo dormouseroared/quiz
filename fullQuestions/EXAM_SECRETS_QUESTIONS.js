@@ -2067,9 +2067,9 @@ const EXAM_SECRETS_QUESTIONS = [
       "In free space ƛ = 300/14 = 21.4m so ƛ/2 = 10.7m... However, it is not quite free space as there is an antenna (a wire conductor) there. The normal correction factor is to reduce the length by 5%, which gives 10.2m...",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4d.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 2,
+    examStrategyNotes: "Do not forget the correction factor!",
+    examCalculation: 2,
     exam_NOT: false,
   },
   {
@@ -2101,12 +2101,13 @@ const EXAM_SECRETS_QUESTIONS = [
     options: ["1.5:1", "2:1", "3:1", "6:1"],
     correct: 3,
     explanation:
-      "The question needs to be read carefully. It says half the power is reflected. That is the reflected voltage (and current) are reduced by a factor of (1/√2) or to 70.7% of the incident value. The SWR is given by Vmax/Vmin = (Vi + Vr)/(Vi - Vr) = (1 + 0.707)/(1 - 0.707) where Vi is the incident voltage and Vr is the reflected voltage. That works out as almost 6:1",
+      "The question needs to be read carefully. It says half the power is reflected. That is, the reflected voltage (and current) are reduced by a factor of (1/√2) or to 70.7% of the incident value. With $P_R = 0.5 \\times P_I$ and hence ${V_R}^2 = 0.707^2 \\times {V_I}^2$, the SWR is given by $\\frac{V_{max}}{V_{min}}$ = $\\frac{V_I + V_R}{V_I - V_R}$ = $\\frac{1 + 0.707}{1 - 0.707}$ where $V_I$ is the Incident or Forward voltage and $V_R$ is the Reflected voltage. That works out at 5.83 which is almost 6:1",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4e.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 5,
+    examStrategyNotes:
+      "This involves the relationship between voltage and power...",
+    examCalculation: 4,
     exam_NOT: false,
   },
   {
@@ -2171,12 +2172,12 @@ const EXAM_SECRETS_QUESTIONS = [
   {
     source: "Exam Secrets FULL [Feeders and Antennas] 4F2-1",
     question:
-      "The antennas in the drawing each gave a feed impedance of 50Ω, but this needs to be transformed to 100Ω, so the two antennas can be fed in parallel. What should the characteristic impedance of the matching tails be to achieve this?",
+      "The antennas in the drawing each have a feed impedance of 50Ω, but this needs to be transformed to 100Ω, so the two antennas can be fed in parallel. What should the characteristic impedance of the matching tails be to achieve this?",
     image: "images/secrets 4F2-1.png",
     options: ["50Ω", "70Ω", "75Ω", "100Ω"],
     correct: 1,
     explanation:
-      "This is a ƛ/4 coax transformer question. The formula, from the Reference Data booklet, is Z0 squared = Zin x Zout.",
+      "This is a ƛ/4 coax transformer question. The formula, from the Reference Data booklet, is ${Z_o}^2 = Z_{in}\\times Z_{out}$. We are given $Z_{in}$ as 50Ω and $Z_{out}$ as 100Ω, so ${Z_0}^2 = 5000$. That gives $Z_0$ as $\\sqrt{5000}$ or 70Ω.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4f.2",
     examStrategy: 1,

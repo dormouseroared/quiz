@@ -787,7 +787,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "Silicon diodes have a typical forward voltage drop of about 0.7V at room temperature and normal currents",
     lookup: "See diode characteristics and voltage drops",
-    syllabus: "4a",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q02",
@@ -804,7 +804,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "For normal amplifier operation (active region), the B-E junction is forward biased and the C-B junction is reverse biased",
     lookup: "See transistor biasing and operating regions",
-    syllabus: "4b",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q03",
@@ -816,7 +816,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "Typical small signal transistors have current gains (β or hfe) in the range of 50 to 500",
     lookup: "See transistor current gain specifications",
-    syllabus: "4b",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q04",
@@ -833,7 +833,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "Zener diodes provide a stable voltage reference when reverse biased above their Zener voltage (5.1V in this case)",
     lookup: "See Zener diode operation and voltage regulation",
-    syllabus: "4a",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q05",
@@ -850,7 +850,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "Common base configuration provides voltage gain but current gain less than 1 (no current gain)",
     lookup: "See transistor configurations and their characteristics",
-    syllabus: "4b",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q06",
@@ -867,7 +867,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "MOSFETs have extremely high input impedance (gate input) compared to the base current required by bipolar transistors",
     lookup: "See MOSFET vs bipolar transistor comparison",
-    syllabus: "4c",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q07",
@@ -879,7 +879,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "R = (Vsupply - VLED)/ILED = (12 - 2.1)/0.02 = 9.9/0.02 = 495Ω",
     lookup: "See LED current limiting resistor calculations",
-    syllabus: "4a",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q08",
@@ -896,7 +896,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "NTC (Negative Temperature Coefficient) thermistors decrease in resistance as temperature increases",
     lookup: "See thermistor types and temperature characteristics",
-    syllabus: "4a",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q09",
@@ -908,7 +908,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "Class A amplifiers are biased so the transistor conducts for 100% of the input signal cycle",
     lookup: "See amplifier classes and conduction angles",
-    syllabus: "4d",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ SEMICONDUCTORS Q10",
@@ -925,7 +925,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "As temperature increases, collector current increases, causing more heating, which increases current further - positive thermal feedback",
     lookup: "See thermal runaway and power transistor protection",
-    syllabus: "4b",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ TRANSFORMERS Q01",
@@ -1120,7 +1120,7 @@ const CLAUDE_QUIZ = [
     explanation:
       "Series current = (18-12)/330 = 18.2mA. Load current = Total current - Zener current = 18.2 - 10 = 8.2mA",
     lookup: "See Zener diode regulator calculations",
-    syllabus: "6b",
+    syllabus: "0",
   },
   {
     source: "CLAUDE QUIZ POWER SUPPLIES Q06",
