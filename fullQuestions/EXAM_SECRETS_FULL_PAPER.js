@@ -516,14 +516,15 @@ const EXAM_SECRETS_FULL_PAPER = [
   {
     source: "Exam Secrets FULL PAPER Q31",
     question:
-      "A two way splitter for a couple of stacked 2m antennas requires two lengths of solid polythen coax ƛ / 4 long. These should be cut to:",
+      "A two way splitter for a couple of stacked 2m antennas requires two lengths of solid polythene coax ƛ / 4 long. These should be cut to:",
     image: "",
     options: ["104cm", "52cm", "35cm", "26cm"],
     correct: 2,
     explanation:
       "Don't understand why a quarter of 2m is 51.7cm, so see this answer on secrets page 152.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "4",
+    syllabus: "4e.3",
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q32",
