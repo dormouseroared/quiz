@@ -3953,16 +3953,6 @@ const syllabusItems = [
         reference: "week09 tutorial slides p34",
         id: "JVG013LL",
       },
-      {
-        subTitle: "",
-        sequence: "000",
-        front: "",
-        frontImage: "",
-        back: "",
-        backImage: "",
-        reference: "",
-        id: "",
-      },
     ],
   },
   {
