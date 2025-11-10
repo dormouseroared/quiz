@@ -3253,8 +3253,246 @@ output, but it is not unknown for the AGC to also control the RF amplifier gain.
     examCalculation: 0,
     tagged: false,
   },
+  {
+    source: "BBDL QUIZ WEEK09 Q01",
+    question: `If you make a half-wavelength dipole for use on 14.200MHz, you can expect each side of the 
+dipole to be:`,
+    image: "",
+    options: ["3.53m", "5.02m", "5.28m", "5.55m"],
+    correct: 1,
+    explanation: `Use λ = 300/MHz to find 1λ, halve it to give ½ λ then multiply by 
+0.95, to allow for the end correction factor, then halve again to give dimension for one 
+half of the dipole. That should show that B is the correct answer.`,
+    lookup: "See page(s) 72 of the Full Licence Manual",
+    syllabus: "4d.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: `Just follow the steps.`,
+    examCalculation: 1,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q02",
+    question: `The passive elements in a Yagi antenna will:`,
+    image: "",
+    options: [
+      "Be longer than ½ λ",
+      "Cause the coax feeder to radiate",
+      "Increase the feedpoint impedance of the driven element",
+      "Decrease the feedpoint impedance of the driven element",
+    ],
+    correct: 3,
+    explanation: `Only the reflector(s) will be longer than the driven element, so 
+not ‘a’. There is nothing to suggest the additional elements will cause the feeder to 
+radiate, so not ‘b’. So, do they increase or decrease the feedpoint impedance? It is a 
+decrease and using a standard dipole as the driven element of a Yagi will result in a 
+feedpoint impedance of about 12Ω. So ‘d’ is the correct answer.`,
+    lookup: "See page(s) 74 of the Full Licence Manual",
+    syllabus: "4d.2",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: `Just part of the Yagi drilling for week09.`,
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q03",
+    question: `In a half-wave dipole, the RF current flowing in an antenna is at a maximum:`,
+    image: "",
+    options: [
+      "At the feedpoint of the antenna",
+      "At the ends of the antenna elements",
+      "When the voltage is also at a maximum",
+      "When there is a high SWR",
+    ],
+    correct: 0,
+    explanation: `It should be fairly obvious that the current stops at the end of a 
+half-wave dipole – it cannot flow any further, so ‘b’ is ruled out. The ends of the antenna 
+can be seen as a very high impedance because there is a high potential difference 
+(voltage) and low (no) current. In the centre of the antenna the impedance is quite low, 
+because there is high current, and low potential difference (voltage). It is worth noting 
+that the current and the voltage are 90 degrees out of phase making ‘c’ wrong. When 
+there is a high SWR, you may get very little RF flowing in the antenna as most of the 
+power will be reflected back down the feeder, so not ‘d’. `,
+    lookup: "See page(s) 72 of the Full Licence Manual",
+    syllabus: "4d.2",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: `Just some drilling to do in week09.`,
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q04",
+    question: `If the forward power on a feeder results in a reading of 666 volts and the 
+reflected voltage is 222 volts, what is the SWR?`,
+    image: "images/bbdl-quizzes-week09-SWR.png",
+    options: ["4:1", "3:1", "2:1", "1:1"],
+    correct: 2,
+    explanation: `The formula for (Voltage) SWR is in the exam reference data 
+booklet EX309, showing that you add the forward and reflected voltages together and 
+divide them by the same numbers subtracted. In this case 666 + 222 = 888 divided by 666 
+– 222 = 444 and 888/444 = 2.`,
+    lookup: "See page(s) 71 of the Full Licence Manual",
+    syllabus: "4e.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: `Just pay attention to the formula.`,
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q05",
+    question: `Return Loss and Standing Wave Ratio are two ways of expressing the match, or 
+mismatch, in an antenna system. Which of the following statements is TRUE?`,
+    image: "",
+    options: [
+      "A high Return Loss equates to a low SWR",
+      "A high Return Loss equates to a high SWR",
+      "You cannot relate Return Loss and SWR as they are calculated from different data",
+      "You can relate Return Loss and SWR as they are both expressed using a decibel notation",
+    ],
+    correct: 0,
+    explanation: `This is one of those concepts best remembered by the extremes; 
+if you have a perfect match between your feeder and your antenna (1:1 SWR) you will 
+radiate all of your RF and there will be 100% loss from the system, put it another way, the 
+Return Loss is at its highest possible value when the SWR is at its lowest, making ‘a’ sound 
+about right. ‘b’ is the opposite so not that one. ‘c’ is true in that the two are calculated in 
+different ways but there are ways to convert one to the other, they are just not in the Full
+syllabus, so the full statement is not true. ‘d’ is wrong because Return Loss is expressed in 
+dB but SWR is expressed as a ratio, like 2:1. `,
+    lookup: "See page(s) 71 of the Full Licence Manual",
+    syllabus: "4e.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: `Drill drill drill!`,
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q06",
+    question: `Your antenna system comprises a long length of coaxial feeder that loses about 
+half of the power you feed in, and an antenna with a return loss of 27dB. What is 
+the total Return Loss in your antenna system?`,
+    image: "",
+    options: ["24dB", "27dB", "30dB", "33dB"],
+    correct: 3,
+    explanation: `Two things to remember here, first that half power = -3dB and 
+that total Return Loss is equal to the antenna Return Loss plus TWICE the feeder loss, so in 
+this case, 27 plus 3 + 3 = 33dB = ‘d’.`,
+    lookup: "See page(s) 71 of the Full Licence Manual",
+    syllabus: "4e.3",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: `Just follow the steps!`,
+    examCalculation: 3,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q07",
+    question: `The antenna matching unit circuit shown in the diagram is a:`,
+    image: "images/bbdl-quizzes-week09-q07.png",
+    options: ["Pi-match", "L-match", "T-match", "Gamma-match"],
+    correct: 0,
+    explanation: `A simple identification question. This is a ‘Pi’ network, so called 
+because it looks like ‘π’.`,
+    lookup: "See page(s) 76-77 of the Full Licence Manual",
+    syllabus: "4f.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: `Drill those AMUs!`,
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q08",
+    question: `The purpose of an antenna matching unit placed between the transmitter and 
+the coax is to:`,
+    image: "",
+    options: [
+      "Remove the standing wave from the feeder",
+      "Tune the antenna system to the frequency in use",
+      "Tune out any reactance to leave a purely resistive load",
+      "Match the antenna impedance to the transmitter power level",
+    ],
+    correct: 2,
+    explanation: `‘a’ is wrong, the AMU changes the impedance seen by the 
+transmitter, but it does not do anything to the antenna/feeder mismatch, so the standing 
+wave is still there, the transmitter just cannot ‘see’ it. ‘b’ is not true, and a good reason 
+for not calling AMUs ATUs, because they do not ‘tune’ the antenna. There are exceptions 
+to that rule, but they are beyond the syllabus and in those cases the AMU is more a part 
+of the antenna system, than merely a ‘go between’. ‘c’ sounds good, because the 
+transmitter is operating at its most efficient when it is working into a pure 50Ω, zero 
+reactance, load. ‘d’ is wrong because impedance has nothing to do with power; a well 
+matched antenna system should give the same response no matter what power you are 
+using. So, ‘c’ is the one to go for.`,
+    lookup: "See page(s) 76-77 of the Full Licence Manual",
+    syllabus: "4f.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: `Drill...`,
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q09",
+    question: `What is the input impedance of a quarter wavelength of 75 Ω coax that has an 
+antenna with a 50 Ω feedpoint impedance connected to its output?`,
+    image: "images/bbdl-quizzes-week09-q09.png",
+    options: ["50 Ω", "75 Ω", "112 Ω", "400 Ω"],
+    correct: 2,
+    explanation: `A ‘simple’ calculation that requires the formula: 
+    $$ {Z_O}^2 = Z_{IN} \\times Z_{OUT} $$ 
+from EX309 to be rearranged: 
+$$ Z_{IN} = \\frac{{Z_O}^2}{Z_{OUT}} = \\frac{5625}{50} = 112.5Ω $$ so ‘c’ is the correct answer. Worth noting that this is just about 
+the feedpoint impedance of a delta loop antenna!`,
+    lookup: "See page(s) 70 of the Full Licence Manual",
+    syllabus: "4f.2",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes: `Assign the question's words to the values for Zin, Zout and Z0 to make sense of the confusion. That leaves the unknown as Zin...`,
+    examCalculation: 3,
+    exam_NOT: false,
+    tagged: false,
+  },
+  {
+    source: "BBDL QUIZ WEEK09 Q10",
+    question: `The feedpoint impedance of an antenna is 162 ohms, and you are feeding it with 50 ohm
+coax. Which of the following would you need to fit between the antenna and the 
+coax to give a good impedance match?`,
+    image: "",
+    options: [
+      "A sleeve balun",
+      "A quarter wavelength 90 ohm coaxial transformer",
+      "A transformer balun with 3:1 turns ratio",
+      "An isolation transformer with 3:1 turns ratio",
+    ],
+    correct: 1,
+    explanation: `‘a’ can be discounted, whilst a sleeve balun is a very effective 
+single band balun, it does nothing to the feedpoint impedance. ‘b’ requires a little 
+calculation to know if the quarterwave feeder transformer would work. Both ‘c’ and ‘d’ 
+offer a 3:1 turns ratio, so their impedance ratio will be 9:1, due to the square of the turns 
+relationship, so both are wrong; 162Ω divided by 9 is well below 50Ω. ‘b’ looks like a good 
+bet but the calculations below will confirm if it is the correct answer.`,
+    lookup: "See page(s) 70 of the Full Licence Manual",
+    syllabus: "4f.2",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes: `Follow the steps...`,
+    examCalculation: 3,
+    exam_NOT: false,
+    tagged: false,
+  },
   // {
-  //   source: "BBDL QUIZ WEEK08 Q00",
+  //   source: "BBDL QUIZ WEEK09 Q00",
   //   question: ``,
   //   image: "",
   //   options: ["", "", "", ""],

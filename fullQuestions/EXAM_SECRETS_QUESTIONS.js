@@ -2180,9 +2180,9 @@ const EXAM_SECRETS_QUESTIONS = [
       "This is a ƛ/4 coax transformer question. The formula, from the Reference Data booklet, is ${Z_o}^2 = Z_{in}\\times Z_{out}$. We are given $Z_{in}$ as 50Ω and $Z_{out}$ as 100Ω, so ${Z_0}^2 = 5000$. That gives $Z_0$ as $\\sqrt{5000}$ or 70Ω.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4f.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes: "Manipulate that Z0 formula from EX309!",
+    examCalculation: 2,
     exam_NOT: false,
   },
   {

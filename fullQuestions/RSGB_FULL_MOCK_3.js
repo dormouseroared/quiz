@@ -484,7 +484,7 @@ const RSGB_FULL_MOCK_3 = [
   {
     source: "RSGB Full Mock 3 Q31",
     question:
-      "A 100Ω antenna is feeding a receiver with a 50Ω input impedance. It is decided to improve the matching by inserting a λ/4 length of coaxial cable as an impedance transformer. The characteristic impedance of this cable should be",
+      "A 100Ω antenna is feeding a receiver with a 50Ω input impedance. It is decided to improve the matching by inserting a λ/4 length of coaxial cable as an impedance transformer. The characteristic impedance of this cable should be:",
     options: ["100Ω", "72Ω", "50Ω", "300Ω"],
     correct: 1,
     explanation: "",
