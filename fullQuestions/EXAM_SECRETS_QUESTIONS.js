@@ -2037,10 +2037,12 @@ const EXAM_SECRETS_QUESTIONS = [
       "The coax is described as solid polythene, so you should remember that it has a velocity factor of 2/3. Lengths in the coax are 2/3 of the free space calculation. At 70MHz a wavelength is 300/70 or 4.29m, and ƛ/4 is 107cm. Then we take 2/3 of that to give 71cm.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4a.3",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 4,
+    examStrategyNotes:
+      "Is this a velocity factor for an antenna or a coaxial cable? It makes a difference...",
+    examCalculation: 2,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Feeders and Antennas] 4B1-1",
