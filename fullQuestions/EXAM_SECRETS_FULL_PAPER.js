@@ -12,9 +12,14 @@ const EXAM_SECRETS_FULL_PAPER = [
     ],
     correct: 2,
     explanation:
-      "(6-19b) prohibits obscuring the meaning of messages unless for the purposes of (6-5) which is supporting user services or disasters. Morse and Q-codes are to enhance communication, and are fine, as is using any language both parties happen to share.",
+      "(6-19b) prohibits obscuring the meaning of messages unless for the purposes of (6-5) which is supporting user services or disasters. Morse and Q-codes are to enhance communication, and are fine, as is using any language both parties happen to share. See EX309.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1",
+    syllabus: "1c.1",
+    examStrategy: 3,
+    examStrategyNotes:
+      "See EX309, and create some flashcards to support syllabus items for FULL in 1c.1, for example, 6-19b and 6-5.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q02",
@@ -30,8 +35,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     correct: 0,
     explanation:
       "(6-2) requires us not to cause undue interference to any wireless telegraphy, including other amateurs. A transmission wider than that necessary for successful communication risks doing that and is, in any case, anti-social.",
-    lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1",
+    lookup: "See page 5 of EX309.",
+    syllabus: "1d.1",
+    examStrategy: 2,
+    examStrategyNotes: "See EX309.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q03",
@@ -41,9 +50,13 @@ const EXAM_SECRETS_FULL_PAPER = [
     options: ["10W", "40W ERP", "80W ERP", "1000W"],
     correct: 3,
     explanation:
-      "The only technical requirement for a link in an amateur bandd is that it must be above 30MHz, so the licence limit is 1kW at each end. Obviously, and to comply with (6-2) on undue interference, the link should be at the lowest power that allows reliable operation.",
+      "The only technical requirement for a link in an amateur band is that it must be above 30MHz, so the licence limit is 1kW at each end. Obviously, and to comply with (6-2) on undue interference, the link should be at the lowest power that allows reliable operation.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1",
+    syllabus: "1h.1",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q04",
@@ -60,7 +73,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The Harmonised Amateur Radio Examination Certificate (HAREC) confirms you have passed the Full level examination, or its equivalent in signatory countries, and can obtain a licence from that country.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1",
+    syllabus: "7h.1",
+    examStrategy: 2,
+    examStrategyNotes: "Pay attention.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q05",
@@ -71,6 +88,10 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation: "The UK and Europe are in Region 1.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7h.2",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q06",
@@ -86,8 +107,13 @@ const EXAM_SECRETS_FULL_PAPER = [
     correct: 0,
     explanation:
       "Not all modes transmit at full power while PTT is pressed. FM does. Unprocessed (uncompressed) SSB is rated at 20% and processed SSB at 50%. The RSGB online calculator has many modes built in for selection.",
-    lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1",
+    lookup: "See page(s) 49-50 of the Full Licence text book",
+    syllabus: "3f.4",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Transmit mode (PTT pressed) affects average RF output power: AM has 66% of peak RF; FM and some data modes produce full power all the time; SSB and CW are intermittent, based on activity e.g. voice.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q07",
@@ -104,7 +130,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The rules for identification are different on 5MHz, where we have Secondary allocation, with MOD having Primary access. Note G to Schedule 1 requires you to be contactable by telephone. This must be the number you gave to Ofcom when applying for your licence or confirming the details, including your phone number at the transmission location, remain correct.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1",
+    syllabus: "7b.1",
+    examStrategy: 2,
+    examStrategyNotes:
+      "See EX309. Also part of the flashcards for this syllabus item.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q08",
@@ -116,7 +147,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "If the power delivered to the loudspeaker is to be 1% of the maximum power, that is the full volume on the volume control, then the minimum will be 10% of the voltage (Power = Voltage squared/Resistance). That means the potential divider formed by the volume control and the new resistor must be 10:1. Remember that a 10kΩ and a 1kΩ resistor form an 11:1 divider (10 x 1)/(10 + 1) The 1kΩ resistor must be a bit bigger than 1kΩ for a 10:1 divider. Option C is the only one close. Vout / Vin = 0.1 = R / (10 + R), and R = 1.1kΩ. See the book for a better layout.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2b.1",
+    examStrategy: 5,
+    examStrategyNotes: "This is tricky, so drill through this one...",
+    examCalculation: 3,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q09",
@@ -150,7 +185,11 @@ const EXAM_SECRETS_FULL_PAPER = [
         $$ V_3 = \\frac{Q}{C} = \\frac{24 \\times 10^{-6}}{3 \\times 10^{-6}} = 8V $$
         $$ V_6 = \\frac{Q}{C} = \\frac{24 \\times 10^{-6}}{6 \\times 10^{-6}} = 4V $$
         lookup: "See page(s) x of the Full Licence text book`,
-    syllabus: "2",
+    syllabus: "2b.1",
+    examStrategy: 5,
+    examStrategyNotes: "Again, one to drill through...",
+    examCalculation: 3,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q10",
@@ -167,7 +206,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "If the current to the relay is stopped abruptly then the back EMF will cause a voltage spike considerably greater than the supply voltage, and quite possibly high enough to damage the transistor. The diode will provide somewhere for the current associated with the spike to pass harmlessly saving the transistor. It is not a problem at turn-on, the voltage may be applied suddenly, but the current can build up at such a rate as the coil inductance permits with only a modest EMF.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2b.1",
+    examStrategy: 5,
+    examStrategyNotes:
+      "Another tricky one to either excel in or avoid (leave til last).",
+    examCalculation: 3,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q11",
@@ -190,6 +234,10 @@ const EXAM_SECRETS_FULL_PAPER = [
         The resistor should be sized to handle 1kV , 2mA current, and 2W power dissipation.`,
     lookup: "See page(s) 22 of the Full Licence text book",
     syllabus: "2d.7",
+    examStrategy: 5,
+    examStrategyNotes: "Tricky again. ",
+    examCalculation: 3,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q12",
@@ -212,7 +260,11 @@ const EXAM_SECRETS_FULL_PAPER = [
         
         It is worth looking out for 3, 4, 5 triangles etc.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2b.1",
+    examStrategy: 5,
+    examStrategyNotes: "Tricky",
+    examCalculation: 3,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q13",
@@ -224,8 +276,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "At 7000 samples per second the Nyquist frequency is 3.5kHz. A signal at 4kHz is 500Hz above the Nyquist frequency, so will be interpreted as a signal 500Hz below it, or 3kHz.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "2f.1",
     tagged: true,
+    examStrategy: 3,
+    examStrategyNotes: "Refresher needed...",
+    examCalculation: 3,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q14",
@@ -279,8 +335,12 @@ const EXAM_SECRETS_FULL_PAPER = [
         [[I don't understand this last part. <br><br>This is an inline test for MathJax: $x=\\sqrt{4}$ ]]
         `,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "2h.4",
     tagged: true,
+    examStrategy: 4,
+    examStrategyNotes: "Need to refresh on this.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q16",
@@ -313,7 +373,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The input is on the emitter, and the base is held at 0V AC by a capacitor to the 0V line. That is a common base configuration.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2i.4",
+    examStrategy: 4,
+    examStrategyNotes: "Drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q18",
@@ -325,7 +389,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The block diagram is of a switched mode power supply. The transformer operating frequency will be above human (and hopefully dogs) hearing range, up to about 80 - 100kHz.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2j.4",
+    examStrategy: 3,
+    examStrategyNotes: "It's the block diagram!",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q19",
@@ -342,7 +410,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The sum outputs are 14.150MHz (0Hz) to 14.153MHz (3kHz) and the difference outputs are 3.650MHz (0Hz) to 3.653MHz (3kHz).",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3i.2",
+    examStrategy: 3,
+    examStrategyNotes: "another drill item",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q20",
@@ -354,8 +426,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The occupied bandwidth is 29.696 to 29.699MHz. The top of the band (see the schedule) is 29.700MHz, so just 1kHz to spare. 1kHz in 29700kHz is 1000000 / 29700 = 34 parts per million (ppm).",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "2a.1",
     tagged: true,
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q21",
@@ -371,7 +447,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The blank box is the sine wave lookup table, giving the amplitude of a sone wave at enough points through the cycle to seed the digital to analogue converter to produce an analogue output of sufficient purity.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3c.3",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q22",
@@ -387,7 +467,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The circuit is a balanced modulator. The output is the upper and lower sidebands representing the audio signal on the RF carrier. The carrier itself and the audio signal are balanced out.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3e.1",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q23",
@@ -399,7 +483,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Non-linearity will produce harmonics. Only 42.900MHz is a harmonic. 14.3007MHz is a 700Hz offset, relevant for a BFO, but not what was asked.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3f.2",
+    examStrategy: 3,
+    examStrategyNotes: "Revision needed.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q24",
@@ -416,7 +504,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Specifically, it would be a phase lock loop frequency synthesiser. The direct digital synthesis type does not have an out-of-lock condition. The out-of-lock output must inhibit transmission because under those circumstances, the transmitted frequency is uncontrolled.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3c.3",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q25",
@@ -431,9 +523,13 @@ const EXAM_SECRETS_FULL_PAPER = [
     ],
     correct: 1,
     explanation:
-      "An overly strong signal will drive the RF fron end circuits into non-linearity, resulting in lots of intermodulation products, which will be alongside and on top of the wanted signal, which then appears to be lost in the noise. The other options deserve a comment. The AGC control signal is developed at the output from the IF, so a signal outside the IF bandwidth should have little or no effect. The dynamic range of a receiver is set by the gains and internal noise  of the receiver, not external signals. The mixing effect may be true, but the effect stated does not answer the question asked.",
+      "An overly strong signal will drive the RF front end circuits into non-linearity, resulting in lots of intermodulation products, which will be alongside and on top of the wanted signal, which then appears to be lost in the noise. The other options deserve a comment. The AGC control signal is developed at the output from the IF, so a signal outside the IF bandwidth should have little or no effect. The dynamic range of a receiver is set by the gains and internal noise  of the receiver, not external signals. The mixing effect may be true, but the effect stated does not answer the question asked.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3f.2",
+    examStrategy: 4,
+    examStrategyNotes: "Revise and drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q26",
@@ -445,7 +541,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "There are two possible image frequencies. 2 x IF = 920kHz, and 1820kHz plus and minus 920kHz gives 900kHz and 2740kHz.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3i.3",
+    examStrategy: 3,
+    examStrategyNotes: "REvise and drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q27",
@@ -461,7 +561,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The limiting factor on sensitivity is noise. Having sifficient gain is easy, but low internal noise is harder and expensive. At HF, the natural noise is high, higher than the internal noise of ordinary circuits. The opposite is true at VHF, and much more so at UHF and above. Ideally the preamp will be at the antenna end of the feeder, so feeder losses don't affect the achievable sensitivity. Higher gain antennas also improve the sensitivity, and the option of preamp, straight through or attenuator will allow the greatest range of signal levels to be handled, albeit not simultaneously.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3j.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q28",
@@ -477,7 +581,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The device is a ratio detector, for demodulating FM signals. It relies on phase changes around resonance in a tuned circuit. The phase changes are much more marked than amplitude changes, making the device sensitive to even very narrow frequency deviations.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3k.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q29",
@@ -494,7 +602,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "This is too long to type in. See page 152 of the secrets manual.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3m.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q30",
@@ -511,7 +623,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The local oscillator is often used to mix up in the transmitter and mix down to the RF in the receiver. That also covers the mixer for transmitting and receiving. The IF filter stages can follow the moddulator to remove the other modulation products on transmit. The AGC is only used in the IF to maintain a constant level signal into the detector.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "3",
+    syllabus: "3l.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q31",
@@ -521,10 +637,14 @@ const EXAM_SECRETS_FULL_PAPER = [
     options: ["104cm", "52cm", "35cm", "26cm"],
     correct: 2,
     explanation:
-      "Don't understand why a quarter of 2m is 51.7cm, so see this answer on secrets page 152.",
+      "Solid polythene has a velocity factor of 0.67, and a quarter wavelength is 0.50m so length is 33.5cm. Close enough to 35cm?",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4e.3",
     tagged: true,
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q32",
@@ -534,9 +654,13 @@ const EXAM_SECRETS_FULL_PAPER = [
     options: ["25Ω", "37Ω", "50Ω", "75Ω"],
     correct: 1,
     explanation:
-      "The ƛ / 4 ground plane is effectively half a dipole., the other half being the reflection in the ground plane. Feed impedance of a dipole in free space is 73Ω, so a ƛ / 4 ground plane is 73 / 2 = 37Ω.",
+      "The ƛ / 4 ground plane is effectively half a dipole, the other half being the reflection in the ground plane. Feed impedance of a dipole in free space is 73Ω, so a ƛ / 4 ground plane is 73 / 2 = 37Ω.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "4",
+    syllabus: "4d.2",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q33",
@@ -553,7 +677,12 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The only change is the feeder loss. The reflection at the antenna, whatever proportion that was, hasn't changed. Neither has the power from the transmitter. If the feeder loss is lower, then a bit more signal will reach the antenna, and a bit more signal will reach the transmitter on the return path. This means the Standing Wave Ratio (SWR) will be greater. Goodbye to the two options where SWR is reduced. The return loss is the ratio between the forward and reflected signals. If more reflected signal arrives back at the transmitter then the ratio between them will be lower.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "4",
+    syllabus: "4e.3",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Calculate the changed return loss at the transmitter in terms of antenna loss and feeder loss times 2. Whichever way it goes, up or down, SWR will be the opposite!",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q34",
@@ -565,7 +694,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "See the Secrets book for the formula and where to find it on EX309.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "4",
+    syllabus: "4f.2",
+    examStrategy: 3,
+    examStrategyNotes: "Impedance transformer. See EX309.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q35",
@@ -581,7 +714,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Satellite communication often uses circular polarisation, mainly because the orientation of the satellite can change, either as a feature of its orbit, or as the viewing angle changes from different points on the earth's surface",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "5",
+    syllabus: "5a.3",
+    examStrategy: 2,
+    examStrategyNotes: "Drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q36",
@@ -598,7 +735,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The Critical Frequency is the highest frequency that will be refracted back to the Earth on vertical incidence. As the distance between transmitter and receiver gets greater, the angle through which the wave must be refracted reduces, so the highest frequency, the MUF, increases. The Critical Freqyency is the lowest of those. The NVIS frequency is not really a recognised term, but is a description of the MUF on a very short path.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "5",
+    syllabus: "5b.2",
+    examStrategy: 4,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q37",
@@ -615,7 +756,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The Aurora is primarily caused by charged solar particles being swept towards the poles by the earth's magnetic field. The resulting ionisation can be quite intense, and reflect radio waves.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "5",
+    syllabus: "5c.3",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q38",
@@ -632,7 +777,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The field from an amateur transmitter can be quite high, higher than envisaged by the EMC directive when setting immunity standards for interference conducted into the affected device, not helped by poor installation methods. Ferrite rings and twisting the wiring to avoid open loops will reduce the risk.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "6",
+    syllabus: "6a.2",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q39",
@@ -648,7 +797,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The EMC directive and CEPT requirements apply to equipment placed on the market, not home made (or modified) equipment. Nonetheless, the requirements of the licence to avoid undue interference to wireless telegraphy apparatus still apply.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "6",
+    syllabus: "6b.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q40",
@@ -664,7 +817,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Blocking is caused by a strong signal driving the victim equipment outside its operating range, such that the wanted signal disappears, or the equipment ceases to function as intended. If the wanted signal is interfered with in time with the interfering modulation, then that phenomenon is termed cross-modulation. Often, the interfering modulation is distinguishable as another transmission.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "6b.2",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q41",
@@ -680,7 +837,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "All semiconductor sevices rely in part on non-linear junctions inside the semiconductor e.g. diode. Consequently, unwanted RF can be demodulated, in the manner of a diode detector for AM.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "6c.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q42",
@@ -695,9 +856,13 @@ const EXAM_SECRETS_FULL_PAPER = [
     ],
     correct: 1,
     explanation:
-      "it is common for the local oscillator in a medium wave domestic radio to be set above the wanted signal, because its tuning range is then proportionately much lower. The image frequency is twice the IF removed, and the IF is typically in the range 460-470kHz, partly because it is an optimum choice from image-v-adjacent considerations, and partly bevause it is economic for all manufacturers to choose common components. 1830 - 900 = 930kHz, and half that is 465kHz. 1.83MHz is on the image frequency of a domestic medium wave radio tuned to 900kHz. There is a small rrange of frequencies where this problem can occur.",
+      "It is common for the local oscillator in a medium wave domestic radio to be set above the wanted signal, because its tuning range is then proportionately much lower. The image frequency is twice the IF removed, and the IF is typically in the range 460-470kHz, partly because it is an optimum choice from image-v-adjacent considerations, and partly because it is economic for all manufacturers to choose common components. 1830 - 900 = 930kHz, and half that is 465kHz. 1.83MHz is on the image frequency of a domestic medium wave radio tuned to 900kHz. There is a small range of frequencies where this problem can occur.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "6c.3",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q43",
@@ -714,7 +879,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The aim is to short out the unwanted 145MHz signal whilst doing as little damage as possible to the 102.6MHz signal. A ƛ/4 coaxial stub, open circuit at the far end, will appear as a short circuit at the T-bar end. It needs to be ƛ/4 at 145MHz.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "4f.2",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 2,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q44",
@@ -726,7 +895,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "See EX309 formula sheet: middle column, towards the bottom, which is E = 7 x sqrt(erp) / d where erp is 400W with an antenna gain of 16dB (10dB + 3dB + 3dB) or 40 times. Distance comes out to 295m, and the real answer could be anywhere from 250-350m.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "6e.1",
+    syllabus: "5a.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q45",
@@ -743,7 +916,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "House wiring tends to act as a vertical antenna, with the horizontal wiring acting as capacitive loading. Consequently, it tends to be more susceptible to vertical fields. A better analysis is outside the scope of the syllabus.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "6c.2",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q46",
@@ -751,16 +928,20 @@ const EXAM_SECRETS_FULL_PAPER = [
       "What does the Federation of Communication Services do that is of interest to the radio amateur?",
     image: "",
     options: [
-      "Provide a route for amateurs to make their collective wishes known to government",
+      "provide a route for amateurs to make their collective wishes known to government",
       "provide advice and assistance on EMC problems in domestic households",
-      "issie publications on the wide range of communications facilities in commercial use",
+      "issue publications on the wide range of communications facilities in commercial use",
       "produce the Code of Practice for installing radio communications facilities in vehicles",
     ],
     correct: 3,
     explanation:
       "The Federation of Communications Services produces document FCS 1363 which is the accepted Code of Practice for installing radio communications facilities in vehicles.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "6f.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q47",
@@ -777,7 +958,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "A good reason to keep a log. One you already have, clearly kept since well before the complaint arose, will be given much more credibility than one written after the complaint.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "6",
+    syllabus: "6g.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q48",
@@ -793,7 +978,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Rare stations, particularly DXpeditions (visits to rare locations) can cause a large pile-up where there are hundreds of overlapping calls, none of which are clear. By listening a few kHz away from the transmit frequency, the callers are much more spread out and more successfull contacts can be made.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "7a.1",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q49",
@@ -810,7 +999,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The 472kHz (600m) Band Plan recommends 475-479kHz for CW and digital modes over 200kHz bandwidth. The 472-475kHz part is for modes with a bandwidth of less than 200kHz.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "7",
+    syllabus: "7b.1",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q50",
@@ -828,6 +1021,10 @@ const EXAM_SECRETS_FULL_PAPER = [
       "If the supply Neutral is ruptured in the street, then the house Neutral will rise to near Live potential through connected appliances. If the premises have a PME supply, then the house Earth will be connected to the incoming Neutral at the Main Earth Terminal (MET) beside the company fuse and meter. That means the house Earth will also rise to near Live voltage, as will all exposed metalwork which is bonded to the house Earth. Not all exposed metalwork need be bonded to the MTE, which is explained in Chapter 3 under PME. [8a.2]",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8a.2",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q51",
@@ -844,7 +1041,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "RFCs are fairly high inductance, often wound on a ferrite slug intended to pass modest currents, but block RF. They won't affect the RF characteristics of the installation, but will provide a DC static discharge path.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "8",
+    syllabus: "4b.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q52",
@@ -861,7 +1062,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "All the options have their merits, but the one affecting SAFETY is the goodness and adequacy of the mains supply and the provision of RCBOs. That, the other options listed, and several other factors, including RF field strengths, should be the subject of a written Risk Assessment.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "8",
+    syllabus: "8f.4",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q53",
@@ -878,7 +1083,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Any activity to which visitors attend should have a risk assessment. The core reason is to identify and minimise risks, and have procedures ready to deal with any incidents that do occur. Normally they are a mandatory part of obtaining insurance cover.  They will be requested if a claim arises, if they haven;t been requested as part of arranging cover. Not having documented assessments could result in the insurance being invalid, and personal liability for compensation.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "8",
+    syllabus: "8f.6",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q54",
@@ -895,7 +1104,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "As a voltmeter, it will need a series resistor to limit the current to 50µA when 15V is applied of value R = V / I.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "9",
+    syllabus: "9a.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q55",
@@ -906,7 +1119,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     correct: 2,
     explanation: "The power is 145V into 50Ω, so use P = V squared / R",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "9",
+    syllabus: "9a.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q56",
@@ -918,7 +1135,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "Inspection of the drawing shows 4 divisions per wavelength so that's 4 x 500µS. Knowing the cycle time or period, the frequency is the inverse.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "9",
+    syllabus: "9a.8",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q57",
@@ -929,7 +1150,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     correct: 2,
     explanation: "See page 153 for the worked answer and formula used.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "9",
+    syllabus: "3h.3",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
   {
     source: "Exam Secrets FULL PAPER Q58",
@@ -941,7 +1166,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation:
       "The need is to bring the overall coefficient as close to zero as possible. In this case, zero is achieved by choosing a capacitor with a -3ppm coefficient. The fact that the value of one is 100 units and the other 200 units is not relevant.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "9",
+    syllabus: "9c.1",
+    examStrategy: 3,
+    examStrategyNotes: "Revise and drill.",
+    examCalculation: 0,
+    exam_NOT: false,
   },
 ]
 

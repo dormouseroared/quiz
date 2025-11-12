@@ -200,6 +200,19 @@ const syllabusItems = [
     level: "full",
     title: "Apparatus, inspection and closedown",
     text: "Understand the requirements for clean and stable transmitters and the need to control transmitted bandwidth.",
+    flashcards: [
+      {
+        subTitle: "Transmitted bandwidth",
+        sequence: "000",
+        front:
+          "What do the Licence Conditions say about requirements for transmission?",
+        frontImage: "",
+        back: "",
+        backImage: "ex309-6-2.png",
+        reference: "EX309 page 5",
+        id: "nanoid",
+      },
+    ],
   },
   {
     key: "1d.1",
@@ -2810,6 +2823,19 @@ const syllabusItems = [
     title: "RF power amplifiers",
     text: "Understand the implications for PA rating of different types of modulation and the effects of speech processing, with particular regard to peak to average power ratios.",
     weeks: ["6"],
+    flashcards: [
+      {
+        subTitle: "transmit mode affects average power rating",
+        sequence: "000",
+        front:
+          "What happens to average power vs peak power when PTT is pressed for each transmit mode?",
+        frontImage: "",
+        back: "",
+        backImage: "week06-3f4-p11.png",
+        reference: "week06 tutorial slides p11",
+        id: "7C9HAAVG",
+      },
+    ],
   },
   {
     key: "3f.5",
@@ -3560,6 +3586,19 @@ const syllabusItems = [
     level: "full",
     title: "Feeders",
     text: "Perform calculations involving velocity factor, physical length, electrical length and frequency.",
+    flashcards: [
+      {
+        subTitle: "Velocity Factor in feeders",
+        sequence: "000",
+        front:
+          "What needs to be done with feeders to take into account their velocity factor?",
+        frontImage: "",
+        back: "",
+        backImage: "week08-4a3-p40.png",
+        reference: "week08 tutorial slides p40",
+        id: "U6HKKAN6",
+      },
+    ],
   },
   {
     key: "4b.1",
@@ -3578,12 +3617,79 @@ const syllabusItems = [
     level: "full",
     title: "Baluns",
     text: "Recall the construction and use of transformer, sleeve and choke type baluns.",
+    flashcards: [
+      {
+        subTitle: "why do we need a balun",
+        sequence: "000",
+        front:
+          "Can you describe the currents seen on the diagram, and what a balun does?",
+        frontImage: "week08-4b1-p41a.png",
+        back: "",
+        backImage: "week08-4b1-p41.png",
+        reference: "week08 tutorial slides p41",
+        id: "TEPQ74W0",
+      },
+      {
+        subTitle: "Where is a balun used?",
+        sequence: "010",
+        front: "In what circumstances are baluns used?",
+        frontImage: "",
+        back: "",
+        backImage: "week08-4b1-p42.png",
+        reference: "week08 tutorial slides p42",
+        id: "H06FPYC0",
+      },
+      {
+        subTitle: "Choke balun",
+        sequence: "020",
+        front: "Can you recognise what these are?",
+        frontImage: "week08-4b1-p43a.png",
+        back: "",
+        backImage: "week08-4b1-p43.png",
+        reference: "week08 tutorial slides p43",
+        id: "111U764R",
+      },
+      {
+        subTitle: "Sleeve balun",
+        sequence: "030",
+        front: "Can you recognise what this is and what it does?",
+        frontImage: "week08-4b1-p44a.png",
+        back: "",
+        backImage: "week08-4b1-p44.png",
+        reference: "week08 tutorial slides p44",
+        id: "PE18G5XR",
+      },
+    ],
   },
   {
     key: "4b.1",
     level: "full",
     title: "Baluns",
     text: "Identify the circuits of 1:1 and 4:1 transformer baluns.",
+    flashcards: [
+      {
+        subTitle: "transformer balun 1:1",
+        sequence: "010",
+        front:
+          "Can you recognise a transformer balun and what it can do e.g. 1:1?",
+        frontImage: "",
+        back: "",
+        backImage: "week08-4b1-p45.png",
+        reference: "week08 tutorial slides p45",
+        id: "00AY1VJT",
+      },
+      {
+        subTitle: "transformer balun 4:1",
+        sequence: "020",
+        front:
+          "Can you recognise a transformer balun and what it can do e.g. 4:1?",
+        frontImage: "",
+        back: "",
+        backImage: "week08-4b1-p46.png",
+        reference: "week08 tutorial slides p46",
+        id: "K7YH52BC",
+      },
+    ],
   },
   {
     key: "4c.1",
@@ -3607,7 +3713,7 @@ const syllabusItems = [
     key: "4c.2",
     level: "foundation",
     title: "Antenna concepts",
-    text: "Understand that half-wave dipoles (mounted vertically), λ / 4(quarter wavelength) ground planes and 5 / 8 λ antennas are omni￾directional. Note: only dipole and Yagi antennas will be examined for radiation pattern.",
+    text: "Understand that half-wave dipoles (mounted vertically), λ / 4(quarter wavelength) ground planes and 5 / 8 λ antennas are omni-directional. Note: only dipole and Yagi antennas will be examined for radiation pattern.",
   },
   {
     key: "4c.2",
@@ -4885,7 +4991,7 @@ const syllabusItems = [
     key: "6c.1",
     level: "foundation",
     title: "Routes of entry",
-    text: "Recall that interference occurs through local radio transmissions being conveyed to the affected equipment through pick up in house wiring, TV antenna down- leads, telephone wiring etc and particularly at VHF / UHF by direct pick - up in the internal circuits of the affected equipment.",
+    text: "Recall that interference occurs through local radio transmissions being conveyed to the affected equipment through pick up in house wiring, TV antenna down-leads, telephone wiring etc and particularly at VHF / UHF by direct pick-up in the internal circuits of the affected equipment.",
   },
   {
     key: "6c.1",
@@ -5513,6 +5619,17 @@ const syllabusItems = [
         backImage: "week01-part-two-notes-to-band-plans.png",
         id: "7Ny8NuJE",
       },
+      {
+        subTitle: "Instructions for using 5MHz band (Note G)",
+        sequence: "080",
+        front:
+          "Are you familiar with Note G which relates to using the 5MHz band?",
+        frontImage: "ex309-7b1-a.png",
+        back: "",
+        backImage: "ex309-7b1-b.png",
+        reference: "EX309 Note G pages 16-17",
+        id: "FCW0V8FY",
+      },
     ],
   },
   {
@@ -5835,7 +5952,7 @@ const syllabusItems = [
     key: "8a.5",
     level: "foundation",
     title: "Electricity",
-    text: "Understand that a Residual Current Circuit Breaker with Overcurrent protection(RCBO) will give better protection against electric shock than relying solely on a conventional fuse which only protects against excessive current. Note: The candidate should appreciate that an RCBO will detect currents to earth of about 30mA whereas a fuse will only blow at several amps and only when the fault is a short circuit (L-N or L-E). The candidate should also understand that contact with both live and neutral may result in fatal injury. The mechanics of RCBO operation(differential current sensing) is not examinable.",
+    text: "Understand that a Residual Current Circuit Breaker with Overcurrent protection (RCBO) will give better protection against electric shock than relying solely on a conventional fuse which only protects against excessive current. Note: The candidate should appreciate that an RCBO will detect currents to earth of about 30mA whereas a fuse will only blow at several amps and only when the fault is a short circuit (L-N or L-E). The candidate should also understand that contact with both live and neutral may result in fatal injury. The mechanics of RCBO operation(differential current sensing) is not examinable.",
   },
   {
     key: "8a.6",

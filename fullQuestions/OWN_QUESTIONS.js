@@ -29,7 +29,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `Inductors oppose changes in current due to Lenz's law and self-induced back EMF`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q02",
@@ -44,7 +44,7 @@ const OWN_QUESTIONS = [
     correct: 2,
     explanation: `Inductors store energy in the magnetic field created by current flow through the coil`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q03",
@@ -60,7 +60,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `Lenz's law states that induced EMF opposes the change in magnetic flux that created it`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q04",
@@ -76,7 +76,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `In DC steady state, there's no change in current, so no back EMF is generated. The inductor acts like a short circuit.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q05",
@@ -92,7 +92,7 @@ const OWN_QUESTIONS = [
     correct: 2,
     explanation: `Inductive reactance XL = 2πfL, so impedance increases linearly with frequency`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q06",
@@ -108,7 +108,7 @@ const OWN_QUESTIONS = [
     correct: 2,
     explanation: `Inductance is proportional to N², where N is the number of turns.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q07",
@@ -123,7 +123,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `Ferrite cores increase magnetic permeability, concentrating the magnetic field and increasing inductance.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q08",
@@ -139,7 +139,7 @@ const OWN_QUESTIONS = [
     correct: 2,
     explanation: `Series inductors add directly: LTotal = L1 + L2 + L3... (similar to series resistors).`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q09",
@@ -155,7 +155,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `Parallel inductors follow the reciprocal rule: 1/LTotal = 1/L1 + 1/L2. For equal values, LTotal = L/2.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q10",
@@ -170,7 +170,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `Explanation: The time constant τ = L/R determines how quickly current builds up or decays in response to voltage changes.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q11",
@@ -185,7 +185,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `High Q means low losses (XL/R ratio is high) and provides good selectivity in resonant circuits.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q12",
@@ -201,7 +201,7 @@ const OWN_QUESTIONS = [
     correct: 1,
     explanation: `Above self-resonance, parasitic capacitance between windings dominates, making the inductor appear capacitive.`,
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "2",
+    syllabus: "2d.4",
   },
   {
     source: "OWN QUESTIONS Q13",

@@ -482,7 +482,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "[[I answered bandwidth is 6kHz or less... In the 5MHz band there's this: Note 3: Amplitude Modulation is permitted with a maximum bandwidth of 6kHz, on frequencies with at least 6kHz available width, and in the Notes to the bandplans, there are these: 1. All Modes: CW, SSB and those modes listed as Centres of Activity, plus AM. Consideration should be given to adjacent channel users. 2. Amplitude Modulation (AM): AM with a bandwidth greater than 2.7kHz is acceptable in the All Modes segments provided users consider adjacent channel activity when selecting operating frequencies (Davos 2005). CONFUSING!]] AM is generally seen to have a bandwidth of around 6kHz. There was an attempt to ban it from the amateur bands, but a pragmatic agreement was reached that allows AM with a bandwidth greater than 2.7kHz provided the user considers adjacent channel activity. See ‘Notes to the bandplans’ in EX309 top of second column of the Notes.",
     lookup: "See page(s) 7b.1 of the Full Licence text book",
-    syllabus: "0",
+    syllabus: "7b.1",
     tagged: true,
     examStrategy: 4,
     examStrategyNotes:
@@ -2604,7 +2604,7 @@ seconds?`,
     the charge will move 2/3 of the remaining 300V, so another 200V, making 800V.
     `,
     lookup: "Obsidian Time Constant and the google chart",
-    syllabus: "0",
+    syllabus: "2d.7",
     reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
     examStrategy: 4,
     examStrategyNotes:
@@ -2669,7 +2669,7 @@ no such thing as local rating for that <mark>not relevant</mark> <hr>
     ‘b’ is the ‘most relevant’ correct answer <hr>
     `,
     lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    syllabus: "8f.4",
     reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
     examStrategy: 4,
     examStrategyNotes:
@@ -2971,8 +2971,8 @@ require two receivers to be running and is a feature on some analogue radios, so
 and ‘d’ is just not true; I and Q play no part in the PLL block diagram. Only ‘a’ includes the critical word 
 ‘digital’ and is 100% correct.`,
     lookup: "See page(s) 67-68 of the Full Licence Manual",
-    syllabus: "0",
-    reference: "3m.2",
+    syllabus: "3m.2",
+    reference: "",
     examStrategy: 2,
     examStrategyNotes: `Drill.`,
     examCalculation: 0,
