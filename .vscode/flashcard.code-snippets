@@ -28,7 +28,7 @@
         	"  back: \"$4\",",
         	"  backImage: \"$5\",",
         	"  reference: \"$6\",",
-        	"  id: \"nanoid\",",
+        	"  id: '$UUID',",
 			"},",
 		],
 		"description": "insert flashcard"
