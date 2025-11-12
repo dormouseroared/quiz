@@ -80,6 +80,18 @@ const abcd = ["A", "B", "C", "D"] // answer index as alpha
 
 const RECEIVERS_SYLLABUS_LIST = ["3h", "3i", "3j", "3k", "3l", "3m", "3n"]
 
+const ANTENNAS_SYLLABUS_LIST = [
+  "4a.3",
+  "4b.1",
+  "4d.1",
+  "4d.2",
+  "4e.1",
+  "4e.2",
+  "4e.3",
+  "4f.1",
+  "4f.2",
+]
+
 let findCards = null
 
 // ====================================
@@ -186,7 +198,10 @@ function selectQuestionsForSyllabusList(list, MCQ) {
   let targetList = null
   if (list === "RECEIVERS") {
     targetList = RECEIVERS_SYLLABUS_LIST
-    console.log(targetList)
+    console.log("targetList", targetList)
+  } else if (list === "ANTENNAS") {
+    targetList = ANTENNAS_SYLLABUS_LIST
+    console.warn("targetList", targetList)
   } else {
     console.warn("list is not supported")
   }

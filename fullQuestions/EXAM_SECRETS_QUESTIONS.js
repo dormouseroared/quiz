@@ -2054,8 +2054,9 @@ const EXAM_SECRETS_QUESTIONS = [
       "Transformer baluns provide an opportunity to change the impedance; and note for for RF transformers, the ratio is normally quoted as the impedance ratio, not the turns ratio. Inspection of the drawing shows the same number of turns on primary and secondary, making it a 1:1 balun.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4b.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "There are 3 balun types: transformer (1:1 has same number of turns on both sides & 4:1), sleeve & choke.",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -2070,7 +2071,8 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4d.1",
     examStrategy: 2,
-    examStrategyNotes: "Do not forget the correction factor!",
+    examStrategyNotes:
+      "Do not forget the correction factor! Also assume it is a half wave dipole if not explicitly stated.",
     examCalculation: 2,
     exam_NOT: false,
   },
@@ -2090,8 +2092,9 @@ const EXAM_SECRETS_QUESTIONS = [
       "Adding passive elements to a dipole can dramatically reduce its feed impedance, solved by using a folded dipole which, if both conductors are the same diameter, increases the feed impedance by a factor of four.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4d.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Passive elements will decrease the feedpoint impedance of the driven element, and this can be used to advantage if a folded dipole's 300 ohms is reduce to about 50 ohms.",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -2507,7 +2510,7 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 0,
     explanation:
-      "All the answers could be a true statement, but non-compliance with EMC regulations could give rise to interference problems and might alsorisk electrical safety.",
+      "All the answers could be a true statement, but non-compliance with EMC regulations could give rise to interference problems and might also risk electrical safety.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6b.1",
     examStrategy: 1,
