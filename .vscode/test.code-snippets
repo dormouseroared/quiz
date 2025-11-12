@@ -1,0 +1,21 @@
+{
+	"test template": {
+		"prefix": "test",
+		"body": [
+			"{",
+			"  subTitle: \"$1\",",
+			"  sequence: \"000\",",
+			"  front: \"$2\",",
+			"  frontImage: \"$3\",",
+			"  back: \"$4\",",
+			"  backImage: \"$5\",",
+			"  reference: \"$6\",",
+			"  id: \"nanoid\",",
+			"  id2: '$RANDOM',",
+			"  id3: '$RANDOM_HEX',",
+			"  id4: '$UUID',",
+			"},",
+		],
+		"description": "insert test object"
+	}
+}

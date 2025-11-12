@@ -1962,7 +1962,7 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3m.2",
     examStrategy: 4,
-    examStrategyNotes: "More learning materials.",
+    examStrategyNotes: "Revise and drill.",
     examCalculation: 0,
     exam_NOT: false,
   },
