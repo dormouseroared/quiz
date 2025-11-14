@@ -498,8 +498,9 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3d.1",
-    examStrategy: 2,
-    examStrategyNotes: "Drill",
+    examStrategy: 3,
+    examStrategyNotes:
+      "The key word is MULTIPLIER, which can be used for CW and FM, but not for AM or SSB. There is a flashcard for this.",
     examCalculation: 0,
     exam_NOT: false,
   },

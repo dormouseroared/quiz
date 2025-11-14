@@ -380,12 +380,14 @@ const RSGB_FULL_MOCK_2 = [
       "3.997 to 4.000MHz",
     ],
     correct: 3,
-    explanation: "",
+    explanation:
+      "The keywords are upper sideband signal (USB), so assume we have 3kHz audio bandwidth, so 144.500 to 144.503MHz in order low to high frequency. After mixing with 148.500MHz Local Oscillator (LO), we focus on the difference products, so 148.500 - 144.500 = 4.000MHz (low f) and 148.500 - 144.503 = 3.997MHz (high f). Because this is <mark>LO - RF</mark> this is called 'high side injection' and the audio gets inverted.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3e.2",
     examStrategy: 4,
-    examStrategyNotes: "More learning materials required: see Claude?",
-    examCalculation: 0,
+    examStrategyNotes:
+      "Taking it step by step. Can you remember the rule about inversion? If not just do the low and high frequency calculations and you will see the inversion.",
+    examCalculation: 3,
     exam_NOT: false,
   },
   {

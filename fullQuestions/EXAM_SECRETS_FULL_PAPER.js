@@ -469,8 +469,9 @@ const EXAM_SECRETS_FULL_PAPER = [
       "The circuit is a balanced modulator. The output is the upper and lower sidebands representing the audio signal on the RF carrier. The carrier itself and the audio signal are balanced out.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3e.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "The clues are the audio input and the RF input. This is a Balanced Modulator, so the output is two sidebands without carrier.",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -504,10 +505,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     correct: 1,
     explanation:
       "Specifically, it would be a phase lock loop frequency synthesiser. The direct digital synthesis type does not have an out-of-lock condition. The out-of-lock output must inhibit transmission because under those circumstances, the transmitted frequency is uncontrolled.",
-    lookup: "See page(s) x of the Full Licence text book",
+    lookup: "See page(s) 45 of the Full Licence text book",
     syllabus: "3c.3",
     examStrategy: 3,
-    examStrategyNotes: "Revise and drill",
+    examStrategyNotes:
+      "Frequency synthesiser is used as a generic term for Phase Lock Loop (PLL) and Direct Digital Synthesiser (DDS). ACtually only the PLL can have an out of lock status.",
     examCalculation: 0,
     exam_NOT: false,
   },
