@@ -584,9 +584,9 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "4e.3",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes: "This is a straightforward RETURN LOSS question.",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {
