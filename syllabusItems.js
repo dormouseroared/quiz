@@ -2641,6 +2641,46 @@ const syllabusItems = [
     text: "Recall that the resonant frequency of the tuned circuit in a VFO determines the frequency of oscillation.",
   },
   {
+    key: "3c.1",
+    level: "full",
+    text: "Recall the effect and the importance of minimising drift.",
+    note: "I added this on 2025-11-14. It somehow got missed when transcribing from the syllabus to this format.",
+    weeks: ["5"],
+    flashcards: [
+      {
+        subTitle: "Importance of minimising drift",
+        sequence: "000",
+        front: `
+        Extra care must be taken with VFOs like the Colpitts Oscillator
+        to minimise frequency drift and maintain calibration accuracy.
+        <ul>
+        <li>stable voltage supply separated from other stages</li>
+        <li>best quality components e.g. tightly wound coil on grooved former of low loss material</li>
+        <li>rigidly constructed variable capacitor with insulated coupling to front panel controls</li>
+        <li>short rigid wiring between components</li>
+        <li>away from heat sources to minimise temperature effects</li>
+        <li>a suitable way to check the frequency</li>
+        </ul>
+        `,
+        frontImage: "week05-3c1-p15a.png",
+        back: "See Full Manual pages 42-43",
+        backImage: "week05-3c1-p15b.png",
+        reference: "week05 tutorial slides p15",
+        id: "61aa850e",
+      },
+      {
+        subTitle: "More on drift from the Transmitter Interference chapter",
+        sequence: "010",
+        front: "More on drift...",
+        frontImage: "week05-3c1-p51a.png",
+        back: "",
+        backImage: "week05-3c1-p51b.png",
+        reference: "Full Manual page 51",
+        id: "73be52ff",
+      },
+    ],
+  },
+  {
     key: "3c.2",
     level: "Intermediate",
     title: "Oscillators",
