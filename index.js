@@ -758,7 +758,7 @@ function showFlashcards(targetSyllabus, syllabusArray) {
     findCards.length,
   )
 
-  flashcardButton.title = `There are ${findCards.length} flashcards for syllabus item ${targetSyllabus}`
+  flashcardButton.title = `Flashcards for syllabus item ${targetSyllabus}: ${findCards.length} `
 
   if (findCards.length === 0) {
     flashcardButton.disabled = true
