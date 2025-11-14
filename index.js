@@ -547,7 +547,12 @@ function showExamStrategy(q) {
     }
 
     if (q.examStrategyNotes) {
-      display += `<br>${q.examStrategyNotes}`
+      display += `
+        <br><span style="filter: blur(2px); cursor: pointer; transition: filter 0.5s ease;" 
+        title="Click to reveal exam strategy notes"
+        onclick="this.style.filter='none'">
+          ${q.examStrategyNotes}
+        </span>`
     }
 
     strategy.innerHTML = display
