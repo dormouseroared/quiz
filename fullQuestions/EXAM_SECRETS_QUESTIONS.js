@@ -1300,12 +1300,13 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 2,
     explanation:
-      "The question does not say where in the band the transmission is, so it applies to any part of the band. In-band drift is a nuisance to the station contacted, annoying to amateurs on adjacent frequencies and a breach of the licence if drifting out of band. As asked, the event of most significance is out of band transmission. Note if the frequency  was stated and clearly well away from the band edge, the a question on the most likely unfortunate effect would be annoying other amateurs. Read such questions carefully to be sure of what is being asked.",
+      "The question does not say where in the band the transmission is, so it applies to any part of the band. In-band drift is a nuisance to the station contacted, annoying to amateurs on adjacent frequencies and a breach of the licence if drifting out of band. As asked, the event of most significance is out of band transmission. Note that if the frequency  was stated and clearly well away from the band edge, then a question on the most likely unfortunate effect would be annoying other amateurs. Read such questions carefully to be sure of what is being asked.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3c.1",
     tagged: true,
     examStrategy: 3,
-    examStrategyNotes: "Drill...",
+    examStrategyNotes:
+      "Questions like this can be about seeing how near the edge of band we are, hence transmitting out of band, or if we are in the middle of the band it will be annoyance, or if no details are given as to where we are in the band, assume the worst!",
     examCalculation: 0,
     exam_NOT: false,
   },
