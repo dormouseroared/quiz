@@ -425,8 +425,9 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3a.2",
-    examStrategy: 4,
-    examStrategyNotes: "Need some learning materials for this one: Claude?",
+    examStrategy: 3,
+    examStrategyNotes:
+      "It's in the flashcard: we just need to know that they are there and there are more as the Modulation Index increases.",
     examCalculation: 0,
     exam_NOT: false,
   },
