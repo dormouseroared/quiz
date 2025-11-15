@@ -2537,6 +2537,26 @@ const syllabusItems = [
     title: "Transmitter concepts",
     text: "Recall the meaning of Modulation Index and its effect on the number of FM sidebands.",
     weeks: ["5"],
+    flashcards: [
+      {
+        subTitle: "FM modulation",
+        sequence: "000",
+        front:
+          "What do you know about FM modulation, including sidebands? Note the varactor capacitor in the circuit diagram.",
+        frontImage: "week05-3a2-p25b.png",
+        back: `In FM modulation, <mark>Maximum Deviation</mark> (also called <mark>Peak Deviation</mark>) is known as $\\Delta{f}$ <br><br>
+        $$Modulation \\space Index = \\frac{Peak \\space Deviation}{Maximum \\space Audio \\space Frequency}$$
+        Modulation Index is not on EX309, but Bandwidth is (see image).<br><br>
+        For Wide Band FM (WBFM), Modulation Index = $\\frac{75kHz}{15kHz} = 5$ and Bandwidth = 180kHz<br>
+        For Narrow Band FM (NBFM), Modulation Index = $\\frac{2.5kHz}{3kHz} = 0.83$ and Bandwidth = 11kHz<br>
+        <strong>NBFM is defined as having a Modulation Index < 1 </strong><br>
+        FM produces sidebands (see other side), and as Modulation Index increases, so do the number of sidebands.
+        `,
+        backImage: "week05-3a2-p25c.png",
+        reference: "week05 tutorial slides p25",
+        id: "019c4c6e",
+      },
+    ],
   },
   {
     key: "3a.3",
@@ -2576,7 +2596,7 @@ const syllabusItems = [
   },
   {
     key: "3a.3",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Transmitter concepts",
     text: "Recall that: (1) AM uses less bandwidth than FM (2) SSB uses less bandwidth than AM (3) CW uses less bandwidth than SSB. Some digital modes may use less bandwidth than any of the above.",
   },
@@ -2600,7 +2620,7 @@ const syllabusItems = [
   },
   {
     key: "3b.1",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Transmitter architecture",
     text: "Understand the block diagrams of CW, AM, SSB and FM transmitters.",
   },
@@ -2610,6 +2630,18 @@ const syllabusItems = [
     title: "Transmitter architecture",
     text: "Understand the block diagram of an SSB transmitter employing mixers to generate the final frequency.",
     weeks: ["5"],
+    flashcards: [
+      {
+        subTitle: "Generic transmitter that could be used for SSB",
+        sequence: "000",
+        front: "Can you recognise the components of this transmitter?",
+        frontImage: "week05-3b1.png",
+        back: "",
+        backImage: "",
+        reference: "",
+        id: "ec78d5d6",
+      },
+    ],
   },
   {
     key: "3b.1",
@@ -2617,6 +2649,19 @@ const syllabusItems = [
     title: "Transmitter architecture",
     text: "Understand the block diagram of an FM transmitter employing either frequency multipliers or mixers to generate the final frequency.",
     weeks: ["5"],
+    flashcards: [
+      {
+        subTitle: "FM transmitter with multiplier",
+        sequence: "000",
+        front:
+          "This FM transmitter uses a multiplier stage to achive the final frequency.",
+        frontImage: "week05-3b1-fm.png",
+        back: "",
+        backImage: "",
+        reference: "week05",
+        id: "c74fb12f",
+      },
+    ],
   },
   {
     key: "3c.1",
@@ -2632,13 +2677,13 @@ const syllabusItems = [
   },
   {
     key: "3c.1",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Recall and understand the relative advantages and disadvantages of a crystal oscillator and a VFO.",
   },
   {
     key: "3c.1",
-    level: "Intermediate",
+    level: "intermediate",
     text: "Recall that the resonant frequency of the tuned circuit in a VFO determines the frequency of oscillation.",
   },
   {
@@ -2683,37 +2728,37 @@ const syllabusItems = [
   },
   {
     key: "3c.2",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Recall that the frequency stability of an oscillator can be improved by rigid mechanical construction, screening the oscillator enclosure, a regulated DC supply and a buffer amplifier immediately after the oscillator circuit.",
   },
   {
     key: "3c.2",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Understand that a lack of stability (drift) may result in operation outside the amateur bands.",
   },
   {
     key: "3c.2",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Recall that most modern oscillators are digital synthesisers, which are very stable and are based on a crystal reference.",
   },
   {
     key: "3c.3",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Recall that digital signals can be used to generate audio and RF signals by Direct Digital Synthesis(DDS).",
   },
   {
     key: "3c.3",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Recall the meaning of DDS. ",
   },
   {
     key: "3c.3",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Oscillators",
     text: "Recall that a Direct Digital Synthesiser generates audio and RF signals from pre-set digital values held in a memory, or Lookup Table.",
   },
@@ -2721,7 +2766,7 @@ const syllabusItems = [
     key: "3c.3",
     level: "full",
     title: "Oscillators",
-    text: "Recall the block diagram of a Phase Locked Loop (PLL) Frequency Synthesiser and the functions of the stages i.e. oscillator, fixed divider, phase comparator (detector), Low Pass Filter (LPF), voltage-controlled oscillator and programmable divider.",
+    text: "Recall the block diagram of a Phase Locked Loop (PLL) Frequency Synthesiser and the functions of the stages i.e. oscillator, fixed divider, phase comparator (detector), Low Pass Filter (LPF), voltage-controlled oscillator {VCO} and programmable divider.",
     weeks: ["5"],
   },
   {
@@ -2801,7 +2846,7 @@ const syllabusItems = [
   },
   {
     key: "3e.1",
-    level: "Intermediate",
+    level: "intermediate",
     title: "Microphone amplifiers and modulators",
     text: "Recall that a Balanced Modulator is used to produce two sidebands whilst suppressing the carrier.",
   },
@@ -2816,7 +2861,7 @@ const syllabusItems = [
     key: "3e.1",
     level: "full",
     title: "Microphone amplifiers and modulators",
-    text: "Calculate the bandwidth of such transmissions.",
+    text: "Calculate the bandwidth of such (AM, SSB and FM) transmissions.",
     weeks: ["5"],
   },
   {
@@ -3258,7 +3303,7 @@ const syllabusItems = [
     key: "3i.5",
     level: "full",
     title: "Superheterodyne concepts",
-    text: "Recall the unit of measurement is dBc/Hz.",
+    text: "Recall the unit of measurement (for phase noise) is dBc/Hz.",
   },
   {
     key: "3j.1",
@@ -4595,7 +4640,7 @@ const syllabusItems = [
     key: "5a.1",
     level: "full",
     title: "Radio propagation: key concepts",
-    text: "Recall that under free space conditions e-m waves spread out according to an inverse square law of power flux density and that the electric field strength, measured in volts/metre, drops linearly with distance. Note: Numerical calculations required at item 6e.1 only.",
+    text: "Recall that under free space conditions electro-magnetic waves spread out according to an inverse square law of power flux density and that the electric field strength, measured in volts/metre, drops linearly with distance. Note: Numerical calculations required at item 6e.1 only.",
   },
   {
     key: "5a.2",
@@ -4637,7 +4682,7 @@ const syllabusItems = [
     key: "5a.3",
     level: "full",
     title: "Radio propagation: key concepts",
-    text: "Recall that an e-m wave comprises E and H fields in phase, at right angles and at right angles to the direction of travel and the power flux density (watts/Metre squared) is given by the product of E and H.",
+    text: "Recall that an electro-magnetic wave comprises E and H fields in phase, at right angles and at right angles to the direction of travel and the power flux density (watts/Metre squared) is given by the product of E and H.",
   },
   {
     key: "5a.3",
@@ -4787,7 +4832,7 @@ const syllabusItems = [
     key: "5b.3",
     level: "full",
     title: "Ionosphere",
-    text: "Recall that NVIS is a technique employed on some low frequency bands(e.g. 5MHz) to make contacts over relatively short distances.",
+    text: "Recall that NVIS is a technique employed on some low frequency bands (e.g. 5MHz) to make contacts over relatively short distances.",
   },
   {
     key: "5b.4",
@@ -5548,13 +5593,13 @@ const syllabusItems = [
     key: "7a.8",
     level: "foundation",
     title: "Good operating practices ",
-    text: "Understand the need to conduct tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
+    text: "Recall the advisability to carry out tests from time to time to ensure that the station is not causing Undue Interference to other radio users.",
   },
   {
     key: "7a.8",
     level: "full",
     title: "Good operating practices ",
-    text: "Recall the advisability to carry out tests to ensure that the station is not causing undue interference to other radio users.",
+    text: "Understand the need to conduct tests to ensure that the station is not causing Undue Interference to other radio users.",
     weeks: ["1", "3A"],
     flashcards: [
       {
