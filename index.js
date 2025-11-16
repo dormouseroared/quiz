@@ -555,6 +555,14 @@ function showExamStrategy(q) {
         </span>`
     }
 
+    // the window open is used so that a new browser tab is not created and left behind
+    // note that this could also be done with href and some extras
+    if (q.obsidianURL) {
+      display += ` <span onclick="window.location.href='${q.obsidianURL}'; return false;" 
+                  style="text-decoration: none; cursor: pointer; font-size: 24px; " 
+                  title="Open analysis guide in Obsidian">🎯</span>`
+    }
+
     strategy.innerHTML = display
   }
 
