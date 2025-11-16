@@ -978,6 +978,41 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
     examCalculation: 1,
     exam_NOT: false,
   },
+  {
+    source: "OWN QUESTIONS AC-DIAGNOSTIC Q58",
+    question: `If a 15V 50Hz AC supply is connected across R=1000 Ohms and C=10µF in series, what is $V_R$?`,
+    image: "",
+    options: ["0V", "4.6V", "14.3V", "15V"],
+    correct: 2,
+    explanation: `This question is to test out the obsidianURL link, looking at the opened tactical advice on how to approach it, and then getting a link to another detailed note for the approach. The basic problem is that any two circuits may look similar, but a different approach is needed depending on the detail. The obsidianURL value is copied and pasted from the three dots (with the tooltip 'more options') next to the obsidian note. Eventually there will be an explanation for this question.`,
+    lookup: "See page(s) 25-26 of the Full Licence text book",
+    syllabus: "2e.6",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Component values given → Calculate $X_C$, $Z$, $I$, then $V_R$",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+    examCalculation: 2,
+    exam_NOT: false,
+  },
+  {
+    source: "OWN QUESTIONS AC-DIAGNOSTIC Q59",
+    question: `In a series RC circuit with an AC supply, the source voltage is 100V 
+    and the voltage across the resistor is 60V. What is the voltage 
+    across the capacitor?`,
+    image: "",
+    options: ["40V", "60V", "100V", "80V"],
+    correct: 2,
+    explanation: ``,
+    lookup: "See page(s) 25-26 of the Full Licence text book",
+    syllabus: "2e.6",
+    examStrategy: 4,
+    examStrategyNotes: "Voltages given → Use Pythagoras: V² = VR² + VC²",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+    examCalculation: 2,
+    exam_NOT: false,
+  },
   // {
   //   source: "OWN QUESTIONS Q39",
   //   question: ``,
