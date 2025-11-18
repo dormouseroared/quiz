@@ -12,7 +12,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "RSL is also mentioned in 6-25. Licence 6-22 outlines how M and G callsigns may use RSLs, 6-23 states that Intermediate callsigns beginning with a ‘2’ must insert the appropriate RSL, and 6-24 lists the RSLs that must be used, if one is included in the callsign.",
+      "RSL is also mentioned in 6-25. Licence 6-22 outlines how M and G callsigns may use RSLs, 6-23 states that Intermediate callsigns beginning with a '2' must insert the appropriate RSL, and 6-24 lists the RSLs that must be used, if one is included in the callsign.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1a.2",
     examStrategy: 1,
@@ -65,7 +65,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions.The definition of the word ‘Inspect’ is at 10-1p.It says that it includes examine and test.",
+      "If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions.The definition of the word 'Inspect' is at 10-1p.It says that it includes examine and test.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1d.1",
     examStrategy: 1,
@@ -107,7 +107,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      "Licence 6-19 says that, unless you are operating for the purposes of 6-5 (emergencies / disasters), transmissions must not be encrypted for the purposes of obscuring the meaning.Codes are not ruled out, for example, Morse code and the Q code are allowed, so ‘a’ is OK.Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so ‘c’ is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so ‘d’ is OK.",
+      "Licence 6-19 says that, unless you are operating for the purposes of 6-5 (emergencies / disasters), transmissions must not be encrypted for the purposes of obscuring the meaning.Codes are not ruled out, for example, Morse code and the Q code are allowed, so 'a' is OK.Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so 'c' is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so 'd' is OK.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1c.2",
     examStrategy: 2,
@@ -208,7 +208,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 3,
     explanation:
-      "‘a’ includes nothing about beacons. ‘b’ does not set maximum power limits and Table B applies to Intermediate Licence holders. Licence 6-13 sets a 25W limit for beacons that have their own callsign, making it the correct answer. Not in Syllabus but worthy of note if you ever want to run a beacon with more than 5W!",
+      "'a' includes nothing about beacons. 'b' does not set maximum power limits and Table B applies to Intermediate Licence holders. Licence 6-13 sets a 25W limit for beacons that have their own callsign, making it the correct answer. Not in Syllabus but worthy of note if you ever want to run a beacon with more than 5W!",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "0",
     tagged: true,
@@ -225,7 +225,7 @@ const BBDL_FULL_QUIZZES = [
     options: ["1240-1260MHz", "2310-2350MHz", "5650-5670MHz", "5820-5830MHz"],
     correct: 2,
     explanation:
-      "‘c’ is the only one with an allocation in the third column of Licence Schedule 1, Table C; a secondary allocation for signals from Earth to space only.",
+      "'c' is the only one with an allocation in the third column of Licence Schedule 1, Table C; a secondary allocation for signals from Earth to space only.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1h.1",
     examStrategy: 2,
@@ -287,7 +287,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "‘a’ is wrong because ICNIRP is not UK specific and only provides guidelines, not rules. ‘b’ is incorrect because a 9 watt transmitter working into a high gain antenna can exceed the 10W EIRP level. ‘c’ is a true statement. ‘d’ is wrong because the RSGB does not enforce the rules.Licence 6-3 points to Licence Condition 9, which sets out the rules, and points to Ofcom Guidance for further detail. [[I answered with the ICNIRP Guidelines.]]",
+      "'a' is wrong because ICNIRP is not UK specific and only provides guidelines, not rules. 'b' is incorrect because a 9 watt transmitter working into a high gain antenna can exceed the 10W EIRP level. 'c' is a true statement. 'd' is wrong because the RSGB does not enforce the rules.Licence 6-3 points to Licence Condition 9, which sets out the rules, and points to Ofcom Guidance for further detail. [[I answered with the ICNIRP Guidelines.]]",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1g.1",
     tagged: true,
@@ -309,7 +309,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 3,
     explanation:
-      " Harmful interference is an EMC issue, which is not part of the EMF restrictions set out in the Licence, so not ‘a’.Radio amateurs are not required to consider radio workers, or themselves, in their assessments of EMF exposure, so not ‘b’ or ‘c’. That only leaves ‘d’ and it is the general public who the restrictions are intended to protect.Licence 9-1 is the main reference but 10-1n defines what is meant by ‘the General Public’.",
+      " Harmful interference is an EMC issue, which is not part of the EMF restrictions set out in the Licence, so not 'a'.Radio amateurs are not required to consider radio workers, or themselves, in their assessments of EMF exposure, so not 'b' or 'c'. That only leaves 'd' and it is the general public who the restrictions are intended to protect.Licence 9-1 is the main reference but 10-1n defines what is meant by 'the General Public'.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1g.1",
     examStrategy: 1,
@@ -330,7 +330,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "The term ‘Relevant Radio Equipment’ is used in Licence 9-1, and is defined in 10-1z",
+      "The term 'Relevant Radio Equipment' is used in Licence 9-1, and is defined in 10-1z",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1g.1",
     examStrategy: 2,
@@ -351,7 +351,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      "See the 5 MHz (60m) Band Plan; ‘a’ is not in the band, ‘b’ is shown as QRP (low power) CW(Morse) Centre of Activity, ‘c’ is not a UKband, and ‘d’ is to be avoided for contacts within the UK",
+      "See the 5 MHz (60m) Band Plan; 'a' is not in the band, 'b' is shown as QRP (low power) CW(Morse) Centre of Activity, 'c' is not a UKband, and 'd' is to be avoided for contacts within the UK",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7b.1",
     examStrategy: 1,
@@ -415,7 +415,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      " ‘a’ is wrong because satellites use different bands for up and down links. ‘b’ is not true, using split in a contest would not allow quick scoring and in a busy contest would take up too much spectrum. ‘c’ sounds good, but let’s check ‘d’.If there is interference on your transmit frequency, it is unlikely other stations will hear you they might but it is not as good an answer as ‘c’.",
+      " 'a' is wrong because satellites use different bands for up and down links. 'b' is not true, using split in a contest would not allow quick scoring and in a busy contest would take up too much spectrum. 'c' sounds good, but let's check 'd'.If there is interference on your transmit frequency, it is unlikely other stations will hear you they might but it is not as good an answer as 'c'.",
     lookup: "See page(s) 11 of the Full Licence text book",
     syllabus: "7a.1",
     examStrategy: 3,
@@ -437,7 +437,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      " You are permitted to operate up to the maximum powers listed in the Schedule, and it is perfectly feasible to operate with high power and not cause undue interference. Operating with low power can still cause undue interference, especially if your transmitter is faulty, so not ‘a’. ‘b’ sounds like a direct quote from the Ofcom Guidance, so is a contender for a correct answer, but check ‘c’ and ‘d’ to be sure. ‘c’ is really not recommended; if your neighbours are suffering any interference, they are likely to blame you, so not ‘c’. ‘d’ is not a bad thing to do, but it will only check for signal quality, not harmonics or other issues, so not the best answer.",
+      " You are permitted to operate up to the maximum powers listed in the Schedule, and it is perfectly feasible to operate with high power and not cause undue interference. Operating with low power can still cause undue interference, especially if your transmitter is faulty, so not 'a'. 'b' sounds like a direct quote from the Ofcom Guidance, so is a contender for a correct answer, but check 'c' and 'd' to be sure. 'c' is really not recommended; if your neighbours are suffering any interference, they are likely to blame you, so not 'c'. 'd' is not a bad thing to do, but it will only check for signal quality, not harmonics or other issues, so not the best answer.",
     lookup: "See page(s) 6-7 of the Full Licence text book",
     syllabus: "7a.8",
     examStrategy: 2,
@@ -470,7 +470,7 @@ const BBDL_FULL_QUIZZES = [
   {
     source: "BBDL QUIZ WEEK01 Q04",
     question:
-      "In the ‘All Modes’ section of Band Plans, Amplitude Modulation is acceptable:",
+      "In the 'All Modes' section of Band Plans, Amplitude Modulation is acceptable:",
     image: "",
     options: [
       "Only if the bandwidth is 6kHz or less",
@@ -480,7 +480,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 3,
     explanation:
-      "[[I answered bandwidth is 6kHz or less... In the 5MHz band there's this: Note 3: Amplitude Modulation is permitted with a maximum bandwidth of 6kHz, on frequencies with at least 6kHz available width, and in the Notes to the bandplans, there are these: 1. All Modes: CW, SSB and those modes listed as Centres of Activity, plus AM. Consideration should be given to adjacent channel users. 2. Amplitude Modulation (AM): AM with a bandwidth greater than 2.7kHz is acceptable in the All Modes segments provided users consider adjacent channel activity when selecting operating frequencies (Davos 2005). CONFUSING!]] AM is generally seen to have a bandwidth of around 6kHz. There was an attempt to ban it from the amateur bands, but a pragmatic agreement was reached that allows AM with a bandwidth greater than 2.7kHz provided the user considers adjacent channel activity. See ‘Notes to the bandplans’ in EX309 top of second column of the Notes.",
+      "[[I answered bandwidth is 6kHz or less... In the 5MHz band there's this: Note 3: Amplitude Modulation is permitted with a maximum bandwidth of 6kHz, on frequencies with at least 6kHz available width, and in the Notes to the bandplans, there are these: 1. All Modes: CW, SSB and those modes listed as Centres of Activity, plus AM. Consideration should be given to adjacent channel users. 2. Amplitude Modulation (AM): AM with a bandwidth greater than 2.7kHz is acceptable in the All Modes segments provided users consider adjacent channel activity when selecting operating frequencies (Davos 2005). CONFUSING!]] AM is generally seen to have a bandwidth of around 6kHz. There was an attempt to ban it from the amateur bands, but a pragmatic agreement was reached that allows AM with a bandwidth greater than 2.7kHz provided the user considers adjacent channel activity. See 'Notes to the bandplans' in EX309 top of second column of the Notes.",
     lookup: "See page(s) 7b.1 of the Full Licence text book",
     syllabus: "7b.1",
     tagged: true,
@@ -523,7 +523,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      "Some governments do not allow amateur radio (e.g. North Korea), but a total ban is not mode specific, which is the focus of the question, so ‘a’ is only partially correct. ‘b’ is 100 % true and we gave the example of 5MHz in our tutorial, so ‘b’ looks good. ‘c’ is not true; there are country exclusions in the 600m bandplan, but nothing that is mode specific, so not ‘c’. ‘d’ is also not true, so not the one to go for.",
+      "Some governments do not allow amateur radio (e.g. North Korea), but a total ban is not mode specific, which is the focus of the question, so 'a' is only partially correct. 'b' is 100 % true and we gave the example of 5MHz in our tutorial, so 'b' looks good. 'c' is not true; there are country exclusions in the 600m bandplan, but nothing that is mode specific, so not 'c'. 'd' is also not true, so not the one to go for.",
     lookup: "See page(s) 11-12 of the Full Licence text book",
     syllabus: "7b.2",
     examStrategy: 1,
@@ -544,7 +544,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "[[I answered use their own callsign...]] The ‘1-page’ Licence says that a Full Licence holder is permitted to operate under CEPT T/R 61-01, and if you do that, you need to make your Licence available for inspection, which is why ‘c’ is the correct answer. ‘a’ is wrong because T/R 61-01 is for temporary use and no host country callsigns are used. When in another country, you must abide by that country’s Licence Conditions, so the Ofcom documents in ‘b’ are irrelevant. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 following by your UK callsign. This particular Licence Condition is in paragraph 3 on page 2 of the 1-page Licence document issued by Ofcom, which is not included in EX309. You may scream ‘foul play’ but the syllabus says you need to understand the requirements of CEPT T/R 61-01.",
+      "[[I answered use their own callsign...]] The '1-page' Licence says that a Full Licence holder is permitted to operate under CEPT T/R 61-01, and if you do that, you need to make your Licence available for inspection, which is why 'c' is the correct answer. 'a' is wrong because T/R 61-01 is for temporary use and no host country callsigns are used. When in another country, you must abide by that country's Licence Conditions, so the Ofcom documents in 'b' are irrelevant. 'd' is wrong because you must use the country prefix quoted in T/R 61-01 following by your UK callsign. This particular Licence Condition is in paragraph 3 on page 2 of the 1-page Licence document issued by Ofcom, which is not included in EX309. You may scream 'foul play' but the syllabus says you need to understand the requirements of CEPT T/R 61-01.",
     lookup: "See page(s) 7-8 of the Full Licence text book",
     syllabus: "7h.1",
     tagged: true,
@@ -562,11 +562,11 @@ const BBDL_FULL_QUIZZES = [
       "Await authorisation from the authorities in that country before making any transmissions",
       "Comply with the Terms & Conditions of the country where they are located",
       "Inform Ofcom of a change in location before departure",
-      "Add ‘/A’ to their callsign to signify that they are Abroad",
+      "Add '/A' to their callsign to signify that they are Abroad",
     ],
     correct: 1,
     explanation:
-      " ‘a’ is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so ‘b’ looks like a good option. ‘c’ is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. ‘d’ is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign’; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T/R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26.",
+      " 'a' is wrong because T/R 61-01 authorises temporary use so no host country authorisation is required. When in another country, you must abide by that country's Licence Conditions, so 'b' looks like a good option. 'c' is wrong because Ofcom do not care if you are operating outside of the UK, only a permanent change of address would require you to inform them. 'd' is wrong because you must use the country prefix quoted in T/R 61-01 followed by your UK callsign'; no suffix is mentioned in T/R 61-01. The syllabus says you need to understand the requirements of CEPT T/R 61-01. You can find the answer to this one in the Ofcom Guidance Document, pages 25-26.",
     lookup: "See page(s) 7-8 of the Full Licence text book",
     syllabus: "7h.1",
     examStrategy: 2,
@@ -587,7 +587,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      "The first point to note is that Asia is covered by ITU Region 3, so ‘c’ and ‘d’ are ruled out immediately. The second key point is that the question says you are in a country and whichever country you are in, you must abide by their rules; a band may be allocated to that Region but that does not mean it is permitted in every country in that Region. ‘a’ is wrong because the UK Licence is not relevant to what frequencies you can use in another country; it would be correct if the question was about internationalwaters in Asia, but it isn’t.",
+      "The first point to note is that Asia is covered by ITU Region 3, so 'c' and 'd' are ruled out immediately. The second key point is that the question says you are in a country and whichever country you are in, you must abide by their rules; a band may be allocated to that Region but that does not mean it is permitted in every country in that Region. 'a' is wrong because the UK Licence is not relevant to what frequencies you can use in another country; it would be correct if the question was about internationalwaters in Asia, but it isn't.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7h.2",
     examStrategy: 2,
@@ -643,7 +643,7 @@ const BBDL_FULL_QUIZZES = [
     options: ["10V", "24V", "100V", "240V"],
     correct: 1,
     explanation:
-      "There are two key points to getting this one correct; the series resistors and the units. It is a ‘simple’ Ohm’s Law question, just complicated by there being two series resistors and the mixed units, so let’s deal with the series resistors first. Hopefully you remembered that series resistors simply add together to give the total resistance, $R_{Total}$. If you are happy ‘playing’ with numbers, you can rethink 330kΩ as 0.33MΩ, and add 1.2MΩ to get 1.53MΩ.",
+      "There are two key points to getting this one correct; the series resistors and the units. It is a 'simple' Ohm's Law question, just complicated by there being two series resistors and the mixed units, so let's deal with the series resistors first. Hopefully you remembered that series resistors simply add together to give the total resistance, $R_{Total}$. If you are happy 'playing' with numbers, you can rethink 330kΩ as 0.33MΩ, and add 1.2MΩ to get 1.53MΩ.",
     lookup: "See page(s) 19-20 of the Full Licence text book",
     syllabus: "2b.1",
     examStrategy: 2,
@@ -659,7 +659,7 @@ const BBDL_FULL_QUIZZES = [
     options: ["2.88 W", "6.00 W", "14.4 W", "41.7 W"],
     correct: 1,
     explanation:
-      "The key to answering this question is remembering that resistors in parallel combine to produce a lower total resistance; in this case it must be less than 820Ω. <br><br>Using the formula from EX309, $$\\frac{1}{R_T} = \\frac{1}{820}+\\frac{1}{2200}+\\frac{1}{1000000} = 597.35 \\Omega$$ SENSE CHECK: is this less than 820Ω? Yes, so feels right! <br><br>Because the AC supply is given in Volts RMS, we can now use the Power formula: $$ P = \\frac{V^2}{R} = \\frac{60^2}{597.35} = 6.03W $$ Footnote: it may not be ‘obvious’ at this stage but you could have ignored the 1MΩ resistor.Why? Because it is so much larger than the resistor it is in parallel with, it has very little impact on total R; it is worth remembering that the bigger the difference is between parallel resistors, the less it will change the overall value. Try it! See Worked Answers for calculator key strokes etc.",
+      "The key to answering this question is remembering that resistors in parallel combine to produce a lower total resistance; in this case it must be less than 820Ω. <br><br>Using the formula from EX309, $$\\frac{1}{R_T} = \\frac{1}{820}+\\frac{1}{2200}+\\frac{1}{1000000} = 597.35 \\Omega$$ SENSE CHECK: is this less than 820Ω? Yes, so feels right! <br><br>Because the AC supply is given in Volts RMS, we can now use the Power formula: $$ P = \\frac{V^2}{R} = \\frac{60^2}{597.35} = 6.03W $$ Footnote: it may not be 'obvious' at this stage but you could have ignored the 1MΩ resistor.Why? Because it is so much larger than the resistor it is in parallel with, it has very little impact on total R; it is worth remembering that the bigger the difference is between parallel resistors, the less it will change the overall value. Try it! See Worked Answers for calculator key strokes etc.",
     lookup: "See page(s) 19-20 of the Full Licence text book",
     syllabus: "2b.1",
     examStrategy: 1,
@@ -708,12 +708,12 @@ const BBDL_FULL_QUIZZES = [
   {
     source: "BBDL QUIZ WEEK01 Q16",
     question:
-      "What value of resistor would need to be placed in the gap ‘X’ to cause the voltmeter to read zero volts?",
+      "What value of resistor would need to be placed in the gap 'X' to cause the voltmeter to read zero volts?",
     image: "images/bbdl-quizzes-week01-q16.png",
     options: ["10Ω", "50Ω", "100Ω", "1kΩ"],
     correct: 1,
     explanation:
-      "For the voltmeter to read zero the potential difference across the resistor placed in the gap ‘X’ has to be the same as that across the 5kΩ resistor. In the lower potential divider, the 5kΩ resistor is half the value of the 10kΩ resistor, so there will be 3V across the 5kΩ resistor and 6V across the 10kΩ resistor. For the same to be true in the top potential divider, the gap resistor needs to be half of the 100Ω resistor, i.e. 50Ω. You can work out the combined resistance value, the current and then the individual voltages using Ohm’s Law, to check, if you wish.",
+      "For the voltmeter to read zero the potential difference across the resistor placed in the gap 'X' has to be the same as that across the 5kΩ resistor. In the lower potential divider, the 5kΩ resistor is half the value of the 10kΩ resistor, so there will be 3V across the 5kΩ resistor and 6V across the 10kΩ resistor. For the same to be true in the top potential divider, the gap resistor needs to be half of the 100Ω resistor, i.e. 50Ω. You can work out the combined resistance value, the current and then the individual voltages using Ohm's Law, to check, if you wish.",
     lookup: "See page(s) 20 of the Full Licence text book",
     syllabus: "2b.1",
     examStrategy: 2,
@@ -733,7 +733,7 @@ const BBDL_FULL_QUIZZES = [
       "There is a real risk of radiation sickness",
     ],
     correct: 2,
-    explanation: `Whilst ‘a’ and ‘b’ are undoubtedly true, ‘c’ is the most significant, and therefore the correct answer for a ‘high risk’.`,
+    explanation: `Whilst 'a' and 'b' are undoubtedly true, 'c' is the most significant, and therefore the correct answer for a 'high risk'.`,
     lookup: "See page(s) 13 of the Full Licence text book",
     syllabus: "8a.1",
     examStrategy: 1,
@@ -753,7 +753,7 @@ const BBDL_FULL_QUIZZES = [
       "A system which requires all electrical equipment in the house to have more than one earth",
     ],
     correct: 0,
-    explanation: `‘a’ looks like a reasonable description of PME, ‘b’ is wrong, many water pipes are plastic these days. ‘c’ is wrong as PME generally connects many properties together with no independent earth connections, which is at the heart of the risk. ‘d’ is the opposite of what PME relies on – all metal surfaces bonded to a single common point.`,
+    explanation: `'a' looks like a reasonable description of PME, 'b' is wrong, many water pipes are plastic these days. 'c' is wrong as PME generally connects many properties together with no independent earth connections, which is at the heart of the risk. 'd' is the opposite of what PME relies on – all metal surfaces bonded to a single common point.`,
     lookup: "See page(s) 17-18 of the Full Licence text book",
     syllabus: "8a.2",
     examStrategy: 1,
@@ -769,11 +769,11 @@ const BBDL_FULL_QUIZZES = [
     options: [
       "Only when there is no other way to carry out the work, for example setting the pre-set bias of a valve in a linear amplifier",
       "Whenever there is a fault in a piece of mains powered equipment, for example when a main power supply starts to make a loud humming sound",
-      "Whenever a safety device is triggered, for example a mains fuse ‘blows’",
+      "Whenever a safety device is triggered, for example a mains fuse 'blows'",
       "Only when replacing components that are fitted in insulated sockets, for example, replacing a valve in an old transceiver",
     ],
     correct: 0,
-    explanation: `‘a’ is the only justifiable reason to go inside live mains powered equipment. In all other cases, there will be ways to carry out servicing or repairs without any power being applied.`,
+    explanation: `'a' is the only justifiable reason to go inside live mains powered equipment. In all other cases, there will be ways to carry out servicing or repairs without any power being applied.`,
     lookup: "See page(s) 13 of the Full Licence text book",
     syllabus: "8a.6",
     examStrategy: 1,
@@ -793,7 +793,7 @@ const BBDL_FULL_QUIZZES = [
       "UKCNIRP – United Kingdom Committee on Non-Ionising Radiation Protection",
     ],
     correct: 2,
-    explanation: `‘a’, ‘b’ & ‘d’ are completely made-up names. leaving ‘c’ as the only correct option. NOTE the latest advice is available on the ICNIRP website http://www.icnirp.org and this is the basis of the UK Licence Condition 9 relating to EMF Risk Assessments.`,
+    explanation: `'a', 'b' & 'd' are completely made-up names. leaving 'c' as the only correct option. NOTE the latest advice is available on the ICNIRP website http://www.icnirp.org and this is the basis of the UK Licence Condition 9 relating to EMF Risk Assessments.`,
     lookup: "See page(s) 16 of the Full Licence text book",
     syllabus: "8d.1",
     examStrategy: 1,
@@ -813,7 +813,7 @@ const BBDL_FULL_QUIZZES = [
       "Increasing the height of your antenna to reduce the horizontal separation distance to zero at ground level",
     ],
     correct: 2,
-    explanation: `Operating after dusk means the park is closed and there is no reason to expect the general public to be present, so ‘a’ is sound. Reducing your power so the park is no longer in the exclusion zone is absolutely compliant, so ‘b’ is fine. Placing a warning sign on the bench does not mean it will be followed, and the general public may be walking near the bench, so ‘c’ would NOT ensure compliance. Increasing the height of the antenna so the horizontal separation distance is zero is another good way of complying, as far as the bench is concerned. How to comply with the EMF restriction is not well covered in the textbook.`,
+    explanation: `Operating after dusk means the park is closed and there is no reason to expect the general public to be present, so 'a' is sound. Reducing your power so the park is no longer in the exclusion zone is absolutely compliant, so 'b' is fine. Placing a warning sign on the bench does not mean it will be followed, and the general public may be walking near the bench, so 'c' would NOT ensure compliance. Increasing the height of the antenna so the horizontal separation distance is zero is another good way of complying, as far as the bench is concerned. How to comply with the EMF restriction is not well covered in the textbook.`,
     lookup: "See BBDL Week 1 Tutorial",
     syllabus: "1g.1",
     examStrategy: 1,
@@ -832,7 +832,7 @@ const BBDL_FULL_QUIZZES = [
       "Should only be connected when you are not using the antenna",
     ],
     correct: 1,
-    explanation: `‘a’ is not correct, it is quite a high resistance, so will present a high Z, ‘b’ looks better. ‘c’ is wrong as that would affect antenna performance and ‘d’ is not true as static can build up at any time. So, ‘b’ it is.`,
+    explanation: `'a' is not correct, it is quite a high resistance, so will present a high Z, 'b' looks better. 'c' is wrong as that would affect antenna performance and 'd' is not true as static can build up at any time. So, 'b' it is.`,
     lookup: "See page(s) 16-17 of the Full Licence text book",
     syllabus: "8e.1",
     examStrategy: 1,
@@ -846,13 +846,13 @@ const BBDL_FULL_QUIZZES = [
       "Handling live mains electric cables whilst outdoors gives rise to a greater risk because:",
     image: "",
     options: [
-      "The cables’ insulation may be carrying RF energy",
+      "The cables' insulation may be carrying RF energy",
       "The air may support arcing",
       "The ground may be damp, increasing the risk of electrocution",
       "There is an increased risk of lightning strike",
     ],
     correct: 2,
-    explanation: `‘a’ is RF not mains, so not that one. ‘b’ is more about high voltage static build-up/lightning not mains power, so not that one. ‘c’ sounds feasible as damp earth provides better conduction and a lower resistance path through you. ‘d’ may be true outdoors but has nothing to do with mains cables, so not that one. ‘c’ it is.`,
+    explanation: `'a' is RF not mains, so not that one. 'b' is more about high voltage static build-up/lightning not mains power, so not that one. 'c' sounds feasible as damp earth provides better conduction and a lower resistance path through you. 'd' may be true outdoors but has nothing to do with mains cables, so not that one. 'c' it is.`,
     lookup: "See page(s) 14-15 of the Full Licence text book",
     syllabus: "8f.4",
     examStrategy: 1,
@@ -872,7 +872,7 @@ const BBDL_FULL_QUIZZES = [
       "Use of correctly rated fuses in all DC power leads",
     ],
     correct: 1,
-    explanation: `Controls ‘a’, ‘c’ and ‘d’ all apply in a fixed location; ‘d’ applies equally in fixed and mobile power supply leads, so not more appropriate to either. Heavy equipment (‘b’) is not normally secured in a fixed location as it is unlikely to move but a transceiver could become a lethal missile in a vehicle collision or emergency stop.`,
+    explanation: `Controls 'a', 'c' and 'd' all apply in a fixed location; 'd' applies equally in fixed and mobile power supply leads, so not more appropriate to either. Heavy equipment ('b') is not normally secured in a fixed location as it is unlikely to move but a transceiver could become a lethal missile in a vehicle collision or emergency stop.`,
     lookup: "See page(s) 15 of the Full Licence text book",
     syllabus: "8f.5",
     examStrategy: 2,
@@ -891,7 +891,7 @@ const BBDL_FULL_QUIZZES = [
       "If someone suspects Health and Safety laws are being broken",
     ],
     correct: 2,
-    explanation: `‘a’ suggests it is too late to be assessing risks, although you might carry out an assessment before restarting the activity that resulted in the accident, so half-correct. ‘b’ is not the case if you are on your own and there is clearly no risk to anyone else, so not universally true. ‘c’ sounds very sensible, as it recognises the responsibility to keep everyone safe. ‘d’ is not a reason to do a risk assessment, more a case of investigating why a breach of the law may have occurred. ’c’ is the most correct answer here because it is true without any qualification.`,
+    explanation: `'a' suggests it is too late to be assessing risks, although you might carry out an assessment before restarting the activity that resulted in the accident, so half-correct. 'b' is not the case if you are on your own and there is clearly no risk to anyone else, so not universally true. 'c' sounds very sensible, as it recognises the responsibility to keep everyone safe. 'd' is not a reason to do a risk assessment, more a case of investigating why a breach of the law may have occurred. 'c' is the most correct answer here because it is true without any qualification.`,
     lookup: "See page(s) 14 of the Full Licence text book",
     syllabus: "8f.6",
     examStrategy: 1,
@@ -911,7 +911,7 @@ const BBDL_FULL_QUIZZES = [
       "Risk assessments show that insurance is an appropriate risk control",
     ],
     correct: 1,
-    explanation: `‘a’ could apply to every situation and it doesn’t say who might be injured, so not a good answer. ‘b’ sounds sensible as members of the public are afforded a higher duty of care than yourself, or other radio amateurs, who know about the hazards and risks associated with an amateur station. ‘c’ is a situation to avoid and you are unlikely to get insurance to cover exceeding the ICNIRP exposure levels, so not that one. ‘d’ is wrong because insurance does not control the risk, it just protects you against any claims against you.`,
+    explanation: `'a' could apply to every situation and it doesn't say who might be injured, so not a good answer. 'b' sounds sensible as members of the public are afforded a higher duty of care than yourself, or other radio amateurs, who know about the hazards and risks associated with an amateur station. 'c' is a situation to avoid and you are unlikely to get insurance to cover exceeding the ICNIRP exposure levels, so not that one. 'd' is wrong because insurance does not control the risk, it just protects you against any claims against you.`,
     lookup: "See page(s) 14 of the Full Licence text book",
     syllabus: "8f.6",
     examStrategy: 1,
@@ -928,10 +928,10 @@ const BBDL_FULL_QUIZZES = [
       "Fuel, electricity and exhaust gasses",
       "Electric shock, fire and carbon monoxide poisoning",
       "Good earthing, fuel stored in metal cans, ensuring good ventilation for exhaust gasses",
-      "Using RCD’s, keeping fuel stocks away from ignition sources, running the generator outdoors",
+      "Using RCD's, keeping fuel stocks away from ignition sources, running the generator outdoors",
     ],
     correct: 1,
-    explanation: `‘b’ is the best fit with this question; ‘a’ is a list of hazards, which give rise to risks. ‘b’ are risks (bad things that might happen). ‘c’ & ‘d’ are all appropriate risk controls, but not risks.`,
+    explanation: `'b' is the best fit with this question; 'a' is a list of hazards, which give rise to risks. 'b' are risks (bad things that might happen). 'c' & 'd' are all appropriate risk controls, but not risks.`,
     lookup: "See page(s) 14-15 of the Full Licence text book",
     syllabus: "8f.7",
     examStrategy: 1,
@@ -961,7 +961,7 @@ const BBDL_FULL_QUIZZES = [
     image: "images/bbdl-quizzes-week02-q13.png",
     options: ["10 Ω", "101 Ω", "110 Ω", "1110 Ω"],
     correct: 1,
-    explanation: `In any ‘complex’ resistor network like this, you need to work out the sections one at a time. You cannot do series and parallel all at once, you need to make them all look like series or all parallel. In this case you need to work out what the total value of the two parallel resistors are then add that to the one series resistor, as if the two in parallel were a single resistor. Parallel resistors use the ‘1/Rtotal = 1/R1 +1/R2 etc’ formula. See worked answer for full calculator keystrokes if required.`,
+    explanation: `In any 'complex' resistor network like this, you need to work out the sections one at a time. You cannot do series and parallel all at once, you need to make them all look like series or all parallel. In this case you need to work out what the total value of the two parallel resistors are then add that to the one series resistor, as if the two in parallel were a single resistor. Parallel resistors use the '1/Rtotal = 1/R1 +1/R2 etc' formula. See worked answer for full calculator keystrokes if required.`,
     lookup: "See page(s) 20 of the Full Licence text book",
     syllabus: "2b.1",
     examStrategy: 2,
@@ -977,7 +977,7 @@ const BBDL_FULL_QUIZZES = [
     image: "images/bbdl-quizzes-week02-q14.png",
     options: ["10mA", "100mA", "10A", "100A"],
     correct: 0,
-    explanation: `There are a few stages to go through to get the answer. First of all we need to work out $R_{Total}$, then use Ohm’s Law to work out the current. So, the first step with the resistor combination is to work out the combined resistance of the parallel element formed by R2 & R3. Our ‘rule of thumb’ tells us it will be less than 220Ω. The 1MΩ actually has little effect and the combination comes out at 219.95Ω (see key stokes below). We can add 220Ω to the 1kΩ, so make $R_{Total}$ = 1220Ω. Now Ohm’s Law says V= IR and so I = V/R = 12/1220 = 0.0098A, which rounds up to 0.01A = 10mA. Because R1 is in series with the battery, all of the current flowing in the circuit will pass through R1. See worked answer for full calculator keystrokes.`,
+    explanation: `There are a few stages to go through to get the answer. First of all we need to work out $R_{Total}$, then use Ohm's Law to work out the current. So, the first step with the resistor combination is to work out the combined resistance of the parallel element formed by R2 & R3. Our 'rule of thumb' tells us it will be less than 220Ω. The 1MΩ actually has little effect and the combination comes out at 219.95Ω (see key stokes below). We can add 220Ω to the 1kΩ, so make $R_{Total}$ = 1220Ω. Now Ohm's Law says V= IR and so I = V/R = 12/1220 = 0.0098A, which rounds up to 0.01A = 10mA. Because R1 is in series with the battery, all of the current flowing in the circuit will pass through R1. See worked answer for full calculator keystrokes.`,
     lookup: "See page(s) 19-20 of the Full Licence text book",
     syllabus: "2b.1",
     examStrategy: 1,
@@ -1014,7 +1014,7 @@ const BBDL_FULL_QUIZZES = [
       "It could cause it to drift",
     ],
     correct: 2,
-    explanation: `Tolerance is the amount something can vary above or below its stated value. ‘a’ and ‘b’ are correct but not a complete answer. Changing the value of a capacitor will not cause a tuned circuit to drift, so not ‘d’. It is worth noting that drift is the result of a change in temperature and Temperature effects and Tolerances are both mentioned in the Full Licence Manual.`,
+    explanation: `Tolerance is the amount something can vary above or below its stated value. 'a' and 'b' are correct but not a complete answer. Changing the value of a capacitor will not cause a tuned circuit to drift, so not 'd'. It is worth noting that drift is the result of a change in temperature and Temperature effects and Tolerances are both mentioned in the Full Licence Manual.`,
     lookup: "See page(s) 29-30 of the Full Licence text book",
     syllabus: "2a.1",
     examStrategy: 3,
@@ -1033,7 +1033,7 @@ const BBDL_FULL_QUIZZES = [
       "With decreased plate separation and decreased plate size",
     ],
     correct: 2,
-    explanation: `The formula for capacitance is on the Formula Sheet, so don’t guess; look it up. That said, the EX309 version is not 100% correct; the top line should read ‘kA’ not ‘kA’. Plate separation distance ‘d’ is on the bottom line, so any increase in plate separation will reduce the capacitance, ruling out ‘a’ and ‘b’. Surface area ‘A’ is on the top line so that will need to increase in order to increase capacitance, so that makes ‘c’ the correct answer. If you are not sure, try plugging in some simple numbers and see what happens if you increase or decrease distance and area; the numbers do not matter, it is the direction of change that is being tested. `,
+    explanation: `The formula for capacitance is on the Formula Sheet, so don't guess; look it up. That said, the EX309 version is not 100% correct; the top line should read 'kA' not 'kA'. Plate separation distance 'd' is on the bottom line, so any increase in plate separation will reduce the capacitance, ruling out 'a' and 'b'. Surface area 'A' is on the top line so that will need to increase in order to increase capacitance, so that makes 'c' the correct answer. If you are not sure, try plugging in some simple numbers and see what happens if you increase or decrease distance and area; the numbers do not matter, it is the direction of change that is being tested. `,
     lookup: "See page(s) 21-22 of the Full Licence text book",
     syllabus: "2d.1",
     examStrategy: 2,
@@ -1053,7 +1053,7 @@ const BBDL_FULL_QUIZZES = [
       "tantalum electrolytic",
     ],
     correct: 2,
-    explanation: `Electrolytics tend to be high values, so would not be found in VHF tuned circuits, ruling out ‘d’. Synthetic materials tend to be very lossy at VHF, so ‘a’ and ‘b’ are probably not the best choices. Ceramic is good for most frequencies, but the textbook makes the point that low-k ceramics are good for RF use, making ‘c’ the one to go for.`,
+    explanation: `Electrolytics tend to be high values, so would not be found in VHF tuned circuits, ruling out 'd'. Synthetic materials tend to be very lossy at VHF, so 'a' and 'b' are probably not the best choices. Ceramic is good for most frequencies, but the textbook makes the point that low-k ceramics are good for RF use, making 'c' the one to go for.`,
     lookup: "See page(s) 22 of the Full Licence text book",
     syllabus: "2d.2",
     examStrategy: 2,
@@ -1073,7 +1073,7 @@ const BBDL_FULL_QUIZZES = [
       "The maximum DC voltage it will conduct ",
     ],
     correct: 2,
-    explanation: `The markings on a capacitor show its value and safe working voltage, in other words, the voltage it will work at for ever and a day. ‘a’ is wrong because we do not bias capacitors. ‘b’ is wrong because whilst some capacitors smooth DC, they do not regulate. ‘d’ is wrong because capacitors do not conduct DC.`,
+    explanation: `The markings on a capacitor show its value and safe working voltage, in other words, the voltage it will work at for ever and a day. 'a' is wrong because we do not bias capacitors. 'b' is wrong because whilst some capacitors smooth DC, they do not regulate. 'd' is wrong because capacitors do not conduct DC.`,
     lookup: "See page(s) 22 of the Full Licence text book",
     syllabus: "2d.3",
     examStrategy: 2,
@@ -1092,7 +1092,7 @@ const BBDL_FULL_QUIZZES = [
       "decouple alternating current (AC) and block direct current (DC)",
     ],
     correct: 3,
-    explanation: `A capacitor passes AC but blocks DC. When a capacitor couples AC to ground, it is known as decoupling. So, ‘a’, ‘b’ and ‘c’ are all wrong.‘d’is the correct answer.`,
+    explanation: `A capacitor passes AC but blocks DC. When a capacitor couples AC to ground, it is known as decoupling. So, 'a', 'b' and 'c' are all wrong.'d'is the correct answer.`,
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2e.4",
     examStrategy: 2,
@@ -1102,7 +1102,7 @@ const BBDL_FULL_QUIZZES = [
   },
   {
     source: "BBDL QUIZ WEEK03 Q06",
-    question: "A ‘back EMF’ can be described as:",
+    question: "A 'back EMF' can be described as:",
     image: "",
     options: [
       "the terminal voltage of a battery when connected with reverse polarity",
@@ -1111,7 +1111,7 @@ const BBDL_FULL_QUIZZES = [
       "the opposition to increasing current flow through an inductor",
     ],
     correct: 3,
-    explanation: `Back EMF is a phenomenon specific to inductors (coils). The act of passing current through the inductors generates a magnetic field which in turn induces a current into the coil, but with reverse polarity, that electromotive force is the ‘back EMF’. That makes ‘d’ the correct answer `,
+    explanation: `Back EMF is a phenomenon specific to inductors (coils). The act of passing current through the inductors generates a magnetic field which in turn induces a current into the coil, but with reverse polarity, that electromotive force is the 'back EMF'. That makes 'd' the correct answer `,
     lookup: "See page(s) 23 of the Full Licence text book",
     syllabus: "2d.4",
     examStrategy: 2,
@@ -1130,7 +1130,7 @@ const BBDL_FULL_QUIZZES = [
       "Prevent DC from passing from the supply rail to a semiconductor circuit",
     ],
     correct: 2,
-    explanation: `‘a’ describes a capacitor, not an inductor, so not that one. ‘b’ is unlikely as the reactance of an inductor increases with frequency, so it will oppose RF current flow way more than AF current, so that is wrong. ‘c’ appears to describe the action of an RF choke in the DC supply to an amplifier, so that looks good. ‘d’ is wrong as the semiconductor device would not be very active without a DC supply. `,
+    explanation: `'a' describes a capacitor, not an inductor, so not that one. 'b' is unlikely as the reactance of an inductor increases with frequency, so it will oppose RF current flow way more than AF current, so that is wrong. 'c' appears to describe the action of an RF choke in the DC supply to an amplifier, so that looks good. 'd' is wrong as the semiconductor device would not be very active without a DC supply. `,
     lookup: "See page(s) 27 of the Full Licence text book",
     syllabus: "2e.5",
     examStrategy: 2,
@@ -1166,7 +1166,7 @@ const BBDL_FULL_QUIZZES = [
       "Current lags the potential difference in a capacitor and lags the p.d. in an inductor",
     ],
     correct: 0,
-    explanation: `First point to note is that Voltage is more correctly known as potential difference (p.d.). Secondly, remember the CIVIL memory aid? In a capacitor (C), current (I) leads potential difference (V), whereas V leads I in an inductor (L), making ‘a’ correct. PROBABLY BEST TO WRITE CIVIL OUT AND LABEL C AS CAPACITOR AND L AS INDUCTOR LIKE C-IV AND L-VI TO AVOID CONFUSION IN THE HEAT OF THE MOMENT`,
+    explanation: `First point to note is that Voltage is more correctly known as potential difference (p.d.). Secondly, remember the CIVIL memory aid? In a capacitor (C), current (I) leads potential difference (V), whereas V leads I in an inductor (L), making 'a' correct. PROBABLY BEST TO WRITE CIVIL OUT AND LABEL C AS CAPACITOR AND L AS INDUCTOR LIKE C-IV AND L-VI TO AVOID CONFUSION IN THE HEAT OF THE MOMENT`,
     lookup: "See page(s) 25 of the Full Licence text book",
     syllabus: "2e.3",
     examStrategy: 2,
@@ -1195,7 +1195,7 @@ const BBDL_FULL_QUIZZES = [
     image: "",
     options: ["10pF", "10nF", "100pF", "100nF"],
     correct: 0,
-    explanation: `First point to note is that 30m = 300/30 = 10MHz. Then some manipulation is required (or you do the ‘standard’ calculation 4 times, with calculator sequence in quiz worked answers, and strike lucky on the first go). The formula needs to be squared up and rearranged to show that:.
+    explanation: `First point to note is that 30m = 300/30 = 10MHz. Then some manipulation is required (or you do the 'standard' calculation 4 times, with calculator sequence in quiz worked answers, and strike lucky on the first go). The formula needs to be squared up and rearranged to show that:.
         
         $C = \\frac{1}{4 \\pi^2 f^2 L }$`,
     lookup: "See page(s) x of the Full Licence text book",
@@ -1217,7 +1217,7 @@ const BBDL_FULL_QUIZZES = [
       "it is used in the correct crystal holder",
     ],
     correct: 0,
-    explanation: `Crystals will only oscillate on their intended frequency when they are used as intended; in either series or parallel configuration. Some constructors say all crystal cases must be grounded, others say it matters not, so no consensus for ‘b’. Crystals are not fussy which way round they are fitted, so polarity does not matter, making ‘c’ wrong, and not all crystals use holders, many are soldered directly on to the printed circuit board, so not ‘d’.`,
+    explanation: `Crystals will only oscillate on their intended frequency when they are used as intended; in either series or parallel configuration. Some constructors say all crystal cases must be grounded, others say it matters not, so no consensus for 'b'. Crystals are not fussy which way round they are fitted, so polarity does not matter, making 'c' wrong, and not all crystals use holders, many are soldered directly on to the printed circuit board, so not 'd'.`,
     lookup: "See page(s) 29-30 of the Full Licence text book",
     syllabus: "2h.2",
     examStrategy: 2,
@@ -1254,7 +1254,7 @@ const BBDL_FULL_QUIZZES = [
     image: "",
     options: ["0.5Ω", "500Ω", "50kΩ", "5MΩ"],
     correct: 2,
-    explanation: `The formula to use is on the Formula Sheet, so look it up! You should find $R_D = \\frac{L}{CR}$ so a ‘simple’ matter of keying in the right numbers and the answer should be 50000 or 50kΩ. The book says it is not examined, but the meaning of dynamic resistance is in the syllabus, and the formula is on the EX309 formula sheet. Included here just in case! Calculator keys: 5 EXP -6 / (0.5 x 200 EXP -12)`,
+    explanation: `The formula to use is on the Formula Sheet, so look it up! You should find $R_D = \\frac{L}{CR}$ so a 'simple' matter of keying in the right numbers and the answer should be 50000 or 50kΩ. The book says it is not examined, but the meaning of dynamic resistance is in the syllabus, and the formula is on the EX309 formula sheet. Included here just in case! Calculator keys: 5 EXP -6 / (0.5 x 200 EXP -12)`,
     lookup: "See page(s) 28 of the Full Licence text book",
     syllabus: "2h.5",
     tagged: true,
@@ -1271,7 +1271,7 @@ const BBDL_FULL_QUIZZES = [
     image: "images/bbdl-quizzes-week03A-q01.png",
     options: ["100V & 0.5A", "100V & 2A", "50V & 0.5A", "50V & 2A"],
     correct: 1,
-    explanation: `There are a number of steps to this one. First step is to recognise that R2 and R3 form a potential divider (two resistors in series). Because theyare the same resistance, the potential difference (voltage) will be the same across both. We are told there is 50V across R3 so the supply voltage must be twice that = 100V. That rules out ‘c’ and ‘d’. Next step; we can see that R1 is in parallel with the potential divider formed by R2 and R3 (redraw it with both R2 and R3 vertical if you cannot see that). So, we have the equivalent of two 100Ω resistors in parallel. That means the total resistance is 50Ω. Final step is to work out the current through the ammeter. Armed with the knowledge that V = 100V and R = 50Ω, we can use good old Ohm’s law to work out I = V/R = 2A, showing ‘b’ to be the correct answer.`,
+    explanation: `There are a number of steps to this one. First step is to recognise that R2 and R3 form a potential divider (two resistors in series). Because theyare the same resistance, the potential difference (voltage) will be the same across both. We are told there is 50V across R3 so the supply voltage must be twice that = 100V. That rules out 'c' and 'd'. Next step; we can see that R1 is in parallel with the potential divider formed by R2 and R3 (redraw it with both R2 and R3 vertical if you cannot see that). So, we have the equivalent of two 100Ω resistors in parallel. That means the total resistance is 50Ω. Final step is to work out the current through the ammeter. Armed with the knowledge that V = 100V and R = 50Ω, we can use good old Ohm's law to work out I = V/R = 2A, showing 'b' to be the correct answer.`,
     lookup: "See page(s) 20 of the Full Licence text book",
     syllabus: "2b.1",
     examStrategy: 3,
@@ -1282,7 +1282,7 @@ const BBDL_FULL_QUIZZES = [
   {
     source: "BBDL QUIZ WEEK03A Q02",
     question:
-      "Which of the following does NOT describe one of the formulas for ‘Q’?",
+      "Which of the following does NOT describe one of the formulas for 'Q'?",
     image: "",
     options: [
       "The resonant frequency of a tuned circuit divided by the <u>half voltage</u> bandwidth",
@@ -1291,7 +1291,7 @@ const BBDL_FULL_QUIZZES = [
       "The reactance of an inductor divided by its resistance",
     ],
     correct: 0,
-    explanation: `HINT: <ul><li>CONVERT EACH ANSWER INTO A FORMULA (RECOGNITION ON EX309 MORE LIKELY)</li><li>HIGHLIGHT USE OF 'NOT' ON SUMMARY SHEET</li></ul><hr>The first thing to note here is that is it a ‘NOT’ question, so there should be three ‘true’ statements and one ‘not true’ statement. <br><br>You should also remember that there are 3 versions of ‘Q’ in the Full syllabus, related to:<ul><li>‘charge’ in a capacitor</li><li>bandwidth in a tuned circuit</li><li>magnification factor</li></ul>The ‘definitions’ used in the question are not exactly as you might find them in EX309, and you need to join a few bits together. <br><br>‘a’ looks OK at first sight but bandwidth for Q is measured at the <b>half-power</b> point, not the <b>half-voltage</b> point, so ‘a’ is definitely NOT true. <br><br>‘b’ describes the formula $Q = V \\cdot C$ substituting the C = kA/d formula for C, which is entirely correct (EX309 C1R3 & C2R3). <br><br>‘c’ describes the formula $Q = \\frac{F_c}{F_u - F_l}$ but uses the -3dB point for the bandwidth, so is entirely correct (EX309 C2R8). <br><br>‘d’ is more straightforward and describes the formula $Q = \\frac{X_L}{R}$, which is also correct (EX309 C1R8). <br><br>So, ‘a’ is the only one that is NOT true and is therefore the correct answer. <br><br>See syllabus 2h.4 also.`,
+    explanation: `HINT: <ul><li>CONVERT EACH ANSWER INTO A FORMULA (RECOGNITION ON EX309 MORE LIKELY)</li><li>HIGHLIGHT USE OF 'NOT' ON SUMMARY SHEET</li></ul><hr>The first thing to note here is that is it a 'NOT' question, so there should be three 'true' statements and one 'not true' statement. <br><br>You should also remember that there are 3 versions of 'Q' in the Full syllabus, related to:<ul><li>'charge' in a capacitor</li><li>bandwidth in a tuned circuit</li><li>magnification factor</li></ul>The 'definitions' used in the question are not exactly as you might find them in EX309, and you need to join a few bits together. <br><br>'a' looks OK at first sight but bandwidth for Q is measured at the <b>half-power</b> point, not the <b>half-voltage</b> point, so 'a' is definitely NOT true. <br><br>'b' describes the formula $Q = V \\cdot C$ substituting the C = kA/d formula for C, which is entirely correct (EX309 C1R3 & C2R3). <br><br>'c' describes the formula $Q = \\frac{F_c}{F_u - F_l}$ but uses the -3dB point for the bandwidth, so is entirely correct (EX309 C2R8). <br><br>'d' is more straightforward and describes the formula $Q = \\frac{X_L}{R}$, which is also correct (EX309 C1R8). <br><br>So, 'a' is the only one that is NOT true and is therefore the correct answer. <br><br>See syllabus 2h.4 also.`,
     lookup: "See page(s) 21-22, 28 of the Full Licence text book",
     reference: "Fully explained in Week04 wrong question review",
     syllabus: "2d.1",
@@ -1310,7 +1310,7 @@ const BBDL_FULL_QUIZZES = [
     options: ["ceramic", "polythene", "air-spaced", "silvered mica"],
     correct: 1,
     explanation: `As a rule of thumb, man-made dielectrics suffer greater losses
-than ‘natural’ ones. Ceramic, air and mica are all formed from naturally occurring
+than 'natural' ones. Ceramic, air and mica are all formed from naturally occurring
 materials, whereas polythene is definitely a man-made sheet material.`,
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2d.2",
@@ -1331,7 +1331,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "The maximum back EMF that can be expected",
     ],
     correct: 2,
-    explanation: `The markings on a capacitor show its capacitance value and safe working voltage, in other words, the voltage it will work at for ever and a day. ‘a’ is feature of a Zener diode, not a capacitor. ‘b’ is wrong because we do not bias capacitors, forward or reverse. ‘d’ is wrong because capacitors do not produce a back EMF, that is an inductor property.`,
+    explanation: `The markings on a capacitor show its capacitance value and safe working voltage, in other words, the voltage it will work at for ever and a day. 'a' is feature of a Zener diode, not a capacitor. 'b' is wrong because we do not bias capacitors, forward or reverse. 'd' is wrong because capacitors do not produce a back EMF, that is an inductor property.`,
     lookup: "See page(s) 22 of the Full Licence text book",
     syllabus: "2d.3",
     examStrategy: 2,
@@ -1351,7 +1351,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "The self-inductance subtracts from the normally fixed inductance of the coil.",
     ],
     correct: 1,
-    explanation: `Self-inductance is defined as the induction of a voltage in a current-carrying wire when the current in the wire is itself changing. Hence the magnetic field created by a changing current in the circuit itself induces a voltage in the same circuit. The voltage is said to be self-induced. So ‘a’, ‘c’, ’d’ are wrong leaving ‘b’ to be the correct answer.`,
+    explanation: `Self-inductance is defined as the induction of a voltage in a current-carrying wire when the current in the wire is itself changing. Hence the magnetic field created by a changing current in the circuit itself induces a voltage in the same circuit. The voltage is said to be self-induced. So 'a', 'c', 'd' are wrong leaving 'b' to be the correct answer.`,
     lookup: "See page(s) 23-24 of the Full Licence text book",
     syllabus: "2d.4",
     examStrategy: 2,
@@ -1388,7 +1388,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "A low value resistor in parallel with the DC supply.",
     ],
     correct: 1,
-    explanation: `A capacitor in series with the supply would block DC so not ‘a’. If we want to remove an unwanted AC signal from a DC supply, we need to decouple the supply, this is achieved with a suitable capacitor placed across the supply so ‘b’ looks good. A resistor in series or parallel would, on its own, have little effect on the AC signal but could have a significant effect on the DC supply, so not ‘c’ or ‘d’.`,
+    explanation: `A capacitor in series with the supply would block DC so not 'a'. If we want to remove an unwanted AC signal from a DC supply, we need to decouple the supply, this is achieved with a suitable capacitor placed across the supply so 'b' looks good. A resistor in series or parallel would, on its own, have little effect on the AC signal but could have a significant effect on the DC supply, so not 'c' or 'd'.`,
     lookup: "See page(s) 26-27 of the Full Licence text book",
     syllabus: "2e.4",
     examStrategy: 2,
@@ -1408,7 +1408,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Maintain a noise-free DC power supply.",
     ],
     correct: 2,
-    explanation: `Unlike a linear power supply the DC output may have some ultrasonic noise but is unlikely to carry mains hum so not ‘a’. Feedback from the transmitter is not what the inductor is for so not ‘b’. Although the inductor may help in reducing the RF noise on the output it is better described as AC blocking and decoupling of the output signal.`,
+    explanation: `Unlike a linear power supply the DC output may have some ultrasonic noise but is unlikely to carry mains hum so not 'a'. Feedback from the transmitter is not what the inductor is for so not 'b'. Although the inductor may help in reducing the RF noise on the output it is better described as AC blocking and decoupling of the output signal.`,
     lookup: "See page(s) 26-27 of the Full Licence text book",
     syllabus: "2e.5",
     examStrategy: 2,
@@ -1463,7 +1463,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "A Colpitts crystal oscillator",
     ],
     correct: 0,
-    explanation: `The inclusion of a series and a parallel capacitor should alert you to the fact that this is no simple high or low pass filter, nor is it a band-stop filter. The mains filter has transformers and capacitors in a more balanced circuit and would need three conductors, so ‘a’ is really the only viable answer.`,
+    explanation: `The inclusion of a series and a parallel capacitor should alert you to the fact that this is no simple high or low pass filter, nor is it a band-stop filter. The mains filter has transformers and capacitors in a more balanced circuit and would need three conductors, so 'a' is really the only viable answer.`,
     lookup: "See page(s) 29 of the Full Licence text book",
     syllabus: "2h.2",
     examStrategy: 1,
@@ -1483,7 +1483,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Tuned circuits will be less prone to drift if they are constructed from heavy duty components",
     ],
     correct: 2,
-    explanation: `In all power circuits that contain tuned circuits there is a good chance of creating large circulating currents and applied voltages so ‘c’ is a good bet. Although impedance transformation does generate heat, lower rated components cannot make this worse so not ‘a’. ‘b’ is simply wrong, components of higher ratings are not necessarily more accurate or lossy. Similarly, tuned circuits drift with temperature but in the power circuits found in transmitters and matching units this is not an issue so not ‘d.’.`,
+    explanation: `In all power circuits that contain tuned circuits there is a good chance of creating large circulating currents and applied voltages so 'c' is a good bet. Although impedance transformation does generate heat, lower rated components cannot make this worse so not 'a'. 'b' is simply wrong, components of higher ratings are not necessarily more accurate or lossy. Similarly, tuned circuits drift with temperature but in the power circuits found in transmitters and matching units this is not an issue so not 'd.'.`,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2h.4",
     examStrategy: 3,
@@ -1510,7 +1510,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
   {
     source: "BBDL QUIZ WEEK03A Q14",
     question:
-      "If you hear a station say that they are ‘listening 5 to 10 up’ it means:",
+      "If you hear a station say that they are 'listening 5 to 10 up' it means:",
     image: "",
     options: [
       "They are listening for stations using 5 or 10MHz for their up-link",
@@ -1519,7 +1519,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "They will only respond to stations who are transmitting between 5 and 10 kilohertz higher up the band",
     ],
     correct: 3,
-    explanation: `This is known as ‘working split’ and is often used by DX stations to manage pile-ups when many stations call at the same time. Listening 5 or 10kHz up the band spreads out the masses calling. ‘a’ is referring to satellite working but there is no satellite allocation on either of those bands (check EX309 schedule 1), so that one is wrong. Similarly, repeaters use offsets of much more than a few kHz, so not that one. ‘c’ is another way of working through a pile-up but the DX would say something like ‘only stations with 5’ in the call please’.`,
+    explanation: `This is known as 'working split' and is often used by DX stations to manage pile-ups when many stations call at the same time. Listening 5 or 10kHz up the band spreads out the masses calling. 'a' is referring to satellite working but there is no satellite allocation on either of those bands (check EX309 schedule 1), so that one is wrong. Similarly, repeaters use offsets of much more than a few kHz, so not that one. 'c' is another way of working through a pile-up but the DX would say something like 'only stations with 5' in the call please'.`,
     lookup: "See page(s) 11 of the Full Licence text book",
     syllabus: "7a.1",
     examStrategy: 2,
@@ -1534,7 +1534,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     image: "",
     options: ["472.5 kHz", "473.5 kHz", "474.5 kHz", "475.5 kHz"],
     correct: 3,
-    explanation: `This is a look up question from the Band Plan provided. IARU Region-1 does not have a formal band plan for this allocation, but has a usage recommendation: 472-475 kHz CW-only 200Hz max BW, 475-479 kHz - CW & Digimodes. ‘d’ is the only answer that falls into the CW & Digimodes section. You should be looking this up in the 600m Bandplan, Note 1 refers. `,
+    explanation: `This is a look up question from the Band Plan provided. IARU Region-1 does not have a formal band plan for this allocation, but has a usage recommendation: 472-475 kHz CW-only 200Hz max BW, 475-479 kHz - CW & Digimodes. 'd' is the only answer that falls into the CW & Digimodes section. You should be looking this up in the 600m Bandplan, Note 1 refers. `,
     lookup: "See page(s) 11 of the Full Licence text book",
     syllabus: "7b.1",
     examStrategy: 3,
@@ -1554,7 +1554,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Operate, with the permission of the captain, from a UK registered aircraft using bands listed in the UK Licence schedule as permitting use whilst airborne",
     ],
     correct: 2,
-    explanation: `‘a’, ‘b’ and ‘d’ are all permitted under the UK Licence rules, so a foreign amateur holding a HAREC certificate would be allowed to do all those things; the host country rules apply. ‘c’ would NOT be allowed as the CEPT agreement only applies to certain licences (e.g. the Full Licence in the UK). `,
+    explanation: `'a', 'b' and 'd' are all permitted under the UK Licence rules, so a foreign amateur holding a HAREC certificate would be allowed to do all those things; the host country rules apply. 'c' would NOT be allowed as the CEPT agreement only applies to certain licences (e.g. the Full Licence in the UK). `,
     lookup: "See page(s) 7-8 of the Full Licence text book",
     syllabus: "7h.1",
     examStrategy: 2,
@@ -1594,7 +1594,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "RF burns when in contact with metal objects linked to transmitter circuits",
     ],
     correct: 1,
-    explanation: `‘a’, ‘c’ and ‘d’ can be issues in amateur stations but not related to PME. PME effectively links numerous properties together so under fault conditions extremely high currents can pass through the amateur station’s “RF” earth with risks of fire and shocks. NOTE. If you are in any doubt regarding PME, consult a qualified person for advice. `,
+    explanation: `'a', 'c' and 'd' can be issues in amateur stations but not related to PME. PME effectively links numerous properties together so under fault conditions extremely high currents can pass through the amateur station's RF earth with risks of fire and shocks. NOTE. If you are in any doubt regarding PME, consult a qualified person for advice. `,
     lookup: "See page(s) 17-18 of the Full Licence text book",
     syllabus: "8a.2",
     examStrategy: 1,
@@ -1614,7 +1614,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Remove all other personnel from the room.",
     ],
     correct: 2,
-    explanation: `Both ‘a’ and ‘b’ would provide a good earth and therefore a low resistance path for the mains to pass through your body, which is not a good thing! ‘d’ would mean there was no-one there to assist, should you come into contact with the mains electricity, so another bad choice. ‘c’ minimises the risk of having a low resistance path across your heart and therefore provides some degree of protection.`,
+    explanation: `Both 'a' and 'b' would provide a good earth and therefore a low resistance path for the mains to pass through your body, which is not a good thing! 'd' would mean there was no-one there to assist, should you come into contact with the mains electricity, so another bad choice. 'c' minimises the risk of having a low resistance path across your heart and therefore provides some degree of protection.`,
     lookup: "See page(s) 13 of the Full Licence text book",
     syllabus: "8a.6",
     examStrategy: 1,
@@ -1635,7 +1635,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "When operating via a satellite that is directly overhead",
     ],
     correct: 2,
-    explanation: `‘a’ is wrong because frequencies below 500kHz are exempt from EMF risk assessment. ‘b’ is location where you might need to take care, but only if the general public are likely to be present, so it is only partially correct. ‘c’ is correct in all circumstances. ‘d’ is unlikely to be an issue as it is highly unlikely that there will be any members of the general public between your transmitting antenna and the satellite directly overhead, it is another one that could be correct, but not in all circumstances.`,
+    explanation: `'a' is wrong because frequencies below 500kHz are exempt from EMF risk assessment. 'b' is location where you might need to take care, but only if the general public are likely to be present, so it is only partially correct. 'c' is correct in all circumstances. 'd' is unlikely to be an issue as it is highly unlikely that there will be any members of the general public between your transmitting antenna and the satellite directly overhead, it is another one that could be correct, but not in all circumstances.`,
     lookup: "See page(s) 16 of the Full Licence text book",
     syllabus: "8d.1",
     examStrategy: 1,
@@ -1655,7 +1655,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Air that is sufficiently ionised so as to provide a low resistance path to earth",
     ],
     correct: 3,
-    explanation: ` ‘a’ is incorrect as a high resistance path is not conducive to lightning. ‘b’ is incorrect as the ionosphere has little to do with lightning. Even a heavy rain/hail shower will rarely provide a direct connection between the cloud and earth, so not ‘c’. ‘d’ describes the precise requirements for a lightning strike to occur. `,
+    explanation: ` 'a' is incorrect as a high resistance path is not conducive to lightning. 'b' is incorrect as the ionosphere has little to do with lightning. Even a heavy rain/hail shower will rarely provide a direct connection between the cloud and earth, so not 'c'. 'd' describes the precise requirements for a lightning strike to occur. `,
     lookup: "See page(s) 16-17 of the Full Licence text book",
     syllabus: "8e.1",
     examStrategy: 1,
@@ -1675,7 +1675,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Increased risk of exposure to non-ionising electromagnetic radiation",
     ],
     correct: 3,
-    explanation: `There is no mention of damp ground in the question so ‘a’ looks unlikely. Using the same transmitter and amplifier suggests you are not using batteries, so it may be an issue but there is no mention of long extension leads or the location of the mains sockets, so ‘b’ is not 100%. Power lines are also not mentioned in the question, so nothing to be sure ‘c’ is the right answer. However, if you have reduced the height of the aerial, it is likely that the RF exposure will be higher when transmitting, so ‘d’ looks like the best answer.  There are other references to EMF assessments, but this question is focused on temporary premises and the increased risk of excessive EMF exposures.`,
+    explanation: `There is no mention of damp ground in the question so 'a' looks unlikely. Using the same transmitter and amplifier suggests you are not using batteries, so it may be an issue but there is no mention of long extension leads or the location of the mains sockets, so 'b' is not 100%. Power lines are also not mentioned in the question, so nothing to be sure 'c' is the right answer. However, if you have reduced the height of the aerial, it is likely that the RF exposure will be higher when transmitting, so 'd' looks like the best answer.  There are other references to EMF assessments, but this question is focused on temporary premises and the increased risk of excessive EMF exposures.`,
     lookup: "See page(s) 14 of the Full Licence text book",
     syllabus: "8f.4",
     examStrategy: 1,
@@ -1695,7 +1695,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Risk of long flexible vertical antennas striking pedestrians",
     ],
     correct: 3,
-    explanation: `Risks ‘a’, ‘b’ and ‘c’ are all present in a fixed location and ‘b’ would be unlikely in a vehicle unless there was some kind of mobile mains voltage generator in use. ‘d’ is unlikely to be an issue in a fixed location as home-based antennas tend to be in high locations, away from pedestrian routes, whereas those mounted on vehicles can whip back and forth as the vehicle moves, stops and starts.`,
+    explanation: `Risks 'a', 'b' and 'c' are all present in a fixed location and 'b' would be unlikely in a vehicle unless there was some kind of mobile mains voltage generator in use. 'd' is unlikely to be an issue in a fixed location as home-based antennas tend to be in high locations, away from pedestrian routes, whereas those mounted on vehicles can whip back and forth as the vehicle moves, stops and starts.`,
     lookup: "See page(s) 15 of the Full Licence text book",
     syllabus: "8f.5",
     tagged: true,
@@ -1715,7 +1715,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Identifying things with the potential to cause harm (the hazards) and taking steps to mitigate the risks they pose",
     ],
     correct: 3,
-    explanation: `We can never prevent all hazards, so not ‘a’. Similarly, we cannot remove every element of risk – there is always a risk of something happening, so not ‘b’. ‘c’ is a bit like ‘a’ – we cannot remove every hazard (e.g. RF radiation will always be present), so not ‘c’. ‘d’ looks best, identify what could cause harm and manage it.`,
+    explanation: `We can never prevent all hazards, so not 'a'. Similarly, we cannot remove every element of risk; there is always a risk of something happening, so not 'b'. 'c' is a bit like 'a': we cannot remove every hazard (e.g. RF radiation will always be present), so not 'c'. 'd' looks best, identify what could cause harm and manage it.`,
     lookup: "See page(s) 14 of the Full Licence text book",
     syllabus: "8f.6",
     examStrategy: 1,
@@ -1734,7 +1734,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Only refuel the generator from plastic fuel containers that are earthed to the generator chassis",
     ],
     correct: 2,
-    explanation: `Options ‘a’, and ‘b’ are all extreme precautions that may be totally over the top, in most circumstances. ‘d’ does not really make sense; earthing plastic fuel containers? ‘c’ is exactly what you should do, so that is the one to select. `,
+    explanation: `Options 'a', and 'b' are all extreme precautions that may be totally over the top, in most circumstances. 'd' does not really make sense; earthing plastic fuel containers? 'c' is exactly what you should do, so that is the one to select. `,
     lookup: "See page(s) 14-15 of the Full Licence text book",
     syllabus: "8f.7",
     examStrategy: 1,
@@ -1754,7 +1754,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "The output power could contain more harmonics and become unstable",
     ],
     correct: 2,
-    explanation: ` If a component in a piece of equipment is replaced with one of unknown tolerance the real value of that component can be very different from the expected value. This can have major effects on the performance of the equipment. Although ‘a’, ’b’, and ’d’ might, in part, be correct, the important aspect here is that thorough testing will be required to confirm the correct performance of the equipment. `,
+    explanation: ` If a component in a piece of equipment is replaced with one of unknown tolerance the real value of that component can be very different from the expected value. This can have major effects on the performance of the equipment. Although 'a', 'b', and 'd' might, in part, be correct, the important aspect here is that thorough testing will be required to confirm the correct performance of the equipment. `,
     lookup: "See page(s) 33-34 of the Full Licence text book",
     syllabus: "2a.1",
     examStrategy: 2,
@@ -1774,7 +1774,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Capacitive Reactance",
     ],
     correct: 1,
-    explanation: `A ‘classic’ isolating transformer consists of two inductors wound on a common former. Because they share the same former, the magnetic field generated by one, induces a current in the other. They are therefore magnetically coupled and are said to exhibit ‘mutual inductance’. ‘a’ is wrong because whilst energy can be transferred by stay capacitance, that is not reliable and is not used in transformers. ‘c’ is wrong because whilst each winding of a transformer will exhibit inductive reactance, that is not the property that allows the transformer action to take place. ‘d’ is wrong because capacitive reactance has little to do with the operation of a transformer.`,
+    explanation: `A 'classic' isolating transformer consists of two inductors wound on a common former. Because they share the same former, the magnetic field generated by one, induces a current in the other. They are therefore magnetically coupled and are said to exhibit 'mutual inductance'. 'a' is wrong because whilst energy can be transferred by stay capacitance, that is not reliable and is not used in transformers. 'c' is wrong because whilst each winding of a transformer will exhibit inductive reactance, that is not the property that allows the transformer action to take place. 'd' is wrong because capacitive reactance has little to do with the operation of a transformer.`,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2g.1",
     examStrategy: 1,
@@ -1789,7 +1789,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     image: "",
     options: ["10", "25", "250", "1250"],
     correct: 2,
-    explanation: ` Impedance ratio is 1:25 and we know the impedance ratio is the square of the turns ratio, so turns ratio must be 1:5 (the square root of the impedance ratio), stepping up from 50 turns would therefore need 250 turns on the secondary, making ‘c’ the correct answer.`,
+    explanation: ` Impedance ratio is 1:25 and we know the impedance ratio is the square of the turns ratio, so turns ratio must be 1:5 (the square root of the impedance ratio), stepping up from 50 turns would therefore need 250 turns on the secondary, making 'c' the correct answer.`,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2g.1",
     examStrategy: 3,
@@ -1804,7 +1804,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     image: "",
     options: ["17.25V", "150V", "2000V", "3066V"],
     correct: 0,
-    explanation: ` You can use the formula and calculator if you wish, but the turns ratio is about 13:1 (2000/150) and with fewer turns on the secondary the output will therefore be about 230/13 or about 17.5V, making ‘a’ the one to go for.  Using approximate values like this may feel a bit inaccurate, but for most calculations it will be good enough and removes any complex formula manipulation and/or calculator rage! `,
+    explanation: ` You can use the formula and calculator if you wish, but the turns ratio is about 13:1 (2000/150) and with fewer turns on the secondary the output will therefore be about 230/13 or about 17.5V, making 'a' the one to go for.  Using approximate values like this may feel a bit inaccurate, but for most calculations it will be good enough and removes any complex formula manipulation and/or calculator rage! `,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2g.1",
     examStrategy: 2,
@@ -1824,7 +1824,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Core materials have no effect on output voltage and the choice of material is determined entirely by the physical size of any given transformer",
     ],
     correct: 1,
-    explanation: `Losses cause heating, but will not cause a change in the transformation ratio, so ‘a’ is wrong. Because of the heating, the amount of power a transformer can handle is limited, so ‘b’ looks good. ‘c’ is wrong because the choice of core material will affect the losses; some materials are more lossy than others. ‘d’ is wrong because whilst the choice of materials will impact the physical size of the transformer, the physical size does not determine the choice of material. That makes ‘b’ the only credible ‘correct’ statement. `,
+    explanation: `Losses cause heating, but will not cause a change in the transformation ratio, so 'a' is wrong. Because of the heating, the amount of power a transformer can handle is limited, so 'b' looks good. 'c' is wrong because the choice of core material will affect the losses; some materials are more lossy than others. 'd' is wrong because whilst the choice of materials will impact the physical size of the transformer, the physical size does not determine the choice of material. That makes 'b' the only credible 'correct' statement. `,
     lookup: "See page(s) 28-29 of the Full Licence text book",
     syllabus: "2g.1",
     examStrategy: 1,
@@ -1844,7 +1844,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Applying the breakdown voltage to a Zener diode is non-destructive.",
     ],
     correct: 0,
-    explanation: `A good tip for a ‘not’ question is to read the answers and put a wee tick against those you think are true statements; the one without a tick is the correct (not true) answer. In this case, ‘a’ looks suspect as any diode in forward bias mode will merely conduct current. ‘b’ is definitely true; a lack of a current limiting series resistor is a sure-fire recipe for burned out diodes. ‘c’ is definitely true as voltage regulation is the main use for Zener diodes. ‘d’ is also true or every Zener would fail every time we used it. So ‘a’ is the only correct (not true) option. See also 2j.2`,
+    explanation: `A good tip for a 'not' question is to read the answers and put a wee tick against those you think are true statements; the one without a tick is the correct (not true) answer. In this case, 'a' looks suspect as any diode in forward bias mode will merely conduct current. 'b' is definitely true; a lack of a current limiting series resistor is a sure-fire recipe for burned out diodes. 'c' is definitely true as voltage regulation is the main use for Zener diodes. 'd' is also true or every Zener would fail every time we used it. So 'a' is the only correct (not true) option. See also 2j.2`,
     lookup: "See page(s) 32 of the Full Licence text book",
     syllabus: "2i.1",
     examStrategy: 3,
@@ -1864,7 +1864,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Prevent any DC flowing through R4",
     ],
     correct: 1,
-    explanation: `C3 is known as a bypass capacitor and is included to ensure that there is no AC signal across the emitter resistor R4. C3 effectively shorts out R4 from an AC perspective but, because the capacitor blocks DC, the DC flows through R4, maintaining the DC biasing. <br>Some fairly deep biasing knowledge/understanding required, yes, but could you have got to the answer by ruling out the wrong answers? ‘a’ is certainly a capacitor function; for example, the reservoir capacitor in a linear power supply, but is not appropriate here. ‘c’ is not correct as C3 is connected to ground and C1 and C2 are the coupling (input and output) capacitors. Capacitors can block DC for sure, but ‘d’ would only be correct if C3 were in series with R4 but it is in parallel, so DC will flow through the resistor, making ‘d’ wrong. See https://www.electronics-tutorials.ws/amplifier/amp_2.html and syllabus 2e.4`,
+    explanation: `C3 is known as a bypass capacitor and is included to ensure that there is no AC signal across the emitter resistor R4. C3 effectively shorts out R4 from an AC perspective but, because the capacitor blocks DC, the DC flows through R4, maintaining the DC biasing. <br>Some fairly deep biasing knowledge/understanding required, yes, but could you have got to the answer by ruling out the wrong answers? 'a' is certainly a capacitor function; for example, the reservoir capacitor in a linear power supply, but is not appropriate here. 'c' is not correct as C3 is connected to ground and C1 and C2 are the coupling (input and output) capacitors. Capacitors can block DC for sure, but 'd' would only be correct if C3 were in series with R4 but it is in parallel, so DC will flow through the resistor, making 'd' wrong. See https://www.electronics-tutorials.ws/amplifier/amp_2.html and syllabus 2e.4`,
     lookup: "See page(s) 34 of the Full Licence text book",
     syllabus: "2i.3",
     examStrategy: 4,
@@ -1884,7 +1884,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "A forward biased field effect transistor",
     ],
     correct: 2,
-    explanation: `The labels on the diagram are quite helpful. First off, the ‘d, g, s’ connections are the drain, gate and source; making this a Field Effect Transistor, ruling out ‘a’ and ‘b’, but is it forward or reverse biased? ‘c’ or ‘d’? The ‘P’ material that forms the gate is connected to a negative potential difference, so the positive charges will be attracted to the negative terminal and away from the depletion layer making it reverse biased. Therefore ‘c’ is the correct answer. `,
+    explanation: `The labels on the diagram are quite helpful. First off, the 'd, g, s' connections are the drain, gate and source; making this a Field Effect Transistor, ruling out 'a' and 'b', but is it forward or reverse biased? 'c' or 'd'? The 'P' material that forms the gate is connected to a negative potential difference, so the positive charges will be attracted to the negative terminal and away from the depletion layer making it reverse biased. Therefore 'c' is the correct answer. `,
     lookup: "See page(s) 36-37 of the Full Licence text book",
     syllabus: "2i.3",
     examStrategy: 4,
@@ -1900,7 +1900,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     image: "",
     options: ["A", "AB", "B", "C"],
     correct: 0,
-    explanation: ` Class A amplifiers are renowned for their purity, so ‘a’ is the correct answer.`,
+    explanation: ` Class A amplifiers are renowned for their purity, so 'a' is the correct answer.`,
     lookup: "See page(s) 35-36 of the Full Licence text book",
     syllabus: "2i.4",
     examStrategy: 1,
@@ -1919,7 +1919,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "none of the above",
     ],
     correct: 2,
-    explanation: `The input is connected to the base, and the output to the emitter, so neither of those are common. That must make this a common collector amplifier, also known as an emitter follower. ‘c’ is therefore the correct answer`,
+    explanation: `The input is connected to the base, and the output to the emitter, so neither of those are common. That must make this a common collector amplifier, also known as an emitter follower. 'c' is therefore the correct answer`,
     lookup: "See page(s) 34-35 of the Full Licence text book",
     syllabus: "2i.4",
     examStrategy: 5,
@@ -1943,7 +1943,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "inverts the input signal",
     ],
     correct: 2,
-    explanation: ` ‘a’ is wrong as none of the amplifiers covered has both high input and output impedances; remember if you put them in a chain with the common pins in alphabetical order, the impedance goes very roughly; LOW-(b)-HIGH-(c)-LOW-(e)-HIGH. ‘d’ is definitely wrong as only the common emitter inverts the signal. So, does it have high or low voltage gain? The common collector, or emitter follower, is often used as a buffer amplifier more because of its isolation properties than the voltage gain, which is less than 1, making ‘c’ the correct answer. `,
+    explanation: ` 'a' is wrong as none of the amplifiers covered has both high input and output impedances; remember if you put them in a chain with the common pins in alphabetical order, the impedance goes very roughly; LOW-(b)-HIGH-(c)-LOW-(e)-HIGH. 'd' is definitely wrong as only the common emitter inverts the signal. So, does it have high or low voltage gain? The common collector, or emitter follower, is often used as a buffer amplifier more because of its isolation properties than the voltage gain, which is less than 1, making 'c' the correct answer. `,
     lookup: "See page(s) 34-35 of the Full Licence text book",
     syllabus: "2i.4",
     examStrategy: 4,
@@ -1964,7 +1964,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "voltage regulator",
     ],
     correct: 3,
-    explanation: `The left hand insert shows a DC signal with some ripple. The right hand insert shows no ripple at all. That would suggest that Q1 is a voltage regulator, making ‘d’ the correct answer. It should be noted that the output voltage will be a little less than the input to ensure that a ripple-free output is assured. `,
+    explanation: `The left hand insert shows a DC signal with some ripple. The right hand insert shows no ripple at all. That would suggest that Q1 is a voltage regulator, making 'd' the correct answer. It should be noted that the output voltage will be a little less than the input to ensure that a ripple-free output is assured. `,
     lookup: "See page(s) 37-38 of the Full Licence text book",
     syllabus: "2j.2",
     examStrategy: 2,
@@ -1984,7 +1984,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Tr2 is passing the full output current and D1 is set to match the output impedance",
     ],
     correct: 2,
-    explanation: `the diagram shows a discrete component voltage regulator circuit, which rules out ‘b’. ‘a’ is wrong because the transistors are not being used as switches; this type of regulator is found in linear power supplies. ‘c’ sounds good as Tr1 is wired to pass current from the input to the output and D1 is connected to Tr2 to allow a comparison between the output and the voltage set by the Zener action. ‘d’ is wrong because Tr2 does not pass the whole of the current and D1 has nothing to do with impedance matching.`,
+    explanation: `The diagram shows a discrete component voltage regulator circuit, which rules out 'b'. 'a' is wrong because the transistors are not being used as switches; this type of regulator is found in linear power supplies. 'c' sounds good as Tr1 is wired to pass current from the input to the output and D1 is connected to Tr2 to allow a comparison between the output and the voltage set by the Zener action. 'd' is wrong because Tr2 does not pass the whole of the current and D1 has nothing to do with impedance matching.`,
     lookup: "See page(s) 37-38 of the Full Licence text book",
     syllabus: "2j.2",
     examStrategy: 4,
@@ -2004,7 +2004,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "The inductor in the voltage regulator will induce a back EMF",
     ],
     correct: 2,
-    explanation: `One of those ‘which is the best answer?’ questions. ‘a’ is true, but not the full story, ‘b’ is just wrong, ‘c’ is more correct than ‘a’ as it includes the negative peak/reservoir capacitor consideration, ‘d’ may be true but has little to do with selecting PIV. Looks like ‘c’ is the best answer.`,
+    explanation: `One of those 'which is the best answer?' questions. 'a' is true, but not the full story, 'b' is just wrong, 'c' is more correct than 'a' as it includes the negative peak/reservoir capacitor consideration, 'd' may be true but has little to do with selecting PIV. Looks like 'c' is the best answer.`,
     lookup: "See page(s) 31-32 of the Full Licence text book",
     syllabus: "2j.3",
     examStrategy: 4,
@@ -2024,7 +2024,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Are able to step up or step down voltages",
     ],
     correct: 0,
-    explanation: `Most switch mode power supplies operate at switching frequencies of many kHz. This means that the electronics are more like radio circuits than mains power supply circuits; making them much smaller and lighter. Unfortunately, due to their switching nature, switch mode power supplies can be a source of EMC problems when compared with linear supplies ‘b’ is totally wrong. ‘c’ is wrong because whilst being lighter and physically smaller, switch mode power supplies are moreefficient than linear supplies, not less efficient. ‘d’ is not correct, because step up and step-down voltage is common practice in both linear and switch mode power supplies, the higher frequency does not affect that property. `,
+    explanation: `Most switch mode power supplies operate at switching frequencies of many kHz. This means that the electronics are more like radio circuits than mains power supply circuits; making them much smaller and lighter. Unfortunately, due to their switching nature, switch mode power supplies can be a source of EMC problems when compared with linear supplies 'b' is totally wrong. 'c' is wrong because whilst being lighter and physically smaller, switch mode power supplies are moreefficient than linear supplies, not less efficient. 'd' is not correct, because step up and step-down voltage is common practice in both linear and switch mode power supplies, the higher frequency does not affect that property. `,
     lookup: "See page(s) 38 of the Full Licence text book",
     syllabus: "2j.4",
     examStrategy: 1,
@@ -2059,7 +2059,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "A stable voltage supply",
     ],
     correct: 1,
-    explanation: `Feedback is essential to maintain oscillation. ‘a’, ‘c’, and ‘d’ are all features of agood stable oscillator but none of those help to maintain oscillation.`,
+    explanation: `Feedback is essential to maintain oscillation. 'a', 'c', and 'd' are all features of agood stable oscillator but none of those help to maintain oscillation.`,
     lookup: "See page(s) 42 of the Full Licence text book",
     syllabus: "2i.5",
     examStrategy: 1,
@@ -2078,7 +2078,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "The ratio of the AF amplitude to the peak deviation of an FM signal",
     ],
     correct: 2,
-    explanation: `Firstly, always link the term Modulation Index to Frequency Modulation (FM), that eliminates ‘a’, and ‘b’. A look at the words in ‘d’, we are considering AF (audio frequency) amplitude and its effect on the peak deviation. This sounds possible but it is not right. However, “the ratio of the peak deviation of an FM signal to the maximum audio frequency” is the definition for Modulation Index.`,
+    explanation: `Firstly, always link the term Modulation Index to Frequency Modulation (FM), that eliminates 'a', and 'b'. A look at the words in 'd', we are considering AF (audio frequency) amplitude and its effect on the peak deviation. This sounds possible but it is not right. However, 'the ratio of the peak deviation of an FM signal to the maximum audio frequency' is the definition for Modulation Index.`,
     lookup: "See page(s) 43 of the Full Licence text book",
     syllabus: "3a.2",
     examStrategy: 3,
@@ -2099,7 +2099,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "You are not allowed to generate signals outside the amateur band.",
     ],
     correct: 0,
-    explanation: `Multiplying a 14.430MHz signal by ten will give us a signal in the 2 metre band (14.430 x 10 = 144.300). So why should we not do it? Multiplying the frequency will also multiply the bandwidth, so a 2.5kHz SSB signal will be 25kHz wide if multiplied by 10, a 3kHz wide signal will be 30kHz wide, so ‘a’ looks like a good reason for not doing so. Whilst it is not easy to multiply a signal by 10 in a single amplifier stage, a doubler stage (2x) followed by a quintupler stage (5x) is technically possible, so not ‘b’. ‘c’ is just plain wrong (most 2m contests use SSB) and ‘d’ is also incorrect because whilst we cannot transmit signals outside the amateur bands, we often generate signals on frequencies outside the amateur bands for use within radio equipment (e.g. a BFO in a receiver or a VFO in a mixer arrangement). So ‘a’ it is. `,
+    explanation: `Multiplying a 14.430MHz signal by ten will give us a signal in the 2 metre band (14.430 x 10 = 144.300). So why should we not do it? Multiplying the frequency will also multiply the bandwidth, so a 2.5kHz SSB signal will be 25kHz wide if multiplied by 10, a 3kHz wide signal will be 30kHz wide, so 'a' looks like a good reason for not doing so. Whilst it is not easy to multiply a signal by 10 in a single amplifier stage, a doubler stage (2x) followed by a quintupler stage (5x) is technically possible, so not 'b'. 'c' is just plain wrong (most 2m contests use SSB) and 'd' is also incorrect because whilst we cannot transmit signals outside the amateur bands, we often generate signals on frequencies outside the amateur bands for use within radio equipment (e.g. a BFO in a receiver or a VFO in a mixer arrangement). So 'a' it is. `,
     lookup: "See page(s) 46-47 of the Full Licence text book",
     syllabus: "3b.1",
     examStrategy: 2,
@@ -2138,7 +2138,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Increasing the number of bits in the digital representation of the signal.",
     ],
     correct: 3,
-    explanation: `Answers ‘a’, ‘b’ and ‘c’ are good for minimising drift in a traditional VFO based on a tuned circuit. The only viable option for a digital oscillator is ‘d’. More digital bits will produce smaller steps in the digital representation of the signal. `,
+    explanation: `Answers 'a', 'b' and 'c' are good for minimising drift in a traditional VFO based on a tuned circuit. The only viable option for a digital oscillator is 'd'. More digital bits will produce smaller steps in the digital representation of the signal. `,
     lookup: "See page(s) 39-40, 45 of the Full Licence text book",
     syllabus: "3c.3",
     examStrategy: 2,
@@ -2157,7 +2157,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Phase Locked Loop (PLL) synthesiser",
     ],
     correct: 2,
-    explanation: `Bit of detective work required here! Looking at the blocks we can see a “clock”, so it sounds digital, a “look up table” so it sounds more digital and aren’t “look up tables” used to digitally generate a sine wave? Also, a Digital to Analogue Convertor is the device that creates the sinewave from the digital data. So, have we got a Software defined radio? No this is just the block diagram of a frequency generator. So not ‘a’. Is this going to measure frequency in a meter? No there is no meter face or numeric display so not ‘b’. Is this a Phase Locked Loop type of synthesiser? No, there is no feedback loop, dividers or comparator. So, that suggests it must be a DDS, and it is. `,
+    explanation: `Bit of detective work required here! Looking at the blocks we can see a “clock”, so it sounds digital, a “look up table” so it sounds more digital and aren't “look up tables” used to digitally generate a sine wave? Also, a Digital to Analogue Convertor is the device that creates the sinewave from the digital data. So, have we got a Software defined radio? No this is just the block diagram of a frequency generator. So not 'a'. Is this going to measure frequency in a meter? No there is no meter face or numeric display so not 'b'. Is this a Phase Locked Loop type of synthesiser? No, there is no feedback loop, dividers or comparator. So, that suggests it must be a DDS, and it is. `,
     lookup: "See page(s) 45 of the Full Licence text book",
     syllabus: "3c.3",
     examStrategy: 1,
@@ -2177,7 +2177,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "crystal oscillator",
     ],
     correct: 2,
-    explanation: `The class C amplifier is the one known to be rich in harmonics so ideally suited to multiplying frequencies – answer ‘c’ is the correct option.`,
+    explanation: `The class C amplifier is the one known to be rich in harmonics so ideally suited to multiplying frequencies – answer 'c' is the correct option.`,
     lookup: "See page(s) 46 of the Full Licence text book",
     syllabus: "3d.1",
     examStrategy: 3,
@@ -2198,7 +2198,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Mixers can only be used for SSB modulated signals",
     ],
     correct: 1,
-    explanation: `Mixers can be used for any type of modulated signal so ‘c’ and ‘d’ are not true. Multipliers cannot be used for AM or SSB modulated signals as they would have their bandwidth increased and you cannot modulate voice with a very narrow bandwidth that could be multiplied, so ‘a’ is not true but ‘b’ is true.`,
+    explanation: `Mixers can be used for any type of modulated signal so 'c' and 'd' are not true. Multipliers cannot be used for AM or SSB modulated signals as they would have their bandwidth increased and you cannot modulate voice with a very narrow bandwidth that could be multiplied, so 'a' is not true but 'b' is true.`,
     lookup: "See page(s) 46-47 of the Full Licence text book",
     syllabus: "3b.1",
     examStrategy: 1,
@@ -2217,7 +2217,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
       "Reducing the gain of the microphone amplifier.",
     ],
     correct: 3,
-    explanation: `‘d’ is the correct answer. FM Bandwidth (BW) is determined by the maximum Audio Frequency and the peak deviation, so ‘a’ will have no effect on the bandwidth of the FM transmission, neither will ‘b’ (reducing harmonics), or ‘c’ (a mic with an AF response greater than 3kHz has potential for increasing the bandwidth of the audio frequency signals). That must mean ‘d’ is the correct answer. Why? Because less AF amplitude will mean less deviation, so less BW, hopefully sufficient to ensure that the modulation does not achieve the peak deviation. `,
+    explanation: `'d' is the correct answer. FM Bandwidth (BW) is determined by the maximum Audio Frequency and the peak deviation, so 'a' will have no effect on the bandwidth of the FM transmission, neither will 'b' (reducing harmonics), or 'c' (a mic with an AF response greater than 3kHz has potential for increasing the bandwidth of the audio frequency signals). That must mean 'd' is the correct answer. Why? Because less AF amplitude will mean less deviation, so less BW, hopefully sufficient to ensure that the modulation does not achieve the peak deviation. `,
     lookup: "See page(s) 43 of the Full Licence text book",
     syllabus: "3e.1",
     examStrategy: 2,
@@ -2257,7 +2257,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     ],
     correct: 1,
     explanation: ` A linear PA is necessary where the signal being amplified has changing 
-amplitude. Therefore, FM and CW transmissions do not require linear amplification, so only ‘b’ can be 
+amplitude. Therefore, FM and CW transmissions do not require linear amplification, so only 'b' can be 
 correct. There is often confusion between a linear PA (i.e. a class A amplifier stage in a transmitter) and 
 an external linear amplifier; you can use an external linear amplifier for all modes, but it is not necessary
 for CW or FM. That is why some cheap 2m external amplifiers are OK for FM, but not suitable for SSB. `,
@@ -2281,7 +2281,7 @@ for CW or FM. That is why some cheap 2m external amplifiers are OK for FM, but n
     correct: 3,
     explanation: `Amplifiers need to be matched to the adjacent stages and variable capacitors 
 in a tuned tee network with an inductor (L1) are good for impedance matching (like in an antenna
-matching unit). ‘d’ is therefore the correct answer. `,
+matching unit). 'd' is therefore the correct answer. `,
     lookup: "See page(s) 48-49 of the Full Licence text book",
     syllabus: "3f.3",
     examStrategy: 1,
@@ -2301,8 +2301,8 @@ matching unit). ‘d’ is therefore the correct answer. `,
 (see licence). You can therefore have 400W PEP on any mode and the crest of the modulated waveform 
 will be the same in any mode. However, FM has a constant amplitude so the PA is working hard all of the 
 time that the PTT is closed. All the others have peaks and troughs in the modulation, so have a lower 
-average power. ‘a’ is therefore the correct answer. It is worth noting that the concept of power amplifiers working more or less, 
-depending on the mode, is often referred to as the ‘duty cycle’. A high duty cycle equates to a higher 
+average power. 'a' is therefore the correct answer. It is worth noting that the concept of power amplifiers working more or less, 
+depending on the mode, is often referred to as the 'duty cycle'. A high duty cycle equates to a higher 
 level of average power. `,
     lookup: "See page(s) 49-50 of the Full Licence text book",
     syllabus: "3f.4",
@@ -2327,9 +2327,9 @@ level of average power. `,
 overdriving of the power amplifier. It can also be used to link to external power amplifiers to ensure they 
 are not overdriven. If your transceiver or external amplifier do not have compatible ALC circuits, you will 
 need to use the manual RF power control on the transceiver to ensure that you only use the minimum 
-drive for a given output. ‘a’ would simply limit the modulation, and a low level of modulation could still 
-cause the amplifier to be overdriven in some modes, so not that one. ‘b’ is correct. ‘c’ is wrong because 
-AGC is a receiver function and will not affect the transmission. ‘d’ will take the amplifier out of use, which 
+drive for a given output. 'a' would simply limit the modulation, and a low level of modulation could still 
+cause the amplifier to be overdriven in some modes, so not that one. 'b' is correct. 'c' is wrong because 
+AGC is a receiver function and will not affect the transmission. 'd' will take the amplifier out of use, which 
 will rule out any unwanted transmissions from the amplifier but it does not ensure its correct operation, 
 so not that one. This is covered on page 50 of the Full Licence textbook, although the option to use the 
 manual RF Power control is not included.`,
@@ -2343,19 +2343,19 @@ manual RF Power control is not included.`,
   },
   {
     source: "BBDL QUIZ WEEK06 Q05",
-    question: "A transmitter’s ALC circuit can be used to:",
+    question: "A transmitter's ALC circuit can be used to:",
     image: "",
     options: [
-      "Drive the receiver’s signal or ‘S’ meter",
+      "Drive the receiver's signal or 'S' meter",
       "Provide a form of protection against a high SWR at the antenna socket",
       "Increase the drive to an amplifier to ensure it is driven to maximum power",
       "Move the transmitter frequency away from the receive frequency when working split",
     ],
     correct: 1,
     explanation: `Automatic Level Control is used to limit transmitter output and linked to an 
-SWR detection circuit it can be used to reduce power if a high SWR is present. ‘a’ is wrong because the ‘S’ 
-meter is usually driven by the receiver’s AGC (Automatic Gain Control) circuit. ‘c’ is wrong because ALC 
-limits power, it does not promote any increase. ‘d’ is wrong because ALC does not affect the frequency of 
+SWR detection circuit it can be used to reduce power if a high SWR is present. 'a' is wrong because the 'S' 
+meter is usually driven by the receiver's AGC (Automatic Gain Control) circuit. 'c' is wrong because ALC 
+limits power, it does not promote any increase. 'd' is wrong because ALC does not affect the frequency of 
 the transmitter. `,
     lookup: "See page(s) 50 of the Full Licence text book",
     syllabus: "3f.5",
@@ -2375,12 +2375,12 @@ the transmitter. `,
       "1MHz, 17MHz and 49MHz",
     ],
     correct: 2,
-    explanation: `‘c’ is the correct answer. You need to work out the sums and differences for 9 and 12MHz, and their 2nd
-and 3rd harmonics. Answer ‘a’ includes 14MHz, which is not one of the mixer products in that range, so not that one. ‘b’ 
+    explanation: `'c' is the correct answer. You need to work out the sums and differences for 9 and 12MHz, and their 2nd
+and 3rd harmonics. Answer 'a' includes 14MHz, which is not one of the mixer products in that range, so not that one. 'b' 
 includes 21MHz, which is what you are trying to achieve (15m = 21MHz) so it is not an unwanted 
-product, making it wrong too. ‘c’ includes three predictable unwanted products; 12-9 = 3, 18-12 = 6, and 
-12 + 18 = 30, so that looks good. ‘d’ is wrong because none of those are predictable mixer products. So, 
-‘c’ is the answer. 
+product, making it wrong too. 'c' includes three predictable unwanted products; 12-9 = 3, 18-12 = 6, and 
+12 + 18 = 30, so that looks good. 'd' is wrong because none of those are predictable mixer products. So, 
+'c' is the answer. 
 `,
     lookup: "See page(s) 42 of the Full Licence text book",
     syllabus: "3f.2",
@@ -2395,15 +2395,15 @@ product, making it wrong too. ‘c’ includes three predictable unwanted produc
       "If you are designing a transmitter that will mix a carrier oscillator with a VFO you should:",
     image: "",
     options: [
-      "Ensure that the frequencies are locked ‘in phase’",
+      "Ensure that the frequencies are locked 'in phase'",
       "Be sure to use one oscillator that is a harmonic of the other",
-      "Use an accurate frequency meter to ensure that the oscillators are ‘netted’ on the same frequency",
+      "Use an accurate frequency meter to ensure that the oscillators are 'netted' on the same frequency",
       "Not use oscillators that will produce unwanted outputs close to the wanted frequency",
     ],
     correct: 3,
-    explanation: `‘a’ is only relevant in a PLL design and the question does not mention that, so 
-not that one. ‘b’ is bad practice as it can cause even more harmonics. ‘c’ is wrong because you don’t 
-want the two oscillators to be on the same frequency. ‘d’ sounds like a good way to avoid problems 
+    explanation: `'a' is only relevant in a PLL design and the question does not mention that, so 
+not that one. 'b' is bad practice as it can cause even more harmonics. 'c' is wrong because you don't 
+want the two oscillators to be on the same frequency. 'd' sounds like a good way to avoid problems 
 associated with mixing, so that is the one to go for. Remember that mixing produces sums and 
 differences of the two frequencies being mixed and their harmonics!`,
     lookup: "See page(s) 52 of the Full Licence text book",
@@ -2426,8 +2426,8 @@ differences of the two frequencies being mixed and their harmonics!`,
     explanation: `I answered B, so check similar answers by writing them down.  Over-modulation sounds dreadful and is clearly bad practice. The problem 
 occurs when audio signals with excessive amplitude drive the modulator too hard and the signal starts to 
 break up. That generates harmonics of the audio frequencies which then modulate the carrier, resulting 
-in a large increase in the bandwidth. That sounds distorted and causes ‘splatter’ or adjacent channel 
-interference, to give it its proper name. ‘a’ is therefore the correct answer. `,
+in a large increase in the bandwidth. That sounds distorted and causes 'splatter' or adjacent channel 
+interference, to give it its proper name. 'a' is therefore the correct answer. `,
     lookup: "See page(s) 55 of the Full Licence text book (Operator faults)",
     syllabus: "3g.1",
     tagged: true,
@@ -2443,7 +2443,7 @@ interference, to give it its proper name. ‘a’ is therefore the correct answe
     options: ["25%", "50%", "66%", "100%"],
     correct: 3,
     explanation: ` In the grey box on page 42 of the textbook the advice is to stay at around 80-
-90% to be ‘safe’.`,
+90% to be 'safe'.`,
     lookup: "See page(s) 55 of the Full Licence text book (Operator faults)",
     syllabus: "3g.1",
     examStrategy: 3,
@@ -2461,8 +2461,8 @@ interference, to give it its proper name. ‘a’ is therefore the correct answe
       "Adjacent channel interference",
     ],
     correct: 3,
-    explanation: ` ‘a’ is unlikely as valve PAs are quite robust. ‘b’ is nothing to do with how much 
-drive is being applied. ‘c’ is a superheterodyne receiver concept, not a transmitter issue, so ‘d’ is the only 
+    explanation: ` 'a' is unlikely as valve PAs are quite robust. 'b' is nothing to do with how much 
+drive is being applied. 'c' is a superheterodyne receiver concept, not a transmitter issue, so 'd' is the only 
 viable answer, although harmonics would also be likely. S`,
     lookup: "See page(s) 56 of the Full Licence text book",
     syllabus: "3g.2",
@@ -2482,12 +2482,12 @@ viable answer, although harmonics would also be likely. S`,
       "Having a high pass filter in the output stage",
     ],
     correct: 3,
-    explanation: ` ‘a’, ‘b’ and ‘c’ are all cited as good ways to prevent harmonics on page 52 - 53 
-of the Full Licence textbook. ‘d’ is not listed as a prevention method in the textbook and no filter on the 
+    explanation: ` 'a', 'b' and 'c' are all cited as good ways to prevent harmonics on page 52 - 53 
+of the Full Licence textbook. 'd' is not listed as a prevention method in the textbook and no filter on the 
 output stage can prevent the generation of harmonics, making it the correct answer here. There is an 
 argument that push-pull amplifiers do not prevent the generation of odd harmonics, but they do avoid 
-some (even) harmonics so ‘c’ is therefore only partially correct, whereas ‘d’ is 100% correct in all 
-circumstances. Sometime you do have to select the ‘best’ answer at this level.`,
+some (even) harmonics so 'c' is therefore only partially correct, whereas 'd' is 100% correct in all 
+circumstances. Sometime you do have to select the 'best' answer at this level.`,
     lookup: "See page(s) 52-53 of the Full Licence text book",
     syllabus: "3g.3",
     examStrategy: 4,
@@ -2509,10 +2509,10 @@ circumstances. Sometime you do have to select the ‘best’ answer at this leve
       "A Band Stop Filter with a centre frequency around 21.20MHz",
     ],
     correct: 2,
-    explanation: `. ‘a’ is wrong because it would not allow our wanted 21MHz signal to pass. ‘b’ is 
+    explanation: `. 'a' is wrong because it would not allow our wanted 21MHz signal to pass. 'b' is 
 wrong because it would allow all of the mixer products and any harmonics produced by the power 
-amplifier to pass. ‘c’ would allow our wanted 21MHz signals to pass whilst attenuating any mixer 
-leakage and any harmonics produced by the power amplifier, which sounds good. ‘d’ is wrong because it 
+amplifier to pass. 'c' would allow our wanted 21MHz signals to pass whilst attenuating any mixer 
+leakage and any harmonics produced by the power amplifier, which sounds good. 'd' is wrong because it 
 would stop our wanted signal and let everything else pass. `,
     lookup: "See page(s) 52-53 of the Full Licence text book",
     syllabus: "3g.3",
@@ -2535,7 +2535,7 @@ would stop our wanted signal and let everything else pass. `,
     ],
     correct: 3,
     explanation: `I answered C.  The key feature of parasitic oscillations is that they are NOT harmonics and can 
-be on pretty much any frequency. ‘d’ is therefore not true and the correct response to this question. `,
+be on pretty much any frequency. 'd' is therefore not true and the correct response to this question. `,
     lookup: "See page(s) 53-54 of the Full Licence text book",
     syllabus: "3g.4",
     tagged: true,
@@ -2547,7 +2547,7 @@ be on pretty much any frequency. ‘d’ is therefore not true and the correct r
   },
   {
     source: "BBDL QUIZ WEEK06 Q14",
-    question: "An ‘out of lock’ condition may occur when:",
+    question: "An 'out of lock' condition may occur when:",
     image: "",
     options: [
       "A PLL frequency synthesiser is tuned too rapidly",
@@ -2557,8 +2557,8 @@ be on pretty much any frequency. ‘d’ is therefore not true and the correct r
     ],
     correct: 0,
     explanation: ` Phase locked loop frequency synthesisers work by making small adjustments to 
-the operating frequency until the loop is ‘locked’. PLLs are unable to deal with changes in frequency that 
-are too rapid as they are unable to lock onto any specific step. ‘a’ looks like a good answer, and the 
+the operating frequency until the loop is 'locked'. PLLs are unable to deal with changes in frequency that 
+are too rapid as they are unable to lock onto any specific step. 'a' looks like a good answer, and the 
 others have little to do with frequency steps or locking onto a specific frequency. Out of lock detector 
 circuits are included in frequency synthesisers to inhibit transmission of an “unlocked” frequency.
 `,
@@ -2571,7 +2571,7 @@ circuits are included in frequency synthesisers to inhibit transmission of an �
   {
     source: "BBDL QUIZ WEEK06 Q15",
     question:
-      "Which of the following would best ensure the ‘clean’ operation of an HF external power amplifier?",
+      "Which of the following would best ensure the 'clean' operation of an HF external power amplifier?",
     image: "",
     options: [
       "Using the AGC loop to prevent it being overdriven",
@@ -2581,11 +2581,11 @@ circuits are included in frequency synthesisers to inhibit transmission of an �
     ],
     correct: 3,
     explanation: `
-    ‘a’ is wrong because AGC is a receiver function. 
-    ‘b’ is wrong because it would allow any unwanted mixer products, and any harmonics produced by the transmitter power amplifier, to 
+    'a' is wrong because AGC is a receiver function. 
+    'b' is wrong because it would allow any unwanted mixer products, and any harmonics produced by the transmitter power amplifier, to 
     pass into the external amplifier. 
-    ‘c’ would attenuate all HF signals, making the external amplifier ratherpointless. 
-    ‘d’ is correct because using the minimum drive required reduces the chance of distortion within the external amplifier.`,
+    'c' would attenuate all HF signals, making the external amplifier ratherpointless. 
+    'd' is correct because using the minimum drive required reduces the chance of distortion within the external amplifier.`,
     lookup: "See page(s) 56 of the Full Licence text book",
     syllabus: "3g.2",
     examStrategy: 4,
@@ -2600,17 +2600,17 @@ milliamperes?`,
     options: ["Voltmeter 1", "Voltmeter 2", "Ammeter 1", "Ammeter 2"],
     correct: 2,
     explanation: `This is a question for applying several 
-formulas: resistors in parallel, resistors in series and Ohm’s law. 
+formulas: resistors in parallel, resistors in series and Ohm's law. 
 <hr>
-But first, we can rule out answers ‘a’ and ‘b’, as Voltmeters will never read amperes, or 
+But first, we can rule out answers 'a' and 'b', as Voltmeters will never read amperes, or 
 milliamperes, so it is between Ammeter 1 and Ammeter 2.
 <hr>
 Ammeter 1 requires us to work out the combined resistance of the three 
-resistor network and then use Ohm’s law with the 9V battery.
+resistor network and then use Ohm's law with the 9V battery.
 <hr>
 Ammeter 2 requires us to work out the combined resistance of the parallel 
-resistors, then work out the voltage across them and then use Ohm’s law with 
-the ‘new’ voltage and the 100Ω resistor. 
+resistors, then work out the voltage across them and then use Ohm's law with 
+the 'new' voltage and the 100Ω resistor. 
 <hr>
 So, what is the combined resistance of the parallel resistors? Without touching 
 the calculator you should know that it will be somewhere between 50 and 
@@ -2633,29 +2633,29 @@ See below for the calculator strokes and the rest of the working out….
 </ul>
 <hr>
 Now an easy bit; the two values in series just add up. The total resistance is the 
-lower combined ‘pair’ in series with the top 100Ω resistor, gives us a total of 
+lower combined 'pair' in series with the top 100Ω resistor, gives us a total of 
 about 177Ω.
 Now we know the total resistance and the voltage, we can work out the total 
-current using Ohm’s law manipulated to give us I = V / R = 9 / 177 = 0.0508A 
-hitting the ENG button gives 50.847x10-3 or about 51mA – which looks good as 
+current using Ohm's law manipulated to give us I = V / R = 9 / 177 = 0.0508A 
+hitting the ENG button gives 50.847x10-3 or about 51mA - which looks good as 
 the answer; Ammeter 1 would read 51mA.
-Just to be sure, let’s check out Ammeters 2 and 3….
+Just to be sure, let's check out Ammeters 2 and 3….
 To do that we need to know the voltage across the parallel resistors. We now 
 know the combined value of the bottom two resistors is 77Ω, and we know 
 there is a total of 51mA flowing through them, so we can work out what the 
 voltage is across them: V = IR, so 0.051A x 77Ω = 3.9V. 
-Using Ohm’s law again, the current flowing through the bottom 100Ω resistor 
+Using Ohm's law again, the current flowing through the bottom 100Ω resistor 
 is I = V / R = 3.9 / 100 = 0.039A hitting the ENG button give 39x10-3 or 39mA, 
-which is not the 51mA we are looking for, so ‘c’ is confirmed as being the 
+which is not the 51mA we are looking for, so 'c' is confirmed as being the 
 correct answer.
 Not for the question, but just for completeness, what about Ammeter 3?
 If we know there is 51mA flowing into the combined network, and 39mA is 
-flowing through the lower 100Ω resistor, it should be ‘obvious’ that there is 
-about 12mA flowing through the 330Ω resistor, through Ammeter 3. Don’t 
+flowing through the lower 100Ω resistor, it should be 'obvious' that there is 
+about 12mA flowing through the 330Ω resistor, through Ammeter 3. Don't 
 believe it? We know there is 3.9V across the resistor so I = V / R = 3.9 / 330 = 
 0.0118A hitting the ENG button give 11.8x10-3 or 11.8mA. That is near enough 
 to 12mA to show that the total current flowing through the top resistor is 
-divided between the bottom ‘pair’.
+divided between the bottom 'pair'.
 A bit of a marathon, but good revision!
 `,
     lookup: "See page(s) 19-20 of the Full Licence Manual",
@@ -2706,7 +2706,7 @@ damaged or more likely destroyed. That voltage is known as:`,
     explanation: `Back EMF is a phenomenon specific to inductors 
 (coils). The act of passing current through an inductor generates a magnetic 
 field which in turn induces a current into the coil, but with reverse polarity, that 
-electromotive force is the ‘back EMF’. `,
+electromotive force is the 'back EMF'. `,
     lookup: "See page(s) 23-24 of the Full Licence Manual",
     syllabus: "2d.4",
     reference: "",
@@ -2753,7 +2753,7 @@ be across the resistor? #AC_DIAGNOSIS`,
     correct: 2,
     explanation: `
     Many steps for 1 mark = a swine of a question! <hr>
-    1. Ohm’s Law V = I x R will work, but we don’t know I, so how to work it out? <hr>
+    1. Ohm's Law V = I x R will work, but we don't know I, so how to work it out? <hr>
     2. Series circuit will have same I through R1 and C1 ($X_C$) which 
     combine to give Z, if we can work out Z we can work out I. <hr>
     3. To work out combined Z we need $X_C$, which we can work out. We have f (50Hz) and C (10µF). <br>
@@ -2762,7 +2762,7 @@ be across the resistor? #AC_DIAGNOSIS`,
     $Z = \\sqrt{R^2 + X^2} = \\sqrt{1000^2 + 318^2} = 1049Ω$ <hr>
     5.  I = V/R in DC circuit, I = V/Z in AC circuit <br>
     I = V/Z = 15/1049 = 0.0143A <hr>
-    6. Question wants V across the resistor, we now know R and I, so we can use Ohm’s Law <br>
+    6. Question wants V across the resistor, we now know R and I, so we can use Ohm's Law <br>
     $V = I \\cdot R = 0.0143A \\times 1000Ω = 14.3V$ <hr>
     `,
     lookup: "See page(s) x of the Full Licence Manual",
@@ -2788,7 +2788,7 @@ What is the current in the secondary?
     explanation: `For a transformer the current ratio is the same as the 
 turns ratio BUT note that the current increases as the volts decrease (power in 
 = power out, less a bit of heat). So, 0.5A in with a ratio of 20:1 will give 20 x 0.5 
-= 10A out, making ‘b’ is the correct answer. May be worth noting that this 
+= 10A out, making 'b' is the correct answer. May be worth noting that this 
 explains why the mains fuse in your 25A shack power supply is not 25A, but the 
 output fuse at 12 volts is!`,
     lookup: "See page(s) 29 of the Full Licence Manual",
@@ -2812,7 +2812,7 @@ output fuse at 12 volts is!`,
     correct: 2,
     explanation: `The textbook says this is not examinable, but the 
 formula to use is on the EX309 Formula Sheet, so look it up! You should find RD
-= L / CR so a ‘simple’ matter of keying in:
+= L / CR so a 'simple' matter of keying in:
 5 the value of the inductor
 [x10x] to make it µH
 [-] 
@@ -2831,7 +2831,7 @@ formula to use is on the EX309 Formula Sheet, so look it up! You should find RD
 We are not 
 sure if calculations are required. The formula is on EX309 and the syllabus says 
 you need to recall the meaning of Dynamic Resistance, which could include 
-applying your recollection to a ‘simple’ scenario.`,
+applying your recollection to a 'simple' scenario.`,
     lookup: "See page(s) 28 of the Full Licence Manual",
     syllabus: "2h.5",
     reference: "",
@@ -2846,7 +2846,7 @@ applying your recollection to a ‘simple’ scenario.`,
   {
     source: "BBDL QUIZ WEEK06A Q08",
     question: `The diagram shows the current and voltage characteristics for a 
-component which is marked ‘5v6’ on its body. If $V_r$ is nearly 6 volts, the 
+component which is marked '5v6' on its body. If $V_r$ is nearly 6 volts, the 
 device is most likely to be:
 `,
     image: "images/bbdl-quizzes-week06a-q08.png",
@@ -2860,15 +2860,15 @@ device is most likely to be:
     explanation: `The current/voltage chart shows that the device will 
 conduct with a small positive voltage or a larger, 6 volt, reverse bias voltage 
 across it. A rectifier diode will only conduct when forward biased, but it will 
-breakdown if the PIV rating is exceeded in reverse. However, answer ‘a’ says it 
-has a high PIV rating, so it should not breakdown at 6 volts, so not ‘a’. The 
+breakdown if the PIV rating is exceeded in reverse. However, answer 'a' says it 
+has a high PIV rating, so it should not breakdown at 6 volts, so not 'a'. The 
 Variable Capacitance Diode (aka Varicap or Varactor diode) will not conduct if 
-reverse biased to 6 volts or the capacitance properties would be lost, so not ‘b’. 
+reverse biased to 6 volts or the capacitance properties would be lost, so not 'b'. 
 The Zener diode is designed to allow reverse bias current to flow when the 
 specified reverse bias voltage is reached and 5.6 volts is a common Zener value, 
-so ‘c’ looks promising, but let’s check ‘d’. A silicon signal diode is really just like 
+so 'c' looks promising, but let's check 'd'. A silicon signal diode is really just like 
 a rectifier diode but with a lower current rating. The maximum reverse voltage
-ratings are usually much higher than 6 volts, so ‘d’ is not the answer and ‘c’ is 
+ratings are usually much higher than 6 volts, so 'd' is not the answer and 'c' is 
 the one to go for.`,
     lookup: "See page(s) 31-33 of the Full Licence Manual",
     syllabus: "2i.1",
@@ -2919,9 +2919,9 @@ reputation; the higher frequency switching can generate dreadful QRM. More
 recent designs have improved this to the point that most commercial power 
 supplies are switch mode these days. Looking at the options; switching at a
 lower frequency would require more turns on the transformer, increase losses 
-and increase size, weight, etc, so not ‘a’. Rectifying mains to DC and switching 
-it back to 50Hz would be pointless, so not ‘b’, and whilst VHF switching is not 
-impossible, it is not the way current SMPSUs work, so not ‘d’.`,
+and increase size, weight, etc, so not 'a'. Rectifying mains to DC and switching 
+it back to 50Hz would be pointless, so not 'b', and whilst VHF switching is not 
+impossible, it is not the way current SMPSUs work, so not 'd'.`,
     lookup: "See page(s) 38 of the Full Licence Manual",
     syllabus: "2j.4",
     reference: "",
@@ -2948,7 +2948,7 @@ stages?
     correct: 3,
     explanation: ` Multiplier stages cannot be used for AM or SSB 
 transmitters because they broaden the bandwidth and distort the modulation, 
-ruling out ‘b’ and ‘c’. The whole point of multiplying is to get to a higher 
+ruling out 'b' and 'c'. The whole point of multiplying is to get to a higher 
 frequency, so you would need to start at a really low frequency to multiply up 
 to 600m (472kHz) whereas, the textbook tells us that multipliers are used for 
 microwave transmitters in UHF/Gigahertz bands.`,
@@ -2974,8 +2974,8 @@ microwave transmitters in UHF/Gigahertz bands.`,
       "all of the above",
     ],
     correct: 1,
-    explanation: `‘a’ and ‘c’ are incorrect, making ‘d’ also wrong. That 
-only leaves ‘b’ for the correct answer; extreme drift can indeed take your 
+    explanation: `'a' and 'c' are incorrect, making 'd' also wrong. That 
+only leaves 'b' for the correct answer; extreme drift can indeed take your 
 transmissions out of the amateur band, especially if you are operating near the 
 band edge. `,
     lookup: "See page(s) 42 of the Full Licence Manual",
@@ -2990,7 +2990,7 @@ band edge. `,
   },
   {
     source: "BBDL QUIZ WEEK06A Q13",
-    question: `The block marked ‘X’ on the diagram should be marked:
+    question: `The block marked 'X' on the diagram should be marked:
 `,
     image: "images/bbdl-quizzes-week06a-q13.png",
     options: [
@@ -3035,7 +3035,7 @@ frequencies be?
     correct: 1,
     explanation: `The cut off frequency is the -3dB or half-power point 
 on the filter response curve and it defines the bandwidth of the filter. As an SSB 
-filter needs to be around 3kHz wide, only ‘b’ provides that with 9MHz at the 
+filter needs to be around 3kHz wide, only 'b' provides that with 9MHz at the 
 centre of the pass band. See our Week 5 tutorial for more on important filter frequencies. 
 This does not appear to be covered in the Full Licence 
 textbook!`,
@@ -3059,14 +3059,14 @@ Amplifier:`,
     correct: 2,
     explanation: `You should spot that circuit A is a crystal oscillator, 
 the fact that it has a crystal is a bit of a give-away. It also has no input, and any 
-amplifier will have an input and an output, so not ‘a’. ‘b’ is definitely an 
+amplifier will have an input and an output, so not 'a'. 'b' is definitely an 
 amplifier but there is nothing to specifically make it an RF Power Amplifier, so 
-it’s a maybe, and we need to keep looking. ‘c’ is more like an RF Power Amp, 
-with a matching circuit on the input, an RF choke on the collector to ‘force’ the 
-RF into the low pass filter, so ‘c’ is looking good. Whilst circuit ‘d’ has an input 
+it's a maybe, and we need to keep looking. 'c' is more like an RF Power Amp, 
+with a matching circuit on the input, an RF choke on the collector to 'force' the 
+RF into the low pass filter, so 'c' is looking good. Whilst circuit 'd' has an input 
 and an output, both are via electrolytic capacitors and there is another 
 electrolytic attached to the IC, and they are generally more of an audio 
-frequency circuit component. The ‘most likely’ circuit is therefore ‘c’. `,
+frequency circuit component. The 'most likely' circuit is therefore 'c'. `,
     lookup: "See page(s) 48-49 of the Full Licence Manual",
     syllabus: "3f.2",
     reference: "",
@@ -3091,9 +3091,9 @@ frequency circuit component. The ‘most likely’ circuit is therefore ‘c’.
     correct: 0,
     explanation: `Parasitic oscillations are unpredictable and often 
 difficult to pin down. The main source is when stray capacitance or inductance 
-inadvertently forms a tuned circuit with another component. ‘b’ is describing 
-‘self-oscillation’ and overdriving amplifiers is more likely to cause distortion 
-rather than oscillation, so ‘c’ and ‘d’ are not the ones to select here.`,
+inadvertently forms a tuned circuit with another component. 'b' is describing 
+'self-oscillation' and overdriving amplifiers is more likely to cause distortion 
+rather than oscillation, so 'c' and 'd' are not the ones to select here.`,
     lookup: "See page(s) 53-54 of the Full Licence Manual",
     syllabus: "3g.4",
     reference: "",
@@ -3102,7 +3102,8 @@ rather than oscillation, so ‘c’ and ‘d’ are not the ones to select here.
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
-    obsidianURL: "",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fparasitic_oscillations",
   },
   {
     source: "BBDL QUIZ WEEK06A Q17",
@@ -3110,17 +3111,17 @@ rather than oscillation, so ‘c’ and ‘d’ are not the ones to select here.
 Station, what is the best way to spread out the pile up of stations calling you?`,
     image: "",
     options: [
-      "Set your transceiver to ‘split frequency’ mode and ask callers to call 5 to 10 kilohertz higher than your transmit frequency",
-      "Start by only working stations with callsigns with ‘Alpha’ in them, then ‘Bravo’, and so on",
-      "Start by only working stations with the number ‘Zero’ in them, then ‘One’ and so on",
+      "Set your transceiver to 'split frequency' mode and ask callers to call 5 to 10 kilohertz higher than your transmit frequency",
+      "Start by only working stations with callsigns with 'Alpha' in them, then 'Bravo', and so on",
+      "Start by only working stations with the number 'Zero' in them, then 'One' and so on",
       "Take the loudest, clearest signals first and then work your way to the weaker ones",
     ],
     correct: 0,
     explanation: `Although calling stations according to their first letter 
 or number does separate the pileup, this can be very frustrating for callers. It is 
-not the recommended method so not ‘b’ or ‘c’. Just calling the biggest stations 
+not the recommended method so not 'b' or 'c'. Just calling the biggest stations 
 does work, but it means that the weak or distant stations never get a look in, so 
-again ‘d’ is not good practice. That leaves us with “working split”. This is the 
+again 'd' is not good practice. That leaves us with “working split”. This is the 
 technique used by the biggest and most experienced DX stations. Essentially 
 the DX station transmits on one fixed frequency and tunes the receiver to a 
 slightly different frequency 5-10kHz further up the band. The chaser listens on 
@@ -3167,10 +3168,10 @@ frequencies 472 – 479 kHz?
       "Remove all other personnel from the room",
     ],
     correct: 2,
-    explanation: `Both ‘a’ and ‘b’ would provide a good earth and 
+    explanation: `Both 'a' and 'b' would provide a good earth and 
 therefore a low resistance path for the mains to pass through your body, which 
-is not a good thing! ‘d’ would mean there was no-one there to assist, should 
-you come into contact with the mains electricity, so another bad choice. ‘c’ 
+is not a good thing! 'd' would mean there was no-one there to assist, should 
+you come into contact with the mains electricity, so another bad choice. 'c' 
 minimises the risk of having a low resistance path across your heart and 
 therefore provides some degree of protection.`,
     lookup: "See page(s) 13 of the Full Licence Manual",
@@ -3186,9 +3187,7 @@ therefore provides some degree of protection.`,
   {
     source: "BBDL QUIZ WEEK06A Q20",
     question: `Whilst a direct lightning strike carries a clear and obvious risk, what 
-harm might be caused by a lightning strike in close proximity to an amateur 
-radio station?
-`,
+harm might be caused by a lightning strike in close proximity to an amateur radio station?`,
     image: "",
     options: [
       "Semiconductors in radio equipment can be destroyed due to the high level of static discharge",
@@ -3197,10 +3196,10 @@ radio station?
       "The station could burst into flames due to the high levels of electromagnetic radiation surrounding the lightning strike",
     ],
     correct: 0,
-    explanation: `‘b’ is highly unlikely; even if the lightning strike did 
-trigger the AGC circuit, the current drawn should not blow any fuses. ‘c’ would 
+    explanation: `'b' is highly unlikely; even if the lightning strike did 
+trigger the AGC circuit, the current drawn should not blow any fuses. 'c' would 
 be more likely if there was a direct strike. Any fires would be caused by high 
-electrical currents, rather than EM radiation, so not ‘d’.`,
+electrical currents, rather than EM radiation, so not 'd'.`,
     lookup: "See page(s) 16-17 of the Full Licence Manual",
     syllabus: "8e.1",
     reference: "",
@@ -3210,7 +3209,8 @@ electrical currents, rather than EM radiation, so not ‘d’.`,
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
-    obsidianURL: "",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Flightning_strike",
   },
   {
     source: "BBDL QUIZ WEEK06A Q21",
@@ -3225,18 +3225,18 @@ electrical currents, rather than EM radiation, so not ‘d’.`,
     ],
     correct: 1,
     explanation: `
-    With the Key words being: ‘…most relevant…’ the implication is that we are looking for the best answer.
+    With the Key words being: '…most relevant…' the implication is that we are looking for the best answer.
     Also note, this question is towards the end of the paper, so is likely to be about safety.<hr>
 
-    ‘a’ – you do need appropriate feeder plugs but you would normally take them with you. 
+    'a' – you do need appropriate feeder plugs but you would normally take them with you. 
     <mark>relevant but is it MOST relevant?</mark> <hr>
-    ‘b’ – different countries have different mains voltages so it a major consideration that the PSU 
+    'b' – different countries have different mains voltages so it a major consideration that the PSU 
     will work safely <mark>more relevant than feeder plugs</mark> <hr>
-    ‘c’ – the DC supply to your radio is the same no matter where you are (usually 13.8V) so there is 
+    'c' – the DC supply to your radio is the same no matter where you are (usually 13.8V) so there is 
 no such thing as local rating for that <mark>not relevant</mark> <hr>
-    ‘d’ – IARU is made up of national radio societies. Ofcom are the UK regulator and they have no 
+    'd' – IARU is made up of national radio societies. Ofcom are the UK regulator and they have no 
     interest in IARU, or what you do in other countries. <mark>not relevant</mark> <hr>
-    ‘b’ is the ‘most relevant’ correct answer <hr>
+    'b' is the 'most relevant' correct answer <hr>
     `,
     lookup: "See page(s) x of the Full Licence Manual",
     syllabus: "8f.4",
@@ -3263,7 +3263,7 @@ assessments because:`,
 requirement to carry out assessments of EMF exposure, there is no explicit legal 
 requirement to carry out full safety risk assessments in an amateur context. 
 Ofcom are not really interested in amateur radio safety, other than for the 
-general public’s exposure to EMF.`,
+general public's exposure to EMF.`,
     lookup: "See page(s) 14 of the Full Licence Manual",
     syllabus: "8f.6",
     reference: "",
@@ -3290,16 +3290,16 @@ that adjustment being needed?`,
       "The new capacitor was incorrectly marked and had a different value to the original.",
     ],
     correct: 2,
-    explanation: `‘a’ is feasible but usually once circuits have cooled 
-down, they will return to their original frequency, so it is only a maybe. ‘b’ is 
+    explanation: `'a' is feasible but usually once circuits have cooled 
+down, they will return to their original frequency, so it is only a maybe. 'b' is 
 wrong as we know the 27pF capacitor needed replacing, but once replaced, the 
-effect of the damage should have been nullified, so not a strong contender. ‘c’ 
+effect of the damage should have been nullified, so not a strong contender. 'c' 
 makes sense, a 27pF capacitor with a 10% tolerance could be anywhere 
 between 24.3 and 29.7pF, and that could be enough to detune the filter, 
-especially is one was at the low end, and the other at the high end, so ‘c’ looks 
-strong. Whilst it is no impossible, ‘d’ is highly unlikely as the question tells us 
+especially is one was at the low end, and the other at the high end, so 'c' looks 
+strong. Whilst it is no impossible, 'd' is highly unlikely as the question tells us 
 the component came from a reputable supplier. Had it been purchased on a 
-popular auction site, then there may be more doubt. ‘c’ is the best answer. `,
+popular auction site, then there may be more doubt. 'c' is the best answer. `,
     lookup: "See page(s) 19 of the Full Licence Manual",
     syllabus: "8f.6",
     reference: "we covered it in a bit more detail in Week 3 of the course",
@@ -3321,7 +3321,7 @@ popular auction site, then there may be more doubt. ‘c’ is the best answer. 
       "The lowest and the highest audio frequencies it is able to reproduce",
     ],
     correct: 1,
-    explanation: `The only viable option here is ‘b’, which is the correct answer.`,
+    explanation: `The only viable option here is 'b', which is the correct answer.`,
     lookup: "See page(s) 57-58 of the Full Licence Manual",
     syllabus: "3h.3",
     reference: "",
@@ -3361,7 +3361,7 @@ rather than an amplifier or filter.`,
     correct: 0,
     explanation: `A simple sum and difference calculation to find what two local oscillator
 frequencies can be used to resolve a 503MHz carrier whilst using an IF of 36MHz. Sum is 36 + 503 =
-539MHz and difference is 503 – 36 = 467MHz, making ‘a’ the correct answer.`,
+539MHz and difference is 503 – 36 = 467MHz, making 'a' the correct answer.`,
     lookup: "See page(s) 59 of the Full Licence Manual",
     syllabus: "3i.3",
     reference: "",
@@ -3382,10 +3382,10 @@ frequencies can be used to resolve a 503MHz carrier whilst using an IF of 36MHz.
     ],
     correct: 2,
     explanation: `Having both IFs on the same frequency would not be two IFs (you cannot
-change a frequency to itself), so ‘a’ is incorrect. Having IFs on harmonically related frequencies would be
-unwise as unwanted mixer products could be on the IFs, so ‘b’ is wrong. Normal practice is to have a high
-1st IF to push the image frequency as far away from the wanted frequency as possible, which makes ‘c’
-look good and rules out ‘d’. The only credible answer is therefore ‘c’ and the second part of the answer,
+change a frequency to itself), so 'a' is incorrect. Having IFs on harmonically related frequencies would be
+unwise as unwanted mixer products could be on the IFs, so 'b' is wrong. Normal practice is to have a high
+1st IF to push the image frequency as far away from the wanted frequency as possible, which makes 'c'
+look good and rules out 'd'. The only credible answer is therefore 'c' and the second part of the answer,
 having a low 2nd IF to provide good selectivity, confirms it.`,
     lookup: "See page(s) 59-60 of the Full Licence Manual",
     syllabus: "3i.3",
@@ -3431,9 +3431,9 @@ frequencies to produce the fixed IF.`,
     ],
     correct: 1,
     explanation: `Phase noise can be generated by all oscillators. It is measured in dBc/Hz and is
-a measure of how much noise there is in relation to the oscillator’s output frequency. It can be heard
+a measure of how much noise there is in relation to the oscillator's output frequency. It can be heard
 most widely as the hash accompanying a clean carrier. Some oscillators are noisier than others. Quiet
-ones are free running VFO’s and crystal oscillators. Bad ones are poorly designed phase locked loops and
+ones are free running VFO's and crystal oscillators. Bad ones are poorly designed phase locked loops and
 Direct Digital Synthesisers.`,
     lookup: "See page(s) 54, 60-61 of the Full Licence Manual",
     syllabus: "3i.5",
@@ -3449,10 +3449,10 @@ Direct Digital Synthesisers.`,
     image: "images/bbdl-quizzes-week07-q07.png",
     options: ["Only Ce", "Only C1", "Only C2", "C1 and C2"],
     correct: 3,
-    explanation: `Ce is a by-pass or de-coupling capacitor, so not ‘a’. C1 tunes L2, so it could be
-‘b’ but what about tuning the output stage? C2 tunes the unlabelled primary of the output transformer,
-so ‘c’ could be a correct answer. However, if both C1 and C2 tune the amplifier, at input and output, that
-must make ‘d’ the most correct ‘best’ answer.`,
+    explanation: `Ce is a by-pass or de-coupling capacitor, so not 'a'. C1 tunes L2, so it could be
+'b' but what about tuning the output stage? C2 tunes the unlabelled primary of the output transformer,
+so 'c' could be a correct answer. However, if both C1 and C2 tune the amplifier, at input and output, that
+must make 'd' the most correct 'best' answer.`,
     lookup: "See page(s) 58-59 of the Full Licence Manual",
     syllabus: "3j.1",
     reference: "",
@@ -3498,7 +3498,7 @@ cannot really be improved upon, it can only be made worse.`,
       "The Power Amplifier is overloaded by too much drive signal",
     ],
     correct: 1,
-    explanation: `‘a’ and ‘d’ may cause distorted signals to be transmitted, but no sideband
+    explanation: `'a' and 'd' may cause distorted signals to be transmitted, but no sideband
 inversion will occur through stages being overdriven. So is it modulated signal from oscillator or
 oscillator from modulated? If in doubt try an example for yourself; USB signal 14.0 to 14.003MHz, take
 that from an oscillator on 20MHz and IF will run 6.0 to 5.997MHz (now looks like LSB). Same 14MHz USB
@@ -3524,11 +3524,11 @@ sideband inversion occurs when you subtract the modulated signal from the oscill
     ],
     correct: 2,
     explanation: `External RF amplifiers sometimes help, sometimes not. They can never improve
-the dynamic range of the receiver, so ‘a’ is not true. They can increase noise levels, but they will never
-reduce noise levels, so ‘b’ is not true. A good quality RF amp in a low noise environment can improve
-weak signal reception, noting that distortion will still occur earlier with moderate to strong signals, so ‘c’
+the dynamic range of the receiver, so 'a' is not true. They can increase noise levels, but they will never
+reduce noise levels, so 'b' is not true. A good quality RF amp in a low noise environment can improve
+weak signal reception, noting that distortion will still occur earlier with moderate to strong signals, so 'c'
 looks to be a feasible answer. With the potential to increase noise and with signals distorting at a lower
-level, ‘d’ cannot always be true. ‘c’ is therefore the ’most correct’ answer.`,
+level, 'd' cannot always be true. 'c' is therefore the 'most correct' answer.`,
     lookup: "See page(s) 57-58 of the Full Licence Manual",
     syllabus: "3j.1",
     reference: "",
@@ -3598,11 +3598,11 @@ this oscilloscope setup: https://www.youtube.com/watch?v=5GGD99Qi1PA `,
     ],
     correct: 0,
     explanation: ` The words “in-phase and quadrature signals” are a good guide to the fact that 
-we are describing a Software Defined Radio (SDR) receiver. ‘b’ doesn’t sound like any of the 
-demodulators covered in the syllabus, so not that one. ’c’ may be possible with an SDR but it would 
-require two receivers to be running and is a feature on some analogue radios, so only a ‘maybe’ at best 
-and ‘d’ is just not true; I and Q play no part in the PLL block diagram. Only ‘a’ includes the critical word 
-‘digital’ and is 100% correct.`,
+we are describing a Software Defined Radio (SDR) receiver. 'b' doesn't sound like any of the 
+demodulators covered in the syllabus, so not that one. 'c' may be possible with an SDR but it would 
+require two receivers to be running and is a feature on some analogue radios, so only a 'maybe' at best 
+and 'd' is just not true; I and Q play no part in the PLL block diagram. Only 'a' includes the critical word 
+'digital' and is 100% correct.`,
     lookup: "See page(s) 67-68 of the Full Licence Manual",
     syllabus: "3m.2",
     reference: "",
@@ -3625,8 +3625,8 @@ and ‘d’ is just not true; I and Q play no part in the PLL block diagram. Onl
     correct: 1,
     explanation: ` The first building brick of an SDR receiver is the creation of in-phase and 
 quadrature signals. This can be done in a number of ways; using two local oscillators to produce I and Q 
-signals is one way. This is captured in the description in ‘b’. Answer ’a’ is not correct, because a single LO 
-would not produce an I and a Q signal, so not ‘a’. ‘c’ and ’d’ are just plain wrong. `,
+signals is one way. This is captured in the description in 'b'. Answer 'a' is not correct, because a single LO 
+would not produce an I and a Q signal, so not 'a'. 'c' and 'd' are just plain wrong. `,
     lookup: "See page(s) 67-68 of the Full Licence Manual",
     syllabus: "3m.2",
     reference: "",
@@ -3647,10 +3647,10 @@ would not produce an I and a Q signal, so not ‘a’. ‘c’ and ’d’ are j
     ],
     correct: 2,
     explanation: `If you have a transceiver yourself, you will know that the antenna socket is used 
-on both transmit and receive, so not ’a’. There is generally only one tuning knob to tune the local 
-oscillator, so not ‘b’. AGC is a receiver feature, not to be confused with ALC which is a transmitter 
-feature, so ‘c’ looks like a good answer. Finally, the same CIO is often used to drive the SSB generator and 
-the Product Detector, so not ‘d’. `,
+on both transmit and receive, so not 'a'. There is generally only one tuning knob to tune the local 
+oscillator, so not 'b'. AGC is a receiver feature, not to be confused with ALC which is a transmitter 
+feature, so 'c' looks like a good answer. Finally, the same CIO is often used to drive the SSB generator and 
+the Product Detector, so not 'd'. `,
     lookup: "See page(s) 50 of the Full Licence Manual",
     syllabus: "3n.1",
     reference: "",
@@ -3672,9 +3672,9 @@ the Product Detector, so not ‘d’. `,
     ],
     correct: 2,
     explanation: `A transverter is a combination of a receive converter and a transmit converter 
-to allow a transceiver to be used on a different band. ‘a’ would be a voltage inverter, ‘b’, a transponder 
-and ‘d’ could be a dummy load, or one of those antennas that claims to have a flat SWR across the HF 
-bands. That means that ‘c’ is the correct answer. `,
+to allow a transceiver to be used on a different band. 'a' would be a voltage inverter, 'b', a transponder 
+and 'd' could be a dummy load, or one of those antennas that claims to have a flat SWR across the HF 
+bands. That means that 'c' is the correct answer. `,
     lookup: "See page(s) 66 of the Full Licence Manual",
     syllabus: "3n.2",
     reference: "",
@@ -3694,7 +3694,7 @@ bands. That means that ‘c’ is the correct answer. `,
     correct: 2,
     explanation: `A simple mixer sum and difference question. The 4m band is approximately 
 70MHz so the crystal will be either 70 plus 28 (the sum) = 98MHz, or 70 minus 28 (the difference) = 
-42MHz. 98MHz is not an option given, which makes ‘c’ the correct answer. `,
+42MHz. 98MHz is not an option given, which makes 'c' the correct answer. `,
     lookup: "See page(s) 66 of the Full Licence Manual",
     syllabus: "3n.2",
     reference: "",
@@ -3715,7 +3715,7 @@ bands. That means that ‘c’ is the correct answer. `,
     explanation: `To find a quarter wave length of feeder you must divide 300 by the frequency 
 to get the wavelength and then divide by 4. So, 300/144 = 2.08 and 2.08/4 = 0.52m. To make a physical 
 quarter wave length feeder we must take the velocity factor into account, which is generally taken as 
-0.67 for standard coax. So 0.52 x 0.67 = 0.35m making ‘d’ the correct answer.`,
+0.67 for standard coax. So 0.52 x 0.67 = 0.35m making 'd' the correct answer.`,
     lookup: "See page(s) 72 of the Full Licence Manual",
     syllabus: "4a.3",
     reference: "",
@@ -3757,9 +3757,9 @@ impedance is the same on both sides, or 1:1.`,
       "Velocity factor means that a 1/4 λ of feeder will be longer than a true 1/4 λ",
     ],
     correct: 1,
-    explanation: ` If coax never radiated, we would not need baluns, so ‘a’ is wrong. ‘b’ kind of 
-backs that up and looks like a potential correct answer. ‘c’ is wrong, RF goes slower in solids than in free 
-space, and ‘d’ is equally wrong as physical lengths are always shorter than the calculated ‘electrical’ 
+    explanation: ` If coax never radiated, we would not need baluns, so 'a' is wrong. 'b' kind of 
+backs that up and looks like a potential correct answer. 'c' is wrong, RF goes slower in solids than in free 
+space, and 'd' is equally wrong as physical lengths are always shorter than the calculated 'electrical' 
 length. `,
     lookup: "See page(s) 69-70 of the Full Licence Manual",
     syllabus: "4b.1",
@@ -3783,7 +3783,7 @@ length. `,
     explanation: `ADC stands for Analogue to Digital Converter which are capable of producing 
 unintended signals if the sampling rate is below the Nyquist rate or twice the wanted frequency. Those 
 unintended signals are known as aliases and we use anti-alias filters to prevent them happening. Options
-‘a’, ‘b’ and ‘c’ are all transmitter interference problems, more to do with analogue circuits, so not correct 
+'a', 'b' and 'c' are all transmitter interference problems, more to do with analogue circuits, so not correct 
 here. `,
     lookup: "See page(s) 39-40 of the Full Licence Manual",
     syllabus: "2f.1",
@@ -3804,10 +3804,10 @@ here. `,
       "Digitize complex analogue waveforms to enable them to be processed in software",
     ],
     correct: 2,
-    explanation: `‘a’ sounds like mains transformer but that wouldn’t be found in a switch mode 
+    explanation: `'a' sounds like mains transformer but that wouldn't be found in a switch mode 
 power supply, so wrong on two counts. SDR-based transmitters have no different requirements for 
-antenna system matching to analogue transmitters; the power amplifiers are all analogue, so ‘b’ is 
-nonsense. ‘c’ is pretty much the textbook/syllabus definition of the Fourier Transform, so looks good. ‘d’ 
+antenna system matching to analogue transmitters; the power amplifiers are all analogue, so 'b' is 
+nonsense. 'c' is pretty much the textbook/syllabus definition of the Fourier Transform, so looks good. 'd' 
 is the job of the Analogue to Digital Convertor (ADC), so not that one.`,
     lookup: "See page(s) 40 of the Full Licence Manual",
     syllabus: "2f.2",
@@ -3819,7 +3819,7 @@ is the job of the Analogue to Digital Convertor (ADC), so not that one.`,
   },
   {
     source: "BBDL QUIZ WEEK08 Q13",
-    question: `A response curve of an IFT that shows a ‘double peak’ with a dip in the middle would indicate:`,
+    question: `A response curve of an IFT that shows a 'double peak' with a dip in the middle would indicate:`,
     image: "",
     options: [
       "An over coupled IF transformer",
@@ -3828,8 +3828,8 @@ is the job of the Analogue to Digital Convertor (ADC), so not that one.`,
       "A critically coupled IF transformer",
     ],
     correct: 0,
-    explanation: `The ‘double peak’ curve described in the question is a classic indicator of an 
-over coupled IFT, making ‘a’ the correct answer.`,
+    explanation: `The 'double peak' curve described in the question is a classic indicator of an 
+over coupled IFT, making 'a' the correct answer.`,
     lookup: "See page(s) 61-62 of the Full Licence Manual",
     syllabus: "3i.4",
     reference: "",
@@ -3850,7 +3850,7 @@ over coupled IFT, making ‘a’ the correct answer.`,
     ],
     correct: 0,
     explanation: `The single diode and absence of a CIO or BFO suggests that this an AM 
-detector, aka an envelope detector, making ‘a’ the answer to go for. It is worth remembering that the 
+detector, aka an envelope detector, making 'a' the answer to go for. It is worth remembering that the 
 terms demodulator and detector mean much the same thing, in receivers; the demodulation is carried 
 out by different detectors, depending on the mode.`,
     lookup: "See page(s) 62-64 of the Full Licence Manual",
@@ -3873,9 +3873,9 @@ out by different detectors, depending on the mode.`,
     ],
     correct: 1,
     explanation: `AGC alters the gain of the receiver to maintain a constant level of audio output 
-and feeding back to the local oscillator or the demodulator will not help achieve the aim, ruling out ‘a’ 
-and ‘c’. The RF power amplifier is a transmitter stage. So not relevant to AGC in a receiver. The only one 
-that fits here is ‘b’, which is the correct answer. Most of the receiver amplification takes place in the IF 
+and feeding back to the local oscillator or the demodulator will not help achieve the aim, ruling out 'a' 
+and 'c'. The RF power amplifier is a transmitter stage. So not relevant to AGC in a receiver. The only one 
+that fits here is 'b', which is the correct answer. Most of the receiver amplification takes place in the IF 
 amplifier stages so changing the IF gain will have the most effect in maintaining a constant level of audio 
 output, but it is not unknown for the AGC to also control the RF amplifier gain. `,
     lookup: "See page(s) 62-63 of the Full Licence Manual",
@@ -3917,10 +3917,10 @@ half of the dipole. That should show that B is the correct answer.`,
     ],
     correct: 3,
     explanation: `Only the reflector(s) will be longer than the driven element, so 
-not ‘a’. There is nothing to suggest the additional elements will cause the feeder to 
-radiate, so not ‘b’. So, do they increase or decrease the feedpoint impedance? It is a 
+not 'a'. There is nothing to suggest the additional elements will cause the feeder to 
+radiate, so not 'b'. So, do they increase or decrease the feedpoint impedance? It is a 
 decrease and using a standard dipole as the driven element of a Yagi will result in a 
-feedpoint impedance of about 12Ω. So ‘d’ is the correct answer.`,
+feedpoint impedance of about 12Ω. So 'd' is the correct answer.`,
     lookup: "See page(s) 74 of the Full Licence Manual",
     syllabus: "4d.2",
     reference: "",
@@ -3942,13 +3942,13 @@ feedpoint impedance of about 12Ω. So ‘d’ is the correct answer.`,
     ],
     correct: 0,
     explanation: `It should be fairly obvious that the current stops at the end of a 
-half-wave dipole – it cannot flow any further, so ‘b’ is ruled out. The ends of the antenna 
+half-wave dipole – it cannot flow any further, so 'b' is ruled out. The ends of the antenna 
 can be seen as a very high impedance because there is a high potential difference 
 (voltage) and low (no) current. In the centre of the antenna the impedance is quite low, 
 because there is high current, and low potential difference (voltage). It is worth noting 
-that the current and the voltage are 90 degrees out of phase making ‘c’ wrong. When 
+that the current and the voltage are 90 degrees out of phase making 'c' wrong. When 
 there is a high SWR, you may get very little RF flowing in the antenna as most of the 
-power will be reflected back down the feeder, so not ‘d’. `,
+power will be reflected back down the feeder, so not 'd'. `,
     lookup: "See page(s) 72 of the Full Licence Manual",
     syllabus: "4d.2",
     reference: "",
@@ -3993,10 +3993,10 @@ mismatch, in an antenna system. Which of the following statements is TRUE?`,
     explanation: `This is one of those concepts best remembered by the extremes; 
 if you have a perfect match between your feeder and your antenna (1:1 SWR) you will 
 radiate all of your RF and there will be 100% loss from the system, put it another way, the 
-Return Loss is at its highest possible value when the SWR is at its lowest, making ‘a’ sound 
-about right. ‘b’ is the opposite so not that one. ‘c’ is true in that the two are calculated in 
+Return Loss is at its highest possible value when the SWR is at its lowest, making 'a' sound 
+about right. 'b' is the opposite so not that one. 'c' is true in that the two are calculated in 
 different ways but there are ways to convert one to the other, they are just not in the Full
-syllabus, so the full statement is not true. ‘d’ is wrong because Return Loss is expressed in 
+syllabus, so the full statement is not true. 'd' is wrong because Return Loss is expressed in 
 dB but SWR is expressed as a ratio, like 2:1. `,
     lookup: "See page(s) 71 of the Full Licence Manual",
     syllabus: "4e.2",
@@ -4017,7 +4017,7 @@ the total Return Loss in your antenna system?`,
     correct: 3,
     explanation: `Two things to remember here, first that half power = -3dB and 
 that total Return Loss is equal to the antenna Return Loss plus TWICE the feeder loss, so in 
-this case, 27 plus 3 + 3 = 33dB = ‘d’.`,
+this case, 27 plus 3 + 3 = 33dB = 'd'.`,
     lookup: "See page(s) 71 of the Full Licence Manual",
     syllabus: "4e.3",
     reference: "",
@@ -4033,8 +4033,8 @@ this case, 27 plus 3 + 3 = 33dB = ‘d’.`,
     image: "images/bbdl-quizzes-week09-q07.png",
     options: ["Pi-match", "L-match", "T-match", "Gamma-match"],
     correct: 0,
-    explanation: `A simple identification question. This is a ‘Pi’ network, so called 
-because it looks like ‘π’.`,
+    explanation: `A simple identification question. This is a 'Pi' network, so called 
+because it looks like 'π'.`,
     lookup: "See page(s) 76-77 of the Full Licence Manual",
     syllabus: "4f.1",
     reference: "",
@@ -4056,16 +4056,16 @@ the coax is to:`,
       "Match the antenna impedance to the transmitter power level",
     ],
     correct: 2,
-    explanation: `‘a’ is wrong, the AMU changes the impedance seen by the 
+    explanation: `'a' is wrong, the AMU changes the impedance seen by the 
 transmitter, but it does not do anything to the antenna/feeder mismatch, so the standing 
-wave is still there, the transmitter just cannot ‘see’ it. ‘b’ is not true, and a good reason 
-for not calling AMUs ATUs, because they do not ‘tune’ the antenna. There are exceptions 
+wave is still there, the transmitter just cannot 'see' it. 'b' is not true, and a good reason 
+for not calling AMUs ATUs, because they do not 'tune' the antenna. There are exceptions 
 to that rule, but they are beyond the syllabus and in those cases the AMU is more a part 
-of the antenna system, than merely a ‘go between’. ‘c’ sounds good, because the 
+of the antenna system, than merely a 'go between'. 'c' sounds good, because the 
 transmitter is operating at its most efficient when it is working into a pure 50Ω, zero 
-reactance, load. ‘d’ is wrong because impedance has nothing to do with power; a well 
+reactance, load. 'd' is wrong because impedance has nothing to do with power; a well 
 matched antenna system should give the same response no matter what power you are 
-using. So, ‘c’ is the one to go for.`,
+using. So, 'c' is the one to go for.`,
     lookup: "See page(s) 76-77 of the Full Licence Manual",
     syllabus: "4f.1",
     reference: "",
@@ -4082,10 +4082,10 @@ antenna with a 50 Ω feedpoint impedance connected to its output?`,
     image: "images/bbdl-quizzes-week09-q09.png",
     options: ["50 Ω", "75 Ω", "112 Ω", "400 Ω"],
     correct: 2,
-    explanation: `A ‘simple’ calculation that requires the formula: 
+    explanation: `A 'simple' calculation that requires the formula: 
     $$ {Z_O}^2 = Z_{IN} \\times Z_{OUT} $$ 
 from EX309 to be rearranged: 
-$$ Z_{IN} = \\frac{{Z_O}^2}{Z_{OUT}} = \\frac{5625}{50} = 112.5Ω $$ so ‘c’ is the correct answer. Worth noting that this is just about 
+$$ Z_{IN} = \\frac{{Z_O}^2}{Z_{OUT}} = \\frac{5625}{50} = 112.5Ω $$ so 'c' is the correct answer. Worth noting that this is just about 
 the feedpoint impedance of a delta loop antenna!`,
     lookup: "See page(s) 70 of the Full Licence Manual",
     syllabus: "4f.2",
@@ -4109,11 +4109,11 @@ coax to give a good impedance match?`,
       "An isolation transformer with 3:1 turns ratio",
     ],
     correct: 1,
-    explanation: `‘a’ can be discounted, whilst a sleeve balun is a very effective 
-single band balun, it does nothing to the feedpoint impedance. ‘b’ requires a little 
-calculation to know if the quarterwave feeder transformer would work. Both ‘c’ and ‘d’ 
+    explanation: `'a' can be discounted, whilst a sleeve balun is a very effective 
+single band balun, it does nothing to the feedpoint impedance. 'b' requires a little 
+calculation to know if the quarterwave feeder transformer would work. Both 'c' and 'd' 
 offer a 3:1 turns ratio, so their impedance ratio will be 9:1, due to the square of the turns 
-relationship, so both are wrong; 162Ω divided by 9 is well below 50Ω. ‘b’ looks like a good 
+relationship, so both are wrong; 162Ω divided by 9 is well below 50Ω. 'b' looks like a good 
 bet but the calculations below will confirm if it is the correct answer.`,
     lookup: "See page(s) 70 of the Full Licence Manual",
     syllabus: "4f.2",

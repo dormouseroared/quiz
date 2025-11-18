@@ -18,6 +18,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.semanticHighlighting.enabled": true,
-  "prettier.proseWrap": "preserve"
+  "prettier.proseWrap": "preserve",
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "workbench.colorCustomizations": {
+    "editorUnicodeHighlight.border": "#ff0000"
+  },
+  "editor.unicodeHighlight.allowedCharacters": {
+    "Ω": true,
+    "μ": true,
+    "µ": true,
+    "π": true,
+    "”": true,
+    "Ω": true
+  }
 
 }
