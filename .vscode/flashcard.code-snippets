@@ -33,5 +33,27 @@
 		],
 		"description": "insert flashcard"
 
+	},
+	"Quiz Question Template": {
+		"prefix": "question",
+		"body": [
+			"{",
+			"  source: '',",
+			"  question: ``,",
+			"  image: '',",
+			"  options: ['', '', '', '',],",
+			"  correct: 9,",
+			"  explanation: ``,",
+			"  lookup: 'See page(s) x of the Full Licence Manual',",
+			"  syllabus: '',",
+			"  reference: '',",
+			"  examStrategy: 1,",
+			"  examStrategyNotes: '',",
+			"  examCalculation: 0,",
+			"  exam_NOT: false,",
+			"  tagged: false,",
+			"  obsidianURL: '',",
+			"},",
+		]
 	}
 }
