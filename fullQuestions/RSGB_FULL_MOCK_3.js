@@ -1009,10 +1009,13 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2a.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "Use voltage divider to get the design voltages, then swing one resistor up and the other down to maximise the drop in V2.",
+    examCalculation: 3,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fcomponent_tolerance_voltage_divider",
   },
   {
     source: "RSGB Full Mock 3 Q58",
@@ -1023,9 +1026,10 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9a.3",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "As it is MHz and ppm the millions cancel out so we are left with 10 x 2 x 3 and that is taken away from 10,000,000",
+    examCalculation: 2,
     exam_NOT: false,
   },
 ]

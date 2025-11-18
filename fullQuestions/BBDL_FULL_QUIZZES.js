@@ -1221,7 +1221,7 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) 29-30 of the Full Licence text book",
     syllabus: "2h.2",
     examStrategy: 2,
-    examStrategyNotes: "",
+    examStrategyNotes: "Keep drilling on this one.",
     examCalculation: 0,
     exam_NOT: false,
   },
