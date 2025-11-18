@@ -2878,7 +2878,8 @@ the one to go for.`,
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
-    obsidianURL: "",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fzener_diode",
   },
   {
     source: "BBDL QUIZ WEEK06A Q09",
@@ -2936,8 +2937,7 @@ impossible, it is not the way current SMPSUs work, so not 'd'.`,
   {
     source: "BBDL QUIZ WEEK06A Q11",
     question: `Which of the following is most likely to include one or more multiplier 
-stages?
-`,
+stages?`,
     image: "",
     options: [
       "FM transmitter for 600m",
@@ -2960,7 +2960,8 @@ microwave transmitters in UHF/Gigahertz bands.`,
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
-    obsidianURL: "",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fmultiplier",
   },
   {
     source: "BBDL QUIZ WEEK06A Q12",
@@ -3048,7 +3049,8 @@ textbook!`,
     examCalculation: 3,
     exam_NOT: false,
     tagged: false,
-    obsidianURL: "",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FSSB",
   },
   {
     source: "BBDL QUIZ WEEK06A Q15",
@@ -3076,7 +3078,8 @@ frequency circuit component. The 'most likely' circuit is therefore 'c'. `,
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
-    obsidianURL: "",
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FRF_amplifier_circuit",
   },
   {
     source: "BBDL QUIZ WEEK06A Q16",
