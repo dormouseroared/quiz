@@ -2593,6 +2593,131 @@ circuits are included in frequency synthesisers to inhibit transmission of an �
     examCalculation: 0,
   },
   {
+    source: "BBDL QUIZ WEEK06A Q01",
+    question: `Which of the meters in this circuit should show a reading of about 51 
+milliamperes?`,
+    image: "images/bbdl-quizzes-week06a-q01.png",
+    options: ["Voltmeter 1", "Voltmeter 2", "Ammeter 1", "Ammeter 2"],
+    correct: 2,
+    explanation: `This is a question for applying several 
+formulas: resistors in parallel, resistors in series and Ohm’s law. 
+<hr>
+But first, we can rule out answers ‘a’ and ‘b’, as Voltmeters will never read amperes, or 
+milliamperes, so it is between Ammeter 1 and Ammeter 2.
+<hr>
+Ammeter 1 requires us to work out the combined resistance of the three 
+resistor network and then use Ohm’s law with the 9V battery.
+<hr>
+Ammeter 2 requires us to work out the combined resistance of the parallel 
+resistors, then work out the voltage across them and then use Ohm’s law with 
+the ‘new’ voltage and the 100Ω resistor. 
+<hr>
+So, what is the combined resistance of the parallel resistors? Without touching 
+the calculator you should know that it will be somewhere between 50 and 
+100Ω; because the combined resistance of any parallel resistor network is 
+always less than the smallest, in this case, less than 100. If you had two 100Ω 
+resistors, it would be half; 50Ω. So with any other value in parallel with the 
+100Ω resistor it has to be somewhere between 50 and 100Ω. Using the formula 
+from EX309, $$ \\frac{1}{R_{TOTAL}} = \\frac{1}{R_1} + \\frac{1}{R_1} = \\frac{1}{100} + \\frac{1}{330} = 76.74Ω$$
+<hr>
+See below for the calculator strokes and the rest of the working out….
+<ul>
+<li>100 for the 100Ω resistor</li>
+<li>[x-1] to make it 1/R</li>
+<li>[+] to add the two resistors</li>
+<li>330 for the 330Ω resistor</li>
+<li>[x-1] to make it 1/R</li>
+<li>= gives you $1/R_{Total}$ = 0.01303</li>
+<li>[x-1] to give $R_{Total}$</li>
+<li>= 76.74Ω, which fits our original non-math estimate perfectly!</li>
+</ul>
+<hr>
+Now an easy bit; the two values in series just add up. The total resistance is the 
+lower combined ‘pair’ in series with the top 100Ω resistor, gives us a total of 
+about 177Ω.
+Now we know the total resistance and the voltage, we can work out the total 
+current using Ohm’s law manipulated to give us I = V / R = 9 / 177 = 0.0508A 
+hitting the ENG button gives 50.847x10-3 or about 51mA – which looks good as 
+the answer; Ammeter 1 would read 51mA.
+Just to be sure, let’s check out Ammeters 2 and 3….
+To do that we need to know the voltage across the parallel resistors. We now 
+know the combined value of the bottom two resistors is 77Ω, and we know 
+there is a total of 51mA flowing through them, so we can work out what the 
+voltage is across them: V = IR, so 0.051A x 77Ω = 3.9V. 
+Using Ohm’s law again, the current flowing through the bottom 100Ω resistor 
+is I = V / R = 3.9 / 100 = 0.039A hitting the ENG button give 39x10-3 or 39mA, 
+which is not the 51mA we are looking for, so ‘c’ is confirmed as being the 
+correct answer.
+Not for the question, but just for completeness, what about Ammeter 3?
+If we know there is 51mA flowing into the combined network, and 39mA is 
+flowing through the lower 100Ω resistor, it should be ‘obvious’ that there is 
+about 12mA flowing through the 330Ω resistor, through Ammeter 3. Don’t 
+believe it? We know there is 3.9V across the resistor so I = V / R = 3.9 / 330 = 
+0.0118A hitting the ENG button give 11.8x10-3 or 11.8mA. That is near enough 
+to 12mA to show that the total current flowing through the top resistor is 
+divided between the bottom ‘pair’.
+A bit of a marathon, but good revision!
+`,
+    lookup: "See page(s) 19-20 of the Full Licence Manual",
+    syllabus: "2b.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "There is a very detailed explanation if required. This is a great one for revision.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: true,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q02",
+    question: ` Capacitors will work to a maximum voltage above which they will be 
+damaged or more likely destroyed. That voltage is known as:`,
+    image: "",
+    options: [
+      "The saturation voltage",
+      "The breakdown voltage",
+      "The reverse bias voltage",
+      "The peak supply voltage",
+    ],
+    correct: 1,
+    explanation: `It is a definition.`,
+    lookup: "See page(s) 22 of the Full Licence Manual",
+    syllabus: "2d.3",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Just drill this.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q03",
+    question: `A "back EMF" can be described as:`,
+    image: "",
+    options: [
+      "The terminal voltage of a battery when connected with reverse polarity",
+      "The RF energy radiated from the rear of a Yagi antenna",
+      "The electromotive force released from a charged capacitor",
+      "The opposition to increasing current flow through an inductor",
+    ],
+    correct: 3,
+    explanation: `Back EMF is a phenomenon specific to inductors 
+(coils). The act of passing current through an inductor generates a magnetic 
+field which in turn induces a current into the coil, but with reverse polarity, that 
+electromotive force is the ‘back EMF’. `,
+    lookup: "See page(s) 23-24 of the Full Licence Manual",
+    syllabus: "2d.4",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
     source: "BBDL QUIZ WEEK06A Q04",
     question: `A large value electrolytic capacitor is wired in 
 series with a resistor and 900V DC is applied 
@@ -2608,7 +2733,8 @@ seconds?`,
     so the Time Constant is 7 seconds. The insight is that, after the next 7 seconds (so t = 14s)
     the charge will move 2/3 of the remaining 300V, so another 200V, making 800V.
     `,
-    lookup: "Obsidian Time Constant and the google chart",
+    lookup:
+      "Obsidian Time Constant and the google chart. See Full Licence textbook pages 22-23.",
     syllabus: "2d.7",
     reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
     examStrategy: 4,
@@ -2621,7 +2747,7 @@ seconds?`,
     source: "BBDL QUIZ WEEK06A Q05",
     question: `If a 15V 50Hz AC supply is connected across the 
 circuit shown in the diagram, what will the voltage 
-be across the resistor?`,
+be across the resistor? #AC_DIAGNOSIS`,
     image: "images/bbdl-quizzes-week06a-q05.png",
     options: ["0V", "4.6V", "14.3V", "15V"],
     correct: 2,
@@ -2640,12 +2766,451 @@ be across the resistor?`,
     $V = I \\cdot R = 0.0143A \\times 1000Ω = 14.3V$ <hr>
     `,
     lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "0",
+    syllabus: "2e.6",
     reference: "After Week06 Review in Week07 Tutorial Slides p4-6",
     examStrategy: 5,
-    examStrategyNotes: "In quess mode, try to rule out a couple of answers.",
+    examStrategyNotes: `If all of the component values are known (for the AC supply we need Voltage AND Frequency), we can calculate capacitor reactance $X_C$, 
+    then circuit Impedance $Z$, then current I, and finally $V_R$. As a check, we can then calculate $V_C$ and check 
+    that the voltages add up using Pythagoras, because $V_R$ and $V_C$ DO NOT add up to 15V because of phase difference.`,
     examCalculation: 4,
     tagged: true,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q06",
+    question: ` A 20:1 step down mains transformer draws a primary current of 0.5 A. 
+What is the current in the secondary?
+`,
+    image: "",
+    options: ["0.2A", "10A", "20A", "50A"],
+    correct: 1,
+    explanation: `For a transformer the current ratio is the same as the 
+turns ratio BUT note that the current increases as the volts decrease (power in 
+= power out, less a bit of heat). So, 0.5A in with a ratio of 20:1 will give 20 x 0.5 
+= 10A out, making ‘b’ is the correct answer. May be worth noting that this 
+explains why the mains fuse in your 25A shack power supply is not 25A, but the 
+output fuse at 12 volts is!`,
+    lookup: "See page(s) 29 of the Full Licence Manual",
+    syllabus: "2g.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "See EX309 C2R10 for the formula that relates Primary and Secondary current to the Turns Ratio.",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q07",
+    question: `What is the dynamic resistance of a parallel tuned circuit comprising a 
+5µH inductor with a DC resistance of 0.5Ω and a capacitor of 200pF?
+`,
+    image: "",
+    options: [" 0.5Ω", "500Ω", " 50kΩ", " 5MΩ"],
+    correct: 2,
+    explanation: `The textbook says this is not examinable, but the 
+formula to use is on the EX309 Formula Sheet, so look it up! You should find RD
+= L / CR so a ‘simple’ matter of keying in:
+5 the value of the inductor
+[x10x] to make it µH
+[-] 
+6
+[/] divided by
+[(] open bracket for the CR part of the formula
+200 value of the capacitor
+[x10x]to make it pF
+[-] 
+12
+[x] multiplied by
+0.5 the value of the resistance
+[)] close the bracket
+[=] the answer 50000
+[ENG] = 50 x103 better known as 50kΩ.
+We are not 
+sure if calculations are required. The formula is on EX309 and the syllabus says 
+you need to recall the meaning of Dynamic Resistance, which could include 
+applying your recollection to a ‘simple’ scenario.`,
+    lookup: "See page(s) 28 of the Full Licence Manual",
+    syllabus: "2h.5",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "EX309 R3C8 for $R_D$ in terms of L, C and R. As ever, watch out for the UNITS!",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q08",
+    question: `The diagram shows the current and voltage characteristics for a 
+component which is marked ‘5v6’ on its body. If $V_r$ is nearly 6 volts, the 
+device is most likely to be:
+`,
+    image: "images/bbdl-quizzes-week06a-q08.png",
+    options: [
+      "a rectifier diode with a high PIV rating",
+      "a Variable Capacitance diode",
+      "a Zener diode",
+      "a silicon signal diode",
+    ],
+    correct: 2,
+    explanation: `The current/voltage chart shows that the device will 
+conduct with a small positive voltage or a larger, 6 volt, reverse bias voltage 
+across it. A rectifier diode will only conduct when forward biased, but it will 
+breakdown if the PIV rating is exceeded in reverse. However, answer ‘a’ says it 
+has a high PIV rating, so it should not breakdown at 6 volts, so not ‘a’. The 
+Variable Capacitance Diode (aka Varicap or Varactor diode) will not conduct if 
+reverse biased to 6 volts or the capacitance properties would be lost, so not ‘b’. 
+The Zener diode is designed to allow reverse bias current to flow when the 
+specified reverse bias voltage is reached and 5.6 volts is a common Zener value, 
+so ‘c’ looks promising, but let’s check ‘d’. A silicon signal diode is really just like 
+a rectifier diode but with a lower current rating. The maximum reverse voltage
+ratings are usually much higher than 6 volts, so ‘d’ is not the answer and ‘c’ is 
+the one to go for.`,
+    lookup: "See page(s) 31-33 of the Full Licence Manual",
+    syllabus: "2i.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Drill this image.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q09",
+    question: `An oscillator circuit requires feedback to maintain the oscillations. Which 
+components in the circuit provide the feedback?
+`,
+    image: "images/bbdl-quizzes-week06a-q09.png",
+    options: ["R3 and C5", "R1 and R2", "C1 and C2", "C3 and C4"],
+    correct: 3,
+    explanation: `Feedback needs to link the output back to the input. 
+Only C3 and C4 do that. C4 is not as obvious as C3, which feeds AC from the 
+emitter back to the base, but it pays a part in setting how much of the signal is 
+fed back; you can think of it as a capacitor version of the potential divider. `,
+    lookup: "See page(s) 42 of the Full Licence Manual",
+    syllabus: "2i.5",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Drill",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q10",
+    question: `Switch mode power supplies normally switch, or chop, the rectified DC, 
+at:`,
+    image: "",
+    options: [
+      "a frequency lower than mains frequency",
+      "mains frequency",
+      "a frequency higher than mains frequency",
+      "very high frequency (VHF)",
+    ],
+    correct: 2,
+    explanation: ` This is the reason switch mode PSUs gained a bad 
+reputation; the higher frequency switching can generate dreadful QRM. More 
+recent designs have improved this to the point that most commercial power 
+supplies are switch mode these days. Looking at the options; switching at a
+lower frequency would require more turns on the transformer, increase losses 
+and increase size, weight, etc, so not ‘a’. Rectifying mains to DC and switching 
+it back to 50Hz would be pointless, so not ‘b’, and whilst VHF switching is not 
+impossible, it is not the way current SMPSUs work, so not ‘d’.`,
+    lookup: "See page(s) 38 of the Full Licence Manual",
+    syllabus: "2j.4",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "I got this one wrong in the quiz, so have a good check up and drill on this.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q11",
+    question: `Which of the following is most likely to include one or more multiplier 
+stages?
+`,
+    image: "",
+    options: [
+      "FM transmitter for 600m",
+      "SSB transmitter for 5MHz",
+      "AM transmitter for 70MHz",
+      "CW transmitter of 10GHz",
+    ],
+    correct: 3,
+    explanation: ` Multiplier stages cannot be used for AM or SSB 
+transmitters because they broaden the bandwidth and distort the modulation, 
+ruling out ‘b’ and ‘c’. The whole point of multiplying is to get to a higher 
+frequency, so you would need to start at a really low frequency to multiply up 
+to 600m (472kHz) whereas, the textbook tells us that multipliers are used for 
+microwave transmitters in UHF/Gigahertz bands.`,
+    lookup: "See page(s) 46 of the Full Licence Manual",
+    syllabus: "3b.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Drill these and own them!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q12",
+    question: ` It is important to minimise drift because:
+`,
+    image: "",
+    options: [
+      "drift can cause harmonics to develop",
+      "drift can result in out-of-band transmissions",
+      "drift can cause spurious emissions",
+      "all of the above",
+    ],
+    correct: 1,
+    explanation: `‘a’ and ‘c’ are incorrect, making ‘d’ also wrong. That 
+only leaves ‘b’ for the correct answer; extreme drift can indeed take your 
+transmissions out of the amateur band, especially if you are operating near the 
+band edge. `,
+    lookup: "See page(s) 42 of the Full Licence Manual",
+    syllabus: "3c.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "This is well drilled, and there is a flashcard!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q13",
+    question: `The block marked ‘X’ on the diagram should be marked:
+`,
+    image: "images/bbdl-quizzes-week06a-q13.png",
+    options: [
+      "Double Balanced Mixer",
+      "Analogue Digital Converter",
+      "Phase Lock Loop",
+      "Look Up Table",
+    ],
+    correct: 3,
+    explanation: `The block diagram represents a direct digital 
+synthesiser similar to the ones that define the operating frequencies in our 
+modern transceivers. The frequency control is some form of front panel 
+mounted directional rotary encoder, which, together with a time reference in a 
+clock oscillator are fed to a so-called Look up table. Here the sine wave is 
+created in the form of many incremental steps. This information passes to the 
+DAC where the analogue form of the sine wave is created as a continuous 
+process. This signal is almost suitable for use, but it does contain some 
+unwanted higher frequency elements. These are removed with a low pass filter.`,
+    lookup: "See page(s) 45 of the Full Licence Manual",
+    syllabus: "3c.3",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes:
+      "THis is well drilled and there is a diagram with labels for this.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q14",
+    question: ` If a transmitter has an SSB filter centred on 9MHz, what will its cut off 
+frequencies be?
+`,
+    image: "",
+    options: [
+      "8.907 & 9.000 MHz",
+      "8.9985 & 9.0015 MHz",
+      "9.000 & 9.003 MHz",
+      "9.0085 & 9.015 MHz",
+    ],
+    correct: 1,
+    explanation: `The cut off frequency is the -3dB or half-power point 
+on the filter response curve and it defines the bandwidth of the filter. As an SSB 
+filter needs to be around 3kHz wide, only ‘b’ provides that with 9MHz at the 
+centre of the pass band. See our Week 5 tutorial for more on important filter frequencies. 
+This does not appear to be covered in the Full Licence 
+textbook!`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "3e.2",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "This caused a flurry of mental anguish in the quiz, so do go through this again.",
+    examCalculation: 3,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q15",
+    question: `Which of the circuits shown is most likely to be an RF Power 
+Amplifier:`,
+    image: "images/bbdl-quizzes-week06a-q15.png",
+    options: ["A", "B", "C", "D"],
+    correct: 2,
+    explanation: `You should spot that circuit A is a crystal oscillator, 
+the fact that it has a crystal is a bit of a give-away. It also has no input, and any 
+amplifier will have an input and an output, so not ‘a’. ‘b’ is definitely an 
+amplifier but there is nothing to specifically make it an RF Power Amplifier, so 
+it’s a maybe, and we need to keep looking. ‘c’ is more like an RF Power Amp, 
+with a matching circuit on the input, an RF choke on the collector to ‘force’ the 
+RF into the low pass filter, so ‘c’ is looking good. Whilst circuit ‘d’ has an input 
+and an output, both are via electrolytic capacitors and there is another 
+electrolytic attached to the IC, and they are generally more of an audio 
+frequency circuit component. The ‘most likely’ circuit is therefore ‘c’. `,
+    lookup: "See page(s) 48-49 of the Full Licence Manual",
+    syllabus: "3f.2",
+    reference: "",
+    examStrategy: 5,
+    examStrategyNotes:
+      "Write down the letters and make notes against each one, to eliminate some, and eventually it comes.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q16",
+    question: `Parasitic oscillations are generally caused by:`,
+    image: "",
+    options: [
+      "an amplifier bursting into oscillation on the frequency of an unintended tuned circuit",
+      "an amplifier bursting into oscillation on the frequency of a known tuned circuit",
+      "overdriving a Class C amplifier with too little bias",
+      "operating a Class A amplifier with too much bias",
+    ],
+    correct: 0,
+    explanation: `Parasitic oscillations are unpredictable and often 
+difficult to pin down. The main source is when stray capacitance or inductance 
+inadvertently forms a tuned circuit with another component. ‘b’ is describing 
+‘self-oscillation’ and overdriving amplifiers is more likely to cause distortion 
+rather than oscillation, so ‘c’ and ‘d’ are not the ones to select here.`,
+    lookup: "See page(s) 53-54 of the Full Licence Manual",
+    syllabus: "3g.4",
+    reference: "",
+    examStrategy: 5,
+    examStrategyNotes: "Check through this for flashcards etc.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q17",
+    question: `If you are operating a DXpedition, or a very popular Special Event 
+Station, what is the best way to spread out the pile up of stations calling you?`,
+    image: "",
+    options: [
+      "Set your transceiver to ‘split frequency’ mode and ask callers to call 5 to 10 kilohertz higher than your transmit frequency",
+      "Start by only working stations with callsigns with ‘Alpha’ in them, then ‘Bravo’, and so on",
+      "Start by only working stations with the number ‘Zero’ in them, then ‘One’ and so on",
+      "Take the loudest, clearest signals first and then work your way to the weaker ones",
+    ],
+    correct: 0,
+    explanation: `Although calling stations according to their first letter 
+or number does separate the pileup, this can be very frustrating for callers. It is 
+not the recommended method so not ‘b’ or ‘c’. Just calling the biggest stations 
+does work, but it means that the weak or distant stations never get a look in, so 
+again ‘d’ is not good practice. That leaves us with “working split”. This is the 
+technique used by the biggest and most experienced DX stations. Essentially 
+the DX station transmits on one fixed frequency and tunes the receiver to a 
+slightly different frequency 5-10kHz further up the band. The chaser listens on 
+the DX transmit frequency and transmits within the 5-10kHz band. An 
+experienced chaser will be able to identify the DX stations listening pattern and 
+position themselves on the best frequency to make the contact quickly. Phew.`,
+    lookup: "See page(s) 11 of the Full Licence Manual",
+    syllabus: "7a.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q18",
+    question: `Which of the following IARU Region 1 countries is permitted to use the 
+frequencies 472 – 479 kHz?
+`,
+    image: "",
+    options: ["The Russian Federation", "United Kingdom", "Algeria", "Tunisia"],
+    correct: 1,
+    explanation: `A Look up question using EX309, no excuse to get these wrong!! `,
+    lookup: "See page(s) 11 of the Full Licence Manual",
+    syllabus: "7b.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "EX309 look up.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q19",
+    question: `If you must carry out work inside a piece of live mains powered equipment you should:`,
+    image: "",
+    options: [
+      "Ensure that you wear an earthed wrist strap",
+      "Ensure that you are standing on a conductive mat that is connected to a good earthing point",
+      "Work with only one hand inside the equipment and keep the other hand in your pocket",
+      "Remove all other personnel from the room",
+    ],
+    correct: 2,
+    explanation: `Both ‘a’ and ‘b’ would provide a good earth and 
+therefore a low resistance path for the mains to pass through your body, which 
+is not a good thing! ‘d’ would mean there was no-one there to assist, should 
+you come into contact with the mains electricity, so another bad choice. ‘c’ 
+minimises the risk of having a low resistance path across your heart and 
+therefore provides some degree of protection.`,
+    lookup: "See page(s) 13 of the Full Licence Manual",
+    syllabus: "8a.6",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Should be a good drilling one.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q20",
+    question: `Whilst a direct lightning strike carries a clear and obvious risk, what 
+harm might be caused by a lightning strike in close proximity to an amateur 
+radio station?
+`,
+    image: "",
+    options: [
+      "Semiconductors in radio equipment can be destroyed due to the high level of static discharge",
+      "Protective fuses in the DC supply can be blown due to excessive current being drawn by the receiver AGC circuits",
+      "Solder in aerial connections can melt due to the high current flowing through the feeder",
+      "The station could burst into flames due to the high levels of electromagnetic radiation surrounding the lightning strike",
+    ],
+    correct: 0,
+    explanation: `‘b’ is highly unlikely; even if the lightning strike did 
+trigger the AGC circuit, the current drawn should not blow any fuses. ‘c’ would 
+be more likely if there was a direct strike. Any fires would be caused by high 
+electrical currents, rather than EM radiation, so not ‘d’.`,
+    lookup: "See page(s) 16-17 of the Full Licence Manual",
+    syllabus: "8e.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "I found the phrase 'static discharge' rang a few bells.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
   },
   {
     source: "BBDL QUIZ WEEK06A Q21",
@@ -2681,6 +3246,69 @@ no such thing as local rating for that <mark>not relevant</mark> <hr>
       "There is a lot to take in on this one. The explanation is well laid out.",
     examCalculation: 0,
     tagged: true,
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q22",
+    question: `It is important to keep records of your demonstration station risk 
+assessments because:`,
+    image: "",
+    options: [
+      "It is a legal requirement for every radio amateur to carry out risk assessments for all safety hazards",
+      "All safety risk assessments must be made available to an officer acting on behalf of Ofcom",
+      "Carrying out risk assessments on all safety hazards is a requirement of the UK amateur radio Licence",
+      "Risk assessment records may be required for the purpose of insurance or in defence of negligence claims",
+    ],
+    correct: 3,
+    explanation: `Relatively straightforward answer. Whilst there is a 
+requirement to carry out assessments of EMF exposure, there is no explicit legal 
+requirement to carry out full safety risk assessments in an amateur context. 
+Ofcom are not really interested in amateur radio safety, other than for the 
+general public’s exposure to EMF.`,
+    lookup: "See page(s) 14 of the Full Licence Manual",
+    syllabus: "8f.6",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "There are temptations here.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK06A Q23",
+    question: ` In repairing a receiver that had suffered damage from a near-by 
+lightning strike, a 27pF capacitor in the input filter had to be replaced. A 
+replacement capacitor was sourced from a reputable supplier and fitted in 
+place. On powering up the receiver the input filter was found to need some 
+adjustment to make it work as it should. What is the most likely reason for 
+that adjustment being needed?`,
+    image: "",
+    options: [
+      "The repair process, heating and cooling during soldering, etc had changed the centre frequency of the input filter",
+      "The damage caused by the electrostatic discharge had changed centre frequency of the input filter",
+      "The new capacitor had a different value to the original, due to variation within a tolerance band.",
+      "The new capacitor was incorrectly marked and had a different value to the original.",
+    ],
+    correct: 2,
+    explanation: `‘a’ is feasible but usually once circuits have cooled 
+down, they will return to their original frequency, so it is only a maybe. ‘b’ is 
+wrong as we know the 27pF capacitor needed replacing, but once replaced, the 
+effect of the damage should have been nullified, so not a strong contender. ‘c’ 
+makes sense, a 27pF capacitor with a 10% tolerance could be anywhere 
+between 24.3 and 29.7pF, and that could be enough to detune the filter, 
+especially is one was at the low end, and the other at the high end, so ‘c’ looks 
+strong. Whilst it is no impossible, ‘d’ is highly unlikely as the question tells us 
+the component came from a reputable supplier. Had it been purchased on a 
+popular auction site, then there may be more doubt. ‘c’ is the best answer. `,
+    lookup: "See page(s) 19 of the Full Licence Manual",
+    syllabus: "8f.6",
+    reference: "we covered it in a bit more detail in Week 3 of the course",
+    examStrategy: 1,
+    examStrategyNotes: "Fairly straightdorward.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
   },
   {
     source: "BBDL QUIZ WEEK07 Q01",
