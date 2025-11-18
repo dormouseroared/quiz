@@ -1025,9 +1025,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9c.1",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "The crystal variation id 0.5 x 18 all over 1 million, then multiply that by 28MHz, the millions cancel out and we are left with 9 * 28 Hz. Best to use a calculator on the last easy calc!",
+    examCalculation: 2,
     exam_NOT: false,
   },
 ]
