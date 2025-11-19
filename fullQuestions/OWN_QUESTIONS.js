@@ -737,7 +737,7 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
 
   {
     source: "OWN QUESTIONS ALIASES Q44",
-    question: `An SDR has a sampling rate of 14 MHz. A strong signal at 10 MHz reaches the ADC. At what frequency will the alias appear?`,
+    question: `An SDR has a sampling rate of 14 MHz. A strong signal at 10 MHz reaches the ADC. At what frequency will the alias appear? #sampling`,
     image: "",
     options: ["3 MHz", "4 MHz", "7 MHz", "10 MHz"],
     correct: 1,
@@ -749,6 +749,7 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
       "Use the alias frequency calculation: |sampling rate - signal frequency| and/or the Nyquist Boundary mirror...",
     examCalculation: 1,
     exam_NOT: false,
+    tagged: true,
   },
 
   {
@@ -928,6 +929,7 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
     examStrategyNotes: "Now deal with multiple signals.",
     examCalculation: 1,
     exam_NOT: false,
+    tagged: true,
   },
 
   {

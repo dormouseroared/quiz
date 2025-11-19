@@ -2652,7 +2652,7 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 3,
     explanation:
-      "The wanted signal, transmit or receive, coax or twin wire, is always differential mode. That isd, the currents at any point are always in opposite directions with no overall magnetic field. If there is no field, the ferrite rings will have no effect.",
+      "The wanted signal, transmit or receive, coax or twin wire, is always differential mode. That saidd, the currents at any point are always in opposite directions with no overall magnetic field. If there is no field, the ferrite rings will have no effect.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6d.1",
     examStrategy: 1,
@@ -2684,7 +2684,7 @@ const EXAM_SECRETS_QUESTIONS = [
   {
     source: "Exam Secrets FULL [EMC] 6D1-3",
     question:
-      "The drawing shows a ccoaxial stub to remove a 2m amateur signal from a 100MHz VHF transmission. The stub should be open circuit at the free end and:",
+      "The drawing shows a coaxial stub to remove a 2m amateur signal from a 100MHz VHF transmission. The stub should be open circuit at the free end and:",
     image: "images/secrets 6D1-3.png",
     options: [
       "ƛ/4 long at 145MHz",

@@ -4127,6 +4127,876 @@ bet but the calculations below will confirm if it is the correct answer.`,
     exam_NOT: false,
     tagged: false,
   },
+  {
+    source: "BBDL QUIZ WEEK09A Q01",
+    question: `The total resistance of the circuit shown is:`,
+    image: "images/bbdl-quizzes-week09a-q01.png",
+    options: ["5k Ohm", "15k Ohm", "20k Ohm", "30k Ohm"],
+    correct: 3,
+    explanation: `You can do the formula thing, if you want, but three 30k resistors in parallel 
+divide down to 10k and that in series with 20k adds up to 30k in total = ‘d’. `,
+    lookup: "See page(s) 19-20 of the Full Licence Manual",
+    syllabus: "2b.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Shortcuts are available!",
+    examCalculation: 1,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q02",
+    question: `Increasing the surface area of a capacitor will:`,
+    image: "",
+    options: [
+      "Increase its working voltage",
+      "Increase its capacitance",
+      "Decrease its working voltage",
+      "Decrease its capacitance",
+    ],
+    correct: 1,
+    explanation: `Surface area is one of the parameters in the Formula for calculating 
+capacitance and it being on the top line means that any increase in area will increase the overall value, 
+making ‘b’ the correct answer.`,
+    lookup: "See page(s) 21-22 of the Full Licence Manual",
+    syllabus: "2d.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Yes this one is obvious.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q03",
+    question: `Self-inductance can be defined as:`,
+    image: "",
+    options: [
+      "the ability to store and release electric charge",
+      "the self-generated electro motive force that enhances current flow",
+      "the property that generates a back EMF that opposes any change of current flow",
+      "the impedance value equivalent to a resistor of the same value in the same circuit",
+    ],
+    correct: 2,
+    explanation: `‘a’ is wrong because capacitors store electric charge, inductors store energy as 
+a magnetic field. ‘b’ is wrong because the self-generated EMF opposes change in current flow. ‘c’ looks 
+good. ‘d’ is a bit of a ramble that sounds a bit like Dynamic Resistance but not self-inductance. ‘c’ it is. `,
+    lookup: "See page(s) 23 of the Full Licence Manual",
+    syllabus: "2d.4",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Another obvious one.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q04",
+    question: `If an inductor of 25µH is connected in series with a 10 Ohm resistor, and a DC supply 
+connected, how long will it take for the current to reach 66% of its maximum value?`,
+    image: "",
+    options: ["2.5 µs", "400 ks", " 12.5 µs", "2 Ms"],
+    correct: 0,
+    explanation: `We are fortunate here because 66% is the current reached in 1 time constant. 
+For a circuit containing a resistor and an inductor one time constant, τ = L/R`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "2d.7",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "One time constant is 66% and 5 time constants is full!",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q05",
+    question: `Which component can be used to block AC but allow DC to pass?`,
+    image: "",
+    options: [
+      "Capacitor",
+      "Inductor",
+      "Slow-blow fuse",
+      "Diode with forward bias",
+    ],
+    correct: 1,
+    explanation: ` a capacitor, does the opposite, blocking DC but allowing AC to flow, so not ‘a’. 
+An inductor has the property of self-inductance, generating a back EMF as current increases, or 
+decreases, which opposes the flow of AC, but allows the DC to flow, so ‘b’ looks good. A slow-bow fuse, 
+or any fuse for that matter, is just a piece of wire, so it will pass AC or DC up to its maximum rating, then 
+it melts and nothing flows, so not ‘c’. ‘d’ is wrong as the diode will conduct DC and at least half of an AC 
+signal. ‘b’ it is then.`,
+    lookup: "See page(s) 26-27 of the Full Licence Manual",
+    syllabus: "2e.5",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Pay attention to this one. Tricky under pressure.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q06",
+    question: `False digital representations of analogue signals can be avoided by:`,
+    image: "",
+    options: [
+      "Including an anti-aliasing filter in the analogue signal path",
+      "Sampling at less than half the Nyquist rate",
+      "Using two signals with a 90 degree phase shift between them",
+      "Adding ferrite to the outside of the signal input feeder",
+    ],
+    correct: 0,
+    explanation: `The false digital representations that can be produced in the sampling of 
+analogue signals are known as ‘aliases’. If you remember that it should be easy to deduce 
+that an anti￾aliasing filter would be used to avoid them. ‘b’ is wrong because you need to sample at or above the 
+Nyquist rate to avoid aliases. ‘c’ is the basis of the SDR concept and does not impact aliases. ‘d’ is a good 
+way of preventing common mode currents and/or spurious signal generation, but not aliases.`,
+    lookup: "See page(s) 39-40 of the Full Licence Manual",
+    syllabus: "2f.1",
+    reference:
+      "BBDL hand out ‘Digital Signals for the Full Licence’ has better syllabus coverage. ",
+    examStrategy: 1,
+    examStrategyNotes:
+      "The Digital Signals paper has been rendered in Obsidian.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FDigital%20Signals%20and%20SDR%20for%20Full%20Licence",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q07",
+    question: `An antenna matching transformer has a turns ratio of 1:3. It will match a 50Ω transmitter 
+output to what impedance antenna?`,
+    image: "",
+    options: ["50 Ω", "75 Ω", "300 Ω", "450 Ω"],
+    correct: 3,
+    explanation: `For transformers the impedance ratio is determined by ‘the square of the turns’ 
+ratio. So, in this case 1:3 turns gives 1:9 Z ratio. The 50Ω rig will therefore match a 450Ω load at the 
+other side of the transformer. ‘d’ is the one to go for this time. The formula is in EX309 but you are 
+unlikely to need it for this type of question.`,
+    lookup: "See page(s) 29 of the Full Licence Manual",
+    syllabus: "2g.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "Check the EX309 formula to confirm that Impedance is proportional to the square of the Turns Ratio.",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q08",
+    question: `Which of the following best describes a feature of a quartz crystal?`,
+    image: "",
+    options: [
+      "It naturally has two resonant frequencies known as series and parallel.",
+      "It contains two tuned circuits formed from small inductors and capacitors",
+      "It is sensitive to polarity such that the resonant frequency depends on the crystal’s biasing.",
+      "The resonance of the quartz material is directly proportional to the directivity of the electron flow through the mineral.",
+    ],
+    correct: 0,
+    explanation: `‘a’ is the correct answer (all others are complete waffle!). All crystals have two resonant frequencies, 
+quite close to each other, and you need to check whether the crystal is intended for series or parallel 
+operation to ensure it works on the marked frequency.`,
+    lookup: "See page(s) 29-30 of the Full Licence Manual",
+    syllabus: "2h.2",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Only one right answer. A well drilled answer.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q09",
+    question: `Which of the following would conduct when reverse biased to more than a specifically designed voltage?`,
+    image: "",
+    options: [
+      "Variable Capacitance Diode",
+      "Light Emitting Diode",
+      "Rectifier Diode",
+      "Zener Diode",
+    ],
+    correct: 3,
+    explanation: `A Variable Capacitance, or Varactor, diode is used in tuning and FM 
+modulation circuits due to its capacitance changing properties when reverse biased, so not ‘a’. An LED 
+simply emits light when it is forward biased and has no specific properties when reverse biased, so not 
+‘b’. A Rectifier diode works by not conducting when reverse biased, so not ‘c’. The Zener diode, however, 
+is often used in power supply regulation because it has the ability to conduct when reverse biased above 
+a specific voltage that is set in its design and manufacture.`,
+    lookup: "See page(s) 32 of the Full Licence Manual",
+    syllabus: "2i.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "This should be well drilled.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q10",
+    question: `The amplifier in the diagram has:`,
+    image: "images/bbdl-quizzes-week09a-q10.png",
+    options: [
+      "a low input impedance and a low output impedance",
+      "a high input impedance and a high output impedance",
+      "a high input impedance and a low output impedance",
+      "a low input impedance and a high output impedance",
+    ],
+    correct: 3,
+    explanation: `The diagram shows a common base amplifier, it has a low input impedance of 
+around 50 ohms and a high output impedance of about 50k ohms.`,
+    lookup: "See page(s) 35 Figure 5.21 of the Full Licence Manual",
+    syllabus: "2i.4",
+    reference: "",
+    examStrategy: 5,
+    examStrategyNotes:
+      "Tricky. This image should be drilled. I beleieve it is a flashcard.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q11",
+    question: `In a switch mode power supply, what does the ‘switching’ or ‘chopping’ section do?`,
+    image: "",
+    options: [
+      "Convert mains AC to DC with a ripple",
+      "Generate pulses of DC at high frequency",
+      "Provide feedback to regulate the output voltage",
+      "Smooth out the DC output",
+    ],
+    correct: 1,
+    explanation: `The main sections of a switch mode PSU are: 
+Mains rectifier produces pulses of DC at mains voltage and 50Hz.
+Smoothing/reservoir capacitors producing DC at mains voltage.
+Switching transistors create square wave pulses of DC in the kHz range at mains voltage.
+A ferrite cored transformer that produces the require output current and voltage requirements.
+A smoothing and filter section that cleans up the output.
+A feedback and control section that monitors the output voltage to adjust the switching times of the 
+switching transistors. So, the switching function is best described in answer ‘b’. `,
+    lookup: "See page(s) 38 of the Full Licence Manual",
+    syllabus: "2j.4",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "Drill. Although it says high frequency, it is faster than mains frequency.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q12",
+    question: `What block is missing from this 145MHz FM transmitter?`,
+    image: "images/bbdl-quizzes-week09a-q12.png",
+    options: [
+      "Frequency Multiplier",
+      "Buffer Amplifier",
+      "Frequency Discriminator",
+      "Final Frequency Mixer",
+    ],
+    correct: 0,
+    explanation: `The transmitter uses a multiplier arrangement to get to the final frequency. 
+The carrier oscillator is on 16.17MHz, so the output from the x3 multiplier would be around 48.51MHz, 
+which is someway short of 145MHz. Another x3 multiplier will have the output around 145.500MHz, 
+which is what we want for 2m FM calling.`,
+    lookup: "See page(s) 41-46 of the Full Licence Manual",
+    syllabus: "3b.1",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Watch out for the mention of the frequency in the question, and spot the gap! It is not a Buffer Amplifier!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q13",
+    question: `Which of the following is a consequence of a transmitter oscillator drifting:`,
+    image: "",
+    options: [
+      "intermittent reception at the receiving station",
+      "spurious emissions over a broad spectrum",
+      "harmonics being transmitted",
+      "out-of-band transmissions",
+    ],
+    correct: 3,
+    explanation: ` ‘a’ ‘b’ and ‘c’ are simply wrong, they are not caused by drift. That only leaves 
+‘d’ for the correct answer. Extreme drift can indeed take your transmissions out of the amateur band, 
+especially if you are operating near the band edge such as on the narrow sub-sections of the 60m band.`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "3c.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "This should be well rehearsed.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q14",
+    question: `In the diagram the unnamed block is:`,
+    image: "images/bbdl-quizzes-week09a-q14.png",
+    options: [
+      "A power amplifier",
+      "A low pass filter",
+      "A voltage controlled oscillator",
+      "A direct digital synthesiser",
+    ],
+    correct: 2,
+    explanation: `Two of the potential answers feature in a phase lock loop circuit, ‘b’ and ‘c’, the 
+PLL does not have a power amp, so ‘a’ is ruled out, and the diagram is not a DDS, so ‘d’ cannot be 
+correct. However, the low pass filter, answer ‘b’, is already shown after the phase comparator, so the 
+voltage controlled oscillator, answer ‘c’, is the one to go for.`,
+    lookup: "See page(s) 44 of the Full Licence Manual",
+    syllabus: "3c.3",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Another name for a Phase Lock Loop.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q15",
+    question: `The main element of a frequency multiplier stage is normally a:`,
+    image: "",
+    options: [
+      "Low pass filter",
+      "Class C amplifier",
+      "Class A amplifier",
+      "Variable capacitance diode",
+    ],
+    correct: 1,
+    explanation: `Depending on the cut-off frequency, a low pass filter could allow the original 
+signal and any multiplied frequencies to pass. Even if the cut-off frequency was just above the desired 
+multiplied frequency, any leakage of the fundamental frequency would also pass, so not ‘a’. The class C 
+amplifier is the one known to be rich in harmonics so ideally suited to multiplying frequencies; answer ‘b’ 
+looks like the correct option. A class A amplifier is ‘pure’ and is unlikely to produce many harmonics, so 
+not much use as a multiplier, therefore ‘c’ is not correct. A varicap diode could be used to tune the tuned 
+circuit, but the main element is the transistor that generates the harmonics, so not ‘d’.`,
+    lookup: "See page(s) 46 of the Full Licence Manual",
+    syllabus: "3d.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "A little nugget to tuck away.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q16",
+    question: `Assuming the peak envelope power (PEP) remains constant, which one of the following 
+statements is true?`,
+    image: "",
+    options: [
+      "FM will result in a higher average power than CW or SSB",
+      "CW will result in a higher average power than FM or SSB",
+      "AM will result in a higher average power than CW or FM",
+      "SSB will result in a higher average power than FM or CW",
+    ],
+    correct: 0,
+    explanation: `The FM carrier envelope has a constant amplitude so the PA is working all of 
+the time the PTT is closed. All the others have peaks and troughs in the envelope, so have a lower 
+average power. So ‘a’ is the correct answer. Discussed on pages 48 - 49 of the Full Licence textbook. It is 
+worth noting that the concept of power amplifiers working more or less, depending on the mode, is often
+referred to as the ‘duty cycle’. A high duty cycle equates to a higher level of average power and to higher 
+level of loss and heat dissipation.`,
+    lookup: "See page(s) 48-49 of the Full Licence Manual",
+    syllabus: "3f.4",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Another wee nugget to tuck away.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q17",
+    question: `In which section of a transceiver would you find an out of lock inhibitor?`,
+    image: "",
+    options: [
+      "the PLL synthesiser",
+      "the phasing modulator",
+      "the waterfall display of a Software Defined Radio",
+      "the anti-aliasing filter of a Digital to Analogue Convertor (DAC)",
+    ],
+    correct: 0,
+    explanation: `The out of lock inhibitor prevents the transmitter from operating if the PLL is 
+not locked, so preventing transmissions on frequencies that are not under control.`,
+    lookup: "See page(s) 44-45 of the Full Licence Manual",
+    syllabus: "3g.5",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Yep, time to dig out that precious nugget.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q18",
+    question: `Overloading a superheterodyne receiver causes intermodulation products. These products are 
+a problem because:`,
+    image: "",
+    options: [
+      "They generate false signals on the image frequency",
+      "They generate false signals called aliases",
+      "They reduce the dynamic range of the receiver by limiting its ability to receive weak signals",
+      "They reduce the dynamic range of the receiver by causing weaker signals to distort",
+    ],
+    correct: 2,
+    explanation: ` ‘a’ is wrong because the intermodulation products are close to the wanted 
+signal and have no connection to the image frequency or 2nd channel interference. ‘b’ is wrong as it is a 
+feature of SDR not superhet receivers. ‘c’ looks good because the intermodulation products will raise the 
+noise floor, burying weaker signals. ‘d’ is incorrect because the overloading would not add any gain that 
+would cause weaker signals to distort.`,
+    lookup: "See page(s) 58 of the Full Licence Manual",
+    syllabus: "3h.3",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "It's all about raising the noise floor.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q19",
+    question: ` Phase noise has the effect of:`,
+    image: "",
+    options: [
+      "Causing a kind of echo effect",
+      "Raising the minimum detection level",
+      "Intermittent noise in a phase lock loop",
+      "Wideband interference across the RF spectrum",
+    ],
+    correct: 1,
+    explanation: `Ideally all frequency sources used in communication systems should deliver a 
+pure sine wave carrier. This would be represented in the frequency domain by a single line. All real 
+sources have unwanted amplitude or phase modulated noise components. These phase modulated 
+components are known as phase noise and can be seen in the frequency domain as sidebands extending 
+both above and below the wanted carrier. Among other effects, the phase noise raises the minimum
+detectable signal floor. It can be reduced by the use of high Q oscillators, higher oscillator power and 
+using low noise active devices.`,
+    lookup: "See page(s) 54 of the Full Licence Manual",
+    syllabus: "3i.5",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes: "More work on this. Perhaps a flashcard.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q20",
+    question: `Adding an external pre-amplifier to a receiver can:`,
+    image: "",
+    options: [
+      "Extend its usable frequency range",
+      "Reduce its usable frequency range",
+      "Increase its dynamic range",
+      "Decrease its dynamic range",
+    ],
+    correct: 3,
+    explanation: `Adding a pre-amp does nothing to the operating frequency, making ‘a’ and ‘b’ 
+wrong. The additional gain of the amplifier can increase the noise at the bottom end of the dynamic 
+range and will cause strong signals to distort, so reducing the dynamic range (by about the same dB as 
+the gain of the amplifier).`,
+    lookup: "See page(s) 65-66 of the Full Licence Manual",
+    syllabus: "3j.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Yes it is a nugget!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q21",
+    question: `A ratio detector is used in which one of the following?`,
+    image: "",
+    options: [
+      "An SWR meter",
+      "An FM demodulator",
+      "An AM demodulator",
+      "An SSB demodulator",
+    ],
+    correct: 1,
+    explanation: `A ratio detector is a type of demodulator, which rules out ‘a’. AM requires an 
+envelope detector (so not ‘c’), SSB needs a product detector (so not ‘d’) and so the ratio detector must be 
+used for FM, making ‘b’ the correct answer. `,
+    lookup: "See page(s) 63-64 of the Full Licence Manual",
+    syllabus: "3k.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Does Ratio Detector ring any bells. It ought to!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q22",
+    question: `In order to fully capture the information contained in the amplitude and phase of a signal, the 
+position of the phasors must be resolved as the values on:`,
+    image: "",
+    options: [
+      "The X axis",
+      "The Y axis",
+      "Two axes set at 90 degrees to each other",
+      "Two axes set at 180 degrees to each other",
+    ],
+    correct: 2,
+    explanation: `Phasor Diagrams are a graphical way of representing the magnitude and 
+directional relationship between two or more alternating quantities. Although phase and amplitude can 
+be compared and displayed on 2 axes at 90 degrees, phasors of different frequencies cannot be resolved.`,
+    lookup: "See page(s) 67-68 of the Full Licence Manual",
+    syllabus: "3m.1",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes: "More work needed on this one, including flashcards.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q23",
+    question: `Which of the following transceiver blocks would be least likely to be used in both the receiver 
+and transmit paths?`,
+    image: "",
+    options: [
+      "SSB crystal filter",
+      "Carrier Insertion Oscillator",
+      "Automatic Gain Control loop",
+      "Direct Digital Synthesiser Local Oscillator",
+    ],
+    correct: 2,
+    explanation: `As a general rule of thumb, oscillators and filters are shared between the 
+receiver and the transmitter in a transceiver. In this case, ‘a’, ‘b’ and ‘d’ fit that bill, and the AGC loop is 
+only used in the receiver side of the transceiver, making ‘c’ the one to go for.`,
+    lookup: "See page(s) 50 of the Full Licence Manual",
+    syllabus: "3n.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Just work through it.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q24",
+    question: `Which of the following would best describe a choke balun connected between a length of 
+coaxial feeder and a balanced antenna?`,
+    image: "",
+    options: [
+      "A device for a single frequency with no impedance matching",
+      "A device for a single frequency with potential for impedance matching",
+      "A broadband device with no impedance matching",
+      "A broadband device with potential for impedance matching",
+    ],
+    correct: 2,
+    explanation: `. The choke balun can be made by looping up coaxial feeder or by sliding ferrite 
+beads onto the outside of the coax. It includes no transformer action, so ‘b’ and ‘d’ are ruled out. So, is it 
+a single band device or a broadband device? The only single band balun is the sleeve balun, made from a 
+one quarter wavelength external metallic sleeve, ruling out ‘a’.`,
+    lookup: "See page(s) 69-70 of the Full Licence Manual",
+    syllabus: "4b.1",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes: "More work needed.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: true,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q25",
+    question: `If you make a half-wave dipole for use on 18.100MHz, you can expect each side of the dipole 
+to be:`,
+    image: "",
+    options: ["8.29m", "7.87m", "4.14m", "3.94m"],
+    correct: 3,
+    explanation: `Use λ = 300/MHz to find 1 wavelength, halve it to give ½ wavelength then
+halve it again to give you ¼ wavelength (one side of the dipole). Now multiply by 0.95, to allow for the 
+end correction factor, and that will give you the dimension for one half of the dipole. That should show 
+that ‘d’ is the correct answer.`,
+    lookup: "See page(s) 72 of the Full Licence Manual",
+    syllabus: "4d.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Straightforward.",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q26",
+    question: `A standing wave on a feeder is caused by:`,
+    image: "",
+    options: [
+      "The antenna being resonant",
+      "The interaction of an RF signal travelling up the feeder to the antenna and RF signal travelling back down the feeder having been reflected from the antenna",
+      "The multiplication of the RF voltage and the RF current at any point on the feeder",
+      "The feedpoint impedance of the antenna being too closely matched to the characteristic impedance of the feeder",
+    ],
+    correct: 1,
+    explanation: ` Generally speaking, if the antenna is resonant the feedpoint impedance will be 
+about what is expected and therefore there should be no standing wave on the feeder, so not ‘a’. ‘b’ 
+sounds good as it is taking about forward and reflected power. ‘c’ is the calculation for input power and 
+nothing to do with standing waves and ‘d’ describes the exact circumstances for no standing waves on 
+the feeder.`,
+    lookup: "See page(s) 71 of the Full Licence Manual",
+    syllabus: "4e.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Fairly easy.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q27",
+    question: `Which of the following statements is FALSE?`,
+    image: "",
+    options: [
+      "Placing an AMU at the transmitter end of an antenna system will not remove the standing wave from the feeder",
+      "An ‘L’ match AMU can only match loads higher in impedance than the transmitter output impedance",
+      "An AMU should be able to tune out any reactance to leave a purely resistive load",
+      "AMU components must be capable of handling the high currents that circulate within the unit",
+    ],
+    correct: 1,
+    explanation: ` ‘a’ is true, the AMU changes the impedance seen by the transmitter, but 
+it does not do anything to the antenna/feeder mismatch, so the standing wave is still there, the 
+transmitter just cannot ‘see’ it. ‘b’ is false, because an ‘L’ match can be used in two configurations, one 
+way for matching low Z and the other for high Z systems. ‘c’ sounds good, because the transmitter is 
+operating at its most efficient when it is working into a pure 50Ω, zero reactance, load. ‘d’ is also true 
+because there are indeed high currents circulating in the matching circuits, which was covered at 
+Intermediate level.`,
+    lookup: "See page(s) 76-77 of the Full Licence Manual",
+    syllabus: "4f.1",
+    reference: "",
+    examStrategy: 5,
+    examStrategyNotes:
+      "One by one, which ones are true, to eliminate and leave possibles.",
+    examCalculation: 0,
+    exam_NOT: true,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q28",
+    question: `You are tuning across the band and you hear lots of stations spread over a 5 kilohertz section 
+of the band all calling the same DX station. You then hear the DX station transmitting about 5 
+kilohertz lower down the band. What is the most likely explanation for this?`,
+    image: "",
+    options: [
+      "The DX station has drifted off frequency",
+      "The DX station is trying to avoid QRN on their frequency",
+      "The DX station is operating ‘split’ to spread out the pile up",
+      "Those calling the DX station are all on the wrong frequency",
+    ],
+    correct: 2,
+    explanation: `“Working split” is a technique that enables a DX station to work the maximum 
+number of different stations in a given time window. This technique is often heard on the 20m band and, 
+to a lesser extent, on other the bands. When trying to work the DX station the chaser listens to the DX 
+transmissions and hopefully works out the listening pattern employed by the DX station. Then calls on 
+that frequency until acknowledged. Woe betides the chaser who calls on the DX transmission frequency!`,
+    lookup: "See page(s) 11 of the Full Licence Manual",
+    syllabus: "7a.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Another nugget.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q29",
+    question: `Which of the following frequencies would be best if you want to call CQ using QRP SSB?`,
+    image: "",
+    options: ["5.2620 MHz", "5.2900 MHz", "5.2985 MHz", "5.3600 MHz"],
+    correct: 2,
+    explanation: `No need to guess this one, use the EX309 sheet supplied. No excuses for 
+getting this type of question wrong.`,
+    lookup: "See page(s) 11 of the Full Licence Manual",
+    syllabus: "7b.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Do this again and get it right this time. Write the frequencies down as kHz to match EX309, then go through one by one and eliminate. ",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q30",
+    question: `Considering the four tasks below, when would you be most likely to encounter potentially 
+lethal voltages?`,
+    image: "",
+    options: [
+      "When tuning a valve-based linear amplifier , using the operating controls on the outside of the case",
+      "When operating a mains powered switch mode power supply that has a metal case",
+      "When dismantling a 600W FET-based amplifier that has its 50V DC power cord removed",
+      "When setting up the 13.8 volt DC output level in a linear mains power supply with the case open.",
+    ],
+    correct: 3,
+    explanation: `The first thing to note here, is that potential differences of 50 volts and below 
+are not considered to be ‘potentially lethal’. Answer ‘c’ can therefore be discounted because it is 
+powered by 50V DC, and even if there are some charged capacitors to worry about, there are no 
+potentially lethal voltages present. Options ‘a’, ‘b’ and ‘d’ all have mains voltages present, which can be 
+lethal, but which is ‘most likely’ to expose you to danger? ‘a’ and ‘b’ make no mention of the case being 
+open, whereas ‘d’ does and that increases the risk of coming into contact with mains voltage, making ‘d’ 
+the one to go for.`,
+    lookup: "See page(s) 13 of the Full Licence Manual",
+    syllabus: "8a.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Work through this.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q31",
+    question: `Which of the following organisations produces the WHO sponsored guidance on levels of 
+exposures for Radio Frequency Electro-Magnetic Fields?`,
+    image: "",
+    options: ["RSGB", "IARU", "Ofcom", "ICNIRP"],
+    correct: 3,
+    explanation: `The International Commission for Non-Ionising Radiation Protection (ICNIRP) 
+are the advisors to the World Health Organisation (WHO). Whilst the other organisations listed do 
+produce guidance on EMF, only ICNIRP are sponsored by the WHO.`,
+    lookup: "See page(s) 16 of the Full Licence Manual",
+    syllabus: "8d.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "A nugget is needed.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q32",
+    question: `Which of the following safety precautions would be more appropriate for a mobile amateur 
+radio station than a home-based station?`,
+    image: "",
+    options: [
+      "Securing the transceiver in its mounting bracket",
+      "Having a Residual Current Device at the supply point",
+      "Keeping a safe distance away from radiation antennas",
+      "Ensuring all DC leads are fused in accordance with the manufacturers’ instructions",
+    ],
+    correct: 0,
+    explanation: ` First thing to consider is the meaning of ‘mobile’; installed in a vehicle, in a 
+vessel on an inland waterway, or as a pedestrian. None of the answers would be appropriate for 
+pedestrian operation so the question must be pointing us towards operating in a vehicle, or vessel.
+Having equipment secured in place is extremely important in a vehicle or vessel; as a result of any severe 
+movement or emergency stop situation a heavy object could become a dangerous missile. This is not an 
+issue in a home-based station, so looks like a good answer. ‘b’ would only be applicable in a mains￾operated station, so not applicable here. ‘c’ and ‘d’ are equally important in a home based or mobile 
+station, so not correct here.`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "8f.5",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "A great opportunity to get completely the wrong end of the stick. For 'mobile', probably best to read 'car', and get everything strapped down.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q33",
+    question: `When a risk assessment is done you need to record:
+`,
+    image: "",
+    options: [
+      "The significant findings",
+      "The risks that cannot be controlled",
+      "Details of everything that has been considered",
+      "All hazards present and the mitigations put in place for each one",
+    ],
+    correct: 0,
+    explanation: `Relatively straight forward answer. Whilst you can record as much detail as 
+you like, you must record the significant findings. If you have risks you cannot control, you should not 
+really be going ahead, so not ‘b’. ‘c’ would make the risk assessment a very large document that makes it 
+impossible to read, or to find the important points, so not ‘c’. ‘d’ is not correct because there could be 
+hundreds of trivial hazards that need no mitigating action. `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "8f.6",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "It looked straightforward, but a subtle play on words is hard to beat.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK09A Q34",
+    question: `The resistors in the base biasing circuit shown above have a tolerance of 10%. What is the
+range of possible maximum and minimum DC voltages on the base?`,
+    image: "images/bbdl-quizzes-week09a-q34.png",
+    options: [
+      "2.98v to 3.48v",
+      "3.48v to 4.05v",
+      "3.48v to 5.36v",
+      "2.98v to 4.05v",
+    ],
+    correct: 3,
+    explanation: `First point of note is that ‘the voltage on the base’ is the voltage across the 
+lower base bias resistor. First, you need to calculate the minimum and maximum values for the base 
+resistors and then do a few Ohm’s law calculations. The resistors are 10% tolerance so could be 10% 
+higher, or 10% lower than there marked value. So, 33k could be anywhere between 29.7k and 36.3k and 
+the 10k could be anything between 9k and 11k. The base bias resistors from a series circuit, so their 
+resistances add up such that we can work out the current through both, and then the voltage across the 
+bottom one. Now it is a matter of doing four calculations with the ‘extreme’ values of resistors 
+combined: • 36.3k + 11k = 47.3 k which gives a current of V ÷ R = 15v ÷ 47.3k = 317µA 
+o So, voltage across 11k = I x R = 3.48v
+• 36.3k + 9k = 45.3k which gives a current of V ÷ R = 15v ÷ 45.3k = 331µA 
+o So, voltage across 9k = I x R = 2.98v
+• 29.7k + 11k = 40.7k which gives a current of V ÷ R = 15v ÷ 40.7k = 368µA
+o So, voltage across 11k = I x R = 4.05v
+• 29.7k + 9k = 38.7k which gives a current of V ÷ R = 15v ÷ 38.7k = 387µA
+o So, voltage across 9k = I x R = 3.48v`,
+    lookup: "See page(s) 19-20 of the Full Licence Manual",
+    syllabus: "2a.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Best to have a go through one or two of these, and check out potential dividers.",
+    examCalculation: 3,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
   // {
   //   source: "BBDL QUIZ WEEK09 Q00",
   //   question: ``,
