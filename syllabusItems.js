@@ -279,6 +279,7 @@ const syllabusItems = [
     level: "full",
     title: "Electromagnetic fields",
     text: "Understand relevant information in the licence: (1) Origin of the EMF restrictions (ICNIRP) (2) Meaning of the term ‘general public’ (3) Areas in which the general public need to be protected from EMF in breach of the limits (4) Records of EMF assessment (5) Procedure for carrying out an EMF assessment (6) Emergency situations",
+    weeks: ["2"],
   },
   {
     key: "1h.1",
@@ -439,7 +440,7 @@ const syllabusItems = [
     level: "full",
     title: "Power",
     text: "Solve series/parallel resistor circuits to calculate currents, voltages, resistances and power, given appropriate values. This may include the use of series/parallel formulae, Ohm’s Law and power. Equations include $P = \\frac{V^2}{R}$ and $P = I^2 \\cdot R$ ",
-    weeks: ["1", "3", "3A"],
+    weeks: ["1", "2", "3", "3A"],
   },
   {
     key: "2c.1",
@@ -1366,19 +1367,8 @@ const syllabusItems = [
     key: "2f.1",
     level: "full",
     title: "Digital signals",
-    text: "Understand that analogue to digital conversion can generate a false image of the signal if frequencies are present above the frequency which is half the sampling (Nyquist) rate.",
-  },
-  {
-    key: "2f.1",
-    level: "full",
-    title: "Digital signals",
-    text: "Recall that these false images are known as aliases.",
-  },
-  {
-    key: "2f.1",
-    level: "full",
-    title: "Digital signals",
-    text: "Understand that anti-aliasing filters are used to avoid this occurring.",
+    text: "Understand that analogue to digital conversion can generate a false image of the signal if frequencies are present above the frequency which is half the sampling (Nyquist) rate. Recall that these false images are known as aliases. Understand that anti-aliasing filters are used to avoid this occurring.",
+    weeks: ["8"],
   },
   {
     key: "2f.2",
@@ -1415,12 +1405,14 @@ const syllabusItems = [
     level: "full",
     title: "Digital signals",
     text: "Recall that digital signals in the time domain can be depicted in the frequency domain by using a mathematical operation known as a Fourier Transform (FT).",
+    weeks: ["8"],
   },
   {
     key: "2f.2",
     level: "full",
     title: "Digital signals",
     text: "Recall that a Fourier Transform takes digital signals in the time domain and calculates the amplitudes and the frequencies which comprised the original signal.",
+    weeks: ["8"],
   },
   {
     key: "2g.1",
@@ -1552,6 +1544,7 @@ const syllabusItems = [
     level: "full",
     title: "Transformers",
     text: "Understand the impedance change in a transformer and apply the formula relating transformer primary and secondary turns to primary and secondary impedances.",
+    weeks: ["4"],
     flashcards: [
       {
         subTitle: "Transformers, Turns Ratio and Impedance",
@@ -1570,6 +1563,7 @@ const syllabusItems = [
     level: "full",
     title: "Transformers",
     text: "Recall that different magnetic materials used as cores for inductors and transformers perform best over different frequency ranges and affect their efficiency.",
+    weeks: ["4"],
     flashcards: [
       {
         subTitle: "Transformer Core",
@@ -1589,6 +1583,7 @@ const syllabusItems = [
     level: "full",
     title: "Transformers",
     text: "Recall that losses in the material will cause heating which affects power handling and the required physical size of the core for the power concerned.",
+    weeks: ["4"],
     flashcards: [
       {
         subTitle: "Transformers the last bit",
@@ -1730,6 +1725,7 @@ const syllabusItems = [
     level: "full",
     title: "Tuned circuits & resonance",
     text: "Recall that crystals are manufactured for either series or parallel operation and will only be stable and correct on the marked frequency when used in the intended manner.",
+    weeks: ["3"],
   },
   {
     key: "2h.3",
@@ -2684,11 +2680,13 @@ const syllabusItems = [
   {
     key: "3c.1",
     level: "intermediate",
+    title: "Oscillators",
     text: "Recall that the resonant frequency of the tuned circuit in a VFO determines the frequency of oscillation.",
   },
   {
     key: "3c.1",
     level: "full",
+    title: "Oscillators",
     text: "Recall the effect and the importance of minimising drift.",
     note: "I added this on 2025-11-14. It somehow got missed when transcribing from the syllabus to this format.",
     weeks: ["5"],
@@ -2913,12 +2911,14 @@ const syllabusItems = [
     level: "full",
     title: "RF power amplifiers",
     text: "Identify simple RF transmitter PA circuits.",
+    weeks: ["6"],
   },
   {
     key: "3f.2",
     level: "full",
     title: "RF power amplifiers",
     text: "Understand the meaning of linearity as applied to a circuit or amplifier.",
+    weeks: ["6"],
   },
   {
     key: "3f.2",
@@ -2932,6 +2932,7 @@ const syllabusItems = [
     level: "full",
     title: "RF power amplifiers",
     text: "Understand how distortion of two (or more) frequencies can produce harmonics and intermodulation products of the input frequencies.",
+    weeks: ["6"],
   },
   {
     key: "3f.3",
@@ -3016,6 +3017,7 @@ const syllabusItems = [
     level: "full",
     title: "Transmitter interference",
     text: "Understand that over-drive of the RF power amplifier can also result in excessive transmitted bandwidth.",
+    weeks: ["6"],
   },
   {
     key: "3g.2",
@@ -3053,6 +3055,7 @@ const syllabusItems = [
     level: "full",
     title: "Transmitter interference",
     text: "Understand ways to avoid generating harmonics e.g. use of push-pull amplifiers and avoiding high drive levels.",
+    weeks: ["6"],
   },
   {
     key: "3g.3",
@@ -3066,6 +3069,7 @@ const syllabusItems = [
     level: "full",
     title: "Transmitter interference",
     text: "Understand the use of low pass, band pass and band stop (notch) filters in minimising the radiation of unwanted harmonics and mixer products.",
+    weeks: ["6"],
   },
   {
     key: "3g.4",
@@ -3153,12 +3157,14 @@ const syllabusItems = [
     level: "full",
     title: "Receiver concepts",
     text: "Understand that overloading a receiver causes intermodulation products and that those close to or within the wanted signal bandwidth limit the ability of the receiver to detect weak signals.",
+    weeks: ["7"],
   },
   {
     key: "3h.3",
     level: "full",
     title: "Receiver concepts",
     text: "Recall that the dynamic range of a receiver is the difference between the minimum discernible signal and the maximum signal without overload.",
+    weeks: ["7"],
     flashcards: [
       {
         subTitle: "Dynamic range",
@@ -3177,6 +3183,7 @@ const syllabusItems = [
     level: "full",
     title: "Receiver concepts",
     text: "Recall that dynamic range is expressed in decibels.",
+    weeks: ["7"],
   },
   {
     key: "3h.4",
@@ -3201,6 +3208,7 @@ const syllabusItems = [
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the block diagram of superheterodyne and double superheterodyne receivers and the functions of each block.",
+    weeks: ["7"],
   },
   {
     key: "3i.2",
@@ -3213,6 +3221,7 @@ const syllabusItems = [
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the function of a mixer, the generation of the Intermediate Frequency (IF) and other mixer products.",
+    weeks: ["7"],
   },
   {
     key: "3i.3",
@@ -3237,42 +3246,49 @@ const syllabusItems = [
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the advantages and disadvantages of high and low intermediate frequencies and the rationale for the double and triple superheterodyne.",
+    weeks: ["7"],
   },
   {
     key: "3i.3",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand that for given RF and IF frequencies, there is a choice of two possible local oscillator (LO) frequencies.",
+    weeks: ["7"],
   },
   {
     key: "3i.3",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the reasons for the choice and calculate the frequencies.",
+    weeks: ["7"],
   },
   {
     key: "3i.3",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the origin of the image frequency and calculate the frequency from given parameters.",
+    weeks: ["7"],
   },
   {
     key: "3i.4",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the operation of an IF amplifier and the IF transformer.",
+    weeks: ["8"],
   },
   {
     key: "3i.4",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand the concept of two LC tuned circuits utilising transformer coupling.",
+    weeks: ["8"],
   },
   {
     key: "3i.4",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Identify critical and over-coupled response curves.",
+    weeks: ["8"],
     flashcards: [
       {
         subTitle: "Intermediate Frequency Transformer",
@@ -3292,24 +3308,28 @@ const syllabusItems = [
     level: "full",
     title: "Superheterodyne concepts",
     text: "Understand how the gain of an IF amplifier can be varied, how this may cause distortion and how the effects of the distortion are avoided.",
+    weeks: ["8"],
   },
   {
     key: "3i.5",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Recall the source and effects of phase noise.",
+    weeks: ["6", "7"],
   },
   {
     key: "3i.5",
     level: "full",
     title: "Superheterodyne concepts",
     text: "Recall the unit of measurement (for phase noise) is dBc/Hz.",
+    weeks: ["6", "7"],
   },
   {
     key: "3j.1",
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Recall the operation of the RF amplifier.",
+    weeks: ["7"],
     flashcards: [
       {
         subTitle: "Operation of RF amplifier",
@@ -3327,6 +3347,7 @@ const syllabusItems = [
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Understand that external RF preamplifiers do not always improve overall performance and will reduce the dynamic range.",
+    weeks: ["7"],
     flashcards: [
       {
         subTitle: "Care is needed to use an RF pre-amplifier",
@@ -3344,6 +3365,7 @@ const syllabusItems = [
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Understand why, at HF, this loss can be as much as the gain of the preamp but that at VHF and above a low noise pre-amp is beneficial.",
+    weeks: ["7"],
     flashcards: [
       {
         subTitle: "Pre-amplifier with an FM signal",
@@ -3361,6 +3383,7 @@ const syllabusItems = [
     level: "full",
     title: "RF amplifiers and external pre-amplifiers",
     text: "Understand why most benefit is gained by locating the pre-amp at the antenna.",
+    weeks: ["7"],
   },
   {
     key: "3k.1",
@@ -3397,6 +3420,7 @@ const syllabusItems = [
     level: "full",
     title: "Demodulation",
     text: "Understand the operation of basic analogue AM, CW, SSB and FM demodulator circuits and the function of the limiter for FM.",
+    weeks: ["8"],
   },
   {
     key: "3l.1",
@@ -3415,12 +3439,14 @@ const syllabusItems = [
     level: "full",
     title: "Automatic gain control (AGC)",
     text: "Understand the source and use of an AGC voltage.",
+    weeks: ["8"],
   },
   {
     key: "3l.1",
     level: "full",
     title: "Automatic gain control (AGC)",
     text: "Recall that the speed of the AGC response can be adjusted on both attack and decay.",
+    weeks: ["8"],
   },
   {
     key: "3m.1",
@@ -3475,18 +3501,21 @@ const syllabusItems = [
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Recall that analogue and digital signals are transmitted by some form of amplitude and/or frequency/phase modulation.",
+    weeks: ["8"],
   },
   {
     key: "3m.1",
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Recall that amplitude and frequency/phase modulation can be portrayed on a phasor diagram.",
+    weeks: ["8"],
   },
   {
     key: "3m.1",
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Understand that to fully capture the information contained in the amplitude and phase of the signal that the position of the phasors must be resolved as the values on two axes at right angles.",
+    weeks: ["8"],
   },
   {
     key: "3m.2",
@@ -3511,24 +3540,28 @@ const syllabusItems = [
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Recall that mixing the RF or IF signal with two local oscillator signals 90 degrees different in phase will produce in-phase (I) and quadrature (Q) components, which can be digitised allowing all forms of modulation to be demodulated entirely by mathematical processes in a PC or using dedicated hardware.",
+    weeks: ["8"],
   },
   {
     key: "3m.2",
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Recall that this technique is the basis of SDR (Software Defined Radio) receivers.",
+    weeks: ["8"],
   },
   {
     key: "3m.2",
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Recall that these techniques can also be used to create complex modulations for use in transmitters.",
+    weeks: ["8"],
   },
   {
     key: "3m.2",
     level: "full",
     title: "SDR transmitters and receivers",
     text: "Recall that if sampling is carried out directly on the RF signal, the extraction of I and Q components and subsequent demodulation may be carried out entirely by mathematical processes.",
+    weeks: ["8"],
   },
   {
     key: "3m.3",
@@ -3541,48 +3574,56 @@ const syllabusItems = [
     level: "full",
     title: "Transceivers",
     text: "Understand that transceivers normally share oscillators between the transmitter and receiver circuits; and they may use common IF filters to limit both the transmitter and receiver bandwidths and that they also use common changeover circuits.",
+    weeks: ["8"],
   },
   {
     key: "3n.1",
     level: "full",
     title: "Transceivers",
     text: "Recall the function and use of the RIT (Receiver Incremental Tuning) control. (See page 50 of Full Manual)",
+    weeks: ["8"],
   },
   {
     key: "3n.2",
     level: "full",
     title: "Transceivers",
     text: "Understand that using a transverter enables operation on frequency bands not covered by the primary transceiver equipment.",
+    weeks: ["8"],
   },
   {
     key: "3n.2",
     level: "full",
     title: "Transceivers",
     text: "Calculate appropriate frequencies used in transverter operation.",
+    weeks: ["8"],
   },
   {
     key: "3n.2",
     level: "full",
     title: "Transceivers",
     text: "Recall that transverters generally require low power drive.",
+    weeks: ["8"],
   },
   {
     key: "3n.2",
     level: "full",
     title: "Transceivers",
     text: "Understand the need for extra care to avoid transmitting out of band when using a transverter.",
+    weeks: ["8"],
   },
   {
     key: "3n.2",
     level: "full",
     title: "Transceivers",
     text: "Recall that transverters require the correct interfacing with the primary equipment to control sequencing and prevent hot switching.",
+    weeks: ["8"],
   },
   {
     key: "3n.2",
     level: "full",
     title: "Transceivers",
     text: "Understand the techniques of RF sensing and PTT (push-to-talk) transmit receive switching.",
+    weeks: ["8"],
   },
   {
     key: "4a.1",
@@ -3703,18 +3744,21 @@ const syllabusItems = [
     level: "full",
     title: "Feeders",
     text: "Understand that the velocity factor of a feeder is the ratio of the velocity of radio waves in the feeder to that in free space and that the velocity factor is always less than unity.",
+    weeks: ["8"],
   },
   {
     key: "4a.3",
     level: "full",
     title: "Feeders",
     text: "Recall that the velocity factor for coaxial feeder with a solid polythene dielectric is approximately 0.67 or 2/3.",
+    weeks: ["8"],
   },
   {
     key: "4a.3",
     level: "full",
     title: "Feeders",
     text: "Perform calculations involving velocity factor, physical length, electrical length and frequency.",
+    weeks: ["8"],
     flashcards: [
       {
         subTitle: "Velocity Factor in feeders",
@@ -3746,6 +3790,7 @@ const syllabusItems = [
     level: "full",
     title: "Baluns",
     text: "Recall the construction and use of transformer, sleeve and choke type baluns.",
+    weeks: ["8"],
     flashcards: [
       {
         subTitle: "why do we need a balun",
@@ -3795,6 +3840,7 @@ const syllabusItems = [
     level: "full",
     title: "Baluns",
     text: "Identify the circuits of 1:1 and 4:1 transformer baluns.",
+    weeks: ["8"],
     flashcards: [
       {
         subTitle: "transformer balun 1:1",
@@ -6028,18 +6074,21 @@ const syllabusItems = [
     level: "full",
     title: "Electricity",
     text: "Recall that under severe fault conditions PME systems have the potential to cause fatal electric shocks and/or fires in amateur radio stations.",
+    weeks: ["2"],
   },
   {
     key: "8a.2",
     level: "full",
     title: "Electricity",
     text: "Recall that the RF earth in an amateur station should be connected to the PME bonding point in accordance with the relevant requirements.",
+    weeks: ["2"],
   },
   {
     key: "8a.2",
     level: "full",
     title: "Electricity",
     text: "Recall that any cross-bonding must be tested and recorded by a qualified professional. Note: The relevant requirements may vary depending on the UK region and the practice of the Distribution Network Organisation concerned.",
+    weeks: ["2"],
   },
   {
     key: "8a.3",
