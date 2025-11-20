@@ -2676,10 +2676,13 @@ const EXAM_SECRETS_QUESTIONS = [
       "The interference mechanism is that modulated RF is being picked up on the speaker leads and conducted into the audio amplifier stage of the music system. Any diode or transistor in the amplifier is likely to rectify the RF signal, resulting in demodulation to become an audio signal, which can then be amplified alongside whatever music is being played. The need is to stop the RF getting into the amplifier stages. Ferrite rings should do that. The 0.1µF capacitors, if fitted at the amplifier end of the leads might help, but with the common mode pickup on both leads, it is far from certain. The series 1000µF capacitor would have minimal effect if any, and ferrite rings at the loudspeaker end of the leads would have little or no effect too.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6d.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Differential are wanted! Common are not wanted. How to stop the RF from being picked up by the speaker leads acting as an antenna?",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fferrite_rings_6d1",
   },
   {
     source: "Exam Secrets FULL [EMC] 6D1-3",
@@ -2697,10 +2700,12 @@ const EXAM_SECRETS_QUESTIONS = [
       "The aim is to put a short circuit across the input at 145MHz to attenuate signals picked up at that frequency and do minimal damage to signals at 100MHz. An open circuit stub ƛ/4 at 145MHz will have that effect.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6d.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 4,
+    examStrategyNotes: "The obsidian link should help. Think pulses!",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fcoaxial%20stubs%206d1",
   },
   {
     source: "Exam Secrets FULL [EMC] 6D1-4",

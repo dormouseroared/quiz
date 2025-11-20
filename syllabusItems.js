@@ -5275,6 +5275,38 @@ const syllabusItems = [
     level: "full",
     title: "Filtering and remedial measures",
     text: "Recall the use of ferrite beads or rings in internal and external filtering.",
+    flashcards: [
+      {
+        subTitle: "Ferrite Rings",
+        sequence: "000",
+        front: `
+        <ol>
+        <li>When RF interference causes speech to be heard from a loudspeaker, what component is doing the demodulation?</li>
+        <li>What is "common mode" current on a twin-wire cable?</li>
+        <li>What is "differential mode" current on a twin-wire cable?</li>
+        <li>Why does a ferrite ring around both wires block RF interference but not affect audio?</li>
+        <li>Where should RF filters be placed relative to the affected device?</li>
+        <li>Why is placing a ferrite at the loudspeaker end less effective than at the amplifier end?</li>
+        </ol>
+        `,
+        frontImage: "",
+        back: `
+        <i>
+        <ol>
+        <li>Semiconductor junctions (usually in the amplifier's output stage). Any PN junction can act as a crude AM detector when exposed to RF.</li>
+        <li>Current flowing in the same direction on both wires simultaneously. The cable acts as a single antenna relative to ground</li>
+        <li>Current flowing up one wire and returning down the other. This is the wanted signal in audio systems.</li>
+        <li>Differential mode (audio): opposing magnetic fields cancel—ferrite has no effect. Common mode (RF): fields add—ferrite presents high impedance.</li>
+        <li>As close as possible to the affected device. For speaker lead interference, this means at the amplifier end, where the sensitive semiconductor junctions are located.</li>
+        <li>The leads still act as antennas along their length. RF picked up on the leads can still travel to and enter the amplifier. The filter must be at the point of entry to the protected device.</li>
+        </ol>
+        </i>
+        `,
+        backImage: "",
+        reference: "Claude ferrite rings",
+        id: "aadb71cf",
+      },
+    ],
   },
   {
     key: "6d.2",
