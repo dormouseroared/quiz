@@ -546,6 +546,14 @@ function showExamStrategy(q) {
       display += ` NOT: ${q.exam_NOT}`
     }
 
+    // the window open is used so that a new browser tab is not created and left behind
+    // note that this could also be done with href and some extras
+    if (q.obsidianURL) {
+      display += ` <span onclick="window.location.href='${q.obsidianURL}'; return false;" 
+                  style="text-decoration: none; cursor: pointer; font-size: 26px; " 
+                  title="Open analysis guide in Obsidian">&nbsp;&nbsp;🎯</span>`
+    }
+
     if (q.examStrategyNotes) {
       display += `
         <br><span style="filter: blur(2px); cursor: pointer; transition: filter 0.5s ease;" 
@@ -553,14 +561,6 @@ function showExamStrategy(q) {
         onclick="this.style.filter='none'">
           ${q.examStrategyNotes}
         </span>`
-    }
-
-    // the window open is used so that a new browser tab is not created and left behind
-    // note that this could also be done with href and some extras
-    if (q.obsidianURL) {
-      display += ` <span onclick="window.location.href='${q.obsidianURL}'; return false;" 
-                  style="text-decoration: none; cursor: pointer; font-size: 24px; " 
-                  title="Open analysis guide in Obsidian">🎯</span>`
     }
 
     strategy.innerHTML = display
