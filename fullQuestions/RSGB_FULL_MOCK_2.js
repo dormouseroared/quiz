@@ -621,8 +621,9 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5a.3",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Circular polarisation is often used because the orientation of the satellite is indeterminate.",
     examCalculation: 0,
     exam_NOT: false,
   },

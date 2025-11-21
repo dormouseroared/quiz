@@ -719,8 +719,9 @@ const EXAM_SECRETS_FULL_PAPER = [
       "Satellite communication often uses circular polarisation, mainly because the orientation of the satellite can change, either as a feature of its orbit, or as the viewing angle changes from different points on the earth's surface",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5a.3",
-    examStrategy: 2,
-    examStrategyNotes: "Drill",
+    examStrategy: 4,
+    examStrategyNotes:
+      "Lots of questions about circular polarisation, so keep a look out, and in the meantime, drill!",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -900,9 +901,10 @@ const EXAM_SECRETS_FULL_PAPER = [
       "See EX309 formula sheet: middle column, towards the bottom, which is E = 7 x sqrt(erp) / d where erp is 400W with an antenna gain of 16dB (10dB + 3dB + 3dB) or 40 times. Distance comes out to 295m, and the real answer could be anywhere from 250-350m.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5a.1",
-    examStrategy: 3,
-    examStrategyNotes: "Revise and drill.",
-    examCalculation: 0,
+    examStrategy: 4,
+    examStrategyNotes:
+      "See EX309 C2R12 for Electric Field Strength, E,  in terms of erp and distance in metres. The answer has been rounded up.",
+    examCalculation: 3,
     exam_NOT: false,
   },
   {

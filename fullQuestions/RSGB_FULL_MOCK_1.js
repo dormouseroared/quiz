@@ -606,7 +606,7 @@ const RSGB_FULL_MOCK_1 = [
   {
     source: "RSGB Full Mock 1 Q35",
     question:
-      "When travelling away from a transmitter on clear ground, it is noted that the field strength has halved. The power flux density can be expected to:",
+      "When travelling away from a transmitter on clear ground, it is noted that the '(Electric) Field Strength' has halved. The 'Power Flux Density (PFD)' can be expected to:",
     options: [
       "remain more or less constant",
       "have reduced by a factor of about √ 2 (square root 2)",
@@ -614,12 +614,14 @@ const RSGB_FULL_MOCK_1 = [
       "have reduced to a quarter of its initial value",
     ],
     correct: 3,
-    explanation: "",
-    lookup: "See page(s) x of the Full Licence text book",
+    explanation:
+      "From p78: PFD is radio energy (related to the strength of the electric and magnetic components of the electromagnetic field) falling on one square metre at a given distance from the antenna, so at twice the given distance the PFD will be a quarter, equivalent to a signal strength meter drop of 6dB (-3dB is a half so another -3dB gets to a quarter) or one S-point.",
+    lookup: "See page(s) 78, 85 of the Full Licence text book",
     syllabus: "5a.1",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
-    examCalculation: 0,
+    examStrategy: 4,
+    examStrategyNotes:
+      "EFS falls off in linear fashion, but PFD falls off in inverse square. So, an EFS reduction of 1/2 becomes a PFD reduction of 1/4.",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {

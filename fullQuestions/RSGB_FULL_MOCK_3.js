@@ -660,8 +660,9 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5a.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "(Electric) Field Strength (EFS) is inversely proportional to distance, so get linear.",
     examCalculation: 0,
     exam_NOT: false,
   },
