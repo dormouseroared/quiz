@@ -19,6 +19,7 @@ const BBDL_FULL_QUIZZES = [
     examStrategyNotes: "Check EX309",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL: "test",
   },
   {
     source: "BBDL QUIZ WEEK00 Q02",
