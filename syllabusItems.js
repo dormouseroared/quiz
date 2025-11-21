@@ -6613,7 +6613,7 @@ const syllabusItems = [
     level: "full",
     title: "Working mobile and portable",
     text: "Recall a risk assessment needs to consider the likelihood of harm and the severity of that harm. Recall that the significant findings of risk assessments need to be recorded.",
-    weeks: ["2", "3A"],
+    weeks: ["2", "3A", "9A"],
   },
   {
     key: "8f.6",
