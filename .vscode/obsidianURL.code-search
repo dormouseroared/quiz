@@ -1,0 +1,135 @@
+# Query: obsidianURL:\\s*(?:\\n\\s*)?"[^"]+"
+# Flags: RegExp
+# Including: *.js
+# ContextLines: 2
+
+18 results - 4 files
+
+fullQuestions\BBDL_FULL_QUIZZES.js:
+    20      examCalculation: 0,
+    21      exam_NOT: false,
+    22:     obsidianURL: "test",
+    23    },
+    24    {
+
+  2776      examCalculation: 4,
+  2777      tagged: true,
+  2778:     obsidianURL:
+  2779:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+  2780    },
+  2781    {
+
+  2880      exam_NOT: false,
+  2881      tagged: true,
+  2882:     obsidianURL:
+  2883:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fzener_diode",
+  2884    },
+  2885    {
+
+  2962      exam_NOT: false,
+  2963      tagged: true,
+  2964:     obsidianURL:
+  2965:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fmultiplier",
+  2966    },
+  2967    {
+
+  3051      exam_NOT: false,
+  3052      tagged: true,
+  3053:     obsidianURL:
+  3054:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FSSB",
+  3055    },
+  3056    {
+
+  3080      exam_NOT: false,
+  3081      tagged: true,
+  3082:     obsidianURL:
+  3083:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FRF_amplifier_circuit",
+  3084    },
+  3085    {
+
+  3107      exam_NOT: false,
+  3108      tagged: true,
+  3109:     obsidianURL:
+  3110:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fparasitic_oscillations",
+  3111    },
+  3112    {
+
+  3214      exam_NOT: false,
+  3215      tagged: true,
+  3216:     obsidianURL:
+  3217:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Flightning_strike",
+  3218    },
+  3219    {
+
+  4267      exam_NOT: false,
+  4268      tagged: true,
+  4269:     obsidianURL:
+  4270:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FDigital%20Signals%20and%20SDR%20for%20Full%20Licence",
+  4271    },
+  4272    {
+
+  4421      exam_NOT: false,
+  4422      tagged: true,
+  4423:     obsidianURL:
+  4424:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q12",
+  4425      tagged: true,
+  4426    },
+
+  4578      exam_NOT: false,
+  4579      tagged: true,
+  4580:     obsidianURL:
+  4581:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q18",
+  4582    },
+  4583    {
+
+  4753      exam_NOT: false,
+  4754      tagged: true,
+  4755:     obsidianURL:
+  4756:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q25",
+  4757    },
+  4758    {
+
+  4963      exam_NOT: false,
+  4964      tagged: true,
+  4965:     obsidianURL:
+  4966:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q33",
+  4967    },
+  4968    {
+
+fullQuestions\EXAM_SECRETS_QUESTIONS.js:
+  2682      examCalculation: 0,
+  2683      exam_NOT: false,
+  2684:     obsidianURL:
+  2685:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fferrite_rings_6d1",
+  2686    },
+  2687    {
+
+  2705      examCalculation: 0,
+  2706      exam_NOT: false,
+  2707:     obsidianURL:
+  2708:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fcoaxial%20stubs%206d1",
+  2709    },
+  2710    {
+
+fullQuestions\OWN_QUESTIONS.js:
+   993      examStrategyNotes:
+   994        "Component values given → Calculate $X_C$, $Z$, $I$, then $V_R$",
+   995:     obsidianURL:
+   996:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+   997      examCalculation: 2,
+   998      exam_NOT: false,
+
+  1011      examStrategy: 4,
+  1012      examStrategyNotes: "Voltages given → Use Pythagoras: V² = VR² + VC²",
+  1013:     obsidianURL:
+  1014:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+  1015      examCalculation: 2,
+  1016      exam_NOT: false,
+
+fullQuestions\RSGB_FULL_MOCK_3.js:
+  1015      examCalculation: 3,
+  1016      exam_NOT: false,
+  1017:     obsidianURL:
+  1018:       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fcomponent_tolerance_voltage_divider",
+  1019    },
+  1020    {
