@@ -763,7 +763,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5c.3",
     examStrategy: 3,
-    examStrategyNotes: "Revise and drill.",
+    examStrategyNotes: "Charged solar particles!",
     examCalculation: 0,
     exam_NOT: false,
   },
