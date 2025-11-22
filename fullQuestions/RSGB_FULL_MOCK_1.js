@@ -651,10 +651,13 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5d.1",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Think the weakest of weak signals from a very long way away.",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FCONCEPT%20MODULE%20FOR%20WEEK10%2Fgalactic_noise",
   },
   {
     source: "RSGB Full Mock 1 Q38",

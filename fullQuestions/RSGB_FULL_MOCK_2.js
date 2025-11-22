@@ -655,10 +655,13 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5d.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "Just take it steady. Until we know otherwise take the units at the start and keep them until the end.",
+    examCalculation: 3,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FCONCEPT%20MODULE%20FOR%20WEEK10%2Flink_budget",
   },
   {
     source: "RSGB Full Mock 2 Q38",

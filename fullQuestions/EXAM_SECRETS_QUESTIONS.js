@@ -2417,10 +2417,12 @@ const EXAM_SECRETS_QUESTIONS = [
       "Galactic noise is the name given to random background noise originating outside the Earth and its atmosphere",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5d.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes: "This is just a drill thing.",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FCONCEPT%20MODULE%20FOR%20WEEK10%2Fgalactic_noise",
   },
   {
     source: "Exam Secrets FULL [Propagation] 5D2-1",
@@ -2437,10 +2439,13 @@ const EXAM_SECRETS_QUESTIONS = [
       "A link budget is the sum of all the gains and losses between the transmitter output socket and the receiver input socket. That allows a calculated prediction of the signal strength at the receiver, given the transmit power , and thus the likely success of the contact.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "5d.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "On the face of it this should be straightforward to drill.",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FCONCEPT%20MODULE%20FOR%20WEEK10%2Flink_budget",
   },
   {
     source: "Exam Secrets FULL [EMC] 6A2-1",
