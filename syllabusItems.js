@@ -4783,7 +4783,7 @@ const syllabusItems = [
       {
         subTitle: "circular polarisation",
         sequence: "000",
-        front: "",
+        front: "Reiving circular polarisation",
         frontImage: "",
         back: "When receiving using a circular antenna, it must match the clockwise or anti-clockwise transmission, otherwise nassive losses. No problem with an ordinary dipole.",
         backImage: "week10-p23.png",
@@ -4813,11 +4813,10 @@ const syllabusItems = [
         id: "8540d0c3",
       },
       {
-        subTitle:
-          "For HF, the ionosphere refraction will change polarisation, sometimes by a lot, sometimes by a little.",
+        subTitle: "For HF, the ionosphere refraction will change polarisation",
         sequence: "010",
         front:
-          "For HF there can be  a variety of change in polarisation from the interaction with the ionosphere.",
+          "For HF there can be  a variety of change in polarisation from the interaction with the ionosphere, sometimes by a little, sometimes by a lot",
         frontImage: "",
         back: "",
         backImage: "week10-p25.png",
@@ -4962,7 +4961,7 @@ const syllabusItems = [
         back: "Increasing the frequency causes different interaction with the ionosphere.",
         backImage: "week10-p28.png",
         reference: "week10 tutorial slides p28",
-        id: "fe7f2f40-962e-4ae6-87ad-9215d394dc24",
+        id: "fe7f2f40",
       },
       {
         subTitle: "Critical Frequency (of Vertical Incidence)",
@@ -4972,7 +4971,7 @@ const syllabusItems = [
         back: "MUF can be estimated from Critical Frequency",
         backImage: "week10-p29b.png",
         reference: "week10 tutorial slides p29",
-        id: "fe7f2f40-962e-4ae6-87ad-9215d394dc24",
+        id: "dabfef40",
       },
     ],
   },
