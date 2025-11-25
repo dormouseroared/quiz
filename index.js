@@ -107,6 +107,27 @@ const TRANSMITTERS_02_SYLLABUS_LIST = [
   "3f.5",
 ]
 
+const TRANSMITTERS_03_SYLLABUS_LIST = ["3g.1", "3g.2", "3g.3", "3g.4", "3g.5"]
+
+const TRANSMITTERS_04_SYLLABUS_LIST = [
+  "3h.3",
+  "3i.1",
+  "3i.2",
+  "3i.3",
+  "3i.4",
+  "3i.5",
+  "3j.1",
+]
+
+const TRANSMITTERS_05_SYLLABUS_LIST = [
+  "3k.1",
+  "3l.1",
+  "3m.1",
+  "3m.2",
+  "3n.1",
+  "3n.2",
+]
+
 let findCards = null
 
 // ====================================
@@ -222,6 +243,15 @@ function selectQuestionsForSyllabusList(list, MCQ) {
     console.warn("targetList", targetList)
   } else if (list === "TRANSMITTERS_02") {
     targetList = TRANSMITTERS_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+  } else if (list === "TRANSMITTERS_03") {
+    targetList = TRANSMITTERS_03_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+  } else if (list === "TRANSMITTERS_04") {
+    targetList = TRANSMITTERS_04_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+  } else if (list === "TRANSMITTERS_05") {
+    targetList = TRANSMITTERS_05_SYLLABUS_LIST
     console.warn("targetList", targetList)
   } else {
     console.warn("list is not supported")
