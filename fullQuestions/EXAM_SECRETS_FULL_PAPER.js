@@ -114,6 +114,7 @@ const EXAM_SECRETS_FULL_PAPER = [
       "Transmit mode (PTT pressed) affects average RF output power: AM has 66% of peak RF; FM and some data modes produce full power all the time; SSB and CW are intermittent, based on activity e.g. voice.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q07",
@@ -487,7 +488,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3f.2",
     examStrategy: 3,
-    examStrategyNotes: "Revision needed.",
+    examStrategyNotes: "Check for harmonics so take 14.3 and x2, x3, ...",
     examCalculation: 2,
     exam_NOT: false,
   },
@@ -509,7 +510,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     syllabus: "3c.3",
     examStrategy: 3,
     examStrategyNotes:
-      "Frequency synthesiser is used as a generic term for Phase Lock Loop (PLL) and Direct Digital Synthesiser (DDS). ACtually only the PLL can have an out of lock status.",
+      "Frequency synthesiser is used as a generic term for Phase Lock Loop (PLL) and Direct Digital Synthesiser (DDS). Actually only the PLL can have an out of lock status.",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -520,7 +521,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     image: "",
     options: [
       "the strong signal will cause the AGC to reduce the gain below that needed to bring weak signals up to a usable level",
-      "non-linearity will result in intermodulation products. some of which will be close to, and on top of the wanted weak signals",
+      "non-linearity will result in intermodulation products, some of which will be close to, and on top of the wanted weak signals",
       "the dynamic range of the receiver is degraded by strong signals, and this loss of range is always at the low signal end",
       "the wanted weak signals will mix with stronger signals, resulting in them appearing at the sum and difference frequencies",
     ],
@@ -533,6 +534,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Revise and drill",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q26",
