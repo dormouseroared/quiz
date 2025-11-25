@@ -687,6 +687,8 @@ const EXAM_SECRETS_FULL_PAPER = [
       "Calculate the changed return loss at the transmitter in terms of antenna loss and feeder loss times 2. Whichever way it goes, up or down, SWR will be the opposite!",
     examCalculation: 2,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FCartoon%20Strip%20of%20how%20a%20low%20SWR%20%20paints%20a%20false%20picture",
   },
   {
     source: "Exam Secrets FULL PAPER Q34",
