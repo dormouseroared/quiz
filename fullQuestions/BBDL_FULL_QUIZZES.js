@@ -2387,8 +2387,7 @@ product, making it wrong too. 'c' includes three predictable unwanted products; 
     lookup: "See page(s) 42 of the Full Licence text book",
     syllabus: "3f.2",
     examStrategy: 4,
-    examStrategyNotes:
-      "practice using the grid. Be aware of the conversion of wavelength into frequency.",
+    examStrategyNotes: "Practice using the grid.",
     examCalculation: 2,
     tagged: true,
   },

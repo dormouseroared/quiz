@@ -1462,9 +1462,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "If an amplifier or other circuit is non-linear then there will be harmonics and intermodulation products (IMPs) of all the frequencies present. At RF, the harmonics will be way out of band and easily removed by the filters. So will many of the intermodulation products. However, frequencies like (3 x f1) - (2 x f2) will be as far removed from f1 and f2 as f1 and f2 are apart. They will be in-band and particularly if f1 and f2 are from relatively low audio notes then the IMPs will be on top of other audio frequencies and impossible to filter out. (2 x 3.601) - 3.603 = 3.599 and (3 x 3.603) - (2 x 3.601) = 3.607 This question is not difficult but does take a bit of time searching for credible frequencies. Leave it to last.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3f.2",
-    examStrategy: 5,
-    examStrategyNotes: "Leave it til last, then guess.",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "Using the 'magic grid' approach but boxing clever: no need to calculate SUM because they're out of range. Focus on just four likely targets in DIFF with fundamentals of 3.601 and 3.603, which yields 7.202-3.603 and 10.809-7.202 so it turned out to be very straightforward. Don't forget to refresh this approach using the new flashcard.",
+    examCalculation: 2,
     exam_NOT: false,
     tagged: true,
   },

@@ -2979,6 +2979,18 @@ const syllabusItems = [
     subTitle: "Distortion to produce harmonics and intermodulation products",
     text: "Understand how distortion of two (or more) frequencies can produce harmonics and intermodulation products of the input frequencies.",
     weeks: ["5", "6"],
+    flashcards: [
+      {
+        subTitle: "Calculating Mixer products",
+        sequence: "000",
+        front: "",
+        frontImage: "week06-p26-35a.png",
+        back: "There is a 21MHz unwanted frequency on the DIFF worksheet.",
+        backImage: "week06-p26-35b.png",
+        reference: "week06 tutorial slides p26 - p35",
+        id: "ac8dbbb7",
+      },
+    ],
   },
   {
     key: "3f.3",
@@ -3158,7 +3170,7 @@ const syllabusItems = [
     level: "full",
     title: "Transmitter interference",
     subTitle:
-      "Use of low pass, band pass and band stop (notch) filters to miimise unwanted harmonics and mixer products",
+      "Use of low pass, band pass and band stop (notch) filters to minimise unwanted harmonics and mixer products",
     text: "Understand the use of low pass, band pass and band stop (notch) filters in minimising the radiation of unwanted harmonics and mixer products.",
     weeks: ["6"],
   },
@@ -3517,7 +3529,7 @@ const syllabusItems = [
     key: "3k.1",
     level: "full",
     title: "Demodulation",
-    subTitle: "AM, CW, SSB and FM democulator circuits",
+    subTitle: "AM, CW, SSB and FM demodulator circuits",
     text: "Understand the operation of basic analogue AM, CW, SSB and FM demodulator circuits and the function of the limiter for FM.",
     weeks: ["8"],
   },
