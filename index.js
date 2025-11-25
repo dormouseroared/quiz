@@ -78,6 +78,8 @@ const section = [
 
 const abcd = ["A", "B", "C", "D"] // answer index as alpha
 
+// Using Syllabus List and a parameter uses one of these subsets
+
 const RECEIVERS_SYLLABUS_LIST = ["3h", "3i", "3j", "3k", "3l", "3m", "3n"]
 
 const ANTENNAS_SYLLABUS_LIST = [
@@ -91,6 +93,8 @@ const ANTENNAS_SYLLABUS_LIST = [
   "4f.1",
   "4f.2",
 ]
+
+const TRANSMITTERS_01_SYLLABUS_LIST = ["3a.2", "3b.1", "3c.1", "3c.3"]
 
 let findCards = null
 
@@ -201,6 +205,9 @@ function selectQuestionsForSyllabusList(list, MCQ) {
     console.log("targetList", targetList)
   } else if (list === "ANTENNAS") {
     targetList = ANTENNAS_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+  } else if (list === "TRANSMITTERS_01") {
+    targetList = TRANSMITTERS_01_SYLLABUS_LIST
     console.warn("targetList", targetList)
   } else {
     console.warn("list is not supported")
