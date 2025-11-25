@@ -79,6 +79,7 @@ const section = [
 const abcd = ["A", "B", "C", "D"] // answer index as alpha
 
 // Using Syllabus List and a parameter uses one of these subsets
+// Beware duplicate syllabus codes as they will be added in that many times
 
 const RECEIVERS_SYLLABUS_LIST = ["3h", "3i", "3j", "3k", "3l", "3m", "3n"]
 
@@ -95,6 +96,16 @@ const ANTENNAS_SYLLABUS_LIST = [
 ]
 
 const TRANSMITTERS_01_SYLLABUS_LIST = ["3a.2", "3b.1", "3c.1", "3c.3"]
+
+const TRANSMITTERS_02_SYLLABUS_LIST = [
+  "3d.1",
+  "3e.1",
+  "3e.2",
+  "3f.2",
+  "3f.3",
+  "3f.4",
+  "3f.5",
+]
 
 let findCards = null
 
@@ -209,6 +220,9 @@ function selectQuestionsForSyllabusList(list, MCQ) {
   } else if (list === "TRANSMITTERS_01") {
     targetList = TRANSMITTERS_01_SYLLABUS_LIST
     console.warn("targetList", targetList)
+  } else if (list === "TRANSMITTERS_02") {
+    targetList = TRANSMITTERS_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
   } else {
     console.warn("list is not supported")
   }
@@ -219,7 +233,7 @@ function selectQuestionsForSyllabusList(list, MCQ) {
     return result2
   })
 
-  console.warn(bigResult.length)
+  console.warn("targetList:", bigResult.length)
 
   return bigResult
 }
