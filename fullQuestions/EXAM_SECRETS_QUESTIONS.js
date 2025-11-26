@@ -1499,13 +1499,14 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 1,
     explanation:
-      "The aim of speech processing is to limit the peaks of the signal, allowing the average output power level to be increased without breaching the licence limits or the limits imposed by the equipment, typically the power amplifier.If the average level is increased then so is the heat dissipation and the demand on the power supply.",
+      "The aim of speech processing is to limit the peaks of the signal, allowing the average output power level to be increased without breaching the licence limits or the limits imposed by the equipment, typically the power amplifier. If the average level is increased then so is the heat dissipation and the demand on the power supply.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3f.4",
     examStrategy: 2,
     examStrategyNotes: "Straightforward.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-003",
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3F5-1",
