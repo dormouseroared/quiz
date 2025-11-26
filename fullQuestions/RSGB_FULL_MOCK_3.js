@@ -892,7 +892,7 @@ const RSGB_FULL_MOCK_3 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8d.1",
     examStrategy: 1,
-    examStrategyNotes: "Go for it!",
+    examStrategyNotes: "Go for it! Yet again the International Commission!!!",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -920,7 +920,7 @@ const RSGB_FULL_MOCK_3 = [
     question:
       "If a house electrical supply is of the protective multiple earth type (PME), then:",
     options: [
-      "tthe house earth is derived from the supply neutral conductor near the point of entry to the house",
+      "the house earth is derived from the supply neutral conductor near the point of entry to the house",
       "the householder must make suitable arrangements for their own local safety earth",
       "the house safety earth is provided by a separate conductor from an electricity sub-station.",
       "both the neutral and earth wires in the flex from each appliance must be connected to the neutral pin in the plug",
@@ -948,8 +948,8 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8f.6",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes: "Reasonably obvious.",
     examCalculation: 0,
     exam_NOT: false,
   },

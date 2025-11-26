@@ -12,6 +12,8 @@ import diagramQuizWidget, {
 import { diagramQuizCards } from "./diagramQuizCards.js"
 import after_Week06_Syllabus_List from "./after-week06-syllabus-list.js"
 
+import showQuestionsBySyllabusCode from "./showQuestionsBySyllabusCode.js"
+
 const desiredDiagramVersion = "v21"
 
 if (desiredDiagramVersion !== actualDiagramVersion) {
@@ -128,6 +130,32 @@ const TRANSMITTERS_05_SYLLABUS_LIST = [
   "3n.2",
 ]
 
+const SAFETY_01_SYLLABUS_LIST = ["8a.1", "8a.2", "8a.6", "8d.1", "8e.1"]
+
+const SAFETY_02_SYLLABUS_LIST = ["8f.4", "8f.5", "8f.6", "8f.7"]
+
+const EMC_01_SYLLABUS_LIST = [
+  "6a.2",
+  "6a.4",
+  "6b.1",
+  "6b.2",
+  "6b.3",
+  "6c.1",
+  "6c.2",
+  "6c.3",
+]
+
+const EMC_02_SYLLABUS_LIST = [
+  "6d.1",
+  "6d.2",
+  "6e.1",
+  "6e.2",
+  "6e.3",
+  "6f.1",
+  "6f.2",
+  "6g.1",
+]
+
 let findCards = null
 
 // ====================================
@@ -238,21 +266,43 @@ function selectQuestionsForSyllabusList(list, MCQ) {
   } else if (list === "ANTENNAS") {
     targetList = ANTENNAS_SYLLABUS_LIST
     console.warn("targetList", targetList)
+    // 3. TRANSNITTERS_01
   } else if (list === "TRANSMITTERS_01") {
     targetList = TRANSMITTERS_01_SYLLABUS_LIST
     console.warn("targetList", targetList)
+    // 3. TRANSMITTERS_02
   } else if (list === "TRANSMITTERS_02") {
     targetList = TRANSMITTERS_02_SYLLABUS_LIST
     console.warn("targetList", targetList)
+    // 3. TRANSMITTERS_03
   } else if (list === "TRANSMITTERS_03") {
     targetList = TRANSMITTERS_03_SYLLABUS_LIST
     console.warn("targetList", targetList)
+    // 3. TRANSMITTERS_04
   } else if (list === "TRANSMITTERS_04") {
     targetList = TRANSMITTERS_04_SYLLABUS_LIST
     console.warn("targetList", targetList)
+    // 3. TRANSMITTERS_05
   } else if (list === "TRANSMITTERS_05") {
     targetList = TRANSMITTERS_05_SYLLABUS_LIST
     console.warn("targetList", targetList)
+    // 6. EMC_01
+  } else if (list === "EMC_01") {
+    targetList = EMC_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 6. EMC_02
+  } else if (list === "EMC_02") {
+    targetList = EMC_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 8. SAFETY_01
+  } else if (list === "SAFETY_01") {
+    targetList = SAFETY_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 8. SAFETY_02
+  } else if (list === "SAFETY_02") {
+    targetList = SAFETY_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // NOTHING FOUND
   } else {
     console.warn("list is not supported")
   }
@@ -1002,6 +1052,12 @@ searchForm.addEventListener("submit", function (event) {
       incorrect: 0,
     }
   })
+
+  // new: create a quick report in downloads of the
+  // number of questions by syllabus
+
+  console.log("showQuestionsBySyllabusCode:", quizState.questionPackLength)
+  showQuestionsBySyllabusCode(quizState.questionPack)
 
   myDebug("SEARCH AFTER INIT", quizState)
 

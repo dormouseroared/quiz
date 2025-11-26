@@ -8,33 +8,33 @@
 
 ## 📊 Summary
 
-| Metric | Value |
-|--------|------:|
-| Total Flashcards | **44** |
-| Items with Flashcards | 15 / 17 |
-| Items Needing Flashcards | 2 |
-| Average per Item | 2.59 |
-| Coverage | **88.2%** |
+| Metric                   | Value     |
+| ------------------------ | ---------:|
+| Total Flashcards         | **44**    |
+| Items with Flashcards    | 15 / 17   |
+| Items Needing Flashcards | 2         |
+| Average per Item         | 2.59      |
+| Coverage                 | **88.2%** |
 
 ---
 
 ## 📋 Detailed Breakdown
 
-| Key | Topic | Cards | Status |
-|:---:|:------|------:|:------:|
-| 4a.3 | Feeders | 0 | ⚠️ TODO |
-| 4a.3 | Feeders | 0 | ⚠️ TODO |
-| 4a.3 | Feeders | **1** | ✅ Ready |
-| 4b.1 | Baluns | **4** | ✅ Ready |
-| 4b.1 | Baluns | **2** | ✅ Ready |
-| 4d.1 | Types of antenna | **1** | ✅ Ready |
-| 4d.2 | Types of antenna | **2** | ✅ Ready |
-| 4d.2 | Types of antenna | **9** | ✅ Ready |
-| 4d.2 | Types of antenna | **3** | ✅ Ready |
-| 4e.1 | Standing waves | **3** | ✅ Ready |
-| 4e.2 | Standing waves | **4** | ✅ Ready |
-| 4e.2 | Standing waves | **1** | ✅ Ready |
-| 4e.3 | Standing waves | **3** | ✅ Ready |
+| Key  | Topic                  | Cards | Status  |
+|:----:|:---------------------- | -----:|:-------:|
+| 4a.3 | Feeders                | 0     | ⚠️ TODO |
+| 4a.3 | Feeders                | 0     | ⚠️ TODO |
+| 4a.3 | Feeders                | **1** | ✅ Ready |
+| 4b.1 | Baluns                 | **4** | ✅ Ready |
+| 4b.1 | Baluns                 | **2** | ✅ Ready |
+| 4d.1 | Types of antenna       | **1** | ✅ Ready |
+| 4d.2 | Types of antenna       | **2** | ✅ Ready |
+| 4d.2 | Types of antenna       | **9** | ✅ Ready |
+| 4d.2 | Types of antenna       | **3** | ✅ Ready |
+| 4e.1 | Standing waves         | **3** | ✅ Ready |
+| 4e.2 | Standing waves         | **4** | ✅ Ready |
+| 4e.2 | Standing waves         | **1** | ✅ Ready |
+| 4e.3 | Standing waves         | **3** | ✅ Ready |
 | 4f.1 | Antenna matching units | **4** | ✅ Ready |
 | 4f.1 | Antenna matching units | **3** | ✅ Ready |
 | 4f.2 | Antenna matching units | **2** | ✅ Ready |

@@ -961,7 +961,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     options: [
       "explain that now the TV transmissions are digital, the concept of suffering radio interference no longer exists",
       "suggest he might be better off subscribing to one of the many cable fed systems",
-      "ask if can recall when the problem occurs and compare that with your operating log",
+      "ask if he can recall when the problem occurs and compare that with your operating log",
       "advise him to call the services of a TV dealer or, if he prefers, report the matter to the BBC",
     ],
     correct: 2,
@@ -1031,10 +1031,12 @@ const EXAM_SECRETS_FULL_PAPER = [
       "If the supply Neutral is ruptured in the street, then the house Neutral will rise to near Live potential through connected appliances. If the premises have a PME supply, then the house Earth will be connected to the incoming Neutral at the Main Earth Terminal (MET) beside the company fuse and meter. That means the house Earth will also rise to near Live voltage, as will all exposed metalwork which is bonded to the house Earth. Not all exposed metalwork need be bonded to the MTE, which is explained in Chapter 3 under PME. [8a.2]",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "8a.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Always take great care with these. What is the question really asking, and do they have a particular scenario in mind that could cteer the answer in a different direction.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q51",

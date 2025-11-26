@@ -8,34 +8,34 @@
 
 ## 📊 Summary
 
-| Metric | Value |
-|--------|------:|
-| Total Flashcards | **54** |
-| Items with Flashcards | 14 / 14 |
-| Items Needing Flashcards | 0 |
-| Average per Item | 3.86 |
-| Coverage | **100.0%** |
+| Metric                   | Value      |
+| ------------------------ | ----------:|
+| Total Flashcards         | **54**     |
+| Items with Flashcards    | 14 / 14    |
+| Items Needing Flashcards | 0          |
+| Average per Item         | 3.86       |
+| Coverage                 | **100.0%** |
 
 ---
 
 ## 📋 Detailed Breakdown
 
-| Key | Topic | Cards | Status |
-|:---:|:------|------:|:------:|
-| 5a.1 | (Electric) Field Strength (E) & Power Flux Density (PFD) | **3** | ✅ Ready |
-| 5a.3 | E-M waves are Electric (E) and Magnetic (H) at right angles and in phase & PFD is E x H | **1** | ✅ Ready |
-| 5a.3 | Circular polarisation e.g satellites | **1** | ✅ Ready |
-| 5a.3 | Transmit & receive antennas should have same polarisation | **2** | ✅ Ready |
-| 5b.1 | Solar flares & sun spots affect propagation | **2** | ✅ Ready |
-| 5b.2 | Critical Frequency (of Vertical Incidence) is highest to be refracted back to transmitter. | **2** | ✅ Ready |
-| 5b.2 | Maximum Usable Frequency (MUF) > Critical Frequency | **1** | ✅ Ready |
-| 5b.2 | MUF varies by day/night & summer/winter | **1** | ✅ Ready |
-| 5b.3 | Near Vertical Incidence Sky wave (NVIS) | **19** | ✅ Ready |
-| 5b.4 | Ionosphere can change polarisation of radio wave | **17** | ✅ Ready |
-| 5c.3 | Earth-Moon-Earth | **1** | ✅ Ready |
-| 5c.3 | Auroral propagation | **1** | ✅ Ready |
-| 5d.1 | Galactic Noise is random noise originating outside the earth's atmosphere | **1** | ✅ Ready |
-| 5d.2 | Link Budget | **2** | ✅ Ready |
+| Key  | Topic                                                                                      | Cards  | Status  |
+|:----:|:------------------------------------------------------------------------------------------ | ------:|:-------:|
+| 5a.1 | (Electric) Field Strength (E) & Power Flux Density (PFD)                                   | **3**  | ✅ Ready |
+| 5a.3 | E-M waves are Electric (E) and Magnetic (H) at right angles and in phase & PFD is E x H    | **1**  | ✅ Ready |
+| 5a.3 | Circular polarisation e.g satellites                                                       | **1**  | ✅ Ready |
+| 5a.3 | Transmit & receive antennas should have same polarisation                                  | **2**  | ✅ Ready |
+| 5b.1 | Solar flares & sun spots affect propagation                                                | **2**  | ✅ Ready |
+| 5b.2 | Critical Frequency (of Vertical Incidence) is highest to be refracted back to transmitter. | **2**  | ✅ Ready |
+| 5b.2 | Maximum Usable Frequency (MUF) > Critical Frequency                                        | **1**  | ✅ Ready |
+| 5b.2 | MUF varies by day/night & summer/winter                                                    | **1**  | ✅ Ready |
+| 5b.3 | Near Vertical Incidence Sky wave (NVIS)                                                    | **19** | ✅ Ready |
+| 5b.4 | Ionosphere can change polarisation of radio wave                                           | **17** | ✅ Ready |
+| 5c.3 | Earth-Moon-Earth                                                                           | **1**  | ✅ Ready |
+| 5c.3 | Auroral propagation                                                                        | **1**  | ✅ Ready |
+| 5d.1 | Galactic Noise is random noise originating outside the earth's atmosphere                  | **1**  | ✅ Ready |
+| 5d.2 | Link Budget                                                                                | **2**  | ✅ Ready |
 
 ---
 

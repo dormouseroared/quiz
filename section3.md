@@ -8,83 +8,83 @@
 
 ## 📊 Summary
 
-| Metric | Value |
-|--------|------:|
-| Total Flashcards | **14** |
-| Items with Flashcards | 12 / 63 |
-| Items Needing Flashcards | 51 |
-| Average per Item | 0.22 |
-| Coverage | **19.0%** |
+| Metric                   | Value     |
+| ------------------------ | ---------:|
+| Total Flashcards         | **14**    |
+| Items with Flashcards    | 12 / 63   |
+| Items Needing Flashcards | 51        |
+| Average per Item         | 0.22      |
+| Coverage                 | **19.0%** |
 
 ---
 
 ## 📋 Detailed Breakdown
 
-| Key | Topic | Cards | Status |
-|:---:|:------|------:|:------:|
-| 3a.2 | Modulation Index and FM sidebands | **1** | ✅ Ready |
-| 3b.1 | SSB transmitter using mixers to generate the final frequency | **1** | ✅ Ready |
-| 3b.1 | FM transmitter using frequency multipliers or mixers to generate the final frequency | **1** | ✅ Ready |
-| 3c.1 | Effect and importance of minimising drift | **2** | ✅ Ready |
-| 3c.3 | Phase Locked Loop (PLL) frequency synthesiser | 0 | ⚠️ TODO |
-| 3c.3 | Direct Digital Synthesis (DDS) | 0 | ⚠️ TODO |
-| 3c.3 | Increase number of bits in DDS to increase signal purity | 0 | ⚠️ TODO |
-| 3c.3 | Functions of block in DDS | **1** | ✅ Ready |
-| 3d.1 | Frequency Multipliers use harmonics | **2** | ✅ Ready |
-| 3e.1 | AM, SSB and FM modulators | 0 | ⚠️ TODO |
-| 3e.1 | AM, SSB and FM bandwidth | 0 | ⚠️ TODO |
-| 3e.2 | Sideband filter circuits and calculation of relevant frequencies | 0 | ⚠️ TODO |
-| 3f.2 | Linear amplifiers and which forms of modulation require one | 0 | ⚠️ TODO |
-| 3f.2 | RF Power Amplifiers. | 0 | ⚠️ TODO |
-| 3f.2 | Linearity in amplifiers | 0 | ⚠️ TODO |
-| 3f.2 | Distortion to produce harmonics | 0 | ⚠️ TODO |
-| 3f.2 | Distortion to produce harmonics and intermodulation products | 0 | ⚠️ TODO |
-| 3f.3 | Power Amplifier circuit | 0 | ⚠️ TODO |
-| 3f.4 | Power Amplifier peak to average power rating for modulation types and speech processing | **1** | ✅ Ready |
-| 3f.5 | Automatic level Control (ALC) | 0 | ⚠️ TODO |
-| 3f.5 | Manual RF power control | 0 | ⚠️ TODO |
-| 3g.1 | Overmodulation creates harmonics which causes excessive transmitted bandwidth | 0 | ⚠️ TODO |
-| 3g.2 | Over-drive of the RF power amplifier can result in excessive transmitted bandwidth | 0 | ⚠️ TODO |
-| 3g.2 | Use minimum power required for full output, including overdriving causing harmonics and intermodulation products | 0 | ⚠️ TODO |
-| 3g.3 | Avoid harmonics with push-pull amplifiers and avoidance of high drive levels | 0 | ⚠️ TODO |
-| 3g.3 | Transmitters may radiate unwanted mixer products | 0 | ⚠️ TODO |
-| 3g.3 | Use of low pass, band pass and band stop (notch) filters to miimise unwanted harmonics and mixer products | 0 | ⚠️ TODO |
-| 3g.4 | Parasitic oscillation | 0 | ⚠️ TODO |
-| 3g.5 | Frequency synthesisers may not produce the intended frequency | 0 | ⚠️ TODO |
-| 3g.5 | Prevent off-frequency transmissions | 0 | ⚠️ TODO |
-| 3h.3 | Overloading receiver can cause intermodulation products | 0 | ⚠️ TODO |
-| 3h.3 | Dynamic Range | **1** | ✅ Ready |
-| 3h.3 | Dynamic range is specified in decibels | 0 | ⚠️ TODO |
-| 3i.1 | Superhetorodyne and double superheterodyne receivers | 0 | ⚠️ TODO |
-| 3i.2 | Mixer, Intermediate Frequency and Mixer products | 0 | ⚠️ TODO |
-| 3i.3 | High and low intermediate frequencies | 0 | ⚠️ TODO |
-| 3i.3 | Choice of Local Oscillator frequencies | 0 | ⚠️ TODO |
-| 3i.3 | Image frequency | 0 | ⚠️ TODO |
-| 3i.4 | IF amplifier and IF transformer | 0 | ⚠️ TODO |
-| 3i.4 | Transformer coupling | 0 | ⚠️ TODO |
-| 3i.4 | Critical and over-coupled response curves | **1** | ✅ Ready |
-| 3i.4 | IF amplifer gain | 0 | ⚠️ TODO |
-| 3i.5 | Phase noise | 0 | ⚠️ TODO |
-| 3j.1 | RF amplifier | **1** | ✅ Ready |
-| 3j.1 | Extermal pre-amplifiers may not always improve overall performance | **1** | ✅ Ready |
-| 3j.1 | Using a pre-amplifier | **1** | ✅ Ready |
-| 3j.1 | Using a pre-amp at the antenna | 0 | ⚠️ TODO |
-| 3k.1 | AM, CW, SSB and FM democulator circuits | 0 | ⚠️ TODO |
-| 3l.1 | Automatic Gain Control | 0 | ⚠️ TODO |
-| 3l.1 | Adjusting attck and decay of AGC | 0 | ⚠️ TODO |
-| 3m.1 | Signals are transmitted by some form of amplitude and modulation | 0 | ⚠️ TODO |
-| 3m.1 | Phasor diagram | 0 | ⚠️ TODO |
-| 3m.1 | Capture on two axes at right angles | 0 | ⚠️ TODO |
-| 3m.2 | Producing I and Q components | 0 | ⚠️ TODO |
-| 3m.2 | SDR can create complex modulations for transmission | 0 | ⚠️ TODO |
-| 3m.2 | Sampling can be carried out by mathematical processes | 0 | ⚠️ TODO |
-| 3n.1 | Common circuits between transmitter and receiver | 0 | ⚠️ TODO |
-| 3n.1 | Receiver Incremental Tuning | 0 | ⚠️ TODO |
-| 3n.2 | Transverter | 0 | ⚠️ TODO |
-| 3n.2 | Transverters require low power drive | 0 | ⚠️ TODO |
-| 3n.2 | EXtra care to avoid transmitting out of band | 0 | ⚠️ TODO |
-| 3n.2 | Transverters need correct interfacing | 0 | ⚠️ TODO |
-| 3n.2 | Transverters and RF sensing | 0 | ⚠️ TODO |
+| Key  | Topic                                                                                                            | Cards | Status  |
+|:----:|:---------------------------------------------------------------------------------------------------------------- | -----:|:-------:|
+| 3a.2 | Modulation Index and FM sidebands                                                                                | **1** | ✅ Ready |
+| 3b.1 | SSB transmitter using mixers to generate the final frequency                                                     | **1** | ✅ Ready |
+| 3b.1 | FM transmitter using frequency multipliers or mixers to generate the final frequency                             | **1** | ✅ Ready |
+| 3c.1 | Effect and importance of minimising drift                                                                        | **2** | ✅ Ready |
+| 3c.3 | Phase Locked Loop (PLL) frequency synthesiser                                                                    | 0     | ⚠️ TODO |
+| 3c.3 | Direct Digital Synthesis (DDS)                                                                                   | 0     | ⚠️ TODO |
+| 3c.3 | Increase number of bits in DDS to increase signal purity                                                         | 0     | ⚠️ TODO |
+| 3c.3 | Functions of block in DDS                                                                                        | **1** | ✅ Ready |
+| 3d.1 | Frequency Multipliers use harmonics                                                                              | **2** | ✅ Ready |
+| 3e.1 | AM, SSB and FM modulators                                                                                        | 0     | ⚠️ TODO |
+| 3e.1 | AM, SSB and FM bandwidth                                                                                         | 0     | ⚠️ TODO |
+| 3e.2 | Sideband filter circuits and calculation of relevant frequencies                                                 | 0     | ⚠️ TODO |
+| 3f.2 | Linear amplifiers and which forms of modulation require one                                                      | 0     | ⚠️ TODO |
+| 3f.2 | RF Power Amplifiers.                                                                                             | 0     | ⚠️ TODO |
+| 3f.2 | Linearity in amplifiers                                                                                          | 0     | ⚠️ TODO |
+| 3f.2 | Distortion to produce harmonics                                                                                  | 0     | ⚠️ TODO |
+| 3f.2 | Distortion to produce harmonics and intermodulation products                                                     | 0     | ⚠️ TODO |
+| 3f.3 | Power Amplifier circuit                                                                                          | 0     | ⚠️ TODO |
+| 3f.4 | Power Amplifier peak to average power rating for modulation types and speech processing                          | **1** | ✅ Ready |
+| 3f.5 | Automatic level Control (ALC)                                                                                    | 0     | ⚠️ TODO |
+| 3f.5 | Manual RF power control                                                                                          | 0     | ⚠️ TODO |
+| 3g.1 | Overmodulation creates harmonics which causes excessive transmitted bandwidth                                    | 0     | ⚠️ TODO |
+| 3g.2 | Over-drive of the RF power amplifier can result in excessive transmitted bandwidth                               | 0     | ⚠️ TODO |
+| 3g.2 | Use minimum power required for full output, including overdriving causing harmonics and intermodulation products | 0     | ⚠️ TODO |
+| 3g.3 | Avoid harmonics with push-pull amplifiers and avoidance of high drive levels                                     | 0     | ⚠️ TODO |
+| 3g.3 | Transmitters may radiate unwanted mixer products                                                                 | 0     | ⚠️ TODO |
+| 3g.3 | Use of low pass, band pass and band stop (notch) filters to miimise unwanted harmonics and mixer products        | 0     | ⚠️ TODO |
+| 3g.4 | Parasitic oscillation                                                                                            | 0     | ⚠️ TODO |
+| 3g.5 | Frequency synthesisers may not produce the intended frequency                                                    | 0     | ⚠️ TODO |
+| 3g.5 | Prevent off-frequency transmissions                                                                              | 0     | ⚠️ TODO |
+| 3h.3 | Overloading receiver can cause intermodulation products                                                          | 0     | ⚠️ TODO |
+| 3h.3 | Dynamic Range                                                                                                    | **1** | ✅ Ready |
+| 3h.3 | Dynamic range is specified in decibels                                                                           | 0     | ⚠️ TODO |
+| 3i.1 | Superhetorodyne and double superheterodyne receivers                                                             | 0     | ⚠️ TODO |
+| 3i.2 | Mixer, Intermediate Frequency and Mixer products                                                                 | 0     | ⚠️ TODO |
+| 3i.3 | High and low intermediate frequencies                                                                            | 0     | ⚠️ TODO |
+| 3i.3 | Choice of Local Oscillator frequencies                                                                           | 0     | ⚠️ TODO |
+| 3i.3 | Image frequency                                                                                                  | 0     | ⚠️ TODO |
+| 3i.4 | IF amplifier and IF transformer                                                                                  | 0     | ⚠️ TODO |
+| 3i.4 | Transformer coupling                                                                                             | 0     | ⚠️ TODO |
+| 3i.4 | Critical and over-coupled response curves                                                                        | **1** | ✅ Ready |
+| 3i.4 | IF amplifer gain                                                                                                 | 0     | ⚠️ TODO |
+| 3i.5 | Phase noise                                                                                                      | 0     | ⚠️ TODO |
+| 3j.1 | RF amplifier                                                                                                     | **1** | ✅ Ready |
+| 3j.1 | Extermal pre-amplifiers may not always improve overall performance                                               | **1** | ✅ Ready |
+| 3j.1 | Using a pre-amplifier                                                                                            | **1** | ✅ Ready |
+| 3j.1 | Using a pre-amp at the antenna                                                                                   | 0     | ⚠️ TODO |
+| 3k.1 | AM, CW, SSB and FM democulator circuits                                                                          | 0     | ⚠️ TODO |
+| 3l.1 | Automatic Gain Control                                                                                           | 0     | ⚠️ TODO |
+| 3l.1 | Adjusting attck and decay of AGC                                                                                 | 0     | ⚠️ TODO |
+| 3m.1 | Signals are transmitted by some form of amplitude and modulation                                                 | 0     | ⚠️ TODO |
+| 3m.1 | Phasor diagram                                                                                                   | 0     | ⚠️ TODO |
+| 3m.1 | Capture on two axes at right angles                                                                              | 0     | ⚠️ TODO |
+| 3m.2 | Producing I and Q components                                                                                     | 0     | ⚠️ TODO |
+| 3m.2 | SDR can create complex modulations for transmission                                                              | 0     | ⚠️ TODO |
+| 3m.2 | Sampling can be carried out by mathematical processes                                                            | 0     | ⚠️ TODO |
+| 3n.1 | Common circuits between transmitter and receiver                                                                 | 0     | ⚠️ TODO |
+| 3n.1 | Receiver Incremental Tuning                                                                                      | 0     | ⚠️ TODO |
+| 3n.2 | Transverter                                                                                                      | 0     | ⚠️ TODO |
+| 3n.2 | Transverters require low power drive                                                                             | 0     | ⚠️ TODO |
+| 3n.2 | EXtra care to avoid transmitting out of band                                                                     | 0     | ⚠️ TODO |
+| 3n.2 | Transverters need correct interfacing                                                                            | 0     | ⚠️ TODO |
+| 3n.2 | Transverters and RF sensing                                                                                      | 0     | ⚠️ TODO |
 
 ---
 
