@@ -143,11 +143,11 @@ const CLIPS_DATA = [
   {
     id: "week01-clip-001",
     videoId: "week01",
-    title: "Operating Practices",
+    title: "Operating Practices Overview",
     startTime: timestampToSeconds("11:05"),
     endTime: timestampToSeconds("13:03"),
-    description: "",
-    tags: [],
+    description: "2 Exam Questions for Operating Practices",
+    tags: ["completed"],
   },
   {
     id: "week01-clip-002",
