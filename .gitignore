@@ -3,3 +3,4 @@ node_modules/
 *.mp4
 video-clips/VIDEOS/
 *.exe
+video-clips/VIDEOS/ffmpeg.exe
