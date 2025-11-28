@@ -136,6 +136,7 @@ class VideoNavigator {
       clipElement.dataset.clipId = clip.id
 
       // show the clip id on hover
+      // can we output tags after description, in a single row separated by &bull;
       clipElement.innerHTML = `
                 <div class="clip-title" title=${clip.id}>${clip.title}</div>
                 <div class="clip-time">
@@ -143,6 +144,7 @@ class VideoNavigator {
                     (${this.formatDuration(clip.endTime - clip.startTime)})
                 </div>
                 ${clip.description ? `<div class="clip-description">${clip.description}</div>` : ""}
+                ${clip.tags && clip.tags.length > 0 ? `<div class="clip-tags">${clip.tags.map((tag) => tag.toUpperCase()).join(" &bull; ")}</div>` : ""}
             `
 
       clipElement.addEventListener("click", () => this.selectClip(clip))

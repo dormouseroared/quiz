@@ -4,202 +4,1364 @@
 // VIDEO LIBRARY
 // Define all your video files here
 const VIDEO_LIBRARY = [
-    {
-        id: 'week06',
-        title: 'Week 06 - Tutorial Video',
-        path: 'VIDEOS/BBDL%20FULL%20COURSE%20-%20Week06%20-%20Tutorial%20Video%20%5BvlMcjOF5DyI%5D.mkv',
-        youtubeId: 'vlMcjOF5DyI',
-        duration: 7200, // approximate duration in seconds (2 hours = 7200)
-        notes: ''
-    }
-    // Add more videos here as needed:
-    // {
-    //     id: 'week07',
-    //     title: 'Week 07 - Tutorial Video',
-    //     path: 'file:///Z:/RADIO/BBDL%20FULL/BBDL%20FULL%20COURSE%20-%20Week07%20-%20Tutorial%20Video%20[YOUTUBE_ID].mkv',
-    //     youtubeId: 'YOUTUBE_ID',
-    //     duration: 7200,
-    //     notes: ''
-    // }
+  {
+    id: "week00",
+    title: "Week 00 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week00%20-%20Tutorial%20Video%20%5BidwzXvKHaSU%5D.mkv",
+    youtubeId: "idwzXvKHaSU",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week01",
+    title: "Week 01 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week01%20-%20Tutorial%20Video%20%5B28hO4JbN4hE%5D.mkv",
+    youtubeId: "28hO4JbN4hE",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week02",
+    title: "Week 02 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week02%20-%20Tutorial%20Video%20%5BQzmkaAajsD4%5D.mkv",
+    youtubeId: "QzmkaAajsD4",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week03",
+    title: "Week 03 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week03%20-%20Tutorial%20Video%20%5BGFGSsfLrhpo%5D.mkv",
+    youtubeId: "GFGSsfLrhpo",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week03A",
+    title: "Week 03A - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week03A%20-%20Tutorial%20Video%20%5BGkwJ3PA2cc0%5D.mkv",
+    youtubeId: "GkwJ3PA2cc0",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week04",
+    title: "Week 04 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week04%20-%20Tutorial%20Video%20%5BQ62Es9SVpwg%5D.mkv",
+    youtubeId: "Q62Es9SVpwg",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week05",
+    title: "Week 05 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week05%20-%20Tutorial%20Video%20%5BNVrY6MiyKDA%5D.mkv",
+    youtubeId: "NVrY6MiyKDA",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week06",
+    title: "Week 06 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week06%20-%20Tutorial%20Video%20%5BvlMcjOF5DyI%5D.mkv",
+    youtubeId: "vlMcjOF5DyI",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week06A",
+    title: "Week 06A - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week06A%20-%20Tutorial%20Video%20%5BSeJNfX3uhCk%5D.mkv",
+    youtubeId: "SeJNfX3uhCk",
+    duration: 7500, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week07",
+    title: "Week 07 - Tutorial Video",
+    path: "VIDEOS/Week07-fixed.mp4",
+    youtubeId: "cql6bwwH218",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week08",
+    title: "Week 08 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week08%20-%20Tutorial%20Video%20%5B1QL2jvsln9c%5D.mkv",
+    youtubeId: "1QL2jvsln9c",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week09",
+    title: "Week 09 - Tutorial Video",
+    path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week09%20-%20Tutorial%20Video%20%5BgeMk3hWE99I%5D.mkv",
+    youtubeId: "geMk3hWE99I",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week09A",
+    title: "Week 09A - Tutorial Video",
+    path: "VIDEOS/Week09A-fixed.mp4",
+    youtubeId: "eaw6fOhoF0k",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week10",
+    title: "Week 10 - Tutorial Video",
+    path: "VIDEOS/Week10-fixed.mp4",
+    youtubeId: "9YDetiHKbGU",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  {
+    id: "week11",
+    title: "Week 11 - Tutorial Video",
+    path: "VIDEOS/Week11-fixed.mp4",
+    youtubeId: "QdAXakIJfS0",
+    duration: 7200, // approximate duration in seconds (2 hours = 7200)
+    notes: "",
+  },
+  // Add more videos here as needed:
+  // {
+  //     id: 'week07',
+  //     title: 'Week 07 - Tutorial Video',
+  //     path: 'file:///Z:/RADIO/BBDL%20FULL/BBDL%20FULL%20COURSE%20-%20Week07%20-%20Tutorial%20Video%20[YOUTUBE_ID].mkv',
+  //     youtubeId: 'YOUTUBE_ID',
+  //     duration: 7200,
+  //     notes: ''
+  // }
 ]
 
 // CLIPS DATA
 // Define clips for each video
 // Times can be in seconds or use timestampToSeconds
 const CLIPS_DATA = [
-    {
-        id: 'week06-clip-002',
-        videoId: 'week06',
-        title: 'Power Amplifiers',
-        startTime: timestampToSeconds("12:25"),
-        endTime: timestampToSeconds("36:55"),
-        description: "This is a long clip and I'm not sure if there's much to be gained from it. Maybe there are subclips that might be useful.",
-        tags: [],
-    },
-    {
-        id: 'week06-clip-002-A',
-        videoId: 'week06',
-        title: 'Linear Amplifier: AM and SSB need a linear amplifier',
-        startTime: timestampToSeconds("14:57"),
-        endTime: timestampToSeconds("18:08"),
-        description: "",
-        tags: [],
-    },
-    {
-        id: 'week06-clip-002-B',
-        videoId: 'week06',
-        title: 'FM and CW do not need a linear amplifier',
-        startTime: timestampToSeconds("18:08"),
-        endTime: timestampToSeconds("21:02"),
-        description: "",
-        tags: [],
-    },
-    {
-        id: 'week06-clip-002-C',
-        videoId: 'week06',
-        title: 'How to recognise RF power amplifier circuit',
-        startTime: timestampToSeconds("21:02"),
-        endTime: timestampToSeconds("32:22"),
-        description: "",
-        tags: [],
-    },
-    {
-        id: 'week06-clip-002-D',
-        videoId: 'week06',
-        title: 'Peak power. Effect of mode on power. Duty Cycle.',
-        startTime: timestampToSeconds("32:22"),
-        endTime: timestampToSeconds("36:57"),
-        description: "",
-        tags: [],
-    },
-    {
-        id: 'week06-clip-003',
-        videoId: 'week06',
-        title: 'Speech Processing',
-        startTime: timestampToSeconds("36:58"),
-        endTime: timestampToSeconds("42:14"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-004',
-        videoId: 'week06',
-        title: 'Automatic Level Control (ALC)',
-        startTime: timestampToSeconds("42:31"),
-        endTime: timestampToSeconds("46:42"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-006',
-        videoId: 'week06',
-        title: 'Unwanted Emissions (1) to (4) Intro',
-        startTime: timestampToSeconds("51:49"),
-        endTime: timestampToSeconds("54:45"),
-        description: 'Introduction to (1) Harmonics (2) Spurious Emissions (3) Unintended Frequencies (4) Excessive bandwidth',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-007',
-        videoId: 'week06',
-        title: '(1) Harmonics',
-        startTime: timestampToSeconds("54:45"),
-        endTime: timestampToSeconds("58:24"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-008',
-        videoId: 'week06',
-        title: 'Avoid generating harmonics, low pass filter, band pass filter',
-        startTime: timestampToSeconds("58:24"),
-        endTime: timestampToSeconds("1:04:51"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-009',
-        videoId: 'week06',
-        title: 'Band stop filter',
-        startTime: timestampToSeconds("1:04:51"),
-        endTime: timestampToSeconds("1:09:16"),
-        description: '',
-        tags: [''],
-    },
-    {
-        id: 'week06-clip-010',
-        videoId: 'week06',
-        title: '(2) Spurious Emissions: Self oscillation, Parasitic oscillation',
-        startTime: timestampToSeconds("1:09:16"),
-        endTime: timestampToSeconds("1:17:53"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-011',
-        videoId: 'week06',
-        title: 'Unwanted frequencies from mixer (e.g. 2f1+f2). How to use the BBDL grid to show harmonics.',
-        startTime: timestampToSeconds("1:17:53"),
-        endTime: timestampToSeconds("01:33:09"),
-        description: 'No need to go through this if the BBDL grid is understood and practiced. May need to go another row and/or column but this will be rare.',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-012',
-        videoId: 'week06',
-        title: 'Using a Band Pass filter to just let through wanted signals from mixer.',
-        startTime: timestampToSeconds("01:33:09"),
-        endTime: timestampToSeconds("01:35:10"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-013',
-        videoId: 'week06',
-        title: '(3) Unintended frequencies: PLL out of lock, phase noise',
-        startTime: timestampToSeconds("01:35:10"),
-        endTime: timestampToSeconds("01:39:45"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-014',
-        videoId: 'week06',
-        title: 'Overmodulation',
-        startTime: timestampToSeconds("01:40:05"),
-        endTime: timestampToSeconds("01:43:05"),
-        description: '',
-        tags: [],
-    },
-    {
-        id: 'week06-clip-015',
-        videoId: 'week06',
-        title: '(4) Producing harmonics of RF signal. Amplifying excessive bandwidth',
-        startTime: timestampToSeconds("01:43:07"),
-        endTime: timestampToSeconds("01:45:00"),
-        description: '',
-        tags: [],
-    },
+  {
+    id: "week01-clip-001",
+    videoId: "week01",
+    title: "Operating Practices",
+    startTime: timestampToSeconds("11:05"),
+    endTime: timestampToSeconds("13:03"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-002",
+    videoId: "week01",
+    title: "Working Split",
+    startTime: timestampToSeconds("13:03"),
+    endTime: timestampToSeconds("18:07"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-003",
+    videoId: "week01",
+    title: "Carrying Out Tests",
+    startTime: timestampToSeconds("18:07"),
+    endTime: timestampToSeconds("21:19"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-004",
+    videoId: "week01",
+    title: "Band plans",
+    startTime: timestampToSeconds("21:19"),
+    endTime: timestampToSeconds("35:39"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-005",
+    videoId: "week01",
+    title: "CEPT and HAREC",
+    startTime: timestampToSeconds("35:39"),
+    endTime: timestampToSeconds("48:20"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-006",
+    videoId: "week01",
+    title: "ITU Regions",
+    startTime: timestampToSeconds("48:20"),
+    endTime: timestampToSeconds("56:27"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-007",
+    videoId: "week01",
+    title: "Resistors in Series and Parallel",
+    startTime: timestampToSeconds("56:27"),
+    endTime: timestampToSeconds("58:54"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-008",
+    videoId: "week01",
+    title: "Potential Divider & Bridge Circuits",
+    startTime: timestampToSeconds("58:54"),
+    endTime: timestampToSeconds("01:10:45"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week01-clip-009",
+    videoId: "week01",
+    title: "Maths Primer Overview",
+    startTime: timestampToSeconds("01:10:45"),
+    endTime: timestampToSeconds("01:39:06"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-000-A",
+    videoId: "week02",
+    title: "Quiz Review: Week01 Q09 (Operating from country in Asia)",
+    startTime: timestampToSeconds("04:36"),
+    endTime: timestampToSeconds("08:19"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-001",
+    videoId: "week02",
+    title: "More Resistors in Series & Parallel",
+    startTime: timestampToSeconds("15:59"),
+    endTime: timestampToSeconds("29:39"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-002",
+    videoId: "week02",
+    title: "Hazards, Risks & Assessments",
+    startTime: timestampToSeconds("29:39"),
+    endTime: timestampToSeconds("44:25"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-003",
+    videoId: "week02",
+    title: "Electricity",
+    startTime: timestampToSeconds("44:25"),
+    endTime: timestampToSeconds("53:30"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-004",
+    videoId: "week02",
+    title: "Protective Multiple Earthing (PME)",
+    startTime: timestampToSeconds("53:30"),
+    endTime: timestampToSeconds("59:50"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-005",
+    videoId: "week02",
+    title: "Temporary Premises",
+    startTime: timestampToSeconds("59:50"),
+    endTime: timestampToSeconds("01:04:53"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-006",
+    videoId: "week02",
+    title: "Generators",
+    startTime: timestampToSeconds("01:04:53"),
+    endTime: timestampToSeconds("01:10:15"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-007",
+    videoId: "week02",
+    title: "Mobile or Maritime Mobile",
+    startTime: timestampToSeconds("01:10:15"),
+    endTime: timestampToSeconds("01:15:12"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-008",
+    videoId: "week02",
+    title: "Lightning",
+    startTime: timestampToSeconds("01:15:12"),
+    endTime: timestampToSeconds("01:22:46"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week02-clip-009",
+    videoId: "week02",
+    title: "Electro Magnetic Fields (EMF)",
+    startTime: timestampToSeconds("01:22:46"),
+    endTime: timestampToSeconds("01:50:37"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-001",
+    videoId: "week03",
+    title: "Component Tolerance",
+    startTime: timestampToSeconds("06:02"),
+    endTime: timestampToSeconds("18:39"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-002",
+    videoId: "week03",
+    title: "Capacitors, & Q as a measure of charge",
+    startTime: timestampToSeconds("18:39"),
+    endTime: timestampToSeconds("45:48"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-003",
+    videoId: "week03",
+    title: "Inductors & Back EMF",
+    startTime: timestampToSeconds("45:48"),
+    endTime: timestampToSeconds("01:00:31"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-004",
+    videoId: "week03",
+    title: "Rise and Fall of Voltage and Current",
+    startTime: timestampToSeconds("01:00:31"),
+    endTime: timestampToSeconds("01:07:21"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-005",
+    videoId: "week03",
+    title: "Reactance",
+    startTime: timestampToSeconds("01:07:21"),
+    endTime: timestampToSeconds("01:20:56"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-006",
+    videoId: "week03",
+    title: "Impedance Z and Voltage in an Impedance circuit",
+    startTime: timestampToSeconds("01:20:56"),
+    endTime: timestampToSeconds("01:31:38"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-007",
+    videoId: "week03",
+    title: "Resonance",
+    startTime: timestampToSeconds("01:31:38"),
+    endTime: timestampToSeconds("01:41:09"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-008",
+    videoId: "week03",
+    title: "Q as a Magnification Factor",
+    startTime: timestampToSeconds("01:41:09"),
+    endTime: timestampToSeconds("01:49:52"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-009",
+    videoId: "week03",
+    title: "Q and Selectivity",
+    startTime: timestampToSeconds("01:49:52"),
+    endTime: timestampToSeconds("01:54:25"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-010",
+    videoId: "week03",
+    title: "Dynamic Resistance",
+    startTime: timestampToSeconds("01:54:25"),
+    endTime: timestampToSeconds("01:56:58"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03-clip-011",
+    videoId: "week03",
+    title: "Crystals",
+    startTime: timestampToSeconds("01:56:58"),
+    endTime: timestampToSeconds("01:58:49"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03A-clip-000",
+    videoId: "week03A",
+    title: "Key points on Maths",
+    startTime: timestampToSeconds("09:26"),
+    endTime: timestampToSeconds("54:34"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03A-clip-001",
+    videoId: "week03A",
+    title: "Reading Circuit Diagrams",
+    startTime: timestampToSeconds("54:34"),
+    endTime: timestampToSeconds("01:13:30"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03A-clip-002",
+    videoId: "week03A",
+    title: "Q, Q, Q & Dynamic Resistance",
+    startTime: timestampToSeconds("01:13:30"),
+    endTime: timestampToSeconds("01:40:15"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week03A-clip-002",
+    videoId: "week03A",
+    title: "Coupling and Decoupling",
+    startTime: timestampToSeconds("01:40:15"),
+    endTime: timestampToSeconds("01:55:00"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-000-A",
+    videoId: "week04",
+    title: "Quiz Review: Week03A Q02 (Which does not describe Q)",
+    startTime: timestampToSeconds("07:12"),
+    endTime: timestampToSeconds("12:21"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week04-clip-000-B",
+    videoId: "week04",
+    title: "Quiz Review: Week03A Q16 (HAREC certificate)",
+    startTime: timestampToSeconds("12:21"),
+    endTime: timestampToSeconds("18:32"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week04-clip-001",
+    videoId: "week04",
+    title: "Linear Power Supplies",
+    startTime: timestampToSeconds("23:38"),
+    endTime: timestampToSeconds("31:30"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-002",
+    videoId: "week04",
+    title: "Transformers",
+    startTime: timestampToSeconds("31:30"),
+    endTime: timestampToSeconds("57:43"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-003a",
+    videoId: "week04",
+    title: "Rectifier Diode",
+    startTime: timestampToSeconds("57:43"),
+    endTime: timestampToSeconds("01:02:05"),
+    description:
+      "Rectifier Diodes have a Peak Inverse Voltage (PIV) rating, which must be rated for at least peak to peak voltage.",
+    tags: [],
+  },
+  {
+    id: "week04-clip-003b",
+    videoId: "week04",
+    title: "Zener Diode",
+    startTime: timestampToSeconds("01:02:05"),
+    endTime: timestampToSeconds("01:06:32"),
+    description:
+      "Normally used with Reverse Bias when used as Voltage Regulators, to keep the voltage beyond the diode constant.",
+    tags: [],
+  },
+  {
+    id: "week04-clip-004",
+    videoId: "week04",
+    title: "Voltage Regulator & Stabiliser Circuits",
+    startTime: timestampToSeconds("01:06:32"),
+    endTime: timestampToSeconds("01:15:45"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-005",
+    videoId: "week04",
+    title: "Switch Mode Power Supplies",
+    startTime: timestampToSeconds("01:15:45"),
+    endTime: timestampToSeconds("01:25:36"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-006",
+    videoId: "week04",
+    title: "Transistor Biasing",
+    startTime: timestampToSeconds("01:25:36"),
+    endTime: timestampToSeconds("01:32:22"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-007",
+    videoId: "week04",
+    title: "Transistor Configurations",
+    startTime: timestampToSeconds("01:32:22"),
+    endTime: timestampToSeconds("01:44:31"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week04-clip-008",
+    videoId: "week04",
+    title: "Transistor Classes",
+    startTime: timestampToSeconds("01:44:31"),
+    endTime: timestampToSeconds("01:52:59"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week05-clip-001",
+    videoId: "week05",
+    title: "Transmitters: Foundation and Intermediate Review",
+    startTime: timestampToSeconds("03:27"),
+    endTime: timestampToSeconds("17:19"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week05-clip-002",
+    videoId: "week05",
+    title: "Transmitters Overview at Full Level",
+    startTime: timestampToSeconds("17:19"),
+    endTime: timestampToSeconds("18:03"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week05-clip-003",
+    videoId: "week05",
+    title: "Changing Frequency: mixers and multipliers",
+    startTime: timestampToSeconds("18:03"),
+    endTime: timestampToSeconds("44:30"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week05-clip-004",
+    videoId: "week05",
+    title: "Oscillators & Frequency Multipliers",
+    startTime: timestampToSeconds("44:30"),
+    endTime: timestampToSeconds("01:05:44"),
+    description:
+      "Includes Intro & Drift, then (1) Crystal Oscillator (2) VFO based on LC circuit (3) PLL (4) DDS",
+    tags: [],
+  },
+  {
+    id: "week05-clip-004a",
+    videoId: "week05",
+    title: "&bull; Crystal & VFO Oscillator Circuit",
+    startTime: timestampToSeconds("45:40"),
+    endTime: timestampToSeconds("50:45"),
+    description:
+      "Oscillators & Frequency Multipliers: PART ONE. To maintain oscillation there must be a feedback path from the output back to the input.",
+    tags: ["circuit"],
+  },
+  {
+    id: "week05-clip-004b",
+    videoId: "week05",
+    title: "&bull; Phase Lock Loop (PLL)",
+    startTime: timestampToSeconds("50:45"),
+    endTime: timestampToSeconds("01:00:45"),
+    description:
+      "Oscillators & Frequency Multipliers: PART TWO. Includes the formula to calculate VFO frequency from crystal frequency etc.",
+    tags: ["circuit"],
+  },
+  {
+    id: "week05-clip-004c",
+    videoId: "week05",
+    title: "&bull; Direct Digital Synthesiser (DDS)",
+    startTime: timestampToSeconds("01:00:45"),
+    endTime: timestampToSeconds("01:05:44"),
+    description: "Oscillators & Frequency Multipliers: PART THREE.",
+    tags: ["circuit"],
+  },
+  {
+    id: "week05-clip-005",
+    videoId: "week05",
+    title: "Modulation, AM & SSB Filters",
+    startTime: timestampToSeconds("01:06:51"),
+    endTime: timestampToSeconds("01:25:44"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week05-clip-006",
+    videoId: "week05",
+    title: "Modulation, FM sidebands & bandwidth",
+    startTime: timestampToSeconds("01:25:44"),
+    endTime: timestampToSeconds("01:39:38"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-002",
+    videoId: "week06",
+    title: "Power Amplifiers",
+    startTime: timestampToSeconds("12:25"),
+    endTime: timestampToSeconds("36:55"),
+    description:
+      "This is a long clip and I'm not sure if there's much to be gained from it. Maybe there are subclips that might be useful.",
+    tags: [],
+  },
+  {
+    id: "week06-clip-002-A",
+    videoId: "week06",
+    title: "&bull; Linear Amplifier: AM and SSB need a linear amplifier",
+    startTime: timestampToSeconds("14:57"),
+    endTime: timestampToSeconds("18:08"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-002-B",
+    videoId: "week06",
+    title: "&bull; FM and CW do not need a linear amplifier",
+    startTime: timestampToSeconds("18:08"),
+    endTime: timestampToSeconds("21:02"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-002-C",
+    videoId: "week06",
+    title: "&bull; How to recognise RF power amplifier circuit",
+    startTime: timestampToSeconds("21:02"),
+    endTime: timestampToSeconds("32:22"),
+    description: "",
+    tags: ["circuit"],
+  },
+  {
+    id: "week06-clip-002-D",
+    videoId: "week06",
+    title: "&bull; Peak power. Effect of mode on power. Duty Cycle.",
+    startTime: timestampToSeconds("32:22"),
+    endTime: timestampToSeconds("36:57"),
+    description:
+      "FM has a Duty Cycle of 100%, when PTT is pressed, as do data modes, regardless of whether they are using SSB or FM. Because of that it may be advised to run these modes with a high duty cycle at half power.",
+    tags: [],
+  },
+  {
+    id: "week06-clip-003",
+    videoId: "week06",
+    title: "Speech Processing",
+    startTime: timestampToSeconds("36:58"),
+    endTime: timestampToSeconds("42:14"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-004",
+    videoId: "week06",
+    title: "Automatic Level Control (ALC)",
+    startTime: timestampToSeconds("42:31"),
+    endTime: timestampToSeconds("46:42"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-006",
+    videoId: "week06",
+    title: "Unwanted Emissions (1) to (4) Intro",
+    startTime: timestampToSeconds("51:49"),
+    endTime: timestampToSeconds("54:45"),
+    description:
+      "Introduction to (1) Harmonics (2) Spurious Emissions (3) Unintended Frequencies (4) Excessive bandwidth",
+    tags: [],
+  },
+  {
+    id: "week06-clip-007",
+    videoId: "week06",
+    title: "(1) Harmonics",
+    startTime: timestampToSeconds("54:45"),
+    endTime: timestampToSeconds("58:24"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-008",
+    videoId: "week06",
+    title: "Avoid generating harmonics, low pass filter, band pass filter",
+    startTime: timestampToSeconds("58:24"),
+    endTime: timestampToSeconds("1:04:51"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-009",
+    videoId: "week06",
+    title: "Band stop filter",
+    startTime: timestampToSeconds("1:04:51"),
+    endTime: timestampToSeconds("1:09:16"),
+    description: "",
+    tags: [""],
+  },
+  {
+    id: "week06-clip-010",
+    videoId: "week06",
+    title: "(2) Spurious Emissions: Self oscillation, Parasitic oscillation",
+    startTime: timestampToSeconds("1:09:16"),
+    endTime: timestampToSeconds("1:17:53"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-011",
+    videoId: "week06",
+    title:
+      "Unwanted frequencies from mixer (e.g. 2f1+f2). How to use the BBDL grid to show harmonics.",
+    startTime: timestampToSeconds("1:17:53"),
+    endTime: timestampToSeconds("01:33:09"),
+    description:
+      "No need to go through this if the BBDL grid is understood and practiced. May need to go another row and/or column but this will be rare.",
+    tags: [],
+  },
+  {
+    id: "week06-clip-012",
+    videoId: "week06",
+    title:
+      "Using a Band Pass filter to just let through wanted signals from mixer.",
+    startTime: timestampToSeconds("01:33:09"),
+    endTime: timestampToSeconds("01:35:10"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-013",
+    videoId: "week06",
+    title: "(3) Unintended frequencies: PLL out of lock, phase noise",
+    startTime: timestampToSeconds("01:35:10"),
+    endTime: timestampToSeconds("01:39:45"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-014",
+    videoId: "week06",
+    title: "Overmodulation",
+    startTime: timestampToSeconds("01:40:05"),
+    endTime: timestampToSeconds("01:43:05"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06-clip-015",
+    videoId: "week06",
+    title:
+      "(4) Producing harmonics of RF signal. Amplifying excessive bandwidth",
+    startTime: timestampToSeconds("01:43:07"),
+    endTime: timestampToSeconds("01:45:00"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week06A-clip-001",
+    videoId: "week06A",
+    title: "Impedance Matching Transformers",
+    startTime: timestampToSeconds("11:24"),
+    endTime: timestampToSeconds("36:29"),
+    description: "",
+    tags: ["revision"],
+  },
+  {
+    id: "week06A-clip-002",
+    videoId: "week06A",
+    title: "Transistor Biasing",
+    startTime: timestampToSeconds("36:29"),
+    endTime: timestampToSeconds("01:00:52"),
+    description: "",
+    tags: ["revision", "circuit"],
+  },
+  {
+    id: "week06A-clip-003",
+    videoId: "week06A",
+    title: "Coupling and Decoupling",
+    startTime: timestampToSeconds("01:00:52"),
+    endTime: timestampToSeconds("01:09:14"),
+    description: "",
+    tags: ["revision", "circuit"],
+  },
+  {
+    id: "week06A-clip-004",
+    videoId: "week06A",
+    title: "Transmitter Block Diagrams",
+    startTime: timestampToSeconds("01:09:14"),
+    endTime: timestampToSeconds("01:31:27"),
+    description: "",
+    tags: ["revision", "block"],
+  },
+  {
+    id: "week06A-clip-005",
+    videoId: "week06A",
+    title: "Identifying and Reading Circuit Diagrams",
+    startTime: timestampToSeconds("01:31:27"),
+    endTime: timestampToSeconds("01:48:07"),
+    description: "",
+    tags: ["revision", "circuit"],
+  },
+  {
+    id: "week06A-clip-006",
+    videoId: "week06A",
+    title: "Voltage & Current in series and parallel circuits",
+    startTime: timestampToSeconds("01:48:07"),
+    endTime: timestampToSeconds("02:04:30"),
+    description: "",
+    tags: ["revision", "circuit"],
+  },
+  {
+    id: "week07-clip-000-A",
+    videoId: "week07",
+    title: "Quiz Review: Week06A Q04 (Large value electrolytic capacitor)",
+    startTime: timestampToSeconds("10:16"),
+    endTime: timestampToSeconds("14:37"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week07-clip-000-B",
+    videoId: "week07",
+    title:
+      "Quiz Review: Week06A Q05 (Reactance calculation including capacitor)",
+    startTime: timestampToSeconds("14:37"),
+    endTime: timestampToSeconds("20:31"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week07-clip-000-C",
+    videoId: "week07",
+    title: "Quiz Review: Week06A Q21 (Travel to another country)",
+    startTime: timestampToSeconds("20:31"),
+    endTime: timestampToSeconds("29:10"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week07-clip-001",
+    videoId: "week07",
+    title: "Receiver recap",
+    startTime: timestampToSeconds("35:42"),
+    endTime: timestampToSeconds("38:58"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-002",
+    videoId: "week07",
+    title: "Superhet blocks",
+    startTime: timestampToSeconds("38:58"),
+    endTime: timestampToSeconds("46:14"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-003",
+    videoId: "week07",
+    title: "Dynamic Range & Noise",
+    startTime: timestampToSeconds("46:14"),
+    endTime: timestampToSeconds("01:02:52"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-004",
+    videoId: "week07",
+    title: "RF Amplifiers & Pre-Amplifiers",
+    startTime: timestampToSeconds("01:02:52"),
+    endTime: timestampToSeconds("01:15:01"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-005",
+    videoId: "week07",
+    title: "Local Oscillators & Phase Noise",
+    startTime: timestampToSeconds("01:15:01"),
+    endTime: timestampToSeconds("01:17:36"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-006",
+    videoId: "week07",
+    title: "Mixers",
+    startTime: timestampToSeconds("01:17:36"),
+    endTime: timestampToSeconds("01:20:05"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-007",
+    videoId: "week07",
+    title: "Local Oscillator Choices & Sideband Inversion",
+    startTime: timestampToSeconds("01:20:05"),
+    endTime: timestampToSeconds("01:29:50"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week07-clip-008",
+    videoId: "week07",
+    title: "IF Stages, Image Frequencies & Double Conversion",
+    startTime: timestampToSeconds("01:29:50"),
+    endTime: timestampToSeconds("01:44:46"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-001",
+    videoId: "week08",
+    title: "IF Amplifiers & IFTs",
+    startTime: timestampToSeconds("05:22"),
+    endTime: timestampToSeconds("14:16"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-002",
+    videoId: "week08",
+    title: "Demodulators",
+    startTime: timestampToSeconds("14:16"),
+    endTime: timestampToSeconds("19:34"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-003",
+    videoId: "week08",
+    title: "Automatic Gain Control (AGC)",
+    startTime: timestampToSeconds("19:34"),
+    endTime: timestampToSeconds("25:22"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-004",
+    videoId: "week08",
+    title: "Transceivers",
+    startTime: timestampToSeconds("25:22"),
+    endTime: timestampToSeconds("34:31"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-005",
+    videoId: "week08",
+    title: "Down Convertors & Transverters",
+    startTime: timestampToSeconds("34:32"),
+    endTime: timestampToSeconds("45:07"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-006",
+    videoId: "week08",
+    title: "Digital Signals",
+    startTime: timestampToSeconds("45:07"),
+    endTime: timestampToSeconds("53:10"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-007",
+    videoId: "week08",
+    title: "Working out alias frequencies",
+    startTime: timestampToSeconds("53:10"),
+    endTime: timestampToSeconds("01:13:18"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-008",
+    videoId: "week08",
+    title: "SDR Transmitters & IQ signals",
+    startTime: timestampToSeconds("01:13:18"),
+    endTime: timestampToSeconds("01:33:21"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-009",
+    videoId: "week08",
+    title: "Feeders: Velocity Factor",
+    startTime: timestampToSeconds("01:33:21"),
+    endTime: timestampToSeconds("01:38:35"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-010",
+    videoId: "week08",
+    title: "Baluns",
+    startTime: timestampToSeconds("01:38:35"),
+    endTime: timestampToSeconds("01:55:42"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-001",
+    videoId: "week09",
+    title: "Feeders & Antennas",
+    startTime: timestampToSeconds("03:58"),
+    endTime: timestampToSeconds("10:58"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-002",
+    videoId: "week09",
+    title: "Voltage & Current distribution",
+    startTime: timestampToSeconds("10:58"),
+    endTime: timestampToSeconds("17:55"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-003",
+    videoId: "week09",
+    title: "7 Antennas & Feedpoint Impedance",
+    startTime: timestampToSeconds("17:55"),
+    endTime: timestampToSeconds("42:32"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-004",
+    videoId: "week09",
+    title: "Passive Elements in a Yagi",
+    startTime: timestampToSeconds("42:32"),
+    endTime: timestampToSeconds("48:38"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-005",
+    videoId: "week09",
+    title: "(V)SWR",
+    startTime: timestampToSeconds("48:38"),
+    endTime: timestampToSeconds("01:00:36"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-006",
+    videoId: "week09",
+    title: "Return Loss",
+    startTime: timestampToSeconds("01:00:36"),
+    endTime: timestampToSeconds("01:18:15"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-007",
+    videoId: "week09",
+    title: "AMUs/ATUs",
+    startTime: timestampToSeconds("01:18:15"),
+    endTime: timestampToSeconds("01:44:27"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week08-clip-008",
+    videoId: "week09",
+    title: "Z match with feeder",
+    startTime: timestampToSeconds("01:44:27"),
+    endTime: timestampToSeconds("01:56:58"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week09a-clip-000-A",
+    videoId: "week09A",
+    title: "Quiz Review: Week09 Q10 (Impedance matching)",
+    startTime: timestampToSeconds("06:00"),
+    endTime: timestampToSeconds("20:10"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week09a-clip-001",
+    videoId: "week09A",
+    title: "Filters",
+    startTime: timestampToSeconds("20:13"),
+    endTime: timestampToSeconds("47:12"),
+    description: "",
+    tags: ["revision"],
+  },
+  {
+    id: "week09a-clip-002",
+    videoId: "week09A",
+    title: "Transformers",
+    startTime: timestampToSeconds("47:12"),
+    endTime: timestampToSeconds("01:01:40"),
+    description: "",
+    tags: ["revision"],
+  },
+  {
+    id: "week09a-clip-003",
+    videoId: "week09A",
+    title: "Circuits to Remember",
+    startTime: timestampToSeconds("01:01:40"),
+    endTime: timestampToSeconds("01:17:27"),
+    description: "",
+    tags: ["revision", "circuit"],
+  },
+  {
+    id: "week09a-clip-004",
+    videoId: "week09A",
+    title: "Maths",
+    startTime: timestampToSeconds("01:17:27"),
+    endTime: timestampToSeconds("01:23:24"),
+    description: "",
+    tags: ["revision", "maths"],
+  },
+  {
+    id: "week09a-clip-005",
+    videoId: "week09A",
+    title: "Thinking Ahead To The Exam",
+    startTime: timestampToSeconds("01:23:24"),
+    endTime: timestampToSeconds("01:34:54"),
+    description: "",
+    tags: ["revision", "exam"],
+  },
+  {
+    id: "week10-clip-000-A",
+    videoId: "week10",
+    title: "Quiz Review: Week09A Q12 (FM Transmitter Block Diagram)",
+    startTime: timestampToSeconds("05:19"),
+    endTime: timestampToSeconds("10:40"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week10-clip-000-B",
+    videoId: "week10",
+    title: "Quiz Review: Week09A Q18 (Superhet overload)",
+    startTime: timestampToSeconds("10:40"),
+    endTime: timestampToSeconds("15:17"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week10-clip-000-C",
+    videoId: "week10",
+    title: "Quiz Review: Week09A Q25 (Half wave dipole length)",
+    startTime: timestampToSeconds("15:17"),
+    endTime: timestampToSeconds("18:54"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week10-clip-000-D",
+    videoId: "week10",
+    title: "Quiz Review: Week09A Q29 (Band plan lookup)",
+    startTime: timestampToSeconds("18:54"),
+    endTime: timestampToSeconds("22:17"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week10-clip-000-E",
+    videoId: "week10",
+    title: "Quiz Review: Week09A Q33 (Risk assessment)",
+    startTime: timestampToSeconds("22:17"),
+    endTime: timestampToSeconds("28:08"),
+    description: "",
+    tags: ["quizreview"],
+  },
+  {
+    id: "week10-clip-001",
+    videoId: "week10",
+    title: "EM waves, Field Strength & Power Flux Density",
+    startTime: timestampToSeconds("41:17"),
+    endTime: timestampToSeconds("01:02:09"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week10-clip-002",
+    videoId: "week10",
+    title: "Circular Polarisation",
+    startTime: timestampToSeconds("01:02:09"),
+    endTime: timestampToSeconds("01:09:21"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week10-clip-003",
+    videoId: "week10",
+    title: "Sun Spots, Solar Flares & Storms",
+    startTime: timestampToSeconds("01:09:21"),
+    endTime: timestampToSeconds("01:14:38"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week10-clip-004",
+    videoId: "week10",
+    title: "The Ionosphere, Critical Frequency, MUF, etc.",
+    startTime: timestampToSeconds("01:14:38"),
+    endTime: timestampToSeconds("01:22:26"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week10-clip-005",
+    videoId: "week10",
+    title: "Modes of Propagation, NVIS, Aurora, Moonbounce",
+    startTime: timestampToSeconds("01:22:26"),
+    endTime: timestampToSeconds("01:31:47"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week10-clip-006",
+    videoId: "week10",
+    title: "Other Propagation Topics, Galactic Noise, & Link Budget",
+    startTime: timestampToSeconds("01:31:47"),
+    endTime: timestampToSeconds("01:42:31"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-001",
+    videoId: "week11",
+    title: "Licence Conditions 2024 overview",
+    startTime: timestampToSeconds("08:12"),
+    endTime: timestampToSeconds("13:00"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-002",
+    videoId: "week11",
+    title: "The Licence Documents",
+    startTime: timestampToSeconds("13:00"),
+    endTime: timestampToSeconds("33:40"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-003",
+    videoId: "week11",
+    title: "Messages",
+    startTime: timestampToSeconds("33:40"),
+    endTime: timestampToSeconds("41:48"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-004",
+    videoId: "week11",
+    title: "Equipment & Transmissions",
+    startTime: timestampToSeconds("41:48"),
+    endTime: timestampToSeconds("47:02"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-005",
+    videoId: "week11",
+    title: "Ofcoms's Role",
+    startTime: timestampToSeconds("47:02"),
+    endTime: timestampToSeconds("52:29"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-006",
+    videoId: "week11",
+    title: "The Schedule & The Notice of Coordination",
+    startTime: timestampToSeconds("52:29"),
+    endTime: timestampToSeconds("01:03:37"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-007",
+    videoId: "week11",
+    title: "EMF Compliance",
+    startTime: timestampToSeconds("01:03:37"),
+    endTime: timestampToSeconds("01:36:11"),
+    description: "",
+    tags: [],
+  },
+  {
+    id: "week11-clip-008",
+    videoId: "week11",
+    title: "Key Words used in Licence Conditions",
+    startTime: timestampToSeconds("28:30"),
+    endTime: timestampToSeconds("30:30"),
+    description:
+      "SHALL -> must, mandatory, SHOULD -> recommended but not mandatory, MAY -> allowed to",
+    tags: [],
+  },
+  {
+    id: "week11-clip-009",
+    videoId: "week11",
+    title: "Radio Equipment",
+    startTime: timestampToSeconds("30:30"),
+    endTime: timestampToSeconds("33:40"),
+    description:
+      "The use of Capital Letters means it is defined in Condition 10, and in this case it means the kit used with a Callsign becomes Radio equipment, where it does not matter who owns it.",
+    tags: [],
+  },
 
-    // Add your actual clips here!
-    // To find the times:
-    // 1. Play the video and note the timestamp when the segment starts
-    // 2. Note when it ends
-    // 3. Convert to seconds (minutes × 60 + seconds)
-    // 
-    // Example: A clip from 15:30 to 18:45
-    // startTime: 15 * 60 + 30 = 930 seconds
-    // endTime: 18 * 60 + 45 = 1125 seconds
-    //
-    // {
-    //     id: 'week06-clip-003',
-    //     videoId: 'week06',
-    //     title: 'SWR Derivation',
-    //     startTime: 930,
-    //     endTime: 1125,
-    //     description: 'Detailed derivation of Standing Wave Ratio formula',
-    //     tags: ['swr', 'derivation', 'important']
-    // }
+  // Add your actual clips here!
+  // To find the times:
+  // 1. Play the video and note the timestamp when the segment starts
+  // 2. Note when it ends
+  // 3. Convert to seconds (minutes × 60 + seconds)
+  //
+  // Example: A clip from 15:30 to 18:45
+  // startTime: 15 * 60 + 30 = 930 seconds
+  // endTime: 18 * 60 + 45 = 1125 seconds
+  //
+  // {
+  //     id: 'week06-clip-003',
+  //     videoId: 'week06',
+  //     title: 'SWR Derivation',
+  //     startTime: 930,
+  //     endTime: 1125,
+  //     description: 'Detailed derivation of Standing Wave Ratio formula',
+  //     tags: ['swr', 'derivation', 'important']
+  // }
 ]
 
 // HELPER FUNCTIONS
@@ -210,7 +1372,7 @@ const CLIPS_DATA = [
  * @returns {Array} Array of clip objects
  */
 function getClipsForVideo(videoId) {
-    return CLIPS_DATA.filter(clip => clip.videoId === videoId)
+  return CLIPS_DATA.filter((clip) => clip.videoId === videoId)
 }
 
 /**
@@ -219,7 +1381,7 @@ function getClipsForVideo(videoId) {
  * @returns {Object|null} The clip object or null if not found
  */
 function getClipById(clipId) {
-    return CLIPS_DATA.find(clip => clip.id === clipId) || null
+  return CLIPS_DATA.find((clip) => clip.id === clipId) || null
 }
 
 /**
@@ -228,7 +1390,7 @@ function getClipById(clipId) {
  * @returns {Object|null} The video object or null if not found
  */
 function getVideoById(videoId) {
-    return VIDEO_LIBRARY.find(video => video.id === videoId) || null
+  return VIDEO_LIBRARY.find((video) => video.id === videoId) || null
 }
 
 /**
@@ -237,9 +1399,7 @@ function getVideoById(videoId) {
  * @returns {Array} Array of clips with that tag
  */
 function getClipsByTag(tag) {
-    return CLIPS_DATA.filter(clip =>
-        clip.tags && clip.tags.includes(tag)
-    )
+  return CLIPS_DATA.filter((clip) => clip.tags && clip.tags.includes(tag))
 }
 
 /**
@@ -248,17 +1408,17 @@ function getClipsByTag(tag) {
  * @returns {number} Time in seconds
  */
 function timestampToSeconds(timestamp) {
-    const parts = timestamp.split(':').map(Number)
+  const parts = timestamp.split(":").map(Number)
 
-    if (parts.length === 2) {
-        // MM:SS format
-        return parts[0] * 60 + parts[1]
-    } else if (parts.length === 3) {
-        // HH:MM:SS format
-        return parts[0] * 3600 + parts[1] * 60 + parts[2]
-    }
+  if (parts.length === 2) {
+    // MM:SS format
+    return parts[0] * 60 + parts[1]
+  } else if (parts.length === 3) {
+    // HH:MM:SS format
+    return parts[0] * 3600 + parts[1] * 60 + parts[2]
+  }
 
-    return 0
+  return 0
 }
 
 /**
@@ -267,13 +1427,13 @@ function timestampToSeconds(timestamp) {
  * @returns {string} Timestamp in format "HH:MM:SS" or "MM:SS"
  */
 function secondsToTimestamp(seconds) {
-    const hrs = Math.floor(seconds / 3600)
-    const mins = Math.floor((seconds % 3600) / 60)
-    const secs = Math.floor(seconds % 60)
+  const hrs = Math.floor(seconds / 3600)
+  const mins = Math.floor((seconds % 3600) / 60)
+  const secs = Math.floor(seconds % 60)
 
-    if (hrs > 0) {
-        return `${hrs}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
-    } else {
-        return `${mins}:${secs.toString().padStart(2, '0')}`
-    }
+  if (hrs > 0) {
+    return `${hrs}:${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`
+  } else {
+    return `${mins}:${secs.toString().padStart(2, "0")}`
+  }
 }

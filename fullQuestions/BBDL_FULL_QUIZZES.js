@@ -4966,6 +4966,7 @@ hundreds of trivial hazards that need no mitigating action. `,
     examCalculation: 0,
     exam_NOT: false,
     tagged: true,
+    clipId: "week10-clip-000-E",
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q33",
   },
