@@ -14,7 +14,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "RSL is also mentioned in 6-25. Licence 6-22 outlines how M and G callsigns may use RSLs, 6-23 states that Intermediate callsigns beginning with a '2' must insert the appropriate RSL, and 6-24 lists the RSLs that must be used, if one is included in the callsign.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1a.2",
+    syllabus: "1c.1",
     examStrategy: 1,
     examStrategyNotes: "Check EX309",
     examCalculation: 0,
@@ -31,7 +31,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "Licence 6-21b says “the callsign must be transmitted as frequently as is practicable during transmissions",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1a.4",
+    syllabus: "1c.1",
     examStrategy: 1,
     examStrategyNotes: "Check EX309",
     examCalculation: 0,
@@ -47,7 +47,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "Licence 6-6 is very clear. 6-8 allows the use by User Services during an operation or exercise, but that was not in the question.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1b.1",
+    syllabus: "1c.1",
     examStrategy: 1,
     examStrategyNotes: "Check EX309",
     examCalculation: 0,
@@ -66,11 +66,11 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 2,
     explanation:
-      "If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions.The definition of the word 'Inspect' is at 10-1p.It says that it includes examine and test.",
+      "If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions. The definition of the word 'Inspect' is at 10-1p. It says that Inspect includes EXAMINE AND TEST.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1d.1",
     examStrategy: 1,
-    examStrategyNotes: "See explanation",
+    examStrategyNotes: "See 10-1p...",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -89,7 +89,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "There is nothing in the Licence Documents that covers recorded and retransmitted messages, but Licence 6-21a says that the station must be identifiable at all times.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1a.4",
+    syllabus: "1c.1",
     examStrategy: 2,
     examStrategyNotes: "see explanation",
     examCalculation: 0,
@@ -108,9 +108,9 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      "Licence 6-19 says that, unless you are operating for the purposes of 6-5 (emergencies / disasters), transmissions must not be encrypted for the purposes of obscuring the meaning.Codes are not ruled out, for example, Morse code and the Q code are allowed, so 'a' is OK.Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so 'c' is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so 'd' is OK.",
+      "Licence 6-19 says that, unless you are operating for the purposes of 6-5 (emergencies or disasters), transmissions must not be encrypted for the purposes of obscuring the meaning. Codes are not ruled out, for example, Morse code and the Q codes are allowed, so 'a' is OK. Licence 6-4a allows technical investigations, and there is nothing saying you are not allowed to discuss them, so 'c' is OK, and 6-12 allows Beacon transmissions, which do not elicit a reply, so 'd' is OK.",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1c.2",
+    syllabus: "1c.1",
     examStrategy: 2,
     examStrategyNotes: "see explanation",
     examCalculation: 0,
@@ -147,7 +147,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "Licence 6-10b says if an amateur band is used for remote control links, it must be above 30MHz, no if buts or maybes with that one! ",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1e.1",
+    syllabus: "1c.1",
     examStrategy: 1,
     examStrategyNotes: "Look through EX309",
     examCalculation: 0,
@@ -168,7 +168,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "The recommendation is mentioned on page 2 of the Licence, but it is not defined. If you are asked about any meaning, your first port of call should be Condition 10, which lists many definitions, including CEPT T/R 61-01. We will look at CEPT operation more when we do the Licence Conditions tutorial later in the course. [[Page 2 of the Licence is mentioned. Where is that? ]]",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1f.1",
+    syllabus: "1c.1",
     examStrategy: 1,
     examStrategyNotes: "See EX309 and just work through them.",
     examCalculation: 0,
@@ -189,7 +189,7 @@ const BBDL_FULL_QUIZZES = [
     explanation:
       "Licence 4-1b is the only one of the four options that mentions operating from a ship; Notes to the Schedule only go up to G, so Note s is clearly wrong. [[In the quiz, I answered with Note s to Schedule 1 because there is something in the Notes. I was fooled by Note s which I thought was a misprint as the s is lower case.]]",
     lookup: "See page(s) x of the Full Licence text book",
-    syllabus: "1a.1",
+    syllabus: "1c.1",
     tagged: true,
     examStrategy: 1,
     examStrategyNotes: "See EX309",
@@ -334,8 +334,9 @@ const BBDL_FULL_QUIZZES = [
       "The term 'Relevant Radio Equipment' is used in Licence 9-1, and is defined in 10-1z",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1g.1",
-    examStrategy: 2,
-    examStrategyNotes: "Just one to be familiar with.",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Just one to be familiar with. It has nothing to do with ownership. It is actually the callsign and the equipment being used, regardless of who owns it.",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -352,7 +353,7 @@ const BBDL_FULL_QUIZZES = [
     ],
     correct: 1,
     explanation:
-      "See the 5 MHz (60m) Band Plan; 'a' is not in the band, 'b' is shown as QRP (low power) CW(Morse) Centre of Activity, 'c' is not a UKband, and 'd' is to be avoided for contacts within the UK",
+      "See the 5 MHz (60m) Band Plan; 'a' is not in the band, 'b' is shown as QRP (low power) CW(Morse) Centre of Activity, 'c' is not a UK band, and 'd' is to be avoided for contacts within the UK",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7b.1",
     examStrategy: 1,
@@ -4427,6 +4428,7 @@ which is what we want for 2m FM calling.`,
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q12",
     tagged: true,
+    clipId: "week10-clip-000-A",
   },
   {
     source: "BBDL QUIZ WEEK09A Q13",
@@ -4583,6 +4585,7 @@ would cause weaker signals to distort.`,
     tagged: true,
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q18",
+    clipId: "week10-clip-000-B",
   },
   {
     source: "BBDL QUIZ WEEK09A Q19",
@@ -4758,6 +4761,7 @@ that ‘d’ is the correct answer.`,
     tagged: true,
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q25",
+    clipId: "week10-clip-000-C",
   },
   {
     source: "BBDL QUIZ WEEK09A Q26",
@@ -4860,6 +4864,7 @@ getting this type of question wrong.`,
     exam_NOT: false,
     tagged: true,
     obsidianURL: "",
+    clipId: "week10-clip-000-D",
   },
   {
     source: "BBDL QUIZ WEEK09A Q30",
@@ -4966,9 +4971,9 @@ hundreds of trivial hazards that need no mitigating action. `,
     examCalculation: 0,
     exam_NOT: false,
     tagged: true,
-    clipId: "week10-clip-000-E",
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fweek09a-q33",
+    clipId: "week10-clip-000-E",
   },
   {
     source: "BBDL QUIZ WEEK09A Q34",

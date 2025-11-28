@@ -1,4 +1,8 @@
-export default function showQuestionsBySyllabusCode(questionBank) {
+export default function showQuestionsBySyllabusCode(
+  questionBank,
+  searchType,
+  searchValue,
+) {
   // Count questions by syllabus code
   const syllabusCount = {}
 
@@ -12,6 +16,7 @@ export default function showQuestionsBySyllabusCode(questionBank) {
 
   // Build markdown content
   let markdown = "# Question Bank Summary\n\n"
+  markdown += `SEARCHTYPE: ${searchType} SEARCHVALUE: ${searchValue}\n\n`
   markdown += `**Total Questions:** ${questionBank.length}\n\n`
   markdown += "## Questions by Syllabus Code\n\n"
 

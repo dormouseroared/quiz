@@ -53,10 +53,11 @@ const EXAM_SECRETS_FULL_PAPER = [
       "The only technical requirement for a link in an amateur band is that it must be above 30MHz, so the licence limit is 1kW at each end. Obviously, and to comply with (6-2) on undue interference, the link should be at the lowest power that allows reliable operation.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "1h.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes: "Pay attention to this one!",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q04",

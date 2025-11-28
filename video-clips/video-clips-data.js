@@ -10,7 +10,8 @@ const VIDEO_LIBRARY = [
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week00%20-%20Tutorial%20Video%20%5BidwzXvKHaSU%5D.mkv",
     youtubeId: "idwzXvKHaSU",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
-    notes: "",
+    notes:
+      "No topics from the syllabus in Week 00, but worth a dip into for inspiration.",
   },
   {
     id: "week01",
@@ -18,7 +19,7 @@ const VIDEO_LIBRARY = [
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week01%20-%20Tutorial%20Video%20%5B28hO4JbN4hE%5D.mkv",
     youtubeId: "28hO4JbN4hE",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
-    notes: "",
+    notes: "Syllabus: 7a.1, 7a.8, 7b.1, 7b.2, 7h.1, 7h.2, 2b.1",
   },
   {
     id: "week02",
@@ -163,8 +164,9 @@ const CLIPS_DATA = [
     title: "Carrying Out Tests",
     startTime: timestampToSeconds("18:07"),
     endTime: timestampToSeconds("21:19"),
-    description: "",
-    tags: [],
+    description:
+      "Checking for harmonics, excessive bandwidth and spurious emissions from time to time, and especially if something is changed.",
+    tags: ["completed"],
   },
   {
     id: "week01-clip-004",
@@ -181,8 +183,9 @@ const CLIPS_DATA = [
     title: "CEPT and HAREC",
     startTime: timestampToSeconds("35:39"),
     endTime: timestampToSeconds("48:20"),
-    description: "",
-    tags: [],
+    description:
+      "Under CEPT T/R 61-01 rules a visitor with a full licence can operate with host country rules using the host prefix and their own callsign for up to about 3 months, whilst under HAREC CEPT T/R 61-02, someone taking up permanent residence can get a host country full license with a host callsign.",
+    tags: ["completed"],
   },
   {
     id: "week01-clip-006",
@@ -190,8 +193,9 @@ const CLIPS_DATA = [
     title: "ITU Regions",
     startTime: timestampToSeconds("48:20"),
     endTime: timestampToSeconds("56:27"),
-    description: "",
-    tags: [],
+    description:
+      "(1) Europe, Africa & Middle East (2) the Americas (3) Asia & Pacific",
+    tags: ["completed"],
   },
   {
     id: "week01-clip-007",
@@ -227,7 +231,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("04:36"),
     endTime: timestampToSeconds("08:19"),
     description: "",
-    tags: [],
+    tags: ["quizreview"],
   },
   {
     id: "week02-clip-001",
@@ -1265,8 +1269,8 @@ const CLIPS_DATA = [
     title: "Licence Conditions 2024 overview",
     startTime: timestampToSeconds("08:12"),
     endTime: timestampToSeconds("13:00"),
-    description: "",
-    tags: [],
+    description: "Probably don't need to go through this again.",
+    tags: ["completed"],
   },
   {
     id: "week11-clip-002",
@@ -1274,8 +1278,8 @@ const CLIPS_DATA = [
     title: "The Licence Documents",
     startTime: timestampToSeconds("13:00"),
     endTime: timestampToSeconds("33:40"),
-    description: "",
-    tags: [],
+    description: "Probably don't need to go through this again.",
+    tags: ["completed"],
   },
   {
     id: "week11-clip-003",

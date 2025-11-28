@@ -156,6 +156,28 @@ const EMC_02_SYLLABUS_LIST = [
   "6g.1",
 ]
 
+const LICENSING_01_SYLLABUS_LIST = ["1c.1"]
+const LICENSING_02_SYLLABUS_LIST = ["1d.1", "1g.1", "1h.1"]
+
+const TECHNICAL_01_SYLLABUS_LIST = ["2a.1", "2b.1"]
+const TECHNICAL_02_SYLLABUS_LIST = ["2d.1", "2d.2", "2d.3"]
+const TECHNICAL_03_SYLLABUS_LIST = ["2d.4", "2d.7"]
+const TECHNICAL_04_SYLLABUS_LIST = ["2e", "2f"]
+const TECHNICAL_05_SYLLABUS_LIST = ["2g", "2h"]
+const TECHNICAL_06_SYLLABUS_LIST = ["2i", "2j"]
+
+const ANTENNAS_01_SYLLABUS_LIST = ["4a", "4b", "4d"]
+const ANTENNAS_02_SYLLABUS_LIST = ["4e", "4f"]
+
+const PROPAGATION_01_SYLLABUS_LIST = ["5a", "5c"]
+const PROPAGATION_02_SYLLABUS_LIST = ["5b", "5d"]
+
+const OPERATING_01_SYLLABUS_LIST = ["7a"]
+const OPERATING_02_SYLLABUS_LIST = ["7b"]
+const OPERATING_03_SYLLABUS_LIST = ["7h"]
+
+const MEASUREMENTS_01_SYLLABUS_LIST = ["9"]
+
 let findCards = null
 
 // ====================================
@@ -266,7 +288,7 @@ function selectQuestionsForSyllabusList(list, MCQ) {
   } else if (list === "ANTENNAS") {
     targetList = ANTENNAS_SYLLABUS_LIST
     console.warn("targetList", targetList)
-    // 3. TRANSNITTERS_01
+    // 3. TRANSMITTERS_01
   } else if (list === "TRANSMITTERS_01") {
     targetList = TRANSMITTERS_01_SYLLABUS_LIST
     console.warn("targetList", targetList)
@@ -301,6 +323,70 @@ function selectQuestionsForSyllabusList(list, MCQ) {
     // 8. SAFETY_02
   } else if (list === "SAFETY_02") {
     targetList = SAFETY_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 1. LICENSING_01
+  } else if (list === "LICENSING_01") {
+    targetList = LICENSING_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 1. LICENSING_02
+  } else if (list === "LICENSING_02") {
+    targetList = LICENSING_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 2. TECHNICAL_01
+  } else if (list === "TECHNICAL_01") {
+    targetList = TECHNICAL_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 2. TECHNICAL_02
+  } else if (list === "TECHNICAL_02") {
+    targetList = TECHNICAL_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 2. TECHNICAL_03
+  } else if (list === "TECHNICAL_03") {
+    targetList = TECHNICAL_03_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 2. TECHNICAL_04
+  } else if (list === "TECHNICAL_04") {
+    targetList = TECHNICAL_04_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 2. TECHNICAL_05
+  } else if (list === "TECHNICAL_05") {
+    targetList = TECHNICAL_05_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 2. TECHNICAL_06
+  } else if (list === "TECHNICAL_06") {
+    targetList = TECHNICAL_06_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 3. ANTENNAS_01
+  } else if (list === "ANTENNAS_01") {
+    targetList = ANTENNAS_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 3. ANTENNAS_02
+  } else if (list === "ANTENNAS_02") {
+    targetList = ANTENNAS_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 5. PROPAGATION_01
+  } else if (list === "PROPAGATION_01") {
+    targetList = PROPAGATION_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 5. PROPAGATION_02
+  } else if (list === "PROPAGATION_02") {
+    targetList = PROPAGATION_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 7. OPERATING_01
+  } else if (list === "OPERATING_01") {
+    targetList = OPERATING_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 7. OPERATING_02
+  } else if (list === "OPERATING_02") {
+    targetList = OPERATING_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 7. OPERATING_03
+  } else if (list === "OPERATING_03") {
+    targetList = OPERATING_03_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 9. MEASUREMENTS_01
+  } else if (list === "MEASUREMENTS_01") {
+    targetList = MEASUREMENTS_01_SYLLABUS_LIST
     console.warn("targetList", targetList)
     // NOTHING FOUND
   } else {
@@ -1064,7 +1150,12 @@ searchForm.addEventListener("submit", function (event) {
   // number of questions by syllabus
 
   console.log("showQuestionsBySyllabusCode:", quizState.questionPackLength)
-  showQuestionsBySyllabusCode(quizState.questionPack)
+
+  showQuestionsBySyllabusCode(
+    quizState.questionPack,
+    quizState.searchType,
+    quizState.searchValue,
+  )
 
   myDebug("SEARCH AFTER INIT", quizState)
 
