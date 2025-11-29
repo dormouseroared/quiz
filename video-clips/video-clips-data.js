@@ -15,7 +15,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week01",
-    title: "Week 01 - Tutorial Video",
+    title: "Week 01 - [2] TECHNICAL [7] OPERATING",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week01%20-%20Tutorial%20Video%20%5B28hO4JbN4hE%5D.mkv",
     youtubeId: "28hO4JbN4hE",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -23,7 +23,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week02",
-    title: "Week 02 - Tutorial Video",
+    title: "Week 02 - [1] LICENSING [2] TECHNICAL [8] SAFETY",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week02%20-%20Tutorial%20Video%20%5BQzmkaAajsD4%5D.mkv",
     youtubeId: "QzmkaAajsD4",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -31,7 +31,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week03",
-    title: "Week 03 - Tutorial Video",
+    title: "Week 03 - [2] TECHNICAL",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week03%20-%20Tutorial%20Video%20%5BGFGSsfLrhpo%5D.mkv",
     youtubeId: "GFGSsfLrhpo",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -39,7 +39,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week03A",
-    title: "Week 03A - Tutorial Video",
+    title: "Week 03A - REVISION",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week03A%20-%20Tutorial%20Video%20%5BGkwJ3PA2cc0%5D.mkv",
     youtubeId: "GkwJ3PA2cc0",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -47,7 +47,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week04",
-    title: "Week 04 - Tutorial Video",
+    title: "Week 04 - [2] TECHNICAL",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week04%20-%20Tutorial%20Video%20%5BQ62Es9SVpwg%5D.mkv",
     youtubeId: "Q62Es9SVpwg",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -55,7 +55,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week05",
-    title: "Week 05 - Tutorial Video",
+    title: "Week 05 - [3] TRANSMITTERS",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week05%20-%20Tutorial%20Video%20%5BNVrY6MiyKDA%5D.mkv",
     youtubeId: "NVrY6MiyKDA",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -63,7 +63,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week06",
-    title: "Week 06 - Tutorial Video",
+    title: "Week 06 - [3] TRANSMITTERS",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week06%20-%20Tutorial%20Video%20%5BvlMcjOF5DyI%5D.mkv",
     youtubeId: "vlMcjOF5DyI",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -71,7 +71,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week06A",
-    title: "Week 06A - Tutorial Video",
+    title: "Week 06A - REVISION",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week06A%20-%20Tutorial%20Video%20%5BSeJNfX3uhCk%5D.mkv",
     youtubeId: "SeJNfX3uhCk",
     duration: 7500, // approximate duration in seconds (2 hours = 7200)
@@ -79,7 +79,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week07",
-    title: "Week 07 - Tutorial Video",
+    title: "Week 07 - [3] TRANSMITTERS",
     path: "VIDEOS/Week07-fixed.mp4",
     youtubeId: "cql6bwwH218",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -87,7 +87,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week08",
-    title: "Week 08 - Tutorial Video",
+    title: "Week 08 - [3] TRANSMITTERS [4] ANTENNAS",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week08%20-%20Tutorial%20Video%20%5B1QL2jvsln9c%5D.mkv",
     youtubeId: "1QL2jvsln9c",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -95,7 +95,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week09",
-    title: "Week 09 - Tutorial Video",
+    title: "Week 09 - [4] ANTENNAS",
     path: "VIDEOS/BBDL%20FULL%20COURSE%20-%20Week09%20-%20Tutorial%20Video%20%5BgeMk3hWE99I%5D.mkv",
     youtubeId: "geMk3hWE99I",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -103,7 +103,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week09A",
-    title: "Week 09A - Tutorial Video",
+    title: "Week 09A - REVISION",
     path: "VIDEOS/Week09A-fixed.mp4",
     youtubeId: "eaw6fOhoF0k",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -111,7 +111,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week10",
-    title: "Week 10 - Tutorial Video",
+    title: "Week 10 - [5] PROPAGATION",
     path: "VIDEOS/Week10-fixed.mp4",
     youtubeId: "9YDetiHKbGU",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -119,7 +119,7 @@ const VIDEO_LIBRARY = [
   },
   {
     id: "week11",
-    title: "Week 11 - Tutorial Video",
+    title: "Week 11 - [1] LICENSING",
     path: "VIDEOS/Week11-fixed.mp4",
     youtubeId: "QdAXakIJfS0",
     duration: 7200, // approximate duration in seconds (2 hours = 7200)
@@ -184,7 +184,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("35:39"),
     endTime: timestampToSeconds("48:20"),
     description:
-      "Under CEPT T/R 61-01 rules a visitor with a full licence can operate with host country rules using the host prefix and their own callsign for up to about 3 months, whilst under HAREC CEPT T/R 61-02, someone taking up permanent residence can get a host country full license with a host callsign.",
+      "Under CEPT T/R 61-01 rules a visitor with a full licence can operate with host country rules using the host prefix and their own callsign for up to about 3 months, whilst under HAREC CEPT T/R 61-02, someone taking up permanent residence can get a host country full license with a host callsign and host country rules.",
     tags: ["completed"],
   },
   {
@@ -213,7 +213,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("58:54"),
     endTime: timestampToSeconds("01:10:45"),
     description: "",
-    tags: [],
+    tags: ["circuit"],
   },
   {
     id: "week01-clip-009",
@@ -222,7 +222,27 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:10:45"),
     endTime: timestampToSeconds("01:39:06"),
     description: "",
-    tags: [],
+    tags: ["maths", "completed"],
+  },
+  {
+    id: "week01-clip-009-A",
+    videoId: "week01",
+    title: "&bull; Maths Primer: using EXP and ENG on calculator",
+    startTime: timestampToSeconds("01:30:54"),
+    endTime: timestampToSeconds("01:32:16"),
+    description:
+      "sub clip: double check that the ohm symbol is that and not a zero! ",
+    tags: ["maths", "repeat"],
+  },
+  {
+    id: "week01-clip-009-B",
+    videoId: "week01",
+    title:
+      "&bull; Maths Primer: using x<sup>-1</sup> and x<sup>2</sup> on calculator",
+    startTime: timestampToSeconds("01:33:31"),
+    endTime: timestampToSeconds("01:36:45"),
+    description: "sub clip: get the result in two different ways, to check",
+    tags: ["maths", "repeat"],
   },
   {
     id: "week02-clip-000-A",
@@ -254,11 +274,12 @@ const CLIPS_DATA = [
   {
     id: "week02-clip-003",
     videoId: "week02",
-    title: "Electricity",
+    title: "Safety and Electricity",
     startTime: timestampToSeconds("44:25"),
     endTime: timestampToSeconds("53:30"),
-    description: "",
-    tags: [],
+    description:
+      "Precautions when live working are here! Review means worth watching again.",
+    tags: ["completed", "repeat"],
   },
   {
     id: "week02-clip-004",
@@ -366,7 +387,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:20:56"),
     endTime: timestampToSeconds("01:31:38"),
     description: "",
-    tags: [],
+    tags: ["circuit"],
   },
   {
     id: "week03-clip-007",
@@ -420,7 +441,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("09:26"),
     endTime: timestampToSeconds("54:34"),
     description: "",
-    tags: [],
+    tags: ["revision"],
   },
   {
     id: "week03A-clip-001",
@@ -429,7 +450,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("54:34"),
     endTime: timestampToSeconds("01:13:30"),
     description: "",
-    tags: [],
+    tags: ["circuit", "revision"],
   },
   {
     id: "week03A-clip-002",
@@ -438,7 +459,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:13:30"),
     endTime: timestampToSeconds("01:40:15"),
     description: "",
-    tags: [],
+    tags: ["revision"],
   },
   {
     id: "week03A-clip-002",
@@ -447,7 +468,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:40:15"),
     endTime: timestampToSeconds("01:55:00"),
     description: "",
-    tags: [],
+    tags: ["revision"],
   },
   {
     id: "week04-clip-000-A",
@@ -512,7 +533,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:06:32"),
     endTime: timestampToSeconds("01:15:45"),
     description: "",
-    tags: [],
+    tags: ["circuit"],
   },
   {
     id: "week04-clip-005",

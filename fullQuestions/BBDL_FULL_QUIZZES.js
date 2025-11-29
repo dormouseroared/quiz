@@ -597,6 +597,7 @@ const BBDL_FULL_QUIZZES = [
       "Think about which ITU region Asia is in, and eliminate some options.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week02-clip-000-A",
   },
   {
     source: "BBDL QUIZ WEEK01 Q10",
@@ -1303,6 +1304,7 @@ const BBDL_FULL_QUIZZES = [
       "This is a classic type 5. Flag it and move on. Leave until the end. If time, have a fiddle. Then guess!",
     examCalculation: 0,
     exam_NOT: true,
+    clipId: "week04-clip-000-A",
   },
   {
     source: "BBDL QUIZ WEEK03A Q03",
@@ -1563,6 +1565,7 @@ materials, whereas polythene is definitely a man-made sheet material.`,
     examStrategyNotes: "",
     examCalculation: 0,
     exam_NOT: true,
+    clipId: "week04-clip-000-B",
   },
   {
     source: "BBDL QUIZ WEEK03A Q17",
@@ -2748,6 +2751,7 @@ seconds?`,
       "This hasn't been covered anywhere else, or in the manual, but it's a very useful insight.",
     examCalculation: 2,
     tagged: true,
+    clipId: "week07-clip-000-A",
   },
   {
     source: "BBDL QUIZ WEEK06A Q05",
@@ -2782,6 +2786,7 @@ be across the resistor? #AC_DIAGNOSIS`,
     tagged: true,
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FAC_Circuit_Analysis_Diagnostic",
+    clipId: "week07-clip-000-B",
   },
   {
     source: "BBDL QUIZ WEEK06A Q06",
@@ -3255,6 +3260,7 @@ no such thing as local rating for that <mark>not relevant</mark> <hr>
       "There is a lot to take in on this one. The explanation is well laid out.",
     examCalculation: 0,
     tagged: true,
+    clipId: "week07-clip-000-C",
   },
   {
     source: "BBDL QUIZ WEEK06A Q22",
@@ -5319,6 +5325,379 @@ made up term, so not that one.`,
     reference: "",
     examStrategy: 3,
     examStrategyNotes: "Keep it together! L _ _ _",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q01",
+    question: `When operating under normal circumstances (i.e. not during an emergency, disaster or related exercise), who are you allowed to address your transmissions to?`,
+    image: "",
+    options: [
+      "Amateur radio stations and members of the User Services",
+      "Anyone who may be listening at the time",
+      "One or more amateur radio station(s)",
+      "Any licensed radio station",
+    ],
+    correct: 2,
+    explanation: `Licence 6-19a is the key part of the Licence, with 6-20 adding a 
+little to the mix. ‘a’ is not correct because you can only address transmissions to the User 
+Services in times of emergency or disaster, or related exercises (Clause 6-5 refers). ‘b’ is 
+wrong because 6-20 rules out making transmissions ‘for general reception’ (i.e. by anyone 
+who is listening at the time). ‘d’ is wrong because there are all sorts of licensed radio 
+stations who are nor amateur radio stations. `,
+    lookup: "See page(s) 6 of the Full Licence Manual",
+    syllabus: "1c.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "I found (6-19) but managed to convert 'transmissions are only afddressed to one or more amateur radio station(s)' to include 'licensed'. Grrrr!!!!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: true,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q02",
+    question: `When are you allowed to encrypt your transmissions so as to obscure their meaning?`,
+    image: "",
+    options: [
+      "Never",
+      "From time to time",
+      "Only when assisting an Ofcom interference investigation",
+      "When operating under Licence 6-5 and for control signals in the amateur satellite service",
+    ],
+    correct: 3,
+    explanation: `Licence 6-19b says encryption is not allowed, except for control 
+signals between earth command stations and space stations in the amateur satellite 
+service. The opening sentence of 6-19 also exempts the operation ‘for the purpose of 
+clause 5’, which is actually Licence 6-5. Joining these together makes ‘d’ the only one that 
+fits the Licence. `,
+    lookup: "See page(s) 6 of the Full Licence Manual",
+    syllabus: "1c.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "Have not seen the reference to control signals before, but that is the one.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q03",
+    question: `Why is it illegal to add a suffix to your callsign that is grossly offensive?`,
+    image: "",
+    options: [
+      "Because it is specifically outlawed in the Ofcom document OFW611; Condition 6-24",
+      "Because it is specifically outlawed, in three languages, in the Licence document that issues a callsign",
+      "Because radio amateurs are keen to be friends with everyone, so would not want to do anything to upset anyone",
+      "Because all amateur radio transmissions are governed by the Wireless Telegraphy (Content of Transmission) Regulations 1988",
+    ],
+    correct: 3,
+    explanation: `The syllabus requires you to ‘understand that people of all 
+ages and backgrounds participate in amateur radio and that messages must not cause 
+offence, particularly in the context of the relevant legislation including the Wireless 
+Telegraphy (Content of Transmission) Regulations 1988’. This cannot be found in 
+EX309 as it is not in the Licence Conditions booklet. If you refer to Ofcom guidance,
+section 5.8, it covers this topic in more detail.  It is specifically covered on page 27 of the Foundation textbook.`,
+    lookup: "See page(s) 12 of the Full Licence Manual",
+    syllabus: "1c.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Straightforward.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q04",
+    question: `To what extent must the Licence holder avoid causing interference to other wireless telegraphy?`,
+    image: "",
+    options: [
+      "There must be zero interference to other wireless telegraphy",
+      "There must be no undue interference to other wireless telegraphy",
+      "There must be only trivial levels of interference to other wireless telegraphy",
+      "There are no restrictions on radio amateurs causing interference to other wireless telegraphy",
+    ],
+    correct: 1,
+    explanation: `Licence 6-2 specifies the requirement and ‘no undue 
+interference’ is the standard; what that means is wide open to interpretation! However, it 
+is clear from the wording that a little bit of interference that does not prevent the other 
+wireless telegraphy from operating is considered acceptable.`,
+    lookup: "See page(s) 6-7 of the Full Licence Manual",
+    syllabus: "1d.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Straightforward",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q05",
+    question: `If your Radio Equipment is suspected of causing or contribution to Undue Interference to the authorised use of other radio equipment, who can close down your Radio Equipment?`,
+    image: "",
+    options: [
+      "A police officer",
+      "A person authorised by Ofcom",
+      "A member of the RSGB EMC Committee",
+      "A person authorised by the UK Health Security Agency",
+    ],
+    correct: 1,
+    explanation: `Licence 8-1 is the key part of the Licence for this question, in 
+particular 8-1b. The police would only be able to close down your Radio Equipment if they 
+suspected you were committing a crime, so not ‘a’. The RSGB EMC Committee have no 
+enforcement powers, so not ‘c’. UK HSA only have powers relating to health risks, not 
+radio interreference, so not ‘d’. `,
+    lookup: "See page(s) 6-7 of the Full Licence Manual",
+    syllabus: "1d.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes: "Straightforward",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q06",
+    question: `Why should you have radio equipment to allow you to receive on every frequency and mode that you transmit on?`,
+    image: "",
+    options: [
+      "Because the RSGB requires it",
+      "Because the Licence Conditions require it",
+      "Because you need to be able to monitor your own signals in order to ensure that they are stable and free from excessive bandwidth",
+      "Because you need to know that before you transmit, the frequency is not in use by any other radio amateur located anywhere in the world",
+    ],
+    correct: 2,
+    explanation: ` The syllabus requires you to understand the need to understand 
+the need to have equipment for the reception of messages on all frequencies and modes 
+in use for transmissions. However, that cannot be found in the Licence Conditions, or in 
+Ofcom Guidance. So, let’s work through the answers; ‘a’ is not true as the RSGB cannot 
+require you to do anything when operating your station, ‘b’ is wrong because the Licence 
+says nothing of the sort, ‘c’ is kind of logical, if you are to ensure that you are not causing 
+undue interference and ‘d’ would be impossible as there may be stations using the same 
+frequency in another continent that you simply cannot hear. `,
+    lookup: "See page(s) 6-7 of the Full Licence Manual",
+    syllabus: "1d.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "I thought this was an easy one, 'because the Licence Conditions require it', but evidently not.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: true,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q07",
+    question: `What does the Licence say that a person authorised by Ofcom can do if they find that you are causing Undue Interference to other radio users?`,
+    image: "",
+    options: [
+      "Issue an improvement notice giving a fixed timescale to rectify the faulty radio equipment",
+      "Require your Radio Equipment to be temporarily or permanently closed down",
+      "Confiscate the offending equipment and provide a written receipt",
+      "Issue an instant fine",
+    ],
+    correct: 1,
+    explanation: `Licence 8-1 sets out what a person authorised by Ofcom can do 
+in case of Undue Interference. Closing the station with immediate effect is one of their 
+options. `,
+    lookup: "See page(s) 6-7 of the Full Licence Manual",
+    syllabus: "1d.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "See (8-1)",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q08",
+    question: `In 2021, Ofcom introduced a mandatory requirement for all UK Licence Holders to carry out risk assessments on their radio frequency radiation. The assessments are based on exposure levels recommended by ICNIRP and advice concerning safe levels of exposure to radio frequency radiation provided by the UK Health Security Agency (UKHSA). In this context, which of the following statements does the Licence support?`,
+    image: "",
+    options: [
+      "Licensees must adhere to the provisions set out in UKHSA's Guide to Amateur Radio Exposure Levels",
+      "Licensees must adhere to the provisions set out in Condition 9 of their Licence",
+      "Licensees must always operate at the maximum power limits set out in Schedule 1 of their Licence",
+      "Licensees must only operate if their EMF Risk Assessment has been approved by an officer of the Radio Society of Great Britain",
+    ],
+    correct: 1,
+    explanation: `A check in EX309 will confirm that Licence 6-3 requires 
+compliance with Condition 9, which is all about EMF compliance. All other answers are 
+just plain wrong.`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "1g.1",
+    reference: "",
+    examStrategy: 1,
+    examStrategyNotes:
+      "Straightforward, just look to check that (9) is the one.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q09",
+    question: `Assuming nothing else changes, an increase in which of the following would result in a reduction in the EMF compliance distance?`,
+    image: "",
+    options: [
+      "Microphone gain when using SSB",
+      "Average talk time percentage",
+      "Gain of the antenna",
+      "Loss in the feeder",
+    ],
+    correct: 3,
+    explanation: `Answers ‘a’, ‘b’ and ‘c’ would all result in a higher value of EIRP, 
+so would all increase the compliance distance. If there is more feeder loss, then less power 
+will arrive at the antenna and the EIRP will reduce, and the compliance distance will 
+therefore be reduced. `,
+    lookup: "See page(s) 8-9 of the Full Licence Manual",
+    syllabus: "1g.1",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes:
+      "I chose gain of the antenna... I read reduction as an increase!! Need some way to get the question decoded. Write it down!!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: true,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q10",
+    question: `The 24MHz amateur allocation in the UK lies between:`,
+    image: "",
+    options: [
+      "24.590 – 24.690MHz",
+      "24.890 – 24.990MHz",
+      "24.990 – 24.999MHz",
+      "24.999 – 25.000MHz",
+    ],
+    correct: 1,
+    explanation: `Reference to Schedule 1, Table C of the Licence Document shows 
+that ‘b’ is the correct answer.`,
+    lookup: "See page(s) 9-10 of the Full Licence Manual",
+    syllabus: "1h.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Just look it up.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q11",
+    question: `If your Radio Club decided to build a satellite and get it launched for use by all radio amateurs. On which of the following bands would it be allowed to operate on?`,
+    image: "",
+    options: ["6m", "12m", "60m", "160m"],
+    correct: 1,
+    explanation: `You need to convert the 4 bands to frequencies and then 
+compare them with the Schedule to check the status of the Amateur Satellite Service for 
+those bands. Only answer ‘b’ includes a satellite allocation.`,
+    lookup: "See page(s) 9-10 of the Full Licence Manual",
+    syllabus: "1h.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Have to convert wavelength to frequency and look each one up in Table C.",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q12",
+    question: `Which of the following amateur bands is available on the basis of non-interference to other services outside the UK or Crown Dependencies?`,
+    image: "",
+    options: [
+      "1240 to 1260 MHz",
+      "431 to 432 MHz",
+      "50 to 51 MHz",
+      "47.0 to 47.2 GHz",
+    ],
+    correct: 2,
+    explanation: `Simple look up question. Find each of the frequency bands listed 
+in the Schedule until you find the one with the restriction quoted in the question. `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "1h.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Just look each one up in Table C.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q13",
+    question: `What is the maximum Peak Envelope Power level permitted on the 23cm band?`,
+    image: "",
+    options: ["1000W", "400W", "160W", "40W"],
+    correct: 1,
+    explanation: `Once you have converted 23cm to 1304 MHz, it is a simple look 
+up question. Find 1305 MHz in the Schedule (part of the 1270 to 1325 MHz band) and 
+read across to the end column.`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "1h.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "Convert wavelength to frequency, then look up in Table C for the band 1270 to 1325MHz",
+    examCalculation: 2,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q14",
+    question: `On which of the following bands is the use of an Unattended Beacon NOT permitted within 50 km of National Grid Reference TA 012869?`,
+    image: "",
+    options: [
+      "28.0 - 29.7 MHz",
+      "144 – 146 MHz",
+      "1240 – 1325 MHz",
+      "24.0 – 24.050 GHz",
+    ],
+    correct: 1,
+    explanation: `Reference to Schedule 1, Table 2 in the Notice of Coordination 
+(in EX309) shows that ‘b’ is the correct answer. `,
+    lookup: "See page(s) 10 of the Full Licence Manual",
+    syllabus: "1h.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "The Notice of Coordination at theend of EX309 is all about restrictions. This is the second one in Table 2.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK11 Q15",
+    question: `Who do you need to obtain clearance approval from if you intend to set up a data station on 1250MHz before you make any transmissions?`,
+    image: "",
+    options: [
+      "Ofcom, the CAA and the MOD",
+      "Ofcom and the RSGB",
+      "Ofcom and the CAA",
+      "Ofcom",
+    ],
+    correct: 3,
+    explanation: `In the Notice of Coordination (included in EX309) the Ofcom co-ordination process says that you need to get clearance approval from Ofcom, because 
+they will need to coordinate with the CAA and MOD. However, you, the Licensee only 
+need Ofcom’s clearance. `,
+    lookup: "See page(s) 9-10 of the Full Licence Manual",
+    syllabus: "1h.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Another cracker from the Notice of Coordination right at the very end in the Ofcom Coordination Process.",
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
