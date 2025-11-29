@@ -819,10 +819,10 @@ const BBDL_FULL_QUIZZES = [
     explanation: `Operating after dusk means the park is closed and there is no reason to expect the general public to be present, so 'a' is sound. Reducing your power so the park is no longer in the exclusion zone is absolutely compliant, so 'b' is fine. Placing a warning sign on the bench does not mean it will be followed, and the general public may be walking near the bench, so 'c' would NOT ensure compliance. Increasing the height of the antenna so the horizontal separation distance is zero is another good way of complying, as far as the bench is concerned. How to comply with the EMF restriction is not well covered in the textbook.`,
     lookup: "See BBDL Week 1 Tutorial",
     syllabus: "1g.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 2,
+    examStrategyNotes: "Just think this one through.",
     examCalculation: 0,
-    exam_NOT: false,
+    exam_NOT: true,
   },
   {
     source: "BBDL QUIZ WEEK02 Q06",
@@ -938,7 +938,8 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) 14-15 of the Full Licence text book",
     syllabus: "8f.7",
     examStrategy: 1,
-    examStrategyNotes: "Drill",
+    examStrategyNotes:
+      "Hazards give rise to risks, the actual events that could occur.",
     examCalculation: 0,
     exam_NOT: false,
   },

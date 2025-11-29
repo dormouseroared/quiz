@@ -156,7 +156,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("13:03"),
     endTime: timestampToSeconds("18:07"),
     description: "",
-    tags: [],
+    tags: ["complete"],
   },
   {
     id: "week01-clip-003",
@@ -175,7 +175,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("21:19"),
     endTime: timestampToSeconds("35:39"),
     description: "",
-    tags: [],
+    tags: ["repeat"],
   },
   {
     id: "week01-clip-005",
@@ -203,8 +203,8 @@ const CLIPS_DATA = [
     title: "Resistors in Series and Parallel",
     startTime: timestampToSeconds("56:27"),
     endTime: timestampToSeconds("58:54"),
-    description: "",
-    tags: [],
+    description: "Where to find revision material.",
+    tags: ["complete"],
   },
   {
     id: "week01-clip-008",
@@ -213,7 +213,26 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("58:54"),
     endTime: timestampToSeconds("01:10:45"),
     description: "",
-    tags: ["circuit"],
+    tags: ["circuit", "complete"],
+  },
+  {
+    id: "week01-clip-008-A",
+    videoId: "week01",
+    title: "&bull; Bridge Circuit Worked Examples",
+    startTime: timestampToSeconds("01:04:11"),
+    endTime: timestampToSeconds("01:07:21"),
+    description: "Subclip: Some worked example of a bridged circuit.",
+    tags: ["circuit", "repeat"],
+  },
+  {
+    id: "week01-clip-008-B",
+    videoId: "week01",
+    title: "&bull; Bridge Circuit Practical Examples",
+    startTime: timestampToSeconds("01:07:21"),
+    endTime: timestampToSeconds("01:10:45"),
+    description:
+      "Subclip: Diode in place of Voltmeter, SWR Indicator, LCR Meter",
+    tags: ["circuit", "repeat"],
   },
   {
     id: "week01-clip-009",
@@ -232,7 +251,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:32:16"),
     description:
       "sub clip: double check that the ohm symbol is that and not a zero! ",
-    tags: ["maths", "repeat"],
+    tags: ["maths", "repeat", "completed"],
   },
   {
     id: "week01-clip-009-B",
@@ -242,7 +261,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:33:31"),
     endTime: timestampToSeconds("01:36:45"),
     description: "sub clip: get the result in two different ways, to check",
-    tags: ["maths", "repeat"],
+    tags: ["maths", "repeat", "completed"],
   },
   {
     id: "week02-clip-000-A",
@@ -251,7 +270,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("04:36"),
     endTime: timestampToSeconds("08:19"),
     description: "",
-    tags: ["quizreview"],
+    tags: ["quizreview", "licensing"],
   },
   {
     id: "week02-clip-001",
@@ -260,7 +279,17 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("15:59"),
     endTime: timestampToSeconds("29:39"),
     description: "",
-    tags: [],
+    tags: ["complete", "circuit", "technical"],
+  },
+  {
+    id: "week02-clip-001-A",
+    videoId: "week02",
+    title: "&bull; Big Resistor Network Worked Example",
+    startTime: timestampToSeconds("17:16"),
+    endTime: timestampToSeconds("28:42"),
+    description:
+      "subclip: showing how to use series and parallel calculations to compress the circuit and find equivalent resistor, current and power",
+    tags: ["subclip", "circuit", "repeat", "technical"],
   },
   {
     id: "week02-clip-002",
@@ -268,8 +297,9 @@ const CLIPS_DATA = [
     title: "Hazards, Risks & Assessments",
     startTime: timestampToSeconds("29:39"),
     endTime: timestampToSeconds("44:25"),
-    description: "",
-    tags: [],
+    description:
+      "Risk assessment. Record keeping: ONLY NEED TO RECORD SIGNIFICANT FINDINGS.",
+    tags: ["safety", "completed"],
   },
   {
     id: "week02-clip-003",
@@ -278,8 +308,8 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("44:25"),
     endTime: timestampToSeconds("53:30"),
     description:
-      "Precautions when live working are here! Review means worth watching again.",
-    tags: ["completed", "repeat"],
+      "Precautions when live working are here! Repeat means worth watching again.",
+    tags: ["safety", "completed", "repeat"],
   },
   {
     id: "week02-clip-004",
@@ -288,16 +318,25 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("53:30"),
     endTime: timestampToSeconds("59:50"),
     description: "",
-    tags: [],
+    tags: ["safety", "completed", "repeat"],
   },
   {
     id: "week02-clip-005",
     videoId: "week02",
-    title: "Temporary Premises",
+    title: "Temporary Premises for Big Events",
     startTime: timestampToSeconds("59:50"),
     endTime: timestampToSeconds("01:04:53"),
+    description: "Presence of General Pubic means a Risk Assessment is needed.",
+    tags: ["safety", "completed"],
+  },
+  {
+    id: "week02-clip-005-A",
+    videoId: "week02",
+    title: "&bull; Overseas Mains Power",
+    startTime: timestampToSeconds("01:03:05"),
+    endTime: timestampToSeconds("01:04:53"),
     description: "",
-    tags: [],
+    tags: ["safety", "subclip", "repeat", "completed"],
   },
   {
     id: "week02-clip-006",
@@ -305,8 +344,9 @@ const CLIPS_DATA = [
     title: "Generators",
     startTime: timestampToSeconds("01:04:53"),
     endTime: timestampToSeconds("01:10:15"),
-    description: "",
-    tags: [],
+    description:
+      "Use in accordance with manufacturers instructions, including refuelling and earthing. Keep fire extinguisher somewhere in between generator and fuel location.",
+    tags: ["safety", "completed"],
   },
   {
     id: "week02-clip-007",
@@ -314,8 +354,9 @@ const CLIPS_DATA = [
     title: "Mobile or Maritime Mobile",
     startTime: timestampToSeconds("01:10:15"),
     endTime: timestampToSeconds("01:15:12"),
-    description: "",
-    tags: [],
+    description:
+      "Insecure equipment can become like a missile in an emergency stop. Antennas can hit the general public. Engine Management systems can be impaired by RF. Exclusion Zone.",
+    tags: ["safety", "repeat", "completed"],
   },
   {
     id: "week02-clip-008",
@@ -323,8 +364,8 @@ const CLIPS_DATA = [
     title: "Lightning",
     startTime: timestampToSeconds("01:15:12"),
     endTime: timestampToSeconds("01:22:46"),
-    description: "",
-    tags: [],
+    description: "See Radcom article in Week02 folder.",
+    tags: ["safety", "completed", "repeat"],
   },
   {
     id: "week02-clip-009",
@@ -333,7 +374,26 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:22:46"),
     endTime: timestampToSeconds("01:50:37"),
     description: "",
-    tags: [],
+    tags: ["safety", "completed"],
+  },
+  {
+    id: "week02-clip-009-A",
+    videoId: "week02",
+    title: "&bull; Ofcom EMF Assessment Process",
+    startTime: timestampToSeconds("01:31:35"),
+    endTime: timestampToSeconds("01:48:05"),
+    description:
+      "Use the online calculator to check that the general public are being kept safe.",
+    tags: ["subclip", "safety", "repeat"],
+  },
+  {
+    id: "week02-clip-009-B",
+    videoId: "week02",
+    title: "&bull; EMF in emergency situations",
+    startTime: timestampToSeconds("01:48:05"),
+    endTime: timestampToSeconds("01:50:25"),
+    description: "",
+    tags: ["subclip", "safety", "repeat"],
   },
   {
     id: "week03-clip-001",
