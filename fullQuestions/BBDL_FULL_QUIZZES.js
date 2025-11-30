@@ -1100,7 +1100,7 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2e.4",
     examStrategy: 2,
-    examStrategyNotes: "",
+    examStrategyNotes: "Drill.",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -1205,7 +1205,8 @@ const BBDL_FULL_QUIZZES = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.1",
     examStrategy: 3,
-    examStrategyNotes: "Update this when you next answer this for real.",
+    examStrategyNotes:
+      "Rearrange the formula for resonant frequency on EX309 and use the calculator, after writing it out on paper.",
     examCalculation: 3,
     exam_NOT: false,
   },
@@ -1247,7 +1248,7 @@ const BBDL_FULL_QUIZZES = [
     tagged: true,
     examStrategy: 4,
     examStrategyNotes:
-      "Drill. See EX309 for resonant frequency, and Q which is C1R8.",
+      "Drill. See EX309 for resonant frequency, and Magnification Q which is C1R8.",
     examCalculation: 3,
     exam_NOT: false,
   },
