@@ -2871,6 +2871,18 @@ const syllabusItems = [
     subTitle: "AM, SSB and FM modulators",
     text: "Understand the operation of AM, SSB and FM modulators.",
     weeks: ["5", "6"],
+    flashcards: [
+      {
+        subTitle: "balanced modulator",
+        sequence: "000",
+        front: "What is this circuit, and what does it do?",
+        frontImage: "secrets-full-paper-22.png",
+        back: "The image overleaf is a balanced modulator, which contains upper and lower sidebands, with the original audio and the carrier itself balanced out. The image this side is a circuit to remove a sideband.",
+        backImage: "bbdl-quizzes-week05-remove-sideband.png",
+        reference: "",
+        id: "656ff22a",
+      },
+    ],
   },
   {
     key: "3e.1",
@@ -2945,7 +2957,7 @@ const syllabusItems = [
         back: "",
         backImage: "week06-p9-summary.png",
         reference: "week06 tutorial slides p9",
-        id: "540229e6-dc35-4c4b-8fd2-bb445f272f72",
+        id: "540229e6",
       },
     ],
   },

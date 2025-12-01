@@ -1274,6 +1274,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategyNotes: "Drill...",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week05-clip-003-D",
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3B1-2",
@@ -1292,9 +1293,11 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3b.1",
     examStrategy: 2,
-    examStrategyNotes: "At last a straightforward question.",
-    examCalculation: 0,
+    examStrategyNotes:
+      "At last a straightforward question. Remember to ___ MODULATE THEN MIX ___.",
+    examCalculation: 1,
     exam_NOT: false,
+    clipId: "week05-clip-003-D",
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3C1-1",

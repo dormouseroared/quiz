@@ -8,30 +8,30 @@
 
 ## 📊 Summary
 
-| Metric | Value |
-|--------|------:|
-| Total Flashcards | **1** |
-| Items with Flashcards | 1 / 10 |
-| Items Needing Flashcards | 9 |
-| Average per Item | 0.10 |
-| Coverage | **10.0%** |
+| Metric                   | Value     |
+| ------------------------ | ---------:|
+| Total Flashcards         | **1**     |
+| Items with Flashcards    | 1 / 10    |
+| Items Needing Flashcards | 9         |
+| Average per Item         | 0.10      |
+| Coverage                 | **10.0%** |
 
 ---
 
 ## 📋 Detailed Breakdown
 
-| Key | Topic | Cards | Status |
-|:---:|:------|------:|:------:|
-| 1c.1 | Messages | 0 | ⚠️ TODO |
-| 1c.1 | Messages | 0 | ⚠️ TODO |
-| 1c.1 | Messages | 0 | ⚠️ TODO |
-| 1c.1 | Messages | 0 | ⚠️ TODO |
+| Key  | Topic                               | Cards | Status  |
+|:----:|:----------------------------------- | -----:|:-------:|
+| 1c.1 | Messages                            | 0     | ⚠️ TODO |
+| 1c.1 | Messages                            | 0     | ⚠️ TODO |
+| 1c.1 | Messages                            | 0     | ⚠️ TODO |
+| 1c.1 | Messages                            | 0     | ⚠️ TODO |
 | 1d.1 | Apparatus, inspection and closedown | **1** | ✅ Ready |
-| 1d.1 | Apparatus, inspection and closedown | 0 | ⚠️ TODO |
-| 1d.1 | Apparatus, inspection and closedown | 0 | ⚠️ TODO |
-| 1d.1 | Apparatus, inspection and closedown | 0 | ⚠️ TODO |
-| 1g.1 | Electromagnetic fields | 0 | ⚠️ TODO |
-| 1h.1 | Licence Schedule | 0 | ⚠️ TODO |
+| 1d.1 | Apparatus, inspection and closedown | 0     | ⚠️ TODO |
+| 1d.1 | Apparatus, inspection and closedown | 0     | ⚠️ TODO |
+| 1d.1 | Apparatus, inspection and closedown | 0     | ⚠️ TODO |
+| 1g.1 | Electromagnetic fields              | 0     | ⚠️ TODO |
+| 1h.1 | Licence Schedule                    | 0     | ⚠️ TODO |
 
 ---
 

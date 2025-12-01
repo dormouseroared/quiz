@@ -821,7 +821,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("03:27"),
     endTime: timestampToSeconds("17:19"),
     description: "",
-    tags: ["completed", "repeat"],
+    tags: ["transmitters", "completed", "repeat"],
   },
   {
     id: "week05-clip-002",
@@ -829,8 +829,8 @@ const CLIPS_DATA = [
     title: "Transmitters Overview at Full Level",
     startTime: timestampToSeconds("17:19"),
     endTime: timestampToSeconds("18:03"),
-    description: "",
-    tags: [],
+    description: "Slide 9 is a list of topics to be covered in Week05.",
+    tags: ["transmitters", "completed"],
   },
   {
     id: "week05-clip-003",
@@ -838,8 +838,59 @@ const CLIPS_DATA = [
     title: "Changing Frequency: mixers and multipliers",
     startTime: timestampToSeconds("18:03"),
     endTime: timestampToSeconds("44:30"),
+    description:
+      "The sideband (band pass) filter of an SSB transmitter would historically be fixed to a very narrow frequency. This meant that some way was needed to be able to generate a range of final frequencies. Possible options include a mixer and a multiplier.",
+    tags: ["transmitters"],
+  },
+  {
+    id: "week05-clip-003-A",
+    videoId: "week05",
+    title: "&bull; Changing Frequency: Introduction",
+    startTime: timestampToSeconds("18:03"),
+    endTime: timestampToSeconds("22:22"),
     description: "",
-    tags: [],
+    tags: ["transmitters", "subclip", "repeat"],
+  },
+  {
+    id: "week05-clip-003-B",
+    videoId: "week05",
+    title: "&bull; Changing Frequency: Mixer and multiplier",
+    startTime: timestampToSeconds("22:22"),
+    endTime: timestampToSeconds("32:13"),
+    description:
+      "Must be able to spot a mixer circuit (the one with four diodes with two inputs and one output). In the pre-sdr world, the bank of low pass filters would be used. Class C amplifiers are used to create harmonics for the multiplier. The multiplier cannot be used for AM or SSB, but can be for CW and FM.",
+    tags: ["transmitters", "subclip", "repeat"],
+  },
+  {
+    id: "week05-clip-003-C",
+    videoId: "week05",
+    title:
+      "&bull; Changing Frequency: Why multipliers cannot be used for AM or SSB",
+    startTime: timestampToSeconds("32:13"),
+    endTime: timestampToSeconds("38:00"),
+    description: "",
+    tags: ["transmitters", "subclip", "repeat"],
+  },
+  {
+    id: "week05-clip-003-D",
+    videoId: "week05",
+    title:
+      "&bull; SSB transmitter using mixers to generate the final frequency",
+    syllabus: "3b.1",
+    startTime: timestampToSeconds("38:08"),
+    endTime: timestampToSeconds("40:10"),
+    description:
+      "SSB is generated at one frequency for all bands, then tuned circuits after the mixer will ensure either SUM or DIFFERENCE is selected. A bank of low pass filters will be required in a multi-band transmitter. Remember to ___ MODULATE THEN MIX ___.",
+    tags: ["transmitters", "subclip", "repeat"],
+  },
+  {
+    id: "week05-clip-003-E",
+    videoId: "week05",
+    title: "&bull; FM Transmitter using Mixer and Multiplier",
+    startTime: timestampToSeconds("40:12"),
+    endTime: timestampToSeconds("44:30"),
+    description: "",
+    tags: ["transmitters", "subclip", "repeat"],
   },
   {
     id: "week05-clip-004",
@@ -849,36 +900,36 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:05:44"),
     description:
       "Includes Intro & Drift, then (1) Crystal Oscillator (2) VFO based on LC circuit (3) PLL (4) DDS",
-    tags: [],
+    tags: ["transmitters"],
   },
   {
-    id: "week05-clip-004a",
+    id: "week05-clip-004-A",
     videoId: "week05",
     title: "&bull; Crystal & VFO Oscillator Circuit",
     startTime: timestampToSeconds("45:40"),
     endTime: timestampToSeconds("50:45"),
     description:
       "Oscillators & Frequency Multipliers: PART ONE. To maintain oscillation there must be a feedback path from the output back to the input.",
-    tags: ["circuit"],
+    tags: ["transmitters", "circuit", "subclip"],
   },
   {
-    id: "week05-clip-004b",
+    id: "week05-clip-004-B",
     videoId: "week05",
     title: "&bull; Phase Lock Loop (PLL)",
     startTime: timestampToSeconds("50:45"),
     endTime: timestampToSeconds("01:00:45"),
     description:
       "Oscillators & Frequency Multipliers: PART TWO. Includes the formula to calculate VFO frequency from crystal frequency etc.",
-    tags: ["circuit"],
+    tags: ["transmitters", "circuit", "subclip"],
   },
   {
-    id: "week05-clip-004c",
+    id: "week05-clip-004-C",
     videoId: "week05",
     title: "&bull; Direct Digital Synthesiser (DDS)",
     startTime: timestampToSeconds("01:00:45"),
     endTime: timestampToSeconds("01:05:44"),
     description: "Oscillators & Frequency Multipliers: PART THREE.",
-    tags: ["circuit"],
+    tags: ["transmitters", "circuit", "subclip"],
   },
   {
     id: "week05-clip-005",
@@ -887,7 +938,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:06:51"),
     endTime: timestampToSeconds("01:25:44"),
     description: "",
-    tags: [],
+    tags: ["transmitters"],
   },
   {
     id: "week05-clip-006",
@@ -896,7 +947,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:25:44"),
     endTime: timestampToSeconds("01:39:38"),
     description: "",
-    tags: [],
+    tags: ["transmitters"],
   },
   {
     id: "week06-clip-002",
