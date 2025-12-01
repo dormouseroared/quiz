@@ -478,7 +478,7 @@ export const diagramQuizCards = [
         y: 88.58331298828125,
         width: 60,
         height: 147,
-        label: "Chop",
+        label: "Chop (DC to pulses at 30-60kHz)",
       },
       {
         id: 1761825448418,
@@ -486,7 +486,7 @@ export const diagramQuizCards = [
         y: 89.58331298828125,
         width: 107,
         height: 145,
-        label: "Transform",
+        label: "Transform (Reduce AC pulse voltage)",
       },
       {
         id: 1761825471580,
@@ -510,7 +510,7 @@ export const diagramQuizCards = [
         y: 266.58331298828125,
         width: 96,
         height: 74,
-        label: "Feedback Control",
+        label: "Feedback Control Loop",
       },
     ],
     createdAt: "2025-10-30T11:59:07.770Z",
