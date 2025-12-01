@@ -324,7 +324,8 @@ class VideoNavigator {
   }
 
   showStatus(message, type = "info") {
-    this.statusMessage.textContent = message
+    // this.statusMessage.textContent = message
+    this.statusMessage.innerHTML = message
     this.statusMessage.style.display = "block"
 
     // Auto-hide after 3 seconds
