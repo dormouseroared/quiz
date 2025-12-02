@@ -355,8 +355,9 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3g.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 2,
+    examStrategyNotes:
+      "Keep an eye open for those inter-modulation products...",
     examCalculation: 0,
     exam_NOT: false,
   },

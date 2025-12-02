@@ -1101,10 +1101,14 @@ const CLIPS_DATA = [
   {
     id: "week06-clip-014",
     videoId: "week06",
-    title: "Overmodulation",
+    title:
+      "Operator Fault: Too much audio from mic causes OVERMODULATION (SPLATTER)",
+    syllabus: "3g.1",
+    referencce: "Full Licence manual pp 55-56",
     startTime: timestampToSeconds("01:40:05"),
     endTime: timestampToSeconds("01:43:05"),
-    description: "",
+    description:
+      "Over-modulation on AM and SSB, or over-deviation on FM, can cause harmonics of the AUDIO frequencies, so a normal Audio Frequency (AF) bandwidth of 3kHz can become 6-9kHz or more, so AF occupies a wider bandwidth (potential to stray into an adjacent channel and cause UNDUE interference) and sounds distorted, and the RF created will also have excessive bandwidth, flat-topping and extra sidebands (FM). To prevent this problem, use the microphone gain control (or speak more quietly) to keep AM modulation below 100% (80% is recommended) and keep FM deviation within limits.",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1194,9 +1198,10 @@ const CLIPS_DATA = [
     id: "week07-clip-000-C",
     videoId: "week07",
     title: "Quiz Review: Week06A Q21 (Travel to another country)",
-    startTime: timestampToSeconds("20:31"),
+    startTime: timestampToSeconds("20:33"),
     endTime: timestampToSeconds("29:10"),
-    description: "",
+    description:
+      "If this sort of question is towards the end of the exam, it will probably involve safety, so there's a clue there possibly.",
     tags: ["quizreview"],
   },
   {
