@@ -2484,6 +2484,7 @@ viable answer, although harmonics would also be likely. S`,
     examStrategy: 4,
     examStrategyNotes: "Choose an answer based on evaluation of each option.",
     examCalculation: 0,
+    tagged: true,
   },
   {
     source: "BBDL QUIZ WEEK06 Q11",

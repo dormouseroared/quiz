@@ -143,6 +143,7 @@ class VideoNavigator {
                     ${this.formatTime(clip.startTime)} → ${this.formatTime(clip.endTime)}
                     (${this.formatDuration(clip.endTime - clip.startTime)})
                 </div>
+                <div class="clip-id">${clip.id}</div>
                 ${clip.syllabus ? `<div class="clip-syllabus">syllabus: ${clip.syllabus}</div>` : ""}
                 ${clip.description ? `<div class="clip-description">${clip.description}</div>` : ""}
                 ${clip.tags && clip.tags.length > 0 ? `<div class="clip-tags">${clip.tags.map((tag) => tag.toUpperCase()).join(" &bull; ")}</div>` : ""}
