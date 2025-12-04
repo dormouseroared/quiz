@@ -743,7 +743,7 @@ function showExamStrategy(q) {
     if (q.clipId) {
       display += ` <span onclick="window.open('video-clips/video-clip-navigator.html?clip=${q.clipId}', '_blank'); return false;" 
                   style="text-decoration: none; cursor: pointer; font-size: 26px;" 
-                  title="View related video clip">&nbsp;&nbsp;▶️</span>`
+                  title="View related video clip ${q.clipId}">&nbsp;&nbsp;▶️</span>`
     }
 
     if (q.examStrategyNotes) {
