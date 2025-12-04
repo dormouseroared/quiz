@@ -489,6 +489,7 @@ const RSGB_FULL_MOCK_3 = [
       "Fairly straightforward. Look at the IF implied by FIRST_LO MINUS WANTED, then work out WANTED MINUS SECOND_LO for the same IF.",
     examCalculation: 1,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 3 Q28",
@@ -525,9 +526,10 @@ const RSGB_FULL_MOCK_3 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3j.1",
     examStrategy: 3,
-    examStrategyNotes: "Drill!",
+    examStrategyNotes: "Move it!",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 3 Q30",

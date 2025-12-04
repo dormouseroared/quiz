@@ -471,6 +471,7 @@ const RSGB_FULL_MOCK_2 = [
     examStrategyNotes: "Drill",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-013",
   },
   {
     source: "RSGB Full Mock 2 Q27",
@@ -487,9 +488,10 @@ const RSGB_FULL_MOCK_2 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3j.1",
     examStrategy: 5,
-    examStrategyNotes: "More learning materials",
+    examStrategyNotes: "Take this up with Claude",
     examCalculation: 2,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 2 Q28",

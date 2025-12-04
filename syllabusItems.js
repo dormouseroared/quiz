@@ -3705,7 +3705,7 @@ const syllabusItems = [
     key: "3m.3",
     level: "intermediate",
     title: "SDR transmitters and receivers",
-    text: "Recall the different elements that make up the functions of an SDR(block diagram).",
+    text: "Recall the different elements that make up the functions of an SDR (block diagram).",
   },
   {
     key: "3n.1",
@@ -3743,7 +3743,8 @@ const syllabusItems = [
     key: "3n.2",
     level: "full",
     title: "Transceivers",
-    subTitle: "EXtra care to avoid transmitting out of band",
+    subTitle:
+      "When using a transverter, extra care needed to avoid transmitting out of band",
     text: "Understand the need for extra care to avoid transmitting out of band when using a transverter.",
     weeks: ["8"],
   },

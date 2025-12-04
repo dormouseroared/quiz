@@ -1560,6 +1560,7 @@ const EXAM_SECRETS_QUESTIONS = [
       "If the audio from the mic and audio amplifier is distorted due to excessive levels, that will not bode well when it goes through the modulator, so get the audio right!",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-014",
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3G1-2",
@@ -1576,6 +1577,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategyNotes: "get to the bottom of this.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-014",
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3G2-1",
@@ -1660,6 +1662,9 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategyNotes: "I have nothing for this at the moment.",
     examCalculation: 1,
     exam_NOT: false,
+    obsidianURL:
+      "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fparasitic%20oscillation%20question",
+    clipId: "week06-clip-010",
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3G5-1",
@@ -1735,6 +1740,7 @@ const EXAM_SECRETS_QUESTIONS = [
       "Step by step. It is doable. Try the first option, then the second, and so on.",
     examCalculation: 1,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3I3-2",
@@ -1753,9 +1759,10 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.3",
     examStrategy: 4,
-    examStrategyNotes: "Just need to focus...",
+    examStrategyNotes: "Use the FIVE BOX TEMPLATE (FBT).",
     examCalculation: 1,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3I3-3",
@@ -1778,6 +1785,7 @@ const EXAM_SECRETS_QUESTIONS = [
       "Start by finding the difference. Then see if there's a relationship between any of the given frequencies.",
     examCalculation: 3,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3I3-4",
@@ -1796,9 +1804,11 @@ const EXAM_SECRETS_QUESTIONS = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.3",
     examStrategy: 4,
-    examStrategyNotes: "Drill",
+    examStrategyNotes:
+      "Look out in the video clips in Week07 for more details, and where to add the explanation given here.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3I4-1",
@@ -1820,6 +1830,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategyNotes: "Keep an eye on this one.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3I5-1",
@@ -1837,10 +1848,11 @@ const EXAM_SECRETS_QUESTIONS = [
       "The question clearly states the filter response is good and that the test signal is good. Option D about noise does not address the problem and is irrelevant to the question. Option C, regarding image response, is also irrelevant. Options A and B appear plausible, but B is discouraged, saying the filter is good. Can A be the answer? Yes. Phase noise, the small random phase variations of the local oscillator, cause noise sidebands on the otherwise clean oscillator signal. The RF test signal is intended to mix with the LO to produce the IF. However, it can also mix with the spurious noise sidebands of the LO, meaning it is present in the IF over the width of those noise sidebands, even if the test signal was absolutely perfect. In good, low noise receivers the phase noise can be a limiting factor in receiver (or transmitter) performance.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.5",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes: "It's one of the nuggets.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3J1-1",
@@ -1855,13 +1867,14 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 3,
     explanation:
-      "The dynamic range of the receiver itself is 90dB (123 - 33). With the pre-amp, the maximum signal before overload drops by 10dB due to the gain of the pre-amp. On its own that reduces the dynamic range by 10dB. However, the combination of pre-amp gain and its superior noise performance has allowed signals of 3µV to be resolved, rather than 5µV, an improvement of 127 - 123 = 4dB. The overall dynamic rabge has reduced by 10 - 4 = 6dB.",
+      "The dynamic range of the receiver itself is 90dB (123dB - 33dB). With the pre-amp, the maximum signal before overload drops by 10dB due to the gain of the pre-amp. On its own that reduces the dynamic range by 10dB. However, the combination of pre-amp gain and its superior noise performance has allowed signals of 3µV to be resolved, rather than 5µV, an improvement of 127 - 123 = 4dB. The overall dynamic range has reduced by 10 - 4 = 6dB.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3j.1",
     examStrategy: 5,
-    examStrategyNotes: "More learning materials needed.",
+    examStrategyNotes: "Take this one up with Claude. I am lost.",
     examCalculation: 2,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3K1-1",

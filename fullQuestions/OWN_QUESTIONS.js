@@ -405,6 +405,7 @@ Continuous output at the operating frequency when idle is the signature of self-
     examStrategyNotes: "Frequency and timing of occurrence point to the type.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-010",
   },
   {
     source: "OWN QUESTIONS Q27",
@@ -426,6 +427,7 @@ VHF signals when transmitting HF = parasitic oscillation. Load-dependent behavio
       "Symptoms indicate parasitic oscillation; cure requires reducing Q of stray resonances.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-010",
   },
   {
     source: "OWN QUESTIONS Q28",
@@ -446,6 +448,7 @@ The resistor adds loss (lowers Q) of any resonance in that part of the circuit. 
     examStrategyNotes: "Understanding the role of resistance in lowering Q",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-010",
   },
   {
     source: "OWN QUESTIONS Q29",
@@ -467,6 +470,7 @@ This is the question you got wrong! Parasitic oscillations occur at UNPREDICTABL
       "Distinguishing between harmonics (mathematically related) and random parasitic frequencies.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week06-clip-010",
   },
   {
     source: "OWN QUESTIONS Q30",

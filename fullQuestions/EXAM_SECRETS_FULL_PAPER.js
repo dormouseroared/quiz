@@ -549,10 +549,10 @@ const EXAM_SECRETS_FULL_PAPER = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.3",
     examStrategy: 5,
-    examStrategyNotes:
-      "Get to grips with this! Where is the learning material for this?",
+    examStrategyNotes: "Use the Five Box Template",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q27",
@@ -1164,9 +1164,10 @@ const EXAM_SECRETS_FULL_PAPER = [
     explanation: "See page 153 for the worked answer and formula used.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3h.3",
-    examStrategy: 3,
-    examStrategyNotes: "Revise and drill.",
-    examCalculation: 0,
+    examStrategy: 4,
+    examStrategyNotes:
+      "How to interpret this question. It's actuall Dynamic Range. Ignore the impedances. It's voltage, so 20xlog(600/4).",
+    examCalculation: 3,
     exam_NOT: false,
   },
   {

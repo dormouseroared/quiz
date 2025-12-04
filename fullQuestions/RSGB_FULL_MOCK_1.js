@@ -476,9 +476,10 @@ const RSGB_FULL_MOCK_1 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3i.4",
     examStrategy: 2,
-    examStrategyNotes: "More Learning Materials: Claude?",
+    examStrategyNotes: "In the IF stage, we add gain and selectivity.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 1 Q27",
@@ -495,9 +496,11 @@ const RSGB_FULL_MOCK_1 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3j.1",
     examStrategy: 4,
-    examStrategyNotes: "More Learning Materials: Claude?",
+    examStrategyNotes:
+      "For HF, probably the only valid use of a pre-amplifier for anything except weak signals might be to mount it next to the antenna.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 1 Q28",

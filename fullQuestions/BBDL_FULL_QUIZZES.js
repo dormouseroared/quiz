@@ -2449,6 +2449,7 @@ interference, to give it its proper name. 'a' is therefore the correct answer. `
     examStrategy: 4,
     examStrategyNotes: `Read this very carefully. Harmonics is mentioned in A and B. Over-modulation implies that audio is overwhelming the carrier frequency with side effects.`,
     examCalculation: 0,
+    clipId: "week06-clip-014",
   },
   {
     source: "BBDL QUIZ WEEK06 Q09",
@@ -2464,6 +2465,7 @@ interference, to give it its proper name. 'a' is therefore the correct answer. `
     examStrategy: 3,
     examStrategyNotes: "Include in flashcards.",
     examCalculation: 0,
+    clipId: "week06-clip-014",
   },
   {
     source: "BBDL QUIZ WEEK06 Q10",
@@ -2560,6 +2562,7 @@ be on pretty much any frequency. 'd' is therefore not true and the correct respo
       "Have to evaluate each one in turn: is this true? At the end of the cycle, there should be one not marked as true. That is the answer.",
     examCalculation: 0,
     exam_NOT: true,
+    clipId: "week06-clip-010",
   },
   {
     source: "BBDL QUIZ WEEK06 Q14",
@@ -2581,8 +2584,10 @@ circuits are included in frequency synthesisers to inhibit transmission of an â€
     lookup: "See page(s) 54 of the Full Licence text book",
     syllabus: "3g.5",
     examStrategy: 1,
-    examStrategyNotes: "Include in flashcards",
+    examStrategyNotes:
+      "I think they might call this one a banker, without being overconfident.",
     examCalculation: 0,
+    clipId: "week06-clip-013",
   },
   {
     source: "BBDL QUIZ WEEK06 Q15",
@@ -3125,6 +3130,7 @@ rather than oscillation, so 'c' and 'd' are not the ones to select here.`,
     tagged: true,
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2Fparasitic_oscillations",
+    clipId: "week06-clip-010",
   },
   {
     source: "BBDL QUIZ WEEK06A Q17",
@@ -3390,7 +3396,7 @@ frequencies can be used to resolve a 503MHz carrier whilst using an IF of 36MHz.
     examStrategy: 2,
     examStrategyNotes: `Sum and Difference!`,
     examCalculation: 0,
-    tagged: false,
+    tagged: true,
   },
   {
     source: "BBDL QUIZ WEEK07 Q04",
@@ -3464,6 +3470,7 @@ Direct Digital Synthesisers.`,
     examStrategyNotes: `PLL and DDS are digital oscillators.`,
     examCalculation: 0,
     tagged: false,
+    clipId: "week06-clip-013",
   },
   {
     source: "BBDL QUIZ WEEK07 Q07",
@@ -3532,7 +3539,7 @@ sideband inversion occurs when you subtract the modulated signal from the oscill
     examStrategy: 3,
     examStrategyNotes: ` LO to the left and WANTED to the right, with a MINUS in the middle, that's INVERSION.`,
     examCalculation: 0,
-    tagged: false,
+    tagged: true,
   },
   {
     source: "BBDL QUIZ WEEK07 Q10",
@@ -4570,6 +4577,7 @@ not locked, so preventing transmissions on frequencies that are not under contro
     exam_NOT: false,
     tagged: false,
     obsidianURL: "",
+    clipId: "week06-clip-013",
   },
   {
     source: "BBDL QUIZ WEEK09A Q18",
@@ -4622,11 +4630,12 @@ using low noise active devices.`,
     syllabus: "3i.5",
     reference: "",
     examStrategy: 4,
-    examStrategyNotes: "More work on this. Perhaps a flashcard.",
+    examStrategyNotes: "See the clip... and read the explanation.",
     examCalculation: 0,
     exam_NOT: false,
     tagged: false,
     obsidianURL: "",
+    clipId: "week06-clip-013",
   },
   {
     source: "BBDL QUIZ WEEK09A Q20",
