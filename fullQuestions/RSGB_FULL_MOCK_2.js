@@ -684,12 +684,14 @@ const RSGB_FULL_MOCK_2 = [
     ],
     correct: 2,
     explanation: "",
-    lookup: "See page(s) x of the Full Licence text book",
+    lookup: "See page(s) 93 of the Full Licence text book",
     syllabus: "6a.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Immunity can be adversely affected by poor installation.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week12-clip-002",
   },
   {
     source: "RSGB Full Mock 2 Q39",
@@ -700,10 +702,12 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6b.2",
-    examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "I think the right answer is AM or SSB. Have not checked the source information yet.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week12-clip-006",
   },
   {
     source: "RSGB Full Mock 2 Q40",

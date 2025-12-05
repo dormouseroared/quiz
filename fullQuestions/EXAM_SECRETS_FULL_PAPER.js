@@ -789,9 +789,11 @@ const EXAM_SECRETS_FULL_PAPER = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6a.2",
     examStrategy: 3,
-    examStrategyNotes: "Revise and drill.",
+    examStrategyNotes:
+      "Immunity can be adversely affected by poor installation.",
     examCalculation: 0,
     exam_NOT: false,
+    clipId: "week12-clip-002",
   },
   {
     source: "Exam Secrets FULL PAPER Q39",

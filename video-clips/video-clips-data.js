@@ -1745,7 +1745,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("11:09"),
     endTime: timestampToSeconds("15:46"),
     description: "",
-    tags: ["EMC"],
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-003",
@@ -1754,7 +1754,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("15:46"),
     endTime: timestampToSeconds("23:03"),
     description: "",
-    tags: ["EMC"],
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-004",
@@ -1767,6 +1767,15 @@ const CLIPS_DATA = [
   },
   {
     id: "week12-clip-004-A",
+    videoId: "week12",
+    title: "&bull; Routes of Entry",
+    startTime: timestampToSeconds("23:14"),
+    endTime: timestampToSeconds("27:56"),
+    description: "",
+    tags: ["EMC", "repeat", "subclip"],
+  },
+  {
+    id: "week12-clip-004-B",
     videoId: "week12",
     title:
       "&bull; Common broadcast frequencies (and harmonics, Intermediate breakthrough) to remember",
@@ -1783,7 +1792,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("36:00"),
     endTime: timestampToSeconds("39:20"),
     description: "",
-    tags: ["EMC"],
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-006",
@@ -1792,7 +1801,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("39:20"),
     endTime: timestampToSeconds("45:08"),
     description: "",
-    tags: ["EMC"],
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-007",
@@ -1800,8 +1809,29 @@ const CLIPS_DATA = [
     title: "TV Distribution Amplifiers",
     startTime: timestampToSeconds("45:12"),
     endTime: timestampToSeconds("51:44"),
-    description: "",
+    description:
+      "Used to distribute TV around the house, or to boost a weak signal. Some may be completely broadband and amplify everything which can cause problems. Metal boxes are preferred due to their screening. Any of them can be the source of EMC problems. Masthead installation is preferred to set top box.",
     tags: ["EMC"],
+  },
+  {
+    id: "week12-clip-007-A",
+    videoId: "week12",
+    title: "&bull; TV Distribution Amplifiers",
+    startTime: timestampToSeconds("45:12"),
+    endTime: timestampToSeconds("48:32"),
+    description:
+      "Used to distribute TV around the house, or to boost a weak signal. Some may be completely broadband and amplify everything which can cause problems. Metal boxes are preferred due to their screening. Any of them can be the source of EMC problems. Masthead installation is preferred to set top box.",
+    tags: ["EMC", "subclip", "repeat"],
+  },
+  {
+    id: "week12-clip-007-B",
+    videoId: "week12",
+    title: "&bull; Question: How do you diagnose the rusty bolt effect",
+    startTime: timestampToSeconds("48:32"),
+    endTime: timestampToSeconds("51:44"),
+    description:
+      "If you look at other causes and do not find the cause, it is probably the rusty bolt effect.",
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-008",
@@ -1809,17 +1839,19 @@ const CLIPS_DATA = [
     title: "Prevention and Reduction",
     startTime: timestampToSeconds("51:44"),
     endTime: timestampToSeconds("01:11:25"),
-    description: "",
-    tags: ["EMC"],
+    description:
+      "Main focus here is problems in reception. More likely to have problems with an increase in power. Only use the minimum power required to make the contact. This implies reducing field strength by increasing distance from antenna and/or reducing power. RF earthing for certain antennas can be problematic (a very serious mains safety issue) if house has PME earthing. There can also be problems with RF earthing in an upstairs shack, due to the length of the RF earth wire and its potential to radiate. Antenna systems can also be chosen that do not need an RF earth. Balanced antennas tend to cause fewer EMC problems than unbalanced antennas.",
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-009",
     videoId: "week12",
     title: "EMC Filters",
     startTime: timestampToSeconds("01:11:25"),
-    endTime: timestampToSeconds("01:30:20"),
-    description: "",
-    tags: ["EMC"],
+    endTime: timestampToSeconds("01:29:11"),
+    description:
+      "Examples given of how to use Low Pass, High Pass and Band Pass filters in real situations. Also Band Stop filters (Notch), Stubs or Coaxial Traps. Then Ferrite Rings and Beads to mop up unwanted RF. Braid Breaker filter includes a High Pass Filter. Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed.",
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-010",
@@ -1827,17 +1859,19 @@ const CLIPS_DATA = [
     title: "Mobile EMC",
     startTime: timestampToSeconds("01:30:20"),
     endTime: timestampToSeconds("01:35:08"),
-    description: "",
-    tags: ["EMC"],
+    description:
+      "Federation of Communication Services UK Code of Practice has advice for mobile radio installation in vehicles. (1) don't run RF cables next to vehicle wiring (2) wire transceiver directlt to battery to avoid current carrying issues over vehicle wiring (3) good antenna grounding to vehicle bidy (4) carry out tests on static vehicle after installation before going mobile",
+    tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-011",
     videoId: "week12",
     title: "Dealing with Complaints",
     startTime: timestampToSeconds("01:35:08"),
-    endTime: timestampToSeconds("01:48:20"),
-    description: "",
-    tags: ["EMC"],
+    endTime: timestampToSeconds("01:48:05"),
+    description:
+      "BBC handle TV and radio reception complaints, on behalf of Ofcom. Ofcom Field Officers investigate harmful interference.",
+    tags: ["EMC", "repeat"],
   },
 
   // Add your actual clips here!
