@@ -5720,6 +5720,438 @@ need Ofcom’s clearance. `,
     tagged: false,
     obsidianURL: "",
   },
+  {
+    source: "BBDL QUIZ WEEK12 Q01",
+    question: `Which of the following is most likely to adversely affect the EMC immunity of a piece of 
+electronic equipment?
+`,
+    image: "",
+    options: [
+      "Using it for long periods of time",
+      "Installing it without reading the operating instructions",
+      "Installing it using poor quality connections and cables",
+      "Using it in a different country to where it was manufactured",
+    ],
+    correct: 2,
+    explanation: ` ‘a’ could wear it out and EMC immunity could deteriorate in the long term, but 
+it is not certain. ‘b’ might have been a good answer if it referred to the installation instructions, rather 
+than the operating instructions. ‘c’ looks good, poor installation can reduce EMC immunity but ‘d’ is 
+clearly wrong as much of the electronic equipment we use in the UK is manufactured overseas, and the 
+immunity is normally quite good. ‘c’ it is. There is no specific reference to this in the Full Licence textbook 
+but the EMC chapter as a whole (p83-95) covers aspects of good installation practice.`,
+    lookup: "See page(s) 83-95 of the Full Licence Manual",
+    syllabus: "6a.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "The one to look out for is POOR QUALITY",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q02",
+    question: `You are standing next to a Public Address (PA) system at a local radio rally and you hear 
+interference coming over the PA and then a few seconds later the mobile telephone in your 
+pocket rings. Why might this happen?
+`,
+    image: "",
+    options: [
+      "Mobile telephone emissions are in the same frequency range as Public Address systems and the PA must have poor immunity",
+      "All mobile telephones are imported into the UK and do not comply with UK EMC standards so short-range interference is to be expected when they operate near PA systems",
+      "Items containing radio communication facilities such as mobile telephones and information technology communication equipment may produce sufficiently strong signals to cause short range interference",
+      "Most PA systems now operate with wireless microphones which operate in the same frequency band and emission code as mobile telephones so occasionally hearing mobile telephone calls through the PA system is inevitable",
+    ],
+    correct: 2,
+    explanation: `Some mobile telephones and computing devices emit relatively high signals 
+over short ranges, so it is possible for them to cause breakthrough when held close to other electronic 
+equipment, including PA systems. ‘a’ and ‘d’ are both incorrect because not all PA systems use wireless 
+technology so the frequencies in use are not relevant. ‘b’ is also wrong because most reputable importers 
+ensure that mobile telephones imported into the UK do comply with EMC standards. `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "6b.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Another nugget to store away.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q03",
+    question: `Which of the following statements is true?`,
+    image: "",
+    options: [
+      "UK radio amateurs are required to ensure that any equipment they put into service complies with the EMC standards",
+      "If a radio amateur only puts into service commercially made equipment, they need not be concerned about causing interference",
+      "All amateur radio equipment in the UK must be type tested by an independent radio frequency laboratory and certified as complying with the EMC standards before it is put into service",
+      "UK radio amateurs are not required to demonstrate compliance with EMC standards for equipment they put into service but remain responsible for complying with licence requirements regarding interference",
+    ],
+    correct: 3,
+    explanation: `All other statements are simply not true. Even the best quality commercial 
+equipment can cause interference if it is installed or used badly. `,
+    lookup: "See page(s) 84 of the Full Licence Manual",
+    syllabus: "6a.4",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Another one for storage!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q04",
+    question: `Amateur transmissions are being heard on a home entertainment receiver even when the 
+volume is at its lowest setting. With which stage of the receiver would you suspect the 
+problem?
+`,
+    image: "",
+    options: [
+      "The first IF stage",
+      "The second IF stage",
+      "The mixer stage",
+      "The audio amplifier stage",
+    ],
+    correct: 3,
+    explanation: `If interference is breaking through with the volume control set to its minimum, 
+the breakthrough must be occurring after that point. The stages in ‘a’, ‘b’ and ‘c’ all come before the AF 
+gain control, making ‘d’ the only viable option. `,
+    lookup: "See page(s) 87-90 of the Full Licence Manual",
+    syllabus: "6c.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Read every word. This is one to make a summary of what information is given and how to interpret it. The only incorrect answer in this quiz!",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: true,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q05",
+    question: `Digital Television broadcast frequencies are typically:`,
+    image: "",
+    options: [
+      "10.7 MHz",
+      "455 kHz",
+      "In the range 470 – 694 MHz",
+      "In the range 33 – 40 MHz",
+    ],
+    correct: 2,
+    explanation: `Knowledge of specific frequencies is required for some EMC questions, and in 
+real life! In this case it is purely a recollection test. 10.7MHz is a common FM radio IF, so not correct here. 
+455kHz is a popular AM broadcast receiver IF, so not that one either. The TV broadcast band is within the 
+range 470-694MHz, so that looks good. 33-40MHz used to be used in analogue TV IF circuits and is in the
+range currently used by digital TV IFs, so not correct here. `,
+    lookup: "See page(s) 88 of the Full Licence Manual",
+    syllabus: "6c.3",
+    reference: "",
+    examStrategy: 4,
+    examStrategyNotes: "Have to put this information on the Memory Board.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q06",
+    question: `Corroded antenna elements and feeder connections, and badly fitting co-ax plugs on a receiver 
+are likely to cause:`,
+    image: "",
+    options: [
+      "Passive Intermodulation",
+      "Marconi effect",
+      "Mains-borne interference",
+      "Local oscillator drift in the receiver",
+    ],
+    correct: 0,
+    explanation: `Corroded connectors are a source of intermodulation – they form crude diodes 
+and act like semiconductors, so ‘a’ is the correct answer. `,
+    lookup: "See page(s) 89 of the Full Licence Manual",
+    syllabus: "6b.3",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Hopefully these are easy to spot.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q07",
+    question: `If a receiver is suffering a varying degree of interference and another signal is heard along with 
+the wanted signal, what kind of interference is this likely to be?`,
+    image: "",
+    options: [
+      "Cross modulation",
+      "Second channel",
+      "Image channel",
+      "Blocking",
+    ],
+    correct: 0,
+    explanation: `Cross-modulation is an effect in a radio receiver where the
+interfering signal is varying in strength e.g. AM or SSB such that the
+modulation on the interfering signal is added to the modulation on the wanted
+signal such that both may be heard with varying clarity. Second Channel and Image channel interference are two 
+names for the same thing, specific to the superhet receiver and as the question doesn’t mention what type of 
+receiver is involved, both are unlikely to be correct. Blocking (or desensitisation) is an effect in a radio receiver
+where a strong, constant level interfering signal e.g. FM either swamps the wanted signal or drives the affected 
+circuits out of their normal operating range such that the received audio or data is severely attenuated or muted, 
+so not ‘d’.`,
+    lookup: "See page(s) 88-89 of the Full Licence Manual",
+    syllabus: "6b.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes:
+      "Hopefully the ways to spot cross-modulation and blocking will become more obvious.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q08",
+    question: `Wideband TV preamplifiers in common use are:`,
+    image: "",
+    options: [
+      "The best means of reducing TV interference",
+      "Likely to be susceptible to overload from strong transmissions",
+      "Usually fitted as a precaution against lightning strikes",
+      "Recommended for reducing interference from nearby transmissions",
+    ],
+    correct: 1,
+    explanation: ``,
+    lookup: "See page(s) 89-90 of the Full Licence Manual",
+    syllabus: "6c.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "More work needed here to get some clarification.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q09",
+    question: `What is the field strength of a 10W (ERP) transmission at 20 m from the antenna?`,
+    image: "",
+    options: ["7.02 V/m", "4.9 V/m", "3.5 V/m", "1.1 V/m"],
+    correct: 3,
+    explanation: `Another calculation, this time using field strength = (7 x √erp) divided by 
+distance. So Field Strength = (7 x √10)/20 = 1.1 = answer ‘d’. `,
+    lookup: "See page(s) 85-86 of the Full Licence Manual",
+    syllabus: "6e.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Plug the numbers in to the formula on EX309",
+    examCalculation: 1,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q10",
+    question: `Good RF grounding is important because:`,
+    image: "",
+    options: [
+      "It will ensure a good match and a low SWR on a balanced antenna system",
+      "It will reduce the possibility of instability and excessive bandwidth.",
+      "It will ensure that all RF remains within the feeder and prevent unwanted emissions.",
+      "It will ensure that there are no stray RF currents so reducing the potential for undue interference.",
+    ],
+    correct: 3,
+    explanation: `Good RF grounding can help with some antennas but it will not help with a 
+balanced antenna, which does not have a ground connection, so not ‘a’. The stability and bandwidth 
+aspects of a transmission are not affected by RF grounding, so not ‘b’. Keeping RF within the feeder is the 
+job of good coax, or well-balanced twin feeder, not RF grounding, so not ‘c’ which only leaves ‘d’ and 
+preventing stray RF currents is a good reason for RF grounding, so ‘d’ it is. `,
+    lookup: "See page(s) 83-84 of the Full Licence Manual",
+    syllabus: "6e.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "One to go through and make some sense.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q11",
+    question: `Which of the following antennas are LEAST likely to generate EMC problems?`,
+    image: "",
+    options: [
+      "Vertical antennas mounted at ground level with an extensive grounding system.",
+      "End fed antennas mounted at a height of one quarter wave and fed against an RF earth of low resistance",
+      "Resonant dipoles with low loss coaxial feeder falling away from the feedpoint at 45 degrees to minimise losses due to length",
+      "A centre-fed dipole with balanced twin feeder falling away from the antenna at right angles to the antenna",
+    ],
+    correct: 3,
+    explanation: `‘a’ and ‘b’ are inherently unbalanced systems and ‘c’ uses unbalanced feeder at 
+45 degrees to the antenna, making that system unbalanced. ‘d’ is an entirely balanced system, which is 
+seen to be best from an EMC perspective. The choice of antenna can be a significant issue in preventing 
+EMC issues, as discussed on pages 86 to 87 of the Full Licence textbook. The textbook tends to muddy the 
+water, taking a ‘real life’ view reflecting the fact that an antenna system’s performance is highly 
+impacted by its environment; often there is no clear answer to the question of what is best. However, fig 
+13.8, on page 87 of the Full Licence textbook shows ‘an EMC friendly’ arrangement as is advocated by 
+the syllabus. For the exam, go with the syllabus view! `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "6e.3",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Worth going through the manual?",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q12",
+    question: `A UHF TV is being blocked by your strong signal on 145 MHz. A suitable cure might be:`,
+    image: "",
+    options: [
+      "High pass filter at the TV end of the antenna downlead.",
+      "Low pass filter at the TV end of the antenna downlead",
+      "30 dB attenuator in the TV antenna downlead",
+      "Wideband masthead TV signal preamplifier at the TV antenna",
+    ],
+    correct: 0,
+    explanation: `UHF is higher than VHF, so it seems reasonable to assume a high pass filter 
+would allow the TV in but reject the amateur signal, so ‘a’ looks good. ‘b’ is the opposite and would not 
+have the desired effect. ‘c’ would attenuate everything and as the amateur signal is likely to be the 
+stronger, it would probably make matters worse. ‘d’ would also create more problems as the amp would 
+amplify everything. `,
+    lookup: "See page(s) 90-94 of the Full Licence Manual",
+    syllabus: "6d.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Go through this in some detail.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q13",
+    question: `A mains surge and interference suppression filter may contain VDRs. These are:`,
+    image: "",
+    options: [
+      "Voltage dependant resistors",
+      "Variable diode regulators",
+      "Volume diminishing retarders",
+      "Volumetric data recorders",
+    ],
+    correct: 0,
+    explanation: `Another memory test and full marks to the question writer in coming up with 
+some interesting options! The mains filter is covered on pages 92 and 93 of the Full Licence textbook, 
+where you should find that VDRs are in fact Voltage Dependant Resistors, making ‘a’ the correct answer.`,
+    lookup: "See page(s) 92-93 of the Full Licence Manual",
+    syllabus: "6d.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Commit to meory (drill).",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q14",
+    question: `Who produces the UK Code of Practice for the installation of mobile radio and related ancillary 
+equipment in land-based vehicles?`,
+    image: "",
+    options: [
+      "Ofcom",
+      "Royal Automobile Club",
+      "Radio Society of Great Britain",
+      "Federation of Communication Services",
+    ],
+    correct: 3,
+    explanation: `Not much to say about this.`,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "6f.1",
+    reference: "",
+    examStrategy: 2,
+    examStrategyNotes: "Straightforward.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q15",
+    question: `When installing a VHF mobile radio transmitter in a vehicle, how can you minimise the risk of stray 
+RF currents entering the vehicle wiring and electronics? `,
+    image: "",
+    options: [
+      "Use Bluetooth connections between the radio body and the radio head unit",
+      "Fit ferrite rings and HF high pass filters throughout the vehicle wiring loom",
+      "Route the radio DC power cables and RF feeder away from the vehicle wiring loom",
+      "Use good quality coaxial cable between the radio output and the antenna and between the battery and the DC power input",
+    ],
+    correct: 2,
+    explanation: `Whilst Bluetooth has its advantages in connecting boot mounted radio 
+equipment to a small head unit, or front panel, this will do nothing to prevent RF from the radio, feeder 
+or antenna getting into the vehicle wiring, so not ‘a’. Fitting ferrite rings may be useful but HF high pass 
+filters would allow the VHF signals, so not ‘b’. Keeping radio cables away from the vehicle wiring loom 
+sounds like a good thing to do, so ‘c’ is a possible correct answer. Good quality coax is always a good 
+idea for radio to antenna connections, but it is not ideal for DC power, so ‘d’ looks wrong, and ‘c’ is 
+confirmed as the one to go for.`,
+    lookup: "See page(s) 95 of the Full Licence Manual",
+    syllabus: "6f.2",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Go through this again.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
+  {
+    source: "BBDL QUIZ WEEK12 Q16",
+    question: `Formal complaints about EMC disturbances that are thought to be caused by amateur radio 
+transmissions should be made to:`,
+    image: "",
+    options: [
+      "The RSGB EMC Committee Chair for general problems, the Chair of the RSGB Technical Forumfor more specific issues",
+      "The manufacturer of the equipment suffering the EMC disturbance",
+      "The BBC when terrestrial television or radio reception is affected, or Ofcom for all disturbances affecting other users of Wireless Telegraphy",
+      "The local Trading Standards Officer responsible for electrical and electronic products placed on the market",
+    ],
+    correct: 2,
+    explanation: `Whilst the RSGB EMC Committee, the RSGB Technical Forum and equipment 
+manufacturers may be able to help with EMC problems, they do not deal with formal complaints, so not 
+‘a’, or ‘b’. Formal complaints about interference to broadcast service are made to the BBC, whereas 
+complaints about interference to other radio services must be made to Ofcom, making ‘c’ look like a very 
+good choice. Trading Standards would only become involved if Ofcom identified a problem with a non￾compliant piece of equipment that is being sold on the open market; they are not the initial point of 
+contact for formal complaints about EMC problems caused by amateur radio transmissions, so not ‘d’. `,
+    lookup: "See page(s) x of the Full Licence Manual",
+    syllabus: "6g.1",
+    reference: "",
+    examStrategy: 3,
+    examStrategyNotes: "Drill this.",
+    examCalculation: 0,
+    exam_NOT: false,
+    tagged: false,
+    obsidianURL: "",
+    clipId: "",
+  },
   // {
   //   source: "BBDL QUIZ WEEK09 Q00",
   //   question: ``,
