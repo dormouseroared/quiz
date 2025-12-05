@@ -5929,7 +5929,7 @@ const syllabusItems = [
     key: "6b.2",
     level: "full",
     title: "Sources of interference and their effects",
-    text: "Understand that Cross-modulation is an effect in a radio receiver where the interfering signal is varying in strength e.g.AM or SSB such that the modulation on the interfering signal is added to the modulation on the wanted signal such that both may be heard with varying clarity.",
+    text: "Understand that Cross-modulation is an effect in a radio receiver where the interfering signal is varying in strength e.g. AM or SSB, such that the modulation on the interfering signal is added to the modulation on the wanted signal such that both may be heard with varying clarity.",
     weeks: ["12"],
   },
   {

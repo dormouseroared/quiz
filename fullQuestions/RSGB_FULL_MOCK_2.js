@@ -723,6 +723,7 @@ const RSGB_FULL_MOCK_2 = [
     examStrategyNotes: "",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 2 Q41",
@@ -737,6 +738,7 @@ const RSGB_FULL_MOCK_2 = [
     examStrategyNotes: "",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 2 Q42",

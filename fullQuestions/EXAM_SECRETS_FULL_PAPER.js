@@ -832,6 +832,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Revise and drill.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q41",

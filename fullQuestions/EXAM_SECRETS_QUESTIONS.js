@@ -331,6 +331,7 @@ const EXAM_SECRETS_QUESTIONS = [
       "Note 3: Amplitude Modulation is permitted with a maximum bandwidth of 6kHz, on frequencies with at least 6kHz width.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Technical Basics] 2A1-1",
@@ -2573,7 +2574,7 @@ const EXAM_SECRETS_QUESTIONS = [
     options: ["SSB", "FM", "PSK", "RTTY"],
     correct: 0,
     explanation:
-      "Cross modulation is where the modulation of one signal becomes impressed on another signal, isually because the victim receiver is being pushed out of its linear range. A strong FM signal can cause blocking, which can effectively mute reception of the wanted signal by overloading the receiver. Cross-mod requires amplitude variations associated with SSB. (FM, PSK and RTTY are relatively constant amplitude with frequency or phase changes. The transitions can result in amplitude changes which could cause a low frequency buzz, the pitch depending on data rate.)",
+      "Cross modulation is where the modulation of one signal becomes impressed on another signal, usually because the victim receiver is being pushed out of its linear range. A strong FM signal can cause blocking, which can effectively mute reception of the wanted signal by overloading the receiver. Cross-mod requires amplitude variations associated with SSB. (FM, PSK and RTTY are relatively constant amplitude with frequency or phase changes. The transitions can result in amplitude changes which could cause a low frequency buzz, the pitch depending on data rate.)",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6b.2",
     examStrategy: 1,
