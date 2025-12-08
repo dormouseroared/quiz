@@ -3,6 +3,14 @@
 // ====================================
 
 import W99quiz from "./fullQuestions/W99quiz_FULL.js"
+
+import {
+  RSGB_FULL_MOCK_1,
+  RSGB_FULL_MOCK_2,
+  RSGB_FULL_MOCK_3,
+  EXAM_SECRETS_FULL_PAPER,
+} from "./fullQuestions/W99quiz_FULL.js"
+
 import syllabusItems from "./syllabusItems.js"
 import flashcardsWidget from "./flashcards-widget/flashcards_widget_v9.js"
 
@@ -13,6 +21,8 @@ import { diagramQuizCards } from "./diagramQuizCards.js"
 import after_Week06_Syllabus_List from "./after-week06-syllabus-list.js"
 
 import showQuestionsBySyllabusCode from "./showQuestionsBySyllabusCode.js"
+
+// alert(RSGB_FULL_MOCK_1.length)
 
 const desiredDiagramVersion = "v21"
 
@@ -277,6 +287,23 @@ function selectQuestions(targets, MCQ) {
   return output
 }
 
+// get mock exam questions in their original order as per real exam
+
+function selectQuestionsForMockExam() {
+  // alert(
+  //   `selectQuestionsForMockExam: ${quizState.searchType} ${quizState.searchValue}`,
+  // )
+
+  if (quizState.searchValue === "RSGB_1") {
+    return RSGB_FULL_MOCK_1
+  } else if (quizState.searchValue === "RSGB_2") {
+    return RSGB_FULL_MOCK_2
+  } else if (quizState.searchValue === "RSGB_3") {
+    return RSGB_FULL_MOCK_3
+  } else if (quizState.searchValue === "SECRETS_1") {
+    return EXAM_SECRETS_FULL_PAPER
+  }
+}
 // select all questions where the syllabus key starts with one of the keys
 // in a named list
 function selectQuestionsForSyllabusList(list, MCQ) {
@@ -1116,6 +1143,8 @@ searchForm.addEventListener("submit", function (event) {
       quizState.searchValue,
       quizState.randomQuestions,
     )
+  } else if (quizState.searchType === "mockExam") {
+    quizState.questionPack = selectQuestionsForMockExam()
     // could not find the selected searchType
   } else {
     throw new Error("Search used is not yet available")
@@ -1126,8 +1155,11 @@ searchForm.addEventListener("submit", function (event) {
   }
 
   // Shuffle answers and prepare questions
+  // if (!quizState.searchType === "mockExam") {
   const shuffledQuestionsArray = quizState.questionPack.map(shuffleQuestion)
   quizState.questionPack = [...shuffledQuestionsArray]
+  // }
+
   quizState.questionPackLength = quizState.questionPack.length
 
   // Reset quiz state

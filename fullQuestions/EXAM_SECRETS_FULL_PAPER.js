@@ -90,7 +90,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "7h.2",
     examStrategy: 1,
-    examStrategyNotes: "",
+    examStrategyNotes: "STraightforward. Start at 1 and travel west!",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -154,6 +154,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "This is tricky, so drill through this one...",
     examCalculation: 3,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q09",
@@ -192,6 +193,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Again, one to drill through...",
     examCalculation: 3,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q10",
@@ -240,6 +242,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Tricky again. ",
     examCalculation: 3,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q12",
@@ -258,15 +261,17 @@ const EXAM_SECRETS_FULL_PAPER = [
         $$ Z = \\sqrt{300^2 + 400^2} = 500\\Omega $$
         
         The applied voltage is:
-        $$ V = I \\times R = 3 \\times 10^{-3}A \\times 500 \\Omega = 1.5V $$
+        $$ V = I \\times Z = 3 \\times 10^{-3}A \\times 500 \\Omega = 1.5V $$
         
         It is worth looking out for 3, 4, 5 triangles etc.`,
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2b.1",
-    examStrategy: 5,
-    examStrategyNotes: "Tricky",
+    examStrategy: 3,
+    examStrategyNotes:
+      "This used to be tricky, but is now felt to be easier, and it is tagged to give some practice on the questions that can be answered with care.",
     examCalculation: 3,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q13",
@@ -294,16 +299,16 @@ const EXAM_SECRETS_FULL_PAPER = [
     correct: 0,
     explanation: `
         The output from the transformer is proportional to the turns ratio: 
-        $$V_{out} = V_{in} \\times \\frac{T_{out}}{T_{in}} = 240 \\times \\frac{64}{960} = 16V $$ 
+        $$V_S = V_P \\times \\frac{T_S}{T_P} = 240 \\times \\frac{64}{960} = 16V $$ 
         The load on the secondary is equivalent to 2Ω, so:
         
-        $$ I_{out} = \\frac{V_{out}}{R_{out}} = \\frac{16V}{2Ω} = 8A $$
+        $$ I_S = \\frac{V_S}{R_S} = \\frac{16V}{2Ω} = 8A $$
 
         and the power on output is:
-        $$ P_{out} = IV = 8 \\times 16 = 128W $$
+        $$ P_S = IV = 8 \\times 16 = 128W $$
 
         On input, as there are no losses in this transformer, power in equals power out, and the input current is:
-        $$ I = \\frac{P_{in}}{V_{in}} = \\frac{128}{240} = 0.53A$$
+        $$ I = \\frac{P_P}{V_P} = \\frac{128}{240} = 0.53A$$
 
         <br>
         <br>
@@ -319,6 +324,7 @@ const EXAM_SECRETS_FULL_PAPER = [
       "See EX309 for transformer equations. Check the turns on both sides and do not write them down wrong from the start. Check!",
     examCalculation: 2,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q15",
@@ -334,7 +340,7 @@ const EXAM_SECRETS_FULL_PAPER = [
 
         With a working Q of 5 that gives a circulating current of about 14A.
         <br><br>
-        [[I don't understand this last part. <br><br>This is an inline test for MathJax: $x=\\sqrt{4}$ ]]
+       
         `,
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2h.4",
@@ -355,10 +361,11 @@ const EXAM_SECRETS_FULL_PAPER = [
       "With a collector voltage of 7.3V the collector current is about (12 - 7.3) / 4.7 = 1mA. The voltage across the emitter resistor will be about 1.8V, so the base will be at about 2.5V. The 2.5V across 10kΩ is a current of 250µA, and much the same current will be in R1, which should have 9.5V across it. That requires a resistance of R = 9.5 / 0.25 = 38kΩ. The base current will be a maximum of 2.5µA, which we can neglect in the standing current of 250µA.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "2i.3",
-    examStrategy: 4,
-    examStrategyNotes: "Need more learning materials",
-    examCalculation: 0,
+    examStrategy: 5,
+    examStrategyNotes: "Skip and later, quess.",
+    examCalculation: 3,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q17",
@@ -380,6 +387,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Drill",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q18",
@@ -614,6 +622,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Revise and drill.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q30",
@@ -692,6 +701,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     exam_NOT: false,
     obsidianURL:
       "obsidian://open?vault=FULL-LICENCE-COURSE&file=QUESTION%20ANALYSIS%20FOLDER%2FCartoon%20Strip%20of%20how%20a%20low%20SWR%20%20paints%20a%20false%20picture",
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q34",
@@ -708,6 +718,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     examStrategyNotes: "Impedance transformer. See EX309.",
     examCalculation: 2,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL PAPER Q35",

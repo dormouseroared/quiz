@@ -21,3 +21,9 @@ const W99quiz = [
 export default W99quiz
 
 // experimental
+export {
+  RSGB_FULL_MOCK_1,
+  RSGB_FULL_MOCK_2,
+  RSGB_FULL_MOCK_3,
+  EXAM_SECRETS_FULL_PAPER,
+}
