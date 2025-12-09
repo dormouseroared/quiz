@@ -135,20 +135,23 @@ class VideoNavigator {
       clipElement.className = "clip-item"
       clipElement.dataset.clipId = clip.id
 
+      // try to make the clip to be ignored more visible
+      const ignore = clip.tags.filter((tag) => tag.toUpperCase() === "IGNORE")
+
       // show the clip id on hover
       // can we output tags after description, in a single row separated by &bull;
       clipElement.innerHTML = `
-                <div class="clip-title" title=${clip.id}>${clip.title}</div>
-                <div class="clip-time">
-                    ${this.formatTime(clip.startTime)} → ${this.formatTime(clip.endTime)}
-                    (${this.formatDuration(clip.endTime - clip.startTime)})
-                </div>
-                <div class="clip-id" title="clipId">${clip.id}</div>
-                ${clip.reference ? `<div class="clip-reference" title="reference">${clip.reference}</div>` : ""}
-                ${clip.syllabus ? `<div class="clip-syllabus" title="syllabus">${clip.syllabus}</div>` : ""}
-                ${clip.description ? `<div class="clip-description">${clip.description}</div>` : ""}
-                ${clip.tags && clip.tags.length > 0 ? `<div class="clip-tags">${clip.tags.map((tag) => tag.toUpperCase()).join(" &bull; ")}</div>` : ""}
-            `
+      ${ignore.length ? `<div class="clip-title-ignore">${clip.title}</div>` : `<div class="clip-title">${clip.title}</div>`}
+      <div class="clip-time">
+      ${this.formatTime(clip.startTime)} → ${this.formatTime(clip.endTime)}
+      (${this.formatDuration(clip.endTime - clip.startTime)})
+      </div>
+      <div class="clip-id" title="clipId">${clip.id}</div>
+      ${clip.reference ? `<div class="clip-reference" title="reference">${clip.reference}</div>` : ""}
+      ${clip.syllabus ? `<div class="clip-syllabus" title="syllabus">${clip.syllabus}</div>` : ""}
+      ${clip.description ? `<div class="clip-description">${clip.description}</div>` : ""}
+      ${clip.tags && clip.tags.length > 0 ? `<div class="clip-tags">${clip.tags.map((tag) => tag.toUpperCase()).join(" &bull; ")}</div>` : ""}
+      `
 
       clipElement.addEventListener("click", () => this.selectClip(clip))
 

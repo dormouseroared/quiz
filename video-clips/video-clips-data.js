@@ -1640,11 +1640,13 @@ const CLIPS_DATA = [
   {
     id: "week09-clip-006",
     videoId: "week09",
-    title: "Return Loss",
+    title: "Return Loss (RL) with example calculations",
     startTime: timestampToSeconds("01:00:36"),
     endTime: timestampToSeconds("01:18:15"),
-    description: "",
-    tags: [],
+    description:
+      "It is an odd concept, but does have some use, because it deals with POWER. It compares the forward power with the returned power. In an ideal system, all the power goes up the feeder, and is radiated by the antenna. So in a perfect match, all RF power is radiated, or absorbed by the load as heat in the case of rubbish coax. So a perfect SWR has zero power returned (or reflected) and in RL terms that is a high loss from the system, a HIGH RL. Remember that the magnitude of RL is the opposite of the magnitude of SWR. So in an ideal system we maximise FORWARD POWER and minimise RETURNED POWER, and that will mean a high RL. Best to think of it as just RL, and don't use the confusing words. Incident === Forward & Returned = Reflected. There are some calculation examples. With the Casio clone calculator, I used shift-DEL to toggle insert and overwrite mode when pressing REPLAY to edit a formula when I forgot to use brackets.",
+    reference: "Week09 Tutorial Slide(s) 23-24",
+    tags: ["antennas", "repeat"],
   },
   {
     id: "week09-clip-007",
