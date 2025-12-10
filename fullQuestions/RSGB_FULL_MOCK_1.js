@@ -756,8 +756,9 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "6c.3",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
+    examStrategy: 3,
+    examStrategyNotes:
+      "One of the frequencies we are asked to remember is the commonly used is the 10.7MHz IF used in radio receivers for FM etc. There are harmonics of 3.5MHz that fall in the IF range.",
     examCalculation: 0,
     exam_NOT: false,
   },

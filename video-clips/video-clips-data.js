@@ -155,6 +155,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("11:05"),
     endTime: timestampToSeconds("13:03"),
     description: "2 Exam Questions for Operating Practices",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["completed"],
   },
   {
@@ -164,6 +165,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("13:03"),
     endTime: timestampToSeconds("18:07"),
     description: "",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["completed"],
   },
   {
@@ -174,6 +176,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("21:19"),
     description:
       "Checking for harmonics, excessive bandwidth and spurious emissions from time to time, and especially if something is changed.",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["completed"],
   },
   {
@@ -183,6 +186,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("21:19"),
     endTime: timestampToSeconds("35:39"),
     description: "",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["repeat"],
   },
   {
@@ -193,6 +197,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("48:20"),
     description:
       "Under CEPT T/R 61-01 rules a visitor with a full licence can operate with host country rules using the host prefix and their own callsign for up to about 3 months, whilst under HAREC CEPT T/R 61-02, someone taking up permanent residence can get a host country full license with a host callsign and host country rules.",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["completed"],
   },
   {
@@ -203,6 +208,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("56:27"),
     description:
       "(1) Europe, Africa & Middle East (2) the Americas (3) Asia & Pacific",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["completed"],
   },
   {
@@ -212,16 +218,18 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("56:27"),
     endTime: timestampToSeconds("58:54"),
     description: "Where to find revision material.",
+    reference: "Week01 Tutorial Slide(s)",
     tags: ["completed"],
   },
   {
     id: "week01-clip-008",
     videoId: "week01",
-    title: "Potential Divider & Bridge Circuits",
+    title: "&cross; Potential Divider & Bridge Circuits &searr;",
     startTime: timestampToSeconds("58:54"),
     endTime: timestampToSeconds("01:10:45"),
     description: "",
-    tags: ["circuit", "completed"],
+    reference: "Week01 Tutorial Slide(s)",
+    tags: ["circuit", "completed", "ignore"],
   },
   {
     id: "week01-clip-008-A",
@@ -230,7 +238,8 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:04:11"),
     endTime: timestampToSeconds("01:07:21"),
     description: "Subclip: Some worked example of a bridged circuit.",
-    tags: ["circuit", "repeat"],
+    reference: "Week01 Tutorial Slide(s)",
+    tags: ["circuit", "repeat", "subclip"],
   },
   {
     id: "week01-clip-008-B",
@@ -240,16 +249,18 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:10:45"),
     description:
       "Subclip: Diode in place of Voltmeter, SWR Indicator, LCR Meter",
-    tags: ["circuit", "repeat"],
+    reference: "Week01 Tutorial Slide(s)",
+    tags: ["circuit", "repeat", "subclip"],
   },
   {
     id: "week01-clip-009",
     videoId: "week01",
-    title: "Maths Primer Overview",
+    title: "&cross; Maths Primer Overview &searr;",
     startTime: timestampToSeconds("01:10:45"),
     endTime: timestampToSeconds("01:39:06"),
     description: "",
-    tags: ["maths", "completed"],
+    reference: "Week01 Tutorial Slide(s)",
+    tags: ["maths", "completed", "ignore"],
   },
   {
     id: "week01-clip-009-A",
@@ -259,7 +270,8 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:32:16"),
     description:
       "sub clip: double check that the ohm symbol is that and not a zero! ",
-    tags: ["maths", "repeat", "completed"],
+    reference: "Week01 Tutorial Slide(s)",
+    tags: ["maths", "repeat", "completed", "subclip"],
   },
   {
     id: "week01-clip-009-B",
@@ -269,7 +281,8 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:33:31"),
     endTime: timestampToSeconds("01:36:45"),
     description: "sub clip: get the result in two different ways, to check",
-    tags: ["maths", "repeat", "completed"],
+    reference: "Week01 Tutorial Slide(s)",
+    tags: ["maths", "repeat", "completed", "subclip"],
   },
   {
     id: "week02-clip-000-A",
@@ -278,16 +291,18 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("04:36"),
     endTime: timestampToSeconds("08:19"),
     description: "",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["quizreview", "licensing"],
   },
   {
     id: "week02-clip-001",
     videoId: "week02",
-    title: "More Resistors in Series & Parallel",
+    title: "&cross; More Resistors in Series & Parallel &searr;",
     startTime: timestampToSeconds("15:59"),
     endTime: timestampToSeconds("29:39"),
     description: "",
-    tags: ["completed", "circuit", "technical"],
+    reference: "Week02 Tutorial Slide(s)",
+    tags: ["completed", "circuit", "technical", "ignore"],
   },
   {
     id: "week02-clip-001-A",
@@ -297,6 +312,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("28:42"),
     description:
       "subclip: showing how to use series and parallel calculations to compress the circuit and find equivalent resistor, current and power",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["subclip", "circuit", "repeat", "technical"],
   },
   {
@@ -307,6 +323,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("44:25"),
     description:
       "Risk assessment. Record keeping: ONLY NEED TO RECORD SIGNIFICANT FINDINGS.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed"],
   },
   {
@@ -317,6 +334,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("53:30"),
     description:
       "Precautions when live working are here! Repeat means worth watching again.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed", "repeat"],
   },
   {
@@ -326,6 +344,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("53:30"),
     endTime: timestampToSeconds("59:50"),
     description: "",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed", "repeat"],
   },
   {
@@ -335,6 +354,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("59:50"),
     endTime: timestampToSeconds("01:04:53"),
     description: "Presence of General Pubic means a Risk Assessment is needed.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed"],
   },
   {
@@ -344,6 +364,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:03:05"),
     endTime: timestampToSeconds("01:04:53"),
     description: "",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "subclip", "repeat", "completed"],
   },
   {
@@ -354,6 +375,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:10:15"),
     description:
       "Use in accordance with manufacturers instructions, including refuelling and earthing. Keep fire extinguisher somewhere in between generator and fuel location.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed"],
   },
   {
@@ -364,6 +386,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:15:12"),
     description:
       "Insecure equipment can become like a missile in an emergency stop. Antennas can hit the general public. Engine Management systems can be impaired by RF. Exclusion Zone.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "repeat", "completed"],
   },
   {
@@ -373,16 +396,18 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:15:12"),
     endTime: timestampToSeconds("01:22:46"),
     description: "See Radcom article in Week02 folder.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed", "repeat"],
   },
   {
     id: "week02-clip-009",
     videoId: "week02",
-    title: "Electro Magnetic Fields (EMF)",
+    title: "&cross; Electro Magnetic Fields (EMF) &searr;",
     startTime: timestampToSeconds("01:22:46"),
     endTime: timestampToSeconds("01:50:37"),
     description: "",
-    tags: ["safety", "completed"],
+    reference: "Week02 Tutorial Slide(s)",
+    tags: ["safety", "completed", "ignore"],
   },
   {
     id: "week02-clip-009-A",
@@ -392,6 +417,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:48:05"),
     description:
       "Use the online calculator to check that the general public are being kept safe.",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["subclip", "safety", "repeat"],
   },
   {
@@ -401,6 +427,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:48:05"),
     endTime: timestampToSeconds("01:50:25"),
     description: "",
+    reference: "Week02 Tutorial Slide(s)",
     tags: ["subclip", "safety", "repeat"],
   },
   {
@@ -411,6 +438,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("09:59"),
     endTime: timestampToSeconds("18:39"),
     description: "Includes how to use ppm in calculations.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["completed", "technical"],
   },
   {
@@ -422,6 +450,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("18:39"),
     endTime: timestampToSeconds("24:48"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["subclip", "technical", "completed"],
   },
   {
@@ -433,6 +462,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("27:15"),
     description:
       "In the diagram, the top row is in series and trying to show capacitance is less, with the second row showing how capacitors in parallel will increase capacitance.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["subclip", "technical", "completed"],
   },
   {
@@ -443,6 +473,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("27:15"),
     endTime: timestampToSeconds("35:04"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["subclip", "technical", "completed"],
   },
   {
@@ -453,6 +484,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("35:04"),
     endTime: timestampToSeconds("40:24"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["subclip", "technical", "completed"],
   },
   {
@@ -463,18 +495,20 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("40:24"),
     endTime: timestampToSeconds("45:48"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["subclip", "technical", "completed", "circuit"],
   },
   {
     id: "week03-clip-003",
     videoId: "week03",
-    title: "Inductors & Back EMF",
+    title: "&cross; Inductors & Back EMF &searr;",
     syllabus: "2d.4",
     startTime: timestampToSeconds("45:48"),
     endTime: timestampToSeconds("01:00:31"),
     description:
       "See subclips. There is a question right at the end about back emf that only exists in theis main clip.",
-    tags: ["technical"],
+    reference: "Week03 Tutorial Slide(s)",
+    tags: ["technical", "ignore"],
   },
   {
     id: "week03-clip-003-A",
@@ -484,6 +518,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("45:48"),
     endTime: timestampToSeconds("48:58"),
     description: "A recap of intermediate.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "subclip"],
   },
   {
@@ -494,6 +529,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("48:58"),
     endTime: timestampToSeconds("51:22"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "subclip"],
   },
   {
@@ -504,6 +540,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("51:22"),
     endTime: timestampToSeconds("56:16"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "subclip", "completed"],
   },
   {
@@ -515,17 +552,19 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:07:19"),
     description:
       "Using the Time Constant Tau to reach 66% of rise or fall in voltage (capacitor) or current (inductor), and 5 times Tau for maximum.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "completed"],
   },
   {
     id: "week03-clip-005",
     videoId: "week03",
-    title: "Reactance of Inductors and Capacitors",
+    title: "&cross; Reactance of Inductors and Capacitors &searr;",
     syllabus: "2e.3",
     startTime: timestampToSeconds("01:07:21"),
     endTime: timestampToSeconds("01:20:56"),
     description: "Includes calculation examples",
-    tags: ["technical"],
+    reference: "Week03 Tutorial Slide(s)",
+    tags: ["technical", "ignore"],
   },
   {
     id: "week03-clip-005-A",
@@ -535,6 +574,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:07:21"),
     endTime: timestampToSeconds("01:15:50"),
     description: "Includes calculation examples",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "subclip"],
   },
   {
@@ -545,17 +585,19 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:15:50"),
     endTime: timestampToSeconds("01:20:56"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "subclip"],
   },
   {
     id: "week03-clip-006",
     videoId: "week03",
-    title: "Impedance Z and Voltage in an Impedance circuit",
+    title: "&cross; Impedance Z and Voltage in an Impedance circuit &searr;",
     syllabus: "2e.6",
     startTime: timestampToSeconds("01:20:56"),
     endTime: timestampToSeconds("01:31:38"),
     description: "",
-    tags: ["technical", "completed"],
+    reference: "Week03 Tutorial Slide(s)",
+    tags: ["technical", "completed", "ignore"],
   },
   {
     id: "week03-clip-006-A",
@@ -566,6 +608,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:28:07"),
     description:
       "With Z, X and R the simple rule that Z is always bigger than X or R, and also less than X and R added together, might narrow down the answers, or confirm the calculation. May need to calculate reactance from component value and frequency, in a two step calculation (there is an example of this...).",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat", "subclip"],
   },
   {
@@ -577,6 +620,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:31:38"),
     description:
       "The worked example is in Week03 Weekly Instructions. Because this is a multi-step calculation, the advice is to park this and come back to it at the end.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat", "subclip"],
   },
   {
@@ -589,6 +633,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:40:13"),
     description:
       "Remember: Parallel means Peak Impedance (Rejector). Increasing component values will decrease resonant frequency. Example calculations are available.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -600,6 +645,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:49:52"),
     description:
       "This is the third definition of Q. It is radio magic! The example is from Scroggie's Foundations of Wireless and Electronics. There is another worked example in the Week03 Weekly Instructions.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -610,6 +656,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:49:52"),
     endTime: timestampToSeconds("01:54:25"),
     description: "Worked example. ",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "repeat", "completed"],
   },
   {
@@ -620,6 +667,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:54:25"),
     endTime: timestampToSeconds("01:56:58"),
     description: "",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "repeat", "completed"],
   },
   {
@@ -631,6 +679,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:58:49"),
     description:
       "Every crystal (which can be represented by a capacitor in parallel with a capacitor, inductor and resistor) has a series resonant frequency and a parallel resonant frequency.",
+    reference: "Week03 Tutorial Slide(s)",
     tags: ["technical", "repeat", "completed"],
   },
   {
@@ -640,6 +689,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("09:26"),
     endTime: timestampToSeconds("54:34"),
     description: "There are some examples to work through if required.",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["revision", "maths", "completed"],
   },
   {
@@ -649,16 +699,18 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("54:34"),
     endTime: timestampToSeconds("01:13:09"),
     description: "A useful commentary on how circuits work.",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["circuit", "revision", "completed"],
   },
   {
     id: "week03A-clip-002",
     videoId: "week03A",
-    title: "Q, Q, Q & Dynamic Resistance",
+    title: "&cross; Q, Q, Q & Dynamic Resistance &searr;",
     startTime: timestampToSeconds("01:13:40"),
     endTime: timestampToSeconds("01:40:15"),
     description: "",
-    tags: ["revision", "completed", "repeat"],
+    reference: "Week03A Tutorial Slide(s)",
+    tags: ["revision", "completed", "repeat", "ignore"],
   },
   {
     id: "week03A-clip-002-A",
@@ -667,6 +719,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:13:40"),
     endTime: timestampToSeconds("01:20:10"),
     description: "",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["revision", "completed", "repeat", "subclip"],
   },
   {
@@ -676,6 +729,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:20:10"),
     endTime: timestampToSeconds("01:26:12"),
     description: "",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["revision", "completed", "repeat", "subclip"],
   },
   {
@@ -685,6 +739,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:26:12"),
     endTime: timestampToSeconds("01:33:29"),
     description: "",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["revision", "completed", "repeat", "subclip"],
   },
   {
@@ -694,6 +749,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:33:29"),
     endTime: timestampToSeconds("01:40:15"),
     description: "",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["revision", "completed", "repeat", "subclip"],
   },
   {
@@ -703,6 +759,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:40:15"),
     endTime: timestampToSeconds("01:55:00"),
     description: "",
+    reference: "Week03A Tutorial Slide(s)",
     tags: ["revision"],
   },
   {
@@ -713,6 +770,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("07:12"),
     endTime: timestampToSeconds("12:21"),
     description: "",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["quizreview"],
   },
   {
@@ -723,6 +781,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("12:21"),
     endTime: timestampToSeconds("18:32"),
     description: "",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["quizreview"],
   },
   {
@@ -734,6 +793,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("31:20"),
     description:
       "The big, heavy (hot) power supplies with transformer, rectifier, reservoir capacitor and voltage regulator. In full, there will be more detail on Transformers, Rectifier Diodes, Zener Diodes and Voltage Regulators.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -744,6 +804,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("31:30"),
     endTime: timestampToSeconds("57:43"),
     description: "",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -755,6 +816,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:02:05"),
     description:
       "Rectifier Diodes have a Peak Inverse Voltage (PIV) rating, which must be rated for at least peak to peak voltage.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -766,6 +828,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:06:32"),
     description:
       "Normally used with Reverse Bias when used as Voltage Regulators, to keep the voltage beyond the diode constant.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -777,6 +840,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:15:11"),
     description:
       "The discrete component version uses a Zener diode with a pass transistor to pass the current and a control transistor. The integrated circuit (IC) type has a capacitor fitted either side of it to prevent spurious oscillations. Most are fixed, but some can be configured for different stabilised voltages via extra pins and a rotary control.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["circuit", "completed", "repeat", "technical"],
   },
   {
@@ -788,6 +852,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:25:36"),
     description:
       "Worth going through again and pay attention to the detail of the block diagram.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -799,6 +864,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:32:22"),
     description:
       "There is a 1 in 3 chance of a question on this, so go through this once and let the chips fall when they may.  Gain (beta) = Ic/Ib. Remember CBE for Collector, Base, Emitter from the top down. The potential divider is very popular, and there can be a capacitor across the emitter resistor called an emitter bypass capacitor.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed"],
   },
   {
@@ -809,6 +875,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:32:22"),
     endTime: timestampToSeconds("01:44:31"),
     description: "Review the flashcards!",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -820,6 +887,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:52:59"),
     description:
       "The one diagram showing A, A/B, B, C is part of flashcards, and an essential commit to memory.",
+    reference: "Week04 Tutorial Slide(s)",
     tags: ["technical", "completed", "repeat"],
   },
   {
@@ -829,6 +897,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("03:27"),
     endTime: timestampToSeconds("17:19"),
     description: "",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "completed", "repeat"],
   },
   {
@@ -838,6 +907,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("17:19"),
     endTime: timestampToSeconds("18:03"),
     description: "Slide 9 is a list of topics to be covered in Week05.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "completed"],
   },
   {
@@ -848,6 +918,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("44:30"),
     description:
       "The sideband (band pass) filter of an SSB transmitter would historically be fixed to a very narrow frequency. This meant that some way was needed to be able to generate a range of final frequencies. Possible options include a mixer and a multiplier.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -857,6 +928,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("18:03"),
     endTime: timestampToSeconds("22:22"),
     description: "",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "subclip", "repeat"],
   },
   {
@@ -867,6 +939,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("32:13"),
     description:
       "Must be able to spot a mixer circuit (the one with four diodes with two inputs and one output). In the pre-sdr world, the bank of low pass filters would be used. Class C amplifiers are used to create harmonics for the multiplier. The multiplier cannot be used for AM or SSB, but can be for CW and FM.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "subclip", "repeat"],
   },
   {
@@ -877,6 +950,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("32:13"),
     endTime: timestampToSeconds("38:00"),
     description: "",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "subclip", "repeat"],
   },
   {
@@ -889,6 +963,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("40:10"),
     description:
       "SSB is generated at one frequency for all bands, then tuned circuits after the mixer will ensure either SUM or DIFFERENCE is selected. A bank of low pass filters will be required in a multi-band transmitter. Remember to ___ MODULATE THEN MIX ___.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "subclip", "repeat"],
   },
   {
@@ -898,6 +973,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("40:12"),
     endTime: timestampToSeconds("44:30"),
     description: "",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "subclip", "repeat"],
   },
   {
@@ -908,6 +984,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:05:44"),
     description:
       "Includes Intro & Drift, then (1) Crystal Oscillator (2) VFO based on LC circuit (3) PLL (4) DDS",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -918,6 +995,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("50:45"),
     description:
       "Oscillators & Frequency Multipliers: PART ONE. To maintain oscillation there must be a feedback path from the output back to the input.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "circuit", "subclip"],
   },
   {
@@ -928,6 +1006,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:00:45"),
     description:
       "Oscillators & Frequency Multipliers: PART TWO. Includes the formula to calculate VFO frequency from crystal frequency etc.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "circuit", "subclip"],
   },
   {
@@ -937,6 +1016,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:00:45"),
     endTime: timestampToSeconds("01:05:44"),
     description: "Oscillators & Frequency Multipliers: PART THREE.",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "circuit", "subclip"],
   },
   {
@@ -946,6 +1026,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:06:51"),
     endTime: timestampToSeconds("01:25:44"),
     description: "",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -955,6 +1036,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:25:44"),
     endTime: timestampToSeconds("01:39:38"),
     description: "",
+    reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -965,6 +1047,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("36:55"),
     description:
       "This is a long clip and I'm not sure if there's much to be gained from it. Maybe there are subclips that might be useful. Subclips have now been created. Leave this one here to show the original extent.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "ignore"],
   },
   {
@@ -975,6 +1058,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("14:57"),
     endTime: timestampToSeconds("18:08"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -985,6 +1069,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("18:08"),
     endTime: timestampToSeconds("21:02"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "subclip"],
   },
   {
@@ -995,6 +1080,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("21:02"),
     endTime: timestampToSeconds("32:22"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "circuit", "subclip"],
   },
   {
@@ -1006,6 +1092,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("36:57"),
     description:
       "FM has a Duty Cycle of 100%, when PTT is pressed, as do data modes, regardless of whether they are using SSB or FM. Because of that it may be advised to run these modes with a high duty cycle at half power.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "subclip"],
   },
   {
@@ -1017,6 +1104,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("42:14"),
     description:
       "Increases average RF power amp usage (and it will get hotter!!) by 20-50%, without changing the peak. As per FM and data modes, there may be a need to reduce the overall power level.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -1028,6 +1116,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("46:42"),
     description:
       "Even without an additional external amplifier, the ALC can feed back that SWR has increased by too much, resulting in the power being turned down. If ALC is not present or is not compatible, the RF manual power control will be needed to ensure that minimum drive is used for maximum output.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -1038,6 +1127,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("54:43"),
     description:
       "This section is about potential causes of UNDUE INTERFERENCE, so it is an introduction to (1) Harmonics (2) Spurious Emissions, which includes self and parasitic oscillation (3) Unintended (unwanted) Frequencies (4) Excessive bandwidth",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -1047,6 +1137,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("54:45"),
     endTime: timestampToSeconds("58:24"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1056,6 +1147,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("58:24"),
     endTime: timestampToSeconds("1:04:51"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1065,6 +1157,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("1:04:51"),
     endTime: timestampToSeconds("1:09:16"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1075,6 +1168,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("1:17:53"),
     description:
       "Self Oscillation: any active device with a tuned circuit has the potential to burst into oscillation. PREVENTION: use a damping resistor to reduce Q. Parasitic Oscillation: unpredictable resonances created by stray capacitance or inductance in long leads, not on a harmonic of a wanted frequency. PREVENTION: avoid long leads, good decoupling",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1086,6 +1180,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:33:09"),
     description:
       "No need to go through this if the BBDL grid is understood and practiced. May need to go another row and/or column but this will be rare.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1096,6 +1191,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:33:09"),
     endTime: timestampToSeconds("01:35:10"),
     description: "",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1106,6 +1202,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:39:45"),
     description:
       "If tuned too quickly, the PLL can operate out of lock, and most will inhibit transmit until stable again. Phase Noise (measured in dBc/Hz) has the effect of raising the minimum detection level (which can be reduced by the use of high Q oscillators, higher oscillator power and using low noise active devices). It's caused by small changes in phase from the comparator, resulting in small variations in frequency.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1119,6 +1216,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:43:05"),
     description:
       "Over-modulation on AM and SSB, or over-deviation on FM, can cause harmonics of the AUDIO frequencies, so a normal Audio Frequency (AF) bandwidth of 3kHz can become 6-9kHz or more, so AF occupies a wider bandwidth (potential to stray into an adjacent channel and cause UNDUE interference) and sounds distorted, and the RF created will also have excessive bandwidth, flat-topping and extra sidebands (FM). To prevent this problem, use the microphone gain control (or speak more quietly) to keep AM modulation below 100% (80% is recommended) and keep FM deviation within limits.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1130,6 +1228,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:44:52"),
     description:
       "Over driving a power amplifier takes it into non-linear territory with consequences including distortion and harmonics. The ALC (Automatic Level Control) should prevent that if available and working properly. Ensure that any overmodulation is reduced (that would cause the audio bandwidth to be wider than 3kHz) and that the manual control for RF amplifier is used.",
+    reference: "Week06 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1139,6 +1238,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("11:24"),
     endTime: timestampToSeconds("36:29"),
     description: "",
+    reference: "Week06A Tutorial Slide(s)",
     tags: ["revision"],
   },
   {
@@ -1148,6 +1248,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("36:29"),
     endTime: timestampToSeconds("01:00:52"),
     description: "",
+    reference: "Week06A Tutorial Slide(s)",
     tags: ["revision", "circuit"],
   },
   {
@@ -1157,6 +1258,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:00:52"),
     endTime: timestampToSeconds("01:09:14"),
     description: "",
+    reference: "Week06A Tutorial Slide(s)",
     tags: ["revision", "circuit"],
   },
   {
@@ -1166,6 +1268,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:09:14"),
     endTime: timestampToSeconds("01:31:27"),
     description: "",
+    reference: "Week06A Tutorial Slide(s)",
     tags: ["revision", "block"],
   },
   {
@@ -1175,6 +1278,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:31:27"),
     endTime: timestampToSeconds("01:48:07"),
     description: "",
+    reference: "Week06A Tutorial Slide(s)",
     tags: ["revision", "circuit"],
   },
   {
@@ -1184,6 +1288,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:48:07"),
     endTime: timestampToSeconds("02:04:30"),
     description: "",
+    reference: "Week06A Tutorial Slide(s)",
     tags: ["revision", "circuit"],
   },
   {
@@ -1193,6 +1298,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("10:16"),
     endTime: timestampToSeconds("14:37"),
     description: "",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["quizreview"],
   },
   {
@@ -1203,6 +1309,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("14:37"),
     endTime: timestampToSeconds("20:31"),
     description: "",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["quizreview"],
   },
   {
@@ -1213,6 +1320,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("29:10"),
     description:
       "If this sort of question is towards the end of the exam, it will probably involve safety, so there's a clue there possibly.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["quizreview"],
   },
   {
@@ -1223,6 +1331,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("38:58"),
     description:
       "Sensitivity: ability to detect weak signals. Selectivity: ability to accept and reject signals.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -1233,6 +1342,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("46:14"),
     description:
       "A very important review of the block diagram for the superhet, which is on an A3 sheet of paper with the comments on the block diagram.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters"],
   },
   {
@@ -1244,6 +1354,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:02:52"),
     description:
       "A range of signals (in decibels) from the weakest signal that can be heard, to the strongest signal that can be demodulated without distortion. For Watts (POWER), +3dB is x2, +10dB is x10, but for Volts, +6dB is x2 and +20dB is x10. Can also use rule of thumb... The weakest signal is the Minimal Discernable Signal, and it can be detected over the INTERNAL NOISE from the design of the receiver. The Signal-to-Noise-Ratio (SNR) is used for comparison, the lower the microVolts for 10dB SNR, is the more sensitive. The less voltage in for the same output if comparing two receivers. External noise will also affect reception, from equipment with poor EMC compliance, Galactic Noise, etc. All the noise sources add to the Noise Floor. To combat this, Yagi or dish antennas can be used. Also, external noise can be filtered out using Digital Signal Processing (DSP) or Noise cancelling devices.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1255,6 +1366,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:15:01"),
     description:
       "RF Pre-Amplifier?: best placement is at the antenna, with low noise such as VHF and UHF. Can make things worse (reduces Dynamic Range) with high noise. The reception of weaker signals can be improved.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1266,6 +1378,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:17:36"),
     description:
       "All oscillators will produce some phase noise as they drift and/or self-correct. Traditional crystal and LC oscillators are least noisy, with PLL and DDS more prone. Unwanted sidebands can be generated. Measured in dBc/Hz.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1277,6 +1390,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:20:05"),
     description:
       "Circuit diagram for a MIXER has 2 inputs and one output, to mix LO with RF to produce IF.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1288,6 +1402,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:29:50"),
     description:
       "Wanted Frequency is a given. Intermediate Frequency (IF) is the output. Then it is either W + LO = IF or W - LO = IF. Remember that LO - wanted means IF signal is inverted.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1299,6 +1414,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:44:35"),
     description:
       "The Image Frequency is a real frequency that also has the potential to mix with the LO to give the IF. It has to be kept out of the mixer with a filter. It is called Second Channel Interference. The higher the IF is the further away the Image Frequency is, so easier to filter out. The double superhet has 2 IFs, the first one high to push the Image Frequency away, then the second one is low for SELECTIVITY.",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1309,6 +1425,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:29:52"),
     endTime: timestampToSeconds("01:31:46"),
     description: "Good selectivity and gain",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat", "subclip", "subclip"],
   },
   {
@@ -1319,6 +1436,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:32:19"),
     endTime: timestampToSeconds("01:40:29"),
     description: "",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat", "subclip"],
   },
   {
@@ -1329,6 +1447,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:40:29"),
     endTime: timestampToSeconds("01:44:35"),
     description: "",
+    reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat", "subclip"],
   },
   {
@@ -1486,6 +1605,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("03:58"),
     endTime: timestampToSeconds("10:58"),
     description: "",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["ignore"],
   },
   {
@@ -1496,6 +1616,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("10:56"),
     description:
       "In real life, antennas need to be around 5% shorter than calculation would suggest, due to Velocity Factor of 0.95, and compare to coaxial feeder of 0.67! Physical length is shorter than the electrical length. Example is a quarter wave vertical antenna for 10MHz, which after end correction, comes to 7.125m.",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1504,7 +1625,8 @@ const CLIPS_DATA = [
     title: "&cross; Voltage & Current distribution &searr;",
     startTime: timestampToSeconds("10:58"),
     endTime: timestampToSeconds("17:55"),
-    description: "Tip for dipole: current can't flow at the end of the wire",
+    description: "",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["ignore"],
   },
   {
@@ -1514,6 +1636,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("10:58"),
     endTime: timestampToSeconds("15:36"),
     description: "Tip: current can't flow at the end of the wire",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1523,6 +1646,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("15:36"),
     endTime: timestampToSeconds("17:55"),
     description: "See diagram for distribution.",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1532,6 +1656,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("17:55"),
     endTime: timestampToSeconds("42:32"),
     description: "",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["ignore"],
   },
   {
@@ -1541,6 +1666,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("17:57"),
     endTime: timestampToSeconds("21:20"),
     description: "",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1551,6 +1677,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("24:15"),
     description:
       "Feedpoint Impedance: 75 Ohms. Normally horizontal for HF due to length, but can be vertical for VHF and UHF.",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1560,6 +1687,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("24:16"),
     endTime: timestampToSeconds("26:48"),
     description: "Feedpoint Impedance: 37.5 Ohms. ",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1569,6 +1697,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("26:48"),
     endTime: timestampToSeconds("28:22"),
     description: "Feedpoint Impedance: 50 Ohms ",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1579,6 +1708,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("31:22"),
     description:
       "Feedpoint Impedance: 300 Ohms - can be used with 300 ohm balanced feeder without requiring a balun. ",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1589,6 +1719,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("34:00"),
     description:
       "Feedpoint Impedance: 100 Ohms - this is the only antenna of the 7 that does not have a correction factor.",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1598,6 +1729,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("34:00"),
     endTime: timestampToSeconds("37:33"),
     description: "Feedpoint Impedance: LOW",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1607,6 +1739,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("37:33"),
     endTime: timestampToSeconds("41:06"),
     description: "Feedpoint Impedance: HIGH",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1616,6 +1749,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("41:08"),
     endTime: timestampToSeconds("42:23"),
     description: "This is memory work!",
+    reference: "Week09 Tutorial Slide(s) ",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1626,7 +1760,8 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("48:38"),
     description:
       "The default impedance is 300 ohms. A folded dipole used as the radiating (driven) element can result in a feedpoint impedance of 50 ohms. ",
-    tags: [],
+    reference: "Week09 Tutorial Slide(s) ",
+    tags: ["antennas", "subclip", "repeat"],
   },
   {
     id: "week09-clip-005",
@@ -1635,36 +1770,71 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("48:38"),
     endTime: timestampToSeconds("01:00:36"),
     description: "Standing waves",
-    tags: [],
+    reference: "Week09 Tutorial Slide(s) ",
+    tags: ["antennas", "subclip", "repeat"],
   },
   {
-    id: "week09-clip-006",
+    id: "week09-clip-006-A",
     videoId: "week09",
     title: "Return Loss (RL) with example calculations",
     startTime: timestampToSeconds("01:00:36"),
-    endTime: timestampToSeconds("01:18:15"),
+    endTime: timestampToSeconds("01:11:02"),
     description:
-      "It is an odd concept, but does have some use, because it deals with POWER. It compares the forward power with the returned power. In an ideal system, all the power goes up the feeder, and is radiated by the antenna. So in a perfect match, all RF power is radiated, or absorbed by the load as heat in the case of rubbish coax. So a perfect SWR has zero power returned (or reflected) and in RL terms that is a high loss from the system, a HIGH RL. Remember that the magnitude of RL is the opposite of the magnitude of SWR. So in an ideal system we maximise FORWARD POWER and minimise RETURNED POWER, and that will mean a high RL. Best to think of it as just RL, and don't use the confusing words. Incident === Forward & Returned = Reflected. There are some calculation examples. With the Casio clone calculator, I used shift-DEL to toggle insert and overwrite mode when pressing REPLAY to edit a formula when I forgot to use brackets.",
+      "It is an odd concept, but does have some use, because it deals with POWER. It compares the forward power with the returned power. In an ideal system, all the power goes up the feeder, and is radiated by the antenna. So in a perfect match, all RF power is radiated, or absorbed by the load as heat in the case of rubbish coax. So a perfect SWR has zero power returned (or reflected) and in RL terms that is a high loss from the system, a HIGH RL. Remember that the magnitude of RL is the opposite of the magnitude of SWR. So in an ideal system we maximise FORWARD POWER and minimise RETURNED POWER, and that will mean a high RL. Best to think of it as just RL, and don't use the confusing words. Incident === Forward & Returned = Reflected. There are some calculation examples. With the Casio clone calculator, I used shift-DEL to toggle insert and overwrite mode when pressing REPLAY to edit a formula when I forgot to use brackets. REPLAY is also useful to check that a calculation has been entered correctly.",
     reference: "Week09 Tutorial Slide(s) 23-24",
-    tags: ["antennas", "repeat"],
+    tags: ["antennas", "repeat", "subclip"],
   },
   {
-    id: "week09-clip-007",
+    id: "week09-clip-006-B",
     videoId: "week09",
-    title: "AMUs/ATUs",
-    startTime: timestampToSeconds("01:18:15"),
-    endTime: timestampToSeconds("01:44:27"),
+    title: "RL at Transmitter = RL at Antenna + (2 x feeder loss)",
+    startTime: timestampToSeconds("01:11:02"),
+    endTime: timestampToSeconds("01:18:15"),
     description: "",
-    tags: [],
+    reference: "Week09 Tutorial Slide(s) ",
+    tags: ["antennas", "repeat", "subclip"],
+  },
+  {
+    id: "week09-clip-007-A",
+    videoId: "week09",
+    title: "Why aren't they called Antenna Matching Units (AMU)",
+    startTime: timestampToSeconds("01:18:15"),
+    endTime: timestampToSeconds("01:23:02"),
+    description: "They are all ANTENNA MATCHING UNITS!",
+    reference: "Week09 Tutorial Slide(s) 31",
+    tags: ["antennas", "subclip", "repeat"],
+  },
+  {
+    id: "week09-clip-007-B",
+    videoId: "week09",
+    title: "AMU",
+    startTime: timestampToSeconds("01:24:24"),
+    endTime: timestampToSeconds("01:35:12"),
+    description: "",
+    reference: "Week09 Tutorial Slide(s) 32",
+    tags: ["antennas", "subclip", "repeat"],
+  },
+  {
+    id: "week09-clip-007-C",
+    videoId: "week09",
+    title: "Types of AMU Circuit",
+    startTime: timestampToSeconds("01:35:12"),
+    endTime: timestampToSeconds("01:44:27"),
+    description:
+      "Given that the Impedance Z consists of Resistance and Reactance, the AMU cancels Reactance to leave an acceptable resistive load. It is the AMU circuit which consists of inductors and resistors: (1) the T-match, consisting of two variable capacitors and a variable inductor, but it is also acting as a high pass filter, so any harmonics present will be carried forward. Another downside is the potential for an excess of heat loss. (2) the pi-match, forms a low pass filter, suppressing harmonics, with a variable inductor and two variable capacitors. (3) L-match, one variable inductor and one variable capacitor, with lower losses but limited frequency coverage.",
+    reference: "Week09 Tutorial Slide(s) 35-37",
+    tags: ["antennas", "subclip", "repeat"],
   },
   {
     id: "week09-clip-008",
     videoId: "week09",
-    title: "Z match with feeder",
+    title: "Matching Impedance with a Quarterwave Feeder",
     startTime: timestampToSeconds("01:44:27"),
-    endTime: timestampToSeconds("01:56:58"),
-    description: "",
-    tags: [],
+    endTime: timestampToSeconds("01:55:00"),
+    description:
+      "Alternative to an AMU: a quarterwave of (coax) feeder can be used as an impedance transformer. See example calculation.",
+    reference: "Week09 Tutorial Slide(s) 38-41",
+    tags: ["antennas", "repeat"],
   },
   {
     id: "week09A-clip-000-A",
@@ -1682,7 +1852,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("20:13"),
     endTime: timestampToSeconds("47:12"),
     description: "",
-    tags: ["revision"],
+    tags: ["revision", "transmitters"],
   },
   {
     id: "week09A-clip-002",
@@ -1718,7 +1888,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:23:24"),
     endTime: timestampToSeconds("01:34:54"),
     description: "",
-    tags: ["revision", "exam"],
+    tags: ["revision", "exam", "ignore"],
   },
   {
     id: "week10-clip-000-A",
@@ -1909,6 +2079,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("03:59"),
     endTime: timestampToSeconds("09:40"),
     description: "",
+    reference: "Week12 Tutorial Slide(s) 4",
     tags: ["quizreview"],
   },
   {
@@ -1918,6 +2089,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("11:09"),
     endTime: timestampToSeconds("15:46"),
     description: "",
+    reference: "Week12 Tutorial Slide(s) 6",
     tags: ["EMC", "repeat"],
   },
   {
@@ -1927,16 +2099,18 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("15:46"),
     endTime: timestampToSeconds("23:03"),
     description: "",
+    reference: "Week12 Tutorial Slide(s) 7-8",
     tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-004",
     videoId: "week12",
-    title: "How does EMC get into equipment: Routes of Entry",
+    title: "&cross; How does EMC get into equipment: Routes of Entry &searr;",
     startTime: timestampToSeconds("23:14"),
     endTime: timestampToSeconds("36:00"),
     description: "",
-    tags: ["EMC"],
+    reference: "Week12 Tutorial Slide(s) 10",
+    tags: ["EMC", "ignore"],
   },
   {
     id: "week12-clip-004-A",
@@ -1945,6 +2119,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("23:14"),
     endTime: timestampToSeconds("27:56"),
     description: "",
+    reference: "Week12 Tutorial Slide(s) 11",
     tags: ["EMC", "repeat", "subclip"],
   },
   {
@@ -1956,6 +2131,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("36:00"),
     description:
       "Medium Wave AM (526 - 1606 kHz), VHF FM (87.5 - 108MHz), VHF DAB (174 - 230MHz), Terrestrial TV (470 - 694MHz)",
+    reference: "Week12 Tutorial Slide(s) 12-13",
     tags: ["EMC", "repeat", "subclip"],
   },
   {
@@ -1965,26 +2141,28 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("36:00"),
     endTime: timestampToSeconds("39:20"),
     description: "",
+    reference: "Week12 Tutorial Slide(s) 14",
     tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-006",
     videoId: "week12",
-    title: "Two types of Interference",
+    title: "Two types of Interference: Blocking and Cross-Modulation",
     startTime: timestampToSeconds("39:20"),
     endTime: timestampToSeconds("45:08"),
     description: "",
+    reference: "Week12 Tutorial Slide(s) 15",
     tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-007",
     videoId: "week12",
-    title: "TV Distribution Amplifiers",
+    title: "&cross; TV Distribution Amplifiers &searr;",
     startTime: timestampToSeconds("45:12"),
     endTime: timestampToSeconds("51:44"),
-    description:
-      "Used to distribute TV around the house, or to boost a weak signal. Some may be completely broadband and amplify everything which can cause problems. Metal boxes are preferred due to their screening. Any of them can be the source of EMC problems. Masthead installation is preferred to set top box.",
-    tags: ["EMC"],
+    description: "",
+    reference: "Week12 Tutorial Slide(s) 16",
+    tags: ["EMC", "ignore"],
   },
   {
     id: "week12-clip-007-A",
@@ -1994,6 +2172,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("48:32"),
     description:
       "Used to distribute TV around the house, or to boost a weak signal. Some may be completely broadband and amplify everything which can cause problems. Metal boxes are preferred due to their screening. Any of them can be the source of EMC problems. Masthead installation is preferred to set top box.",
+    reference: "Week12 Tutorial Slide(s)",
     tags: ["EMC", "subclip", "repeat"],
   },
   {
@@ -2004,6 +2183,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("51:44"),
     description:
       "If you look at other causes and do not find the cause, it is probably the rusty bolt effect.",
+    reference: "Week12 Tutorial Slide(s)",
     tags: ["EMC", "subclip"],
   },
   {
@@ -2014,26 +2194,71 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:11:25"),
     description:
       "Main focus here is problems in reception. More likely to have problems with an increase in power. Only use the minimum power required to make the contact. This implies reducing field strength by increasing distance from antenna and/or reducing power. RF earthing for certain antennas can be problematic (a very serious mains safety issue) if house has PME earthing. There can also be problems with RF earthing in an upstairs shack, due to the length of the RF earth wire and its potential to radiate. Antenna systems can also be chosen that do not need an RF earth. Balanced antennas tend to cause fewer EMC problems than unbalanced antennas.",
+    reference: "Week12 Tutorial Slide(s)",
     tags: ["EMC", "repeat"],
   },
   {
     id: "week12-clip-009",
     videoId: "week12",
-    title: "EMC Filters",
+    title: "&cross; EMC Filters &searr;",
     startTime: timestampToSeconds("01:11:25"),
     endTime: timestampToSeconds("01:29:11"),
     description:
-      "Examples given of how to use Low Pass, High Pass and Band Pass filters in real situations. Also Band Stop filters (Notch), Stubs or Coaxial Traps. Then Ferrite Rings and Beads to mop up unwanted RF. Braid Breaker filter includes a High Pass Filter. Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed.",
-    tags: ["EMC", "repeat"],
+      "Summary of Low Pass, High Pass, Band Pass, Band Stop filters (Notch) can be made from tuned circuit (parallel tuned circuit in signal path or series tuned circuit from signal path to ground), or Stubs (Coaxial Traps), which are quarterwave lengths of feeder. Then Ferrite Rings and Beads to mop up unwanted RF. Braid Breaker filter includes a High Pass Filter. Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed.",
+    reference: "Week12 Tutorial Slide(s) 25-27",
+    tags: ["EMC", "repeat", "ignore"],
+  },
+  {
+    id: "week12-clip-009-A",
+    videoId: "week12",
+    title: "&bull; EMC Filters",
+    startTime: timestampToSeconds("01:11:25"),
+    endTime: timestampToSeconds("01:19:45"),
+    description:
+      "Summary of Low Pass, High Pass, Band Pass, Band Stop filters (Notch) can be made from tuned circuit (parallel tuned circuit in signal path or series tuned circuit from signal path to ground), or Stubs (Coaxial Traps), which are quarterwave lengths of feeder.",
+    reference: "Week12 Tutorial Slide(s) 25-27",
+    tags: ["EMC", "repeat", "subclip"],
+  },
+  {
+    id: "week12-clip-009-B",
+    videoId: "week12",
+    title: "&bull; Ferrite Rings and Beads can be used to mop up unwanted RF",
+    startTime: timestampToSeconds("01:19:49"),
+    endTime: timestampToSeconds("01:22:21"),
+    description: "Then Ferrite Rings and Beads to mop up unwanted RF. ",
+    reference: "Week12 Tutorial Slide(s) 28",
+    tags: ["EMC", "repeat", "subclip"],
+  },
+  {
+    id: "week12-clip-009-C",
+    videoId: "week12",
+    title: "&bull; Braid Breaker Filter",
+    startTime: timestampToSeconds("01:22:21"),
+    endTime: timestampToSeconds("01:25:20"),
+    description: "Braid Breaker filter includes a High Pass Filter.",
+    reference: "Week12 Tutorial Slide(s) 29",
+    tags: ["EMC", "repeat", "subclip"],
+  },
+  {
+    id: "week12-clip-009-D",
+    videoId: "week12",
+    title: "&bull; Mains Filter",
+    startTime: timestampToSeconds("01:25:20"),
+    endTime: timestampToSeconds("01:29:11"),
+    description:
+      "Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed. Voltage Dependent Resistors (VDR) provide anti-surge protection.",
+    reference: "Week12 Tutorial Slide(s) 30",
+    tags: ["EMC", "repeat", "subclip"],
   },
   {
     id: "week12-clip-010",
     videoId: "week12",
     title: "Mobile EMC",
-    startTime: timestampToSeconds("01:30:20"),
+    startTime: timestampToSeconds("01:30:23"),
     endTime: timestampToSeconds("01:35:08"),
     description:
-      "Federation of Communication Services UK Code of Practice has advice for mobile radio installation in vehicles. (1) don't run RF cables next to vehicle wiring (2) wire transceiver directlt to battery to avoid current carrying issues over vehicle wiring (3) good antenna grounding to vehicle bidy (4) carry out tests on static vehicle after installation before going mobile",
+      "Federation of Communication Services UK Code of Practice has advice for mobile radio installation in vehicles. (1) don't run RF cables next to vehicle wiring (2) wire transceiver directly to battery to avoid current carrying issues over vehicle wiring (3) good antenna grounding to vehicle bidy (4) carry out tests on static vehicle after installation before going mobile",
+    reference: "Week12 Tutorial Slide(s) 32",
     tags: ["EMC", "repeat"],
   },
   {
@@ -2044,6 +2269,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:48:05"),
     description:
       "BBC handle TV and radio reception complaints, on behalf of Ofcom. Ofcom Field Officers investigate harmful interference.",
+    reference: "Week12 Tutorial Slide(s)",
     tags: ["EMC", "repeat"],
   },
 

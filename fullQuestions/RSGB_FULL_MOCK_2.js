@@ -568,6 +568,7 @@ const RSGB_FULL_MOCK_2 = [
     examStrategyNotes: "Drill the baluns!",
     examCalculation: 0,
     exam_NOT: false,
+    obsidianURL: "obsidian://open?vault=FULL-LICENCE-COURSE&file=Baluns",
   },
   {
     source: "RSGB Full Mock 2 Q32",
