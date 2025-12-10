@@ -144,27 +144,13 @@ const SAFETY_01_SYLLABUS_LIST = ["8a.1", "8a.2", "8a.6", "8d.1", "8e.1"]
 
 const SAFETY_02_SYLLABUS_LIST = ["8f.4", "8f.5", "8f.6", "8f.7"]
 
-const EMC_01_SYLLABUS_LIST = [
-  "6a.2",
-  "6a.4",
-  "6b.1",
-  "6b.2",
-  "6b.3",
-  "6c.1",
-  "6c.2",
-  "6c.3",
-]
+const EMC_01_SYLLABUS_LIST = ["6a.2", "6a.4", "6b.1", "6b.2"]
 
-const EMC_02_SYLLABUS_LIST = [
-  "6d.1",
-  "6d.2",
-  "6e.1",
-  "6e.2",
-  "6e.3",
-  "6f.1",
-  "6f.2",
-  "6g.1",
-]
+const EMC_02_SYLLABUS_LIST = ["6b.3", "6c.1", "6c.2", "6c.3"]
+
+const EMC_03_SYLLABUS_LIST = ["6d.1", "6d.2", "6e.1", "6e.2"]
+
+const EMC_04_SYLLABUS_LIST = ["6e.3", "6f.1", "6f.2", "6g.1"]
 
 const LICENSING_01_SYLLABUS_LIST = ["1c.1"]
 const LICENSING_02_SYLLABUS_LIST = ["1d.1", "1g.1", "1h.1"]
@@ -341,6 +327,14 @@ function selectQuestionsForSyllabusList(list, MCQ) {
     console.warn("targetList", targetList)
     // 6. EMC_02
   } else if (list === "EMC_02") {
+    targetList = EMC_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 6. EMC_03
+  } else if (list === "EMC_03") {
+    targetList = EMC_02_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 6. EMC_04
+  } else if (list === "EMC_04") {
     targetList = EMC_02_SYLLABUS_LIST
     console.warn("targetList", targetList)
     // 8. SAFETY_01
