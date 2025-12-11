@@ -2086,9 +2086,10 @@ const CLIPS_DATA = [
     id: "week12-clip-002",
     videoId: "week12",
     title: "Immunity & Poor Installation",
-    startTime: timestampToSeconds("11:09"),
+    startTime: timestampToSeconds("11:10"),
     endTime: timestampToSeconds("15:46"),
-    description: "",
+    description:
+      "Equipment brought to market must pass EMC standards which allow a myriad of devices to work together without (UNDUE) interference. But immunity can be compromised by poor installation (interconnecting cables, plugs, deterioration, unstable connectors, lack of shielding/screening, etc). Look for a hint that an element of the installation is lacking.",
     reference: "Week12 Tutorial Slide(s) 6",
     tags: ["EMC", "repeat"],
   },
@@ -2098,7 +2099,8 @@ const CLIPS_DATA = [
     title: "EMC Standards & The Licence",
     startTime: timestampToSeconds("15:46"),
     endTime: timestampToSeconds("23:03"),
-    description: "",
+    description:
+      "Despite the standards, actual shipped items may not have the agreed specification.",
     reference: "Week12 Tutorial Slide(s) 7-8",
     tags: ["EMC", "repeat"],
   },
@@ -2109,7 +2111,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("23:14"),
     endTime: timestampToSeconds("36:00"),
     description: "",
-    reference: "Week12 Tutorial Slide(s) 10",
+    reference: "Week12 Tutorial Slide(s) 10-13",
     tags: ["EMC", "ignore"],
   },
   {
@@ -2117,9 +2119,10 @@ const CLIPS_DATA = [
     videoId: "week12",
     title: "&bull; Routes of Entry",
     startTime: timestampToSeconds("23:14"),
-    endTime: timestampToSeconds("27:56"),
-    description: "",
-    reference: "Week12 Tutorial Slide(s) 11",
+    endTime: timestampToSeconds("27:53"),
+    description:
+      "How does EMC interference get into equipment? RF can be picked up on long leads and interconnections e.g. speaker wires acting as a dipole, antenna feeder. Can also be on outside of coaxial feeder on the outside of the braid. Any semiconductor can act as a diode...",
+    reference: "Week12 Tutorial Slide(s) 10",
     tags: ["EMC", "repeat", "subclip"],
   },
   {
@@ -2137,10 +2140,11 @@ const CLIPS_DATA = [
   {
     id: "week12-clip-005",
     videoId: "week12",
-    title: "PIPs = The Rusty Bolt Effect",
-    startTime: timestampToSeconds("36:00"),
-    endTime: timestampToSeconds("39:20"),
-    description: "",
+    title: "Passive Intermodulation Products (PIP): The Rusty Bolt Effect",
+    startTime: timestampToSeconds("36:02"),
+    endTime: timestampToSeconds("39:18"),
+    description:
+      "It was always called the Rusty Bolt Effect before it became a proper three leytter acronym called PIP! A diode can be created with the effect, where joints in metal corrode, which allows mixing of strong signals to create a difficult to track down anomoly. ",
     reference: "Week12 Tutorial Slide(s) 14",
     tags: ["EMC", "repeat"],
   },
@@ -2148,9 +2152,10 @@ const CLIPS_DATA = [
     id: "week12-clip-006",
     videoId: "week12",
     title: "Two types of Interference: Blocking and Cross-Modulation",
-    startTime: timestampToSeconds("39:20"),
+    startTime: timestampToSeconds("39:21"),
     endTime: timestampToSeconds("45:08"),
-    description: "",
+    description:
+      "Blocking can block sound, or vision, or both, so a wanted broadcast signal just gets wiped out. The cause is likely to be a MODE that has a constant amplitude e.g. FM, or a data mode like FT8 or RTTY. The strong amateur signal overloads the receiver (RF amplifier), goes non-linear with harmonics and intermodulation products, swamping the next stage (Intermediate Frequency): then the AGC kicks in and reduces the gain of the incoming signal... When it occurs, it is total! Cross-modulation is similar, but involves a mode where the amplitude is changing (SSB, CW, etc) and the incoming wanted signal comes and goes with distortion and the amateur voice breaking through.",
     reference: "Week12 Tutorial Slide(s) 15",
     tags: ["EMC", "repeat"],
   },
@@ -2189,12 +2194,12 @@ const CLIPS_DATA = [
   {
     id: "week12-clip-008",
     videoId: "week12",
-    title: "Prevention and Reduction",
+    title: "Reception: Prevention and Reduction",
     startTime: timestampToSeconds("51:44"),
-    endTime: timestampToSeconds("01:11:25"),
+    endTime: timestampToSeconds("01:11:22"),
     description:
-      "Main focus here is problems in reception. More likely to have problems with an increase in power. Only use the minimum power required to make the contact. This implies reducing field strength by increasing distance from antenna and/or reducing power. RF earthing for certain antennas can be problematic (a very serious mains safety issue) if house has PME earthing. There can also be problems with RF earthing in an upstairs shack, due to the length of the RF earth wire and its potential to radiate. Antenna systems can also be chosen that do not need an RF earth. Balanced antennas tend to cause fewer EMC problems than unbalanced antennas.",
-    reference: "Week12 Tutorial Slide(s)",
+      "Main focus here is problems in reception. See Transmitter Interference for issues when transmitting. More likely to have problems with an increase in power. Only use the minimum power required to make the contact. This implies reducing field strength by increasing distance from antenna and/or reducing power. Some examples of calculating EX309 Field Strength (E), where ERP is power at feedpoint x antenna gain, and the key question: is it better to halve your power, or double the distance from your antenna? RF earthing for certain antennas can be problematic (a very serious mains safety issue) if house has PME earthing. There can also be problems with RF earthing in an upstairs shack, due to the length of the RF earth wire and its potential to radiate when transmitting. Antenna systems can also be chosen that do not need an RF earth. Balanced antennas tend to cause fewer EMC problems than unbalanced antennas especially when a balanced twin feeder is used to connect the balanced antenna to ground level at 90 degrees where it could be connected to a balun and then a buried coaxial cable, with earth rods (with a PME earth, these should be avoided unless professional advice is sought). See Fig 13.8 in the manual for an EMC friendly HF antenna with balanced line and coaxial feeder.",
+    reference: "Week12 Tutorial Slide(s) 18-23",
     tags: ["EMC", "repeat"],
   },
   {
@@ -2205,7 +2210,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:29:11"),
     description:
       "Summary of Low Pass, High Pass, Band Pass, Band Stop filters (Notch) can be made from tuned circuit (parallel tuned circuit in signal path or series tuned circuit from signal path to ground), or Stubs (Coaxial Traps), which are quarterwave lengths of feeder. Then Ferrite Rings and Beads to mop up unwanted RF. Braid Breaker filter includes a High Pass Filter. Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed.",
-    reference: "Week12 Tutorial Slide(s) 25-27",
+    reference: "Week12 Tutorial Slide(s) 25-30",
     tags: ["EMC", "repeat", "ignore"],
   },
   {
