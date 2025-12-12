@@ -41,7 +41,7 @@
 			"  source: '',",
 			"  question: ``,",
 			"  image: '',",
-			"  options: ['', '', '', '',],",
+			"  options: [``, ``, ``, ``,],",
 			"  correct: 9,",
 			"  explanation: ``,",
 			"  lookup: 'See page(s) x of the Full Licence Manual',",

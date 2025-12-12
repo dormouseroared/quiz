@@ -7511,6 +7511,19 @@ const syllabusItems = [
     title: "Measurements",
     text: "Identify the circuit of an SWR meter using either a sense wire between the inner and outer conductors of a coaxial line, or a current transformer and capacitive voltage tap.",
     weeks: ["13"],
+    flashcards: [
+      {
+        subTitle: "SWR Meter Flashcard Circuits",
+        sequence: "000",
+        front:
+          "Can you recognise the SWR circuits. Look for meters, Forward, Reverse, Reflected, etc",
+        frontImage: "",
+        back: "",
+        backImage: "week13-SWR-meter-circuits.png",
+        reference: "week13 tutorial slides 39-44",
+        id: "114b968f",
+      },
+    ],
   },
   {
     key: "9a.7",

@@ -977,11 +977,31 @@ const RSGB_FULL_MOCK_1 = [
       "DC current ranges",
     ],
     correct: 2,
-    explanation: "",
+    explanation: `Why the answer is "DC voltage ranges":
+The circuit shows a basic moving-coil meter with selectable series resistors. Understanding this requires grasping a few key principles:
+
+The meter movement itself is fundamentally a current-measuring device - the coil deflects fully at one specific current value (say, 1mA for full scale).
+Adding a large resistor in series converts it to a voltmeter - the resistor and meter form a voltage divider. The applied voltage determines the current through the series chain, so the meter deflection becomes proportional to voltage.
+Different resistor values create different voltage ranges - a 10kΩ resistor might give 0-10V range, while a 100kΩ resistor gives 0-100V range, etc.
+This is a DC meter only - there's no rectification circuitry visible. A moving-coil meter cannot follow AC (it would just vibrate at 50Hz), so it measures DC only.
+
+Note: While these resistors could theoretically provide DC current ranges if some positions used very low resistance values, the circuit as shown displays three similar resistors suggesting voltage range selection. Ammeter ranges typically require shunt resistors in parallel with the meter for higher currents, not just series resistors. Just reading this through... The resistor we select to be in series should be accurate because in the meter we need to know how the voltage is being divided to calibrate the meter reading, and to control the current (the same level of current is flowing through big and small R)
+
+Absolutely! You've just identified something really important that I should have emphasized more clearly!
+
+The resistor values need to be precise and stable because:
+
+Calibration depends on it: If you select the "100V range" resistor, the meter scale is marked assuming that specific resistance value. If the resistor is off by 10%, all your voltage readings will be wrong by 10%!
+The voltage division ratio must be exact: When you apply, say, 50V to the combination and want the needle to point to "50" on the scale, you need to know precisely how much current will flow: I = V / (R_series + R_meter). If R_series isn't what you think it is, the calibration is meaningless.
+Temperature stability matters too: These are often precision metal-film or wirewound resistors because regular carbon resistors can change resistance with temperature, throwing off your calibration.
+And you're right about the current being the same through both! That's the series connection - the same current must flow through the big resistor and the meter. The big resistor "drops" most of the voltage, the meter drops a tiny bit, but they both carry identical current.
+
+This is why quality multimeters use precision resistors (often 1% or better tolerance) for their range selection - it's not just about having "some resistance," it's about having exactly the right, known resistance to make the calibration accurate.`,
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9a.1",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
+    examStrategy: 3,
+    examStrategyNotes:
+      "The coil will defelct on a given current, so we need a range of voltage dividers",
     examCalculation: 0,
     exam_NOT: false,
   },
@@ -1013,9 +1033,10 @@ const RSGB_FULL_MOCK_1 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9a.8",
-    examStrategy: 1,
-    examStrategyNotes: "More Learning Materials: Claude?",
-    examCalculation: 0,
+    examStrategy: 2,
+    examStrategyNotes:
+      "First get the Period, then Frequency is the reciprocal!",
+    examCalculation: 2,
     exam_NOT: false,
   },
   {

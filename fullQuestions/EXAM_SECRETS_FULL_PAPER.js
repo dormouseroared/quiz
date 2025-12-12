@@ -1166,7 +1166,7 @@ const EXAM_SECRETS_FULL_PAPER = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9a.8",
     examStrategy: 3,
-    examStrategyNotes: "Revise and drill.",
+    examStrategyNotes: "I like these questions.",
     examCalculation: 0,
     exam_NOT: false,
   },
