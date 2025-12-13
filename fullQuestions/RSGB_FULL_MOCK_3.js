@@ -1008,9 +1008,10 @@ const RSGB_FULL_MOCK_3 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9b.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "Start with 0dBm = 1mW, then add on the left & multiply on the right. Essentially ADD 10dBm on the left and MULTIPLY by 10 on the right, TWICE.  Do it on paper.",
+    examCalculation: 2,
     exam_NOT: false,
   },
   {

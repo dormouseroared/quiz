@@ -1036,9 +1036,10 @@ const RSGB_FULL_MOCK_2 = [
     explanation: "",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9b.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "Two most likely answers involve voltage and power ratios ",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {

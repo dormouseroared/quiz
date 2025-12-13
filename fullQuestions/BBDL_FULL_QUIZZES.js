@@ -6164,9 +6164,13 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
       "A 1MΩ resistor in parallel",
     ],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `First thing to sort out is the series or parallel aspect. Volt meters require the
+potential difference to be divided between the movement and the resistor and a potential divider is a
+series circuit, so ‘c’ and ‘d’ are out. This is now effectively an Ohm’s law question that says ‘what value of
+resistor would have 100V across it when 100μA is flowing through it?’ R = V/I so 100 divided by 100 x10-6
+= 1 x106 or 1MΩ making ‘b’ the answer.`,
+    lookup: "See page(s) 96-97 of the Full Licence Manual",
+    syllabus: "9a.1",
     reference: "",
     examStrategy: 2,
     examStrategyNotes:
@@ -6183,9 +6187,12 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
     image: "",
     options: ["250Hz", "2.5kHz", "250kHz", "2.5MHz"],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `If we have 25MHz we have 25 million cycles per second. If the meter is accurate
+to 10 parts for every million the error here will be 25 x 10 cycles per second or 250Hz. We do not know if
+it is positive or negative so the best we can say is that the real frequency will be 25MHz plus or minus
+250Hz. Looks like ‘a’ is the correct answer.`,
+    lookup: "See page(s) 101 of the Full Licence Manual",
+    syllabus: "9a.3",
     reference: "",
     examStrategy: 2,
     examStrategyNotes:
@@ -6207,9 +6214,12 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
       "The results cannot be compared because the output impedance of one amplifier does not match the input impedance of the other amplifier",
     ],
     correct: 2,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `If the source and input impedances were all the same, the results would be
+fairly conclusive, but they are not, and we do not know what the result would have been if the 1000 Ohm
+input had been properly matched to the 50 Ohms source; a better power transfer would be most likely,
+but we don’t know for sure. For that reason ‘c’ is correct and all others are incorrect.`,
+    lookup: "See page(s) 102 of the Full Licence Manual",
+    syllabus: "9a.4",
     reference: "",
     examStrategy: 4,
     examStrategyNotes: "Need to go through this.",
@@ -6230,9 +6240,12 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
       "A dummy load and a through-line power meter",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `‘a’ will definitely do the trick (ideally the audio should be two non-harmonically
+related tones). ‘b’ is no good unless you can do steady whistling for long periods. ‘c’ will only work if your
+SWR meter is also a calibrated power meter, a pure SWR meter will not help. ‘d’ is the same as ‘b’ and
+there is no mention of the ability to whistle. ‘a’ is therefore the ‘most correct’ answer here.`,
+    lookup: "See page(s) 98-99 of the Full Licence Manual",
+    syllabus: "9a.5",
     reference: "",
     examStrategy: 4,
     examStrategyNotes: "Need to go through this.",
@@ -6244,7 +6257,7 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
   },
   {
     source: "BBDL QUIZ WEEK13 Q05",
-    question: `Which of the following would not be suitable for measuring the frequency of a 5MHz variable frequency oscillator?`,
+    question: `Which of the following would NOT be suitable for measuring the frequency of a 5MHz variable frequency oscillator?`,
     image: "",
     options: [
       "A digital frequency meter capable of reading up to 10 MHz",
@@ -6253,14 +6266,20 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
       "An RF voltmeter with a high impedance input calibrated as accurate up to 100 MHz",
     ],
     correct: 3,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `[A] A digital frequency meter will work because 5MHz is well within its range. <br><br>
+    [B] An HF receiver will cover 3-30MHz, so again, 5MHz is in range, and if checked against standard frequency transmissions the
+frequency display will be accurate.<br><br>The SDR is also a good option because 5MHz is well
+within its range, the 470kHz bandwidth is not relevant as you can move the displayed frequency
+anywhere within the range. <br><br>That only leaves [D] and an RF voltmeter CAN ONLY MEASURE VOLTS, not
+frequency, irrespective of its usable range.<br><br>`,
+    lookup: "See page(s) 100-101 of the Full Licence Manual",
+    syllabus: "9a.6",
     reference: "",
     examStrategy: 5,
-    examStrategyNotes: "Did not get this.",
+    examStrategyNotes:
+      "What are we trying to do? We are trying to measure frequency. Can a voltmeter measure frequency?",
     examCalculation: 0,
-    exam_NOT: false,
+    exam_NOT: true,
     tagged: true,
     obsidianURL: "",
     clipId: "",
@@ -6276,9 +6295,13 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
       "Forward and Reflected",
     ],
     correct: 3,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `The circuit is that of an SWR meter. How do we know? The clues are in the
+sampling coil feeding two circuits with identical meters and the dummy load. Just about the only meter
+we know that uses that configuration is the SWR meter and the meters are normally labelled forward
+and reflected, or forward and reverse. Sometimes there is just one meter with a switch for forward and
+reflected.`,
+    lookup: "See page(s) 97-98 of the Full Licence Manual",
+    syllabus: "9a.7",
     reference: "",
     examStrategy: 1,
     examStrategyNotes: "Drill.",
@@ -6294,9 +6317,10 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
     image: "images/week13-q07.png",
     options: ["100Hz", "1kHz", "10kHz", "100kHz"],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `Four ‘X’ divisions for a full wave form. 0.25ms per division, so 1ms for the full
+wave. Applying the f=1/t formula, 1 divided by one 1 x 10-3 = 1000 = 1kHz, making ‘b’ the correct answer.`,
+    lookup: "See page(s) 100 of the Full Licence Manual",
+    syllabus: "9a.8",
     reference: "",
     examStrategy: 1,
     examStrategyNotes: "Straightforward",
@@ -6312,12 +6336,19 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
     image: "images/week13-q08.png",
     options: [`None`, `Two`, `Three`, `Four`],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `A spectrum analyser is a bit like the spectrum display on an SDR receiver. It
+takes a chunk of spectrum and displays all the signals within that spectrum as ‘spikes’ and the bigger the
+spike, the stronger the signal. In this case the display shows 20MHz to be the centre and 2MHz per
+division. 20MHz trace is easy to spot (signal 3). Signal 2 is 5 divisions to the left, (5 x 2 = 10MHz
+difference) and signal 4 is 5 divisions to the right, also 10MHz difference. So, signal 2 is the fundamental
+and there are two ‘spikes’ at 20 and 30MHz (signals 3 and 4), which are the harmonics. The other ‘spikes’
+are not multiples of 10MHz so are not harmonics of that signal.`,
+    lookup: "See page(s) 101, 52 of the Full Licence Manual",
+    syllabus: "9a.9",
     reference: "",
     examStrategy: 4,
-    examStrategyNotes: "No idea, yet.",
+    examStrategyNotes:
+      "Write down the numbers 1-5, then by each write the frequency. Look at the image carefully.",
     examCalculation: 0,
     exam_NOT: false,
     tagged: true,
@@ -6330,9 +6361,51 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
     image: "",
     options: ["30 dB", "60 dB", "100 dB", "1000 dB"],
     correct: 1,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `This is a question that needs careful reading. <br>
+    The basic calculation is in dBV but the question is asking for power gain (i.e. dBW). Let’s work through it.....<br><br>
+First let's use the rule of thumb for dB calculation involving volts; volts times 10 = +20dB. 
+
+<br>So<br>
+• 1mV x 10 = 10mV (+20dB)
+• 10mV x 10 = 100mV (+40dB)
+• 100mV x 10 = 1V (+60dB) = answer ‘b’
+• OR:
+1mV amplified to 1V is a voltage gain of 1000 times. Power gain is square of Voltage gain =
+1,000,000 times = 60dB power gain, answer ‘b’
+Second way, if you prefer to use the calculator, is to use the formula sheet which tells us that dBV = 20
+log (Vout/Vin), and if you apply 1V out and 1mV in, the answer comes out at 60dB; also giving answer ‘b’
+– phew!
+However, what how would that work if we calculated power in and power out and used the dBW
+formula? Well, in dB terms, it is the same thing. Don’t believe me? Let’s work it through.....
+We know that Power= V2
+
+/R (see formula sheet) and if we know power in (Pin) and power out (Pout) we
+
+can calculate the dB gain. But first we have to convert the pk-pk voltages to rms:
+Pin = 1mV pk-pk = 1x10-3 ÷ 2 x 0.707 = 353.5uV rms
+Pout = 1V pk-pk = 1 ÷ 2 x 0.707 = 0.3535V rms
+So, Pin=V2
+/R = (353.5x10-6)
+2
+/50 = 2.499nW
+
+And, Pout=V2
+
+/R = 0.35352
+
+/50 = 2.499mW.
+
+Let’s first use the Watts times 10 = +10dB rule of thumb:
+• 2.499nW x 10 = 24.99nW (+10dB)
+• 24.99nW x 10 = 249.9nW (+20dB)
+• 249.9nW x 10 = 2.499uW (+30dB)
+• 2.499uW x 10 = 24.99uW (+40dB)
+• 24.99uW x 10 = 249.9uW (+50dB)
+• 249.9uW x 10 = 2.499mW (+60dB) = answer ‘b’ again!
+Alternatively, we can calculate the power gain using 10 log (Pout/Pin) with 2.499mW out and 2.499nW
+in = 60dB = answer ‘b’ – double phew!`,
+    lookup: "See page(s) 102-103 of the Full Licence Manual",
+    syllabus: "9b.1",
     reference: "",
     examStrategy: 3,
     examStrategyNotes:
@@ -6354,9 +6427,14 @@ contact for formal complaints about EMC problems caused by amateur radio transmi
       "It is made from three layers of silicon, doped to be negative (N), positive (P) and neutral (0)",
     ],
     correct: 0,
-    explanation: ``,
-    lookup: "See page(s) x of the Full Licence Manual",
-    syllabus: "9",
+    explanation: `A temperature coefficient specifies how much the value of the component
+changes with changing temperature. Some components have positive temperature coefficients and some
+have negative temperature coefficients. Others have neither and are marked as NP0. ‘b’ refers to ‘pure’
+silicon that has not been doped to be N or P material. The other two options are entirely made up! See
+pages 29-30 in the Full Licence textbook for more info, although there is no mention of NP0 components,
+only ‘zero coefficient’ ones, which means the same thing.`,
+    lookup: "See page(s) 29-30 of the Full Licence Manual",
+    syllabus: "9c.1",
     reference: "",
     examStrategy: 1,
     examStrategyNotes: "Drill.",

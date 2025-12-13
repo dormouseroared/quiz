@@ -3428,9 +3428,10 @@ const EXAM_SECRETS_QUESTIONS = [
       "The signal to noise ratio is the ratio of 1V to 100mV. Both are at the same point, the audio output, so clearly they are in the same impedance. 10 times voltage is 100 times power which is 20dB. Alternatively, remember that 10 times voltage is 20dB without going via the power step.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9b.1",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes:
+      "What do we do when we see Volts, as opposed to Watts? We remember we have to double the dB. Then we calculate the dB. And of course signal to noise ratio means dividing the signal by the noise, both at the output, so inore the red herring!",
+    examCalculation: 1,
     exam_NOT: false,
   },
   {
