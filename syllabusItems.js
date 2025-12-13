@@ -7412,6 +7412,30 @@ const syllabusItems = [
     title: "Measurements",
     text: "Understand the use of series multiplier resistors in analogue voltmeters and shunts in ammeters.",
     weeks: ["13"],
+    flashcards: [
+      {
+        subTitle: "To use an ammeter with a shunt",
+        sequence: "000",
+        front:
+          "How to use an a 1mA meter (full scale deflection) to measure 10A? Internal resistance is given as 75 ohms.",
+        frontImage: "week13-21b.png",
+        back: "",
+        backImage: "week13-21.png",
+        reference: "week13 tutorial slides 21",
+        id: "513461ab",
+      },
+      {
+        subTitle: "To use a voltmeter with a multiplier",
+        sequence: "010",
+        front:
+          "How to use an a 1mA meter (full scale deflection) to measure 10V?",
+        frontImage: "week13-22b.png",
+        back: "",
+        backImage: "week13-22.png",
+        reference: "week13 tutorial slides 22",
+        id: "5gh46a2b",
+      },
+    ],
   },
   {
     key: "9a.1",
