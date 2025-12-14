@@ -172,7 +172,8 @@ const OPERATING_01_SYLLABUS_LIST = ["7a"]
 const OPERATING_02_SYLLABUS_LIST = ["7b"]
 const OPERATING_03_SYLLABUS_LIST = ["7h"]
 
-const MEASUREMENTS_01_SYLLABUS_LIST = ["9"]
+const MEASUREMENTS_01_SYLLABUS_LIST = ["9a.1", "9a.3", "9a.4", "9a.5", "9a.6"]
+const MEASUREMENTS_02_SYLLABUS_LIST = ["9a.7", "9a.8", "9a.9", "9b.1", "9c.1"]
 
 let findCards = null
 
@@ -408,6 +409,10 @@ function selectQuestionsForSyllabusList(list, MCQ) {
     // 9. MEASUREMENTS_01
   } else if (list === "MEASUREMENTS_01") {
     targetList = MEASUREMENTS_01_SYLLABUS_LIST
+    console.warn("targetList", targetList)
+    // 9.MEASUREMENTS_02
+  } else if (list === "MEASUREMENTS_02") {
+    targetList = MEASUREMENTS_02_SYLLABUS_LIST
     console.warn("targetList", targetList)
     // NOTHING FOUND
   } else {
