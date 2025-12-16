@@ -451,9 +451,10 @@ const RSGB_FULL_MOCK_3 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3k.1",
     examStrategy: 5,
-    examStrategyNotes: "More learning materials.",
+    examStrategyNotes: "The famous FM circuit is here, and what might it do?",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "RSGB Full Mock 3 Q26",

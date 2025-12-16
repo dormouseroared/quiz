@@ -1897,6 +1897,7 @@ const EXAM_SECRETS_QUESTIONS = [
     examStrategyNotes: "More learning materials.",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3K1-2",
@@ -1911,14 +1912,14 @@ const EXAM_SECRETS_QUESTIONS = [
     ],
     correct: 1,
     explanation:
-      "Turning off the AGC allows the IF amplifiers to work at maximum gain. The signal amplitude is then limited by using diodes to clip the signal or a transistor circuit with a limited supply voltage and running oyut of headroom. That ensures constant level signals into the demodulator to remove much of the effect of noise, which is an amplitude disturbance and also enhances 'capture effect' whereby weaker co-channel FM signals are largely ignored.",
+      "Turning off the AGC allows the IF amplifiers to work at maximum gain. The signal amplitude is then limited by using diodes to clip the signal or a transistor circuit with a limited supply voltage and running out of headroom. That ensures constant level signals into the demodulator to remove much of the effect of noise, which is an amplitude disturbance and also enhances 'capture effect' whereby weaker co-channel FM signals are largely ignored.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3k.1",
     examStrategy: 5,
-    examStrategyNotes:
-      "Maybe ask my tutor about this? In the meantime it is marked as a 5 for a reason!",
+    examStrategyNotes: "Just drill!",
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3L1-1",
@@ -1949,7 +1950,7 @@ const EXAM_SECRETS_QUESTIONS = [
       "the receiver is equipped with all the chosen demodulator circuits and can rapidly try each one until an intellible signal emerges ",
       "the receiver is equipped with all the chosen demodulator circuits and can simultaneously use each one, picking the output with an intellible signal",
       "the receiver demodulates the amplitude of the signal in two phases, separated by ninety degrees, allowing any modulation mode to be extracted",
-      "the receiver requires a data signal, normally encoded im the carrier, to define the modulation mode being used",
+      "the receiver requires a data signal, normally encoded in the carrier, to define the modulation mode being used",
     ],
     correct: 2,
     explanation:
@@ -2041,6 +2042,7 @@ const EXAM_SECRETS_QUESTIONS = [
     `,
     examCalculation: 0,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "Exam Secrets FULL [Transmitters Receivers] 3N2-2",

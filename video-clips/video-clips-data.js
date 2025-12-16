@@ -167,16 +167,6 @@ const VIDEO_LIBRARY = [
 // Times can be in seconds or use timestampToSeconds
 const CLIPS_DATA = [
   {
-    id: "week01-clip-001",
-    videoId: "week01",
-    title: "Operating Practices Overview",
-    startTime: timestampToSeconds("11:05"),
-    endTime: timestampToSeconds("13:03"),
-    description: "2 Exam Questions for Operating Practices",
-    reference: "Week01 Tutorial Slide(s)",
-    tags: ["completed"],
-  },
-  {
     id: "week01-clip-002",
     videoId: "week01",
     title: "Working Split",
@@ -370,20 +360,22 @@ const CLIPS_DATA = [
     videoId: "week02",
     title: "Temporary Premises for Big Events",
     startTime: timestampToSeconds("59:50"),
-    endTime: timestampToSeconds("01:04:53"),
-    description: "Presence of General Pubic means a Risk Assessment is needed.",
+    endTime: timestampToSeconds("01:03:05"),
+    description:
+      "Presence of General Public means a Risk Assessment is needed.",
     reference: "Week02 Tutorial Slide(s)",
     tags: ["safety", "completed"],
   },
   {
     id: "week02-clip-005-A",
     videoId: "week02",
-    title: "&bull; Overseas Mains Power",
+    title: "Overseas Mains Power",
     startTime: timestampToSeconds("01:03:05"),
     endTime: timestampToSeconds("01:04:53"),
-    description: "",
+    description:
+      "Safety issue when overseas: check that plugs etc are compatible.",
     reference: "Week02 Tutorial Slide(s)",
-    tags: ["safety", "subclip", "repeat", "completed"],
+    tags: ["safety", "repeat", "completed"],
   },
   {
     id: "week02-clip-006",
@@ -914,8 +906,9 @@ const CLIPS_DATA = [
     title: "Transmitters: Foundation and Intermediate Recap",
     startTime: timestampToSeconds("03:27"),
     endTime: timestampToSeconds("17:19"),
-    description: "",
-    reference: "Week05 Tutorial Slide(s)",
+    description:
+      "A transmitter 's job is to send information via radio waves. The modes of modulation are AM (Audio Frequency causes a change in amplitude), SSB (one sideband), FM (Audio Frequency causes change in frequency, constant amplitude), Data as audio via a computer/interface (narrowest bandwidth), CW (on off keying, barrow bandwidth).",
+    reference: "Week05 Tutorial Slide(s) 7-8",
     tags: ["transmitters", "completed", "repeat"],
   },
   {
@@ -924,20 +917,20 @@ const CLIPS_DATA = [
     title: "Transmitters Overview at Full Level",
     startTime: timestampToSeconds("17:19"),
     endTime: timestampToSeconds("18:03"),
-    description: "Slide 9 is a list of topics to be covered in Week05.",
-    reference: "Week05 Tutorial Slide(s)",
+    description: "Slide 9 is a list of topics to be covered in Transmitters.",
+    reference: "Week05 Tutorial Slide(s) 9",
     tags: ["transmitters", "completed"],
   },
   {
     id: "week05-clip-003",
     videoId: "week05",
-    title: "Changing Frequency: mixers and multipliers",
+    title: "&cross; Changing Frequency: mixer & multiplier &searr;",
     startTime: timestampToSeconds("18:03"),
     endTime: timestampToSeconds("44:30"),
     description:
       "The sideband (band pass) filter of an SSB transmitter would historically be fixed to a very narrow frequency. This meant that some way was needed to be able to generate a range of final frequencies. Possible options include a mixer and a multiplier.",
-    reference: "Week05 Tutorial Slide(s)",
-    tags: ["transmitters"],
+    reference: "Week05 Tutorial Slide(s) 10",
+    tags: ["transmitters", "ignore"],
   },
   {
     id: "week05-clip-003-A",
@@ -952,11 +945,11 @@ const CLIPS_DATA = [
   {
     id: "week05-clip-003-B",
     videoId: "week05",
-    title: "&bull; Changing Frequency: Mixer and multiplier",
+    title: "&bull; Changing Frequency: Mixer & multiplier",
     startTime: timestampToSeconds("22:22"),
     endTime: timestampToSeconds("32:13"),
     description:
-      "Must be able to spot a mixer circuit (the one with four diodes with two inputs and one output). In the pre-sdr world, the bank of low pass filters would be used. Class C amplifiers are used to create harmonics for the multiplier. The multiplier cannot be used for AM or SSB, but can be for CW and FM.",
+      "Must be able to spot a mixer circuit (this one has four diodes, but it is any circuit with two inputs and one output). In the pre-sdr world, the bank of low pass filters would be used. Class C amplifiers are used to create harmonics for the multiplier. The multiplier cannot be used for AM or SSB, but can be used for CW and FM.",
     reference: "Week05 Tutorial Slide(s)",
     tags: ["transmitters", "subclip", "repeat"],
   },
@@ -997,13 +990,13 @@ const CLIPS_DATA = [
   {
     id: "week05-clip-004",
     videoId: "week05",
-    title: "Oscillators & Frequency Multipliers",
+    title: "&cross; Oscillators & Frequency Multipliers &searr;",
     startTime: timestampToSeconds("44:30"),
     endTime: timestampToSeconds("01:05:44"),
     description:
       "Includes Intro & Drift, then (1) Crystal Oscillator (2) VFO based on LC circuit (3) PLL (4) DDS",
     reference: "Week05 Tutorial Slide(s)",
-    tags: ["transmitters"],
+    tags: ["transmitters", "ignore"],
   },
   {
     id: "week05-clip-004-A",
@@ -1040,21 +1033,44 @@ const CLIPS_DATA = [
   {
     id: "week05-clip-005",
     videoId: "week05",
-    title: "Modulation, AM & SSB Filters",
+    title: "&cross; Modulation, AM & SSB Filters &searr;",
     startTime: timestampToSeconds("01:06:51"),
     endTime: timestampToSeconds("01:25:44"),
     description: "",
     reference: "Week05 Tutorial Slide(s)",
-    tags: ["transmitters"],
+    tags: ["transmitters", "ignore"],
+  },
+  {
+    id: "week05-clip-005-A",
+    videoId: "week05",
+    title: "&bull; AM Modulation",
+    startTime: timestampToSeconds("01:06:51"),
+    endTime: timestampToSeconds("01:11:08"),
+    description:
+      "In the olden days, high level AM modulation was used, which meant a high power Audio Frequency amplifier was required to modulate a high power Radio Frequency amplifier. Modern techniques use a low level approach where modulation takes place at lower power before being mixed to final frequency and amplified. Reminder: AM bandwidth is 6kHz (2 x 3kHz AF).",
+    reference: "Week05 Tutorial Slide(s) 21",
+    tags: ["transmitters", "subclip"],
+  },
+  {
+    id: "week05-clip-005-B",
+    videoId: "week05",
+    title: "&bull; SSB Modulation",
+    startTime: timestampToSeconds("01:11:10"),
+    endTime: timestampToSeconds("01:25:44"),
+    description:
+      "The filter circuit comes in a variety of forms, with a 'chain' of crystals (for example, four) and capacitors. Some will have impedance matching transformers at each end. Reminder: SSB bandwidth is 3kHz (1 x 3kHz AF). Given that the output from modulation is double sideband (no carrier) and we want USB or LSB selection on output, there can be two separate filters, or some means of changing the oscillator frequency in a single filter. Shape Factor is '-60dB bandwidth' divided by '-6dB bandwidth'",
+    reference: "Week05 Tutorial Slide(s) 22-25",
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week05-clip-006",
     videoId: "week05",
-    title: "Modulation, FM sidebands & bandwidth",
+    title: "FM Modulation, FM sidebands & bandwidth",
     startTime: timestampToSeconds("01:25:44"),
     endTime: timestampToSeconds("01:39:38"),
-    description: "",
-    reference: "Week05 Tutorial Slide(s)",
+    description:
+      "In the FM modulator, the Audio Frequency (AF) is applied to a vari-cap (varactor) diode, which causes a change in capacitance, and hence frequency. MODULATION INDEX equals maximum deviation (peak deviation) divided by maximum Audio Frequency so for Wideband (WBFM) 75kHz/15kHz = 5 and for Narrow Band (NBFM) 2.5kHz/3kHz = 0.83 (so, less than 1!!!!!). It isn't obvious, but FM generates sidebands, that increase in number with the Modulation Index. Carson's Rule (see EX309) is for Bandwidth = 2 x (AF_max + Maximum Deviation) so for NBFM, BW = 2 x (3 + 2.5) = 11kHz, hence channels on 2m etc being 12.5kHz wide! More Mic Gain causes more deviation.",
+    reference: "Week05 Tutorial Slide(s) 26-28",
     tags: ["transmitters"],
   },
   {

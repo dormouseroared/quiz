@@ -450,7 +450,7 @@ const BBDL_FULL_QUIZZES = [
   {
     source: "BBDL QUIZ WEEK01 Q03",
     question:
-      "Assuming you hold a Full UK Licence, which frequencies should you avoid using for routine amateur radio contacts?",
+      "Assuming you hold a Full UK Licence, which frequencies should you AVOID using for routine amateur radio contacts?",
     image: "",
     options: [
       "5.2620 & 5.2785 MHz",
@@ -467,7 +467,7 @@ const BBDL_FULL_QUIZZES = [
     examStrategyNotes:
       "Look at the 5MHz bandplan in EX309. Always highlight '5278.5 kHz - may be used for UK emergency comms traffic' and 'Beacons on 5290 kHz (Note-2)'",
     examCalculation: 0,
-    exam_NOT: false,
+    exam_NOT: true,
   },
   {
     source: "BBDL QUIZ WEEK01 Q04",

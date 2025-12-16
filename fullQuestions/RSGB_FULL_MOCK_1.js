@@ -924,7 +924,7 @@ const RSGB_FULL_MOCK_1 = [
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "3k.1",
     examStrategy: 4,
-    examStrategyNotes: "More Learning Materials: Claude?",
+    examStrategyNotes: "The famous ratio detector!",
     examCalculation: 0,
     exam_NOT: false,
   },

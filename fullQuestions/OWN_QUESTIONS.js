@@ -680,6 +680,7 @@ Self-oscillation occurs when the amplifier can "hear" its own output at the freq
     examStrategyNotes: "This is volts, not watts, so check EX309.",
     examCalculation: 2,
     exam_NOT: false,
+    tagged: true,
   },
   {
     source: "OWN QUESTIONS Q41",
