@@ -1091,9 +1091,10 @@ const CLIPS_DATA = [
     syllabus: "3f.2",
     startTime: timestampToSeconds("14:57"),
     endTime: timestampToSeconds("18:08"),
-    description: "",
-    reference: "Week06 Tutorial Slide(s)",
-    tags: ["transmitters"],
+    description:
+      "A Linear Amplifier makes a bigger, 'perfect' copy, without distortion. Most commercial transceivers use Class AB or Class B in push-pull configuration. AM and SSB must use linear.",
+    reference: "Week06 Tutorial Slide(s) 8",
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week06-clip-002-B",
@@ -1103,7 +1104,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("18:08"),
     endTime: timestampToSeconds("21:02"),
     description: "",
-    reference: "Week06 Tutorial Slide(s)",
+    reference: "Week06 Tutorial Slide(s) 9",
     tags: ["transmitters", "subclip"],
   },
   {
@@ -1114,7 +1115,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("21:02"),
     endTime: timestampToSeconds("32:22"),
     description: "",
-    reference: "Week06 Tutorial Slide(s)",
+    reference: "Week06 Tutorial Slide(s) 10",
     tags: ["transmitters", "circuit", "subclip"],
   },
   {
@@ -1150,7 +1151,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("46:42"),
     description:
       "Even without an additional external amplifier, the ALC can feed back that SWR has increased by too much, resulting in the power being turned down. If ALC is not present or is not compatible, the RF manual power control will be needed to ensure that minimum drive is used for maximum output.",
-    reference: "Week06 Tutorial Slide(s)",
+    reference: "Week06 Tutorial Slide(s) 11111116",
     tags: ["transmitters"],
   },
   {
@@ -1161,7 +1162,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("54:43"),
     description:
       "This section is about potential causes of UNDUE INTERFERENCE, so it is an introduction to (1) Harmonics (2) Spurious Emissions, which includes self and parasitic oscillation (3) Unintended (unwanted) Frequencies (4) Excessive bandwidth",
-    reference: "Week06 Tutorial Slide(s)",
+    reference: "Week06 Tutorial Slide(s) 17",
     tags: ["transmitters"],
   },
   {
@@ -1362,7 +1363,7 @@ const CLIPS_DATA = [
     videoId: "week07",
     title: "Receiver recap of Foundation and Intermediate",
     startTime: timestampToSeconds("36:00"),
-    endTime: timestampToSeconds("38:58"),
+    endTime: timestampToSeconds("38:56"),
     description:
       "Sensitivity: ability to detect weak signals. Selectivity: ability to accept and reject signals.",
     reference: "Week07 Tutorial Slide(s)",
@@ -1397,10 +1398,10 @@ const CLIPS_DATA = [
     title: "RF Amplifiers & Pre-Amplifiers",
     syllabus: "3j.1",
     startTime: timestampToSeconds("01:02:52"),
-    endTime: timestampToSeconds("01:15:01"),
+    endTime: timestampToSeconds("01:13:49"),
     description:
-      "RF Pre-Amplifier?: best placement is at the antenna, with low noise such as VHF and UHF. Can make things worse (reduces Dynamic Range) with high noise. The reception of weaker signals can be improved.",
-    reference: "Week07 Tutorial Slide(s)",
+      "RF Pre-Amplifier?: best placement is at the antenna, with low noise such as VHF and UHF. Can make things worse (reduces Dynamic Range) with high noise. The reception of weaker signals can be improved. The key syllabus point is that, in noisy environments, the dynamic range will be reduced by the gain of the pre-amp.",
+    reference: "Week07 Tutorial Slide(s) 27",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1411,8 +1412,8 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:15:01"),
     endTime: timestampToSeconds("01:17:36"),
     description:
-      "All oscillators will produce some phase noise as they drift and/or self-correct. Traditional crystal and LC oscillators are least noisy, with PLL and DDS more prone. Unwanted sidebands can be generated. Measured in dBc/Hz.",
-    reference: "Week07 Tutorial Slide(s)",
+      "All oscillators will produce some phase noise as they drift and/or self-correct. Traditional crystal and LC oscillators are least noisy, with PLL and DDS more prone. Unwanted sidebands can be generated. Measured in dBc/Hz. The Local Oscillator (LO) should never be the same as the Intermediate Frequency (IF), or have any harmonics of the IF, as leakage would give a constant signal on receive.",
+    reference: "Week07 Tutorial Slide(s) 28",
     tags: ["transmitters", "repeat"],
   },
   {
@@ -1425,7 +1426,7 @@ const CLIPS_DATA = [
     description:
       "Circuit diagram for a MIXER has 2 inputs and one output, to mix LO with RF to produce IF.",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat"],
+    tags: ["transmitters", "repeat", "circuit"],
   },
   {
     id: "week07-clip-007",
@@ -1442,14 +1443,14 @@ const CLIPS_DATA = [
   {
     id: "week07-clip-008",
     videoId: "week07",
-    title: "IF Stage, Image Frequencies & Double Conversion",
+    title: "&cross; IF Stage, Image Frequencies & Double Conversion &searr;",
     syllabus: "3i.3",
     startTime: timestampToSeconds("01:29:52"),
     endTime: timestampToSeconds("01:44:35"),
     description:
       "The Image Frequency is a real frequency that also has the potential to mix with the LO to give the IF. It has to be kept out of the mixer with a filter. It is called Second Channel Interference. The higher the IF is the further away the Image Frequency is, so easier to filter out. The double superhet has 2 IFs, the first one high to push the Image Frequency away, then the second one is low for SELECTIVITY.",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat"],
+    tags: ["transmitters", "repeat", "ignore"],
   },
   {
     id: "week07-clip-008-A",
@@ -1460,7 +1461,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:31:46"),
     description: "Good selectivity and gain",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat", "subclip", "subclip"],
+    tags: ["transmitters", "repeat", "subclip"],
   },
   {
     id: "week07-clip-008-B",
@@ -1476,11 +1477,11 @@ const CLIPS_DATA = [
   {
     id: "week07-clip-008-C",
     videoId: "week07",
-    title: "&bull; Double Conversion",
+    title: "&bull; Double Conversion Superhet",
     syllabus: "3i.3",
-    startTime: timestampToSeconds("01:40:29"),
+    startTime: timestampToSeconds("01:40:33"),
     endTime: timestampToSeconds("01:44:35"),
-    description: "",
+    description: "Block diagram.",
     reference: "Week07 Tutorial Slide(s)",
     tags: ["transmitters", "repeat", "subclip"],
   },
@@ -1545,7 +1546,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("25:22"),
     endTime: timestampToSeconds("34:31"),
     description:
-      "Get the diagram on the diagram box! Slide 12. Some circuit blocks are shared: OSCILLATORS, MIXERS, FILTERS, ANTENNA SOCKET and CHANGEOVER. Good to be able to skecth this out... Receiver Incremental Tuning (RIT) on Slide 13. Some say Incremental! If a response is drifting, the RIT can be used for better reception, whilst leaving the transmit frequency untouched. The control can also be used to work split, if the RIT goes far enough (5kHz) to listen to DX station. Don't forget to switch it off after the QSO.",
+      "Get the diagram on the diagram box! Slide 12. Some circuit blocks are shared: OSCILLATORS, MIXERS, FILTERS, ANTENNA SOCKET and CHANGEOVER. Good to be able to sketch this out... Receiver Incremental Tuning (RIT) on Slide 13. Some say Independent! If a response is drifting, the RIT can be used for better reception, whilst leaving the transmit frequency untouched. The control can also be used to work split, if the RIT goes far enough (5kHz) to listen to DX station. Don't forget to switch it off after the QSO.",
     reference: "Week08 Tutorial Slide(s) 12-13",
     tags: ["transmitters", "repeat"],
   },
@@ -1588,7 +1589,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("45:07"),
     endTime: timestampToSeconds("53:10"),
     description:
-      "[] See the simplified block diagram Fig 7.24 of a direct sampling SDR receiver on #19. Look out for BBDL briefing sheets in Week07. Sampling can produce representations of signals that do not exist, called aliases.",
+      "See the simplified block diagram Fig 7.24 of a direct sampling SDR receiver on #19. Look out for BBDL briefing sheets in Week07. Sampling can produce representations of signals that do not exist, called aliases.",
     reference: "Week08 Tutorial Slide(s) 19-22",
     tags: ["transmitters", "repeat"],
   },
@@ -1598,7 +1599,8 @@ const CLIPS_DATA = [
     title: "Working out alias frequencies",
     startTime: timestampToSeconds("53:10"),
     endTime: timestampToSeconds("01:13:18"),
-    description: "",
+    description:
+      "Nyquist Rate (N) is half the Sampling Rate, so any signal below N is sampled correctly, and anything above N creates an alias reflected about N. For example, a sampling rate of 20MHz with an incoming strong signal at 18MHz. N is 10. 18 creates an alias reflected around 10 so 8 above becomes 8 below, so an alias at 2MHz.",
     reference: "Week08 Tutorial Slide(s) 23-29",
     tags: ["transmitters", "repeat"],
   },
@@ -1616,11 +1618,12 @@ const CLIPS_DATA = [
     id: "week08-clip-009",
     videoId: "week08",
     title: "Feeders: Velocity Factor",
-    startTime: timestampToSeconds("01:33:21"),
-    endTime: timestampToSeconds("01:38:35"),
-    description: "",
-    reference: "Week08 Tutorial Slide(s)",
-    tags: [],
+    startTime: timestampToSeconds("01:34:04"),
+    endTime: timestampToSeconds("01:38:29"),
+    description:
+      "In a typical coax cable, RF travels at about 200m m/s with the same frequency and shorter wavelength. This is most relevant for pieces of coax that need to be a quarter wavelength, because the cable will be 0.67 of the calculated length.",
+    reference: "Week08 Tutorial Slide(s) 40",
+    tags: ["antennas"],
   },
   {
     id: "week08-clip-010",
@@ -1628,9 +1631,9 @@ const CLIPS_DATA = [
     title: "Baluns",
     startTime: timestampToSeconds("01:38:35"),
     endTime: timestampToSeconds("01:55:42"),
-    description: "",
+    description: "Choke, sleeve and transformer baluns.",
     reference: "Week08 Tutorial Slide(s)",
-    tags: [],
+    tags: ["antennas"],
   },
   {
     id: "week09-clip-001",
@@ -1640,7 +1643,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("10:58"),
     description: "",
     reference: "Week09 Tutorial Slide(s) ",
-    tags: ["ignore"],
+    tags: ["antennas", "ignore"],
   },
   {
     id: "week09-clip-001-A",
@@ -1661,7 +1664,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("17:55"),
     description: "",
     reference: "Week09 Tutorial Slide(s) ",
-    tags: ["ignore"],
+    tags: ["antennas", "ignore"],
   },
   {
     id: "week09-clip-002-A",
@@ -1670,7 +1673,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("10:58"),
     endTime: timestampToSeconds("15:36"),
     description: "Tip: current can't flow at the end of the wire",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 6",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1680,7 +1683,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("15:36"),
     endTime: timestampToSeconds("17:55"),
     description: "See diagram for distribution.",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 7",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1700,7 +1703,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("17:57"),
     endTime: timestampToSeconds("21:20"),
     description: "",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 8",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1711,7 +1714,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("24:15"),
     description:
       "Feedpoint Impedance: 75 Ohms. Normally horizontal for HF due to length, but can be vertical for VHF and UHF.",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 9",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1721,7 +1724,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("24:16"),
     endTime: timestampToSeconds("26:48"),
     description: "Feedpoint Impedance: 37.5 Ohms. ",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 10",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1731,7 +1734,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("26:48"),
     endTime: timestampToSeconds("28:22"),
     description: "Feedpoint Impedance: 50 Ohms ",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 11",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1741,8 +1744,8 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("28:22"),
     endTime: timestampToSeconds("31:22"),
     description:
-      "Feedpoint Impedance: 300 Ohms - can be used with 300 ohm balanced feeder without requiring a balun. ",
-    reference: "Week09 Tutorial Slide(s) ",
+      "Feedpoint Impedance: 300 Ohms - can be used with 300 ohm balanced feeder without requiring a balun.",
+    reference: "Week09 Tutorial Slide(s) 12",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1753,7 +1756,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("34:00"),
     description:
       "Feedpoint Impedance: 100 Ohms - this is the only antenna of the 7 that does not have a correction factor.",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 13",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1763,7 +1766,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("34:00"),
     endTime: timestampToSeconds("37:33"),
     description: "Feedpoint Impedance: LOW",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 14",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1773,7 +1776,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("37:33"),
     endTime: timestampToSeconds("41:06"),
     description: "Feedpoint Impedance: HIGH",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 15",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1783,7 +1786,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("41:08"),
     endTime: timestampToSeconds("42:23"),
     description: "This is memory work!",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 16",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1794,7 +1797,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("48:38"),
     description:
       "The default impedance is 300 ohms. A folded dipole used as the radiating (driven) element can result in a feedpoint impedance of 50 ohms. ",
-    reference: "Week09 Tutorial Slide(s) ",
+    reference: "Week09 Tutorial Slide(s) 17-18",
     tags: ["antennas", "subclip", "repeat"],
   },
   {
@@ -1877,6 +1880,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("06:00"),
     endTime: timestampToSeconds("20:10"),
     description: "",
+    reference: "",
     tags: ["quizreview"],
   },
   {
@@ -1886,6 +1890,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("20:13"),
     endTime: timestampToSeconds("47:12"),
     description: "",
+    reference: "",
     tags: ["revision", "transmitters"],
   },
   {
@@ -1895,6 +1900,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("47:12"),
     endTime: timestampToSeconds("01:01:40"),
     description: "",
+    reference: "",
     tags: ["revision"],
   },
   {
@@ -1904,6 +1910,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:01:40"),
     endTime: timestampToSeconds("01:17:27"),
     description: "",
+    reference: "",
     tags: ["revision", "circuit"],
   },
   {
@@ -1913,6 +1920,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:17:27"),
     endTime: timestampToSeconds("01:23:24"),
     description: "",
+    reference: "",
     tags: ["revision", "maths"],
   },
   {
@@ -1922,15 +1930,17 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:23:24"),
     endTime: timestampToSeconds("01:34:54"),
     description: "",
+    reference: "",
     tags: ["revision", "exam", "ignore"],
   },
   {
     id: "week10-clip-000-A",
     videoId: "week10",
     title: "Quiz Review: Week09A Q12 (FM Transmitter Block Diagram)",
-    startTime: timestampToSeconds("05:19"),
+    startTime: timestampToSeconds("05:27"),
     endTime: timestampToSeconds("10:40"),
     description: "",
+    reference: "",
     tags: ["quizreview"],
   },
   {
@@ -1940,6 +1950,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("10:40"),
     endTime: timestampToSeconds("15:17"),
     description: "",
+    reference: "",
     tags: ["quizreview"],
   },
   {
@@ -1949,6 +1960,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("15:17"),
     endTime: timestampToSeconds("18:54"),
     description: "",
+    reference: "",
     tags: ["quizreview"],
   },
   {
@@ -1958,6 +1970,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("18:54"),
     endTime: timestampToSeconds("22:17"),
     description: "",
+    reference: "",
     tags: ["quizreview"],
   },
   {
@@ -1967,6 +1980,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("22:17"),
     endTime: timestampToSeconds("28:08"),
     description: "",
+    reference: "",
     tags: ["quizreview"],
   },
   {
@@ -1976,6 +1990,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("41:17"),
     endTime: timestampToSeconds("01:02:09"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -1985,6 +2000,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:02:09"),
     endTime: timestampToSeconds("01:09:21"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -1994,6 +2010,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:09:21"),
     endTime: timestampToSeconds("01:14:38"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2003,6 +2020,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:14:38"),
     endTime: timestampToSeconds("01:22:26"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2012,6 +2030,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:22:26"),
     endTime: timestampToSeconds("01:31:47"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2021,6 +2040,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:31:47"),
     endTime: timestampToSeconds("01:42:31"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2030,6 +2050,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("08:12"),
     endTime: timestampToSeconds("13:00"),
     description: "Probably don't need to go through this again.",
+    reference: "",
     tags: ["completed"],
   },
   {
@@ -2039,6 +2060,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("13:00"),
     endTime: timestampToSeconds("33:40"),
     description: "Probably don't need to go through this again.",
+    reference: "",
     tags: ["completed"],
   },
   {
@@ -2048,6 +2070,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("33:40"),
     endTime: timestampToSeconds("41:48"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2057,6 +2080,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("41:48"),
     endTime: timestampToSeconds("47:02"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2066,6 +2090,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("47:02"),
     endTime: timestampToSeconds("52:29"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2075,6 +2100,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("52:29"),
     endTime: timestampToSeconds("01:03:37"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2084,6 +2110,7 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:03:37"),
     endTime: timestampToSeconds("01:36:11"),
     description: "",
+    reference: "",
     tags: [],
   },
   {
@@ -2094,6 +2121,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("30:30"),
     description:
       "SHALL -> must, mandatory, SHOULD -> recommended but not mandatory, MAY -> allowed to",
+    reference: "",
     tags: [],
   },
   {
@@ -2104,6 +2132,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("33:40"),
     description:
       "The use of Capital Letters means it is defined in Condition 10, and in this case it means the kit used with a Callsign becomes Radio equipment, where it does not matter who owns it.",
+    reference: "",
     tags: [],
   },
   {
