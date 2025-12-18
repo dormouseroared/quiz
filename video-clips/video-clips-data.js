@@ -247,7 +247,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:07:21"),
     description: "Subclip: Some worked example of a bridged circuit.",
     reference: "Week01 Tutorial Slide(s)",
-    tags: ["circuit", "repeat", "subclip"],
+    tags: ["circuit", "subclip"],
   },
   {
     id: "week01-clip-008-B",
@@ -258,7 +258,7 @@ const CLIPS_DATA = [
     description:
       "Subclip: Diode in place of Voltmeter, SWR Indicator, LCR Meter",
     reference: "Week01 Tutorial Slide(s)",
-    tags: ["circuit", "repeat", "subclip"],
+    tags: ["circuit", "subclip"],
   },
   {
     id: "week01-clip-009",
@@ -279,7 +279,7 @@ const CLIPS_DATA = [
     description:
       "sub clip: double check that the ohm symbol is that and not a zero! ",
     reference: "Week01 Tutorial Slide(s)",
-    tags: ["maths", "repeat", "completed", "subclip"],
+    tags: ["maths", "completed", "subclip"],
   },
   {
     id: "week01-clip-009-B",
@@ -290,7 +290,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:36:45"),
     description: "sub clip: get the result in two different ways, to check",
     reference: "Week01 Tutorial Slide(s)",
-    tags: ["maths", "repeat", "completed", "subclip"],
+    tags: ["maths", "completed", "subclip"],
   },
   {
     id: "week02-clip-000-A",
@@ -321,7 +321,7 @@ const CLIPS_DATA = [
     description:
       "subclip: showing how to use series and parallel calculations to compress the circuit and find equivalent resistor, current and power",
     reference: "Week02 Tutorial Slide(s)",
-    tags: ["subclip", "circuit", "repeat", "technical"],
+    tags: ["subclip", "circuit", "technical"],
   },
   {
     id: "week02-clip-002",
@@ -375,7 +375,7 @@ const CLIPS_DATA = [
     description:
       "Safety issue when overseas: check that plugs etc are compatible.",
     reference: "Week02 Tutorial Slide(s)",
-    tags: ["safety", "repeat", "completed"],
+    tags: ["safety", "completed"],
   },
   {
     id: "week02-clip-006",
@@ -397,7 +397,7 @@ const CLIPS_DATA = [
     description:
       "Insecure equipment can become like a missile in an emergency stop. Antennas can hit the general public. Engine Management systems can be impaired by RF. Exclusion Zone.",
     reference: "Week02 Tutorial Slide(s)",
-    tags: ["safety", "repeat", "completed"],
+    tags: ["safety", "completed"],
   },
   {
     id: "week02-clip-008",
@@ -619,7 +619,7 @@ const CLIPS_DATA = [
     description:
       "With Z, X and R the simple rule that Z is always bigger than X or R, and also less than X and R added together, might narrow down the answers, or confirm the calculation. May need to calculate reactance from component value and frequency, in a two step calculation (there is an example of this...).",
     reference: "Week03 Tutorial Slide(s)",
-    tags: ["technical", "completed", "repeat", "subclip"],
+    tags: ["technical", "completed", "subclip"],
   },
   {
     id: "week03-clip-006-B",
@@ -631,7 +631,7 @@ const CLIPS_DATA = [
     description:
       "The worked example is in Week03 Weekly Instructions. Because this is a multi-step calculation, the advice is to park this and come back to it at the end.",
     reference: "Week03 Tutorial Slide(s)",
-    tags: ["technical", "completed", "repeat", "subclip"],
+    tags: ["technical", "completed", "subclip"],
   },
   {
     id: "week03-clip-007",
@@ -667,7 +667,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:54:25"),
     description: "Worked example. ",
     reference: "Week03 Tutorial Slide(s)",
-    tags: ["technical", "repeat", "completed"],
+    tags: ["technical", "completed"],
   },
   {
     id: "week03-clip-010",
@@ -678,7 +678,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:56:58"),
     description: "",
     reference: "Week03 Tutorial Slide(s)",
-    tags: ["technical", "repeat", "completed"],
+    tags: ["technical", "completed"],
   },
   {
     id: "week03-clip-011",
@@ -690,7 +690,7 @@ const CLIPS_DATA = [
     description:
       "Every crystal (which can be represented by a capacitor in parallel with a capacitor, inductor and resistor) has a series resonant frequency and a parallel resonant frequency.",
     reference: "Week03 Tutorial Slide(s)",
-    tags: ["technical", "repeat", "completed"],
+    tags: ["technical", "completed"],
   },
   {
     id: "week03A-clip-000",
@@ -720,7 +720,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:40:15"),
     description: "",
     reference: "Week03A Tutorial Slide(s)",
-    tags: ["revision", "completed", "repeat", "ignore"],
+    tags: ["revision", "completed", "ignore"],
   },
   {
     id: "week03A-clip-002-A",
@@ -730,7 +730,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:20:10"),
     description: "",
     reference: "Week03A Tutorial Slide(s)",
-    tags: ["revision", "completed", "repeat", "subclip"],
+    tags: ["revision", "completed", "subclip"],
   },
   {
     id: "week03A-clip-002-B",
@@ -740,7 +740,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:26:12"),
     description: "",
     reference: "Week03A Tutorial Slide(s)",
-    tags: ["revision", "completed", "repeat", "subclip"],
+    tags: ["revision", "completed", "subclip"],
   },
   {
     id: "week03A-clip-002-C",
@@ -750,7 +750,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:33:29"),
     description: "",
     reference: "Week03A Tutorial Slide(s)",
-    tags: ["revision", "completed", "repeat", "subclip"],
+    tags: ["revision", "completed", "subclip"],
   },
   {
     id: "week03A-clip-002-D",
@@ -760,7 +760,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:40:15"),
     description: "",
     reference: "Week03A Tutorial Slide(s)",
-    tags: ["revision", "completed", "repeat", "subclip"],
+    tags: ["revision", "completed", "subclip"],
   },
   {
     id: "week03A-clip-003",
@@ -851,7 +851,7 @@ const CLIPS_DATA = [
     description:
       "The discrete component version uses a Zener diode with a pass transistor to pass the current and a control transistor. The integrated circuit (IC) type has a capacitor fitted either side of it to prevent spurious oscillations. Most are fixed, but some can be configured for different stabilised voltages via extra pins and a rotary control.",
     reference: "Week04 Tutorial Slide(s)",
-    tags: ["circuit", "completed", "repeat", "technical"],
+    tags: ["circuit", "completed", "technical"],
   },
   {
     id: "week04-clip-005",
@@ -1426,7 +1426,7 @@ const CLIPS_DATA = [
     description:
       "Circuit diagram for a MIXER has 2 inputs and one output, to mix LO with RF to produce IF.",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat", "circuit"],
+    tags: ["transmitters", "circuit"],
   },
   {
     id: "week07-clip-007",
@@ -1450,7 +1450,7 @@ const CLIPS_DATA = [
     description:
       "The Image Frequency is a real frequency that also has the potential to mix with the LO to give the IF. It has to be kept out of the mixer with a filter. It is called Second Channel Interference. The higher the IF is the further away the Image Frequency is, so easier to filter out. The double superhet has 2 IFs, the first one high to push the Image Frequency away, then the second one is low for SELECTIVITY.",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat", "ignore"],
+    tags: ["transmitters", "ignore"],
   },
   {
     id: "week07-clip-008-A",
@@ -1461,7 +1461,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:31:46"),
     description: "Good selectivity and gain",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week07-clip-008-B",
@@ -1472,7 +1472,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:40:29"),
     description: "",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week07-clip-008-C",
@@ -1483,7 +1483,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:44:35"),
     description: "Block diagram.",
     reference: "Week07 Tutorial Slide(s)",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week08-clip-001",
@@ -1504,7 +1504,7 @@ const CLIPS_DATA = [
     description:
       "The circuit diagram shown has a tuned circuit on the output side, to provide selectivity, which is called an Intermediate Frequency Transformer (IFT).",
     reference: "Week08 Tutorial Slide(s) 5",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week08-clip-001-B",
@@ -1515,7 +1515,7 @@ const CLIPS_DATA = [
     description:
       "IFTs have a high Q (steep sides) to provide good selectivity. Both Primary and Secondary sides can have tuned circuits (see diagram), and a double tuned IFT improves selectivity. Careful design is needed to ensure correct coupling between primary and secondary windings. The widest curve (broad response) on the IFT coupling diagram shows a single tuned circuit, so some selectivity. The other curves are for double coupling. The over-coupled curve with the double peak is wider than necessary. The critically coupled curve is just right. And the under-coupled is the worst.",
     reference: "Week08 Tutorial Slide(s) 6",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week08-clip-002",
@@ -1569,7 +1569,7 @@ const CLIPS_DATA = [
     description:
       "There is nothing in the syllabus about Down Converters, but they are a stepping stone to Transverters. On receive only, the Down Converter allows a receiver to listen to a band not included in the original design. In the good old days, VHF wasn't common on receivers, so the extermal DC unit with RF amp, mixer and fixed local oscillator was used as a superhet to MIX and create an HF signal. So with a Local Oscillator (LO) of 116MHz, 144MHz - 116MHz = 28MHz, and 146MHz - 116MHz = 30MHz. Then on the HF receiver dial, read 28.3MHz as 144.3MHz.",
     reference: "Week08 Tutorial Slide(s) 15",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week08-clip-005-B",
@@ -1580,7 +1580,7 @@ const CLIPS_DATA = [
     description:
       "This works on transmit and receive. Mainly used these days for microwave frequencies. Careful switching is needed to avoid hot switching, so switch transverter to transmit before applying RF.",
     reference: "Week08 Tutorial Slide(s) 16-17",
-    tags: ["transmitters", "repeat", "subclip"],
+    tags: ["transmitters", "subclip"],
   },
   {
     id: "week08-clip-006",
@@ -1819,7 +1819,7 @@ const CLIPS_DATA = [
     description:
       "It is an odd concept, but does have some use, because it deals with POWER. It compares the forward power with the returned power. In an ideal system, all the power goes up the feeder, and is radiated by the antenna. So in a perfect match, all RF power is radiated, or absorbed by the load as heat in the case of rubbish coax. So a perfect SWR has zero power returned (or reflected) and in RL terms that is a high loss from the system, a HIGH RL. Remember that the magnitude of RL is the opposite of the magnitude of SWR. So in an ideal system we maximise FORWARD POWER and minimise RETURNED POWER, and that will mean a high RL. Best to think of it as just RL, and don't use the confusing words. Incident === Forward & Returned = Reflected. There are some calculation examples. With the Casio clone calculator, I used shift-DEL to toggle insert and overwrite mode when pressing REPLAY to edit a formula when I forgot to use brackets. REPLAY is also useful to check that a calculation has been entered correctly.",
     reference: "Week09 Tutorial Slide(s) 23-24",
-    tags: ["antennas", "repeat", "subclip"],
+    tags: ["antennas", "subclip"],
   },
   {
     id: "week09-clip-006-B",
@@ -1829,7 +1829,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:18:15"),
     description: "",
     reference: "Week09 Tutorial Slide(s) ",
-    tags: ["antennas", "repeat", "subclip"],
+    tags: ["antennas", "subclip"],
   },
   {
     id: "week09-clip-007-A",
@@ -2255,7 +2255,7 @@ const CLIPS_DATA = [
     description:
       "How does EMC interference get into equipment? RF can be picked up on long leads and interconnections e.g. speaker wires acting as a dipole, antenna feeder. Can also be on outside of coaxial feeder on the outside of the braid. Any semiconductor can act as a diode...",
     reference: "Week12 Tutorial Slide(s) 10-11",
-    tags: ["EMC", "repeat", "subclip"],
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-004-B",
@@ -2267,7 +2267,7 @@ const CLIPS_DATA = [
     description:
       "Medium Wave AM (526 - 1606 kHz), VHF FM (87.5 - 108MHz), VHF DAB (174 - 230MHz), Terrestrial TV (470 - 694MHz)",
     reference: "Week12 Tutorial Slide(s) 12-13",
-    tags: ["EMC", "repeat", "subclip"],
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-005",
@@ -2343,7 +2343,7 @@ const CLIPS_DATA = [
     description:
       "Summary of Low Pass, High Pass, Band Pass, Band Stop filters (Notch) can be made from tuned circuit (parallel tuned circuit in signal path or series tuned circuit from signal path to ground), or Stubs (Coaxial Traps), which are quarterwave lengths of feeder. Then Ferrite Rings and Beads to mop up unwanted RF. Braid Breaker filter includes a High Pass Filter. Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed.",
     reference: "Week12 Tutorial Slide(s) 25-30",
-    tags: ["EMC", "repeat", "ignore"],
+    tags: ["EMC", "ignore"],
   },
   {
     id: "week12-clip-009-A",
@@ -2354,7 +2354,7 @@ const CLIPS_DATA = [
     description:
       "Summary of Low Pass, High Pass, Band Pass, Band Stop filters (Notch) can be made from tuned circuit (parallel tuned circuit in signal path or series tuned circuit from signal path to ground), or Stubs (Coaxial Traps), which are quarterwave lengths of feeder.",
     reference: "Week12 Tutorial Slide(s) 25-27",
-    tags: ["EMC", "repeat", "subclip"],
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-009-B",
@@ -2364,7 +2364,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:22:21"),
     description: "Then Ferrite Rings and Beads to mop up unwanted RF. ",
     reference: "Week12 Tutorial Slide(s) 28",
-    tags: ["EMC", "repeat", "subclip"],
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-009-C",
@@ -2374,7 +2374,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("01:25:20"),
     description: "Braid Breaker filter includes a High Pass Filter.",
     reference: "Week12 Tutorial Slide(s) 29",
-    tags: ["EMC", "repeat", "subclip"],
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-009-D",
@@ -2383,9 +2383,9 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:25:20"),
     endTime: timestampToSeconds("01:29:11"),
     description:
-      "Mains Filter can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed. Voltage Dependent Resistors (VDR) provide anti-surge protection.",
+      "Mains Filters can prevent RF going into mains, and interference from mains getting into equipment: special mains rated capacitors are needed. Voltage Dependent Resistors (VDR) provide anti-surge protection.",
     reference: "Week12 Tutorial Slide(s) 30",
-    tags: ["EMC", "repeat", "subclip"],
+    tags: ["EMC", "subclip"],
   },
   {
     id: "week12-clip-010",
@@ -2394,9 +2394,9 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:30:23"),
     endTime: timestampToSeconds("01:35:08"),
     description:
-      "Federation of Communication Services UK Code of Practice has advice for mobile radio installation in vehicles. (1) don't run RF cables next to vehicle wiring (2) wire transceiver directly to battery to avoid current carrying issues over vehicle wiring (3) good antenna grounding to vehicle bidy (4) carry out tests on static vehicle after installation before going mobile",
+      "Federation of Communication Services UK Code of Practice has advice for mobile radio installation in vehicles. (1) don't run RF cables next to vehicle wiring (2) wire transceiver directly to battery to avoid current carrying issues over vehicle wiring (3) good antenna grounding to vehicle body (4) carry out tests on static vehicle after installation before going mobile. Some car handbooks recommend 10W or less.",
     reference: "Week12 Tutorial Slide(s) 32",
-    tags: ["EMC", "repeat"],
+    tags: ["EMC"],
   },
   {
     id: "week12-clip-011",
@@ -2406,9 +2406,9 @@ const CLIPS_DATA = [
     startTime: timestampToSeconds("01:35:08"),
     endTime: timestampToSeconds("01:48:05"),
     description:
-      "BBC handle TV and radio reception complaints, on behalf of Ofcom. Ofcom Field Officers investigate harmful interference.",
-    reference: "Week12 Tutorial Slide(s)",
-    tags: ["EMC", "repeat"],
+      "BBC handle broadcast TV and radio reception complaints, on behalf of Ofcom. Ofcom Field Officers investigate harmful or UNDUE interference involving wireless telegraphy. Most often, the receiving equipment is found to be lacking immunity in the equipment or installation.",
+    reference: "Week12 Tutorial Slide(s) 33-34",
+    tags: ["EMC"],
   },
   {
     id: "week13-clip-001",
@@ -2515,7 +2515,7 @@ const CLIPS_DATA = [
     description:
       "For ammeter, a shunt resistor is used in parallel with the meter to divert most of the current, leaving only enough current for Full Scale Deflection to go through the meter. Then use fact that voltage is same down the two legs to derive the shunt value, which will be very small. For the voltmeter, a multiplier resistor is used in series to limit the current, whose value is VOLTS/(meter FSD in amps).",
     reference: "Week13 Tutorial Slide(s) 20-22",
-    tags: ["measurements", "repeat", "ignore"],
+    tags: ["measurements", "ignore"],
   },
   {
     id: "week13-clip-005-A",
@@ -2526,7 +2526,7 @@ const CLIPS_DATA = [
     endTime: timestampToSeconds("00:53:38"),
     description: "The meter construction is described",
     reference: "Week13 Tutorial Slide(s) 20",
-    tags: ["measurements", "repeat", "subclip"],
+    tags: ["measurements", "subclip"],
   },
   {
     id: "week13-clip-005-B",
@@ -2538,7 +2538,7 @@ const CLIPS_DATA = [
     description:
       "For the ammeter, a shunt resistor is used in parallel with the meter to divert most of the current, leaving only enough current for Full Scale Deflection to go through the meter. Then use fact that voltage is same down the two legs to derive the shunt value, which will be very small.",
     reference: "Week13 Tutorial Slide(s) 21",
-    tags: ["measurements", "repeat", "subclip"],
+    tags: ["measurements", "subclip"],
   },
   {
     id: "week13-clip-005-C",
@@ -2550,7 +2550,7 @@ const CLIPS_DATA = [
     description:
       "For the voltmeter, a multiplier resistor is used in series to limit the current, whose value is VOLTS/(meter FSD in amps).",
     reference: "Week13 Tutorial Slide(s) 22",
-    tags: ["measurements", "repeat", "subclip"],
+    tags: ["measurements", "subclip"],
   },
   {
     id: "week13-clip-006",

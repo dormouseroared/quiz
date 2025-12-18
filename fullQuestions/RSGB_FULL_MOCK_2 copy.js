@@ -275,7 +275,7 @@ const RSGB_FULL_MOCK_2 = [
     examStrategy: 4,
     examStrategyNotes: "Need some learning materials for this one",
     examCalculation: 0,
-    exam_NOT: "false",
+    exam_NOT: false,
     tagged: true,
   },
   {
