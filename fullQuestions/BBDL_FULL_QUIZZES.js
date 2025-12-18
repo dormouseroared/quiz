@@ -5370,7 +5370,7 @@ stations who are nor amateur radio stations. `,
     reference: "",
     examStrategy: 2,
     examStrategyNotes:
-      "I found (6-19) but managed to convert 'transmissions are only afddressed to one or more amateur radio station(s)' to include 'licensed'. Grrrr!!!!",
+      "I found (6-19) but managed to convert 'transmissions are only addressed to one or more amateur radio station(s)' to include 'licensed'. Grrrr!!!!",
     examCalculation: 0,
     exam_NOT: false,
     tagged: true,

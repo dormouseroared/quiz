@@ -667,7 +667,7 @@ const RSGB_FULL_MOCK_2 = [
     syllabus: "5d.2",
     examStrategy: 3,
     examStrategyNotes:
-      "Just take it steady. Until we know otherwise take the units at the start and keep them until the end.",
+      "Just take it steady. Until we know otherwise take the units at the start and keep them until the end. Allocate to two columns for plus and minus. Uf an item says GAIN it is a plus, and if it says LOSS it is a minus!!! That way the number of items can be confirmed. Then takes minus away from plus.",
     examCalculation: 3,
     exam_NOT: false,
     obsidianURL:

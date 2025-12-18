@@ -2468,7 +2468,7 @@ const EXAM_SECRETS_QUESTIONS = [
     image: "",
     options: [
       "determine the gain of the antennae to be used at each end of the link",
-      "determine the noise fugure required at the receiver to allow communication",
+      "determine the noise figure required at the receiver to allow communication",
       "ensure that the end to end path loss is reciprocal, that is, equal in each direction",
       "check that the proposed system will deliver an adequate signal to noise ratio",
     ],
