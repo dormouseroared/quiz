@@ -2672,7 +2672,8 @@ const EXAM_SECRETS_QUESTIONS = [
   },
   {
     source: "Exam Secrets FULL [EMC] 6C3-2",
-    question: "The UK Digital Audio Broadcasting band in the UK extends from:",
+    question:
+      "The UK Digital Audio Broadcasting band (DAB) in the UK extends from:",
     image: "",
     options: [
       "526kHz - 1606kHz",
