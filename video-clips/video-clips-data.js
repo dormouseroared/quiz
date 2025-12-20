@@ -2668,14 +2668,14 @@ const CLIPS_DATA = [
   {
     id: "week14-clip-004",
     videoId: "week14",
-    title: "Revision Topic: Banker Questions",
+    title: "&cross; evision Topic: Banker Questions &searr;",
     syllabus: "",
     startTime: timestampToSeconds("00:54:46"),
     endTime: timestampToSeconds("01:31:37"),
     description:
       "Includes reference to decibel quiz... Transformers is also a definite question but there are lots of topics to choose from. Still, a definite for revision, as most of transformers seems ok.",
     reference: "Week14 Tutorial Slide(s) 25-41",
-    tags: ["revision"],
+    tags: ["revision", "ignore"],
   },
   {
     id: "week14-clip-004-A",

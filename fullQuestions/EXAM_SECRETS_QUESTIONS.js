@@ -3306,9 +3306,9 @@ const EXAM_SECRETS_QUESTIONS = [
       "The probe shows a peak value of 12V, so the RMS value will be 12 / 1.41 = 8.49V. Into 50Ω, the output power is (8.49 x 8.49) / 50 = 1.4W.",
     lookup: "See page(s) x of the Full Licence text book",
     syllabus: "9a.5",
-    examStrategy: 1,
-    examStrategyNotes: "",
-    examCalculation: 0,
+    examStrategy: 3,
+    examStrategyNotes: "PEAK READING!!!!!!!",
+    examCalculation: 2,
     exam_NOT: false,
   },
   {
@@ -3433,7 +3433,7 @@ const EXAM_SECRETS_QUESTIONS = [
     syllabus: "9b.1",
     examStrategy: 3,
     examStrategyNotes:
-      "What do we do when we see Volts, as opposed to Watts? We remember we have to double the dB. Then we calculate the dB. And of course signal to noise ratio means dividing the signal by the noise, both at the output, so inore the red herring!",
+      "What do we do when we see Volts, as opposed to Watts? We remember we have to double the dB. Then we calculate the dB. And of course signal to noise ratio means dividing the signal by the noise, both at the output, so ignore the red herring!",
     examCalculation: 1,
     exam_NOT: false,
   },
